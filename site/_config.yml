@@ -1,0 +1,12 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        none
+
+# Server
+destination:      _gh_pages
+host:             127.0.0.1
+baseurl:          /paradixm
+encoding:         UTF-8
