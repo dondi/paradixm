@@ -1,0 +1,38 @@
+- group: Atomic
+  components:
+    - name: Button
+      path: button
+
+    - name: Menu
+      path: menu
+
+    - name: Radio Button
+      path: radio-button
+
+    - name: Check Box
+      path: check-box
+
+    - name: String Input
+      path: string-input
+
+    - name: Date & Time
+      path: date-and-time
+
+- group: Behavior
+  components:
+    - name: Drag & Drop
+      path: drag-and-drop
+
+    - name: Selecting
+      path: selecting
+
+    - name: Scrolling
+      path: scrolling
+
+- group: Composite
+  components:
+    - name: View Switcher
+      path: switcher
+
+    - name: Split View
+      path: split
