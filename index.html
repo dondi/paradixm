@@ -1,23 +1,32 @@
 ---
-layout: default
+title: Welcome!
+layout: base
 ---
 
-<div class="home">
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 panel-body">
+        <h1>The Paradixm Project</h1>
 
-  <h1 class="page-heading">Posts</h1>
+        <p>A survey of known user interface elements at the micro and macro levels</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-sm-6 panel-body">
+      <p>Welcome to the website of the Paradixm project. This site aims to provide a no-holds-barred catalog
+        of user interface elements, designs, and behaviors across platforms and across time.</p>
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    <div class="col-sm-6 panel-body">
+      <p>The long-term goal of the Paradixm project is to serve as the basis for a broad-based, best-of-breed
+        user interface vision that can accommodate users of all levels of proficiency as well as devices with
+        varying display and interaction technologies. The very feasibility of this goal remains to be seen,
+        but we have to start somewhere, right?</p>
+    </div>
+  </div>
 </div>
