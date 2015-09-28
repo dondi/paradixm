@@ -1,0 +1,150 @@
+---
+title: Button
+layout: component
+---
+
+<blockquote>Start your component pages with a quick description of the component, such as:</blockquote>
+
+<p class="lead">Quite possibly the single most common graphical user interface element, the push button triggers a
+  single action within an application.</p>
+
+<div class="row">
+  <div class="col-sm-6">
+
+<h3>Typical Appearance</h3>
+
+<blockquote>If a component is sufficiently widespread that it takes on a recognizable look across multiple platforms,
+  provide it here. If its appearance varies extremely widely, say so and direct the reader to platform-specific
+  instances.</blockquote>
+
+<h3>Typical Behavior</h3>
+
+<blockquote>
+  <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
+    here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
+    reader to the platform-specific sections.</p>
+
+  <p>Helpful subsections include:</p>
+</blockquote>
+
+<h4>Events</h4>
+
+<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
+  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+
+<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
+  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
+  within the button’s bounds.</p>
+
+<h4>State Diagram</h4>
+
+<blockquote>
+  <p>A state diagram indicating the actions and states of a user interface component.</p>
+
+  <p>This is most likely an image. Bonus props if you use SVG.</p>
+
+  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
+    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
+    however, may have more activities than the “public” events that can be reported by a component.</p>
+</blockquote>
+
+<p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
+  viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
+  it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
+  state means that a user <em>cannot</em> do so.</p>
+
+<p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
+  implementations, but in general they are:</p>
+
+<ul>
+  <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
+    change the button’s appearance. This provides a form of feedback that states that the button will respond if
+    additional activity is performed.</li>
+
+  <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
+    the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
+    from this state, in case the user changes his or her mind in mid-action.</li>
+</ul>
+
+<h4>Component in Action</h4>
+
+<blockquote>
+  <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
+
+  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
+</blockquote>
+
+<p class="text-center">
+  <button class="btn btn-default">Standard Bootstrap Button</button>
+  <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
+</p>
+
+  </div>
+
+  <div class="col-sm-6">
+<h3>Variants</h3>
+
+<blockquote>There is almost never just one form of a user interface component. Use this section to address variations
+  on this theme. Some variations are sufficiently different that they are considered to be a different component
+  entirely, despite very similar behavior. Meanwile some variations are due to appearance only.</blockquote>
+
+<ul>
+  <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
+    invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
+    different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
+
+  <li><em>Links</em> can be considered as a specialized button—they are invoked almost identically, and their action
+    is even more narrowly defined as moving the user to a different view or display. The distinction here is
+    definitely less sharp than the distinction between a menu item and a button. For links within a document, the
+    document might be viewed as a menu in itself, and thus links are “menu items” indicating what the user can view
+    next. Thus, in some ways, links are hybrids between buttons and menu items.</li>
+</ul>
+
+<h3>Priority Metrics</h3>
+
+<blockquote>Talk about the five usability metrics in relation to this component. Not all components will have the same
+  metric priorities. For example:</blockquote>
+
+<p>Because the button is such a fundamental part of virtually every user interface available today, it can be said that
+  all usability metrics are equally important for this component. Users who are seeing a button in a given platform for
+  the first time must not have any issues recognizing it and knowing what to do with it (learnability). The high
+  priority of learnability also implies that memorability is a given.</p>
+
+<p>Users must also never experience undue delays with using a button (efficiency), particularly because using a button
+  almost always involves an instantaneous, immediate-result action. Users should almost never trigger a button by
+  mistake (errors)—especially buttons whose actions result in significant changes to data or the real world.</p>
+
+<p>If any metric at all can be considered as a “low priority” for buttons, it would be satisfaction. The button is such
+  a utilitarian component that “fun” or “enjoyment” is hardly associated with its use. One exception to this
+  prioritization may be for buttons in applications whose primary metric is satisfaction (e.g., games, entertainment).
+  As a part of that overall system, making buttons “fun” may then become more important than in other situations.</p>
+
+<h3>Key Characteristics</h3>
+
+<blockquote>This section is for describing “what makes for a good <em>your component here</em>?”
+  Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
+  principles.</blockquote>
+
+<h4>Feedback</h4>
+
+<p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
+  never doubt whether:</p>
+
+<ol>
+  <li>they did positively trigger a button (and thus its associated action)</li>
+  <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
+    the action that triggers the button</li>
+</ol>
+  </div>
+</div>
+
+<h3>Platform-Specific Instances</h3>
+
+<blockquote>This is where things can get really interesting—platform-specific sections go here. Different versions of
+  the same system are considered to be platforms in their own right (e.g., Windows 95 buttons vs. Windows 10
+  buttons). Completely customized versions of a component (e.g., a unique-looking/-acting button made specifically
+  for a game) are also acceptable here.</blockquote>
+
+<h3>Credits &amp; References</h3>
+
+<blockquote>Provide references or links to any information, image, or media sources used.</blockquote>

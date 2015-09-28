@@ -4,7 +4,7 @@
   <li role="separator" class="divider"></li>
   {% endif %}
   {% for component in group.components %}
-  <li><a href="{{ component.path }}">{{ component.name }}</a></li>
+  <li><a href="{{ site.baseurl }}/components/{{ component.path }}">{{ component.name }}</a></li>
   {% endfor %}
 {% endfor %}
 </ul>
