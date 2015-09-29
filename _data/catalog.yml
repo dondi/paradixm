@@ -15,14 +15,17 @@
     - name: String Input
       path: string-input
 
-    - name: Date & Time
-      path: date-and-time
-
     - name: Slider
       path: slider
 
+    - name: Command Loop
+      path: command-loop
+
 - group: Structured
   components:
+    - name: Date & Time
+      path: date-and-time
+
     - name: List
       path: list
 
@@ -40,14 +43,26 @@
     - name: Drag & Drop
       path: drag-and-drop
 
+    - name: Resizing
+      path: resizing
+
+    - name: Rotating
+      path: rotating
+
     - name: Selecting
       path: selecting
 
     - name: Scrolling
       path: scrolling
 
+    - name: Zooming
+      path: zooming
+
 - group: Composite
   components:
+    - name: Modal View
+      path: modal-view
+
     - name: View Switcher
       path: view-switcher
 
@@ -56,8 +71,14 @@
 
 - group: Environment
   components:
-    - name: Login
-      path: login
+    - name: Information Transfer
+      path: information-transfer
+
+    - name: Login/Unlock
+      path: login-unlock
+
+    - name: Persistent Storage
+      path: storage
 
     - name: Task Launcher
       path: task-launcher
