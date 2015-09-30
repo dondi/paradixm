@@ -29,6 +29,9 @@
     - name: List
       path: list
 
+    - name: Media
+      path: media
+
     - name: Search
       path: search
 
