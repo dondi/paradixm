@@ -29,9 +29,6 @@
     - name: List
       path: list
 
-    - name: Map
-      path: map
-
     - name: Media
       path: media
 
@@ -43,9 +40,6 @@
 
     - name: Tree
       path: tree
-
-    - name: Web
-      path: web
 
 - group: Behavior
   components:
@@ -85,9 +79,6 @@
 
     - name: Login/Unlock
       path: login-unlock
-
-    - name: Macro View
-      path: macro-view
 
     - name: Persistent Storage
       path: storage
