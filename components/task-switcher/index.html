@@ -4,34 +4,40 @@ layout: component
 ---
 
 
-<p class="lead">A Task Switcher allows for quick and efficient switching between open programs, for a streamlined workflow. There are a plethora of different ways to accomplish this, ranging from quick keyboard shortcuts, to using the command line. </p>
+<p class="lead">A Task Switcher allows for quick and efficient switching between open programs for a streamlined workflow. There are a plethora of different ways to accomplish this, ranging from quick keyboard shortcuts, to using the command line. </p>
 
 <div class="row">
   <div class="col-sm-6">
 
 <h3>Typical Appearance</h3>
-
-Although there are many ways to switch between tasks, most operating systems have a similar feature that portrays all currently open programs (or their respective icons) in a thumbnails across the screen. They typically prioritize the screen, displaying themselves in front of any and all open windows. 
+<p>Although there are many ways to switch between tasks, most operating systems have a similar feature that portrays all currently open programs (or their respective icons) in thumbnails across the screen. They typically prioritize the screen, displaying themselves in front of any and all open windows. 
 
 <br><br>Windows 10<br>
-<img src="windowstask.png" style="width:100%; height:auto;" >
+<img src="img/windowstask.png" style="width:100%; height:auto;" >
 <br><br>OSX El Capitan<br>
-<img src="osxtask.png" style="width:100%; height:auto;" >
-<br><br>iPhone 6s<br>
-<img src="iPhoneTaskSwitcher.gif" style="width:45%; height:auto;" >
-
+<img src="img/osxtask.png" style="width:100%; height:auto;" >
+<br><br>iOS 9  <br>
+<iframe src="http://i.giflike.com/embed/zHXwTLz" width="236.6" height="420" scrolling="no"></iframe><!-- Commented out windows phone task switcher for now, once css will be working with w/10 for proper formatting -->
+<!-- <img src="windowsPhoneTaskSwitcher.png" style="width:44%; height:auto;" > -->
+</p>
 
 
 
 <h3>Typical Behavior</h3>
-
-<blockquote>
+<p>
+First, it is important to note that there is a long list of ways a user can switch between tasks. One way would be to use the mouse, locate the task launcher, hover over the task one wants to open, and click. Information on the task launcher can be found <a href=""> here</a>.  
+</p>
+<p>
+Another more efficient way, which is seen on most Operating Systems, including mobile, is to press and hold a set of keys (i.e. Windows: <code>Alt + Tab</code> ; OSX: <code>Cmd + Tab</code> ; iOS 9 double tap the <code>Home</code> button). While still holding the <code>Cmd</code> or <code>Alt</code> key, the user can keep tapping on <code>Tab</code> to quickly sift through currently open programs. Once the user lets go of all keys, the program that was selected will open. 
+</p>
+<p>It is good to note that this is a very efficient way to jump back and forth between two programs. The end goal is to switch between tasks, and the quicker and more effortless the process is, the better it is for the user. There are many different shortcuts, and other platform-specific ways to allow for further efficient manipulation that will be mentioned under the <a href="#OSElCapitan"> Platform-Specific Instances</a> section.   </p>
+<!-- <blockquote>
   <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
     here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
     reader to the platform-specific sections.</p>
 
   <p>Helpful subsections include:</p>
-</blockquote>
+</blockquote> -->
 
 <h4>Events</h4>
 
@@ -144,8 +150,9 @@ Although there are many ways to switch between tasks, most operating systems hav
   </div>
 </div>
 
+<div id="OSElCapitan">
 <h3>Platform-Specific Instances</h3>
-
+</div>
 <blockquote>
   <p>This is where things can get really interesting—platform-specific sections go here. Different versions of
     the same system are considered to be platforms in their own right (e.g., Windows 95 buttons vs. Windows 10
@@ -212,4 +219,11 @@ Although there are many ways to switch between tasks, most operating systems hav
 
 <h3>Credits &amp; References</h3>
 
-<blockquote>Provide references or links to any information, image, or media sources used.</blockquote>
+<blockquote>
+Image for OSX Task Launcher: https://blogs.vmware.com/teamfusion/2011/11/viewing-your-windows-programs-without-seeing-windows.html
+<br>
+Image for Windows Task Launcher: http://www.expertreviews.co.uk/software/operating-systems/1403610/how-to-switch-tasks-faster-in-windows-10
+<br>
+GIF for iOS 9 Task Launcher: https://www.youtube.com/watch?v=WBaAE7o5ia8
+
+</blockquote>
