@@ -3,7 +3,9 @@ title: String Input
 layout: component
 ---
 
-<blockquote>Every computer nowadays requires some form of text input from the user. This input is often accepted with a string input field.</blockquote>
+<blockquote>
+	Every computer nowadays requires some form of text input from the user. This input is often accepted with a string input field.
+</blockquote>
 
 <p class="lead">The string input field is used when the program requires the user to enter text information.</p>
 
@@ -16,9 +18,11 @@ layout: component
 		The most basic form of a string input field is a one-line rectangular box. When not selected, the box appears like an ordinary static rectangle (not very exciting at this point since it's not doing anything). A well-designed string input interface would signal the user that they can enter a value into the box by changing the cursor icon; typically, the cursor icon will change into an icon shaped like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside of the box, a blinking vertical bar (called a caret) would typically appear to signal the user that the text field is waiting for an input. 
 		<br>
 		<br>
-		<p class="text-center">
+		
+		<!-- <p class="text-center"> -->
+			Try typing something into the string input field below:
 			<input type="text" class="form-control" placeholder="String input">
-		</p>
+		<!-- </p> -->
 	</blockquote>
 	
 
@@ -32,28 +36,47 @@ layout: component
 	<blockquote></blockquote>
 
 	<h4>Component in Action</h4>
-	<blockquote></blockquote>
+	<blockquote>
+		String input fields ...
+	
 
-
-	<textarea rows="3"></textarea>
-	<br>
+		<p class="text-center">
+			<input textarea rows="3" class="form-control"></textarea>
+	<!-- <br>
 	For inputs that require more than one-line, a larger string input field can be used.
-	<br>
-	<span class="input-xlarge uneditable-input">Disabled string input field</span>
-	<br>
-	<br>
-	<input class="span3" type="email" required>
-	<br>
-	<br>
-	<input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
-	<br>
-	<br>
+	--> 	
+		</p>
+		<br>
+		<p class="text-center">
+			<span class="input-xlarge uneditable-input" >Disabled string input field</span>
+		</p>
+			
+		Some string input fields can signal the user that their inputs are invalid by having a red border outline around the input field. 
+		<p class="text-center">
+			<div class="form-group has-error">
+				<input class="span3 form-control" type="email" required>
+			</div>
+		</p>
+		<br>
+		There are also some string input fields that will be disabled unless the user performs a specific action first. For example, a string input field will be disabled if the user has to first select from a variety of choices. <br><br>
+		In the string input field below, the cursor will not change into an "I-beam pointer" since the user is not allowed to enter any texts.
+		<p class="text-center">
+			<input class="input-xlarge form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+		</p>
+	</blockquote>
 
 	</div>
 
 	<div class="col-sm-6">
 		<h3>Variants</h3>
-		<blockquote></blockquote>
+		<blockquote>
+			Even though the string input field is a common interface for entering user values, there are other similar ways that a user can enter their own inputs. 
+
+			<ul>
+  				<li><em>Menu items</em></li>
+
+  			</ul>
+		</blockquote>
 
 		<h3>Priority Metrics</h3>
 		<blockquote></blockquote>
@@ -61,12 +84,26 @@ layout: component
 		<h3>Key Characteristics</h3>
 		<blockquote></blockquote>
 
-		</div>
+		<h3>Feedback</h3>
+		<blockquote>
+			A well-designed string input field is one that shows that user when it is available to enter a value.
+		</blockquote>
+
+		
 
 	<h3>Platform-Specific Instances</h3>
 	<blockquote></blockquote>
+
+	</div>
 </div>
 
 
 <h3>Credits &amp; References</h3>
-<blockquote></blockquote>
+<blockquote>
+	The following websites have been used as resources in order to create this page.
+	<ul>
+		<li>
+			<a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/ControlsText.html">Apple Developer Site (Text Controls)</a>
+		</li>
+	</ul>
+</blockquote>
