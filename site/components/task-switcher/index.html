@@ -35,35 +35,27 @@ layout: component
 <h4>Events</h4>
 	<p> The most relevant task launcher event is 
 
-<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+	<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
 
-<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
-  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
-  within the button’s bounds.</p>
+	<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
+	  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
+	  within the button’s bounds.</p>
 
-<h4>State Diagram</h4>
+	<h4>State Diagram</h4>
+	<p> <img src="img/stateDiagram.png" style="width:90%; height:auto;" > </p> 
 
-
-			<p> <img src="img/stateDiagram.png" style="width:90%; height:auto;" > </p> 
-
-
-
-	<p> Note that only one task can be selected at a time, so when one task is <code>selected</code> all the others are not. A task must be selected in order fo it to be launched, which occurs on key release. However, a user can alwways interact with each task, and they are never <code>disabled</code> if the task launcher is open. Please see <a href="#pSpecific"> Platform-Specific Instances</a> for more states. </p>
+	<p> Note that only one task can be selected at a time, so when one task is <code>selected</code> all the others are not. A task must be selected in order fo it to be launched, which occurs on key release. However, if the task switcher is <code>active</code> on the screen, a user can always interact with each task, and they are never <code>disabled</code> if the task launcher is open. Please see <a href="#pSpecific"> Platform-Specific Instances</a> for more states. </p>
 
 <h4>Component in Action</h4>
 
-<blockquote>
-  <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
+	<p> Below is a video showing off the task switcher in OSX. The taskbar pops up, taking priority of the screen, and the user can navigate to the left or to the right, quit tasks, hide them, or quickly "alt/tab" back and forth between a pair of tasks. 
+	<br>
 
-  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
-</blockquote>
-
-<p class="text-center">
-  <button class="btn btn-default">Standard Bootstrap Button</button>
-  <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
-</p>
-
+	<!-- Youtube video -->
+	<div class="embed-responsive embed-responsive-16by9">
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hlIdz__YZN0"></iframe>
+	</div>
+	<!-- Youtube Video End -->
   </div>
 
   <div class="col-sm-6">
@@ -126,6 +118,10 @@ layout: component
 <div id="pSpecific">
 <h3>Platform-Specific Instances</h3>
 </div>
+
+<!-- REMINDER: ELABORATE ON STATES -->
+<!-- REMINDER: ELABORATE ON CUSTOM FEATURES IN VIDEO -->
+
 <blockquote>
   <p>This is where things can get really interesting—platform-specific sections go here. Different versions of
     the same system are considered to be platforms in their own right (e.g., Windows 95 buttons vs. Windows 10
