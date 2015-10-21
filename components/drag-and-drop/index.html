@@ -1,0 +1,278 @@
+---
+title: Button
+layout: component
+---
+
+<blockquote>Start your component pages with a quick description of the component, such as:</blockquote>
+
+<p class="lead">Quite possibly the single most common graphical user interface element, the push button triggers a
+  single action within an application.</p>
+
+<div class="row">
+  <div class="col-sm-6">
+
+    <h3>Typical Appearance</h3>
+
+    <blockquote>If a component is sufficiently widespread that it takes on a recognizable look across multiple platforms,
+      provide it here. If its appearance varies extremely widely, say so and direct the reader to platform-specific
+      instances.</blockquote>
+
+    <h3>Typical Behavior</h3>
+
+    <blockquote>
+      <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
+        here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
+        reader to the platform-specific sections.</p>
+
+      <p>Helpful subsections include:</p>
+    </blockquote>
+
+    <h4>Events</h4>
+
+    <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
+      highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+
+    <p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
+      triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
+      within the button’s bounds.</p>
+
+    <h4>State Diagram</h4>
+
+    <blockquote>
+      <p>A state diagram indicating the actions and states of a user interface component.
+
+    </p>
+
+      <p>This is most likely an image. Bonus props if you use SVG.</p>
+
+      <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
+        usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
+        however, may have more activities than the “public” events that can be reported by a component.</p>
+    </blockquote>
+
+    <p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
+      viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
+      it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
+      state means that a user <em>cannot</em> do so.</p>
+
+    <p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
+      implementations, but in general they are:</p>
+
+    <ul>
+      <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
+        change the button’s appearance. This provides a form of feedback that states that the button will respond if
+        additional activity is performed.</li>
+
+      <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
+        the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
+        from this state, in case the user changes his or her mind in mid-action.</li>
+    </ul>
+
+    <h4>Component in Action</h4>
+
+    <blockquote>
+      <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
+
+      <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
+    </blockquote>
+
+    <p class="text-center">
+      <button class="btn btn-default">Standard Bootstrap Button</button>
+      <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
+    </p>
+
+  </div>
+
+  <div class="col-sm-6">
+    <h3>Variants</h3>
+
+    <blockquote>There is almost never just one form of a user interface component. Use this section to address variations
+      on this theme. Some variations are sufficiently different that they are considered to be a different component
+      entirely, despite very similar behavior. Meanwile some variations are due to appearance only.</blockquote>
+
+    <ul>
+      <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
+        invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
+        different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
+
+      <li><em>Links</em> can be considered as a specialized button—they are invoked almost identically, and their action
+        is even more narrowly defined as moving the user to a different view or display. The distinction here is
+        definitely less sharp than the distinction between a menu item and a button. For links within a document, the
+        document might be viewed as a menu in itself, and thus links are “menu items” indicating what the user can view
+        next. Thus, in some ways, links are hybrids between buttons and menu items.</li>
+    </ul>
+
+    <h3>Priority Metrics</h3>
+
+    <blockquote>Talk about the five usability metrics in relation to this component. Not all components will have the same
+      metric priorities. For example:</blockquote>
+
+    <p>Because the button is such a fundamental part of virtually every user interface available today, it can be said that
+      all usability metrics are equally important for this component. Users who are seeing a button in a given platform for
+      the first time must not have any issues recognizing it and knowing what to do with it (learnability). The high
+      priority of learnability also implies that memorability is a given.</p>
+
+    <p>Users must also never experience undue delays with using a button (efficiency), particularly because using a button
+      almost always involves an instantaneous, immediate-result action. Users should almost never trigger a button by
+      mistake (errors)—especially buttons whose actions result in significant changes to data or the real world.</p>
+
+    <p>If any metric at all can be considered as a “low priority” for buttons, it would be satisfaction. The button is such
+      a utilitarian component that “fun” or “enjoyment” is hardly associated with its use. One exception to this
+      prioritization may be for buttons in applications whose primary metric is satisfaction (e.g., games, entertainment).
+      As a part of that overall system, making buttons “fun” may then become more important than in other situations.</p>
+
+    <h3>Key Characteristics</h3>
+
+    <blockquote>This section is for describing “what makes for a good <em>your component here</em>?”
+      Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
+      principles.</blockquote>
+
+    <h4>Feedback</h4>
+
+    <p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
+      never doubt whether:</p>
+
+    <ol>
+      <li>they did positively trigger a button (and thus its associated action)</li>
+      <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
+        the action that triggers the button</li>
+    </ol>
+  </div>
+</div>
+
+<h3>Platform-Specific Instances</h3>
+
+<blockquote>
+  <p>This is where things can get really interesting—platform-specific sections go here. Different versions of
+    the same system are considered to be platforms in their own right (e.g., Windows 95 buttons vs. Windows 10
+    buttons). Completely customized versions of a component (e.g., a unique-looking/-acting button made specifically
+    for a game) are also acceptable here.</p>
+
+  <p>The outline for platform-specific entries resembles the outline already described above, except with a focus
+    on how the platform-specific version is <em>different</em>. Thus, you will want some notes on appearance (i.e.,
+    more screenshots), behavior, variants, metrics, and characteristics. If some aspect is the same, then say so
+    explicitly so that there is no confusion.</p>
+
+  <p>Some platform-specific instances of certain user interface components will merit such a rich discussion that they
+    may require a sizable number of supporting assets. In that case, feel free to add subfolders to the main component
+    folder, named after the platform under examination.</p>
+
+  <p>This could well be the most distinctive part of the catalog—the sections above this generally appear in user
+    interface guidelines, albeit with a platform-specific focus. A key premise of the Paradixm project is to compare
+    user interface elements <em>across</em> platforms. Thus, feel free to be creative about presentation here. You
+    might want to display a visual gallery, for example, with links leading to individual pages for each covered
+    platform-specific user interface component.</p>
+</blockquote>
+
+<div class="row">
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Alto</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Amiga</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Material Design</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">watchOS</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Credits &amp; References</h3>
+
+<blockquote>Provide references or links to any information, image, or media sources used.</blockquote>
+
+
+
+
+<svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" height="70" width="148.00001" y="28.5" x="55.99999" fill="#ffaaaa"/>
+  <rect id="svg_11" height="73" width="276" y="419" x="215" fill="#aad4ff"/>
+  <rect id="svg_13" height="99" width="229.99999" y="130" x="242" fill="#aaaaff"/>
+  <rect id="svg_14" height="32" width="212" y="361" x="249" fill="#aaaaff"/>
+  <text transform="matrix(0.7772104740142822,0,0,0.7772104740142822,15.372477293014526,51.90995955467224) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_21" y="134.05464" x="441.48373" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Click &amp; Hold Mouse</text>
+  <text transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="105.95018" x="-65.59651" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_2">Object is "lifted" off the screen<tspan id="svg_143" y="125.95018" x="-65.59651">and displayed as a semi-transparent</tspan><tspan id="svg_144" y="145.95018" x="-65.59651">ghost image that is anchored to</tspan><tspan id="svg_145" y="165.95018" x="-65.59651">the mouse.</tspan></text>
+  <rect height="97.28261" width="230.99998" y="131.5" x="579.43355" fill="#aaaaff" id="svg_8"/>
+  <text transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="100.49794" x="464.72591" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_18">Ghost image is always<tspan y="120.49794" x="464.72591" id="svg_159">anchored to the cursor.</tspan></text>
+  <text id="svg_24" transform="matrix(0.7772104740142822,0,0,0.7772104740142822,15.372477293014526,51.90995955467224) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="427.41147" x="444.05705" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Mouse Released</text>
+  <text id="svg_25" transform="matrix(0.7772104740142822,0,0,0.7772104740142822,15.372477293014526,51.90995955467224) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="132.76799" x="872.5124" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Dragging (mouse still down)</text>
+  <rect id="svg_31" height="82.99999" width="229.99999" y="21" x="241" fill="#aaaaff"/>
+  <text id="svg_32" transform="matrix(0.7772104740142822,0,0,0.7772104740142822,15.372477293014526,51.90995955467224) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="-7.47716" x="433.76381" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Click &amp; Hold Mouse</text>
+  <text id="svg_33" transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="-62.29063" x="-71.82764" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Object does not "lift" off<tspan y="-42.29063" x="-71.82764" id="svg_160">the screen/is unaffected</tspan></text>
+  <text id="svg_39" transform="matrix(0.8779863077194501,0,0,0.8779863077194501,13.32279933940516,16.713640758508298) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="44.42176" x="133.46088" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">If object is not<tspan id="svg_145" y="71.00485" x="133.46088">draggable</tspan></text>
+  <text id="svg_42" transform="matrix(0.8779863077194501,0,0,0.8779863077194501,13.32279933940516,16.713640758508298) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="483.49467" x="382.89529" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Dropped in same location</text>
+  <rect id="svg_62" height="70" width="148.00001" y="147.5" x="56.99999" fill="#baffa5"/>
+  <text id="svg_63" transform="matrix(0.8779863077194501,0,0,0.8779863077194501,13.32279933940516,16.713640758508298) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="177.11177" x="132.32191" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">If object is<tspan id="svg_146" y="204.83383" x="132.32191">draggable</tspan></text>
+  <rect height="32" width="212" y="362" x="608" fill="#aaaaff" id="svg_64"/>
+  <text transform="matrix(0.7772104740142822,0,0,0.7772104740142822,15.372477293014526,51.90995955467224) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="429.34145" x="905.96538" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_65">Mouse Released</text>
+  <rect height="73" width="276" y="426" x="696.5" fill="#aad4ff" id="svg_66"/>
+  <text transform="matrix(0.8779863077194501,0,0,0.8779863077194501,13.32279933940516,16.713640758508298) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="494.88436" x="934.72622" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_67">Dropped in different location</text>
+  <text transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="559.26572" x="675.13044" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_68">Ghost object is "dropped" onto cursor's<tspan y="579.26572" x="675.13044" id="svg_161">location and displayed as a normal file.</tspan></text>
+  <rect height="103" width="286" y="505" x="493.00002" fill="#aad4ff" id="svg_69"/>
+  <text transform="matrix(0.8779863077194501,0,0,0.8779863077194501,13.32279933940516,16.713640758508298) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="582.58505" x="709.77966" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_70">Dropped in undroppable location</text>
+  <text transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="682.33077" x="362.79447" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_71">Ghost object is animated back on a<tspan y="702.33077" x="362.79447" id="svg_162">linear path to its original location.</tspan><tspan y="722.33077" x="362.79447" id="svg_163">Undroppable locations include the top</tspan><tspan y="742.33077" x="362.79447" id="svg_164">bar or other areas that do not hold files.</tspan></text>
+  <rect id="svg_79" height="73" width="276" y="253" x="402" fill="#aad4ff"/>
+  <text id="svg_80" transform="matrix(0.8779863077194501,0,0,0.8779863077194501,13.32279933940516,16.713640758508298) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="296.70361" x="597.02164" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Escape Key Pressed</text>
+  <text id="svg_81" transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="294.4422" x="214.80487" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Ghost object is animated back on a<tspan y="314.4422" x="214.80487" id="svg_165">linear path to its original location</tspan></text>
+  <line id="svg_84" y2="64" x2="241.95308" y1="64" x1="206.5" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none"/>
+  <line id="svg_85" y2="182.5" x2="241.9759" y1="182.5" x1="204.5" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none"/>
+  <line y2="182" x2="580.4759" y1="182" x1="470" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" id="svg_88"/>
+  <line transform="rotate(167.7789764404297 657.1572875976564,242.0455017089844) " y2="242.04551" x2="709.61856" y1="242.04551" x1="604.69606" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" id="svg_89"/>
+  <line y2="295.25" x2="426.2259" y1="295.25" x1="293.25" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" id="svg_90" transform="rotate(90 359.7379455566406,295.25000000000006) "/>
+  <line y2="295.00003" x2="779.47588" y1="295.00003" x1="644.99997" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" transform="rotate(90 712.2379150390626,295.0000305175782) " id="svg_91"/>
+  <line y2="425.73007" x2="714.24021" y1="425.73007" x1="485.78072" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" transform="rotate(165.26693725585938 600.0104980468751,425.7300720214844) " id="svg_95"/>
+  <line y2="406.50006" x2="373.97586" y1="406.50006" x1="345.49994" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" transform="rotate(90 359.7379150390625,406.5000610351563) " id="svg_97"/>
+  <line y2="411.64499" x2="740.81398" y1="411.64499" x1="704.18938" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" transform="rotate(52.46544647216797 722.501708984375,411.6449890136719) " id="svg_100"/>
+  <line y2="449.93122" x2="743.24387" y1="449.93122" x1="602.54715" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" transform="rotate(126.17933654785156 672.8955078125,449.9311828613282) " id="svg_101"/>
+  <ellipse ry="4" rx="4" cy="396.5" cx="712" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#000000" fill="#000000" id="svg_102"/>
+  <ellipse ry="4" rx="4" cy="64.5" cx="204" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#000000" fill="#000000" id="svg_104"/>
+  <ellipse ry="4" rx="4" cy="181.5" cx="475" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#000000" fill="#000000" id="svg_108"/>
+  <ellipse ry="4" rx="4" cy="228.5" cx="712" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#000000" fill="#000000" id="svg_109"/>
+  <ellipse ry="4" rx="4" cy="230.5" cx="359" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#000000" fill="#000000" id="svg_110"/>
+  <ellipse ry="4" rx="4" cy="394.5" cx="360" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#000000" fill="#000000" id="svg_115"/>
+  <ellipse ry="4" rx="4" cy="183" cx="205" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#000000" fill="#000000" id="svg_116"/>
+  <line transform="rotate(12.412919998168945 410.15734863281284,243.04550170898435) " y2="243.04551" x2="462.61856" y1="243.04551" x1="357.69606" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" id="svg_117"/>
+  <ellipse ry="11.5" rx="11.5" cy="513.5" cx="359.5" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="#ffffff" id="svg_123"/>
+  <line y2="496.00003" x2="364.97589" y1="496.00003" x1="354.49997" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" transform="rotate(90 359.73791503906256,496.0000305175781) " id="svg_126"/>
+  <ellipse ry="11.5" rx="11.5" cy="347.5" cx="532.5" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="#ffffff" id="svg_127"/>
+  <line y2="330.00003" x2="537.97589" y1="330.00003" x1="527.49997" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" transform="rotate(90 532.7379150390626,330.0000305175782) " id="svg_128"/>
+  <ellipse ry="11.5" rx="11.5" cy="521" cx="834.5" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="#ffffff" id="svg_129"/>
+  <line y2="503.50003" x2="839.97589" y1="503.50003" x1="829.49997" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" transform="rotate(90 834.7379150390626,503.5000610351563) " id="svg_130"/>
+  <ellipse ry="11.5" rx="11.5" cy="629" cx="634.5" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="#ffffff" id="svg_131"/>
+  <line y2="611.50003" x2="639.97589" y1="611.50003" x1="629.49997" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" transform="rotate(90 634.7379150390625,611.5000610351564) " id="svg_132"/>
+  <ellipse ry="11.5" rx="11.5" cy="65" cx="494" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="#ffffff" id="svg_133"/>
+  <line y2="66.00003" x2="481.47589" y1="66.00003" x1="470.99997" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" stroke="#000000" fill="none" id="svg_134"/>
+  <text transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="553.03458" x="-84.28994" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_135">Ghost object is animated back on a<tspan id="svg_166" y="573.03458" x="-84.28994">linear path to its original location.</tspan></text>
+ </g>
+</svg>
