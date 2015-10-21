@@ -2,20 +2,36 @@
 title: Command Loop
 layout: component
 ---
+<style type="text/css">
+  text.state-text{
+    font-size:24px;
+  }
+</style>
 
-<blockquote>Start your component pages with a quick description of the component, such as:</blockquote>
-
-<p class="lead">Quite possibly the single most common graphical user interface element, the push button triggers a
-  single action within an application.</p>
+<p class="lead">One of the oldest and most iconic ways of interacting with a modern computer, the Command Loop is a way to issue commands, via plain text, directly to the operating system.</p>
 
 <div class="row">
   <div class="col-sm-6">
 
 <h3>Typical Appearance</h3>
 
-<blockquote>If a component is sufficiently widespread that it takes on a recognizable look across multiple platforms,
-  provide it here. If its appearance varies extremely widely, say so and direct the reader to platform-specific
-  instances.</blockquote>
+<p>Though the aesthetics of the command loop vary slightly across many different platforms, almost all command loops are some variation on this:</p>
+
+<svg style="height:160px; width:600px">
+  <text x="0" y="30" class="state-text">&gt;command param1 param2</text>
+  <text x="0" y="60" class="state-text">output</text>
+  <text x="0" y="90" class="state-text">&gt;command2 param1 param2</text>
+  <text x="0" y="120" class="state-text">output2</text>
+  <text x="0" y="150" class="state-text">&gt;</text>
+  <text x="15" y="150" class="cursor state-text">_</text>
+</svg>
+
+<p>Command loops usually read top-to-bottom and consist of a history of previous commands and outputs, followed by a <strong>prompt</strong> for the next command. Command loops often also display the <strong>current directory</strong> such as this example:</p>
+
+<svg style="height:25px; width:600px;">
+  <text x="0" y="20" class="state-text">C:\Current\Directory\&gt;</text>
+  <text x="240" y="20" class="cursor state-text">_</text>
+</svg>
 
 <h3>Typical Behavior</h3>
 
@@ -37,6 +53,18 @@ layout: component
   within the button’s bounds.</p>
 
 <h4>State Diagram</h4>
+
+<h4>Prompt</h4>
+<svg style="height:25px;">
+  <text x="0" y="20" class="state-text">&gt;</text>
+  <text x="15" y="20" class="cursor state-text">_</text>
+</svg>
+
+<h4>Execution</h4>
+<svg style="height:50px;">
+  <text x="0" y="20" class="state-text">&gt;command param1 param2</text>
+  <text x="0" y="40" class="cursor state-text">_</text>
+</svg>
 
 <blockquote>
   <p>A state diagram indicating the actions and states of a user interface component.</p>
@@ -207,3 +235,18 @@ layout: component
 <h3>Credits &amp; References</h3>
 
 <blockquote>Provide references or links to any information, image, or media sources used.</blockquote>
+
+<script type="text/javascript">
+function blinkCursor(){
+  var cursors = document.getElementsByClassName("cursor");
+  for(var i in cursors){
+    var inner = cursors[i].innerHTML;
+    if(inner == "_")
+      cursors[i].innerHTML = "";
+    else
+      cursors[i].innerHTML = "_";
+  }
+  setTimeout(blinkCursor, 500);
+}
+blinkCursor();
+</script
