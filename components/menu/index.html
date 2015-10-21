@@ -2,5 +2,126 @@
 title: Menu
 layout: component
 ---
+<blockquote>Start your component pages with a quick description of the component, such as:</blockquote>
 
-HTML code here.
+<p class="lead">Menus are probably the second most used components on a given graphical interface after buttons.</p>
+
+<div class="row">
+          <div class="col-sm-12">
+
+        <h3>Typical Appearance</h3>
+
+        <blockquote>
+            <blockquote>Menus have been the go-to method for displaying (and hiding) lists of options for decades.</blockquote>
+            [Place a photo of menus here.]
+        </blockquote>
+
+        <h3>Typical Behavior</h3>
+
+        <blockquote>
+          <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
+            here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
+            reader to the platform-specific sections.</p>
+
+          <p>Helpful subsections include:</p>
+        </blockquote>
+
+        <h4>Events</h4>
+
+        <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
+          highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+
+        
+
+        <h4>State Diagram</h4>
+
+        <blockquote>
+          <p>A state diagram indicating the actions and states of a user interface component.</p>
+
+          <p>This is most likely an image. Bonus props if you use SVG.</p>
+
+          <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
+            usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
+            however, may have more activities than the “public” events that can be reported by a component.</p>
+        </blockquote>
+
+        <p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
+          viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
+          it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
+          state means that a user <em>cannot</em> do so.</p>
+
+        <p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
+          implementations, but in general they are:</p>
+
+        <ul>
+          <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
+            change the button’s appearance. This provides a form of feedback that states that the button will respond if
+            additional activity is performed.</li>
+
+          <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
+            the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
+            from this state, in case the user changes his or her mind in mid-action.</li>
+        </ul>
+
+        <h4>Component in Action</h4>
+
+        <blockquote>
+          <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
+
+          <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
+        </blockquote>
+
+        <p class="text-center">
+          <button class="btn btn-default">Standard Bootstrap Button</button>
+          <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
+        </p>
+
+          </div>
+
+
+
+          <div class="col-sm-12">
+        <h3>Variants</h3>
+
+        <ul>
+          <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
+            invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
+            different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
+
+          <li><em>Italicized words!</em> (and some more words)</li>
+        </ul>
+
+        <h3>Priority Metrics</h3>
+
+        <blockquote>Talk about the five usability metrics in relation to this component. Not all components will have the same
+          metric priorities. For example:</blockquote>
+
+        <p>Paragraph 1</p>
+
+        <p>Paragraph 2</p>
+
+
+        <h3>Key Characteristics</h3>
+
+        <blockquote>This section is for describing “what makes for a good <em>your component here</em>?”
+          Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
+          principles.</blockquote>
+
+        <h4>Feedback</h4>
+
+        <p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
+          never doubt whether:</p>
+
+        <ol>
+          <li>they did positively trigger a button (and thus its associated action)</li>
+          <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
+            the action that triggers the button</li>
+        </ol>
+          </div>
+</div>
+
+<h3>Platform-Specific Instances</h3>
+
+<blockquote>
+  [place more information and images here]
+</blockquote>
