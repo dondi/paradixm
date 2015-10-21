@@ -10,36 +10,30 @@ layout: component
   <div class="col-sm-6">
 
 <h3>Typical Appearance</h3>
-<p>Although there are many ways to switch between tasks, most operating systems have a similar feature that portrays all currently open programs (or their respective icons) in thumbnails across the screen. They typically prioritize the screen, displaying themselves in front of any and all open windows. 
+	<p>Although there are many ways to switch between tasks, most operating systems have a similar feature that portrays all currently open programs (or their respective icons) in thumbnails across the screen. They typically prioritize the screen, displaying themselves in front of any and all open windows.
 
-<br><br>Windows 10<br>
-<img src="img/windowstask.png" style="width:100%; height:auto;" >
-<br><br>OSX El Capitan<br>
-<img src="img/osxtask.png" style="width:100%; height:auto;" >
-<br><br>iOS 9  <br>
-<iframe src="http://i.giflike.com/embed/zHXwTLz" width="236.6" height="420" scrolling="no"></iframe><!-- Commented out windows phone task switcher for now, once css will be working with w/10 for proper formatting -->
-<!-- <img src="windowsPhoneTaskSwitcher.png" style="width:44%; height:auto;" > -->
-</p>
+	<br><br>Windows 10<br>
+	<img src="img/windowstask.png" style="width:100%; height:auto;" >
+	<br><br>OSX El Capitan<br>
+	<img src="img/osxtask.png" style="width:100%; height:auto;" >
+	<br><br>iOS 9  <br>
+	<iframe src="http://i.giflike.com/embed/zHXwTLz" width="236.6" height="420" scrolling="no"></iframe><!-- Commented out windows phone task switcher for now, once css will be working with w/10 for proper formatting -->
+	<!-- <img src="windowsPhoneTaskSwitcher.png" style="width:44%; height:auto;" > -->
+	</p>
 
 
 
 <h3>Typical Behavior</h3>
-<p>
-First, it is important to note that there is a long list of ways a user can switch between tasks. One way would be to use the mouse, locate the task launcher, hover over the task one wants to open, and click. Information on the task launcher can be found <a href=""> here</a>.  
-</p>
-<p>
-Another more efficient way, which is seen on most Operating Systems, including mobile, is to press and hold a set of keys (i.e. Windows: <code>Alt + Tab</code> ; OSX: <code>Cmd + Tab</code> ; iOS 9 double tap the <code>Home</code> button). While still holding the <code>Cmd</code> or <code>Alt</code> key, the user can keep tapping on <code>Tab</code> to quickly sift through currently open programs. Once the user lets go of all keys, the program that was selected will open. 
-</p>
-<p>It is good to note that this is a very efficient way to jump back and forth between two programs. The end goal is to switch between tasks, and the quicker and more effortless the process is, the better it is for the user. There are many different shortcuts, and other platform-specific ways to allow for further efficient manipulation that will be mentioned under the <a href="#OSElCapitan"> Platform-Specific Instances</a> section.   </p>
-<!-- <blockquote>
-  <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
-    here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
-    reader to the platform-specific sections.</p>
+	<p>
+	First, it is important to note that there is a long list of ways a user can switch between tasks. One way would be to use the mouse, locate the task launcher, hover over the task one wants to open, and click. Information on the task launcher can be found <a href=“site.baseurl components/button>here</a>.</p>
 
-  <p>Helpful subsections include:</p>
-</blockquote> -->
+	<p>
+	Another more efficient way, which is seen on most Operating Systems, including mobile, is to press and hold a set of keys (i.e. Windows: <code>Alt + Tab</code> ; OSX: <code>Cmd + Tab</code> ; iOS 9 double tap the <code>Home</code> button). While still holding the <code>Cmd</code> or <code>Alt</code> key, the user can keep tapping on <code>Tab</code> to quickly sift through currently open programs. Once the user lets go of all keys, the program that was selected will open. </p>
+
+	<p>It is good to note that this is a very efficient way to jump back and forth between two programs. The end goal is to switch between tasks, and the quicker and more effortless the process is, the better it is for the user. There are many different shortcuts, and other platform-specific ways to allow for further efficient manipulation (i.e. hiding an app) that will be mentioned under the <a href="#pSpecific"> Platform-Specific Instances</a> section.</p>
 
 <h4>Events</h4>
+	<p> The most relevant task launcher event is 
 
 <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
   highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
@@ -50,33 +44,12 @@ Another more efficient way, which is seen on most Operating Systems, including m
 
 <h4>State Diagram</h4>
 
-<blockquote>
-  <p>A state diagram indicating the actions and states of a user interface component.</p>
 
-  <p>This is most likely an image. Bonus props if you use SVG.</p>
+			<p> <img src="img/stateDiagram.png" style="width:90%; height:auto;" > </p> 
 
-  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
-    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
-    however, may have more activities than the “public” events that can be reported by a component.</p>
-</blockquote>
 
-<p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
-  viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
-  it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
-  state means that a user <em>cannot</em> do so.</p>
 
-<p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
-  implementations, but in general they are:</p>
-
-<ul>
-  <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
-    change the button’s appearance. This provides a form of feedback that states that the button will respond if
-    additional activity is performed.</li>
-
-  <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
-    the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
-    from this state, in case the user changes his or her mind in mid-action.</li>
-</ul>
+	<p> Note that only one task can be selected at a time, so when one task is <code>selected</code> all the others are not. A task must be selected in order fo it to be launched, which occurs on key release. However, a user can alwways interact with each task, and they are never <code>disabled</code> if the task launcher is open. Please see <a href="#pSpecific"> Platform-Specific Instances</a> for more states. </p>
 
 <h4>Component in Action</h4>
 
@@ -150,7 +123,7 @@ Another more efficient way, which is seen on most Operating Systems, including m
   </div>
 </div>
 
-<div id="OSElCapitan">
+<div id="pSpecific">
 <h3>Platform-Specific Instances</h3>
 </div>
 <blockquote>
@@ -225,5 +198,6 @@ Image for OSX Task Launcher: https://blogs.vmware.com/teamfusion/2011/11/viewing
 Image for Windows Task Launcher: http://www.expertreviews.co.uk/software/operating-systems/1403610/how-to-switch-tasks-faster-in-windows-10
 <br>
 GIF for iOS 9 Task Launcher: https://www.youtube.com/watch?v=WBaAE7o5ia8
-
+<br>
+task switching source osx: http://osxdaily.com/2009/11/17/secrets-of-the-command-tab-mac-application-switcher/
 </blockquote>
