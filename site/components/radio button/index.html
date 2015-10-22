@@ -4,41 +4,47 @@ layout: component
 --
 
 <h2>Radio Button</h2>
-<p class="lead">A type of button, typically presented with other radio buttons to allow users to decide exclusively on one choice from a set of related and predetermined options.</p>
+<p class="lead">A type of button, typically presented with other radio buttons to allow users to toggle exclusively on one option from a set of related and predetermined options.</p>
 
 <div class="row">
   <div class="col-sm-6">
 
 <h3>Typical Appearance</h3>
 
-<p>Radio buttons are usually circular in appearance and are accompanied to the right with a text label describing the given option. When inactive, the circles are not colored in, giving it an "empty" look to suggest that it is not currently active. 
-When active, a dot concentric to the circle or an entirely different color to the background "fills" the circle, indicating that it is currently chosen.  </p>
+	<p>Radio buttons are usually circular in appearance and are accompanied to the right with a text label describing the given option. They are often accompanied with a series of 
+	other radio buttons that have some answer to the general question of choice given to the user (ex: What is your favorite color? with the radio buttons being an assortment of different colors). 
+	When inactive, the circles are not colored in, giving it an "empty" look to suggest that it is not currently active. 
+	When active, a dot concentric to the circle or an entirely different color to the background "fills" the circle, indicating that it is currently chosen.  </p>
 
 <h3>Typical Behavior</h3>
+	<p>Just like with a general button, a radio button's behavior is solely dependent on whether the user has pressed/toggled it or not. This is usually done via the pointer/cursor but can also be done with keyboard inputs.</p>
+	<p>The active/inactive state of a radio button is dependent on the active/inactive state of the other related radio buttons. The active state is exclusive to one radio button at a time (i.e. two radio buttons cannot be active simultaneously).</p>
 
-<blockquote>
-  <p>Lorem ipsum...</p>
+	<h4>Events</h4>
+		<ul>
+			<li>Hover - most radio buttons some radio buttons </li>
+			<li>Click</li>
+		</ul>
 
-</blockquote>
+	<h4>State Diagram</h4>
+		<ul>
+			<li>Inactive - the initial state. When users first come to a page with a set of radio buttons, either none of them are active or typically the first one is active by default.
+			This is relative to the situation and purpose of the choice n  </li>
+			<li>Hover</li>
+			<li>Click</li>
+			<li>Active</li>
+		</ul>
 
-<h4>Events</h4>
+	<h4>Component in Action</h4>
+		<p class="text-center">
+			<img src="https://camo.githubusercontent.com/305295727cfebcbc2748aa65f5e70fe88f3f2d4e/687474703a2f2f692e696d6775722e636f6d2f704b38323673782e676966" alt="Radio button in action">
+		</p>
+		<p>Pictured above is a stylized depiction of a user picking between three radio buttons in a constant loop between inactive, click and active.</p>
 
-<p>Lorem ipsum...</p>
-
-<h4>State Diagram</h4>
-
-<p>Lorem ipsum...</p>
-
-
-<h4>Component in Action</h4>
-
-  <p>Lorem ipsum...</p>
-
-
-<p class="text-center">
-  <button class="btn btn-default">Standard Bootstrap Button</button>
-  <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
-</p>
+		<p class="text-center">
+  			<button class="btn btn-default">Standard Bootstrap Button</button>
+  			<button class="btn btn-default disabled">Disabled Bootstrap Button</button>
+		</p>
 
   </div>
 
@@ -111,5 +117,6 @@ When active, a dot concentric to the circle or an entirely different color to th
 <h3>Credits &amp; References</h3>
 
 <ul>
-	<li>Lorem ipsum...</li>
+	<li>Page template: <a href="http://dondi.github.io/paradixm/components/button">Paradixm Button Template</a>
+	<li>Radio button GIF: <a href="https://github.com/InvexGames/MaterialUI/wiki/RadioGroup-and-Radio-Buttons">Invex Games</a></li>
 </ul>
