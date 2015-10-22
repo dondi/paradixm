@@ -4,7 +4,7 @@ layout: component
 ---
 <style type="text/css">
   text.state-text{
-    font-size:24px;
+    font-size:16px;
   }
 </style>
 
@@ -13,99 +13,89 @@ layout: component
 <div class="row">
   <div class="col-sm-6">
 
-<h3>Typical Appearance</h3>
+    <h3>Typical Appearance</h3>
 
-<p>Though the aesthetics of the command loop vary slightly across many different platforms, almost all command loops are some variation on this:</p>
+    <p>Though the aesthetics of the command loop vary slightly across many different platforms, almost all command loops are some variation on this:</p>
 
-<svg style="height:160px; width:600px">
-  <text x="0" y="30" class="state-text">&gt;command param1 param2</text>
-  <text x="0" y="60" class="state-text">output</text>
-  <text x="0" y="90" class="state-text">&gt;command2 param1 param2</text>
-  <text x="0" y="120" class="state-text">output2</text>
-  <text x="0" y="150" class="state-text">&gt;</text>
-  <text x="15" y="150" class="cursor state-text">_</text>
-</svg>
+    <svg style="height:160px; width:600px">
+      <text x="0" y="30" class="state-text">&gt;command param1 param2</text>
+      <text x="0" y="60" class="state-text">output</text>
+      <text x="0" y="90" class="state-text">&gt;command2 param1 param2</text>
+      <text x="0" y="120" class="state-text">output2</text>
+      <text x="0" y="150" class="state-text">&gt;</text>
+      <text x="15" y="150" class="cursor state-text">_</text>
+    </svg>
 
-<p>Command loops usually read top-to-bottom and consist of a history of previous commands and outputs, followed by a <strong>prompt</strong> for the next command. Command loops often also display the <strong>current directory</strong> such as this example:</p>
+    <p>Command loops usually read top-to-bottom and consist of a history of previous commands and outputs, followed by a <strong>prompt</strong> for the next command. Command loops often also display the <strong>current directory</strong> such as this example:</p>
 
-<svg style="height:25px; width:600px;">
-  <text x="0" y="20" class="state-text">C:\Current\Directory\&gt;</text>
-  <text x="240" y="20" class="cursor state-text">_</text>
-</svg>
+    <svg style="height:25px; width:600px;">
+      <text x="0" y="20" class="state-text">C:\Current\Directory\&gt;</text>
+      <text x="160" y="20" class="cursor state-text">_</text>
+    </svg>
 
-<h3>Typical Behavior</h3>
+    <h3>Typical Behavior</h3>
 
-<blockquote>
-  <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
-    here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
-    reader to the platform-specific sections.</p>
+    <p>A command loop is used to issue commands directly to the operating system. As such, the basic behavior of a command loop varies little across platforms. The command loop begins with the <strong>prompt</strong>. The <strong>prompt</strong> allows the user to type in and enter the command they wish to execute with any parameters they wish. The command loop then <strong>executes</strong> the command, and upon completion it returns to the <strong>prompt</strong>. Command loops often have the concept of a <strong>current directory</strong>, which is the directory within the computer's file system that the command loop is "in". </p>
 
-  <p>Helpful subsections include:</p>
-</blockquote>
+    <h4>Events</h4>
 
-<h4>Events</h4>
+    <h4>States</h4>
 
-<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+    <h4>Prompt</h4>
+    <svg style="height:25px;">
+      <text x="0" y="20" class="state-text">&gt;</text>
+      <text x="15" y="20" class="cursor state-text">_</text>
+    </svg>
 
-<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
-  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
-  within the button’s bounds.</p>
+    <h4>Execution</h4>
+    <svg style="height:50px;">
+      <text x="0" y="20" class="state-text">&gt;command param1 param2</text>
+      <text x="0" y="40" class="cursor state-text">_</text>
+    </svg>
 
-<h4>State Diagram</h4>
+    <h4>State Diagram</h4>
 
-<h4>Prompt</h4>
-<svg style="height:25px;">
-  <text x="0" y="20" class="state-text">&gt;</text>
-  <text x="15" y="20" class="cursor state-text">_</text>
-</svg>
 
-<h4>Execution</h4>
-<svg style="height:50px;">
-  <text x="0" y="20" class="state-text">&gt;command param1 param2</text>
-  <text x="0" y="40" class="cursor state-text">_</text>
-</svg>
 
-<blockquote>
-  <p>A state diagram indicating the actions and states of a user interface component.</p>
+    <blockquote>
+      <p>A state diagram indicating the actions and states of a user interface component.</p>
 
-  <p>This is most likely an image. Bonus props if you use SVG.</p>
+      <p>This is most likely an image. Bonus props if you use SVG.</p>
 
-  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
-    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
-    however, may have more activities than the “public” events that can be reported by a component.</p>
-</blockquote>
+      <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
+        usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
+        however, may have more activities than the “public” events that can be reported by a component.</p>
+    </blockquote>
 
-<p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
-  viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
-  it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
-  state means that a user <em>cannot</em> do so.</p>
+    <p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
+      viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
+      it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
+      state means that a user <em>cannot</em> do so.</p>
 
-<p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
-  implementations, but in general they are:</p>
+    <p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
+      implementations, but in general they are:</p>
 
-<ul>
-  <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
-    change the button’s appearance. This provides a form of feedback that states that the button will respond if
-    additional activity is performed.</li>
+    <ul>
+      <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
+        change the button’s appearance. This provides a form of feedback that states that the button will respond if
+        additional activity is performed.</li>
 
-  <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
-    the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
-    from this state, in case the user changes his or her mind in mid-action.</li>
-</ul>
+      <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
+        the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
+        from this state, in case the user changes his or her mind in mid-action.</li>
+    </ul>
 
-<h4>Component in Action</h4>
+    <h4>Component in Action</h4>
 
-<blockquote>
-  <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
+    <blockquote>
+      <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
 
-  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
-</blockquote>
+      <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
+    </blockquote>
 
-<p class="text-center">
-  <button class="btn btn-default">Standard Bootstrap Button</button>
-  <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
-</p>
+    <video src="demo.mp4" autoplay="autoplay" controls="controls" loop="loop" style="width:500px">
+      Your browser doesn't support HTML5 video
+    </video>
 
   </div>
 
