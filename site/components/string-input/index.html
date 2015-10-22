@@ -22,6 +22,8 @@ layout: component
 		<!-- <p class="text-center"> -->
 			Try typing something into the string input field below:
 			<input type="text" class="form-control" placeholder="String input">
+			
+
 		<!-- </p> -->
 	</blockquote>
 	
@@ -30,22 +32,28 @@ layout: component
 	<blockquote></blockquote>
 
 	<h4>Events</h4>
-	<blockquote></blockquote>
+	<blockquote>
+		The border of string input fields typically glow blue when they are enabled (i.e, when the user clicks on it). Once enabled, the user can easily type whatever they wish into the field. While the user is typing, the caret remains visible to show the user where exactly they are inserting a key.
+		
+		<p class="text-center">
+			<img src="gifs/hello_world.gif" width=105%>
+		</p>
+
+		The user can also highlight the text values they entered inside the string input field. Doing this allows the user to easily/quickly replace all or some of the text they entered.
+
+	</blockquote>
 
 	<h4>State Diagram</h4>
 	<blockquote></blockquote>
 
 	<h4>Component in Action</h4>
 	<blockquote>
-		String input fields ...
-	
-
-		<p class="text-center">
-			<input textarea rows="3" class="form-control"></textarea>
+		
 	<!-- <br>
 	For inputs that require more than one-line, a larger string input field can be used.
 	--> 	
-		</p>
+		<br>
+		<textarea rows="3" class="form-control"></textarea>
 		<br>
 		<p class="text-center">
 			<span class="input-xlarge uneditable-input" >Disabled string input field</span>
@@ -53,15 +61,22 @@ layout: component
 			
 		Some string input fields can signal the user that their inputs are invalid by having a red border outline around the input field. 
 		<p class="text-center">
-			<div class="form-group has-error">
-				<input class="span3 form-control" type="email" required>
-			</div>
+			<input class="span3" type="email" required>
 		</p>
 		<br>
 		There are also some string input fields that will be disabled unless the user performs a specific action first. For example, a string input field will be disabled if the user has to first select from a variety of choices. <br><br>
-		In the string input field below, the cursor will not change into an "I-beam pointer" since the user is not allowed to enter any texts.
+		In the string input field below, the cursor will not change into an "I-beam pointer" since the user is not allowed to enter any texts. The field has also been greyed out (instead of white in color) to further show the user that they cannot use the text field. In supported browsers, such as Firefox or Google Chrome, when a cursor hovers above the text field, a "prohibition sign" will appear below the cursor to make it even clearer that the field is disabled.
 		<p class="text-center">
 			<input class="input-xlarge form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+		</p>
+		<br>
+		Certain string input fields require the user to type specific text values. The text fields shown below require the user to enter the same text values in box text fields. Another aspect to note in the case below: some text values can be hidden from the user. Instead of actual alpha-numeric text values, they can be visually replaced by a symbol (in this case, black dots) in order to hide the password the user enters.
+		<p class="text-center">
+			<img src="gifs/password.gif">
+		</p>
+		Only when the user enters an acceptable argument can the textbox change color into something more inviting.
+		<p class="text-center">
+			<img src="gifs/password_success.gif">
 		</p>
 	</blockquote>
 
