@@ -51,12 +51,13 @@ layout: component
 		<p> Below is a video showing off the task switcher in OSX. The taskbar pops up, taking priority of the screen, and the user can navigate to the left or to the right, quit tasks, hide them, or quickly "alt/tab" back and forth between a pair of tasks. 
 		<br>
 
-		<!-- Youtube video -->
-		<div class="embed-responsive embed-responsive-16by9">
-		  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hlIdz__YZN0"></iframe>
+		<div class="panel panel-default">
+  			<div class="panel-body">
+				<div class="embed-responsive embed-responsive-16by9">
+		  			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hlIdz__YZN0"></iframe>
+				</div>
+			</div>  			
 		</div>
-		<!-- Youtube Video End -->
-  
   </div>
 
   <div class="col-sm-6">
@@ -114,8 +115,38 @@ layout: component
       </div>
       
       <div class="panel-body">
+      	<p> There are three main ways a user can use task switching in OSX. </p>
+		<strong>Standard Task Switching</strong>
+      	<p>The user presses and holds the <code>CMD</code> button, and taps on <code> Tab</code>. The task switcher pops up, taking screen priority, showing all currently open apps with the current app being highlighted: </p>
 
-     
+		<img src="img/taskSwitch1.png" style="width:100%; height:auto;">
+
+      	<p><em>Note that the app that is highlighted is the only one that has text under it, and has a light grey box that encompasses the icon</em> </p>
+      	<p>The user now has multiple options and can
+	      	<ul>
+	      	<li>Release the keys to switch to the currently open app.</li>
+	      	<li>Cycle through the currently open apps:</li>
+				<ul>
+					<li> to the right by using either <code>Tab</code> or the <code>Right Arrow</code> key.</li>
+					<li> to the left by using either <code>Tab + Shift</code> or the <code>Left Arrow</code> key or the <code>`</code> key.</li>
+				</ul>
+			<li>Enter <i> Expose Mode </i> by hitting either the <code>Up</code> or <code>Down</code> arrow key. </li>
+			<li>Hide the application by hitting the <code>H</code> key.</li>
+			<li>Quit the application by hitting the <code>Q</code> key. </li>
+			</ul>
+			<p> For the sake of completeness, if the user decided to cycle right, the new state would be</p>
+			<img src="img/taskSwitch2.png" style="width:100%; height:auto;">
+     	</p>
+
+     	<p>
+     		<strong>Mission Control Task Switching</strong>
+     		<p>The user either presses <code>F3</code> or enables swiping gestures (ie four finger swipe up across the trackpad) and launches <em> Mission Control </em> and is greeted with the following view: </p>
+				<img src="img/taskSwitch3.png" style="width:100%; height:auto;">
+
+
+		</p>
+
+
       </div>
 
     </div>
