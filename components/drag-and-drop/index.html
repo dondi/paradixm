@@ -8,42 +8,33 @@ layout: component
 
 <style type="text/css">
    body { background: white; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
-
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-}
-.page-container {
-  .page-bg {
-    padding: 15px !important;
-  }
-}
 </style>
 
 <p class="lead">
-The drag-and-drop feature allows the user to interactively move a file from one location to another.</p>
+The drag-and-drop feature allows the user to interactively move a file or image. Common results of dragging and dropping include <mark>moving</mark> a file to a new location, <mark>duplicating</mark> a file, <mark>saving</mark> a file from an outside source (such as a website), and <s> <mark>opening</mark> an internet file or link in a new tab. (put in variants?)</s></p>
 
 <div class="row">
-  <div class="col-xs-12 col-md-4">
+  <div class="col-sm-5">
 
     <h3>Typical Appearance</h3>
-
-    The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions. 
-    the dragged icon is anchored to the mouse to simulate physical dragging.
+    <p>The drag-and-drop feature is rarely, if ever, visible to the user in its idle state.  Once the drag-and-drop is initiated, the file's movements are visually represented to assist the user's understanding of their actions. 
+  </p><p>
+    Usually, a "ghost" image of the dragged object is anchored to the mouse to simulate physical dragging while the mouse button is depressed. If the user lets go of their mouse (referred to as "dropping" their object) in a valid place, the object will disappear from its original location and appear at its new location. If it is dropped in an invalid place, the ghost image will typically animate back to its original location on a linear path.
   </div>
 
-  <div class="col-xs-8">
+  <div class="col-sm-7">
     <h3>Key Characteristics</h3>
     <blockquote>
     <p>Itext texgalbhldxksjeah aldkjfghbsl zjgb azlktfjbhs zk,jbha lzkrfjbhalk vlakz lkrfhv lalbkvz</p>
     </blockquote>
     <p>The point of a drag and drop feature is to <mark>visually show the user that their file is moving</mark> to a new location. The heart of the drag and drop, therefore, is the visual representation. The user <em>must</em> be able to follow the drag and drop process as it occurs. <u>The best drag and drop functions are those that the user intuitively understands, regardless of experience.PUT SOMEWHERE ELSE?</u></p>
-    <p></p>
-    <p>Refer to the gifs below to see drag and drop in action.</p>
+    <h4>The Ghost Image</h4>
+    <p>The most recognizable drag and drop feature is the "ghost" that appears when a user clicks and drags a file, image, or other object. <strong>It is the universal sign that the object is draggable.</strong> Typically, the ghost image is semi-transparent and/or highlighted.</p><p>Click and drag the image below to see the ghost image in action.
+
+    <p>Refer to the gifs below to see more examples of drag and drop in action.</p>
   </div>
 </div>
-
+<h2> So what does it do?</h2>
 <div class = "row">
   <h3>Typical Behavior</h3>
   Events
@@ -59,10 +50,77 @@ The drag-and-drop feature allows the user to interactively move a file from one 
   <blockquote>The following gifs represent common functionality of drag-and-drop within OS Yosemite's file system <em>Finder</em>.
   </blockquote>
 </div>
-
-<div class = "row">
+----------------------------------to desktop to desktop 
+duplicate multifolder hover
+same location topbar
+<div class="row">
+  <p></p>
   <div class="col-sm-6  col-lg-3">
-    <p><center><img src="filedrag_toDesktop.gif" alt="filedrag_toDesktop" style="width:290px;"></center></p>
+    <center><img src="filedrag_toDesktop.gif" alt="filedrag_toDesktop" style="width:290px;"></center>
+  </div>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3">
+     <div class = "well">6The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to </div>
+  </div>
+
+  <div class="clearfix visible-md clearfix visible-sm"></div>
+
+  <p></p>
+  <p></p>
+  <div class="col-sm-6  col-lg-3">
+    <center><img src="imagedrag_toDesktop.gif" alt="imagedrag_toDesktop" style="width:290px;"></center>
+  </div>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3">
+     <div class = "well">6The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order </div>
+  </div>
+</div>
+
+<div class="row"><p></p></div>
+
+<div class="row">
+  <p></p>
+  <div class="col-sm-6  col-lg-3">
+    <center><img src="filedrag_multiFolderHover.gif" alt="filedrag_multiFolderHover" style="width:290px;"></center>
+  </div>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3">
+     <div class = "well">6The dra are visually represented to assist the user's understanding of their actions.</div>
+  </div>
+
+  <div class="clearfix visible-md clearfix visible-sm"></div>
+
+  <p></p>
+  <div class="col-sm-6  col-lg-3">
+    <center><img src="filedrag_duplicate.gif" alt="filedrag_duplicate" style="width:290px;"></center>
+  </div>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3">
+     <div class = "well">6The dragns are visually represented to assist the user's understanding of their actions.</div>
+  </div>
+</div>
+
+<div class="row"><p></p></div>
+
+<div class="row">
+  <p></p>
+  <div class="col-sm-6  col-lg-3">
+    <center><img src="filedrag_sameLocation.gif" alt="filedrag_sameLocation" style="width:290px;"></center>
+  </div>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3">
+     <div class = "well">6The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop functs are visually represented to assist the user's understanding of their actions.</div>
+  </div>
+
+  <div class="clearfix visible-md clearfix visible-sm"></div>
+
+  <p></p>
+  <div class="col-sm-6  col-lg-3">
+    <center><img src="filedrag_topBar.gif" alt="filedrag_topBar" style="width:290px;"></center>
+  </div>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3">
+     <div class = "well">6The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order tions.</div>
+  </div>
+</div>
+
+<!--<div class = "row">
+  <div class="col-sm-6  col-lg-3">
+    <center><img src="filedrag_toDesktop.gif" alt="filedrag_toDesktop" style="width:290px;"></center>
   </div>
   <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3">
      <div class = "well">6The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.</div>
@@ -71,60 +129,68 @@ The drag-and-drop feature allows the user to interactively move a file from one 
 <div class="clearfix visible-md visible-sm"></div>
 
   <div class="col-sm-6 col-lg-3">
-    <p><center><img src="imagedrag_toDesktop.gif" alt="imagedrag_toDesktop" style="width:290px;"></center></p>
+    <center><img src="imagedrag_toDesktop.gif" alt="imagedrag_toDesktop" style="width:290px;"></center>
   </div>
-  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> <!--col-md-6?-->
-    <p>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> 
     <div class = "well">2The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.</div>
-    </p>
   </div>
 </div>
 
 <div class="row"><p></p></div>
 
 <div class = "row">
-  <div class="col-xs-12 col-sm-6 col-lg-3"> <!--col-md-6?-->
-    <p><center><img src="filedrag_folderHover.gif" alt="filedrag_folderHover" style="width:290px;"></center></p>
+  <div class="col-sm-6 col-lg-3"> 
+    <center><img src="filedrag_folderHover.gif" alt="filedrag_folderHover" style="width:290px;"></center>
   </div>
-  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> <!--col-md-6?-->
-    <p>
-    The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.
-    </p>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> 
+    <div class = "well">The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.</div>
   </div>
 
   <div class="clearfix visible-md visible-sm"></div>
 
-  <div class="col-xs-12 col-sm-6 col-lg-3"> <!--col-md-6?-->
-    <p><center><img src="filedrag_multiFolderHover.gif" alt="filedrag_multiFolderHover" style="width:290px;"></center></p>
+  <div class="col-sm-6 col-lg-3"> 
+    <center><img src="filedrag_multiFolderHover.gif" alt="filedrag_multiFolderHover" style="width:290px;"></center>
   </div>
-  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> <!--col-md-6?-->
-    <p>
-    2The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.
-    </p>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3">
+    <div class = "well">2The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.</div>
   </div>
 </div>
 
 <div class="row"><p>/<p></div>
 
 <div class = "row">
-  <div class="col-xs-12 col-sm-6 col-lg-3"> <!--col-md-6?-->
-    <p><center><img src="textdrag_newFile.gif" alt="textdrag_newFile" style="width:290px;"></center></p>
+  <div class="col-sm-6 col-lg-3">
+    <center><img src="textdrag_newFile.gif" alt="textdrag_newFile" style="width:290px;"></center>
   </div>
-  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> <!--col-md-6?-->
-    <p>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3">
     <div class = "well">The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.</div>
-    </p>
   </div>
 <div class="clearfix visible-md visible-sm"></div>
-  <div class="col-xs-12 col-sm-6 col-lg-3"> <!--col-md-6?-->
-    <p><center><img src="textdrag_copyPaste.gif" alt="textdrag_copyPaste" style="width:290px;"></center></p>
+  <div class="col-sm-6 col-lg-3"> 
+      <center><img src="textdrag_copyPaste.gif" alt="textdrag_copyPaste" style="width:290px;"></center>
   </div>
-  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> <!--col-md-6?-->
-    <p>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> 
     <div class = "well">2The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.</div>
-    </p>
   </div>
 </div>
+
+<div class="row"><p>/<p></div>
+
+<div class = "row">
+  <div class="col-sm-6 col-lg-3">
+    <center><img src="textdrag_newFile.gif" alt="textdrag_newFile" style="width:290px;"></center>
+  </div>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3">
+    <div class = "well">The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.</div>
+  </div>
+<div class="clearfix visible-md visible-sm"></div>
+  <div class="col-sm-6 col-lg-3"> 
+      <center><img src="textdrag_copyPaste.gif" alt="textdrag_copyPaste" style="width:290px;"></center>
+  </div>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> 
+    <div class = "well">2The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.</div>
+  </div>
+</div>-->
 
 <!--
     <h3>Typical Behavior</h3>
@@ -197,9 +263,7 @@ The drag-and-drop feature allows the user to interactively move a file from one 
 
     <h3>Variants</h3>
 
-    <blockquote>There is almost never just one form of a user interface component. Use this section to address variations
-      on this theme. Some variations are sufficiently different that they are considered to be a different component
-      entirely, despite very similar behavior. Meanwile some variations are due to appearance only.</blockquote>
+    <blockquote>This page focuses mainly on drag and drop within OS Yosemite's native file system. However, drag and drop is implemented evey</blockquote>
 
     <ul>
       <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
@@ -321,9 +385,10 @@ The drag-and-drop feature allows the user to interactively move a file from one 
 
 <blockquote>Provide references or links to any information, image, or media sources used.</blockquote>-->
 
+<h3>State Diagram</h3>
 
 <center>
-<svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="650" xmlns="http://www.w3.org/2000/svg">
  <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
  <g>
   <title>Layer 1</title>
@@ -387,3 +452,9 @@ The drag-and-drop feature allows the user to interactively move a file from one 
  </g>
 </svg>
 </center>
+
+
+
+<h3>Variants</h3>
+
+    <blockquote>This page focuses mainly on drag and drop within OS Yosemite's native file system. However, drag and drop is implemented evey</blockquote>
