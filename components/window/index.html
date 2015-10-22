@@ -18,7 +18,11 @@ In fact, a window is used to view the content of the page!
   Generally windows have two components.
   <ul>
     <li>Frame</li>
+    <img src="Frame.png" alt="An example of a frame" width="400">
+    <small>An example of the "Frame"</small>
     <li> Content</li>
+    <img src="Content.png" alt="An example of content of a window" width="400">
+    <small>An example of the "Content"</small>
   </ul>
   In the frame there are buttons located on the top left corner or top right corner of the frame. There is a slight variation on the frame depending on what type of window one is accessing. <em>(See the <a href="http://127.0.0.1:4000/paradixm/components/window/#variants">'Variants'</a> section below.)</em> Generally in the middle of the frame, there is a title containing the location of the content one is viewing.
   <br> <br>
@@ -28,20 +32,39 @@ In fact, a window is used to view the content of the page!
   </blockquote>
   <img src="Yosemite-Screenshot.png" alt="picture of Yosemite window" height="200">
 
-<h3><a style="color:black;" name="variants">Variants</a></h3>
-  <blockquote>In general </blockquote>
+<h3 id="variants">Variants</h3>
+  <blockquote> There are five common variants of windows. <ol>
+    <li>File Explorer</li>
+    <img src="GeneralWindow.PNG" alt="picture of File Explorer Window" height="200">
+    <blockquote>The file explorer window is usually accessed when one clicks a folder on their computer. There are three buttons located in the frame in the left or right corner depending on the operating system one is using.  </blockquote>
+    <li>Dialog</li>
+    <img src="dialog.PNG" alt="A picture of a Dialog Window" height="200">
+    <blockquote>The dialog window usually appears the computer prompts the user for input in the form of button or string input. In the frame there will only be one or no button depepending on the operating system.</blockquote>
+    <li>Alert</li>
+    <img src="alert.PNG" alt="A picture of a alert Window" height="200">
+    <blockquote>The alert window occurs when the computer wants to notifies the user of an action. It prompts the user for input in the form of a single button signiging that the user acknowledges the message. In its frame there will be a single or no button. </blockquote>
+    <li>Properties</li>
+    <img src="Properties.PNG" alt="A picture of a Properties window" height="200">
+    <blockquote>The properties windows is usally accesed when one wants to edit the properties of a local file. The content of the window contains tabs that changes the content of the window. </blockquote>
+    <li>Application</li>
+    <img src="Application.PNG" alt="A picture of an Application window" height="200">
+    <blockquote>Out of the four, categories of windows the appearance varies greatly due to the nature of 3rd party developers.</blockquote>
+  </ol> 
+Most of these variants's appearance vary. For more details on a specific variant check out the different OS tags below.
+  </blockquote>
 
 </div>
 
 <!-- Second Column -->
 <div class="col-sm-6">
 <h3>Typical Behavior</h3>
-  <blockquote>Typical behavior of windows include the following:
-  <ul><li>Exiting out of the window</li>
-  <li>Minimize or Maximize the window</li>
-  <li>Place it in the dock/taskbar</li>
-  <li>Resize</li>
-  <li>Move it</li>
+<h4>Events</h4>
+  <blockquote> The three buttons in the frame exhibit three different behaviors.
+  <img src="Three-buttons.PNG" alt="The three buttons within the frame">
+  <ul><li>When the button to the outermost left is <code>clicked</code> the window closes.</li>
+  <li>The button in the middle hides the window. The window can be accessed again by <code>clicking</code> in within the dock/menu bar.</li>
+  <li>The button on the right maximizes the window, making the window's height and width the size of the screen.</li>
+  <em>(For more info on the button component see <a href="../button/index.html">button</a>)</em>
   </ul>
   </blockquote>
   <br>
@@ -65,10 +88,6 @@ In fact, a window is used to view the content of the page!
   </div>
 
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-    <div class="well">Cheetah</div>
-  </div>
-
-  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
     <div class="well">Windows 8.1</div>
   </div>
 </div>
@@ -82,7 +101,7 @@ In fact, a window is used to view the content of the page!
     <li data-target="#window-screenshot-carousel" data-slide-to="0" class="active"></li>
     <li data-target="#window-screenshot-carousel" data-slide-to="1"></li>
     <li data-target="#window-screenshot-carousel" data-slide-to="2"></li>
-    <li data-target="#window-screenshot-carousel" data-slide-to="3"></li>
+    
   </ol>
 
   <!-- Wrapper for slides -->
@@ -99,12 +118,7 @@ In fact, a window is used to view the content of the page!
         Ubuntu 15.04
       </div>
     </div>
-    <div class="item">
-      <img src="batman-sample.jpeg" alt="Older Mac">
-      <div class="carousel-caption">
-        Mac OS X v10.0 Cheetah
-      </div>
-    </div>
+    
     <div class="item">
       <img src="Windows8.1fitted.jpg" alt="Windows 8.1" width="1000" height="1000">
       <div class="carousel-caption">
