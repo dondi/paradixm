@@ -2,8 +2,6 @@
 title: Menu
 layout: component
 ---
-<blockquote>Start your component pages with a quick description of the component, such as:</blockquote>
-
 <p class="lead">Menus are probably the second most used components on a given graphical interface after buttons.</p>
 
 <div class="row">
@@ -14,270 +12,61 @@ layout: component
         <blockquote>
             <p>Menus have been the go-to method for displaying (and hiding) lists of items and buttons for decades.</p>
 
-            [Place a photo of menus here.]
-            <img src="..." class="img-responsive" alt="Responsive image">
-
+            [Place a photos of menus here. One for mac, one for pc]
+            <img src="Mac_FileMenu.png" class="img-responsive" alt="Responsive image">
+            <br>
             <p>And like these examples, they tend to follow the standard form of having items listed from top to
-                bottom with anywhere from 1 to around 25 items to choose from. Mac OS X menus have an added feature of 
-                faint line dividers to group certain sets of options without adding too much clutter to the small menu.</p>
+                bottom with anywhere from 1 to around 25 items to choose from.</p>
                 
-            [Photo of menu with a lot of line dividers]
 
             <p>Of course, these items can often be menus themselves within other menus.</p>
-
-            [Place a photo of expanded menus here.]
+            <br>
+            <img src="Mac_menu_in_menu.png" class="img-responsive" alt="Responsive image">
 
         </blockquote>
 
         <h3>Placement</h3>
             <blockquote>
                 <p>Menus are usually located on the "edges" of graphical interfaces. For example, the Mac OS X
-                graphical interface provides menus at the top of the Desktop screen that are always available. This pattern
-                seems to extend to application or browser windows as well.</p>
+                graphical interface provides menus at the top of the Desktop screen that are always available, yet out of the way
+                from high-activity portions of the screen.
 
-                [Photo of Mac menus] [Photo of a menu in a browser or application window]
+                This pattern seems to extend to application or browser windows as well.</p>
 
-                <p>Additionally, there are menus that remain hidden unless invoked by the user, such as the menu that
-                    appears when a user right-clicks.</p>
+                [Photo of Mac menus] [Photo of PC menus] [Photo of a menu in a browser or application window]
+                <br>
+                <br>
+                <p>There are also menus that remain hidden unless invoked by the user, such as the menu that
+                    appears when a user right-clicks (or ctrl + click in the case of Mac OS X).</p>
+                <br>
+                [Photos of mac and pc right-clicks]
+                <img src="Mac_control_click_menu.png" class="img-responsive" alt="Responsive image">
+                
 
-                [Photo of right-click menu]
+
 
             </blockquote>
 
-        <h3>Behavior</h3>
+        <br>
+        <h3>Key Characteristics</h3>
+        <br>
+        <h4>Behavior and Feedback</h4>
 
         <blockquote>
           <p>On most platforms, menus are usually accessed by first clicking on a button.</p>
-          [Image of opening a menu]
           <p>The menus then expand to reveal the items they hold. On most platforms, users are also able to
             hover over to a different menu button and, without clicking, expand those other menus as well after having
-            already clicked on one.</p>
+            already clicked on one. This includes menu buttons within the menu itself.</p>
+          <p>To exit a menu on most platforms, the user can click outside of the open menu to close it.</p>
+          <p>When an item is selected, the menu indicates this action with a flashing highlight. Though, this usually happens so fast
+            that the user's eyes have likely moved to the newly opened menu or window triggered from the button rather than notice
+            the menu's indication.</p>
+          <p>As for most components on a graphical interface, feedback to the user is a crucial aspect, specifically for when the user is attempting to perceive the system state and evaluate its outcomes (as outlined by Don Norman's Stages-of-Action Model). 
+          Menus usually do have indicators, such as grayed out, unclickable items, to indicate which state the menu is in.</p>
 
         </blockquote>
 
-        <h3>Key Characteristics</h3>
-
-        <h4>Feedback</h4>
-        <p>As for most components on a graphical interface, feedback to the user is a crucial aspect of Don Norman's Stages-of-Action Model, specifically for when the user is attempting to perceive the system state and evaluate its outcomes.</p>
-
-        <ol>
-          <li>bullet point 1</li>
-          <li>bullet point 2</li>
-        </ol>
-
-        <blockquote>These attributes of standard menus across platforms have allowed much more choice and accessibility to
-        be included in a single page (or single interface), as opposed to requiring users to constantly switch
-        to different windows or screens each time they need to access a new list of items to choose from.</blockquote>
-
-
-        <h3>Variants</h3>
-
-        <h4>Accordion Menus</h4>
-
-        <blockquote>
-            <p>Accordion menus such the two featured below are emerging as a cool new menu trend on webpages or applications (especially those
-              for mobile apps).</p>
-        </blockquote>
-        
-          <div id="MainMenu">
-        <div class="list-group panel">
-          <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>
-          <div class="collapse" id="demo3">
-            <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
-            <div class="collapse list-group-submenu" id="SubMenu1">
-              <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
-              <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
-              <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
-              <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
-                <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
-                <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
-              </div>
-              <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
-            </div>
-            <a href="javascript:;" class="list-group-item">Subitem 2</a>
-            <a href="javascript:;" class="list-group-item">Subitem 3</a>
-          </div>
-          <a href="#demo4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 4</a>
-          <div class="collapse" id="demo4">
-            <a href="" class="list-group-item">Subitem 1</a>
-            <a href="" class="list-group-item">Subitem 2</a>
-            <a href="" class="list-group-item">Subitem 3</a>
-          </div>
-        </div>
-      </div>
-
-       <blockquote>
-            <p>They allow users to access lists of items without expanding the menu into a different column on the screen or on top of other information that users are looking at.</p>
-        </blockquote>
-      </div>
-
-    <div class="col-sm-6 col-md-3">
-            <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
-                            </span>Content</a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            <table class="table">
-                                <tbody><tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-pencil text-primary"></span><a href="http://www.jquery2dotnet.com">Articles</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-flash text-success"></span><a href="http://www.jquery2dotnet.com">News</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-file text-info"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-comment text-success"></span><a href="http://www.jquery2dotnet.com">Comments</a>
-                                        <span class="badge">42</span>
-                                    </td>
-                                </tr>
-                            </tbody></table>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
-                            </span>Modules</a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table class="table">
-                                <tbody><tr>
-                                    <td>
-                                        <a href="http://www.jquery2dotnet.com">Orders</a> <span class="label label-success">$ 320</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="http://www.jquery2dotnet.com">Invoices</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="http://www.jquery2dotnet.com">Shipments</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="http://www.jquery2dotnet.com">Tex</a>
-                                    </td>
-                                </tr>
-                            </tbody></table>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
-                            </span>Account</a>
-                        </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table class="table">
-                                <tbody><tr>
-                                    <td>
-                                        <a href="http://www.jquery2dotnet.com">Change Password</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="http://www.jquery2dotnet.com">Import/Export</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
-                                            Delete Account</a>
-                                    </td>
-                                </tr>
-                            </tbody></table>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
-                            </span>Reports</a>
-                        </h4>
-                    </div>
-                    <div id="collapseFour" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table class="table">
-                                <tbody><tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">Products</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">Shopping Cart</a>
-                                    </td>
-                                </tr>
-                            </tbody></table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-sm-6">
-
-        <p>[More text here]</p>
-
-        <ul>
-          <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
-            invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
-            different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
-
-          <li><em>Italicized words!</em> (and some more words)</li>
-        </ul>
-
-      </div>
-
-        <div class="col-sm-12">
-
-            <h4>Events</h4>
-
-            <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-              highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
-
-
-            <h4>State Diagram</h4>
+        <h4>State Diagram</h4>
 
             <blockquote>
               <p>A state diagram indicating the actions and states of a user interface component.</p>
@@ -306,6 +95,232 @@ layout: component
                 the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
                 from this state, in case the user changes his or her mind in mid-action.</li>
             </ul>
+
+        <blockquote>These attributes of standard menus across platforms have allowed much more choice and accessibility to
+        be included in a single page (or single interface), as opposed to requiring users to constantly switch
+        to different windows or screens each time they need to access a new list of items to choose from.</blockquote>
+
+        <br>
+        <h3>Variants</h3>
+        <br>
+
+        <h4>Accordion Menus</h4>
+
+        <blockquote>
+            <p>Accordion menus such the two featured below are emerging as a cool new menu trend on webpages or applications (especially those
+              for mobile apps).</p>
+            <p>They allow users to access lists of items without expanding the menu into a different column on the screen or on top of other information that users are looking at.</p>
+        </blockquote>
+      </div>
+
+      <div class="col-sm-6 col-md-8">
+
+              <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                              </span>Content</a>
+                          </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                          <div class="panel-body">
+                              <table class="table">
+                                  <tbody><tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-pencil text-primary"></span><a href="http://www.jquery2dotnet.com">Articles</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-flash text-success"></span><a href="http://www.jquery2dotnet.com">News</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-file text-info"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-comment text-success"></span><a href="http://www.jquery2dotnet.com">Comments</a>
+                                          <span class="badge">42</span>
+                                      </td>
+                                  </tr>
+                              </tbody></table>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
+                              </span>Modules</a>
+                          </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                          <div class="panel-body">
+                              <table class="table">
+                                  <tbody><tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Orders</a> <span class="label label-success">$ 320</span>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Invoices</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Shipments</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Tex</a>
+                                      </td>
+                                  </tr>
+                              </tbody></table>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
+                              </span>Account</a>
+                          </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                          <div class="panel-body">
+                              <table class="table">
+                                  <tbody><tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
+                                              Delete Account</a>
+                                      </td>
+                                  </tr>
+                              </tbody></table>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
+                              </span>Reports</a>
+                          </h4>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse">
+                          <div class="panel-body">
+                              <table class="table">
+                                  <tbody><tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">Products</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">Shopping Cart</a>
+                                      </td>
+                                  </tr>
+                              </tbody></table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+      <div class="col-sm-6 col-md-8">
+
+        <div id="MainMenu">
+          <div class="list-group panel">
+            <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>
+            <div class="collapse" id="demo3">
+              <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
+              <div class="collapse list-group-submenu" id="SubMenu1">
+                <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
+                <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
+                <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
+                <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+                  <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
+                  <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
+                </div>
+                <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
+              </div>
+              <a href="javascript:;" class="list-group-item">Subitem 2</a>
+              <a href="javascript:;" class="list-group-item">Subitem 3</a>
+            </div>
+            <a href="#demo4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 4</a>
+            <div class="collapse" id="demo4">
+              <a href="" class="list-group-item">Subitem 1</a>
+              <a href="" class="list-group-item">Subitem 2</a>
+              <a href="" class="list-group-item">Subitem 3</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+        <div class="col-sm-12">
+        <br>
+        <h4>Bootstrap's Menu</h4>
+
+        <blockquote>The Bootstrap website has what seems to be a hybrid of an accordion menu with a scroll bar
+          on the side. It has the general categorical items with their corresponding subitems as well as 
+          two scroll bars, one large and one small, to indicate where the user to navigating on the menu
+          and the page. The larger bar indicates the overall category the view is in, while the smaller bar
+          indicates what is currently being viewed in the window itself.</blockquote>
+
+        <img src="Bootstrap_menu.png" class="img-responsive" alt="Responsive image">
+
+
+        <p>[More text here]</p>
+
+        <ul>
+          <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
+            invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
+            different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
+
+          <li><em>Italicized words!</em> (and some more words)</li>
+        </ul>
+
+      </div>
+
+        <div class="col-sm-12">
+
+            <h4>Events</h4>
+
+            <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
+              highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+
 
             <h4>Component in Action</h4>
 
@@ -342,5 +357,13 @@ layout: component
 <h3>Platform-Specific Instances</h3>
 
 <blockquote>
+
+  <p>Mac OS X menus have an added feature of faint line dividers to group certain sets of options without adding too much clutter 
+  to the small menu.</p>
+
+  <p>Additionally, there are even hidden items within menus that can be seen if the user holds down the "alt option" key for Mac or "alt" key for a PC.</p>
+  
   [place more information and images here]
+
+
 </blockquote>
