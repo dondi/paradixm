@@ -7,13 +7,6 @@ layout: component
 </head>-->
 
 <style type="text/css">
-
-    .inlineHeader h4{
-    display: inline;
-    margin-right:2px;
-    font-size: 16px;
-    }
-
 /*only display on large screens*/
 @media (max-width:991px) {
     .large-only {
@@ -32,10 +25,127 @@ layout: component
         display:none !important;
     }
 }
+    .inlineHeader h4{
+    display: inline;
+    margin-right:2px;
+    font-size: 16px;
+    }
 
+    .wellz {
+    vertical-align: middle;
+    overflow:auto;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    }
 
+    kbd {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #000;
+    background-color: #DCDCDC;
+    }
+---------------------------------
+/*#together { WHOLE THING
+  width: 770px;
+  text-align: center;
+  margin-top: -12px;
+}*/
+
+#metrics {
+  /*width: 600px;*/
+  height: 450px;
+  background-color: yellow;
+  overflow: hidden;
+  float: right;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding:50px;
+}
+
+  .metricsNav {
+    height: 450px;
+    background-color: blue;
+    float: left;
+    margin-top: -2px;
+  }
+  .metricsMain {
+    height: 450px;
+    background-color: green;
+    overflow: hidden;
+    padding: 5px;
+  }
+
+  .metricsScroller {
+  background-color: red;
+  height: 440px;
+  overflow: auto;
+  padding: 10px;
+}
+  /*?
+  sf, .object, p, table {
+  display: none;
+  }*/
 
 </style>
+
+<div class = "row">
+  <h3> Usability Metrics</h3>
+  <div class = "col-xs-10 col-xs-offset-1 metrics"><!--whole thing-->
+    <div class="col-xs-3 metricsNav"><!--nav col-->
+        <a href="#page1">PAGE1</a><br>
+        <a href="#page2">PAGE2</a>
+    </div>
+    <div class="col-xs-9 metricsMain"><!--main col-->
+      <div class="metricsScroller">
+        <a id="page1"></a>
+        text
+      </div>
+      <div class="metricsScroller">
+        <a id="page2"></a>
+        <em>text</em>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!--
+<div both together>
+  <div class="navi">
+      <a href="#page1">1</a>
+      <a href="#page2">2</a>
+    </div>
+  </div>
+  <div id = "main">
+    <a name="page1"></a>
+    <div class="layout">
+      dfgbc
+    </div>
+
+    <a name="page2"></a> 
+    <div class="layout"> 
+      dfvbf
+    </div>
+  </div>-->
+
+
+
+
+
+
+
+
+
+
 
 <p class="lead">
 The drag-and-drop feature allows the user to interactively move a file or image. Common results of dragging and dropping include <mark>moving</mark> a file to a new location, <mark>duplicating</mark> a file, <mark>saving</mark> a file from an outside source (such as a website), and <s> <mark>opening</mark> an internet file or link in a new tab. (put in variants?)</s></p>
@@ -45,24 +155,36 @@ The drag-and-drop feature allows the user to interactively move a file or image.
     <h3>Typical Appearance</h3>
     <p>The drag-and-drop feature is rarely, if ever, visible to the user in its idle state.  Once the drag-and-drop is initiated, the file's movements are visually represented to assist the user's understanding of their actions. 
   </p><p>
-    Usually, a "ghost" image of the dragged object is anchored to the mouse to simulate physical dragging while the mouse button is depressed. If the user lets go of their mouse (referred to as "dropping" their object) in a valid place, the object will disappear from its original location and appear at its new location. If it is dropped in an invalid place, the ghost image will typically animate back to its original location on a linear path.
+    A "ghost" image of the dragged object is anchored to the mouse to simulate physical dragging while the mouse button is depressed. If the user lets go of their mouse (referred to as "dropping" their object) in a valid place, the object will disappear from its original location and appear at its new location. If it is dropped in an invalid place, the ghost image will animate back to its original location on a linear path. Typically, the ghost image is semi-transparent and/or highlighted.
+      <div class = "col-xs-3 col-xs-offset-1 medium-only">
+          <img src = "ghostImageExample.jpg" alt = "ghostImageExample" width="75px">
+      </div>
+      <div class = "col-xs-6 col-xs-offset-1 medium-only">
+        <br>Click and drag this image to see the ghost visual in action.
+      </div>
   </div>
 
   <div class="col-sm-7">
     <h3>Key Characteristics</h3>
     <div>
-      The point of a drag and drop feature is to <mark>visually show the user that their file is moving</mark> to a new location. The heart of the drag and drop, therefore, is the visual representation. The user <em>must</em> be able to follow the drag and drop process as it occurs. <!--The best drag and drop functions are those that the user intuitively understands, regardless of experience.PUT SOMEWHERE ELSE?-->
+      The point of a drag and drop feature is to <mark>visually show the user that their file is moving</mark> to a new location. The heart of the drag and drop, therefore, is the visual representation. The user <em>must</em> be able to follow the drag and drop process as they cause it to occur. <!--The best drag and drop functions are those that the user intuitively understands, regardless of experience.PUT SOMEWHERE ELSE?-->
     </div>
     <div>
       <h4>The Ghost Image</h4>
-      <p>The most recognizable drag and drop feature is the "ghost" that appears when a user clicks and drags a file, image, or other object. <mark>It is the universal sign that the object is draggable.</mark> Typically, the ghost image is semi-transparent and/or highlighted.</p>
+      <p>The most recognizable drag and drop feature is the "ghost" that appears when a user clicks and drags a file, image, or other object. <mark>It is the universal sign that indicates the object is draggable.</mark></p>
     </div>
-    <div class = "col-xs-3 col-xs-offset-1 medium-only">
-      <img src = "ghostImageExample.jpg" alt = "ghostImageExample" width="75px">
+ 
+<p></p>
+    <div>
+      <h4>Rules to Follow</h4>
+      <ul>
+        <p><li><mark>Clearly show the user that their file is moving</mark> with their cursor using a ghost image. </li></p>
+        <p><li><mark>The ghost image should "react" when it is dragged over a valid area, when possible</mark>. This could include changing states (a line of text switching to a text file icon) or adding a <kbd>+</kbd> sign to the image corner.</li></p>
+        <p><li><mark>Placing an object on an invalid area should cancel the drag and drop non-destructively</mark>. When this occurs, the user should be able to see their dragged file animate back to its original location.</li></p>
+        <p><li><mark>Don't move the actual file</mark> until the drag and drop has been successfully completed. Remember: drag and drop is simply a visual interface for the user that brings about a concrete result.</li></p>
+      </ul>
     </div>
-    <div class = "col-xs-7 medium-only">
-      <br>Click and drag this image to see the ghost visual in action.
-    </div>
+
   </div>
 </div>
 <br>
@@ -85,8 +207,7 @@ The drag-and-drop feature allows the user to interactively move a file or image.
       The dragging period of the drag and drop action lasts for as long as the mouse button is down. The ghost image of the item clicked is anchored to the mouse indefinitely until the mouse is released. This ghost image sometimes changes states as it passes over different elements (such as a desktop, a folder, or an address bar), indicating to the user that it can be dropped there.  <mark>It is important to note that during the drag, the file itself is not moving - only its ghost image, which is simply a visual representation of the file enlisted for the user's benefit. (move to larger area?)</mark></p>
 
       <li><h4>The Drop -</h4> Initiated with a <code>mouse buton release</code></li><p>
-      The drag and drop is completed when the user releases the mouse, regardless of whether the dragged object has been placed in a valid location. If the ghost image is dropped on an invalid area, it is reset back to its original location.
-      This reset is visually depicted with an animation of the ghost image returning to its owner on a quick, linear path. If the object is dropped on a valid area, its ghost image will disappear and the file itself is relocated there.</p>
+      The drag and drop is completed when the user releases the mouse, regardless of whether the dragged object has been placed in a valid location. If the ghost image is dropped on an invalid area, it is reset back to its original location. This reset is visually depicted with an animation of the ghost image returning to its owner on a quick, linear path. If the object is dropped on a valid area, its ghost image will disappear and the file itself is relocated there.</p>
       </ul>
     </div>
   </div>
@@ -104,18 +225,18 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
   <div class="col-sm-4 col-sm-offset-1  col-lg-3 col-lg-offset-0">
     <div align="center"><img src="filedrag_toDesktop.gif" alt="filedrag_toDesktop gif" style="width:290px;"></div>
   </div>
-  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
-     <div class = "well">6The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to </div>
+  <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
+     <div class = "wellz" style = "height:181px">This example demonstrates the most common use of drag and drop: the changing of file locations, or the <code>moving</code> functionality. While the computer only needs the new file address, the drag and drop visual scheme assists the viewer in understanding the innerworkings of the Finder. This also illustrates how the state of the ghost image can change as it is dragged to different areas, such as the desktop. This state change is used to indicate that it can be dropped at that location, facilitating the user's learnability, memorability, and satisfaction while also reducing the chance of errors.</div>
   </div>
 
   <div class="clearfix visible-md clearfix visible-sm"></div>
   <p></p>
-
+  
   <div class="col-sm-4 col-sm-offset-1  col-lg-3 col-lg-offset-0">
     <div align="center"><img src="imagedrag_toDesktop.gif" alt="imagedrag_toDesktop gif" style="width:290px;"></div>
   </div>
-  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
-     <div class = "well">6The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order </div>
+  <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
+     <div class = "wellz" style = "height:181px">In this example, an image is dragged from an internet webpage onto the desktop. This illustrates the <code>saving</code> functionality. Many elements, including images, text, and links, can be dragged and dropped directly from webpages to the computer. Ideally, this action should cause the ghost image to change states when it enters the dekstop area, to indicate that it can be dropped there. In the case of OS Yosemite, however, this functionality it is not implemented.</div>
   </div>
 </div>
 
@@ -126,8 +247,8 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
   <div class="col-sm-4 col-sm-offset-1  col-lg-3 col-lg-offset-0">
     <div align="center"><img src="filedrag_multiFolderHover.gif" alt="filedrag_multiFolderHover gif" style="width:290px;"></div>
   </div>
-  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
-     <div class = "well">6The dra are visually represented to assist the user's understanding of their actions.</div>
+  <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
+     <div class = "wellz" style = "height:181px">This is a more complex example of the drag and drop <code>moving</code> functionality. A user is able to interactively travel through a file heirarchy while dragging their file by hovering over the folder they wish to enter. Subtle animations are used to facilitate the user's understanding of the process. As the gif shows, the folders blink briefly before opening as the reader hovers their ghost image over them. These visual cues help the user feel as though they are phyically navigating through the folder structure as they drag their file.</div>
   </div>
 
   <div class="clearfix visible-md clearfix visible-sm"></div>
@@ -136,8 +257,8 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
   <div class="col-sm-4 col-sm-offset-1  col-lg-3 col-lg-offset-0">
     <div align="center"><img src="filedrag_duplicate.gif" alt="filedrag_duplicate gif" style="width:290px;"></div>
   </div>
-  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
-     <div class = "well">6The dragns are visually represented to assist the user's understanding of their actions.</div>
+  <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
+     <div class = "wellz" style = "height:181px">Here, the user has communicated with the drag and drop function by holding down the <kbd>opt</kbd> key (<kbd>alt</kbd> on a PC). This causes the drag and drop function not to move a file, but to <code>duplicate</code> it. It is indentified by the green plus icon that appears when the ghost image is dragged over a valid area. This is an additional functionality that is both useful and widely unknown. It is neither memorable nor easily learnable, and it looks almost identical to the normal drag and drop function, making it difficult to visually discern whether it is activated or not by inexperienced users. This utility is, however, an extremely efficient way of copying a file quickly.</div>
   </div>
 </div>
 
@@ -148,8 +269,8 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
   <div class="col-sm-4 col-sm-offset-1 col-lg-3 col-lg-offset-0">
     <div align="center"><img src="filedrag_sameLocation.gif" alt="filedrag_sameLocation gif" style="width:290px;"></div>
   </div>
-  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
-     <div class = "well">6The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop functs are visually represented to assist the user's understanding of their actions.</div>
+  <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
+     <div class = "wellz" style = "height:181px">This example illustrates the result of a drag and drop that it unsuccessful. The user has dragged and placed their file in the same file address, triggering an animation of the ghost image returning to its source on a linear path. This animation could be triggered by a user error, but it is also a common method of cancelling the drag and drop non-destructively.</div>
   </div>
 
   <div class="clearfix visible-md clearfix visible-sm"></div>
@@ -158,8 +279,8 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
   <div class="col-sm-4 col-sm-offset-1 col-lg-3 col-lg-offset-0">
     <div align="center"><img src="filedrag_topBar.gif" alt="filedrag_topBar gif" style="width:290px;"></div>
   </div>
-  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
-     <div class = "well">6The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order tions.</div>
+  <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
+     <div class = "wellz" style = "height:181px">Here is another common method that users might use to intentionally cancel their drag and drop. This functionality is most likely limited to Mac workspaces, but the theory behind it spans all platforms: when a ghost image is dropped on an invalid area, the drag and drop should be cancelled and the file returned to its original place. The address bar is an easily accessible way to cancel a drag and drop, but it is not necessarily intuitive or easily learnable. The user needs to have a knowledge of what a valid and invalid area looks like in order to know where to place or cancel a drag and drop.</div>
   </div>
 </div>
 
@@ -432,6 +553,7 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
   http://svg-edit.googlecode.com/svn-history/r1771/trunk/editor/svg-editor.html#paste
   https://support.apple.com/kb/PH18767?locale=en_US
   http://windows.microsoft.com/en-us/windows-vista/moving-and-copying-files-by-using-the-drag-and-drop-method
+  All gifs were created by me.
 </blockquote>-->
 
 <h3>State Diagram</h3>
