@@ -13,19 +13,22 @@ layout: component
     margin-right:2px;
     font-size: 16px;
     }
-    .inlineHeader h3{
-    margin-top:5px;
-    }
 
-/*large screen sizes and up only*/
+/*only display on large screens*/
 @media (max-width:991px) {
     .large-only {
         display:none !important;
     }
 }
-/*medium screen sizes and up only*/
+/*only display on medium & larger screens*/
 @media (max-width: 767px) {
     .medium-only {
+        display:none !important;
+    }
+}
+/*only display on medium & smaller screens*/
+@media (min-width: 992px) {
+    .small-only {
         display:none !important;
     }
 }
@@ -65,21 +68,25 @@ The drag-and-drop feature allows the user to interactively move a file or image.
 <br>
 
 <div class = "row">
-  <h3>Typical Behavior</h3>
-  Unsurprisingly, the drag and drop function is initiated by a mouse button click, drag, and release. When the drag and drop is performed successfully, the file will move, duplicate, or save itself to the dropped location.
+  <div class = "col-xs-12">
+    <h3>Typical Behavior</h3>
+    Unsurprisingly, the drag and drop function is initiated by a mouse button click, drag, and release. When the drag and drop is performed successfully, the file will move, duplicate, or save itself to the dropped location.
+  </div>
   <br>
+
   <div class = "col-md-8">
     <h4>Events</h4>
     <div class = "inlineHeader">
       <ul>
       <li><h4>The Lift -</h4> Initiated with <code>mouse button down</code></li><p>
-      When the user <code>clicks</code> and <code>holds</code> down on a folder, file, image, bit of highlighted text, link, or other draggable object, the drag and drop behavior is activated. Sometimes, such as when the object is on the desktop, the  object will highlight clicked and held. Usually, however, this initial event is not accompanied by any visual cue. The clicked object must be dragged away from its origin for a lifted ghost image to appear (see The Ghost Image section above).</p>
+      When the user clicks and holds down on a folder, file, image, bit of highlighted text, link, or other draggable object, the drag and drop behavior is activated. Sometimes, such as when the object is on the desktop, the  object will highlight clicked and held. Usually, however, this initial event is not accompanied by any visual cue. The clicked object must be dragged away from its origin for a lifted ghost image to appear (see The Ghost Image section above).</p>
 
       <li><h4>The Drag -</h4> Maintained while <code>mouse button down</code></li><p>
-      The dragging period of the drag and drop action lasts for as long as the <code>mouse button</code> is <code>down</code>. The ghost image of the item clicked is anchored to the mouse indefinitely until the mouse is released. This ghost image sometimes changes states as it passes over different elements (such as a desktop, a folder, or an address bar), indicating to the user that it can be dropped there. </p>
+      The dragging period of the drag and drop action lasts for as long as the mouse button is down. The ghost image of the item clicked is anchored to the mouse indefinitely until the mouse is released. This ghost image sometimes changes states as it passes over different elements (such as a desktop, a folder, or an address bar), indicating to the user that it can be dropped there.  <mark>It is important to note that during the drag, the file itself is not moving - only its ghost image, which is simply a visual representation of the file enlisted for the user's benefit. (move to larger area?)</mark></p>
 
       <li><h4>The Drop -</h4> Initiated with a <code>mouse buton release</code></li><p>
-      explasbn;jkThe point of a drag and drop feature is to <mark>visually show the user that their file is moving</mark> to a new location. The heart of the drag and drop, therefore, is the visual representation. The user <em>must</em> be able to follow the drag and drop process as it occurs. The best drag and drop functions are those that the user intuitively understands, regardless of experience. Simple animations lift, drag, and drop.</p>
+      The drag and drop is completed when the user releases the mouse, regardless of whether the dragged object has been placed in a valid location. If the ghost image is dropped on an invalid area, it is reset back to its original location.
+      This reset is visually depicted with an animation of the ghost image returning to its owner on a quick, linear path. If the object is dropped on a valid area, its ghost image will disappear and the file itself is relocated there.</p>
       </ul>
     </div>
   </div>
@@ -428,8 +435,9 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
 </blockquote>-->
 
 <h3>State Diagram</h3>
+<div class = "small-only">Please increase your browser size to view the full state diagram.</div>
+<div class = "large-only">
 
-<center>
 <svg width="1000" height="650" xmlns="http://www.w3.org/2000/svg">
  <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
  <g>
@@ -493,7 +501,8 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
   <text transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="553.03458" x="-84.28994" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_135">Ghost object is animated back on a<tspan id="svg_166" y="573.03458" x="-84.28994">linear path to its original location.</tspan></text>
  </g>
 </svg>
-</center>
+</div>
+
 
 
 
