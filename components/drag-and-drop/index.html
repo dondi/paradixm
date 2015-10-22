@@ -2,12 +2,27 @@
 title: Drag and Drop
 layout: component
 ---
-<head>
-<link rel="stylesheet" type="text/css" href="css/custom.css">
-</head>
+<!--<head>
+<link rel="stylesheet" type="text/css" href="custom.css">
+</head>-->
 
-<p class="lead">Quite possibly the single most common graphical user interface element, the push button triggers a
-  single action within an application.</p>
+<style type="text/css">
+   body { background: white; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.page-container {
+  .page-bg {
+    padding: 15px !important;
+  }
+}
+</style>
+
+<p class="lead">
+The drag-and-drop feature allows the user to interactively move a file from one location to another.</p>
 
 <div class="row">
   <div class="col-xs-12 col-md-4">
@@ -18,53 +33,71 @@ layout: component
     the dragged icon is anchored to the mouse to simulate physical dragging.
   </div>
 
-  <div class="col-sm-8">
+  <div class="col-xs-8">
     <h3>Key Characteristics</h3>
     <blockquote>
     <p>Itext texgalbhldxksjeah aldkjfghbsl zjgb azlktfjbhs zk,jbha lzkrfjbhalk vlakz lkrfhv lalbkvz</p>
     </blockquote>
+    <p>The point of a drag and drop feature is to <mark>visually show the user that their file is moving</mark> to a new location. The heart of the drag and drop, therefore, is the visual representation. The user <em>must</em> be able to follow the drag and drop process as it occurs. <u>The best drag and drop functions are those that the user intuitively understands, regardless of experience.PUT SOMEWHERE ELSE?</u></p>
+    <p></p>
+    <p>Refer to the gifs below to see drag and drop in action.</p>
   </div>
 </div>
 
 <div class = "row">
   <h3>Typical Behavior</h3>
+  Events
+  There is a <code>lift</code>, <code>drag</code>,, and <code>drop</code>.
+      <ul>
+      <li><h4>The Lift</h4></li><p>
+      explasbn;jkThe point of a drag and drop feature is to <mark>visually show the user that their file is moving</mark> to a new location. The heart of the drag and drop, therefore, is the visual representation. The user <em>must</em> be able to follow the drag and drop process as it occurs. The best drag and drop functions are those that the user intuitively understands, regardless of experience. Simple animations lift, drag, and drop.</p>
+      <li><h4>The Drag</h4></li><p>
+      explasbn;jkThe point of a drag and drop feature is to <mark>visually show the user that their file is moving</mark> to a new location. The heart of the drag and drop, therefore, is the visual representation. The user <em>must</em> be able to follow the drag and drop process as it occurs. The best drag and drop functions are those that the user intuitively understands, regardless of experience. Simple animations lift, drag, and drop.</p>
+      <li><h4>The Drop</h4></li><p>
+      explasbn;jkThe point of a drag and drop feature is to <mark>visually show the user that their file is moving</mark> to a new location. The heart of the drag and drop, therefore, is the visual representation. The user <em>must</em> be able to follow the drag and drop process as it occurs. The best drag and drop functions are those that the user intuitively understands, regardless of experience. Simple animations lift, drag, and drop.</p>
+    </ul>
   <blockquote>The following gifs represent common functionality of drag-and-drop within OS Yosemite's file system <em>Finder</em>.
   </blockquote>
+</div>
 
 <div class = "row">
-  <div class="col-xs-12 col-lg-3"> <!--col-md-6?-->
-    <p><center><img src="filedrag_folderHover.gif" alt="W3Schools.com" style="width:290px;"></center></p>
+  <div class="col-sm-6  col-lg-3">
+    <p><center><img src="filedrag_toDesktop.gif" alt="filedrag_toDesktop" style="width:290px;"></center></p>
   </div>
-  <div class="col-xs-12 col-lg-3 pagination-centered"> <!--col-md-6?-->
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3">
+     <div class = "well">6The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.</div>
+  </div>
+
+<div class="clearfix visible-md visible-sm"></div>
+
+  <div class="col-sm-6 col-lg-3">
+    <p><center><img src="imagedrag_toDesktop.gif" alt="imagedrag_toDesktop" style="width:290px;"></center></p>
+  </div>
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> <!--col-md-6?-->
     <p>
-    The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.
-    </p>
-  </div>
-  <div class="col-xs-12 col-lg-3"> <!--col-md-6?-->
-    <p><center><img src="filedrag_multiFolderHover.gif" alt="W3Schools.com" style="width:290px;"></center></p>
-  </div>
-  <div class="col-xs-12 col-lg-3"> <!--col-md-6?-->
-    <p>
-    2The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.
+    <div class = "well">2The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.</div>
     </p>
   </div>
 </div>
 
-<div class="row"><p><p></div>
+<div class="row"><p></p></div>
 
 <div class = "row">
-  <div class="col-xs-12 col-lg-3"> <!--col-md-6?-->
-    <p><center><img src="filedrag_folderHover.gif" alt="W3Schools.com" style="width:290px;"></center></p>
+  <div class="col-xs-12 col-sm-6 col-lg-3"> <!--col-md-6?-->
+    <p><center><img src="filedrag_folderHover.gif" alt="filedrag_folderHover" style="width:290px;"></center></p>
   </div>
-  <div class="col-xs-12 col-lg-3"> <!--col-md-6?-->
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> <!--col-md-6?-->
     <p>
     The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.
     </p>
   </div>
-  <div class="col-xs-12 col-lg-3"> <!--col-md-6?-->
-    <p><center><img src="filedrag_multiFolderHover.gif" alt="W3Schools.com" style="width:290px;"></center></p>
+
+  <div class="clearfix visible-md visible-sm"></div>
+
+  <div class="col-xs-12 col-sm-6 col-lg-3"> <!--col-md-6?-->
+    <p><center><img src="filedrag_multiFolderHover.gif" alt="filedrag_multiFolderHover" style="width:290px;"></center></p>
   </div>
-  <div class="col-xs-12 col-lg-3"> <!--col-md-6?-->
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> <!--col-md-6?-->
     <p>
     2The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.
     </p>
@@ -74,20 +107,21 @@ layout: component
 <div class="row"><p>/<p></div>
 
 <div class = "row">
-  <div class="col-xs-12 col-lg-3"> <!--col-md-6?-->
-    <p><center><img src="filedrag_folderHover.gif" alt="W3Schools.com" style="width:290px;"></center></p>
+  <div class="col-xs-12 col-sm-6 col-lg-3"> <!--col-md-6?-->
+    <p><center><img src="textdrag_newFile.gif" alt="textdrag_newFile" style="width:290px;"></center></p>
   </div>
-  <div class="col-xs-12 col-lg-3"> <!--col-md-6?-->
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> <!--col-md-6?-->
     <p>
-    The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.
+    <div class = "well">The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.</div>
     </p>
   </div>
-  <div class="col-xs-12 col-lg-3"> <!--col-md-6?-->
-    <p><center><img src="filedrag_multiFolderHover.gif" alt="W3Schools.com" style="width:290px;"></center></p>
+<div class="clearfix visible-md visible-sm"></div>
+  <div class="col-xs-12 col-sm-6 col-lg-3"> <!--col-md-6?-->
+    <p><center><img src="textdrag_copyPaste.gif" alt="textdrag_copyPaste" style="width:290px;"></center></p>
   </div>
-  <div class="col-xs-12 col-lg-3"> <!--col-md-6?-->
+  <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-lg-3"> <!--col-md-6?-->
     <p>
-    2The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.
+    <div class = "well">2The drag-and-drop feature is rarely, if ever, visible to the user in its idle state. Rather, the user must simply be aware that a drag-and-drop function exists in order to use it. [see learnability for more?]. Once the drag-and-drop is initiated, the actions are visually represented to assist the user's understanding of their actions.</div>
     </p>
   </div>
 </div>
@@ -300,7 +334,7 @@ layout: component
   <text transform="matrix(0.7772104740142822,0,0,0.7772104740142822,15.372477293014526,51.90995955467224) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_21" y="134.05464" x="441.48373" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Click &amp; Hold Mouse</text>
   <text transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="105.95018" x="-65.59651" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_2">Object is "lifted" off the screen<tspan id="svg_143" y="125.95018" x="-65.59651">and displayed as a semi-transparent</tspan><tspan id="svg_144" y="145.95018" x="-65.59651">ghost image that is anchored to</tspan><tspan id="svg_145" y="165.95018" x="-65.59651">the mouse.</tspan></text>
   <rect height="97.28261" width="230.99998" y="131.5" x="579.43355" fill="#aaaaff" id="svg_8"/>
-  <text transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="100.49794" x="464.72591" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_18">Ghost image is always<tspan y="120.49794" x="464.72591" id="svg_159">anchored to the cursor.</tspan></text>
+  <text transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="105" x="464.72591" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_18">Ghost image is always<tspan y="127" x="464.72591" id="svg_159">anchored to the cursor.</tspan></text>
   <text id="svg_24" transform="matrix(0.7772104740142822,0,0,0.7772104740142822,15.372477293014526,51.90995955467224) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="427.41147" x="444.05705" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Mouse Released</text>
   <text id="svg_25" transform="matrix(0.7772104740142822,0,0,0.7772104740142822,15.372477293014526,51.90995955467224) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="132.76799" x="872.5124" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Dragging (mouse still down)</text>
   <rect id="svg_31" height="82.99999" width="229.99999" y="21" x="241" fill="#aaaaff"/>
@@ -313,11 +347,11 @@ layout: component
   <rect height="32" width="212" y="362" x="608" fill="#aaaaff" id="svg_64"/>
   <text transform="matrix(0.7772104740142822,0,0,0.7772104740142822,15.372477293014526,51.90995955467224) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="429.34145" x="905.96538" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_65">Mouse Released</text>
   <rect height="73" width="276" y="426" x="696.5" fill="#aad4ff" id="svg_66"/>
-  <text transform="matrix(0.8779863077194501,0,0,0.8779863077194501,13.32279933940516,16.713640758508298) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="494.88436" x="934.72622" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_67">Dropped in different location</text>
+  <text transform="matrix(0.8779863077194501,0,0,0.8779863077194501,13.32279933940516,16.713640758508298) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="494.88436" x="934.72622" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_67">Dropped on valid location</text>
   <text transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="559.26572" x="675.13044" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_68">Ghost object is "dropped" onto cursor's<tspan y="579.26572" x="675.13044" id="svg_161">location and displayed as a normal file.</tspan></text>
   <rect height="103" width="286" y="505" x="493.00002" fill="#aad4ff" id="svg_69"/>
-  <text transform="matrix(0.8779863077194501,0,0,0.8779863077194501,13.32279933940516,16.713640758508298) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="582.58505" x="709.77966" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_70">Dropped in undroppable location</text>
-  <text transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="682.33077" x="362.79447" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_71">Ghost object is animated back on a<tspan y="702.33077" x="362.79447" id="svg_162">linear path to its original location.</tspan><tspan y="722.33077" x="362.79447" id="svg_163">Undroppable locations include the top</tspan><tspan y="742.33077" x="362.79447" id="svg_164">bar or other areas that do not hold files.</tspan></text>
+  <text transform="matrix(0.8779863077194501,0,0,0.8779863077194501,13.32279933940516,16.713640758508298) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="582.58505" x="709.77966" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_70">Dropped on invalid location</text>
+  <text transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="682.33077" x="362.79447" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000" id="svg_71">Ghost object is animated back on a<tspan y="702.33077" x="362.79447" id="svg_162">linear path to its original location.</tspan><tspan y="722.33077" x="362.79447" id="svg_163">Invalid locations include the top</tspan><tspan y="742.33077" x="362.79447" id="svg_164">bar or other areas that do not hold files.</tspan></text>
   <rect id="svg_79" height="73" width="276" y="253" x="402" fill="#aad4ff"/>
   <text id="svg_80" transform="matrix(0.8779863077194501,0,0,0.8779863077194501,13.32279933940516,16.713640758508298) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="296.70361" x="597.02164" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Escape Key Pressed</text>
   <text id="svg_81" transform="matrix(0.6419369578361511,0,0,0.6419369578361511,399.10601837188005,108.13503873348236) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="294.4422" x="214.80487" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Ghost object is animated back on a<tspan y="314.4422" x="214.80487" id="svg_165">linear path to its original location</tspan></text>
