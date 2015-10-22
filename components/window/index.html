@@ -3,6 +3,8 @@ title: Window
 layout: component
 ---
 
+
+
 <p class="lead"> Not to be confused with Microsoft Windows, a window
 is a rectangular shape that displays content on a computer monitor. It is so common that even a 
 In fact, a window is used to view the content of the page! 
@@ -24,7 +26,7 @@ In fact, a window is used to view the content of the page!
     <img src="Content.png" alt="An example of content of a window" width="400">
     <small>An example of the "Content"</small>
   </ul>
-  In the frame there are buttons located on the top left corner or top right corner of the frame. There is a slight variation on the frame depending on what type of window one is accessing. <em>(See the <a href="http://127.0.0.1:4000/paradixm/components/window/#variants">'Variants'</a> section below.)</em> Generally in the middle of the frame, there is a title containing the location of the content one is viewing.
+  In the frame there are buttons located on the top left corner or top right corner of the frame. There is a slight variation on the frame depending on what type of window one is accessing. <em>(See the <a href="http://127.0.0.1:4000/paradixm/components/window/#variants">'Variant Appearance'</a> section below.)</em> Generally in the middle of the frame, there is a title containing the location of the content one is viewing.
   <br> <br>
   The content component of  the window, varies greatly and is dependent upon the type of window you are accessing. Depending on the operating system one is using the frame might envelope the content and acting in a literal sense like a frame.
 
@@ -32,16 +34,16 @@ In fact, a window is used to view the content of the page!
   </blockquote>
   <img src="Yosemite-Screenshot.png" alt="picture of Yosemite window" height="200">
 
-<h3 id="variants">Variants</h3>
+<h3 id="variants">Variant Appearance</h3>
   <blockquote> There are five common variants of windows. <ol>
     <li>File Explorer</li>
     <img src="GeneralWindow.PNG" alt="picture of File Explorer Window" height="200">
     <blockquote>The file explorer window is usually accessed when one clicks a folder on their computer. There are three buttons located in the frame in the left or right corner depending on the operating system one is using.  </blockquote>
     <li>Dialog</li>
-    <img src="dialog.PNG" alt="A picture of a Dialog Window" height="200">
+    <img src="dialog.PNG" alt="A picture of a Dialog Window" width="400">
     <blockquote>The dialog window usually appears the computer prompts the user for input in the form of button or string input. In the frame there will only be one or no button depepending on the operating system.</blockquote>
     <li>Alert</li>
-    <img src="alert.PNG" alt="A picture of a alert Window" height="200">
+    <img src="alert.PNG" alt="A picture of a alert Window"  width="400">
     <blockquote>The alert window occurs when the computer wants to notifies the user of an action. It prompts the user for input in the form of a single button signiging that the user acknowledges the message. In its frame there will be a single or no button. </blockquote>
     <li>Properties</li>
     <img src="Properties.PNG" alt="A picture of a Properties window" height="200">
@@ -58,7 +60,10 @@ Most of these variants's appearance vary. For more details on a specific variant
 <!-- Second Column -->
 <div class="col-sm-6">
 <h3>Typical Behavior</h3>
+
+<!-- Events Section -->
 <h4>Events</h4>
+<h5>The frame buttons</h5>
   <blockquote> The three buttons in the frame exhibit three different behaviors.
   <img src="Three-buttons.PNG" alt="The three buttons within the frame">
   <ul><li>When the button to the outermost left is <code>clicked</code> the window closes.</li>
@@ -67,8 +72,40 @@ Most of these variants's appearance vary. For more details on a specific variant
   <em>(For more info on the button component see <a href="../button/index.html">button</a>)</em>
   </ul>
   </blockquote>
+  <h5>The frame</h5>
+  <blockquote><ul>
+  	<li>If you click and hold the frame, you are able to move the window by dragging your mouse</li>
+  	<li>By double clicking the the frame you can expand or compress the size of the window. As to how big it varies from different platforms.</li>
+  </ul></blockquote>
   <br>
+  <h5>The window</h5>
+  <blockquote>
+  	<ul>
+  		<li>When one's mouse is at the edge of the window, the user is notified that the window can be resized, signified by the mouse changing its shape.</li> <ul>
+  			<li>When this happens if the user clicks and hold, by dragging the mouse one is able to change the size of the window precisely</li>
+  		</ul>
+  		
+  	</ul>
+  </blockquote>
   
+  <h4>State Diagram</h4>
+  	<blockquote>The window component has two states: <code>active</code> and <code>passive</code>.
+  	<br><br>
+	<img src="Selected-Deselected.png" alt="An example of an active and passive window" height="200">
+	<br><br>
+	When a window is opened it is in its active state by default. In this scenario we will call this <strong>window 1</strong>. In this state <strong>window 1's</strong> events work normally. 
+	<br><br>
+	<img src="Diagram-1.png" alt="A single window open" height="200" width="400">
+	<br><br>
+	Lets assume the user opens up another window called <strong>window 2</strong>. When this happens <strong>window 1</strong> is in it's passive state while <strong>window 2</strong> would be in its active. The user is alerted to this change when <strong>window 1</strong> appears to grayer than <strong>window 2</strong>. 
+	<br><br>
+	<img src="Diagram-2.png" alt="A single window open" height="200" width="400">
+	<br><br>
+	If the user clicks <strong>window 1</strong>, then <strong>window 2</strong> would become passive while <strong>window 1</strong> would be active.
+	<br><br>
+	If the user clicks the original window 
+	</blockquote>
+  	
   
   </div>
 </div>
