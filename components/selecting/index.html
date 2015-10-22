@@ -3,7 +3,7 @@ title: Selecting
 layout: component
 ---
 
-<p class="lead"> A common task where a user is able to grab certain items such as text, images, or other medias that are on the computer. </p> 
+<p class="lead"> A common task where a user is able to grab certain items such as text, images, or other medias that are on the computer. It is a quick way for the computer to know what it is that the user is focusing on. </p> 
 
 
 <h3> Typical Appearance <small> how it usually looks </small> </h3> 
@@ -26,13 +26,13 @@ layout: component
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
+<div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img style="height: 300px; width:auto;" align="middle" src="images/file_selection.png" alt="File Selection screenshot">
-      <div class="carousel-caption">
+    	<img style="height: 300px; width:auto;" align="middle" src="images/file_selection.png" alt="File Selection screenshot">
+    	<div class="carousel-caption">
         <p > File Selection</p>
-      </div>
     </div>
+</div>
     <div class="item">
       <img style="height: 300px; width:auto;" align="middle" src="images/icon_selection.png" alt="icon selection screenshot">
       <div class="carousel-caption">
@@ -41,20 +41,19 @@ layout: component
     </div>
 
     <div class="item">
-      <img style="height: 300px; width:auto;" align="middle" src="images/menu_selection.png" alt="menu selection screenshot">
-      <div class="carousel-caption">
-        <p> Menu Selection on OSX </p>
-      </div>
+    	<img style="height: 300px; width:auto;" align="middle" src="images/menu_selection.png" alt="menu selection screenshot">
+      	<div class="carousel-caption">
+        	<p> Menu Selection on OSX </p>
+      	</div>
     </div>
 
     <div class="item">
-      <img style="height: 300px; width:auto;" align="middle" src="images/text_selection.png" alt="text selection screenshot">
-      <div class="carousel-caption">
-        <p> Text Selection on OSX </p>
-      </div>
+      	<img style="height: 300px; width:auto;" align="middle" src="images/text_selection.png" alt="text selection screenshot">
+      	<div class="carousel-caption">
+        	<p> Text Selection on OSX </p>
+      	</div>
     </div>
 
-  </div>
 
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -67,28 +66,51 @@ layout: component
   </a>
 </div>
 
-<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales a erat ut venenatis. Nullam nec nisi a nibh tempus cursus. Maecenas maximus risus vel sem volutpat, gravida lacinia est lobortis. Sed fermentum rutrum tellus. Sed euismod laoreet ipsum ac tempus. Ut tortor eros, iaculis quis consectetur in, consectetur et risus. In tincidunt tempus turpis. Fusce venenatis nibh ultricies, efficitur orci nec, pulvinar nisl. Sed condimentum nec dolor vitae maximus. Nullam ullamcorper ante in elementum eleifend. In consequat dui dapibus auctor tincidunt. Vestibulum fermentum metus non dui feugiat condimentum. Nullam aliquet dolor quis odio euismod, id mattis nibh posuere. Sed ac nunc nec mi aliquam consectetur. Curabitur est sem, semper sed risus placerat, mattis laoreet ex. </p>
+<p style="text-align: center"> Selecting is usually seen as blue highlights for text and a white half-opaque rim around a file icon.</p> 
 
 
 <h3> Typical Behavior <small> how it usually behaves </small> </h3>
 
-<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales a erat ut venenatis. Nullam nec nisi a nibh tempus cursus. Maecenas maximus risus vel sem volutpat, gravida lacinia est lobortis. Sed fermentum rutrum tellus. Sed euismod laoreet ipsum ac tempus. Ut tortor eros, iaculis quis consectetur in, consectetur et risus. In tincidunt tempus turpis. Fusce venenatis nibh ultricies, efficitur orci nec, pulvinar nisl. Sed condimentum nec dolor vitae maximus. Nullam ullamcorper ante in elementum eleifend. In consequat dui dapibus auctor tincidunt. Vestibulum fermentum metus non dui feugiat condimentum. Nullam aliquet dolor quis odio euismod, id mattis nibh posuere. Sed ac nunc nec mi aliquam consectetur. Curabitur est sem, semper sed risus placerat, mattis laoreet ex. </p> 
-		
-<div class="row"> 		
+<p> When a user selects, the most typical appearance is that the item itself highlights in a different color. However for different items the selection will look different. 
+</p>
+
+<p>For text, the cursor turns into a text cursor as the mouse hovers over. When the user clicks and drags the mouse, it is then that the choosen characters highlight in a different color.
+</p>
+
+<p> For items such as folders and files, when the item is clicked the a rim halo appears around the folder to signify that the computer is currently focusing on that particular object. It is from there that the user can choose to open it and do other commands with it.</p>
+
+<h4> Events </h4>			
+<div class="row"> 	
+	
 	<div class="col-sm-6">
+		<div class="well"> 
+			<p> <b> Text selection </b>: When text-selecting the major actions is clicking, dragging, and letting go. 
+				<ul>
+					<li> Click: The click signifies the beginning of the selection. As the user is hovering over the text, the mouse cursor will then turn into a text cursor. That is usually the sign that a user is able to do a text selection. Another event that occurs due to clicking is after the user has made their selection if they click without holding down the command or shift keys they will unselet that particular item. </li>
 
-		<h4> Events </h4>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales a erat ut venenatis. Nullam nec nisi a nibh tempus cursus. Maecenas maximus risus vel sem volutpat, gravida lacinia est lobortis. Sed fermentum rutrum tellus. Sed euismod laoreet ipsum ac tempus. Ut tortor eros, iaculis quis consectetur in, consectetur et risus. In tincidunt tempus turpis. Fusce venenatis nibh ultricies, efficitur orci nec, pulvinar nisl. Sed condimentum nec dolor vitae maximus. Nullam ullamcorper ante in elementum eleifend. In consequat dui dapibus auctor tincidunt. Vestibulum fermentum metus non dui feugiat condimentum. Nullam aliquet dolor quis odio euismod, id mattis nibh posuere. Sed ac nunc nec mi aliquam consectetur. Curabitur est sem, semper sed risus placerat, mattis laoreet ex. 
-		<p> 
+					<li> Dragging: From the starting point, the user drags along the text to the last point of where they would like to select. Whereever the mouse hovers during this dragging state is what is selected. </li> 
+
+					<li> Letting go: When the user reaches the end of their selection, by letting go they signify that that is the end of what they choose. At this point the cursor now turns back into a normal mouse cursor and the text that they would like to select is in blue. It is from this step that the user can do whatever action they would like with the text, whether that is copying it to the clipboard etc. </li>
+				</ul>
+			</p> 
+		</div>
 	</div>
-
-	<div class = "col-sm-6">
-		<h4> State Diagram <h4> 
-		<p> INSERT IMAGE </p> 
-	</div> 
+	<div class= "col-sm-6">
+		<div class="well"> 
+			<p> <b> File selection</b>: File selecting is very similar to the text selection except the major event is clicking.</p> 
+			<ul>
+				<li> Click: When the user clicks on the icon that they would like, that is when the item highlights and it signifies that it is selected. For most computers, when holding down shift and command keys, more items can be selected. When a file is seleected, if a user clicks on an area that is not another file or the same sort of icon, it will deselect the selection. </li>
+			</ul>
+		</div>
+	</div>
 </div>
-	<h4> Component in Action </h4>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales a erat ut venenatis. Nullam nec nisi a nibh tempus cursus. Maecenas maximus risus vel sem volutpat, gravida lacinia est lobortis. Sed fermentum rutrum tellus. Sed euismod laoreet ipsum ac tempus. Ut tortor eros, iaculis quis consectetur in, consectetur et risus. In tincidunt tempus turpis. Fusce venenatis nibh ultricies, efficitur orci nec, pulvinar nisl. Sed condimentum nec dolor vitae maximus. Nullam ullamcorper ante in elementum eleifend. In consequat dui dapibus auctor tincidunt. Vestibulum fermentum metus non dui feugiat condimentum. Nullam aliquet dolor quis odio euismod, id mattis nibh posuere. Sed ac nunc nec mi aliquam consectetur. Curabitur est sem, semper sed risus placerat, mattis laoreet ex.
+
+<h4> State Diagram <h4> 
+<p> INSERT IMAGE </p> 
+	
+
+<h4> Component in Action </h4>
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales a erat ut venenatis. Nullam nec nisi a nibh tempus cursus. Maecenas maximus risus vel sem volutpat, gravida lacinia est lobortis. Sed fermentum rutrum tellus. Sed euismod laoreet ipsum ac tempus. Ut tortor eros, iaculis quis consectetur in, consectetur et risus. In tincidunt tempus turpis. Fusce venenatis nibh ultricies, efficitur orci nec, pulvinar nisl. Sed condimentum nec dolor vitae maximus. Nullam ullamcorper ante in elementum eleifend. In consequat dui dapibus auctor tincidunt. Vestibulum fermentum metus non dui feugiat condimentum. Nullam aliquet dolor quis odio euismod, id mattis nibh posuere. Sed ac nunc nec mi aliquam consectetur. Curabitur est sem, semper sed risus placerat, mattis laoreet ex.
 		</p>
 <h3> Variants <small> how it varies per location </small> </h3>
 	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales a erat ut venenatis. Nullam nec nisi a nibh tempus cursus. Maecenas maximus risus vel sem volutpat, gravida lacinia est lobortis. Sed fermentum rutrum tellus. Sed euismod laoreet ipsum ac tempus. Ut tortor eros, iaculis quis consectetur in, consectetur et risus. In tincidunt tempus turpis. Fusce venenatis nibh ultricies, efficitur orci nec, pulvinar nisl. Sed condimentum nec dolor vitae maximus. Nullam ullamcorper ante in elementum eleifend. In consequat dui dapibus auctor tincidunt. Vestibulum fermentum metus non dui feugiat condimentum. Nullam aliquet dolor quis odio euismod, id mattis nibh posuere. Sed ac nunc nec mi aliquam consectetur. Curabitur est sem, semper sed risus placerat, mattis laoreet ex.
