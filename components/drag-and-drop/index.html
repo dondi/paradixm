@@ -4,66 +4,28 @@ layout: component
 ---
 
 <style type="text/css">
-    html {
-    overflow: -moz-scrollbars-vertical; 
-    overflow-y: scroll;
-    }
-    /*only display on large screens*/
-    @media (max-width:991px) {
-        .large-only {
-            display:none !important;
-        }
-    }
-    /*only display on medium & larger screens*/
-    @media (max-width: 991px) {
-        .medium-only {
-            display:none !important;
-        }
-    }
-    /*only display on small screens*/
-    @media (min-width: 992px) {
-        .small-only {
-            display:none !important;
-        }
-    }
-
-    /*only display on extra small screens*/
-    @media (min-width: 767px) {
-        .xsmall-only {
-            display:none !important;
-        }
-    }
-
-    .vertAlignCell div {
-      display: table-cell; 
-      vertical-align: middle;
-    } 
-
-    .inlineHeader h4{
-    display: inline;
-    margin-right:2px;
-    font-size: 16px;
-    }
-
-    .wellz {
-    vertical-align: middle;
-    overflow:auto;
-    padding: 19px;
-    margin-bottom: 20px;
-    background-color: #f5f5f5;
-    border: 1px solid #e3e3e3;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-    }
-
-    kbd {
-    padding: 2px 4px;
-    font-size: 90%;
-    color: #000;
-    background-color: #DCDCDC;
-    }
-
+/**************************************************************************/
+/*Variable Content Based on Screen Size*/
+  /*only display on large screens*/
+  @media (max-width:991px) {
+      .large-only {
+          display:none !important;
+      }
+  }
+  /*only display on medium & larger screens*/
+  @media (max-width: 991px) {
+      .medium-only {
+          display:none !important;
+      }
+  }
+  /*only display on small screens*/
+  @media (min-width: 992px) {
+      .small-only {
+          display:none !important;
+      }
+  }
+/**************************************************************************/
+/*Usability Metrics Section*/
   #metrics {
     height: 330px;
     overflow: hidden;
@@ -92,48 +54,87 @@ layout: component
     box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
   }
   .metricsScroller {
-  height: 310px;
-  overflow: auto;
-  padding: 10px;
-}
+    height: 310px;
+    overflow: auto;
+    padding: 10px;
+  }
 
-.layout {
-  height: 330px;
-  overflow: hidden;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-    .carousel-inner > .item > img {
+  .layout {
+    height: 330px;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+/**************************************************************************/
+/*Variant Carousel Formatting*/
+  .carousel-inner > .item > img {
     margin: 0 auto;
-    }
+  }
 
-   .carousel-caption {
-      background-color: #4C4C4C;
-      position: static;
-      margin-top: 10px;
-      padding-top:10px;
-      padding-bottom:40px;
-    }
-    .carousel-caption h1 {
-        margin-top:0px ;
-        font-size: 30px;
-        font-color: green;
-    }
+ .carousel-caption {
+    background-color: #4C4C4C;
+    position: static;
+    height:170px;
+    padding-right:10px;
+    padding-left:10px;
+    margin-top: 10px;
+    padding-top:10px;
+    padding-bottom:40px;
+  }
+  .carousel-caption h1 {
+    margin-top:0px ;
+    font-size: 30px;
+    font-color: green;
+  }
 
-    .carousel {
-        background-color:#f5f5f5;
-        position: relative;
-        padding: 10px;     /* Shows as a border around the carousel */
-    }
+  .carousel {
+    background-color:#f5f5f5;
+    position: relative;
+    padding: 10px;
+  }
 
+/**************************************************************************/
+/*Additional Formatting*/
+  .inlineHeader h4{
+    display: inline;
+    margin-right:2px;
+    font-size: 16px;
+  }
+
+  .wellScroller {
+    vertical-align: middle;
+    overflow:auto;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  }
+
+  kbd {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #000;
+    background-color: #DCDCDC;
+  }
+
+  hr {
+    border-color: #e6e6e6;
+    border-style: solid none;
+    border-width: 1px 0;
+    margin: 18px 0;
+  }
 </style>
+
+<!--****************************Lead*********************************-->
 
 <p class="lead">
 The drag-and-drop feature allows the user to interactively move a file or image. Common results of dragging and dropping include <mark>moving</mark> a file to a new location, <mark>saving</mark> a file from an outside source (such as a website), and <mark>duplicating</mark> a file.</p>
 
 <!--****************************Typical Appearance**********************************-->
-
+<hr>
 <div class="row">
   <div class="col-md-5">
     <h3>Typical Appearance</h3>
@@ -150,7 +151,6 @@ The drag-and-drop feature allows the user to interactively move a file or image.
   <div class="clearfix visible-sm"></div>
 
 <!--****************************Key Characteristics**********************************-->
-
   <div class="col-md-7">
     <h3>Key Characteristics</h3>
     <div>
@@ -161,7 +161,7 @@ The drag-and-drop feature allows the user to interactively move a file or image.
       <p>The most recognizable drag and drop feature is the "ghost" that appears when a user clicks and drags a file, image, or other object. <mark>It is the universal sign that indicates the object is being dragged.</mark></p>
     </div>
  
-<p></p>
+    <p></p>
     <div>
       <h4>Common Rules of Drag-and-Drop</h4>
       <ul>
@@ -172,13 +172,11 @@ The drag-and-drop feature allows the user to interactively move a file or image.
         <p><li><mark>Drag and drop should not be the only option for the user.</mark> The drag and drop is a visual tool meant to facilitate the user's understanding, but it is not the most efficient method. If the user can simply write their file name into a textbox or copy and paste the file, that functionality should also be available to them.</li></p>
       </ul>
     </div>
-
   </div>
 </div>
 <br>
-
+<hr>
 <!--****************************Typical Behavior**********************************-->
-<br>
 <div class = "row">
   <div class = "col-xs-12">
     <h3>Typical Behavior</h3><p>
@@ -212,13 +210,12 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
 </div>
 
 <!--****************************Gif Examples**********************************-->
-
 <div class="row"><p></p>
   <div class="col-sm-4 col-sm-offset-1  col-lg-3 col-lg-offset-0">
     <div align="center"><img src="filedrag_toDesktop.gif" alt="filedrag_toDesktop gif" style="width:290px;"></div>
   </div>
   <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
-     <div class = "wellz" style = "height:181px">This example demonstrates the most common use of drag and drop: the changing of file locations, or the <code>moving</code>  functionality. While the computer only needs the new file address, the drag and drop visual scheme assists the viewer in understanding the inner workings of the Finder. This also illustrates how the state of the ghost-image can change as it is dragged to different areas, such as the desktop. This state change is used to indicate that it can be dropped at that location, facilitating the user's learnability, memorability, and satisfaction while also reducing the chance of errors.</div>
+     <div class = "wellScroller" style = "height:181px">This example demonstrates the most common use of drag and drop: the changing of file locations, or the <code>moving</code>  functionality. While the computer only needs the new file address, the drag and drop visual scheme assists the viewer in understanding the inner workings of the Finder. This also illustrates how the state of the ghost-image can change as it is dragged to different areas, such as the desktop. This state change is used to indicate that it can be dropped at that location, facilitating the user's learnability, memorability, and satisfaction while also reducing the chance of errors.</div>
   </div>
 
   <div class="clearfix visible-md clearfix visible-sm"></div>
@@ -228,7 +225,7 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
     <div align="center"><img src="imagedrag_toDesktop.gif" alt="imagedrag_toDesktop gif" style="width:290px;"></div>
   </div>
   <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
-     <div class = "wellz" style = "height:181px">In this example, an image is dragged from an Internet webpage onto the desktop. This illustrates the <code>saving</code> functionality. Many elements, including images, text, and links, can be dragged and dropped directly from webpages to the computer. Ideally, this action should cause the ghost-image to change states when it enters the dekstop area, to indicate that it can be dropped there. In the case of OS Yosemite, however, this functionality it is not implemented.</div>
+     <div class = "wellScroller" style = "height:181px">In this example, an image is dragged from an Internet webpage onto the desktop. This illustrates the <code>saving</code> functionality. Many elements, including images, text, and links, can be dragged and dropped directly from webpages to the computer. Ideally, this action should cause the ghost-image to change states when it enters the dekstop area, to indicate that it can be dropped there. In the case of OS Yosemite, however, this functionality it is not implemented.</div>
   </div>
 </div>
 
@@ -240,7 +237,7 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
     <div align="center"><img src="filedrag_multiFolderHover.gif" alt="filedrag_multiFolderHover gif" style="width:290px;"></div>
   </div>
   <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
-     <div class = "wellz" style = "height:181px">This is a more complex example of the drag and drop <code>moving</code> functionality. A user is able to interactively travel through a file hierarchy while dragging their file by hovering over the folder they wish to enter. Subtle animations are used to facilitate the user's understanding of the process. As the gif shows, the folders blink briefly before opening as the reader hovers their ghost-image over them. These visual cues help the user feel as though they are physically navigating through the folder structure as they drag their file.</div>
+     <div class = "wellScroller" style = "height:181px">This is a more complex example of the drag and drop <code>moving</code> functionality. A user is able to interactively travel through a file hierarchy while dragging their file by hovering over the folder they wish to enter. Subtle animations are used to facilitate the user's understanding of the process. As the gif shows, the folders blink briefly before opening as the reader hovers their ghost-image over them. These visual cues help the user feel as though they are physically navigating through the folder structure as they drag their file.</div>
   </div>
 
   <div class="clearfix visible-md clearfix visible-sm"></div>
@@ -250,7 +247,7 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
     <div align="center"><img src="filedrag_duplicate.gif" alt="filedrag_duplicate gif" style="width:290px;"></div>
   </div>
   <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
-     <div class = "wellz" style = "height:181px">Here, the user has communicated with the drag and drop function by holding down the <kbd>opt</kbd> key (<kbd>alt</kbd> on a PC). This causes the drag and drop function not to move a file, but to <code>duplicate</code> it. It is identified by the green plus icon that appears when the ghost-image is dragged over a valid area. This is an additional functionality that is both useful and widely unknown. It is neither memorable nor easily learnable, and it looks almost identical to the normal drag and drop function, making it difficult to visually discern whether it is activated or not by inexperienced users. This utility is, however, an extremely efficient way of copying a file quickly.</div>
+     <div class = "wellScroller" style = "height:181px">Here, the user has communicated with the drag and drop function by holding down the <kbd>opt</kbd> key (<kbd>alt</kbd> on a PC). This causes the drag and drop function not to move a file, but to <code>duplicate</code> it. It is identified by the green plus icon that appears when the ghost-image is dragged over a valid area. This is an additional functionality that is both useful and widely unknown. It is neither memorable nor easily learnable, and it looks almost identical to the normal drag and drop function, making it difficult to visually discern whether it is activated or not by inexperienced users. This utility is, however, an extremely efficient way of copying a file quickly.</div>
   </div>
 </div>
 
@@ -262,7 +259,7 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
     <div align="center"><img src="filedrag_sameLocation.gif" alt="filedrag_sameLocation gif" style="width:290px;"></div>
   </div>
   <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
-     <div class = "wellz" style = "height:181px">This example illustrates the result of a drag and drop that is unsuccessful. The user has dragged and placed their file in the same file address, triggering an animation of the ghost-image returning to its source on a linear path. This animation could be triggered by a user error, but it is also a common method of cancelling the drag and drop non-destructively.</div>
+     <div class = "wellScroller" style = "height:181px">This example illustrates the result of a drag and drop that is unsuccessful. The user has dragged and placed their file in the same file address, triggering an animation of the ghost-image returning to its source on a linear path. This animation could be triggered by a user error, but it is also a common method of cancelling the drag and drop non-destructively.</div>
   </div>
 
   <div class="clearfix visible-md clearfix visible-sm"></div>
@@ -272,13 +269,12 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
     <div align="center"><img src="filedrag_topBar.gif" alt="filedrag_topBar gif" style="width:290px;"></div>
   </div>
   <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-lg-3 col-lg-offset-0">
-     <div class = "wellz" style = "height:181px">Here is another common method that users might use to intentionally cancel their drag and drop. This functionality is most likely limited to Mac workspaces, but the theory behind it spans all platforms: when a ghost-image is dropped on an invalid area, the drag and drop should be cancelled and the file returned to its original place. The address bar is an easily accessible way to cancel a drag and drop, but it is not necessarily intuitive or easily learnable. The user needs prior knowledge of what a valid and invalid area looks like in order to know where to place or cancel a drag and drop.</div>
+     <div class = "wellScroller" style = "height:181px">Here is another common method that users might use to intentionally cancel their drag and drop. This functionality is most likely limited to Mac workspaces, but the theory behind it spans all platforms: when a ghost-image is dropped on an invalid area, the drag and drop should be cancelled and the file returned to its original place. The address bar is an easily accessible way to cancel a drag and drop, but it is not necessarily intuitive or easily learnable. The user needs prior knowledge of what a valid and invalid area looks like in order to know where to place or cancel a drag and drop.</div>
   </div>
 </div>
-
 <!--****************************State Diagram**********************************-->
 
-<br><br><h3>State Diagram</h3>
+<br><br><h4>State Diagram</h4>
 <div class = "small-only">Please increase your browser size to view the full state diagram.</div>
 <div class = "large-only">
 
@@ -346,12 +342,13 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
  </g>
 </svg>
 </div>
-
+<br>
+<hr>
 
 <!--**********************Variants****************************-->
 <div class = "row">
   <div class = "col-xs-12">
-    <br><br><h3>Variants</h3>
+    <h3>Variants</h3>
     Within a desktop computer's file system, the drag and drop function is similar accross platforms. However, the uses for drag and drop in programs, websites, games, and more are endless. Here are a few examples of some more interesting implementations of the classic drag and drop component.
   </div>
 </div>
@@ -429,8 +426,8 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-
+<br>
+<hr>
 <!--**********************Usability Metrics: MD-LG SCREENS****************************-->
 
 <div class = "row medium-only">
@@ -446,16 +443,15 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
       <div class="col-xs-9 metricsMain"><!--main column-->
         <a id="learn"></a>
         <div class = "layout">
-        <div class="metricsScroller inlineHeader">
-             
-             <h3>Learnability</h3><p>
-             The physical action of the drag and drop may seem intuitive to experienced users, but those who have not used the functionality before may struggle with learning it on their own. </p>
-            <h4>There are no visual cues indicating a draggable object until the drag begins.</h4><p>
-            This may be for the better, but for new users this poses an issue. There is no real way of knowing whether an item is draggable or not, unless the user attempts to do so. A button, scrollbar, or checkbox will always be visible to the user, but drag and drop is a hidden functionality that is difficult to discover on ones own without it first being taught. Additionally, the <kbd>opt</kbd>-click and drag to duplicate a file is a <em>doubly</em> hidden functionality that is even less learnable.</p>
-            <h4>But to be fair...</h4><p>
-            All modern computers have the drag and drop functionality in some form or another. It would therefore be very uncommon to find a computer-user who has never seen or tried the drag and drop before. Because of this, the learnability metric is not its first priority. It is safe to assume that most users who wish to move a file would attempt a drag and drop.</p>
-            <h4>All the user needs is a basic awareness of "drag and drop" as an option.</h4><p>
-            If the user knows what a drag and drop is, the functionality is very learnable across all platforms. Drag and drop is fairly uniform in its visual representation on Linux, Mac, Windows, and most websites (especially file-uploading and cloud storage websites). Even games involving drag and drop, like dress-up games or word matchers, are similar and quickly learnable.
+        <div class="metricsScroller inlineHeader">          
+          <h3>Learnability</h3><p>
+          The physical action of the drag and drop may seem intuitive to experienced users, but those who have not used the functionality before may struggle with learning it on their own. </p>
+          <h4>There are no visual cues indicating a draggable object until the drag begins.</h4><p>
+          This may be for the better, but for new users this poses an issue. There is no real way of knowing whether an item is draggable or not, unless the user attempts to do so. A button, scrollbar, or checkbox will always be visible to the user, but drag and drop is a hidden functionality that is difficult to discover on ones own without it first being taught. Additionally, the <kbd>opt</kbd>-click and drag to duplicate a file is a <em>doubly</em> hidden functionality that is even less learnable.</p>
+          <h4>But to be fair...</h4><p>
+          All modern computers have the drag and drop functionality in some form or another. It would therefore be very uncommon to find a computer-user who has never seen or tried the drag and drop before. Because of this, the learnability metric is not its first priority. It is safe to assume that most users who wish to move a file would attempt a drag and drop.</p>
+          <h4>All the user needs is a basic awareness of "drag and drop" as an option.</h4><p>
+          If the user knows what a drag and drop is, the functionality is very learnable across all platforms. Drag and drop is fairly uniform in its visual representation on Linux, Mac, Windows, and most websites (especially file-uploading and cloud storage websites). Even games involving drag and drop, like dress-up games or word matchers, are similar and quickly learnable.
         </div>
         </div>
         <br><br><br>
@@ -513,7 +509,7 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
         <div class ="inlineHeader well">
           The physical action of the drag and drop may seem intuitive to experienced users, but those who have not used the functionality before may struggle with learning it on their own. </p>
           <h4>There are no visual cues indicating a draggable object until the drag begins.</h4><p>
-          This may be for the better, but for new users this poses an issue. There is no real way of knowing whether an item is draggable or not, unless the user attempts to do so. A button, scrollbar, or checkbox will always be visible to the user, but drag and drop is a hidden functionality that is difficult to discover on ones own without it first being taught. Additionally, the <kbd>opt</kbd>-click and drag to duplicate a file is a <em>doubly</em> hidden functionality that is even less learnable.</p>
+          This may be for the better, but for new users this poses an issue. There is no real way of knowing whether an item is draggable or not, unless the user attempts to do so. A button, scrollbar, or checkbox will always be visible to the user, but drag and drop is a hidden functionality that is difficult to discover on one's own without it first being taught. Additionally, the <kbd>opt</kbd>-click and drag to duplicate a file is a <em>doubly</em> hidden functionality that is even less learnable.</p>
           <h4>But to be fair...</h4><p>
           All modern computers have the drag and drop functionality in some form or another. It would therefore be very uncommon to find a computer-user who has never seen or tried the drag and drop before. Because of this, the learnability metric is not its first priority. It is safe to assume that most users who wish to move a file would attempt a drag and drop.</p>
           <h4>All the user needs is a basic awareness of "drag and drop" as an option.</h4><p>
@@ -557,8 +553,9 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
         </div>
       </div>
 </div>
-
-
+<br><hr>
+<p>
 <h3>Platform-Specific Instances</h3>
 
     <blockquote>The drag and drop function has been implemented in most, if not all, major computer platforms. Windows, Linux, and Mac all have extremely similar drag and drop functionalities, including a ghost-image and brief animations of opening files and invalid location drops. The examples listed on this page were all captured on an OS Yosemite Macbook Air, but accurately illustrate the typical drag and drop functionality. The main difference between different platforms is what each constitutes as a valid or invalid location. For example, on a Mac a file that is dragged to the top bar will cancel the drag, but if a file is dragged to the main bar on a Windows platform it will be placed. Despite this slight difference, the drag and drop is visually and functionally analogous accross major platforms and programs.</blockquote>
+  </p>
