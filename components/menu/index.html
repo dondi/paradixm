@@ -12,7 +12,6 @@ layout: component
         <blockquote>
             <p>Menus have been the go-to method for displaying (and hiding) lists of items and buttons for decades.</p>
 
-            [Place a photos of menus here. One for mac, one for pc]
               <div class="col-sm-12">
 
                   <div class="col-sm-6">
@@ -20,33 +19,30 @@ layout: component
               </div>
 
               <div class="col-sm-6">
-                <img src="Mac_FileMenu.png" class="img-responsive" alt="Responsive image">
+                <img src="Windows_start_menu.png" class="img-responsive" alt="Responsive image">
               </div>
 
           </div>
-
-            <br>
-            <p>And like these examples, they tend to follow the standard form of having items listed from top to
+          <div class="col-sm-12">
+            <p><br><br>And like these examples, they tend to follow the standard form of having items listed from top to
                 bottom with anywhere from 1 to around 25 items to choose from.</p>
                 
 
-            <p>Of course, these items can often be menus themselves within other menus.</p>
+            <p>Of course, these items can often be menus themselves within other menus.<br></p>
+          </div>
             <br>
             <img src="Mac_menu_in_menu.png" class="img-responsive" alt="Responsive image">
-
         </blockquote>
 
-        <h3>Placement</h3>
+        <h3>Where do you find them?</h3>
             <blockquote>
                 <p>Menus are usually located on the "edges" of graphical interfaces. For example, the Mac OS X
                 graphical interface provides menus at the top of the Desktop screen that are always available, yet out of the way
                 from high-activity portions of the screen.
               </p>
 
-              <p>[Photo of Mac menus] [Photo of PC menus]</p>
-
               <p>This pattern seems to extend to application or browser windows as well.</p>
-
+            </blockquote>
                   <div class="col-sm-12">
                   <div class="col-sm-6">
                   <h4>Microsoft Word</h4>
@@ -58,9 +54,8 @@ layout: component
                 </div>
                 </div>
 
-                <p>There are also menus that remain hidden unless invoked by the user, such as the menu that
-                    appears when a user right-clicks (or ctrl + click in the case of Mac OS X).</p>
-                [Photos of mac and pc right-clicks]
+                <blockquote>There are also menus that remain hidden unless invoked by the user, such as the menu that
+                    appears when a user right-clicks (or ctrl + click in the case of Mac OS X).</blockquote>
 
                 <div class="col-sm-12">
 
@@ -69,13 +64,11 @@ layout: component
               </div>
 
               <div class="col-sm-6">
-              
+              <img src="Windows_right_click_menu.png" width="800" height="800" class="img-responsive" alt="Responsive image">
               </div>
               
           </div>
                 
-            </blockquote>
-
         <br>
         <h3>Key Characteristics and Best Practices</h3>
         <blockquote>The following attributes for menus across platforms have allowed much more choice and accessibility to
@@ -148,35 +141,22 @@ layout: component
         guidelines mention how users don't usually notice the menu component until it malfunctions or the user makes an error.</p>
 
         <br>
-        <h4>State Diagram</h4>
+        <h4>State Diagram for a Standard Menu</h4>
 
             <blockquote>
-              <p>A state diagram indicating the actions and states of a user interface component.</p>
-
-              <p>This is most likely an image. Bonus props if you use SVG.</p>
-
-              <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
-                usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
-                however, may have more activities than the “public” events that can be reported by a component.</p>
+              <p class="text-center">
+              <img src="Menu_state_diagram.png" width="600" height="600" class="img-responsive" alt="Responsive image">
+            </p>
             </blockquote>
 
-            <p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
-              viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
-              it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
-              state means that a user <em>cannot</em> do so.</p>
-
-            <p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
-              implementations, but in general they are:</p>
-
-            <ul>
-              <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
-                change the button’s appearance. This provides a form of feedback that states that the button will respond if
-                additional activity is performed.</li>
-
-              <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
-                the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
-                from this state, in case the user changes his or her mind in mid-action.</li>
-            </ul>
+            <p>Standard menus generally have 2 states: <code>Closed</code> and <code>Open</code>. The user can open a closed menu by
+              clicking on the menu title (which can be considered a button) and close a menu by clicking outside of it or by clicking on
+              one of its items (which could potentially reinitiate the cycle of opening and closing a menu if the item is a submenu).
+            </p>
+            <p>
+              Hover menus can be one variation of these states, but the only thing that would probably change is that instead of clicks,
+              the events that trigger the opening or closing of a menu is whether the mouse is over the menu or not.
+            </p>
 
 
          <div class="col-sm-12">
@@ -190,7 +170,7 @@ layout: component
             <h4>Component in Action</h4>
 
             <blockquote>
-              <video src="Menu_in_action" type="video/mov" width="320" height="240" controls></video>
+              <img src="Menu_in_action(2).gif" width="320" height="240" controls></img>
             </blockquote>
 
           </div>
