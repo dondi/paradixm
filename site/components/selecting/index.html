@@ -21,6 +21,7 @@ layout: component
     height:200px;
     cursor:pointer; 
 }
+
 </style>
 
 <p class="lead">A very important task that allows the user to group and signify what components they wish to focus on. </p>
@@ -41,7 +42,7 @@ layout: component
 
 <h3>Typical Behavior</h3>
 <p>
-  Since selecting something is such a common task, there is a typical behavior associated with it. When an item is selected it is usually highlighted in a different color. In terms of computers there are many types of items that can be selectable. For example when selecting text, the user would left click and drag over the desired text to select. For folders and files, a user could mouse over and hover the desired item and see a dim highlight encapsulating the item. If the user wants to select that item they would click on it and the dim highlight would change to a more opaque one, signifing the selection. 
+  Since selecting something is such a common task, there is a typical behavior associated with it. When an item is selected it is usually highlighted in a different color. In terms of computers there are many types of items that can be selectable. For example when selecting text, the user would left click and drag over the desired text to select. For folders and files, a user could mouse over and hover the desired item and see a dim highlight encapsulating the item. If the user wants to select that item they would click on it and the dim highlight would change to a more opaque one, signifying the selection. 
 </p>
 
 <p>
@@ -53,7 +54,7 @@ layout: component
 </p>
 
 <p>
-  When using the button Ctrl while selecting, the user can click or highlight on seperate items and group them as a single selection.
+  When using the button Ctrl while selecting, the user can click or highlight on separate items and group them as a single selection.
 </p>
 
 <h4>Events</h4>
@@ -65,36 +66,6 @@ layout: component
   Commonly there are to select one item, the user would click on desired item and thus the item is selected. However if the user wanted to select multiple items, the user would have to drag-click and highlight the section of text or items the wish.
 </p>
 </div>
-
-<h4>State Diagram</h4>
-
-<blockquote>
-  <p>A state diagram indicating the actions and states of a user interface component.</p>
-
-  <p>This is most likely an image. Bonus props if you use SVG.</p>
-
-  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
-    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
-    however, may have more activities than the “public” events that can be reported by a component.</p>
-</blockquote>
-
-<p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
-  viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
-  it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
-  state means that a user <em>cannot</em> do so.</p>
-
-<p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
-  implementations, but in general they are:</p>
-
-<ul>
-  <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
-    change the button’s appearance. This provides a form of feedback that states that the button will respond if
-    additional activity is performed.</li>
-
-  <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
-    the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
-    from this state, in case the user changes his or her mind in mid-action.</li>
-</ul>
 
 <h4>Component in Action</h4>
 <div class="well">
@@ -151,7 +122,7 @@ layout: component
   </p>
 
   <p>
-    2.) Holding the click and draging the cursor so the desired text is highlighted.
+    2.) Holding the click and dragging the cursor so the desired text is highlighted.
   </p>
 
   <p>
@@ -198,10 +169,10 @@ layout: component
 
 <div class="well">
   <p>
-    Learnability/Memorability: Selecting is a basic and universal task a user can perform on almost all user interfaces today. Because of this selecting something on multiple user interfaces are very similar. The only difference is the type of peripherals are avaliable to the user. Once a user learns to perform selecting with certain peripherals (ie. mouse or touch screen), then should be able to figure it out on different platforms.
+    Learnability/Memorability: Selecting is a basic and universal task a user can perform on almost all user interfaces today. Because of this selecting something on multiple user interfaces are very similar. The only difference is the types of peripherals are available to the user. Once a user learns to perform selecting with certain peripherals (i.e. mouse or touch screen), then should be able to figure it out on different platforms.
   </p>
   <p>
-    Efficiency/Errors: Selecting is a simple task and therefore should be performed seemlessly and laglessly. With the selected items or text being highlighted in a noticable color after selection should improve efficiency because the user will notice the difference. There are additional functions that the user can use to improve their selecting experience which are the Shift and Ctrl buttons on the keyboard.
+    Efficiency/Errors: Selecting is a simple task and therefore should be performed seamlessly and lawlessly. With the selected items or text being highlighted in a noticeable color after selection should improve efficiency because the user will notice the difference. There are additional functions that the user can use to improve their selecting experience which are the Shift and Ctrl buttons on the keyboard.
   </p>
   <p>
     Satisfaction: Does not really apply. Users do not find any satisfaction in selecting items in the user interface. Therefore this metric is not needed.
@@ -211,7 +182,7 @@ layout: component
 
 <h3>Key Characteristics</h3>
 <div class="well">
-  There are a few elements that go into a good selecting process. First to select a single target the design should require the user to perform one action(click or tap). Second to select multiple targets the design should have a system in place that builds on top of the single select. For example click to select one target and click and drag to select multiple. 
+  There are a few elements that go into a good selecting process. First to select a single target the design should require the user to perform one action (click or tap). Second to select multiple targets the design should have a system in place that builds on top of the single select. For example click to select one target and click and drag to select multiple. 
 </div>
 
 <h4>Feedback</h4>
@@ -227,15 +198,23 @@ layout: component
 <h4>Windows 7</h4>
 <div class="well">
   <p>
-    Typically in Windows 7, selecting is a very simple task. It supports the three variants of selecting that are detailed above. In the explorer, the user can select through any folder structure, any type of file, and text in any text editor. Windows 7 default color to signify if something is highlighted is blue. However on the desktop a selection of a folder or file is highlighted with a clear outline.These colors are specific to Windows and their operating system. An application that is ran in Windows could have a different color to signify a selection. Above in the typical appearances is where some selection is done in Windows 7. Also the addition functions of Shift and Ctrl are allowed in Window 7 where Shift selects from a start and end, while Ctrl allows multiple selections of single targets.
+    Typically in Windows 7, selecting is a very simple task. It supports the three variants of selecting that are detailed above. In the explorer, the user can select through any folder structure, any type of file, and text in any text editor. Windows 7 default color to signify if something is highlighted is blue. However on the desktop a selection of a folder or file is highlighted with a clear outline. These colors are specific to Windows and their operating system. An application that is run in Windows could have a different color to signify a selection. Above in the typical appearances is where some selection is done in Windows 7. Also the addition functions of Shift and Ctrl are allowed in Window 7 where Shift selects from a start and end, while Ctrl allows multiple selections of single targets.
   </p>
 </div>
 
-<h4>Andriod ~ 4.4.4 ~ Kitkat</h4>
+<h4>Android ~ 4.4.4 ~ Kitkat</h4>
 <div class="well">
   <p>
-    Typically in Andriod, selecting is different than operating systems like Windows and OSX. It does support the three variants that are explained above. However since there is no mouse the user has to rely on touch. To select a single target, usually the user would have to press and hold until more option pop up. To select multiple targets is the same process however the user would just select more. Selecting on Andriod 4.4.4 is very seemless and self explanatory. The user knows when something is selected because there more options and menus will pop up in response to the long press.
+    Typically in Android, selecting is different than operating systems like Windows and OSX. It does support the three variants that are explained above. However since there is no mouse the user has to rely on touch. To select a single target, usually the user would have to press and hold until more option pop up. To select multiple targets is the same process however the user would just select more. Selecting on Android 4.4.4 is very seamless and self explanatory. The user knows when something is selected because there more options and menus will pop up in response to the long press.
   </p>
+  <div class="container">
+    <ul class="row" id="row-pictures">
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/fileSelectAndriod.jpg" alt="File Selection for Android"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/pictureSelectAndriod.jpg" alt="Picture Selection for Android"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/textfieldSelectAndriod.jpg" alt="Text Field Selection Android"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/textSelectAndriod.jpg" alt="Text Selection Android"></li>
+    </ul>
+</div>
 </div>
 
 </div>
