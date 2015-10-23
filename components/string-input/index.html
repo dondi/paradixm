@@ -11,7 +11,6 @@ layout: component
 
 <div class="row">
   	<div class="col-sm-6">
-
 		<h3>Typical Appearance</h3>
 
 		<blockquote>
@@ -45,17 +44,6 @@ layout: component
 		</p>
 		<br>
 
-		<h4>State Diagram</h4>
-		<blockquote>
-			String input fields await values from the user. They are used such that users can submit information and trigger other events in the interface. When a user is not interacting with the field, this component can only be classified as enabled or disabled.
-		</blockquote>
-		<p>
-			For enabled string input fields, the text box is awaiting the user to enter text; the field will also be in wait mode when the user is typing or cleared the text field. For a text field to actually show results, it should be accompanied by an event trigger or a submit button. For disabled text fields, the rectangular box can only do nothing. 
-		</p>
-		<img src="img/string_input_diagram.svg" class="img-responsive">
-		<br>
-		<br>
-
 		<h4>Component in Action (Default Text Field)</h4>
 		<blockquote>
 			The border of string input fields typically glow blue when they are enabled (i.e, when the user clicks on it). Once enabled, the user can easily type whatever they wish into the field. While the user is typing, the caret remains visible to show the user where exactly they are inserting a key.
@@ -73,98 +61,102 @@ layout: component
 			<img src="gifs/drag.gif" width=100%>
 		</p>
 		If there are multiple string input fields on the page (let's say, a form on a webpage), then hitting the tab key would move the caret to and enable the next available text field on the page.
-
-		<br>
-		<br>
-		
 	</div>
 
 	<div class="col-sm-6">
+		<br>
+		<h4>State Diagram</h4>
+		<blockquote>
+			String input fields await values from the user. They are used such that users can submit information and trigger other events in the interface. When a user is not interacting with the field, this component can only be classified as enabled or disabled.
+		</blockquote>
+		<p>
+			For enabled string input fields, the text box is awaiting the user to enter text; the field will also be in wait mode when the user is typing or cleared the text field. For a text field to actually show results, it should be accompanied by an event trigger or a submit button. For disabled text fields, the rectangular box can only do nothing. 
+		</p>
+		<img src="img/string_input_diagram.svg" class="img-responsive">
+		<br>
+		<br>
+
 		<h3>Variants</h3>
 		<blockquote>
 			Although text fields perform in the same manner, they can possess other design behaviors depending on where they are used. 
 		</blockquote>
-		<p>
-			For submitting text entries, the text field can be inlined with a button (see Button component for more info on buttons).
-		</p>
-		<div class="input-append text-center">
-	  		<input class="span2" id="appendedInputButton" type="text">
-	  		<button class="btn" type="button">Go!</button>
-		</div>
-		<br>
-		<p>
-			For inputs that require more than one-line, a larger string input field can be used. In the text box below, pressing the "enter"/"return" would also allow the user to insert more lines of text.
-		</p>
-		<textarea rows="3" class="form-control" placeholder="String Input"></textarea>
-		<br>
-		
-		Certain string input fields require the user to type specific text values. These text fields may use a red outline to show that the inputs entered are invalid. The text fields shown below require the user to enter the same text values in both text fields. Another aspect to note in the case below: the text values are hidden from the user. Instead of actual alpha-numeric text values, they can be visually replaced by a symbol (in this case, black dots) in order to hide the password the user enters. Only when the user enters an acceptable argument can the textbox change color into something more inviting (usually a green color for "success" or "acceptable input").
-		<p class="text-center">
-			<img src="gifs/password_success.gif" width=100%>
-		</p>
-		<br>
-		
-		There are also some string input fields that will be disabled unless the user performs a specific action first. For example, a string input field will be disabled if the user has to first select from a variety of choices. <br><br>
-		In the string input field below, the cursor will not change into an "I-beam pointer" since the user is not allowed to enter any texts. The field has also been greyed out (instead of white in color) to further show the user that they cannot use the text field. In supported browsers, such as Firefox or Google Chrome, when a cursor hovers above the text field, a "no entry sign" &#x1f6ab; will appear below the cursor to make it even clearer that the field is disabled.
-		<p class="text-center">
-			<input class="input-xlarge form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
-		</p>
-		<br>
-
-
-		<blockquote>
-			Even though the string input field is a common interface for entering user values, there are other similar ways for users to enter their own inputs. 
-		</blockquote>
 		<ul>
+			<li>
+				<em>String input fields with form submit.</em>
+				For submitting text entries, the text field can be inlined with a button (see Button component for more info on buttons).
+				<div class="input-append text-center">
+			  		<input class="span2" id="appendedInputButton" type="text">
+			  		<button class="btn" type="button">Go!</button>
+				</div>
+			</li>
+			<br>
+			<li>
+				<em>String inputs with more than one line.</em>
+				For inputs that require more than one-line, a larger string input field can be used. In the text box below, pressing the "enter"/"return" would also allow the user to insert more lines of text.
+			<textarea rows="3" class="form-control" placeholder="Try typing long texts or pressing the enter key..."></textarea>
+			</li>
+			<br>
+			
+			<li>
+				<em>Password Entries.</em>Certain string input fields require the user to type specific text values. These text fields may use a red outline to show that the inputs entered are invalid. The text fields shown below require the user to enter the same text values in both text fields. Another aspect to note in the case below: the text values are hidden from the user. Instead of actual alpha-numeric text values, they can be visually replaced by a symbol (in this case, black dots) in order to hide the password the user enters. Only when the user enters an acceptable argument can the textbox change color into something more inviting (usually a green color for "success" or "acceptable input").
+				<p class="text-center">
+					<img src="gifs/password_success.gif" width=100%>
+				</p>
+			</li>
+			<br>
+		
+			<li>
+				<em>Disabled.</em>
+				There are also some string input fields that will be disabled unless the user performs a specific action first. For example, a string input field will be disabled if the user has to first select from a variety of choices. 	  
+				<br><br>
+				In the string input field below, the cursor will not change into an "I-beam pointer" since the user is not allowed to enter any texts. The field has also been greyed out (instead of white in color) to further show the user that they cannot use the text field. In supported browsers, such as Firefox or Google Chrome, when a cursor hovers above the text field, a "no entry sign" &#x1f6ab; will appear below the cursor to make it even clearer that the field is disabled.
+				<p class="text-center">
+					<input class="input-xlarge form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+				</p>
+			</li>
+			<br>
+
 			<li><em>Search fields</em> are another form of text input fields. It is commonly observed that search fields use a behavior to "auto-fill" look-ups. The field can anticipate user queries by creating a drop-down list of possible searches. For a look at an OS X-specific search field, see the "Platform-Specific Instances" section. </li>
-		</ul>
-		<p class="text-center">
-			<img src="img/search_field_toolbar.jpg" width=50%>
-		</p>
-		<br>
-		<ul>
+			<p class="text-center">
+				<img src="img/search_field_toolbar.jpg" width=50%>
+			</p>
+			<br>
 			<li><em>Voice recognition</em> is an up and coming design feature in newer models of systems. Developers, such as Google, have even made it possible to enter texts into textboxes by allowing the user to speak into their devices. Usually, a microphone icon, such as the one shown in the text box below, can be seen inside the text field. Pressing/clicking this button would allow the user the talk directly, instead of type with a keyboard, whatever information they wish (assuming the voice recognition capability is enabled and functions properly).</li>
+			<p class="text-center">
+				<img src="img/google_speech_recog.jpg" width=100%>
+			</p>
 		</ul>
-		<p class="text-center">
-			<img src="img/google_speech_recog.jpg" width=100%>
-		</p>
-		
-
-
-
 	</div>
 </div>
 
-		<h3>Priority Metrics</h3>
-		<blockquote>
-			With all interface elements, there has to be some way to measure how well each conveys a message to the users. How well an interface component, such as the string input field, is used can be described by the 5 usability metrics: learnability, efficiency, errors, memorability, and satisfaction. Since the string input field is such as common interface component, it can be expected that all these 5 metrics should be prioritized.
-		</blockquote>
-		<p>
-			<ul>
-				<li><em>Learnability</em> is the measure for how easily a new user is able to utilize the component.Since the string input field is a fundamental interface component, users must be able to recognize immediately how to use it. Since its appearance looks like an empty space, it should be able to show the user that it can accept text inputs.</li> 
-				<li><em>Efficiency</em> is the measure for how fast an expert user utilizes the component. For string input field, this metric </li>
-				<li><em>Error</em> is the measure for how many errors the user makes when using the component. Because its main function is to accept user text inputs, the text field should not confuse the user when they are entering values into the field. A possible case when the user does make an error with this component is the user types in the wrong field instead of the one they actually want to enter information in.</li>
-				<li><em>Memorability</em> is the measure for how well the user remembers how to user a component after some period of time of not using it. Like with learnability, the user must be able to recognize quickly that a component is a text box waiting for an input even if the user has not seen it for some time.</li>
-				<li><em>Satisfaction</em> is the measure of how satisfied the user is when utilizing the component. This is perhaps the metric with the least priority. Since the string input field is such as widely used interface element, the user does not necessarily have to be satisfied or enjoy using it. Text fields are typically used for their utility in handling text inputs so most interfaces default to using a plain-looking text field. However, the variations for the string input field, such as the changing colors (from red = failure, yellow = mildly acceptable, green = success) does play a role in making the user happy. For example, when a user creates a new password, they would want to create one in which they can feel safe in using over and over. A string input field that can change its border outline into green can show the user that their password is strong enough.</li>
-			</ul>
-		</p>
+<h3>Priority Metrics</h3>
+<blockquote>
+	With all interface elements, there has to be some way to measure how well each conveys a message to the users. How well an interface component, such as the string input field, is used can be described by the 5 usability metrics: learnability, efficiency, errors, memorability, and satisfaction. Since the string input field is such as common interface component, it can be expected that all these 5 metrics should be prioritized.
+</blockquote>
+<p>
+	<ul>
+		<li><em>Learnability</em> is the measure for how easily a new user is able to utilize the component.Since the string input field is a fundamental interface component, users must be able to recognize immediately how to use it. Since its appearance looks like an empty space, it should be able to show the user that it can accept text inputs.</li> 
+		<li><em>Efficiency</em> is the measure for how fast an expert user utilizes the component. For string input field, this metric </li>
+		<li><em>Error</em> is the measure for how many errors the user makes when using the component. Because its main function is to accept user text inputs, the text field should not confuse the user when they are entering values into the field. A possible case when the user does make an error with this component is the user types in the wrong field instead of the one they actually want to enter information in.</li>
+		<li><em>Memorability</em> is the measure for how well the user remembers how to user a component after some period of time of not using it. Like with learnability, the user must be able to recognize quickly that a component is a text box waiting for an input even if the user has not seen it for some time.</li>
+		<li><em>Satisfaction</em> is the measure of how satisfied the user is when utilizing the component. This is perhaps the metric with the least priority. Since the string input field is such as widely used interface element, the user does not necessarily have to be satisfied or enjoy using it. Text fields are typically used for their utility in handling text inputs so most interfaces default to using a plain-looking text field. However, the variations for the string input field, such as the changing colors (from red = failure, yellow = mildly acceptable, green = success) does play a role in making the user happy. For example, when a user creates a new password, they would want to create one in which they can feel safe in using over and over. A string input field that can change its border outline into green can show the user that their password is strong enough.</li>
+	</ul>
+</p>
 
-		<h3>Key Characteristics</h3>
-		<blockquote>
-			A well-designed string input field should be able to show the user when they are needed to enter text values.
-		</blockquote>
+<h3>Key Characteristics</h3>
+<blockquote>
+	A well-designed string input field should be able to show the user when they are needed to enter text values.
+</blockquote>
 
-		<h4>Feedback</h4>
-		<!-- <blockquote> -->
-			Interaction design elements such as string input field must always give feedback to the user:
-			<ol>
-				<li> The field should always have some sort of indication that it is enabled (e.g. by using colors).</li>
-				<li> The caret should be visible to indicate where users can enter strings.</li>
-				<li> The field should tell the user what to enter into it by using some sort of placeholder.</li>
+<h4>Feedback</h4>
+<!-- <blockquote> -->
+	Interaction design elements such as string input field must always give feedback to the user:
+	<ol>
+		<li> The field should always have some sort of indication that it is enabled (e.g. by using colors).</li>
+		<li> The caret should be visible to indicate where users can enter strings.</li>
+		<li> The field should tell the user what to enter into it by using some sort of placeholder.</li>
 
-			</ol>
-		<!-- </blockquote> -->
-
+	</ol>
 		
 <h3>Platform-Specific Instances</h3>
 <blockquote>
