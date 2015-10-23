@@ -3,6 +3,10 @@ title: Radio Button
 layout: component
 --
 
+<style>
+.img {max-width:300px;}
+</style>
+
 <h2>Radio Button</h2>
 <p class="lead">A button, when pressed toggles some kind of action. What separates it from others is that it is considered in one unit with other radio buttons to allow users to toggle <em>exclusively</em> on one option from a set of related and predetermined options.</p>
 
@@ -24,22 +28,22 @@ layout: component
 
 	<h4>Events</h4>
 		<ul>
-			<li>Hover - when the pointer/cursor is within the area of the circle. Most do not display behavior during this event but some radio buttons do cast a shadow within the circle to indicate that it is currently being interacted with regardless on
+			<li><code>hover</code>: when the pointer/cursor is within the area of the circle. Most do not display behavior during this event but some radio buttons do cast a shadow within the circle to indicate that it is currently being interacted with regardless on
 			whether it is clicked or not.</li>
-			<li>Selected - occurs strictly when user is operating through keyboards input. Pressing the tab key scrolls through all the optional clickables and since radio buttons are grouped together they are always considered one element. To scroll through the choices of radio buttons, the user must use the directional buttons on the keyboard (up and down).</li>
-			<li>Click + Hold - A user can click on a radio button (pressing within the vicinity of the circle) and prevent it from being toggled by dragging and releasing the cursor away from the vicinity of the cursor. This event cannot occur using keyboard inputs.</li>
-			<li>Click + Release - A user can press within the vicinity of the circle and immediately release it to toggle the button. In the context of keyboard inputs, once a button is selected, pressing the enter key is the equivalent of clicking it with a cursor.</li>
-			<li>Disabled -  A disabled button provides no response when it is clicked on. Everything remains the same indicating to the user that nothing has changed.</li> 
+			<li><code>selected</code>: occurs strictly when user is operating through keyboards input. Pressing the tab key scrolls through all the optional clickables and since radio buttons are grouped together they are always considered one element. To scroll through the choices of radio buttons, the user must use the directional buttons on the keyboard (up and down).</li>
+			<li><code>click + hold</code>: a user can click on a radio button (pressing within the vicinity of the circle) and prevent it from being toggled by dragging and releasing the cursor away from the vicinity of the cursor. This event cannot occur using keyboard inputs.</li>
+			<li><code>click + release</code>: a user can press within the vicinity of the circle and immediately release it to toggle the button. In the context of keyboard inputs, once a button is selected, pressing the enter key is the equivalent of clicking it with a cursor.</li>
+			<li><code>disabled</code>: a disabled button provides no response when it is clicked on. Everything remains the same indicating to the user that nothing has changed. Sometimes a cancel icon takes the place of the cursor indicating that it cannot be clicked.</li> 
 		</ul>
 
 	<h4>State Diagram</h4>
-		<img src="http://i59.tinypic.com/2l8hvmo.png">
+		<p class="text-center"><img src="http://i59.tinypic.com/2l8hvmo.png"></p>
 
 	<h4>Component in Action</h4>
 		<p class="text-center">
 			<img src="https://camo.githubusercontent.com/305295727cfebcbc2748aa65f5e70fe88f3f2d4e/687474703a2f2f692e696d6775722e636f6d2f704b38323673782e676966" alt="Radio button in action">
 		</p>
-		<p>Pictured above is a stylized depiction of a user picking between three radio buttons in a constant loop between inactive, click and active.</p>
+		<p>Pictured above is a stylized depiction of a user picking between three radio buttons in a constant loop between inactive, click and active. Pictured below is a live demonstration of a radio button as developed by Bootstrap.</p>
 
 		<p class="text-center">
   			<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
@@ -51,16 +55,29 @@ layout: component
 
   <div class="col-sm-6">
 <h3>Variants</h3>
-
-<p>Lorem ipsum...</p>
+	<ul>
+		<li><p class="text-center"><img src="http://i60.tinypic.com/k3q00k.png"></p>
+		<p><em>menu items</em>: buttons like the picture above that bring down submenus could be considered a variation of a radio button in that only one can be toggled (to expand the submenu) once at a time.
+		However conceptually-speaking, radio buttons focus more on status (ex: the background is red and not blue) rather than actions (ex: pressing a button to access a submenu for background color) so 
+		menu buttons are not necessarily identified as a radio button.</p>
+		</li>
+		<li><p class="text-center"><img src="http://i60.tinypic.com/1236syh.png"></p>
+		<p><em>menu list</em>: this variation presents itself as a list instead of circular buttons. Instead of "filling" in the circle to make a decision, the user clicks on the label itself (usually colored differently when hovered over).</p>
+		</li>
+		<li><p class="text-center"><img src="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/art/buttonsradiomixed.gif"></p>
+		<p><em>radio buttons with multiple buttons clicked simultaneously</em>: </p>
+		</li>
+	</ul>
 
 <h3>Priority Metrics</h3>
 
 <p>Lorem ipsum...</p>
 
 <h3>Key Characteristics</h3>
+	<ul>
+		<li></li>
+	</ul>
 
-<p>Lorem ipsum...</p>
 
 <h4>Feedback</h4>
 
@@ -70,6 +87,7 @@ layout: component
 </div>
 
 <h3>Platform-Specific Instances</h3>
+<h4>OSX10 Yosemite</h4>
 
 <p>Lorem ipsum...</p>
 
@@ -120,5 +138,7 @@ layout: component
 <ul>
 	<li>Page template: <a href="http://dondi.github.io/paradixm/components/button">Paradixm Button Template</a>
 	<li>Radio button GIF: <a href="https://github.com/InvexGames/MaterialUI/wiki/RadioGroup-and-Radio-Buttons">Invex Games</a></li>
-	<li>Keyboard inputs: <a href="http://stackoverflow.com/questions/14322564/can-you-tab-through-all-radio-buttons">Stack Overflow</a>
+	<li>Keyboard inputs: <a href="http://stackoverflow.com/questions/14322564/can-you-tab-through-all-radio-buttons">Stack Overflow</a></li>
+	<li>Radio buttons with multiple buttons clicked simultaneously: <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/RadioButtons.html">Apple Developer</a></li>
+	<li>Other uncredited pictures belong to Janine Leano</li>
 </ul>
