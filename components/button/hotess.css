@@ -1,3 +1,10 @@
 .diagram {
     padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+.gif-embed {
+    padding-bottom: 15px;
 }
