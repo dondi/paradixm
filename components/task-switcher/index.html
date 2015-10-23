@@ -13,11 +13,11 @@ layout: component
 		<p>Although there are many ways to switch between tasks, most operating systems have a similar feature that portrays all currently open programs (or their respective icons) in thumbnails across the screen. They typically prioritize the screen, displaying themselves in front of any and all open windows.
 
 		<br><br>Windows 10<br>
-		<img src="img/windowstask.png" style="width:100%; height:auto;" >
+		<img src="img/windowstask.png" style="width:100%; height:auto;" alt="Windows 10 Task Switcher" >
 		<br><br>OSX El Capitan<br>
-		<img src="img/osxtask.png" style="width:100%; height:auto;" >
+		<img src="img/osxtask.png" style="width:100%; height:auto;" alt="OSX El Capitan Task Switcher">
 		<br><br>iOS 9  <br>
-		<iframe src="http://i.giflike.com/embed/zHXwTLz" width="236.6" height="420" scrolling="no"></iframe><!-- Commented out windows phone task switcher for now, once css will be working with w/10 for proper formatting -->
+		<iframe src="http://i.giflike.com/embed/zHXwTLz" width="236.6" height="420" scrolling="no" alt="iOS 9 Task Switcher"></iframe><!-- Commented out windows phone task switcher for now, once css will be working with w/10 for proper formatting -->
 		<!-- <img src="windowsPhoneTaskSwitcher.png" style="width:44%; height:auto;" > -->
 		</p>
 
@@ -33,18 +33,12 @@ layout: component
 		<p>It is good to note that this is a very efficient way to jump back and forth between two programs. The end goal is to switch between tasks, and the quicker and more effortless the process is, the better it is for the user. There are many different shortcuts, and other platform-specific ways to allow for further efficient manipulation (i.e. hiding an app) that will be mentioned under the <a href="#pSpecific"> Platform-Specific Instances</a> section.</p>
 
 	<h4>Events</h4>
-		<p> The most relevant task launcher event is 
-
-		<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
-
-		<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
-		  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
-		  within the button’s bounds.</p>
+		<p> The most relevant task launcher event is to select the new open app and switch to it. Because of the simplicity of the action, there should not be a myriad of alternative actions. If a user hovers over a task, it simply becomes <code>selected</code>, and the previous task becomes unselected. Only one task can be selected at a time.
 
 	<h4>State Diagram</h4>
-		<p> <img src="img/stateDiagram.png" style="width:90%; height:auto;" > </p> 
+		<p> <img src="img/stateDiagram.png" style="width:90%; height:auto;" alt="State Diagram"> </p> 
 
-		<p> Note that only one task can be selected at a time, so when one task is <code>selected</code> all the others are not. A task must be selected in order fo it to be launched, which occurs on key release. However, if the task switcher is <code>active</code> on the screen, a user can always interact with each task, and they are never <code>disabled</code> if the task launcher is open. Please see <a href="#pSpecific"> Platform-Specific Instances</a> for more states. </p>
+		<p> Note that only one task can be selected at a time, so when one task is <code>selected</code> all the others are not. A task must be selected in order fo it to be launched, which occurs on key release or it's platform-specific way of selection. However, if the task switcher is <code>active</code> on the screen, a user can always interact with each task, and they are never <code>disabled</code> if the task launcher is open. Please see <a href="#pSpecific"> Platform-Specific Instances</a> for more states. </p>
 
 	<h4>Component in Action</h4>
 
@@ -54,7 +48,7 @@ layout: component
 		<div class="panel panel-default">
   			<div class="panel-body">
 				<div class="embed-responsive embed-responsive-16by9">
-		  			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hlIdz__YZN0"></iframe>
+		  			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hlIdz__YZN0" alt="Video tour of Task Switching"></iframe>
 				</div>
 			</div>  			
 		</div>
@@ -76,7 +70,7 @@ layout: component
 
 	<h3>Priority Metrics</h3>
 
-		<p>The learnability of task switching should be quick, as it is a single input (whether it is a gesture, a double tap of a button, or several key entries at once). It may take longer to discover all the features in a task switcher, like hiding or quitting applications, but it's main function of switching tasks should be intuitive. Once the task switcher is active, there should be no confusion and no series of extra steps to accompish switching to a different task. </p>
+		<p>The learnability of task switching should be very quick, as it is a single input (whether it is a gesture, a double tap of a button, or several key entries at once). It may take longer to discover all the features in a task switcher, like hiding or quitting applications, but it's main function of switching tasks should be intuitive. Once the task switcher is active, there should be no confusion and no series of extra steps to accompish switching to a different task. </p>
 
 		<p>Efficiency is arguably the most important usability measure, as there should be no delay after launch. Because efficiency is of such high priority, there should be almost no mistakes (errors) from a user to accidentally open the wrong program, as the program selected should be the only one that is switched to.</p>
 
@@ -92,22 +86,74 @@ layout: component
 
 	<h4>Feedback</h4>
 
-	<p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
+	<p>Perhaps the most important interaction design principle that a task launcher must follow is <em>feedback</em>. Users must
 	  never doubt whether:</p>
 
 	<ol>
-	  <li>they did positively trigger a button (and thus its associated action)</li>
-	  <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
-	    the action that triggers the button</li>
+	  <li>a current task is highlighted, and ready to be opened on key release.</li>
+	  <li>all other tasks are clearly not selected, so as there is no confusion as to which task will be opened.</li>
 	</ol>
+
+
 	  </div>
 </div>
 
 <div id="pSpecific">
 	<h3>Platform-Specific Instances</h3>
+
+	Below are some examples of task switchers across diferent platforms
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#myCarousel" data-slide-to="1"></li>
+	    <li data-target="#myCarousel" data-slide-to="2"></li>
+	    <li data-target="#myCarousel" data-slide-to="3"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	      <img src="img/carousel/ubuntu11taskS.png" alt="Ubuntu 11 Task Switcher">
+	      <div class="carousel-caption">
+	      <p>Ubuntu 11 Task Switcher </p>
+	      </div>
+	    </div>
+
+	    <div class="item">
+	      <img src="img/carousel/unity8taskS.png" alt="UNity 8 Task Switcher">
+	      <div class="carousel-caption">
+	      <p>Windows 8 Task Switcher </p>
+	      </div>	      
+	    </div>
+
+	    <div class="item">
+	      <img src="img/carousel/w7taskS.png" alt="Windows 7 Task Switcher">
+	      <div class="carousel-caption">
+	      <p>Windows 7 Task Switcher </p>
+	      </div>	      
+	    </div>
+
+	    <div class="item">
+	      <img src="img/carousel/KDE4.1taskS.png" alt="KDE 4.1 Task Switcher">
+	      <div class="carousel-caption">
+	      <p>KDE 4.1 Task Switcher </p>
+	      </div>	      
+	    </div>
+	  </div>
+
+	  <!-- Left and right controls -->
+	  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
 </div>
 <!-- REMINDER: ELABORATE ON STATES -->
-<!-- REMINDER: ELABORATE ON CUSTOM FEATURES IN VIDEO -->
 
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -119,7 +165,7 @@ layout: component
 		<strong>Standard Task Switching</strong>
       	<p>The user presses and holds the <code>CMD</code> button, and taps on <code> Tab</code>. The task switcher pops up, taking screen priority, showing all currently open apps with the current app being highlighted: </p>
 
-		<img src="img/taskSwitch1.png" style="width:100%; height:auto;">
+		<img src="img/taskSwitch1.png" style="width:100%; height:auto;" alt="OSX Task Switcher 1">
 
       	<p><em>Note that the app that is highlighted is the only one that has text under it, and has a light grey box that encompasses the icon</em> </p>
       	<p>The user now has multiple options and can
@@ -135,7 +181,7 @@ layout: component
 			<li>Quit the application by hitting the <code>Q</code> key. </li>
 			</ul>
 			<p> Although there are many shortcuts to accomplish multiple tasks, for the sake of simply "task switching" only the first three bullet points are relevant. For the sake of completeness, if the user decided to cycle right, the new state would be</p>
-			<img src="img/taskSwitch2.png" style="width:100%; height:auto;">
+			<img src="img/taskSwitch2.png" style="width:100%; height:auto;" alt="OSX Task Switcher 2">
 
 
      	</p>
@@ -143,9 +189,9 @@ layout: component
      	<p>
      		<strong>Mission Control Task Switching</strong>
      		
-     		<p>The user either presses the mission control key <img src="img/missionC.png" style="width:3%; height:auto;">, enters <code>Control + Up</code> keys, enables swiping gestures (ie four finger swipe up across the trackpad), or presses the <code>up</code> or <code>down</code> arrow keys when the standardk task switcher is active, and launches <em> Mission Control </em> and is greeted with the following view: </p>
+     		<p>The user either presses the mission control key <img src="img/missionC.png" style="width:3%; height:auto;" alt="F3 key">, enters <code>Control + Up</code> keys, enables swiping gestures (ie four finger swipe up across the trackpad), or presses the <code>up</code> or <code>down</code> arrow keys when the standardk task switcher is active, and launches <em> Mission Control </em> and is greeted with the following view: </p>
 			
-			<p><img src="img/taskSwitch3.png" style="width:70%; height:auto;"> </p>
+			<p><img src="img/taskSwitch3.png" style="width:70%; height:auto;" alt="OSX Task Switcher 3"> </p>
 
 			<p>Although there are many neat features in Mission control that have to do with using OSX <em>Spaces </em>, regarding the act of task switching, they are irrelevant. What is to note is the differences between the two interfaces. Mission Control displays thumbnails where a user can see what is going on inside each and every single app. They are spread across in no particular order, and none of them are highlighted until a user mouses over an app. When a user mouses over an app, a label appears with the app name. A stark contrast to the thin, simple standard task manager that only shows icons and a single selected app.</p>
 
