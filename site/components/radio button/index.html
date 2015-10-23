@@ -4,7 +4,7 @@ layout: component
 --
 
 <h2>Radio Button</h2>
-<p class="lead">A type of button, typically presented with other radio buttons to allow users to toggle exclusively on one option from a set of related and predetermined options.</p>
+<p class="lead">A button, when pressed toggles some kind of action. What separates it from others is that it is considered in one unit with other radio buttons to allow users to toggle <em>exclusively</em> on one option from a set of related and predetermined options.</p>
 
 <div class="row">
   <div class="col-sm-6">
@@ -12,28 +12,28 @@ layout: component
 <h3>Typical Appearance</h3>
 
 	<p>Radio buttons are usually circular in appearance and are accompanied to the right with a text label describing the given option. They are often accompanied with a series of 
-	other radio buttons that have some answer to the general question of choice given to the user (ex: What is your favorite color? with the radio buttons being an assortment of different colors). 
+	other radio buttons that have some answer to the general question of choice given to the user (ex: The question "What is your favorite color?" with the radio buttons being an assortment of different colors). 
 	When inactive, the circles are not colored in, giving it an "empty" look to suggest that it is not currently active. 
-	When active, a dot concentric to the circle or an entirely different color to the background "fills" the circle, indicating that it is currently chosen.  </p>
+	When active, a dot concentric to the circle or an entirely different color to the background color of an empty button "fills" the circle, indicating that it is currently chosen. </p>
 
 <h3>Typical Behavior</h3>
 	<p>Just like with a general button, a radio button's behavior is solely dependent on whether the user has pressed/toggled it or not. This is usually done via the pointer/cursor but can also be done with keyboard inputs.</p>
 	<p>The active/inactive state of a radio button is dependent on the active/inactive state of the other related radio buttons. The active state is exclusive to one radio button at a time (i.e. two radio buttons cannot be active simultaneously).</p>
+	<p>Disabled buttons have their circle and/or corresponding text grayed out.</p>
+	<p>When accessing via keyboard inputs using the tab button, a radio button is surrounded by a dotted square or border to indicate that it is currently the one in selection.</p>
 
 	<h4>Events</h4>
 		<ul>
-			<li>Hover - most radio buttons some radio buttons </li>
-			<li>Click</li>
+			<li>Hover - when the pointer/cursor is within the area of the circle. Most do not display behavior during this event but some radio buttons do cast a shadow within the circle to indicate that it is currently being interacted with regardless on
+			whether it is clicked or not.</li>
+			<li>Selected - occurs strictly when user is operating through keyboards input. Pressing the tab key scrolls through all the optional clickables and since radio buttons are grouped together they are always considered one element. To scroll through the choices of radio buttons, the user must use the directional buttons on the keyboard (up and down).</li>
+			<li>Click + Hold - A user can click on a radio button (pressing within the vicinity of the circle) and prevent it from being toggled by dragging and releasing the cursor away from the vicinity of the cursor. This event cannot occur using keyboard inputs.</li>
+			<li>Click + Release - A user can press within the vicinity of the circle and immediately release it to toggle the button. In the context of keyboard inputs, once a button is selected, pressing the enter key is the equivalent of clicking it with a cursor.</li>
+			<li>Disabled -  A disabled button provides no response when it is clicked on. Everything remains the same indicating to the user that nothing has changed.</li> 
 		</ul>
 
 	<h4>State Diagram</h4>
-		<ul>
-			<li>Inactive - the initial state. When users first come to a page with a set of radio buttons, either none of them are active or typically the first one is active by default.
-			This is relative to the situation and purpose of the choice n  </li>
-			<li>Hover</li>
-			<li>Click</li>
-			<li>Active</li>
-		</ul>
+		<img src="http://i59.tinypic.com/2l8hvmo.png">
 
 	<h4>Component in Action</h4>
 		<p class="text-center">
@@ -42,8 +42,9 @@ layout: component
 		<p>Pictured above is a stylized depiction of a user picking between three radio buttons in a constant loop between inactive, click and active.</p>
 
 		<p class="text-center">
-  			<button class="btn btn-default">Standard Bootstrap Button</button>
-  			<button class="btn btn-default disabled">Disabled Bootstrap Button</button>
+  			<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
+			<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
+			<label class="radio-inline"><input type="radio" name="optradio" disabled>Option 3 (disabled)</label>
 		</p>
 
   </div>
@@ -119,4 +120,5 @@ layout: component
 <ul>
 	<li>Page template: <a href="http://dondi.github.io/paradixm/components/button">Paradixm Button Template</a>
 	<li>Radio button GIF: <a href="https://github.com/InvexGames/MaterialUI/wiki/RadioGroup-and-Radio-Buttons">Invex Games</a></li>
+	<li>Keyboard inputs: <a href="http://stackoverflow.com/questions/14322564/can-you-tab-through-all-radio-buttons">Stack Overflow</a>
 </ul>
