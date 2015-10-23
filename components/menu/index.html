@@ -13,7 +13,18 @@ layout: component
             <p>Menus have been the go-to method for displaying (and hiding) lists of items and buttons for decades.</p>
 
             [Place a photos of menus here. One for mac, one for pc]
-            <img src="Mac_FileMenu.png" class="img-responsive" alt="Responsive image">
+              <div class="col-sm-12">
+
+                  <div class="col-sm-6">
+                <img src="Mac_FileMenu.png" class="img-responsive" alt="Responsive image">
+              </div>
+
+              <div class="col-sm-6">
+                <img src="Mac_FileMenu.png" class="img-responsive" alt="Responsive image">
+              </div>
+
+          </div>
+
             <br>
             <p>And like these examples, they tend to follow the standard form of having items listed from top to
                 bottom with anywhere from 1 to around 25 items to choose from.</p>
@@ -30,41 +41,89 @@ layout: component
                 <p>Menus are usually located on the "edges" of graphical interfaces. For example, the Mac OS X
                 graphical interface provides menus at the top of the Desktop screen that are always available, yet out of the way
                 from high-activity portions of the screen.
+              </p>
 
-                This pattern seems to extend to application or browser windows as well.</p>
+              <p>[Photo of Mac menus] [Photo of PC menus]</p>
 
-                [Photo of Mac menus] [Photo of PC menus] [Photo of a menu in a browser or application window]
-                <br>
-                <br>
+              <p>This pattern seems to extend to application or browser windows as well.</p>
+
+                  <div class="col-sm-12">
+                  <div class="col-sm-6">
+                  <img src="Google_design_menu.png" class="img-responsive" alt="Responsive image">
+                </div>
+                <div class="col-sm-6">
+                  <img src="Google_design_menu.png" class="img-responsive" alt="Responsive image">
+                </div>
+                </div>
+
                 <p>There are also menus that remain hidden unless invoked by the user, such as the menu that
                     appears when a user right-clicks (or ctrl + click in the case of Mac OS X).</p>
-                <br>
                 [Photos of mac and pc right-clicks]
+
+                <div class="col-sm-12">
+
+                  <div class="col-sm-6">
                 <img src="Mac_control_click_menu.png" class="img-responsive" alt="Responsive image">
+              </div>
+
+              <div class="col-sm-6">
+              
+              </div>
+              
+          </div>
                 
-
-
-
             </blockquote>
 
         <br>
-        <h3>Key Characteristics</h3>
-        <br>
+        <h3>Key Characteristics and Best Practices</h3>
+        <blockquote>The following attributes for menus across platforms have allowed much more choice and accessibility to
+        be included in a single page (or single interface), as opposed to requiring users to constantly switch
+        to different windows or screens each time they need to access a new list of items to choose from.</blockquote>
+
         <h4>Behavior and Feedback</h4>
 
-        <blockquote>
-          <p>On most platforms, menus are usually accessed by first clicking on a button.</p>
-          <p>The menus then expand to reveal the items they hold. On most platforms, users are also able to
-            hover over to a different menu button and, without clicking, expand those other menus as well after having
+          <p>On most platforms, menus are usually accessed by first clicking on a button.The menus then expand to reveal the items they hold. On most platforms, users are also able to hover over to a different menu button and, without clicking, expand those other menus as well after having
             already clicked on one. This includes menu buttons within the menu itself.</p>
-          <p>To exit a menu on most platforms, the user can click outside of the open menu to close it.</p>
+          <p>To exit a menu on most platforms, the user can click outside of the open menu to close it. The menu also usually disappears
+            when the user selects one of its items.</p>
           <p>When an item is selected, the menu indicates this action with a flashing highlight. Though, this usually happens so fast
             that the user's eyes have likely moved to the newly opened menu or window triggered from the button rather than notice
             the menu's indication.</p>
           <p>As for most components on a graphical interface, feedback to the user is a crucial aspect, specifically for when the user is attempting to perceive the system state and evaluate its outcomes (as outlined by Don Norman's Stages-of-Action Model). 
           Menus usually do have indicators, such as grayed out, unclickable items, to indicate which state the menu is in.</p>
 
+        <h4>Labeling</h4>
+
+        <p>Google recommends that menu labeling should be contextualized so that users can generally know what a menu contains before
+          they open it. This way users don't have to spend extra time exploring after having clicked on a menu with the wrong content. 
+          Apple adds to these contraints by saying that labels should be as short as possible without sacrificing clarity, and also 
+          suggest that icons should not be used as menu labels (nor should a mix of labels and icons) because users can confuse them with
+          "menu bar extra."</p>
+
+        <h4>Placement</h4>
+
+        <p>Google recommends that when it comes to behaviors like expanding, menus should appear on top of the elements they are emitting from
+          so as to not remove it from its context.
+
+        <h3>Priority Metrics</h3>
+
+        <blockquote>The five <em>usability metrics</em> outlined by Jakob Nielsen in his book, <em>Usability Engineering</em> (page 26),
+          are of critical importance to menu components on interfaces. For example, we can imagine how much less effective software development
+          in general would be had these metrics not been taken into account in the design of file Directories, which are crucial representations
+          of menus that allow users to organize and structure data.
         </blockquote>
+
+        <p>A majority of menu components represent a list that someone might draw on paper with items to keep track of or investigate.
+          These specific representations, in this respect, are highly learnable for, say, some who has never used a computer before. It is
+          in fact important that users are not hindered by a complex arrangement of items (Learnability).
+
+          And given that menus are so common (and crucial to the organization of a graphic interface), it is important that users can quickly learn
+          when, where, and how to access them so that there won't be too much time spent simply trying to locate items or functions in an application (Efficiency).</p>
+
+        <p>Current menu designs are extremely memorable as well because they are organized as they would be on paper, such as the table of contents at
+          the beginning of a book (Memorability). Also, it is probably best that menus be fairly simple to access and use and have adequate feedback 
+          features for users to reduce the number of errors with using them (Errors).</p>
+
 
         <h4>State Diagram</h4>
 
@@ -96,9 +155,29 @@ layout: component
                 from this state, in case the user changes his or her mind in mid-action.</li>
             </ul>
 
-        <blockquote>These attributes of standard menus across platforms have allowed much more choice and accessibility to
-        be included in a single page (or single interface), as opposed to requiring users to constantly switch
-        to different windows or screens each time they need to access a new list of items to choose from.</blockquote>
+
+         <div class="col-sm-12">
+
+            <h4>Events</h4>
+
+            <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
+              highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+
+
+            <h4>Component in Action</h4>
+
+            <blockquote>
+              <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
+
+              <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
+            </blockquote>
+
+            <p class="text-center">
+              <button class="btn btn-default">Standard Bootstrap Button</button>
+              <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
+            </p>
+
+          </div>
 
         <br>
         <h3>Variants</h3>
@@ -326,44 +405,6 @@ layout: component
 
       </div>
 
-        <div class="col-sm-12">
-
-            <h4>Events</h4>
-
-            <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-              highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
-
-
-            <h4>Component in Action</h4>
-
-            <blockquote>
-              <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
-
-              <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
-            </blockquote>
-
-            <p class="text-center">
-              <button class="btn btn-default">Standard Bootstrap Button</button>
-              <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
-            </p>
-
-          </div>
-
-
-
-        <div class="col-sm-12">
-        
-
-        <h3>Priority Metrics</h3>
-
-        <blockquote>Talk about the five usability metrics in relation to this component. Not all components will have the same
-          metric priorities. For example:</blockquote>
-
-        <p>Paragraph 1</p>
-
-        <p>Paragraph 2</p>
-
-          </div>
 </div>
 
 <h3>Platform-Specific Instances</h3>
@@ -373,7 +414,7 @@ layout: component
   <p>Mac OS X menus have an added feature of faint line dividers to group certain sets of options without adding too much clutter 
   to the small menu.</p>
 
-  <p>Additionally, there are even hidden items within menus that can be seen if the user holds down the "alt option" key for Mac. For example, the file menu at the top of the Desktop interface (with no applications open) has some hidden items that are revealed when the "alt option" key is pressed while the menu is open.</p>
+  <p>In addition to there being hidden menus, there are even hidden menu items that can be seen if the user holds down the "alt option" key for Mac. For example, the file menu at the top of the Desktop interface (with no applications open) has some hidden items that are revealed when the "alt option" key is pressed while the menu is open.</p>
 
   </blockquote>
 
@@ -390,5 +431,8 @@ layout: component
 <h2>References</h2>
 
 <blockquote>
-  <a href="http://getbootstrap.com/css/#overview">The Bootstrap website</a>
+  <a href="http://getbootstrap.com/css/#overview">The Bootstrap website</a> <br />
+  <a href="https://www.google.com/design/spec/components/menus.html#menus-specs">Google Design Guidelines</a>
+  <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/MenuNaming.html#//apple_ref/doc/uid/20000957-CH24-SW1">OS X Human Interface Guidelines</a>
+  <p>Nielsen, Jakob. <em>Usability Engineering</em>. San Diego: American Press, 1993. Print.</p>
 </blockquote>
