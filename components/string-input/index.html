@@ -33,7 +33,10 @@ layout: component
 
 	<h3>Typical Behavior</h3>
 	<blockquote>
-		A string input interface focuses the users keyboard. It typically signals the user that they can enter a value into a box by changing the cursor icon; typically, when the user hovers over the field, the cursor will change into an icon shaped like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside of the box, a blinking vertical bar (called a caret) would typically appear to signal the user that the text field is waiting for an input
+		A string input components's main behavior is to accept user text input therefore it has to support keyboard focus; for more private text information, a text box also supports password entries.
+		<br>
+		<br>
+		 The string input field signals the user that they can enter a value into a box by changing the cursor icon when the user hovers over the field: the cursor will change into an icon shaped like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside of the box, a blinking vertical bar (called a caret) would appear to signal the user that the text field is waiting for an input.
 	</blockquote>
 
 	<h4>Events</h4>
@@ -41,7 +44,7 @@ layout: component
 		The most important events for string input fields involve keyboard presses and entering texts. These relevant events include <code>input</code>, <code>keyup</code>, <code>keydown</code>, and <code>keypress</code>.
 	</blockquote>
 
-	<p> The <code>input</code> event is triggered after information is entered into the text field; the event is fired synchronously such that the effects can be detected immediately. The events <code>keyup</code>, <code>keydown</code>, and <code>keypress</code> all have similar functionality since they are all keyboard specific: the events are quite self-explanatory since <code>keyup</code> is triggered when a key is let go, <code>keypress</code> is triggered when a key is pressed, etc.
+	<p> The <code>input</code> event is triggered after information is entered into the text field; the event is fired synchronously such that the effects can be detected immediately. The events <code>keyup</code>, <code>keydown</code>, and <code>keypress</code> all have similar functionality since they are all keyboard specific. The events are quite self-explanatory (e.g. <code>keyup</code> is triggered when a key is let go, <code>keypress</code> is triggered when a key is pressed, etc).
 	</p>
 		
 	<blockquote>
@@ -72,9 +75,6 @@ layout: component
 		<br>
 		<textarea rows="3" class="form-control" placeholder="String Input"></textarea>
 		<br>
-		<input type="text" class="form-control">
-
-		<br>
 		<p class="text-center">
 			<span class="input-xlarge uneditable-input" >Disabled string input field</span>
 		</p>
@@ -104,12 +104,15 @@ layout: component
 	<div class="col-sm-6">
 		<h3>Variants</h3>
 		<blockquote>
-			Even though the string input field is a common interface for entering user values, there are other similar ways that a user can enter their own inputs. 
+			Even though the string input field is a common interface for entering user values, there are other similar ways for users to enter their own inputs. 
 		</blockquote>
 		<ul>
-			<li><em>Search fields</em> are extremely similar to </li>
+			<li><em>Search fields</em> are another form of text input fields. It is commonly observed that search fields use a behavior to "auto-fill" look-ups. The field can anticipate user queries by creating a drop-down list of possible searches. For a look at an OS X-specific search field, see the "Platform-Specific Instances" section. </li>
 		</ul>
-
+		<p class="text-center">
+			<img src="img/search_field_toolbar.jpg" width=50%>
+		</p>
+		<br>
 		<ul>
 			<li><em>Voice recognition</em> is an up and coming design element in newer models of systems. Developers, such as Google, have even made it possible to enter texts into textboxes by allowing the user to speak into their devices. Usually, a microphone icon, such as the one shown in the text box below, can be seen inside the text field. Pressing/clicking this button would allow the user the talk directly, instead of type with a keyboard, whatever information they wish (assuming the voice recognition capability is enabled and functions properly).</li>
 		</ul>
