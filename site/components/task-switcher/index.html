@@ -10,13 +10,11 @@ layout: component
   <div class="col-sm-6">
 
 	<h3>Typical Appearance</h3>
-		<p>Although there are many ways to switch between tasks, most operating systems have a similar feature that portrays all currently open programs (or their respective icons) in thumbnails across the screen. They typically prioritize the screen, displaying themselves in front of any and all open windows.
+		<p>Although there are many ways to switch between tasks, most operating systems have a similar feature that portrays all currently open programs (or their respective icons) in thumbnails across the screen. They typically prioritize the screen, displaying themselves in front of any and all open windows. Please click <a href="#pSpecific"> here</a> to see examples on different operating systems. 
 
-		<br><br>Windows 10<br>
+		<br><br>Example of a desktop task switcher (Windows 10)<br>
 		<img src="img/windowstask.png" style="width:100%; height:auto;" alt="Windows 10 Task Switcher" >
-		<br><br>OSX El Capitan<br>
-		<img src="img/osxtask.png" style="width:100%; height:auto;" alt="OSX El Capitan Task Switcher">
-		<br><br>iOS 9  <br>
+		<br><br>Example of a mobile task switcher (iOS 9)  <br>
 		<iframe src="http://i.giflike.com/embed/zHXwTLz" width="236.6" height="420" scrolling="no" alt="iOS 9 Task Switcher"></iframe><!-- Commented out windows phone task switcher for now, once css will be working with w/10 for proper formatting -->
 		<!-- <img src="windowsPhoneTaskSwitcher.png" style="width:44%; height:auto;" > -->
 		</p>
@@ -40,7 +38,14 @@ layout: component
 
 		<p> Note that only one task can be selected at a time, so when one task is <code>selected</code> all the others are not. A task must be selected in order fo it to be launched, which occurs on key release or it's platform-specific way of selection. However, if the task switcher is <code>active</code> on the screen, a user can always interact with each task, and they are never <code>disabled</code> if the task launcher is open. Please see <a href="#pSpecific"> Platform-Specific Instances</a> for more states. </p>
 
-	<h4>Component in Action</h4>
+	
+  </div>
+
+  <div class="col-sm-6">
+
+  	<h3> Typical Behavior (continued) </h4>
+
+  	<h4>Component in Action</h4>
 
 		<p> Below is a video showing off the task switcher in OSX. The taskbar pops up, taking priority of the screen, and the user can navigate to the left or to the right, quit tasks, hide them, or quickly "alt/tab" back and forth between a pair of tasks. 
 		<br>
@@ -52,9 +57,8 @@ layout: component
 				</div>
 			</div>  			
 		</div>
-  </div>
 
-  <div class="col-sm-6">
+
 
 	<h3>Variants</h3>
 		<p>Switching tasks is a standard operation on most devices. Below is a list illustrating the broad ways to accomplish task switching:</p>
@@ -94,14 +98,17 @@ layout: component
 	  <li>all other tasks are clearly not selected, so as there is no confusion as to which task will be opened.</li>
 	</ol>
 
+	<h4> Simplicity </h4>
+	<p> Simplicity is a key guideline to implement properly. Upon the task switcher's launch, the user should have no trouble distinguishing which tasks are open, which task is currently selected, what the next selected task would be, and how to open the next selected task. </p>
+
 
 	  </div>
 </div>
 
 <div id="pSpecific">
 	<h3>Platform-Specific Instances</h3>
+	<p>Below are some examples of platform-specific instances.</p>
 
-	Below are some examples of task switchers across diferent platforms
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
@@ -109,6 +116,8 @@ layout: component
 	    <li data-target="#myCarousel" data-slide-to="1"></li>
 	    <li data-target="#myCarousel" data-slide-to="2"></li>
 	    <li data-target="#myCarousel" data-slide-to="3"></li>
+	    <li data-target="#myCarousel" data-slide-to="4"></li>
+
 	  </ol>
 
 	  <!-- Wrapper for slides -->
@@ -140,7 +149,15 @@ layout: component
 	      <p>KDE 4.1 Task Switcher </p>
 	      </div>	      
 	    </div>
-	  </div>
+
+	    <div class="item">
+	  		<img src="img/osxtask.png" alt="OSX El Capitan Task Switcher">
+	      <div class="carousel-caption">
+	      <p>OS X Mountain Lion Task Switcher </p>
+	      </div>	      
+	    </div>
+
+	 </div>
 
 	  <!-- Left and right controls -->
 	  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -152,7 +169,11 @@ layout: component
 	    <span class="sr-only">Next</span>
 	  </a>
 	</div>
+
+	<p>Below are the sections of platform-specific instances.</p>
+
 </div>
+
 <!-- REMINDER: ELABORATE ON STATES -->
 
     <div class="panel panel-default">
@@ -182,8 +203,8 @@ layout: component
 			</ul>
 			<p> Although there are many shortcuts to accomplish multiple tasks, for the sake of simply "task switching" only the first three bullet points are relevant. For the sake of completeness, if the user decided to cycle right, the new state would be</p>
 			<img src="img/taskSwitch2.png" style="width:100%; height:auto;" alt="OSX Task Switcher 2">
-
-
+			<br>
+			blabla
      	</p>
 
      	<p>
@@ -193,18 +214,18 @@ layout: component
 			
 			<p><img src="img/taskSwitch3.png" style="width:70%; height:auto;" alt="OSX Task Switcher 3"> </p>
 
-			<p>Although there are many neat features in Mission control that have to do with using OSX <em>Spaces </em>, regarding the act of task switching, they are irrelevant. What is to note is the differences between the two interfaces. Mission Control displays thumbnails where a user can see what is going on inside each and every single app. They are spread across in no particular order, and none of them are highlighted until a user mouses over an app. When a user mouses over an app, a label appears with the app name. A stark contrast to the thin, simple standard task manager that only shows icons and a single selected app.</p>
+			<p>Although there are many neat features in Mission control that have to do with using OSX <em>Spaces </em>, regarding the act of task switching, they are irrelevant as it is more for window management. What is to note is the differences between the two interfaces. Mission Control displays thumbnails where a user can see what is going on inside each and every single app. They are spread across in no particular order, and none of them are highlighted until a user mouses over an app. When a user mouses over an app, a label appears with the app name. A stark contrast to the thin, simple standard task manager that only shows icons and a single selected app.</p>
 
 		</p>
 
       </div>
     </div>
 
-<div class="container">
+
 <h3>Credits &amp; References</h3>
 
 <blockquote>
-Image for OSX Task Launcher: https://blogs.vmware.com/teamfusion/2011/11/viewing-your-windows-programs-without-seeing-windows.html
+<cite>Image for OSX Task Launcher:</cite> https://blogs.vmware.com/teamfusion/2011/11/viewing-your-windows-programs-without-seeing-windows.html
 <br>
 Image for Windows Task Launcher: http://www.expertreviews.co.uk/software/operating-systems/1403610/how-to-switch-tasks-faster-in-windows-10
 <br>
@@ -214,4 +235,3 @@ task switching source osx: http://osxdaily.com/2009/11/17/secrets-of-the-command
 <br>
 using mission control: https://support.apple.com/en-us/HT204100
 </blockquote>
-</div>
