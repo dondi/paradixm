@@ -17,7 +17,7 @@ layout: component
 			The most basic form of a string input field is a one-line, white, rectangular box. 
 		</blockquote>
 		<p>
-			When not selected, the box appears like an ordinary rectangle; its edges are usually grey in color to show where the field is, where it begins, and where it ends. The field typically uses a font type and size appropriate to the overall look of the surrounding interface components. Additionally, a placeholder can be seen inside the text box in the form of a command or some other text description.
+			When not selected, the box appears like an ordinary rectangle; its edges are usually grey in color to show where the field is, where it begins, and where it ends. The field uses a font type and size appropriate to the overall look of the surrounding interface components. Additionally, a placeholder can be seen inside the text box in the form of a command or some other text description.
 			<br>
 			<br>
 			<input type="text" class="form-control" placeholder="Enter your text here...">
@@ -32,7 +32,7 @@ layout: component
 
 		<h3>Typical Behavior</h3>
 		<blockquote>
-			A string input components's main function is to accept user text information, therefore, it has to support keyboard focus; for more private text information, it also supports password entries. The string input field signals the user that they can enter a value into a box by changing the cursor icon when the user hovers over the field: the cursor will change into an icon shaped like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside of the box, a blinking vertical bar (called a caret) would appear to show the user that the text field is waiting for an input.
+			A string input components's main function is to accept user text information, therefore, it has to support keyboard focus; for more private text information, it also supports password entries. The string input field also signals the user that they can enter a value by changing the cursor icon when the user hovers over the field: the cursor will change into a shape that looks like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside the box, a blinking vertical bar (called a caret) would appear to show the user that the text field is waiting for an input.
 		</blockquote>
 
 		<h4>Events</h4>
@@ -40,13 +40,13 @@ layout: component
 			The most important events for string input fields involve keyboard presses and entering texts. These relevant events include <code>input</code>, <code>keyup</code>, <code>keydown</code>, and <code>keypress</code>.
 		</blockquote>
 
-		<p> The <code>input</code> event is triggered after information is entered into the text field; the event is fired synchronously such that the effects can be detected immediately. The events <code>keyup</code>, <code>keydown</code>, and <code>keypress</code> all have similar functionality since they are all keyboard specific. The events are quite self-explanatory (e.g. <code>keyup</code> is triggered when a key is let go, <code>keypress</code> is triggered when a key is pressed, etc).
+		<p> The <code>input</code> event is triggered the moment information is entered into the text field; the event is fired synchronously such that the effects can be detected immediately. The events <code>keyup</code>, <code>keydown</code>, and <code>keypress</code> all have similar functionality since they are all keyboard specific. The events are quite self-explanatory (e.g. <code>keydowm</code> is triggered when a key is pressed down, <code>keyup</code> is triggered when a key is let go, etc).
 		</p>
 		<br>
 
 		<h4>Component in Action (Default Text Field)</h4>
 		<blockquote>
-			The border of string input fields typically glow blue when they are enabled (i.e, when the user clicks on it). Once enabled, the user can easily type whatever they wish into the field. While the user is typing, the caret remains visible to show the user where exactly they are inserting a key.
+			The border of string input fields typically glow blue when they are enabled (i.e, when the user clicks on them). Once enabled, the user can easily type whatever they wish into the fields. While the user is typing, the caret remains visible to show the user where exactly they are inserting a key.
 		</blockquote>
 		Here is an example of what the string input field does: 
 		<p class="text-center">
@@ -82,7 +82,7 @@ layout: component
 		</blockquote>
 		<ul>
 			<li>
-				<em>String input fields with form submit.</em>
+				<em>String input fields with form submit buttons.</em>
 				For submitting text entries, the text field can be inlined with a button (see Button component for more info on buttons).
 				<div class="input-append text-center">
 			  		<input class="span2" id="appendedInputButton" type="text">
@@ -93,7 +93,7 @@ layout: component
 			<li>
 				<em>String inputs with more than one line.</em>
 				For inputs that require more than one-line, a larger string input field can be used. In the text box below, pressing the "enter"/"return" would also allow the user to insert more lines of text.
-			<textarea rows="3" class="form-control" placeholder="Try typing long texts or pressing the enter key..."></textarea>
+			<textarea rows="3" class="form-control" placeholder="Try typing long texts or pressing the enter key multiple times..."></textarea>
 			</li>
 			<br>
 			
