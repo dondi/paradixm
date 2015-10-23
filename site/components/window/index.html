@@ -6,8 +6,7 @@ layout: component
 
 
 <p class="lead"> Not to be confused with Microsoft Windows, a window
-is a rectangular shape that displays content on a computer monitor. It is so common that even a 
-In fact, a window is used to view the content of the page! 
+is a rectangular shape that displays content on a computer monitor. It is a very common component. In fact, a window is used to view the content of this page! 
 </p>
 
 <div class="row">
@@ -15,18 +14,21 @@ In fact, a window is used to view the content of the page!
 
 <h3>Typical Appearance</h3>
   <blockquote>The appearance of a standard window varies across different
-  platforms as well as some functionality. Generally windows are made up of three components:
+  platforms.
 
-  Generally windows have two components.
+  Windows are made out of the following components:
+  <br><br>
   <ul>
     <li>Frame</li>
     <img src="Frame.png" alt="An example of a frame" width="400">
     <small>An example of the "Frame"</small>
+    <br><br>
     <li> Content</li>
     <img src="Content.png" alt="An example of content of a window" width="400">
     <small>An example of the "Content"</small>
+    <br><br>
   </ul>
-  In the frame there are buttons located on the top left corner or top right corner of the frame. There is a slight variation on the frame depending on what type of window one is accessing. <em>(See the <a href="#variants">'Variant Appearance'</a> section below.)</em> Generally in the middle of the frame, there is a title containing the location of the content one is viewing.
+  In the frame there are buttons located on the top left corner or top right corner, depending on the platform. (<em>See <a href="#Yosemite">Platform Specific Content</a></em>) There is a slight variation on the frame depending on what type of window one is accessing. <em>(See the <a href="#variants">'Variant Appearance'</a> section below.)</em> Generally in the middle of the frame, there is a title containing the location of the content one is viewing.
   <br> <br>
   The content component of  the window, varies greatly and is dependent upon the type of window you are accessing. Depending on the operating system one is using the frame might envelope the content and acting in a literal sense like a frame.
 
@@ -77,10 +79,7 @@ Most of these variants's appearance vary. For more details on a specific variant
 <blockquote>This mainly applies to Application windows. The Application window should adopt the stylings and appearance of a typical window on the specific platform it is on.</blockquote>
 <h4>Feedback</h4>
 <blockquote>There should be some kind of response indicating that a user is opening a window. If there is such a delay the user could accidently open various windows. For application windows there should be confirmation if the user would like to close a window in the form of a dialog window. This is especially the case if the user is modifying a file in the content of a window.</blockquote>
-</div>
 
-<!-- Second Column -->
-<div class="col-sm-6">
 <h3>Typical Behavior</h3>
 
 <!-- Events Section -->
@@ -96,19 +95,24 @@ Most of these variants's appearance vary. For more details on a specific variant
   </blockquote>
   <h5>The frame</h5>
   <blockquote><ul>
-  	<li>If you click and hold the frame, you are able to move the window by dragging your mouse</li>
-  	<li>By double clicking the the frame you can expand or compress the size of the window. As to how big it varies from different platforms.</li>
+    <li>If you click and hold the frame, you are able to move the window by dragging your mouse</li>
+    <li>By double clicking the the frame you can expand or compress the size of the window. As to how big it varies from different platforms.</li>
   </ul></blockquote>
   <br>
   <h5>The window</h5>
   <blockquote>
-  	<ul>
-  		<li>When one's mouse is at the edge of the window, the user is notified that the window can be resized, signified by the mouse changing its shape.</li> <ul>
-  			<li>When this happens if the user clicks and hold, by dragging the mouse one is able to change the size of the window precisely</li>
-  		</ul>
-  		
-  	</ul>
+    <ul>
+      <li>When one's mouse is at the edge of the window, the user is notified that the window can be resized, signified by the mouse changing its shape.</li> <ul>
+        <li>When this happens if the user clicks and hold, by dragging the mouse one is able to change the size of the window precisely</li>
+      </ul>
+      
+    </ul>
   </blockquote>
+</div>
+
+<!-- Second Column -->
+<div class="col-sm-6">
+
   
   <h4>State Diagram</h4>
   <img src="StateDiagram.png" alt="State Diagram of a window" width="600">
@@ -122,7 +126,7 @@ Most of these variants's appearance vary. For more details on a specific variant
 	</ul>
   	 
   	<br>
-	<img src="Selected-Deselected.png" alt="An example of an active and passive window" height="200">
+	<img src="Selected-Deselected.png" alt="An example of an active and passive window" height="300">
 	<br><br>
 	When a window is opened it is in its active state by default. In this scenario we will call this <strong>window 1</strong>. In this state <strong>window 1's</strong> you are able to either maximize, minimize or exit the window. 
 	<br><br>
@@ -132,32 +136,30 @@ Most of these variants's appearance vary. For more details on a specific variant
 	When the <strong>window 1</strong> is in its maximized state, the window expands to the size of ones computer monitor. Depending on the platform used a window can be minimized or exited in this state. By clicking the maximize button the user can restore the window to it's original size.
 
 	<br><br>
-	<img src="" alt="Maximize window" height="200" width="400">
-	<br><br>
 	
 	When the minimize button is clicked, <strong>window 1</strong> enters minimized state. In this state the window disappears and it resides in the dock/menu bar. If you click the minimized window in the dock/menu bar it restores in size.
 
 	<br><br>
-	<img src="" alt="Minimize window" height="200" width="400">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/RRtMpZDEk1o" frameborder="0" allowfullscreen></iframe>
 	<br><br>
-
+<hr>
 	Lets assume the user opens up another window called <strong>window 2</strong>. When this happens <strong>window 1</strong> is in it's passive state while <strong>window 2</strong> would be in its active. The user is alerted to this change when <strong>window 1</strong> appears to grayer than <strong>window 2</strong>. 
 	<br><br>
-	<img src="Diagram-2.png" alt="A single window open" height="200" width="400">
+	<img src="Diagram-2.png" alt="A single window open" width="400">
 	<br><br>
 	If the user clicks <strong>window 1</strong>, then <strong>window 2</strong> would become passive while <strong>window 1</strong> would be active.
 	<br><br>
-	<img src="Diagram-3.png" alt="A single window open" height="200" width="400">
+	<img src="Diagram-3.png" alt="A single window open" width="400">
 	<br><br>
 	
 	If the user opens up another window, in which we will call <strong>window 3</strong>, both <strong>window 1</strong> and <strong>window 2</strong> will be in its passive state and <strong>window 3</strong> will be in its active state.
 	<br><br>
-	<img src="" alt="An active window and two passive windows">
+	<img src="ThreeWindows.png" alt="An active window and two passive windows" width="400">
 	<br> <br>
 	When <strong>window 1</strong> and <strong>window 2</strong> are in its passive state, it acts like a background. In that <strong>window 3</strong> and windows in a passive state can overlap with <strong>window 3</strong> being on top.
 	<br>
 	<br>
-	<img src="" alt="An example of active passive window overlap" height="200" width="200">
+	<img src="ActiveOverlap.png" alt="An example of active passive window overlap"  width="400">
 	<br>
 	<br>
 	</blockquote>
@@ -186,43 +188,184 @@ Most of these variants's appearance vary. For more details on a specific variant
   </div>
 </div>
 
-<h3>Window Screenshots from Selected Platforms</h3>
+<h3>Platform Specific Content and Differences</h3>
+<p>Below are a selection of Platforms that describe exclusive window behavior and appearance</p>
 
-<p>Screenshots of windows are currently available for the following platforms. Please click on each box for more details.</p>
 <div>
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#Yosemite" aria-controls="Yosemite" role="tab" data-toggle="tab">Yosemite</a></li>
 
-    <li role="presentation"><a href="#Windows" aria-controls="Windows 8.1" role="tab" data-toggle="tab">Windows 8.1</a></li>
-    <li role="presentation"><a href="#Ubuntu" aria-controls="Ubuntu 15.04" role="tab" data-toggle="tab">Ubuntu 15.04</a></li>
+    <li role="presentation"><a href="#Windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows 8.1</a></li>
+    <li role="presentation"><a href="#Ubuntu" aria-controls="Ubuntu 15" role="tab" data-toggle="tab">Ubuntu 15</a></li>
     
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="Yosemite">
+
+<div class="col-md-8">
     <h2>OS X Yosemite</h2>
     <br> <br>
 
     <p class="lead"> According to the OS X Human Interface Guidelines, a window provides a frame for viewing and interacting with content in an app.</p>
-    <h3>Appearance Differences</h3>
-    <blockquote></blockquote>
+    <h4 class="lead">General Differences</h4>
+    <p>There are a few cosmetic differences in the layout of a window. The three buttons that allow the window to Maximize, Minimize and Close are placed on the left of the frame. Along with the title displayed in the middle of the frame there is also an icon frequently shown to the left of it. </p>
+    <img src="OSX-1.png" alt="Example of a window" width="400">
+    <br>
+    <br>
+    <p>In OSX Yosemite when the window is maximized it envelopes the hole screen including the top menu.</p>
+    <img src="MaximizeOSX.png" alt="screenshot of maximized window" width="400">
+    <br>
+    <br>
+
+    <h4 class="lead">Categorial Differences</h4>
+    <ul>
+      <li><strong>File Explorer</strong>
+<ul>
+        <li>There are several buttons in the frame that changes the view of files</li>
+        <li>The frame contains an input text search bar.</li>
+        <li>The content of the window contains options for tags.</li>
+      </ul>
+      </li>
+      
+      <li><strong>Dialog</strong> 
+      <ul>
+        <li>The three buttons to modify the window state are gone.</li>
+      </ul>
+      </li>
+
+      <li><strong>Alert</strong> 
+      <ul>
+        <li>No options exist to modify the window state are gone</li>
+      </ul></li>
+      <li><strong>Properties</strong> <ul>
+        <li>There are drop down menues within the properties window to modify the file</li>
+      </ul></li>
+    </ul>
+    <br><br>
+    </div>
+
 
     </div>
 
-    <div role="tabpanel" class="tab-pane" id="Windows">...</div>
-    <div role="tabpanel" class="tab-pane" id="Ubuntu">...</div>
-    
+    <div role="tabpanel" class="tab-pane" id="Windows">
+    <!--End of Yosemite Section-->
+      <!--Windows Section-->
+
+<div class="col-md-8">
+    <h2>Windows 8.1</h2>
+    <br> <br>
+
+    <p class="lead"> According to Microsoft’s Windows User Experience Interaction Guidelines windows are the main "canvases" or UI surfaces of your desktop app, including the main windows itself and pop-ups, dialogs, and wizards. </p>
+    <h4 class="lead">General Differences</h4>
+    <p>In windows 8.1 the three buttons to maximize, minimize and to close the window is placed in the frame at the right corner. Unlike Yosemite and Ubuntu, the frame encapsulates the content of the window. </p>
+    <img src="GeneralWindow.PNG" alt="Example of a window for Windows 8.1" width="400">
+    <br>
+    <br>
+    <p>When maximized the window does not fully fill up the entire screen. It also leaves room for the taskbar at the bottom. In it maximum state, it is also possible to minimize the window.</p>
+    <img src="http://i59.tinypic.com/2v9exoi.png" alt="screenshot of maximized window" width="400">
+    <br>
+    <br>
+
+    <h4 class="lead">Categorial Differences</h4>
+    <ul>
+      <li><strong>File Explorer</strong>
+<ul>
+        <li>In the frame there is an address bar that allows the user to navigate through the directory by entering an address</li>
+        <li>The frame contains an input text search bar.</li>
+        <li>There are three tabs named <code>File</code> <code>Computer</code> and <code>View</code></li> 
+
+      </ul>
+      </li>
+      
+      <li><strong>Dialog</strong> 
+      <ul>
+        <li>The user is able to exit the dialog window through the frame button</li>
+      </ul>
+      </li>
+
+      <li><strong>Alert</strong> 
+      <ul>
+        <li>The user is able to exit the dialog window through the frame button</li>
+      </ul></li>
+      <li><strong>Properties</strong> <ul>
+        <li>There are several tabs that allows the user to modify and view information of the selected file.</li>
+      </ul></li>
+    </ul>
+    <br><br>
+    </div>
+
+    </div>
+
+
+    <!--Start of Ubuntu tab-->
+
+    <div role="tabpanel" class="tab-pane" id="Ubuntu">
+    <div class="col-md-8">
+    <h2>Ubuntu 15</h2>
+    <br> <br>
+
+    <p class="lead"> Ubuntu is an open source software platform with many contributers. There is no specific guideline on design. Compared to other platforms its Windows component greatly resembles Mac OSX platforms. </p>
+    <h4 class="lead">General Differences</h4>
+    <p>Like Yosemite, Ubuntu places the buttons in the frame on the top left corner. In its maximized state, it expands to cover the whole screen except for task bar. </p>
+    <img src="UbuntuWIndow.png" alt="Example of a window for Windows 8.1" width="400">
+    <br>
+    <br>
+    <p>When maximized the window does not fully fill up the entire screen. It also leaves room for the taskbar at the bottom. In it maximum state, it is also possible to minimize the window.</p>
+    <img src="Maximized.png" alt="screenshot of maximized window" width="400">
+    <br>
+    <br>
+
+    <h4 class="lead">Categorial Differences</h4>
+    <ul>
+      <li><strong>File Explorer</strong>
+<ul>
+        <li>In the frame there are buttons labeling the parent directory of the current directy you are in</li>
+        <li>The frame also contains a search button. When clicked a search text input appears and allows you to search files within the computer.</li>
+         
+
+      </ul>
+      </li>
+      
+      <li><strong>Dialog</strong> 
+      <ul>
+        <li>The user is able to exit the dialog window through the frame button</li>
+      </ul>
+      </li>
+
+      <li><strong>Alert</strong> 
+      <ul>
+        <li>The user is able to exit the dialog window through the frame button</li>
+      </ul></li>
+      <li><strong>Properties</strong> <ul>
+        <li>There are several tabs that allows the user to modify and view information of the selected file.</li>
+      </ul></li>
+    </ul>
+    <br><br>
+    </div>
+
+    </div>
+
+
+    </div>
+    <!--End of the Ubuntu section and tab section-->
   </div>
 
 </div>
+
+<br><br>
+<hr>
 
 
 
 <div class="row">
   <div class="col-xs-12">
+  <h3>Window Screenshots from Selected Platforms</h3>
+
+<p>Here are a few selected screenshots of the covered platforms</p>
 
 <div id="window-screenshot-carousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
