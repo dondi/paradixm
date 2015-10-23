@@ -13,7 +13,7 @@ layout: component
 
 <h3>Typical Appearance</h3>
 
-<p>Sliders across many different platforms have a minimum(left) value and a maximum value(right). Graphically, the users are exposed with a bar, slider knob, and occasionaly with tick marks. However, different platforms may have different design to their sliders to follow their human interface guidelines. Underneath, a depiction of three sliders are shown Mac OS X, Windows 8, and iOS 7 and iOS 8.
+<p>Sliders across many different platforms have a minimum(left) value and a maximum value(right). Graphically, the users are exposed with a bar, slider knob, and occasionaly with tick marks. However, different platforms may have different design to their sliders to follow their human interface guidelines. Underneath, a depiction of three sliders are shown Mac OS X, Windows 8, and iOS 7 & iOS 8.
 </p>
 
 <div class="row">
@@ -34,7 +34,7 @@ layout: component
         <h4 class="panel-title text-center">Windows 8</h4>
       </div>
       <div class="panel-body">
-      	<img src="Windows8_slider.png" class="img-responsive" alt="Windows 8 Slider">
+      	<img class="center-block" src="Windows8_slider.png" class="img-responsive"  alt="Windows 8 Slider">
       </div>
     </div>
   </div>
@@ -56,11 +56,77 @@ layout: component
 <p>The behavior of the slider is very basic. The user is given a choice to either slide left(min) or right(max). By doing so the user can choose the proper setting they are looking for. The slider will not acitvate until the user clicks on the knob and then drags it to their desired setting. Most sliders across different platforms carry the same behavior. We will see how Mac OS X specifically stands out behaviorally in the "Platform-Specfic" section. </p>
 
 
+<div class="row">
+  <h3>Events</h3>
+  <div class="col-sm-12">
+    <div class="col-sm-6">
 
-<img src="ezgif.com-crop.gif" class="img-responsive" alt="Mac OS X Slider">
+      <h4>Slider with tick marks in Mac OS X</h4>
+
+      <blockquote> 
+        <ol>
+          <li><code>hover</code>-ing over the slider knob gives you a quick description of what the slider does.</li>
+          <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
+          <li>While <code>drag</code>-ing the slider knob, the knob focuses on the tick marks.</li>
+          <li>Clicking on the <code>bar</code> where tick marks are present, quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
+        </ol>
+      </blockquote>
+
+    </div>
+
+    <div class="col-sm-6">
+
+      <h4>Slider without tick marks in Mac OS X</h4>
+
+      <blockquote> 
+        <ol>
+          <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
+          <li>While <code>drag</code>-ing the slider knob, the knob is smoothly draggable across the bar.</li>
+          <li>Clicking anywhere on the <code>bar</code> , quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
+        </ol>
+      </blockquote>
+
+    </div>
+
+  </div>
+  <h3>State Diagrams</h3>
+  <div class="col-sm-12">
+    <div class="col-sm-6">
+      <h4>Slider with tick marks in Mac OS X</h4>
+      <blockquote> 
+        <ol>
+          <li><code>hover</code>-ing over the slider knob gives you a quick description of what the slider does.</li>
+          <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
+          <li>While <code>drag</code>-ing the slider knob, the knob focuses on the tick marks.</li>
+          <li>Clicking on the <code>bar</code> where tick marks are present, quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
+        </ol>
+      </blockquote>
+    </div>
+    <div class="col-sm-6">
+      <h4>Slider without tick marks in Mac OS X</h4>
+      <blockquote> 
+        <ol>
+          <li><code>hover</code>-ing over the slider knob gives you a quick description of what the slider does.</li>
+          <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
+          <li>While <code>drag</code>-ing the slider knob, the knob focuses on the tick marks.</li>
+          <li>Clicking on the <code>bar</code> where tick marks are present, quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
+        </ol>
+      </blockquote>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="col-sm-6">
+      <img class="center-block" src="ezgif.com-crop.gif" class="img-responsive" alt="Mac OS X Slider">
+    </div>
+    <div class="col-sm-6">
+      <img class="center-block" src="sliderw_oticks.gif" class="img-responsive" alt="Mac OS X Slider without tick marks">
+    </div>
+  </div>
+</div>
 
 
 
 
 
-<p>These are sliders are very common to users. However, there are many other different types of sldiers that have particular function. There are vertical sliders, radial sliders, sliders without tick marks (because it does not appear to point to a specific value, no need for tick marks for example volume, tick marks are used when users need to know the approximate value of setting as shown in the figure above for Windows 8 tick marks are helpful here to determine a specific resolution size, and ofcourse moving the slider knob/thumb to the left will always minimize the setting.</p>
+
+
