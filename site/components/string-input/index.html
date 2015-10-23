@@ -10,45 +10,51 @@ layout: component
 <p class="lead">The string input field is used when the program/web page requires the user to enter text information.</p>
 
 <div class="row">
-  <div class="col-sm-6">
+  	<div class="col-sm-6">
 
-	<h3>Typical Appearance</h3>
+		<h3>Typical Appearance</h3>
 
-	<blockquote>
-		The most basic form of a string input field is a one-line, white, rectangular box. 
-	</blockquote>
-	<p>
-		When not selected, the box appears like an ordinary rectangle; its edges are usually grey in color to show where the field is, where it begins, and where it ends. The field typically uses a font type and size appropriate to the overall look of the surrounding interface components.
-		<br>
-		<br>
-		<input type="text" class="form-control">
+		<blockquote>
+			The most basic form of a string input field is a one-line, white, rectangular box. 
+		</blockquote>
+		<p>
+			When not selected, the box appears like an ordinary rectangle; its edges are usually grey in color to show where the field is, where it begins, and where it ends. The field typically uses a font type and size appropriate to the overall look of the surrounding interface components. Additionally, a placeholder can be seen inside the text box in the form of a command or some other text description.
+			<br>
+			<br>
+			<input type="text" class="form-control" placeholder="Enter your text here...">
 
-		<br>
-		For aesthetic purposes, some text fields can have rounded edges. Additionally, the string input field can contain a token field control, which displays the user input in the form of a draggable token (see Platform-Specific Instances).
-		<br>
-		<br>
-		Note: The string input fields in this page have been extended width-wise to fit into the columns of the page, but they can vary in size across different webpages and platforms.
-	</p>
-	
-
-	<h3>Typical Behavior</h3>
-	<blockquote>
-		A string input components's main behavior is to accept user text input therefore it has to support keyboard focus; for more private text information, a text box also supports password entries.
-		<br>
-		<br>
-		 The string input field signals the user that they can enter a value into a box by changing the cursor icon when the user hovers over the field: the cursor will change into an icon shaped like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside of the box, a blinking vertical bar (called a caret) would appear to signal the user that the text field is waiting for an input.
-	</blockquote>
-
-	<h4>Events</h4>
-	<blockquote>
-		The most important events for string input fields involve keyboard presses and entering texts. These relevant events include <code>input</code>, <code>keyup</code>, <code>keydown</code>, and <code>keypress</code>.
-	</blockquote>
-
-	<p> The <code>input</code> event is triggered after information is entered into the text field; the event is fired synchronously such that the effects can be detected immediately. The events <code>keyup</code>, <code>keydown</code>, and <code>keypress</code> all have similar functionality since they are all keyboard specific. The events are quite self-explanatory (e.g. <code>keyup</code> is triggered when a key is let go, <code>keypress</code> is triggered when a key is pressed, etc).
-	</p>
+			<br>
+			For aesthetic purposes, some text fields can have rounded edges. Additionally, the string input field can contain a token field control, which displays the user input in the form of a draggable token (see Platform-Specific Instances).
+			<br>
+			<br>
+			Note: Some of the string input fields in this page have been extended width-wise to fit into the columns of the page, but they can vary in size across different webpages and platforms.
+		</p>
 		
-	<blockquote>
-		The border of string input fields typically glow blue when they are enabled (i.e, when the user clicks on it). Once enabled, the user can easily type whatever they wish into the field. While the user is typing, the caret remains visible to show the user where exactly they are inserting a key.
+
+		<h3>Typical Behavior</h3>
+		<blockquote>
+			A string input components's main function is to accept user text information, therefore, it has to support keyboard focus; for more private text information, it also supports password entries. The string input field signals the user that they can enter a value into a box by changing the cursor icon when the user hovers over the field: the cursor will change into an icon shaped like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside of the box, a blinking vertical bar (called a caret) would appear to show the user that the text field is waiting for an input.
+		</blockquote>
+
+		<h4>Events</h4>
+		<blockquote>
+			The most important events for string input fields involve keyboard presses and entering texts. These relevant events include <code>input</code>, <code>keyup</code>, <code>keydown</code>, and <code>keypress</code>.
+		</blockquote>
+
+		<p> The <code>input</code> event is triggered after information is entered into the text field; the event is fired synchronously such that the effects can be detected immediately. The events <code>keyup</code>, <code>keydown</code>, and <code>keypress</code> all have similar functionality since they are all keyboard specific. The events are quite self-explanatory (e.g. <code>keyup</code> is triggered when a key is let go, <code>keypress</code> is triggered when a key is pressed, etc).
+		</p>
+		<br>
+
+		<h4>State Diagram</h4>
+		<blockquote>
+			String input fields await values from the user. They are used such that users can submit information and trigger other events in the interface. When a user is not interacting with the field, this component can only be classified as enabled or disabled.
+		</blockquote>
+
+		<h4>Component in Action (Default Text Field)</h4>
+		<blockquote>
+			The border of string input fields typically glow blue when they are enabled (i.e, when the user clicks on it). Once enabled, the user can easily type whatever they wish into the field. While the user is typing, the caret remains visible to show the user where exactly they are inserting a key.
+		</blockquote>
+		Here is an example of what the string input field does: 
 		<p class="text-center">
 			<img src="gifs/hello_world.gif" height=110% width=105%>
 		</p>
@@ -60,49 +66,46 @@ layout: component
 		<p class="text-center">
 			<img src="gifs/drag.gif" width=100%>
 		</p>
-		<br>
-		If there are multiple string input fields on the page (let's say, a form on a webpage), then hitting the tab key would typically move the caret to and enable the next available text field on the page.
+		If there are multiple string input fields on the page (let's say, a form on a webpage), then hitting the tab key would move the caret to and enable the next available text field on the page.
 
-	</blockquote>
-
-	<h4>State Diagram</h4>
-	<blockquote></blockquote>
-
-	<h4>Component in Action</h4>
-	<blockquote>
-		For inputs that require more than one-line, a larger string input field can be used. In the text box below, pressing the "enter"/"return" would allow the user to insert more lines of text.
 		<br>
 		<br>
+		
+	</div>
+
+	<div class="col-sm-6">
+		<h3>Variants</h3>
+		<blockquote>
+			Although text fields perform in the same manner, they can possess other design behaviors depending on where they are used. 
+		</blockquote>
+		<p>
+			For submitting text entries, the text field can be inlined with a button (see Button component for more info on buttons).
+		</p>
+		<div class="input-append text-center">
+	  		<input class="span2" id="appendedInputButton" type="text">
+	  		<button class="btn" type="button">Go!</button>
+		</div>
+		<br>
+		<p>
+			For inputs that require more than one-line, a larger string input field can be used. In the text box below, pressing the "enter"/"return" would also allow the user to insert more lines of text.
+		</p>
 		<textarea rows="3" class="form-control" placeholder="String Input"></textarea>
 		<br>
+		
+		Certain string input fields require the user to type specific text values. These text fields may use a red outline to show that the inputs entered are invalid. The text fields shown below require the user to enter the same text values in both text fields. Another aspect to note in the case below: the text values are hidden from the user. Instead of actual alpha-numeric text values, they can be visually replaced by a symbol (in this case, black dots) in order to hide the password the user enters. Only when the user enters an acceptable argument can the textbox change color into something more inviting (usually a green color for "success" or "acceptable input").
 		<p class="text-center">
-			<span class="input-xlarge uneditable-input" >Disabled string input field</span>
-		</p>
-			
-		Some string input fields can signal the user that their inputs are invalid by having a red border outline around the input field. 
-		<p class="text-center">
-			<input class="span3" type="email" required>
+			<img src="gifs/password_success.gif" width=100%>
 		</p>
 		<br>
+		
 		There are also some string input fields that will be disabled unless the user performs a specific action first. For example, a string input field will be disabled if the user has to first select from a variety of choices. <br><br>
 		In the string input field below, the cursor will not change into an "I-beam pointer" since the user is not allowed to enter any texts. The field has also been greyed out (instead of white in color) to further show the user that they cannot use the text field. In supported browsers, such as Firefox or Google Chrome, when a cursor hovers above the text field, a "no entry sign" &#x1f6ab; will appear below the cursor to make it even clearer that the field is disabled.
 		<p class="text-center">
 			<input class="input-xlarge form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
 		</p>
 		<br>
-		Certain string input fields require the user to type specific text values. The text fields shown below require the user to enter the same text values in box text fields. Another aspect to note in the case below: some text values can be hidden from the user. Instead of actual alpha-numeric text values, they can be visually replaced by a symbol (in this case, black dots) in order to hide the password the user enters. Only when the user enters an acceptable argument can the textbox change color into something more inviting (usually a green color for "success" or "acceptable input").
-		<p class="text-center">
-			<img src="gifs/password_success.gif" width=100%>
-		</p>
-		<br>
 
-		Users can also drag texts into string input fields instead of typing.
-	</blockquote>
 
-	</div>
-
-	<div class="col-sm-6">
-		<h3>Variants</h3>
 		<blockquote>
 			Even though the string input field is a common interface for entering user values, there are other similar ways for users to enter their own inputs. 
 		</blockquote>
@@ -114,12 +117,17 @@ layout: component
 		</p>
 		<br>
 		<ul>
-			<li><em>Voice recognition</em> is an up and coming design element in newer models of systems. Developers, such as Google, have even made it possible to enter texts into textboxes by allowing the user to speak into their devices. Usually, a microphone icon, such as the one shown in the text box below, can be seen inside the text field. Pressing/clicking this button would allow the user the talk directly, instead of type with a keyboard, whatever information they wish (assuming the voice recognition capability is enabled and functions properly).</li>
+			<li><em>Voice recognition</em> is an up and coming design feature in newer models of systems. Developers, such as Google, have even made it possible to enter texts into textboxes by allowing the user to speak into their devices. Usually, a microphone icon, such as the one shown in the text box below, can be seen inside the text field. Pressing/clicking this button would allow the user the talk directly, instead of type with a keyboard, whatever information they wish (assuming the voice recognition capability is enabled and functions properly).</li>
 		</ul>
 		<p class="text-center">
 			<img src="img/google_speech_recog.jpg" width=100%>
 		</p>
 		
+
+
+
+	</div>
+</div>
 
 		<h3>Priority Metrics</h3>
 		<blockquote>
@@ -152,32 +160,34 @@ layout: component
 		<!-- </blockquote> -->
 
 		
+<h3>Platform-Specific Instances</h3>
+<blockquote>
+	In Mac OS X, some key text boxes
+</blockquote>
+<div class="row">
+  	<div class="col-sm-6">
+		<ul>
+			<li><em>Spotlight Search</em></li>
+		</ul>
+		<p class="text-center">
+			<img src="gifs/search.gif" width=100%>
+		</p>
+	</div>
 
-	<h3>Platform-Specific Instances</h3>
-	<blockquote>
-		In Mac OS X, some key text boxes
-	</blockquote>
-	<ul>
-		<li><em>Spotlight Search</em></li>
-	</ul>
-	<p class="text-center">
-		<img src="gifs/search.gif" width=100%>
-	</p>
-	<ul>
-		<li><em>Token Field</em></li>
-	</ul>
-	<br>
-	<p class="text-center">
-		<img src="img/token_field_2x.jpg" width=50%>
-	</p>
-	<br>
-	<p class="text-center">
-		<img src="img/token_menu.jpg" width=100%>
-	</p>
-
+	<div class="col-sm-6">
+		<ul>
+			<li><em>Token Field</em></li>
+		</ul>
+		<br>
+		<p class="text-center">
+			<img src="img/token_field_2x.jpg" width=50%>
+		</p>
+		<br>
+		<p class="text-center">
+			<img src="img/token_menu.jpg" width=100%>
+		</p>
 	</div>
 </div>
-
 
 <h3>Credits &amp; References</h3>
 <blockquote>
