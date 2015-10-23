@@ -26,7 +26,7 @@ In fact, a window is used to view the content of the page!
     <img src="Content.png" alt="An example of content of a window" width="400">
     <small>An example of the "Content"</small>
   </ul>
-  In the frame there are buttons located on the top left corner or top right corner of the frame. There is a slight variation on the frame depending on what type of window one is accessing. <em>(See the <a href="http://127.0.0.1:4000/paradixm/components/window/#variants">'Variant Appearance'</a> section below.)</em> Generally in the middle of the frame, there is a title containing the location of the content one is viewing.
+  In the frame there are buttons located on the top left corner or top right corner of the frame. There is a slight variation on the frame depending on what type of window one is accessing. <em>(See the <a href="#variants">'Variant Appearance'</a> section below.)</em> Generally in the middle of the frame, there is a title containing the location of the content one is viewing.
   <br> <br>
   The content component of  the window, varies greatly and is dependent upon the type of window you are accessing. Depending on the operating system one is using the frame might envelope the content and acting in a literal sense like a frame.
 
@@ -41,7 +41,7 @@ In fact, a window is used to view the content of the page!
     <blockquote>The file explorer window is usually accessed when one clicks a folder on their computer. There are three buttons located in the frame in the left or right corner depending on the operating system one is using.  </blockquote>
     <li>Dialog</li>
     <img src="dialog.PNG" alt="A picture of a Dialog Window" width="400">
-    <blockquote>The dialog window usually appears the computer prompts the user for input in the form of button or string input. In the frame there will only be one or no button depepending on the operating system.</blockquote>
+    <blockquote>The dialog window usually appears the computer prompts the user for input in the form of button or string input. In the frame there will only be one or no button depending on the platform.</blockquote>
     <li>Alert</li>
     <img src="alert.PNG" alt="A picture of a alert Window"  width="400">
     <blockquote>The alert window occurs when the computer wants to notifies the user of an action. It prompts the user for input in the form of a single button signiging that the user acknowledges the message. In its frame there will be a single or no button. </blockquote>
@@ -55,6 +55,28 @@ In fact, a window is used to view the content of the page!
 Most of these variants's appearance vary. For more details on a specific variant check out the different OS tags below.
   </blockquote>
 
+  <h3>Priority Metrics</h3>
+  <blockquote>As a common and fundamental component in modern graphic user interfaces, the window compoent mainly focuses on four out of the five usability metrics:
+	<ul>
+		<li>Learnability</li>
+		<small>A user seeing a window on any platform must not have any problems learning how it operates as it is the most common way to navigate through the computer's directory and to access files and to view content.</small>
+		<li>Efficiency</li>
+		<small>If a window delays, the user might make the mistake in trying to reopen the window. The result could be the opening of multiple windows. If this happens to be an Application window it could greatly slow down the computer.</small>
+		<li>Errors</li>
+		<small>A user must not trigger an error with a window. This is especially so with an application window. The error could cause the user's work to be deleted.</small>
+		<li>Memorability</li>
+		<small>Because a window is an important of the graphic user interface, it would be tedious and counter-productive if the user would be unable to remember how to use a window.</small>
+		
+	</ul>
+	The last metric, <strong>satisfaction</strong>, is the least important because of its commonality and its simplicity. Not much pleasure can be derived from the functionality of a window.
+  </blockquote>
+<h3>Key Characteristics</h3>
+<h4>Clarity</h4>
+<blockquote> There should be a title in the middle of the frame in order for the user to understand the content. For a dialog and alert window it is extremely important for the message to be concise and easily understandable</blockquote>
+<h4>Consistency</h4>
+<blockquote>This mainly applies to Application windows. The Application window should adopt the stylings and appearance of a typical window on the specific platform it is on.</blockquote>
+<h4>Feedback</h4>
+<blockquote>There should be some kind of response indicating that a user is opening a window. If there is such a delay the user could accidently open various windows. For application windows there should be confirmation if the user would like to close a window in the form of a dialog window. This is especially the case if the user is modifying a file in the content of a window.</blockquote>
 </div>
 
 <!-- Second Column -->
@@ -66,9 +88,9 @@ Most of these variants's appearance vary. For more details on a specific variant
 <h5>The frame buttons</h5>
   <blockquote> The three buttons in the frame exhibit three different behaviors.
   <img src="Three-buttons.PNG" alt="The three buttons within the frame">
-  <ul><li>When the button to the outermost left is <code>clicked</code> the window closes.</li>
-  <li>The button in the middle hides the window. The window can be accessed again by <code>clicking</code> in within the dock/menu bar.</li>
-  <li>The button on the right maximizes the window, making the window's height and width the size of the screen.</li>
+  <ul><li>When the button to the outermost left is <code>clicked</code> the window closes. This is called <code>exiting</code> the window.</li>
+  <li>The button in the middle hides the window in the dock/menubar. This is called <code>minimizing</code> the window. The window can be accessed again by clicking it in within the dock/menu bar. This is called <code>restoring</code> the window.</li>
+  <li>The button on the right <code>maximizes</code> the window, making the window's height and width the size of the screen. If clicked again the window will be <code>restored</code> to it's original size</li>
   <em>(For more info on the button component see <a href="../button/index.html">button</a>)</em>
   </ul>
   </blockquote>
@@ -89,23 +111,77 @@ Most of these variants's appearance vary. For more details on a specific variant
   </blockquote>
   
   <h4>State Diagram</h4>
-  	<blockquote>The window component has two states: <code>active</code> and <code>passive</code>.
-  	<br><br>
+  <img src="StateDiagram.png" alt="State Diagram of a window" width="600">
+  	<blockquote>The window component has five states: 
+	<ul>
+		<li><code>active</code></li>
+		<li><code>passive</code></li>
+		<li><code>minimized</code></li>
+		<li><code>maximized</code></li>
+		<li><code>closed</code></li>
+	</ul>
+  	 
+  	<br>
 	<img src="Selected-Deselected.png" alt="An example of an active and passive window" height="200">
 	<br><br>
-	When a window is opened it is in its active state by default. In this scenario we will call this <strong>window 1</strong>. In this state <strong>window 1's</strong> events work normally. 
+	When a window is opened it is in its active state by default. In this scenario we will call this <strong>window 1</strong>. In this state <strong>window 1's</strong> you are able to either maximize, minimize or exit the window. 
 	<br><br>
 	<img src="Diagram-1.png" alt="A single window open" height="200" width="400">
 	<br><br>
+	
+	When the <strong>window 1</strong> is in its maximized state, the window expands to the size of ones computer monitor. Depending on the platform used a window can be minimized or exited in this state. By clicking the maximize button the user can restore the window to it's original size.
+
+	<br><br>
+	<img src="" alt="Maximize window" height="200" width="400">
+	<br><br>
+	
+	When the minimize button is clicked, <strong>window 1</strong> enters minimized state. In this state the window disappears and it resides in the dock/menu bar. If you click the minimized window in the dock/menu bar it restores in size.
+
+	<br><br>
+	<img src="" alt="Minimize window" height="200" width="400">
+	<br><br>
+
 	Lets assume the user opens up another window called <strong>window 2</strong>. When this happens <strong>window 1</strong> is in it's passive state while <strong>window 2</strong> would be in its active. The user is alerted to this change when <strong>window 1</strong> appears to grayer than <strong>window 2</strong>. 
 	<br><br>
 	<img src="Diagram-2.png" alt="A single window open" height="200" width="400">
 	<br><br>
 	If the user clicks <strong>window 1</strong>, then <strong>window 2</strong> would become passive while <strong>window 1</strong> would be active.
 	<br><br>
-	If the user clicks the original window 
+	<img src="Diagram-3.png" alt="A single window open" height="200" width="400">
+	<br><br>
+	
+	If the user opens up another window, in which we will call <strong>window 3</strong>, both <strong>window 1</strong> and <strong>window 2</strong> will be in its passive state and <strong>window 3</strong> will be in its active state.
+	<br><br>
+	<img src="" alt="An active window and two passive windows">
+	<br> <br>
+	When <strong>window 1</strong> and <strong>window 2</strong> are in its passive state, it acts like a background. In that <strong>window 3</strong> and windows in a passive state can overlap with <strong>window 3</strong> being on top.
+	<br>
+	<br>
+	<img src="" alt="An example of active passive window overlap" height="200" width="200">
+	<br>
+	<br>
 	</blockquote>
   	
+  	<h4><strong><em>Additional Behavior</em></strong></h4>
+  		<h5>File Explorer</h5>
+		<blockquote>Along with the events described in the above. In the frame of a File Explorer there is an option to search for files on your computer or folder.  How this is implemented varies across platforms.  <em>(For more information please see the platform section below)</em>
+
+		<br>
+		<br>
+		Included in the frame exists a back and foward button. When <code>clicked</code> The content of the window changes to the previously viewed content if the back button is <code>clicked</code>. And the foward button opens the content currently viewed.
+		<br> <br>
+
+		In the content there exists a menu that allows quick access to directories. By <code>clicking</code> one of the options, the content of with window will change to the content of the directory shortcut you clicked. The directory shortcut menu is customizable.</blockquote>
+		
+		
+		<h5>Dialog</h5>
+		<blockquote>Unlike the File Explorer, Properties and Application windows, the Dialog window lacks a <code>maximize</code> button and a <code>minimize</code> button. Depending on the platform it may not even include an <code>exit</code> button.</blockquote>
+
+		<h5>Alert</h5>
+		<blockquote>Much like the dialog button, the Alert button lacks a <code>maximize</code>, <code>minimize</code> and possibly an <code>exit</code> button. However in contrast with the other types of windows when the Alert window is in its passive state it does not behave like a background. This window will always be on top of all windows.</blockquote>
+
+		<h5>Application</h5>
+		<blockquote>The most Application windows will behave as described above in the typical behavior sections as well as adopting to the nuinces of the platform.</blockquote>
   
   </div>
 </div>
@@ -113,21 +189,37 @@ Most of these variants's appearance vary. For more details on a specific variant
 <h3>Window Screenshots from Selected Platforms</h3>
 
 <p>Screenshots of windows are currently available for the following platforms. Please click on each box for more details.</p>
+<div>
 
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#Yosemite" aria-controls="Yosemite" role="tab" data-toggle="tab">Yosemite</a></li>
 
-<div class="row">
-  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-    <div class="well">Yosemite</div>
+    <li role="presentation"><a href="#Windows" aria-controls="Windows 8.1" role="tab" data-toggle="tab">Windows 8.1</a></li>
+    <li role="presentation"><a href="#Ubuntu" aria-controls="Ubuntu 15.04" role="tab" data-toggle="tab">Ubuntu 15.04</a></li>
+    
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="Yosemite">
+    <h2>OS X Yosemite</h2>
+    <br> <br>
+
+    <p class="lead"> According to the OS X Human Interface Guidelines, a window provides a frame for viewing and interacting with content in an app.</p>
+    <h3>Appearance Differences</h3>
+    <blockquote></blockquote>
+
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="Windows">...</div>
+    <div role="tabpanel" class="tab-pane" id="Ubuntu">...</div>
+    
   </div>
 
-  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-    <div class="well">Ubuntu 15.04</div>
-  </div>
-
-  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-    <div class="well">Windows 8.1</div>
-  </div>
 </div>
+
+
 
 <div class="row">
   <div class="col-xs-12">
