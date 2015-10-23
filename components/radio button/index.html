@@ -4,7 +4,7 @@ layout: component
 --
 
 <style>
-.img {max-width:300px;}
+.img {max-width:250px;}
 </style>
 
 <h2>Radio Button</h2>
@@ -31,8 +31,8 @@ layout: component
 			<li><code>hover</code>: when the pointer/cursor is within the area of the circle. Most do not display behavior during this event but some radio buttons do cast a shadow within the circle to indicate that it is currently being interacted with regardless on
 			whether it is clicked or not.</li>
 			<li><code>selected</code>: occurs strictly when user is operating through keyboards input. Pressing the tab key scrolls through all the optional clickables and since radio buttons are grouped together they are always considered one element. To scroll through the choices of radio buttons, the user must use the directional buttons on the keyboard (up and down).</li>
-			<li><code>click + hold</code>: a user can click on a radio button (pressing within the vicinity of the circle) and prevent it from being toggled by dragging and releasing the cursor away from the vicinity of the cursor. This event cannot occur using keyboard inputs.</li>
-			<li><code>click + release</code>: a user can press within the vicinity of the circle and immediately release it to toggle the button. In the context of keyboard inputs, once a button is selected, pressing the enter key is the equivalent of clicking it with a cursor.</li>
+			<li><code>click + hold</code>: a user can click on a radio button (pressing within the vicinity of the circle or the label) and prevent it from being toggled by dragging and releasing the cursor away from the vicinity of the cursor. This event cannot occur using keyboard inputs.</li>
+			<li><code>click + release</code>: a user can press within the vicinity of the circle or the label and immediately release it to toggle the button. In the context of keyboard inputs, once a button is selected, pressing the enter key is the equivalent of clicking it with a cursor.</li>
 			<li><code>disabled</code>: a disabled button provides no response when it is clicked on. Everything remains the same indicating to the user that nothing has changed. Sometimes a cancel icon takes the place of the cursor indicating that it cannot be clicked.</li> 
 		</ul>
 
@@ -41,9 +41,10 @@ layout: component
 
 	<h4>Component in Action</h4>
 		<p class="text-center">
-			<img src="https://camo.githubusercontent.com/305295727cfebcbc2748aa65f5e70fe88f3f2d4e/687474703a2f2f692e696d6775722e636f6d2f704b38323673782e676966" alt="Radio button in action">
+			<img src="http://31.media.tumblr.com/2354f87c169620b7c064e5c4d3307178/tumblr_inline_nj9mgb2MYy1qb17pp.gif">
 		</p>
-		<p>Pictured above is a stylized depiction of a user picking between three radio buttons in a constant loop between inactive, click and active. Pictured below is a live demonstration of a radio button as developed by Bootstrap.</p>
+		<p>Pictured above is a depiction of a user picking between two radio buttons in a constant loop between inactive, click and active.
+		As you can see buttons can be toggled if labels are clicked as well. Pictured below is a live demonstration of a radio button as developed by Bootstrap.</p>
 
 		<p class="text-center">
   			<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
@@ -61,84 +62,53 @@ layout: component
 		However conceptually-speaking, radio buttons focus more on status (ex: the background is red and not blue) rather than actions (ex: pressing a button to access a submenu for background color) so 
 		menu buttons are not necessarily identified as a radio button.</p>
 		</li>
-		<li><p class="text-center"><img src="http://i60.tinypic.com/1236syh.png"></p>
-		<p><em>menu list</em>: this variation presents itself as a list instead of circular buttons. Instead of "filling" in the circle to make a decision, the user clicks on the label itself (usually colored differently when hovered over).</p>
+		<li><p class="text-center"><img src="http://i60.tinypic.com/1236syh.png"><img src="https://csgsitestorage.blob.core.windows.net/img/1426714471678.gif"></p>
+		<p><em>menu list</em>: this variation presents itself as a list instead of circular buttons. Instead of "filling" in the circle to make a decision, the user clicks on the label itself (usually colored differently when hovered over).
+		Another variation of this is the select box which is like the menu list but requires the user to press a separate select button in order to click their choice.</p>
 		</li>
 		<li><p class="text-center"><img src="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/art/buttonsradiomixed.gif"></p>
-		<p><em>radio buttons with multiple buttons clicked simultaneously</em>: </p>
+		<p><em>radio buttons with multiple buttons clicked simultaneously</em>: like a regular series of radio buttons but a special case in that a user can click multiple buttons instead of just the one. It is debatable whether this fits the criteria of the radio button. The appearance is largely the same but its function (multiple instead of toggling exclusively one) is different.</p>
 		</li>
 	</ul>
 
 <h3>Priority Metrics</h3>
-
-<p>Lorem ipsum...</p>
-
+	<p>All metrics are important because radio buttons appear quite universally seeing as how interaction with user and system is constant.
+	Presenting choices are often in the form of radio buttons.</p>
+	<ul>
+		<li><em>Learnability</em>, <em>efficiency</em>, and <em>memorability</em>: Etymologically radio buttons refer to the pop-up buttons  </li>
+		<li><em>Errors:</em> </li>
+		<li><em>Satisfaction:</em> Since radio buttons serve a more functional purpose rather than one for enjoyment, satisfaction does not have as much importance as the other metrics.
+		But satisfaction can be derived from a straightforward and error-free experience with making choices using radio buttons.</li>
+	</ul>
+	
 <h3>Key Characteristics</h3>
 	<ul>
 		<li></li>
 	</ul>
 
 
-<h4>Feedback</h4>
-
-<p>Lorem ipsum...</p>
+	<h4>Feedback</h4>
+		<p>Lorem ipsum...</p>
 
   </div>
 </div>
 
 <h3>Platform-Specific Instances</h3>
-<h4>OSX10 Yosemite</h4>
-
-<p>Lorem ipsum...</p>
-
-<div class="row">
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Alto</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Amiga</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Material Design</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">watchOS</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-</div>
+	<h4>OSX10 Yosemite</h4>
+		<p>Lorem ipsum...</p>
+	
+	<h4>Other OSX</h4>
+		<p></p>
+	
 
 <h3>Credits &amp; References</h3>
 
-<ul>
-	<li>Page template: <a href="http://dondi.github.io/paradixm/components/button">Paradixm Button Template</a>
-	<li>Radio button GIF: <a href="https://github.com/InvexGames/MaterialUI/wiki/RadioGroup-and-Radio-Buttons">Invex Games</a></li>
-	<li>Keyboard inputs: <a href="http://stackoverflow.com/questions/14322564/can-you-tab-through-all-radio-buttons">Stack Overflow</a></li>
-	<li>Radio buttons with multiple buttons clicked simultaneously: <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/RadioButtons.html">Apple Developer</a></li>
-	<li>Other uncredited pictures belong to Janine Leano</li>
-</ul>
+	<ul>
+		<li>Page template: <a href="http://dondi.github.io/paradixm/components/button">Paradixm Button Template</a>
+		<li>Radio button in action GIF: <a href="http://news.bootswatch.com/post/110161099627/material-design-in-bootstrap-with-paper">Bootswatch</a></li>
+		<li>Radio button GIF: <a href="https://github.com/InvexGames/MaterialUI/wiki/RadioGroup-and-Radio-Buttons">Invex Games</a></li>
+		<li>Select button GIF: <a href="http://www.csgpro.com/post/130097">CSG Pro</a></li>
+		<li>Keyboard inputs: <a href="http://stackoverflow.com/questions/14322564/can-you-tab-through-all-radio-buttons">Stack Overflow</a></li>
+		<li>Radio buttons with multiple buttons clicked simultaneously: <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/RadioButtons.html">Apple Developer</a></li>
+		<li>Other uncredited pictures belong to Janine Leano</li>
+	</ul>
