@@ -10,28 +10,19 @@ layout: component
 
 <h3>Typical Appearance</h3>
 
-<blockquote>If a component is sufficiently widespread that it takes on a recognizable look across multiple platforms,
-  provide it here. If its appearance varies extremely widely, say so and direct the reader to platform-specific
-  instances.</blockquote>
+<blockquote>Across nearly all platforms, check boxes are virtually identical. This component's simplicity prevents it from having a wide variety of designs.</blockquote>
 
 <h3>Typical Behavior</h3>
 
 <blockquote>
-  <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
-    here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
-    reader to the platform-specific sections.</p>
-
-  <p>Helpful subsections include:</p>
+  <p>This component has many states across most platforms: checked, unchecked, disabled, and pressed down. Like a button, these different states should be obvious in the event that someone clicks (or holds down) on it. </p>
 </blockquote>
 
 <h4>Events</h4>
 
-<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+<blockquote>A check box can be checked or unchecked as the result of a click. Additionally, check boxes represent the event of an item in a list. A simple example of this representation is a to-do list, which showcases whether a certain task has been completed.</blockquote>
 
-<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
-  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
-  within the button’s bounds.</p>
+<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has switched the check box's state. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly within the button’s bounds. In the event that a user presses and holds on a check box, the <code>release</code> event is applicable.</p>
 
 <h4>State Diagram</h4>
 
