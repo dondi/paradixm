@@ -3,12 +3,6 @@ title: Selecting
 layout: component
 ---
 
-<p class="lead">A very important task that allows the user to group and direct focus to on-screen components. </p>
-
-<div class="row">
-  <div class="col-sm-12">
-
-<h3>Typical Appearance</h3>
 <style>
 #row-pictures {
     padding:0 0 0 0;
@@ -29,6 +23,13 @@ layout: component
 }
 </style>
 
+<p class="lead">A very important task that allows the user to group and signify what components they wish to focus on. </p>
+
+<div class="row">
+  <div class="col-sm-12">
+
+<h3>Typical Appearance</h3>
+
 <div class="container">
     <ul class="row" id="row-pictures">
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/DropdownMenuSelect.png" alt="Drop Down Menu Select"></li>
@@ -36,6 +37,7 @@ layout: component
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/MenuSelect.jpg" alt=""></li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/TextSelect.png" alt=""></li>
     </ul>
+</div>
 
 <h3>Typical Behavior</h3>
 <p>
@@ -55,13 +57,61 @@ layout: component
 </p>
 
 <h4>Events</h4>
+<div class="well">
+  <p>
+    Text Selecting
+  </p>
+  <p>
+    When performing a text selection, the user goes through three actions:
+  </p>
 
-<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+  <p>
+    1.) Clicking on-screen where the user would like to begin the selection.
+  </p>
 
-<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
-  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
-  within the button’s bounds.</p>
+  <p>
+    2.) Holding the click and draging the cursor so the desired text is highlighted.
+  </p>
+
+  <p>
+    3.) Releasing the click and finish the selecting.
+  </p>
+</div>
+
+<div class="well">
+  <p>
+    Folder/File Selecting
+  </p>
+  <p>
+    When selecting multiple folders/files, a user can use the same methodology as text selection. However, when selecting a single file or folder a user just needs to follow two steps.
+  </p>
+
+  <p>
+    1.) Choosing what folder/file to select and hover over it. Notice there a dim highlight surrounds the folder/file.
+  </p>
+
+  <p>
+    2.) Click on the desired folder/file. Notice how the dim highlight turned more opaque after clicking.
+  </p>
+</div>
+
+<div class="well">
+  <p>
+    Checkbox Selecting
+  </p>
+  <p>
+    When performing a selection on checkboxes, the user goes through two steps.
+  </p>
+
+  <p>
+    1.) Choosing which checkbox to select and hover over it. Notice there a dim blue highlight surrounds checkbox.
+  </p>
+
+  <p>
+    2.) Click on the desired checkbox. Notice a check has appeared in the box.
+  </p>
+
+</div>
 
 <h4>State Diagram</h4>
 
@@ -94,19 +144,36 @@ layout: component
 </ul>
 
 <h4>Component in Action</h4>
-
-<blockquote>
-  <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
-
-  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
-</blockquote>
-
-<p class="text-center">
-  <button class="btn btn-default">Standard Bootstrap Button</button>
-  <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
-</p>
-
+<div class="well">
+  <p>
+    Checkbox Selection
+  </p>
+  <div class="checkbox">
+        <label><input type="checkbox"> Option 1</label>
   </div>
+  <div class="checkbox">
+        <label><input type="checkbox"> Option 2</label>
+  </div>
+  <div class="checkbox">
+        <label><input type="checkbox"> Option 3</label>
+  </div>
+</div>
+<div class="well">
+  <p>
+    List selection. Can use Shift and Ctrl to select multiple options.
+  </p>
+  <div class="selecting_group">
+    <select multiple class="group-control" id="selectGroup">
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+      <option>Option 4</option>
+      <option>Option 5</option>
+      <option>Option 6</option>
+
+    </select>
+  </div>
+</div>
 
   <div class="col-sm-6">
 <h3>Variants</h3>
