@@ -82,8 +82,8 @@ layout: component
 
         <h4>Behavior and Feedback</h4>
 
-          <p>On most platforms, menus are usually accessed by first clicking on a button.The menus then expand to reveal the items they hold. On most platforms, users are also able to hover over to a different menu button and, without clicking, expand those other menus as well after having
-            already clicked on one. This includes menu buttons within the menu itself.</p>
+          <p>On most platforms, menus are usually accessed by first clicking on a button.The menus then expand to reveal the items they hold. On most platforms, users are also able to hover over to a different menu button and, without clicking, expand those other menus as well after havingalready clicked on one. This includes menu buttons within the menu itself. The Windows design guidelines call this "cascading," and
+          it is used a method to keep menu short. Small side-facing arrows are placed next to the labels of items that are cascadable.</p>
           <p>To exit a menu on most platforms, the user can click outside of the open menu to close it. The menu also usually disappears
             when the user selects one of its items.</p>
           <p>When an item is selected, the menu indicates this action with a flashing highlight. Though, this usually happens so fast
@@ -94,26 +94,39 @@ layout: component
 
         <h4>Labeling</h4>
 
-        <p>Google recommends that menu labeling should be contextualized so that users can generally know what a menu contains before
-          they open it. This way users don't have to spend extra time exploring after having clicked on a menu with the wrong content. 
-          Apple adds to these contraints by saying that labels should be as short as possible without sacrificing clarity, and also 
+        <p>The OS X, Windows, and Google design guidelines all recommend that menu titles should be contextualized so that users can generally know what a menu contains before they open it. This way users don't have to spend extra time exploring after having clicked on a menu with the wrong content. Apple adds to these contraints by saying that labels should be as short as possible without sacrificing clarity, and also 
           suggest that icons should not be used as menu labels (nor should a mix of labels and icons) because users can confuse them with
           "menu bar extra."</p>
+        <p>Each of the guidelines also set a rule that if three or more labels/items have the same word, that is when developers should choose
+          to cascade those items under a general item. (i.e. Insert Line Before, Insert Line After, Delete Word Forward, Delete Word Backward, and so on can all be cascaded under the general item "Text" to imply they are text editing commands.)
 
         <h4>Placement</h4>
 
         <p>Google recommends that when it comes to behaviors like expanding, menus should appear on top of the elements they are emitting from
-          so as to not remove it from its context. We can clearly see from the OS X interface, however, that their menus often appear below or next to
-          the element that was just clicked. Furthermore,
+          so as to not remove it from its context. We can clearly see from OS X and Windows interfaces, however, that their menus often appear below or next to the element that was just clicked. Menus should not be a primary method for navigation in an app.
 
         <h4>Items</h4>
 
-        <p>A lot can be said as for how the items of a menu are arranged as well. Apple makes use of <em>grouping</em> in its OS X menus. From the previous images, there are thin lines that divide the list into groups of interdependent attributes. Developers should avoid combining actions and attributes in the same group.
+        <p>The arrangement of items within a menu is just as crucial as the menu itself. Both OS X and Windows design standards make use of <em>grouping</em> in their menus. From the previous images, we can see that there are thin lines dividing the list into groups of interdependent attributes. According to their respective guidelines, developers should generally avoid combining actions and attributes in the same group.
 
         <p>"Arranging menu items in logical groups helps users locate commands quickly. As you figure out how to group menu items, it often works well to refer to the user’s mental model of your app’s task. To learn more about this concept, see <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW3">Mental Model</a>
-        (<a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/MenuGrouping.html#//apple_ref/doc/uid/20000957-CH25-SW1">developer.apple.com</a>)</p>
+        (<a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/MenuGrouping.html#//apple_ref/doc/uid/20000957-CH25-SW1">developer.apple.com</a>) </p>
+
+        <p>
+        Additionally, OS X guidelines recommend placing the most frequently used items in groups at the top of the menu. Of course, the key
+        here is to not arrange strictly by frequency of use, but by grouping items first and then arranging by frequency.
+        </p>
+
 
         <h3>Priority Metrics</h3>
+
+            <ul>
+              <li>Learnability</li>
+              <li>Efficiency</li>
+              <li>Memorability</li>
+              <li>Errors</li>
+              <li>Satisfaction</li>
+            </ul>
 
         <blockquote>The five <em>usability metrics</em> outlined by Jakob Nielsen in his book, <em>Usability Engineering</em> (page 26),
           are of critical importance to menu components on interfaces. For example, we can imagine how much less effective software development
@@ -122,17 +135,17 @@ layout: component
         </blockquote>
 
         <p>A majority of menu components represent a list that someone might draw on paper with items to keep track of or investigate.
-          These specific representations, in this respect, are highly learnable for, say, some who has never used a computer before. It is
+          These specific representations, in this respect, are highly learnable for, say, someone who has never used a computer before. It is
           in fact important that users are not hindered by a complex arrangement of items (Learnability).
 
           And given that menus are so common (and crucial to the organization of a graphic interface), it is important that users can quickly learn
           when, where, and how to access them so that there won't be too much time spent simply trying to locate items or functions in an application (Efficiency).</p>
 
-        <p>Current menu designs are extremely memorable as well because they are organized as they would be on paper, such as the table of contents at
-          the beginning of a book (Memorability). Also, it is probably best that menus be fairly simple to access and use and have adequate feedback 
-          features for users to reduce the number of errors with using them (Errors).</p>
+        <p>Current menu designs are extremely memorable as well because they are organized as they would be on paper, such as the table of contents at the beginning of a book (Memorability). Also, it is probably best that menus be fairly simple to access and use and have adequate feedback features for users to reduce the number of errors with using them (Errors). Menus might not be a suitable element for measuring
+        user satisfaction since it may often be taken for granted as a "component" in the system to begin with (Satisfcation). Google's design
+        guidelines mention how users don't usually notice the menu component until it malfunctions or the user makes an error.</p>
 
-
+        <br>
         <h4>State Diagram</h4>
 
             <blockquote>
@@ -175,7 +188,7 @@ layout: component
             <h4>Component in Action</h4>
 
             <blockquote>
-              <embed src="Menu_in_action" type="video/.mov" width="320" height="240" controls></video>
+              <video src="Menu_in_action" type="video/mov" width="320" height="240" controls></video>
             </blockquote>
 
           </div>
@@ -386,22 +399,12 @@ layout: component
 
         <blockquote>The Bootstrap website has what seems to be a hybrid of an accordion menu with a scroll bar
           on the side. It has the general categorical items with their corresponding subitems as well as 
-          two scroll bars, one large and one small, to indicate where the user to navigating on the menu
+          two scroll bars, one large and one small, to indicate where the user is navigating on the menu
           and the page. The larger bar indicates the overall category the view is in, while the smaller bar
           indicates what is currently being viewed in the window itself.</blockquote>
 
-        <img src="Bootstrap_menu.png" class="img-responsive" alt="Responsive image">
-
-
-        <p>[More text here]</p>
-
-        <ul>
-          <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
-            invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
-            different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
-
-          <li><em>Italicized words!</em> (and some more words)</li>
-        </ul>
+        <img src="Bootstrap_menu.png" width="900" height="700" class="img-responsive" alt="Responsive image">
+        <br>
 
       </div>
 
@@ -411,10 +414,9 @@ layout: component
 
 <blockquote>
 
-  <p>Mac OS X menus have an added feature of faint line dividers to group certain sets of options without adding too much clutter 
-  to the small menu.</p>
+  <p>From the images of the directory menus, it is obvious that the OS X Finder window is much less "cluttered" than the Windows file directory.</p>
 
-  <p>In addition to there being hidden menus, there are even hidden menu items that can be seen if the user holds down the "alt option" key for Mac. For example, the file menu at the top of the Desktop interface (with no applications open) has some hidden items that are revealed when the "alt option" key is pressed while the menu is open.</p>
+  <p>In addition to there being hidden menus, there are even hidden menu items (described as "Dynamic Menu Items" in OS X guidelines) that can be seen if the user holds down the "alt option" key for Mac. For example, the file menu at the top of the Desktop interface (with no applications open) has some hidden items that are revealed when the "alt option" key is pressed while the menu is open.</p>
 
   </blockquote>
 
@@ -434,6 +436,6 @@ layout: component
   <a href="http://getbootstrap.com/css/#overview">The Bootstrap website</a> <br />
   <a href="https://www.google.com/design/spec/components/menus.html#menus-specs">Google Design Guidelines</a>
   <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/MenuNaming.html#//apple_ref/doc/uid/20000957-CH24-SW1">OS X Human Interface Guidelines</a> <br />
-  <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742479(v=vs.85).aspx">Windows Design Principles</a> <br />
+  <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/bb246432(v=vs.85).aspx">Windows Design Principles</a> <br />
   <p>Nielsen, Jakob. <em>Usability Engineering</em>. San Diego: American Press, 1993. Print.</p>
 </blockquote>
