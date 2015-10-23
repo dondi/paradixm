@@ -149,14 +149,33 @@ layout: component
 </blockquote>
 
 <h4>Feedback</h4>
-<!-- <blockquote> -->
+<blockquote>
 	Interaction design elements such as string input field must always give feedback to the user:
-	<ol>
-		<li> The field should always have some sort of indication that it is enabled (e.g. by using colors).</li>
-		<li> The caret should be visible to indicate where users can enter strings.</li>
-		<li> The field should tell the user what to enter into it by using some sort of placeholder.</li>
-
-	</ol>
+</blockquote>
+For default string input fields:
+<ol>
+	<li> The field should always have some sort of indication that it is enabled (e.g. by using colors).</li>
+	<li> The caret should be visible to indicate where users can enter strings.</li>
+	<li> The field should tell the user what to enter into it by using some sort of placeholder.</li>
+	<li>Be sure to perform appropriate edit checks when you receive user input.</li>
+	<li>Be sure to use a combo box if you want to combine a menu or list of choices with a text input field.</li>
+	<li>In general, display an introductory label with a text input field.</li>
+	<li>In general, ensure that the length of a text input field comfortably accommodates the length of the expected input.</li>
+	<li>Space multiple text input fields evenly.</li>
+</ol>
+For token fields:
+<ol>
+	<li>n general, use a token field control in a text input field.</li>
+	<li>If appropriate, add a contextual menu to a token.</li>
+</ol>
+For search fields:
+<ol>
+	<li>Use a search field to enable search functionality within your app. </li>
+	<li>Decide when to start the search.</li>
+	<li>In general, avoid using a menu to display search history.</li>
+	<li>Avoid supplying an introductory label.</li>
+	<li>Display placeholder text, if it helps users understand how search works in your app.</li>
+</ol>
 		
 <h3>Platform-Specific Instances</h3>
 <blockquote>
@@ -165,25 +184,56 @@ layout: component
 <div class="row">
   	<div class="col-sm-6">
 		<ul>
-			<li><em>Spotlight Search</em></li>
+			<li><em>Spotlight Search</em>
+				<p class="text-center">
+					<img src="gifs/search.gif" width=100%>
+				</p>
+			</li>
+			
+			
+			<li><br>
+				<em>Printer properties</em>
+				<br>
+				<p class="text-center">
+					<img src="img/osx_add_printer.png" width=100%>
+				</p>
+			</li>
+
+			<li>
+				<em>Wi-fi properties</em>
+				<br>
+				<p class="text-center">
+					<img src="img/osx_wifi.png" width=100%>
+				</p>
+			</li>
 		</ul>
-		<p class="text-center">
-			<img src="gifs/search.gif" width=100%>
-		</p>
 	</div>
 
 	<div class="col-sm-6">
 		<ul>
 			<li><em>Token Field</em></li>
+			<br>
+			<p class="text-center">
+				<img src="img/token_field_2x.jpg" width=50%>
+			</p>
+			<br>
+			<p class="text-center">
+				<img src="img/token_menu.jpg" width=100%>
+			</p>
+
+			<li><em>iMessage</em></li>
+				<br>
+				<p class="text-center">
+					<img src="img/osx_imessage.png" width=100%>
+				</p>
+			</li>
+			<li><em>Notes</em></li>
+				<br>
+				<p class="text-center">
+					<img src="img/osx_notes.png" width=100%>
+				</p>
+			</li>
 		</ul>
-		<br>
-		<p class="text-center">
-			<img src="img/token_field_2x.jpg" width=50%>
-		</p>
-		<br>
-		<p class="text-center">
-			<img src="img/token_menu.jpg" width=100%>
-		</p>
 	</div>
 </div>
 
