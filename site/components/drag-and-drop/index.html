@@ -18,7 +18,14 @@ layout: component
           display:none !important;
       }
   }
-  /*only display on small screens*/
+
+    /*only display on small & larger screens*/
+  @media (max-width: 767px) {
+      .small-orLarger {
+          display:none !important;
+      }
+  }
+  /*only display on small or xs screens*/
   @media (min-width: 992px) {
       .small-only {
           display:none !important;
@@ -141,10 +148,10 @@ The drag-and-drop feature allows the user to interactively move a file or image.
     <p>The drag-and-drop feature is rarely, if ever, visible to the user in its idle state.  Once the drag-and-drop is initiated, the file's movements are visually represented to assist the user's understanding of their actions. 
   </p><p>
     A <mark>"ghost-image,"</mark> as I will refer to it here, is a visual representation of the file that the user is dragging. It is anchored to the mouse to simulate physical dragging while the mouse button is depressed. If the user lets go of their mouse (referred to as "dropping" their object) in a valid place, the object will disappear from its original location and appear at its new location. If it is dropped in an invalid place, the ghost-image will animate back to its original location on a linear path. Typically, the ghost-image is semi-transparent and/or highlighted.
-      <div class = "col-xs-3 col-xs-offset-1 medium-only">
+      <div class = "col-xs-3 col-xs-offset-1 small-orLarger">
           <img src = "ghostImageExample.jpg" alt = "ghostImageExample" width="75px">
       </div>
-      <div class = "col-xs-6 col-xs-offset-1 medium-only">
+      <div class = "col-xs-6 col-xs-offset-1 small-orLarger">
         <br>Click and drag this image to see the ghost-image in action.
       </div>
   </div>
@@ -403,7 +410,7 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
       <img src="photoshopDrag.gif" alt="photoshopDrag gif" align="center">
       <div class="carousel-caption">
         <h1>Dragging into Programs</h1>
-        <p>Programs that use multiple files, including film editing software, iTunes playlists, and image editing programs (like Photoshop, pictured above) also use drg and drop as an alternative to importing the files through a folder structure.</p>
+        <p>Programs that use multiple files, including film editing software, iTunes playlists, and image editing programs (like Photoshop, pictured above) also use drag and drop as an alternative to importing the files through a folder structure.</p>
       </div>
     </div>
 
@@ -447,7 +454,7 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
           <h3>Learnability</h3><p>
           The physical action of the drag and drop may seem intuitive to experienced users, but those who have not used the functionality before may struggle with learning it on their own. </p>
           <h4>There are no visual cues indicating a draggable object until the drag begins.</h4><p>
-          This may be for the better, but for new users this poses an issue. There is no real way of knowing whether an item is draggable or not, unless the user attempts to do so. A button, scrollbar, or checkbox will always be visible to the user, but drag and drop is a hidden functionality that is difficult to discover on ones own without it first being taught. Additionally, the <kbd>opt</kbd>-click and drag to duplicate a file is a <em>doubly</em> hidden functionality that is even less learnable.</p>
+          This may be for the better, but for new users this poses an issue. There is no real way of knowing whether an item is draggable or not, unless the user attempts to do so. A button, scrollbar, or checkbox will always be visible to the user, but drag and drop is a hidden functionality that is difficult to discover on one's own without it first being taught. Additionally, the <kbd>opt</kbd>-click and drag to duplicate a file is a <em>doubly</em> hidden function that is even less learnable.</p>
           <h4>But to be fair...</h4><p>
           All modern computers have the drag and drop functionality in some form or another. It would therefore be very uncommon to find a computer-user who has never seen or tried the drag and drop before. Because of this, the learnability metric is not its first priority. It is safe to assume that most users who wish to move a file would attempt a drag and drop.</p>
           <h4>All the user needs is a basic awareness of "drag and drop" as an option.</h4><p>
@@ -509,7 +516,7 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
         <div class ="inlineHeader well">
           The physical action of the drag and drop may seem intuitive to experienced users, but those who have not used the functionality before may struggle with learning it on their own. </p>
           <h4>There are no visual cues indicating a draggable object until the drag begins.</h4><p>
-          This may be for the better, but for new users this poses an issue. There is no real way of knowing whether an item is draggable or not, unless the user attempts to do so. A button, scrollbar, or checkbox will always be visible to the user, but drag and drop is a hidden functionality that is difficult to discover on one's own without it first being taught. Additionally, the <kbd>opt</kbd>-click and drag to duplicate a file is a <em>doubly</em> hidden functionality that is even less learnable.</p>
+          This may be for the better, but for new users this poses an issue. There is no real way of knowing whether an item is draggable or not, unless the user attempts to do so. A button, scrollbar, or checkbox will always be visible to the user, but drag and drop is a hidden functionality that is difficult to discover on one's own without it first being taught. Additionally, the <kbd>opt</kbd>-click and drag to duplicate a file is a <em>doubly</em> hidden function that is even less learnable.</p>
           <h4>But to be fair...</h4><p>
           All modern computers have the drag and drop functionality in some form or another. It would therefore be very uncommon to find a computer-user who has never seen or tried the drag and drop before. Because of this, the learnability metric is not its first priority. It is safe to assume that most users who wish to move a file would attempt a drag and drop.</p>
           <h4>All the user needs is a basic awareness of "drag and drop" as an option.</h4><p>
@@ -557,5 +564,11 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
 <p>
 <h3>Platform-Specific Instances</h3>
 
-    <blockquote>The drag and drop function has been implemented in most, if not all, major computer platforms. Windows, Linux, and Mac all have extremely similar drag and drop functionalities, including a ghost-image and brief animations of opening files and invalid location drops. The examples listed on this page were all captured on an OS Yosemite Macbook Air, but accurately illustrate the typical drag and drop functionality. The main difference between different platforms is what each constitutes as a valid or invalid location. For example, on a Mac a file that is dragged to the top bar will cancel the drag, but if a file is dragged to the main bar on a Windows platform it will be placed. Despite this slight difference, the drag and drop is visually and functionally analogous accross major platforms and programs.</blockquote>
+    <blockquote>The drag and drop function has been implemented in most, if not all, major computer platforms. Windows, Linux, and Mac all have extremely similar drag and drop functionalities, including a ghost-image and brief animations of opening files and invalid location drops. The examples listed on this page were all captured on an OS Yosemite Macbook Air, but they accurately illustrate the typical drag and drop functionality that all modern platforms use. The only major difference between these platforms in regard to drag and drop is what they consider a valid or invalid location. For example, on a Mac a file that is dragged to the top bar will cancel the drag, but if a file is dragged to the main bar on a Windows platform it will be placed there. Aside from this difference, the drag and drop is visually and functionally analogous accross all major platforms and programs.</blockquote>
   </p>
+
+<br><hr><br>
+<h4>References used:</h4>
+  <li>SVG State Diagram partially built with <a href="http://svg-edit.googlecode.com/">SVG-edit</a></li>
+  <li><a href="https://support.apple.com/kb/PH18767?locale=en_US">OSX Yosemite drag and drop page</a></li>
+  <li><a href="http://windows.microsoft.com/en-us/windows-vista/moving-and-copying-files-by-using-the-drag-and-drop-method">Windows Vista drag and drop page</a></li><br>
