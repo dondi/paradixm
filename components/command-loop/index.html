@@ -88,93 +88,45 @@ layout: component
 <p>Errors are a common problem with command loops. Making an error using a command loop is as easy as mistpying a word. Sometimes errors are hard to recognize as well. If a command is given with an unintended parameter, the command will still execute and the user may not even realized he or she even made an error.</p>
 
 <h4>Satisfaction</h4>
-<p>Satisfaction is an especially hard metric to judge with command loops. </p>
+<p>Satisfaction is an especially hard metric to judge with command loops. What some users find satisfying others may not. Some users really enjoy graphical interfaces, and get much more satisfaction from seeing things and touching them than typing text. Also a command loop is generally not very satisfying when it successfully completes a command because it just returns to the prompt without giving feedback. On the other hand, some users find using a command loop very satisfying because they feel very efficient or they "feel like a hacker".</p>
 
 <h3>Key Characteristics</h3>
 
-<blockquote>This section is for describing “what makes for a good <em>your component here</em>?”
-  Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
-  principles.</blockquote>
-
-<h4>Feedback</h4>
-
-<p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
-  never doubt whether:</p>
-
-<ol>
-  <li>they did positively trigger a button (and thus its associated action)</li>
-  <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
-    the action that triggers the button</li>
-</ol>
-  </div>
+<h4>The Prompt</h4>
+<p>A good command loop has a prompt that clearly shows that the loop is accepting commands. It should have a blinking cursor.</p>
+<h4>Tab Completion</h4>
+<p>Tab completion is an incredibly efficient feature and all command loops should have it</p>
+<h4>History</h4>
+<p>A good command loop should display previously issued commands and should make them easy to access via the up arrow or some similar key on the keyboard</p>
+<h4>No Mice</h4>
+<p>There is no such thing as a "command loop with a GUI". The command loop fails in so many of the usability metrics because it excels in efficiency. Requiring the use of a mouse hampers efficiency, the one thing command loops have going for them, and should not be a part of them</p>
 </div>
-
 <h3>Platform-Specific Instances</h3>
 
-<blockquote>
-  <p>This is where things can get really interesting—platform-specific sections go here. Different versions of
-    the same system are considered to be platforms in their own right (e.g., Windows 95 buttons vs. Windows 10
-    buttons). Completely customized versions of a component (e.g., a unique-looking/-acting button made specifically
-    for a game) are also acceptable here.</p>
-
-  <p>The outline for platform-specific entries resembles the outline already described above, except with a focus
-    on how the platform-specific version is <em>different</em>. Thus, you will want some notes on appearance (i.e.,
-    more screenshots), behavior, variants, metrics, and characteristics. If some aspect is the same, then say so
-    explicitly so that there is no confusion.</p>
-
-  <p>Some platform-specific instances of certain user interface components will merit such a rich discussion that they
-    may require a sizable number of supporting assets. In that case, feel free to add subfolders to the main component
-    folder, named after the platform under examination.</p>
-
-  <p>This could well be the most distinctive part of the catalog—the sections above this generally appear in user
-    interface guidelines, albeit with a platform-specific focus. A key premise of the Paradixm project is to compare
-    user interface elements <em>across</em> platforms. Thus, feel free to be creative about presentation here. You
-    might want to display a visual gallery, for example, with links leading to individual pages for each covered
-    platform-specific user interface component.</p>
-</blockquote>
-
 <div class="row">
-  <div class="col-xs-6 col-sm-3">
+  <div class="col-xs-6">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title text-center">Alto</h4>
+        <h4 class="panel-title text-center">Windows 10 Command Prompt</h4>
       </div>
       <div class="panel-body">
+          <video src="demo.mp4" autoplay="autoplay" controls="controls" loop="loop" style="width:100%">
+      Your browser doesn't support HTML5 video
+    </video>
       </div>
     </div>
   </div>
 
-  <div class="col-xs-6 col-sm-3">
+  <div class="col-xs-6">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title text-center">Amiga</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Material Design</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">watchOS</h4>
+        <h4 class="panel-title text-center">Bash</h4>
       </div>
       <div class="panel-body">
       </div>
     </div>
   </div>
 </div>
-
 <h3>Credits &amp; References</h3>
 
 <ul>
