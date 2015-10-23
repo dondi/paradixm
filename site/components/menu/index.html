@@ -163,14 +163,17 @@ layout: component
 
             <h4>Events</h4>
 
-            <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-              highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+            <blockquote>An example of event handling can be found on the Windows Dev Center website, which provides an API with methods and the respective events that they handle (for Windows
+              specifically). Menus implement a method called addEventListener to track user interactions with the menu object. Some of the events that it does handle include beforeshow, beforehide, aftershow, and afterhide. For example, the aftershow event occurs immediately after
+              the menu is displayed on the interface. The API itself defines menus in the following manner:
+              <p><br>"Displays a lightweight popup that is used to temporarily show menu commands related to what the user is currently doing. You should only show a menu in response to a user tap or click. Unlike a MessageDialog, a menu is always dismissed when the user taps or clicks outside of it" (Windows Dev Center)</p>
+            </blockquote>
 
 
             <h4>Component in Action</h4>
 
             <blockquote>
-              <img src="Menu_in_action(2).gif" width="320" height="240" controls></img>
+              <img src="Menu_in_action(2).gif" width="520" height="340" controls></img>
             </blockquote>
 
           </div>
@@ -417,8 +420,10 @@ layout: component
 
 <blockquote>
   <a href="http://getbootstrap.com/css/#overview">The Bootstrap website</a> <br />
-  <a href="https://www.google.com/design/spec/components/menus.html#menus-specs">Google Design Guidelines</a>
+  <a href="https://www.google.com/design/spec/components/menus.html#menus-specs">Google Design Guidelines</a> <br />
   <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/MenuNaming.html#//apple_ref/doc/uid/20000957-CH24-SW1">OS X Human Interface Guidelines</a> <br />
   <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/bb246432(v=vs.85).aspx">Windows Design Principles</a> <br />
+  or <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742392(v=vs.85).aspx#design_concepts">Windows Design Principles (2)</a> <br />
+  <a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh700898.aspx">Windows Dev Center</a>
   <p>Nielsen, Jakob. <em>Usability Engineering</em>. San Diego: American Press, 1993. Print.</p>
 </blockquote>
