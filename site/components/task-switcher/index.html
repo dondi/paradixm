@@ -30,12 +30,12 @@ layout: component
 		<p>It is good to note that this is a very efficient way to jump back and forth between two programs. The end goal is to switch between tasks, and the quicker and more effortless the process is, the better it is for the user. There are many different shortcuts, and other platform-specific ways to allow for further efficient manipulation (i.e. hiding an app) that will be mentioned under the <a href="#pSpecific"> Platform-Specific Instances</a> section.</p>
 
 	<h4>Events</h4>
-		<p> The most relevant task launcher event is to select the new open app and switch to it. Because of the simplicity of the action, there should not be a myriad of alternative actions. If a user hovers over a task, it simply becomes <code>selected</code>, and the previous task becomes unselected. Only one task can be selected at a time.
+		<p> The most relevant task switcher event is to select the new open app and switch to it. Because of the simplicity of the action, there should not be a myriad of alternative actions. If a user hovers over a task, it simply becomes <code>selected</code>, and the previous task becomes unselected. Only one task can be selected at a time.
 
 	<h4>State Diagram</h4>
 		<p> <img src="img/stateDiagram.png" style="width:90%; height:auto;" alt="State Diagram"> </p> 
 
-		<p> Note that only one task can be selected at a time, so when one task is <code>selected</code> all the others are not. A task must be selected in order fo it to be launched, which occurs on key release or its platform-specific way of selection. However, if the task switcher is <code>active</code> on the screen, a user can always interact with each task, and they are never <code>disabled</code> if the task launcher is open. Please see <a href="#pSpecific"> Platform-Specific Instances</a> for more states. </p>
+		<p> Note that only one task can be selected at a time, so when one task is <code>selected</code> all the others are not. A task must be selected in order fo it to be launched, which occurs on key release or its platform-specific way of selection. However, if the task switcher is <code>active</code> on the screen, a user can always interact with each task, and they are never <code>disabled</code> if the task switcher is open. Please see <a href="#pSpecific"> Platform-Specific Instances</a> for more states. </p>
 
 	
   </div>
@@ -84,7 +84,7 @@ layout: component
 	<h3>Key Characteristics</h3>
 	<h4>Feedback</h4>
 
-	<p>Perhaps the most important interaction design principle that a task launcher must follow is <em>feedback</em>. Users must
+	<p>Perhaps the most important interaction design principle that a task switcher must follow is <em>feedback</em>. Users must
 	  never doubt whether:</p>
 
 	<ol>
