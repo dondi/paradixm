@@ -32,7 +32,7 @@ layout: component
 
 		<h3>Typical Behavior</h3>
 		<blockquote>
-			A string input components's main function is to accept user text information, therefore, it has to support keyboard focus; for more private text information, it also supports password entries. The string input field also signals the user that they can enter a value by changing the cursor icon when the user hovers over the field: the cursor will change into a shape that looks like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside the box, a blinking vertical bar (called a caret) would appear to show the user that the text field is waiting for an input.
+			A string input components's main function is to accept user text information; therefore, it has to support "focus", which allows user information to be received one at a time. Keyboard focus is typically recognized by users as a blue box-shadow highlighting of the field. For more private text information, such as passwords,  it also entries replaced with dots to conceal the sensitive data. The string input field also signals the user that they can enter a value by changing the cursor icon when the user hovers over the field: the cursor will change into a shape that looks like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside the box, a blinking vertical bar (called a caret) would appear to show the user that the text field is waiting for an input.
 		</blockquote>
 
 		<h4>Events</h4>
@@ -44,7 +44,7 @@ layout: component
 		</p>
 
 		<p>
-			The <a href="https://msdn.microsoft.com/en-us/library/system.windows.input.keyboard.focus%28v=vs.110%29.aspx">Microsoft Developer Website</a> provides documentation on <strong>keyboard focus</strong>, or a method designed for keyboard entries so that the user can focus on a specific element on a form. The page also remarks that it is important that an element be "focusable" in order to receive keyboard input so that only one element in receiving data at any one time. If this weren't the case, the users may accidentally enter inputs they did not mean to, and submit a form with erroneous data. As mentioned above, these focused elements would be highlighted with a defining color, normally a shade of blue, in order to differentiate an input field with keyboard focus with those that don't.
+			The <a href="https://msdn.microsoft.com/en-us/library/system.windows.input.keyboard.focus%28v=vs.110%29.aspx">Microsoft Developer Website</a> provides documentation on <strong>keyboard focus</strong>, or a method designed for keyboard entries so that only a selected field receives input. The page remarks that it is important that an element be "focusable" in order to receive keyboard input so that only one element is receiving data at any one time. If this weren't the case, the users may accidentally enter inputs into fields they did not mean to, and/or submit forms with erroneous data. As mentioned above, these focused elements would be highlighted with a defining color, normally a shade of blue, in order to differentiate input fields with keyboard focus with those that don't. Typically, the TAB key is used in order to shift focus from one text field to the next.
 		</p>
 
 		<p>
@@ -195,11 +195,11 @@ layout: component
 			Due to the ubiquity and usefulness of text input fields, users should be able to quickly recognize what they are and how to use them.
 		</blockquote>
 		<p>
-			String input fields have been the forefront in user interaction in terms of gathering data from the users. Because of this, text fields are fairly understood to have the same basic appearance and functionality that is consistent even when used in various machines. From its name and appearance, users would expect what actions to do in order to interact with string input fields even across different devices, applications, and operating systems. An added effect of consistency is that when consistency is actually broken, users can quickly recognize what the problem is and why things do not work as expected.
+			String input fields have been the forefront in user interaction in terms of gathering data from the users. Because of this, text fields are fairly understood to have the same basic appearance and functionality that is consistent even when used in various machines. From its name and appearance, users would expect what actions to do in order to interact with string input fields even across different devices, applications, and operating systems. An added effect of this is that when this consistency is actually broken, users can quickly recognize what the problem is and why things do not work as they expected.
 		</p>
 
 		<p>
-			For string input fields, users have the same expectation of a box that needs some form of input, which can most often be fulfilled using keyboard entries.
+			For string input fields, users have the same expectations of a box that needs some form of input, which can most often be fulfilled using keyboard entries. Users expect to fill out these fields in order to submit text information. Users would also expect some form of signal as to which fields to fill out at a time; this signal is called "focus", in graphical user interface terms, and is often a visual stimulus. 
 		</p>
 	</div>
 
@@ -209,7 +209,7 @@ layout: component
 			<a href="http://asktog.com/atc/principles-of-interaction-design/">Bruce Tognazzini</a> explains that Fitt's Law describes the time it takes the user to interact with a target is a function of the distance to and the size of the object.
 		</blockquote>
 		<p>
-			The varying sizes that could be implemented to input fields can aid users to reach the fields faster and increase their efficiency. If the input field is small, the user would most likely have a tougher time keyboard-focusing on the field since it would take more time to select a smaller input field than a larger one; people with bad eyesight may also find it hard to read texts inside smaller text fields. Therefore, it is always wise to create input fields that are large enough so that users can easily maneuver to the field as well as allow them to more easily recognize that their attention is required in a specific area of the form. For example, a long input field, such as those particularly used in search engines, help the user make more efficient actions in terms of entering search queries. Input fields like this are meant to take up space so that they can be used much more efficiently.
+			By modifying the sizes of text fields, users can submit information faster and more efficiently. If the input field is small, the user would most likely have a tougher time keyboard-focusing on the field since it feel harder to select a smaller input field than a larger one; people with bad eyesight may also find it hard to read texts inside smaller text fields. Therefore, it is always wise to create input fields that are large enough so that users can easily maneuver to the field, as well as allow them to more easily recognize that their attention is required in a specific area. For example, a long input field, such as those particularly used in search engines, help the users make more efficient actions in terms of entering search queries. Input fields like this are meant to take up space so that they can be used much more efficiently.
 		</p>
 	</div>
 </div>
