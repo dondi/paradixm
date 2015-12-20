@@ -1,209 +1,167 @@
 ---
-title: Button
+title:  Mac OS X Buttons 
 layout: component
 ---
+<head><em>Buttons are probably the most common and useful graphical user interface element found in the Mac OS X interface</em></head>
 
-<blockquote>Start your component pages with a quick description of the component, such as:</blockquote>
+<p class="lead"></p>
 
-<p class="lead">Quite possibly the single most common graphical user interface element, the push button triggers a
-  single action within an application.</p>
+<h4>Typical Appearance</h4>
+  <blockquote><font size="2">There are various types of buttons found throughout the Mac OS X interface, each providing a useful function. Examples of these buttons are shown in the following</font></blockquote>
 
-<div class="row">
-  <div class="col-sm-6">
-
-<h3>Typical Appearance</h3>
-
-<blockquote>If a component is sufficiently widespread that it takes on a recognizable look across multiple platforms,
-  provide it here. If its appearance varies extremely widely, say so and direct the reader to platform-specific
-  instances.</blockquote>
-
-<h3>Typical Behavior</h3>
-
-<blockquote>
-  <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
-    here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
-    reader to the platform-specific sections.</p>
-
-  <p>Helpful subsections include:</p>
-</blockquote>
-
-<h4>Events</h4>
-
-<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
-
-<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
-  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
-  within the button’s bounds.</p>
-
-<h4>State Diagram</h4>
-
-<blockquote>
-  <p>A state diagram indicating the actions and states of a user interface component.</p>
-
-  <p>This is most likely an image. Bonus props if you use SVG.</p>
-
-  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
-    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
-    however, may have more activities than the “public” events that can be reported by a component.</p>
-</blockquote>
-
-<p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
-  viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
-  it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
-  state means that a user <em>cannot</em> do so.</p>
-
-<p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
-  implementations, but in general they are:</p>
-
-<ul>
-  <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
-    change the button’s appearance. This provides a form of feedback that states that the button will respond if
-    additional activity is performed.</li>
-
-  <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
-    the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
-    from this state, in case the user changes his or her mind in mid-action.</li>
-</ul>
-
-<h4>Component in Action</h4>
-
-<blockquote>
-  <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
-
-  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
-</blockquote>
-
-<p class="text-center">
-  <button class="btn btn-default">Standard Bootstrap Button</button>
-  <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
-</p>
-
+<h4>Variants of Buttons</h4>
+	<div class="row">
+  <div class="col-xs-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Push Buttons</h4>
+      </div>
+      <div class="panel-body">
+        <div class="row"> 
+          <div class="col-sm-4">
+            <left>
+              <img src="https://i.gyazo.com/523757cf9a1ad652d7b1a6c36642d78c.png" width="150"></img>
+              <br></br>
+              <br></br>
+              <img src="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/Art/push_buttons_2x.png" height="200" width="150"></img>
+            </left>
+          </div>
+          <right>
+            <blockquote><font size="2"><ul>
+              <li>Push buttons in OSX are meant to be used specifically in the window body only and always contain text, never an image.</li>
+              <li>By default, Mac OSX buttons are white unless it is the default button in a dialog window, in which case it is light blue</li>
+              <li>Push buttons are also meant to be used to perform an instantaneous action, such as Print, Delete, or Open (In these cases, the push buttons are also blue).</li>
+              <li>Push buttons should NEVER mimic the behavior of other controls. This is because push buttons are meant to give an immediate reaction when the user clicks a push button.</li>
+              <ul>
+                <li>Push buttons shouldn't indicate a state such as on or off. Instead, checkboxes should be used</li>
+                <li>Push buttons also shouldn't be used as a label or a menu</li>
+              </ul>
+            </ul>
+          </right>
+        </font>
+          </blockquote>
+      </div>
+      </div>
+    </div>
   </div>
 
-  <div class="col-sm-6">
-<h3>Variants</h3>
+  <div class="col-xs-6 ">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Radio</h4>
+      </div>
+      <div class="panel-body">
+        <center>
+          <img src="https://i.gyazo.com/2458883edb1722daa8b1ddd5fdca854c.png"></img>
+        </center>
+        <blockquote>
+          <font size="2">
+            <ul>
+              <li>Radio buttons are used to display a group of mutulally exclusive, but related, choices</li>
+              <li>The content and labels of radio buttons don't change depending on the context nor do they display customs texts or images</li>
+              <li>Radio buttons should contain a text label to describe the choice it represents. This should be implemented in because Users need to know exactly what they're choosing.</li>
+              <li>Unlike checkboxes, radio buttons should be use ONLY if the user is picking multiple choice at the same time. Radio buttons should only be used for selecting 1 option</li>
+              <li>When it comes to labeling and arranging radio buttons, each one should contain a text label that describes the choice it represents and alos have a consistent amount of spacing between each one</li>
+            </ul>
+          </font>
+        </blockquote>
+      </div>
+    </div>
+  </div>
 
-<blockquote>There is almost never just one form of a user interface component. Use this section to address variations
-  on this theme. Some variations are sufficiently different that they are considered to be a different component
-  entirely, despite very similar behavior. Meanwile some variations are due to appearance only.</blockquote>
+  <div class="col-xs-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Check Box</h4>
+      </div>
+      <div class="panel-body">
+        <center>
+          <img src="https://i.gyazo.com/1e30fcf964ea830aeeee6a02f3df962d.png"></img>
+          <br></br>
+          <img src="https://i.gyazo.com/35532b86486f4de50b00c1b9b611f6d0.png"></img>
+        </center>
+        <blockquote>
+          <font size="2">
+            <ul>
+              <li>Checkboxes work like a toggle switch: they are used to describe a state, action, or value that can either be on or off.</li>
+              <li>Like radio buttons, checkboxes are used for choice selection. However, unlike the radio buttons, checkboxes are used to select more than one option or toggle a setting on or off (as shown in the picture above)</li>
+              <li>Checkboxes are also used to toggle other selections on or off. For example, in the second picture shown above, when a checkbox selection is unselected, other options such as the dropdown menu and the push button become disabled</li>
+              <li>Checkboxes should be arranged in a column. This makes it easier for users to distinguish states from one another</li>
+            </ul>
+          </font>
+        </blockquote>
+      </div>
+    </div>
+  </div>
 
-<ul>
-  <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
-    invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
-    different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
+  <div class="col-xs-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Gradient Button</h4>
+      </div>
+      <div class="panel-body">
+        <center>
+          <img src="https://i.gyazo.com/f2abbaebbb3211497893d0913e8172d1.png"></img>
+        </center>
+        <blockquote>
+          <font size="2">
+            <ul>
+              <li>Gradient buttons perform instantaneous actions related to view, such as a source list</li>
+              <li>Gradient buttons can contain push buttons, toggles, or popup menu behavior.</li>
+              <li>Unlike other buttons such as the radio button or the push button, gradient buttons only contain images. NOT text</li>
+              <li>Gradient buttons are also used to offer functionality that is closely tied to a particular action without the need to include text.</li>
+              <li>To make gradient buttons more user friendly, it is better to use system provided images as gradient buttons as they are more familiar to the user.</li>
+            </ul>
+          </font>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <li><em>Links</em> can be considered as a specialized button—they are invoked almost identically, and their action
-    is even more narrowly defined as moving the user to a different view or display. The distinction here is
-    definitely less sharp than the distinction between a menu item and a button. For links within a document, the
-    document might be viewed as a menu in itself, and thus links are “menu items” indicating what the user can view
-    next. Thus, in some ways, links are hybrids between buttons and menu items.</li>
-</ul>
+<div class="col-xs-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Help Button</h4>
+      </div>
+      <div class="panel-body">
+        <center>
+          <img src="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/Art/help_button_2x.png"></img>
+        </center>
+        <blockquote>
+          <font size="2">
+            <ul>
+              <li>The help button is always designated as a clear, circular button with a question mark graphic.</li>
+              <li>When pressed, the help button opens up a popup window that displays app-specific help.</li>
+              <li>Help buttons should be used to perform the function of the standard Help button. A custom button should not be made in replacement</li>
+              <li>In most windows found on OS X, the help button is always located on the bottom right corner. In dialog boxes that include push buttons such as "OK" and "Cancel", the help button is located on the bottom left of the window</li>
+            </ul>
+          </font>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
 
 <h3>Priority Metrics</h3>
-
-<blockquote>Talk about the five usability metrics in relation to this component. Not all components will have the same
-  metric priorities. For example:</blockquote>
-
-<p>Because the button is such a fundamental part of virtually every user interface available today, it can be said that
+  <p>Because the button is such a fundamental part of virtually every user interface available today, it can be said that
   all usability metrics are equally important for this component. Users who are seeing a button in a given platform for
   the first time must not have any issues recognizing it and knowing what to do with it (learnability). The high
   priority of learnability also implies that memorability is a given.</p>
 
-<p>Users must also never experience undue delays with using a button (efficiency), particularly because using a button
+  <p>Users must also never experience undue delays with using a button (efficiency), particularly because using a button
   almost always involves an instantaneous, immediate-result action. Users should almost never trigger a button by
   mistake (errors)—especially buttons whose actions result in significant changes to data or the real world.</p>
 
-<p>If any metric at all can be considered as a “low priority” for buttons, it would be satisfaction. The button is such
+  <p>If any metric at all can be considered as a “low priority” for buttons, it would be satisfaction. The button is such
   a utilitarian component that “fun” or “enjoyment” is hardly associated with its use. One exception to this
   prioritization may be for buttons in applications whose primary metric is satisfaction (e.g., games, entertainment).
   As a part of that overall system, making buttons “fun” may then become more important than in other situations.</p>
 
-<h3>Key Characteristics</h3>
+<br></br>
 
-<blockquote>This section is for describing “what makes for a good <em>your component here</em>?”
-  Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
-  principles.</blockquote>
+<h4>Source</h4>
+  <font size="1">
+  <p>All information on Mac OS X buttons, as well as other features found on OS X, can be found here: https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/ControlsButtons.html#//apple_ref/doc/uid/20000957-CH48-SW1 </p>
+</font>
 
-<h4>Feedback</h4>
-
-<p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
-  never doubt whether:</p>
-
-<ol>
-  <li>they did positively trigger a button (and thus its associated action)</li>
-  <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
-    the action that triggers the button</li>
-</ol>
-  </div>
-</div>
-
-<h3>Platform-Specific Instances</h3>
-
-<blockquote>
-  <p>This is where things can get really interesting—platform-specific sections go here. Different versions of
-    the same system are considered to be platforms in their own right (e.g., Windows 95 buttons vs. Windows 10
-    buttons). Completely customized versions of a component (e.g., a unique-looking/-acting button made specifically
-    for a game) are also acceptable here.</p>
-
-  <p>The outline for platform-specific entries resembles the outline already described above, except with a focus
-    on how the platform-specific version is <em>different</em>. Thus, you will want some notes on appearance (i.e.,
-    more screenshots), behavior, variants, metrics, and characteristics. If some aspect is the same, then say so
-    explicitly so that there is no confusion.</p>
-
-  <p>Some platform-specific instances of certain user interface components will merit such a rich discussion that they
-    may require a sizable number of supporting assets. In that case, feel free to add subfolders to the main component
-    folder, named after the platform under examination.</p>
-
-  <p>This could well be the most distinctive part of the catalog—the sections above this generally appear in user
-    interface guidelines, albeit with a platform-specific focus. A key premise of the Paradixm project is to compare
-    user interface elements <em>across</em> platforms. Thus, feel free to be creative about presentation here. You
-    might want to display a visual gallery, for example, with links leading to individual pages for each covered
-    platform-specific user interface component.</p>
-</blockquote>
-
-<div class="row">
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Alto</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Amiga</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Material Design</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">watchOS</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-</div>
-
-<h3>Credits &amp; References</h3>
-
-<blockquote>Provide references or links to any information, image, or media sources used.</blockquote>
