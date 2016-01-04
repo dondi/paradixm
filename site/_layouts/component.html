@@ -3,5 +3,17 @@ layout: default
 ---
 
 <h2>{{ page.title }}</h2>
+{% if page.contributors %}
+<dl class="dl-horizontal">
+  <dt>Contributor{% if page.contributors.length > 1 %}s{% endif %}</dt>
+  <dd>
+    <ul class="list-inline">
+      {% for contributor in page.contributors %}
+      <li><a href="https://github.com/{{ contributor.github }}">{{ contributor.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </dd>
+</dl>
+{% endif %}
 
 {{ content }}
