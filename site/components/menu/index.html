@@ -1,0 +1,480 @@
+---
+title: Menu
+layout: component
+---
+<p class="lead">Menus are probably the second most used components on a given graphical interface after buttons.</p>
+
+<div class="row">
+          <div class="col-sm-12">
+
+        <h3>Appearance</h3>
+
+        <blockquote>
+            <p>Menus have been the go-to method for displaying (and hiding) lists of items and buttons for decades.</p>
+
+              <div class="col-sm-12">
+                  <div class="col-sm-6">
+                <img src="Mac_FileMenu.png" class="img-responsive" alt="Responsive image">
+              </div>
+              <div class="col-sm-6">
+                <img src="Windows_start_menu.png" class="img-responsive" alt="Responsive image">
+              </div>
+            </div>
+
+          <div class="col-sm-12">
+            <p><br><br>And like these examples, they tend to follow the standard form of having items listed from top to bottom.</p>
+                
+
+            <p>Of course, these items can often be menus themselves within other menus.<br></p>
+            <br>
+          </div>
+
+        </blockquote>
+
+        <h3>Where do you find them?</h3>
+            <blockquote>
+                <p>Menus are usually located on the "edges" of graphical interfaces. For example, the Mac OS X
+                graphical interface provides menus at the top of the Desktop screen that are always available, yet out of the way
+                from high-activity portions of the screen.
+              </p>
+
+              <p>This pattern seems to extend to application or browser windows as well.</p>
+            </blockquote>
+                  <div class="col-sm-12">
+                  <div class="col-sm-6">
+                  <h4>Microsoft Word</h4>
+                  <img src="Word_menu.png" class="img-responsive" alt="Responsive image">
+                  <br>
+                  <br>
+                </div>
+                <div class="col-sm-6">
+                  <h4>Google Design Guidelines Website</h4>
+                  <img src="Google_design_menu.png" class="img-responsive" alt="Responsive image">
+                </div>
+                </div>
+
+                <blockquote>There are also menus that remain hidden unless invoked by the user, such as the menu that
+                    appears when a user right-clicks (or ctrl + click in the case of Mac OS X).</blockquote>
+
+                <div class="col-sm-12">
+                  <div class="col-sm-6">
+                  <img src="Mac_control_click_menu.png" class="img-responsive" alt="Responsive image">
+                  <br>
+                  <br>
+                  </div>
+                  <div class="col-sm-6">
+                  <img src="Windows_right_click_menu.png" width="800" height="800" class="img-responsive" alt="Responsive image">
+                  </div>  
+              </div>
+                
+        <h3>Key Characteristics and Best Practices</h3>
+        <blockquote>The following attributes for menus across platforms have allowed much more choice and accessibility to
+        be included in a single page (or single interface), as opposed to requiring users to navigate primarily using menus by constantly switching
+        to different windows or screens each time they need to access a new list of items to choose from.</blockquote>
+
+        <h4>Behavior and Feedback</h4>
+
+          <p>On most platforms, menus are usually accessed by first clicking on a button.The menus then expand to reveal the items they hold. On most platforms, users are also able to hover over to a different menu button and, without clicking, expand those other menus as well after havingalready clicked on one. This includes menu buttons within the menu itself. The Windows design guidelines call this "cascading," and
+          it is used a method to keep menu short. Small side-facing arrows are placed next to the labels of items that are cascadable.</p>
+          <p>To exit a menu on most platforms, the user can click outside of the open menu to close it. The menu also usually disappears
+            when the user selects one of its items.</p>
+          <p>When an item is selected, the menu indicates this action with a flashing highlight. Though, this usually happens so fast
+            that the user's eyes have likely moved to the newly opened menu or window triggered from the button rather than notice
+            the menu's indication.</p>
+          <p>As for most components on a graphical interface, feedback to the user is a crucial aspect, specifically for when the user is attempting to perceive the system state and evaluate its outcomes (as outlined by Don Norman's Stages-of-Action Model). 
+          Menus usually do have indicators, such as grayed out, unclickable items, to indicate which state the menu is in.</p>
+
+        <h4>Labeling</h4>
+
+        <p>The OS X, Windows, and Google design guidelines all recommend that menu titles should be contextualized so that users can generally know what a menu contains before they open it. This way users don't have to spend extra time exploring after having clicked on a menu with the wrong content. Apple adds to these contraints by saying that labels should be as short as possible without sacrificing clarity, and also 
+          suggest that icons should not be used as menu labels (nor should a mix of labels and icons) because users can confuse them with
+          "menu bar extra."</p>
+        <p>Each of the guidelines also set a rule that if three or more labels/items have the same word, that is when developers should choose
+          to cascade those items under a general item. (i.e. Insert Line Before, Insert Line After, Delete Word Forward, Delete Word Backward, and so on can all be cascaded under the general item "Text" to imply they are text editing commands.)
+
+        <h4>Placement</h4>
+
+        <p>Google recommends that when it comes to behaviors like expanding, menus should appear on top of the elements they are emitting from
+          so as to not remove it from its context. We can clearly see from OS X and Windows interfaces, however, that their menus often appear below or next to the element that was just clicked. Menus should not be a primary method for navigation in an app.
+
+        <h4>Items</h4>
+
+        <p>The arrangement of items within a menu is just as crucial as the menu itself. Both OS X and Windows design standards make use of <em>grouping</em> in their menus. From the previous images, we can see that there are thin lines dividing the list into groups of interdependent attributes. According to their respective guidelines, developers should generally avoid combining actions and attributes in the same group.
+
+        <p>"Arranging menu items in logical groups helps users locate commands quickly. As you figure out how to group menu items, it often works well to refer to the user’s mental model of your app’s task. To learn more about this concept, see <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW3">Mental Model</a>
+        (<a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/MenuGrouping.html#//apple_ref/doc/uid/20000957-CH25-SW1">developer.apple.com</a>) </p>
+
+        <p>
+        Additionally, OS X guidelines recommend placing the most frequently used items in groups at the top of the menu. Of course, the key
+        here is to not arrange strictly by frequency of use, but by grouping items first and then arranging by frequency.
+        </p>
+
+        <h3>Priority Metrics</h3>
+
+            <ul>
+              <li>Learnability</li>
+              <li>Efficiency</li>
+              <li>Memorability</li>
+              <li>Errors</li>
+              <li>Satisfaction</li>
+            </ul>
+
+        <blockquote>The five <em>usability metrics</em> outlined by Jakob Nielsen in his book, <em>Usability Engineering</em> (page 26),
+          are of critical importance to menu components on interfaces.
+        </blockquote>
+
+        <p>A majority of menu components represent a list that someone might draw on paper with items to keep track of or investigate.
+          These specific representations, in this respect, are highly learnable for, say, someone who has never used a computer before. It is
+          in fact important that users are not hindered by a complex arrangement of items (Learnability).
+
+          And given that menus are so common (and crucial to the organization of a graphic interface), it is important that users can quickly learn
+          when, where, and how to access them so that there won't be too much time spent simply trying to locate items or functions in an application (Efficiency).</p>
+
+        <p>Current menu designs are extremely memorable as well because they are organized as they would be on paper, such as the table of contents at the beginning of a book (Memorability). Also, it is probably best that menus be fairly simple to access and use and have adequate feedback features for users to reduce the number of errors with using them (Errors). Menus might not be a suitable element for measuring
+        user satisfaction since it may often be taken for granted as a "component" in the system to begin with (Satisfcation). Google's design
+        guidelines mention how users don't usually notice the menu component until it malfunctions or the user makes an error.</p>
+
+        <br>
+        <h4>State Diagram for a Standard Menu</h4>
+
+            <blockquote>
+              <p class="text-center">
+              <img src="StateDiagram2.png" width="600" height="600" class="img-responsive" alt="Responsive image">
+            </p>
+            </blockquote>
+
+            <p>Standard menus generally have 2 states: <code>Closed</code> and <code>Open</code>. The user can open a closed menu by
+              clicking on the menu title (which can be considered a button) and close a menu by clicking outside of it or by clicking on
+              one of its items (which could potentially reinitiate the cycle of opening and closing a menu if the item is a submenu).
+            </p>
+            <p>
+              Hover menus can be one variation of these states, but the only thing that would probably change is that instead of clicks,
+              the events that trigger the opening or closing of a menu is whether the mouse is over the menu or not.
+            </p>
+
+
+         <div class="col-sm-12">
+
+            <h4>Events</h4>
+
+            <blockquote>An example of event handling can be found on the Windows Dev Center website, which provides an API with methods and the respective events that they handle (for Windows
+              specifically). Menus implement a method called <code>addEventListener()</code> to track user interactions with the menu object. Some of the events that it does handle include <code>beforeshow</code>, <code>beforehide</code>, <code>aftershow</code>, and <code>afterhide</code>. For example, the <code>aftershow</code> event occurs immediately after
+              the menu is displayed on the interface. The API itself defines menus in the following manner:
+              <p><br>"Displays a lightweight popup that is used to temporarily show menu commands related to what the user is currently doing. You should only show a menu in response to a user tap or click. Unlike a <code>MessageDialog</code>, a menu is always dismissed when the user taps or clicks outside of it" (Windows Dev Center)</p>
+            </blockquote>
+
+
+            <h4>Component in Action</h4>
+
+            <blockquote>
+              <img src="Menu_in_action(2).gif" width="520" height="340" controls></img>
+              <br>
+              <br>
+              A user opens and navigates some menus on the top menu bar of the Mac OS X interface while the QuickTimePlayer app is open. These menus are specific to QuickTimePlayer's settings and options. If the user were to quit the QuickTimePlayer app, the menus at that top menu bar would revert back to the default Mac OS X interface menus.
+            </blockquote>
+
+          </div>
+
+        <br>
+        <h3>Variants</h3>
+        <br>
+        <h4>Accordion Menus</h4>
+
+        <blockquote>
+            <p>Accordion menus such as the two featured below are emerging as a cool new menu trend on webpages or applications (especially those
+              for mobile apps).</p>
+            <p>They allow users to access lists of items without expanding the menu into a different column on the screen or on top of other information that users are looking at. In fact, they move other text out of the way as they cascade so that users can still
+              scroll down to see information without closing the menu.</p>
+        </blockquote>
+      </div>
+
+      <div class="col-sm-6 col-md-8">
+
+              <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                              </span>Content</a>
+                          </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                          <div class="panel-body">
+                              <table class="table">
+                                  <tbody><tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-pencil text-primary"></span><a href="http://www.jquery2dotnet.com">Articles</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-flash text-success"></span><a href="http://www.jquery2dotnet.com">News</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-file text-info"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-comment text-success"></span><a href="http://www.jquery2dotnet.com">Comments</a>
+                                          <span class="badge">42</span>
+                                      </td>
+                                  </tr>
+                              </tbody></table>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
+                              </span>Modules</a>
+                          </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                          <div class="panel-body">
+                              <table class="table">
+                                  <tbody><tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Orders</a> <span class="label label-success">$ 320</span>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Invoices</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Shipments</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Tex</a>
+                                      </td>
+                                  </tr>
+                              </tbody></table>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
+                              </span>Account</a>
+                          </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                          <div class="panel-body">
+                              <table class="table">
+                                  <tbody><tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
+                                              Delete Account</a>
+                                      </td>
+                                  </tr>
+                              </tbody></table>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
+                              </span>Reports</a>
+                          </h4>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse">
+                          <div class="panel-body">
+                              <table class="table">
+                                  <tbody><tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">Products</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">Shopping Cart</a>
+                                      </td>
+                                  </tr>
+                              </tbody></table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+      <div class="col-sm-6 col-md-8">
+
+        <div id="MainMenu">
+          <div class="list-group panel">
+            <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>
+            <div class="collapse" id="demo3">
+              <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
+              <div class="collapse list-group-submenu" id="SubMenu1">
+                <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
+                <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
+                <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
+                <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+                  <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
+                  <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
+                </div>
+                <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
+              </div>
+              <a href="javascript:;" class="list-group-item">Subitem 2</a>
+              <a href="javascript:;" class="list-group-item">Subitem 3</a>
+            </div>
+            <a href="#demo4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 4</a>
+            <div class="collapse" id="demo4">
+              <a href="" class="list-group-item">Subitem 1</a>
+              <a href="" class="list-group-item">Subitem 2</a>
+              <a href="" class="list-group-item">Subitem 3</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+        <div class="col-sm-12">
+        <br>
+
+        <h4>Directories</h4>
+
+        <blockquote>Directories may not be a "common" variant of menus per se (as in plurality), but 
+          they may in fact be the most vital graphic interface "menu" because of how they are designed
+          to organize and access files. It is for these reasons that directories involve slightly more complex
+          operations such as sorting, expanding/collapsing folder trees, displaying file information, and so on.</blockquote>
+
+        <img src="Mac_Directory.png" class="img-responsive" alt="Responsive image">
+
+        <br>
+        <br>
+        <h4>Bootstrap's Menu</h4>
+
+        <blockquote>The Bootstrap website has what seems to be a hybrid of an accordion menu with a scroll bar
+          on the side. It has the general categorical items with their corresponding subitems as well as 
+          two scroll bars, one large and one small, to indicate where the user is navigating on the menu
+          and the page. The larger bar indicates the overall category the view is in, while the smaller bar
+          indicates what is currently being viewed in the window itself.</blockquote>
+
+        <img src="Bootstrap_menu.png" width="900" height="700" class="img-responsive" alt="Responsive image">
+        <br>
+
+      </div>
+
+</div>
+
+<h3>Platform-Specific Instances</h3>
+
+<br>
+<h4>Mac OS X</h4>
+
+<blockquote>
+
+  <p>From the images of the directory menus, it can be observed that OS X breaks some of Windows' rules, such as using icons
+    to represent menu titles (i.e. the settings gear icon).</p>
+
+      <img src="Mac_Directory.png" width="600" height="400" class="img-responsive" alt="Responsive image">
+    
+</blockquote>
+<blockquote>
+  <p>In addition to there being hidden menus, there are even hidden menu items (described as "Dynamic Menu Items" in OS X guidelines) that can be seen if the user holds down the "alt option" key for Mac. For example, the file menu at the top of the Desktop interface (with no applications open) has some hidden items that are revealed when the "alt option" key is pressed while the menu is open.</p>
+
+  </blockquote>
+
+  <div class="col-sm-12">
+    <div class="col-sm-6">
+      <img src="Mac_FileMenu.png" class="img-responsive" alt="Responsive image">
+    </div>
+    <div class="col-sm-6">
+      <img src="Mac_FileMenu_Option.png" class="img-responsive" alt="Responsive image">
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <h3><em>The Psychology of Menu Selection</em></h3>
+
+    <blockquote>Dr. Kent Norman at the University of Maryland outlines key concepts in his book on the design of computer interface menus.</blockquote>
+
+    <h4>Menu Selection as a Metaphor</h4>
+    <p>Norman uses the principle of "Menu Selection as a Metaphor." Designing menus as a metaphor to other commonly experienced items in everyday life helps to transfer the mental model of the system (especially its functionality) to the user. Norman cites the connection between menu components today and the original design of a restaurant menu that people are familiar with. Although restaurant menus are functionally richer than computer menus because of additional images and supplementary details from a waitress/waiter, many of their interaction aspects have been successfully carried over to the virtual world. Users can point to a menu item. They place orders by clicking on the item and receiving feedback. In some cases, users can select multiple items. Menu items are also grouped by category just as a restaurant menu would group, say, dishes that belong to different courses of a dining experience.</p>
+
+    <div class="col-sm-12">
+        <div class="col-sm-6">
+        <img src="mac_menu_restaurant.png" height="50%" class="img-responsive" alt="Responsive image">
+        <br>
+        </div>
+      <div class="col-sm-6">
+        <img src="restaurant-menu-12.png" class="img-responsive" alt="Responsive image">
+      </div>
+    </div>
+
+    <p>Moreover, computer menus can take advantage of having an information lean display by incorporating sub-menus, a feature that is difficult to replicate in restaurant menus without the menu becoming bulky or visually complex.</p>
+  </div>
+    <div class="col-sm-12">
+      <br>
+      <h4>Depth vs. Breadth</h4>
+      <p>There also seems to be a lot of gray area around <em>how many</em> items should be displayed on a menu at any given moment. Norman outlines some general guidelines for optimizing scanning time over a menu to search for particular items and accomplishing tasks. He says that "If broad menus require an inordinate amount of time to search, then designers are advised to limit the number of items per frame and increase the depth of the menu hierarchy" (Section 4.1.1). However, there is also another case: "if each decision requires a certain amount of overhead time, then depth will add to the total time, and designers are advised to increase the breadth" (Section 4.1.1). He continues this discussion in Chapter 8. Three key factors are at play in the depth vs. breadth trade-off: visual search, decision, and response selection. He notes that search time and response time are expected to increase as the length of a menu increases, yet deeper menus require a greater number of choices. Several mathematical models have been proposed to predict how user efficiency is affected by each arrangment of a menu. Norman speculates that "it may very well be that . . . the transcending issue is that of effectively revealing menu organization to users, while reducing the number of frames and responses required to locate target items" (Section 8.6).</p>
+    </div>
+
+     <div class="col-sm-12">
+      <p>In that regard, the Directory may once again be a unique design of a menu that satisfies the requirement of revealing menu structure to users to improve search efficiency. After all, revealing file structures is what is was designed for to begin with. Furthermore, the users themselves can determine the depth and breadth of each respective "menu" or frame, which in this case is representing file structures.</p>
+        <img src="file_structure.png" class="img-responsive" alt="Responsive image">
+    </div>
+
+    <div class="col-sm-12">
+      <br>
+      <h4>Context</h4>
+      <p>A lot can also be said about the importance of the context that surrounds certain menus. In addition to consistency, the location of menus is just as crucial of an indicator to users of what it may contain.</p>
+
+      <p>For example, when looking for the settings in the Google Chrome web browser, users may automatically start scanning the browser window for menu icons (as opposed to immediately going to the OS X menu bar at the top). They find the hamburger icon, which might seem to be the only thing that has at least some likelihood of being a menu. Alas, after a second or two of scanning the menu, they find the settings option toward the bottom. This sequence of events would make sense based on Norman's views of context. It makes sense that the settings option would be attached in some way to the window on which users would want to make changes. Yes, one can access the same settings window by searching for "Preferences" in the "Chrome" menu on the OS X menu bar at the top, but also having access to the settings via the window may be useful for preventing user Errors.
+      </p>
+      <img src="chrome_menu.png" class="img-responsive" alt="Responsive image">
+    </div>
+</div>
+
+
+  <div class="col-sm-12">
+    <h2>References</h2>
+
+    <blockquote>
+      <a href="http://getbootstrap.com/css/#overview">The Bootstrap website</a> <br />
+      <a href="https://www.google.com/design/spec/components/menus.html#menus-specs">Google Design Guidelines</a> <br />
+      <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/MenuNaming.html#//apple_ref/doc/uid/20000957-CH24-SW1">OS X Human Interface Guidelines</a> <br />
+      <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/bb246432(v=vs.85).aspx">Windows Design Principles</a> <br />
+      or <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742392(v=vs.85).aspx#design_concepts">Windows Design Principles (2)</a> <br />
+      <a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh700898.aspx">Windows Dev Center</a>
+      <p>Norman, Kent. <em><a href="http://lap.umd.edu/poms/">The Psychology of Menu Selection: Designing Cognitive Control at the Human/Computer Interface</a></em>. New Jersey: Ablex Publishing, 1991. Print.</p>
+      <p>Nielsen, Jakob. <em>Usability Engineering</em>. San Diego: American Press, 1993. Print.</p>
+    </blockquote>
+  </div>
