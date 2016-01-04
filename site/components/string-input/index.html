@@ -35,7 +35,7 @@ contributors:
 
 		<h3>Typical Behavior</h3>
 		<blockquote>
-			A string input components's main function is to accept user text information, therefore, it has to support keyboard focus; for more private text information, it also supports password entries. The string input field also signals the user that they can enter a value by changing the cursor icon when the user hovers over the field: the cursor will change into a shape that looks like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside the box, a blinking vertical bar (called a caret) would appear to show the user that the text field is waiting for an input.
+			A string input components's main function is to accept user text information; therefore, it has to support "focus", which allows user information to be received one at a time. Keyboard focus is typically recognized by users as a blue box-shadow highlighting of the field. For more private text information, such as passwords,  it also entries replaced with dots to conceal the sensitive data. The string input field also signals the user that they can enter a value by changing the cursor icon when the user hovers over the field: the cursor will change into a shape that looks like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside the box, a blinking vertical bar (called a caret) would appear to show the user that the text field is waiting for an input.
 		</blockquote>
 
 		<h4>Events</h4>
@@ -43,7 +43,15 @@ contributors:
 			The most important events for string input fields involve keyboard presses and entering texts. These relevant events include <code>input</code>, <code>keyup</code>, <code>keydown</code>, and <code>keypress</code>.
 		</blockquote>
 
-		<p> The <code>input</code> event is triggered the moment information is entered into the text field; the event is fired synchronously such that the effects can be detected immediately. The events <code>keyup</code>, <code>keydown</code>, and <code>keypress</code> all have similar functionality since they are all keyboard specific. The events are quite self-explanatory (e.g. <code>keydowm</code> is triggered when a key is pressed down, <code>keyup</code> is triggered when a key is let go, etc).
+		<p> The <code>input</code> event is triggered the moment information is entered into the text field; the event is fired synchronously such that the effects can be detected immediately. The events <code>keyup</code>, <code>keydown</code>, and <code>keypress</code> all have similar functionality since they are all keyboard specific. The events are quite self-explanatory (e.g. <code>keydown</code> is triggered when a key is pressed down, <code>keyup</code> is triggered when a key is let go, etc).
+		</p>
+
+		<p>
+			The <a href="https://msdn.microsoft.com/en-us/library/system.windows.input.keyboard.focus%28v=vs.110%29.aspx">Microsoft Developer Website</a> provides documentation on <strong>keyboard focus</strong>, or a method designed for keyboard entries so that only a selected field receives input. The page remarks that it is important that an element be "focusable" in order to receive keyboard input so that only one element is receiving data at any one time. If this weren't the case, the users may accidentally enter inputs into fields they did not mean to, and/or submit forms with erroneous data. As mentioned above, these focused elements would be highlighted with a defining color, normally a shade of blue, in order to differentiate input fields with keyboard focus with those that don't. Typically, the TAB key is used in order to shift focus from one text field to the next.
+		</p>
+
+		<p>
+			Because there are times when specific inputs are needed, but the user may not fully know what it could be, the user interface developer must be able to direct the user to the correct input format. According to the <a href="https://www.google.com/design/spec/patterns/errors.html#errors-user-input-errors">Google Developer Guidelines on Errors</a>,<strong> helper texts </strong> "may be included before, during, or after a user interacts with each field on a form." Additionally, for inputs that are incorrect, the developer must "show error text only after user interaction with a field. If the user inputs incorrect data, helper text may transform into error text." This approach would translate what the developer's mental model was in creating this interface into a signal/instruction that the user can process and follow. Since the designer would not be able to aid the user in person, the helper texts would be the only way to alert that something is wrong, or a specific input is required.
 		</p>
 		<br>
 
@@ -151,34 +159,64 @@ contributors:
 	A well-designed string input field should be able to show the user when they are needed to enter text values.
 </blockquote>
 
-<h4>Feedback</h4>
-<blockquote>
-	Interaction design elements such as string input field must always give feedback to the user:
-</blockquote>
-For default string input fields:
-<ol>
-	<li> The field should always have some sort of indication that it is enabled (e.g. by using colors).</li>
-	<li> The caret should be visible to indicate where users can enter strings.</li>
-	<li> The field should tell the user what to enter into it by using some sort of placeholder.</li>
-	<li> The field should perform appropriate edit checks when it receives user input.</li>
-	<li> It should use a combo box if combining a menu or list of choices with a text input field.</li>
-	<li> In general, it should display an introductory label with a text input field.</li>
-	<li> In general, it should ensure that the length of a text input field comfortably accommodates the length of the expected input.</li>
-	<li> Multiple text input fields evenly should be spaced.</li>
-</ol>
-For token fields:
-<ol>
-	<li> In general, a token field control should be used in a text input field.</li>
-	<li> If appropriate, a contextual menu can be added to a token.</li>
-</ol>
-For search fields:
-<ol>
-	<li> A search field is used to enable search functionality within the platform. </li>
-	<li> They should indicate when to start the search.</li>
-	<li> In general, they should avoid using a menu to display search history.</li>
-	<li> The field should not supply an introductory label.</li>
-	<li> Fields should display placeholder text, if it helps users understand how search works in the platform.</li>
-</ol>
+<div class="row">
+	<div class="col-sm-6">
+		<h4>Feedback</h4>
+		<blockquote>
+			Interaction design elements such as string input field must always give feedback to the user:
+		</blockquote>
+		For default string input fields:
+		<ol>
+			<li> The field should always have some sort of indication that it is enabled (e.g. by using colors).</li>
+			<li> The caret should be visible to indicate where users can enter strings.</li>
+			<li> The field should tell the user what to enter into it by using some sort of placeholder.</li>
+			<li> The field should perform appropriate edit checks when it receives user input.</li>
+			<li> It should use a combo box if combining a menu or list of choices with a text input field.</li>
+			<li> In general, it should display an introductory label with a text input field.</li>
+			<li> In general, it should ensure that the length of a text input field comfortably accommodates the length of the expected input.</li>
+			<li> Multiple text input fields evenly should be spaced.</li>
+		</ol>
+		For token fields:
+		<ol>
+			<li> In general, a token field control should be used in a text input field.</li>
+			<li> If appropriate, a contextual menu can be added to a token.</li>
+		</ol>
+		For search fields:
+		<ol>
+			<li> A search field is used to enable search functionality within the platform. </li>
+			<li> They should indicate when to start the search.</li>
+			<li> In general, they should avoid using a menu to display search history.</li>
+			<li> The field should not supply an introductory label.</li>
+			<li> Fields should display placeholder text, if it helps users understand how search works in the platform.</li>
+		</ol>
+	</div>
+	<br>
+
+	<div class="col-sm-6">
+		<h4>Consistency (with User Expectations)</h4>
+		<blockquote>
+			Due to the ubiquity and usefulness of text input fields, users should be able to quickly recognize what they are and how to use them.
+		</blockquote>
+		<p>
+			String input fields have been the forefront in user interaction in terms of gathering data from the users. Because of this, text fields are fairly understood to have the same basic appearance and functionality that is consistent even when used in various machines. From its name and appearance, users would expect what actions to do in order to interact with string input fields even across different devices, applications, and operating systems. An added effect of this is that when this consistency is actually broken, users can quickly recognize what the problem is and why things do not work as they expected.
+		</p>
+
+		<p>
+			For string input fields, users have the same expectations of a box that needs some form of input, which can most often be fulfilled using keyboard entries. Users expect to fill out these fields in order to submit text information. Users would also expect some form of signal as to which fields to fill out at a time; this signal is called "focus", in graphical user interface terms, and is often a visual stimulus. 
+		</p>
+	</div>
+
+	<div class="col-sm-6">
+		<h4>Fitt's Law</h4>
+		<blockquote>
+			<a href="http://asktog.com/atc/principles-of-interaction-design/">Bruce Tognazzini</a> explains that Fitt's Law describes the time it takes the user to interact with a target is a function of the distance to and the size of the object.
+		</blockquote>
+		<p>
+			By modifying the sizes of text fields, users can submit information faster and more efficiently. If the input field is small, the user would most likely have a tougher time keyboard-focusing on the field since it feel harder to select a smaller input field than a larger one; people with bad eyesight may also find it hard to read texts inside smaller text fields. Therefore, it is always wise to create input fields that are large enough so that users can easily maneuver to the field, as well as allow them to more easily recognize that their attention is required in a specific area. For example, a long input field, such as those particularly used in search engines, help the users make more efficient actions in terms of entering search queries. Input fields like this are meant to take up space so that they can be used much more efficiently.
+		</p>
+	</div>
+</div>
+<br>
 		
 <h3>Platform-Specific Instances</h3>
 <blockquote>
@@ -253,10 +291,28 @@ For search fields:
 	The following websites have been used as resources in order to create this page.
 	<ul>
 		<li>
+			<a href="http://asktog.com/atc/principles-of-interaction-design/">Bruce Tognazzini's Page on the Principles of Interaction Design</a>
+		</li>
+		<li>
 			<a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/ControlsText.html">Apple Developer Site (Text Controls)</a>
 		</li>
 		<li>
 			<a href="https://developer.mozilla.org/en-US/docs/Web/Events/input">Mozilla Firefox Input Event</a>
+		</li>
+		<li>
+			<a href="https://msdn.microsoft.com/en-us/library/system.windows.input.keyboard.focus%28v=vs.110%29.aspx">Microsoft Developer Network</a>
+		</li>
+		<li>
+			<a href="http://myweb.lmu.edu/dondi/share/ixd/theories.pdf">Dondi's Lecture on Interaction Design Theories</a>
+		</li>
+		<li>
+			<a href="http://myweb.lmu.edu/dondi/share/ixd/principles.pdf">Dondi's Presentation on Interaction Design Principles</a>
+		</li>
+		<li>
+			<a href="http://shortboredsurfer.com/2010/08/13/11-principles-of-interaction-design-explained/">A Shorter Summary of the Interaction Design Principles</a>
+		</li>
+		<li>
+			<a href="https://www.google.com/design/spec/patterns/errors.html#errors-user-input-errors">Google Guidelines on Errors</a>
 		</li>
 	</ul>
 </blockquote>
