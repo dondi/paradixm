@@ -1,0 +1,287 @@
+---
+title: Checkboxes
+layout: component
+---
+
+<p class="lead">The checkbox is commonly used for giving the user a choice among a list of options, e.g. for checklists or customizing settings.</p>
+
+<div class="row">
+  <div class="col-sm-6">
+
+<h3>Typical Appearance</h3>
+
+<blockquote><p>Across nearly all platforms, check boxes are virtually identical. This component's simplicity prevents it from having a wide variety of designs.</p><p> The appearance of a check box mirrors the real-world check box, which makes a mental model blatant. </p>
+</blockquote>
+
+
+<h3>Typical Behavior</h3>
+
+<blockquote>
+  <p>This component has many states across most platforms: checked, unchecked, disabled, and pressed down. Like a button, these different states should be obvious in the event that someone clicks (or holds down) on it. </p>
+</blockquote>
+
+<h4>Events</h4>
+
+<blockquote>A check box can be checked or unchecked as the result of a click. Additionally, check boxes represent the event of an item in a list. A simple example of this representation is a to-do list, which showcases whether a certain task has been completed.</blockquote>
+
+<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has switched the check box's state. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly within the button’s bounds. In the event that a user presses and holds on a check box, the <code>release</code> event is applicable.</p>
+
+<h4>State Diagram</h4>
+
+<blockquote>
+  <p>The following diagram shows the six states of a standard check box and the events/actions that cause each state to change. </p>
+</blockquote>
+<svg xmlns="http://www.w3.org/2000/svg" style="background-color: rgb(255, 255, 255);" xmlns:xlink="http://www.w3.org/1999/xlink" width="350px" height="321px" version="1.1"><defs/><g transform="translate(0.5,0.5)"><path d="M 288 161 L 288 214.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 288 219.88 L 284.5 212.88 L 288 214.63 L 291.5 212.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 228 131 L 228 111 L 178 111 L 178 54 L 154.37 54" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 149.12 54 L 156.12 50.5 L 154.37 54 L 156.12 57.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="198" y="131" width="120" height="30" rx="4.5" ry="4.5" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(222,140)"><switch><foreignObject pointer-events="all" width="72" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 72px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">Unchecked<br /></div></div></foreignObject><text x="36" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 228 221 L 228 167.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 228 162.12 L 231.5 169.12 L 228 167.37 L 224.5 169.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="198" y="221" width="120" height="30" rx="4.5" ry="4.5" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(228,230)"><switch><foreignObject pointer-events="all" width="59" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 59px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">Checked<br /></div></div></foreignObject><text x="30" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 58 131 L 58 121 L 118 121 L 118 124.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 118 129.88 L 114.5 122.88 L 118 124.63 L 121.5 122.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="28" y="131" width="120" height="30" rx="4.5" ry="4.5" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(29,140)"><switch><foreignObject pointer-events="all" width="118" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 117px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">Unchecked (disabled)<br /></div></div></foreignObject><text x="59" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 58 251 L 58 261 L 118 261 L 118 257.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 118 252.12 L 121.5 259.12 L 118 257.37 L 114.5 259.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="28" y="221" width="120" height="30" rx="4.5" ry="4.5" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(30,230)"><switch><foreignObject pointer-events="all" width="115" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 115px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">Checked (disabled)<br /></div></div></foreignObject><text x="58" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 58 31 L 58 21 L 8 21 L 8 311 L 198 311 L 198 250.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 198 245.12 L 201.5 252.12 L 198 250.37 L 194.5 252.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="28" y="31" width="120" height="30" rx="4.5" ry="4.5" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(35,40)"><switch><foreignObject pointer-events="all" width="106" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 106px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">Unchecked (held)<br /></div></div></foreignObject><text x="53" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 228 31 L 228 21 L 188 21 L 188 146 L 191.63 146" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 196.88 146 L 189.88 149.5 L 191.63 146 L 189.88 142.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="198" y="31" width="120" height="30" rx="4.5" ry="4.5" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(211,40)"><switch><foreignObject pointer-events="all" width="93" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 93px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">Checked (held)<br /></div></div></foreignObject><text x="47" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 318 131 L 303.55 109.32 Q 298 101 295.57 91.3 L 289.54 67.18" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 288.27 62.08 L 293.36 68.03 L 289.54 67.18 L 286.57 69.72 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(273,115)"><switch><foreignObject pointer-events="all" width="31" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 76px; width: 31px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">press<br /></div></div></foreignObject><text x="16" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><g transform="translate(188,5)"><switch><foreignObject pointer-events="all" width="41" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 76px; width: 41px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">release<br /></div></div></foreignObject><text x="21" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><g transform="translate(296,185)"><switch><foreignObject pointer-events="all" width="25" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 76px; width: 25px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">click<br /></div></div></foreignObject><text x="13" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><g transform="translate(196,185)"><switch><foreignObject pointer-events="all" width="25" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 76px; width: 25px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">click<br /></div></div></foreignObject><text x="13" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><g transform="translate(58,105)"><switch><foreignObject pointer-events="all" width="61" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 76px; width: 61px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">click, press<br /></div></div></foreignObject><text x="31" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><g transform="translate(58,265)"><switch><foreignObject pointer-events="all" width="61" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 76px; width: 61px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">click, press<br /></div></div></foreignObject><text x="31" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><g transform="translate(203,95)"><switch><foreignObject pointer-events="all" width="31" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 76px; width: 31px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">press<br /></div></div></foreignObject><text x="16" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><g transform="translate(38,5)"><switch><foreignObject pointer-events="all" width="41" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 76px; width: 41px; white-space: normal; text-align: center;"><div style="display:inline-block;text-align:inherit;text-decoration:inherit;" xmlns="http://www.w3.org/1999/xhtml">release<br /></div></div></foreignObject><text x="21" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g></g></svg>
+
+<p>Most check box designs have the following states. The <code>checked (enabled)</code>,<br> <code>checked (disabled)</code>,<br> <code>unchecked (enabled)</code>,<br> and <code>unchecked (disabled)</code><br> states can be viewed as “dormant” check box states—they are the only states that a check box can have when a user is not interacting with it. The <code>enabled</code> states means that a user <em>can</em> interact with them, while the <code>disabled</code> states means that a user <em>cannot</em> do so.</p>
+
+<p>If a button is not <code>disabled</code>, a <code>click</code> action will cause the check box to change states from <code>checked</code> to <code>unchecked</code> or vice-versa.</p>
+
+<p>The other two states occur when a user invokes the <code>press</code> event. These states are <code>checked (held)</code> and <code>unchecked (held)</code>. Upon <code>release</code>, the check box enters the corresponding state, either <code>checked</code> or <code>unchecked</code>.
+
+
+<h4>Component in Action <img src="../check-box/rektCheckBox.gif" style="width:80px;height:40px;"></h4>
+
+<blockquote>
+
+  <p>Check boxes are ubiquitous motherfuckers, you may not even notice, but they are always around, like that one creepy uncle.</p>
+</blockquote>
+
+<p> Please fast forward to time 3:08 in the following video done by DetroitBORG to experience the check box phenomenon. <br>
+<center>
+  <iframe width="280" height="157.5" src="https://www.youtube.com/embed/_OzWxKSm1rU" frameborder="0" allowfullscreen></iframe> </p>
+</center>
+
+See the check boxes below to interact with some basic check boxes!
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    The check box in all its <code>enabled</code> glory.
+  </label>
+</div>
+<div class="checkbox disabled">
+  <label>
+    <input type="checkbox" value="" disabled>
+    The mysterious <code>disabled</code> check box.
+  </label>
+</div>
+</p>
+
+  
+
+
+<h3>Variants</h3>
+<h4>Radio Buttons and Switches</h4>
+<center>
+<img src="../check-box/funnySwitch.gif" style="width:125px;height:100px;">
+</center>
+
+<blockquote>
+  <p>Deviations from the original check box include both radio buttons and switches. </p>
+</blockquote>
+<ul>
+  <li><em>Radio Buttons</em> 
+  A radio button has a different design but conveys nearly the same information. It varies in purpose slightly by providing a more general selection, where as a check box often conveys a "I'm finished" message. Radio buttons also act as a better representation for choices; sometimes only allowing one radio button to be enabled at a time.
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    This radio button will become deselected when you...
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Select this radio button. And vice-versa. 
+  </label>
+</div>
+  </li>
+
+  <li><em>Switch Buttons</em> 
+  	The switch button is significantly different than the check box. This variation is separated to the point where it becomes it's own component. It has a specific representation of turning on and off, but has the same simple two option function. 
+  	<div><img src="../check-box/toggle.gif" style="width:120px;height:95px;"></div> 
+  	<div>This gif of a switch represents ON and OFF states by changing color.</div>
+  </li>
+  	
+</ul>
+
+</div>
+<div class="col-sm-6">
+
+
+<b>When to Use What Widgets</b>
+<p>
+	Ever since the first edition of <cite> Inside Macintosh </cite> in 1984, the rule has been the same for when to use checkboxes versus radio buttons. All subsequent GUI standards and the official W3C Web standards have included the same definition of these two controls:</p>
+<ol>
+	<li style="margin-top: 1ex">
+		<strong>Radio buttons </strong> are used when there is a list of two or more options that are <strong> mutually exclusive </strong> and the user must select exactly one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list.</li>
+	<li style="margin-top: 1ex">
+		<strong>Checkboxes </strong> are used when there are lists of options and the user may <strong> select any number </strong> of choices, including zero, one, or several. In other words, each checkbox is independent of all other checkboxes in the list, so checking one box doesn't uncheck the others.</li>
+	<li style="margin-top: 1ex">
+		<strong>A stand-alone checkbox </strong> is used for a single option that the user can turn on or off.</li>
+</ol>
+
+
+<h3>Priority Metrics</h3>
+
+<blockquote>Because check boxes are so intuitive for users, all usability metrics are applicable, with efficiency and memorability being the most significant.</blockquote>
+
+<p>Because check boxes are such a fundamental part of so many user interfaces available today, it can be said that all usability metrics are equally important for this component. Users who are seeing a check box in a given platform for the first time must not have any issues recognizing it and knowing what to do with it (learnability). The high priority of learnability also implies that memorability is a given.</p>
+
+<p>Users must also never experience undue delays with using a check box (efficiency), particularly because using a check box almost always involves an instantaneous, immediate-result action. Users should almost never trigger a check box by mistake (errors)—especially check boxes whose actions result in significant changes to data or the real world. Additionally, because check boxes are commonly used in lists, the user usually needs to submit the list, using a button.</p>
+
+<p>If any metric at all can be considered as a “low priority” for check boxes, it would be satisfaction. The check box is such a utilitarian component that “joy” or “uncontrollable excitement” is hardly associated with its use. One exception to this prioritization may be for check boxes in applications whose primary metric is satisfaction (e.g. video games, entertainment platforms).
+  As a part of that overall system, making check boxes “pleasurable” may then become more important than in other situations.</p>
+
+<h3>Key Characteristics</h3>
+
+<blockquote>So what makes for a good <em>check box</em>?
+  </blockquote>
+  
+  <p>
+  According to Microsoft, one should limit the number of check boxes in the user interface. If one needs to include several options, consider using a list view or list box control instead. 
+  In addition, one should:
+  <ul>
+    <li>Label all check boxes</li>
+    <li>Use <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/bb226821(v=vs.85).aspx" target="_blank">sentence caps</a> for check box labels</li>
+    <li>Write check box labels as sentence fragments (imperative sentences) with no ending punctuation</li>
+    <li>Avoid long check-box labels</li>
+    <li>Use <em>select</em> and <em>clear</em> in instructions for check boxes
+    <li>Use grammatically positive phrasing for all check box labels
+  </ul>
+  <br>
+  According to Google, a check box can either be a primary action or secondary action, and desktop check boxes should appear only on <code>hover</code> and <code>focus</code>.
+  </p>
+  <img src="../check-box/googleChecklist.png" style="width:411.5px;height:288px;">
+  <p>
+  In the image above, the check box is the primary action and the state indicator for the list item.
+  </p>
+
+
+<h4>Feedback</h4>
+
+<p>Much like a button, it is important for check boxes to give instant feedback. Users must
+  never doubt whether:</p>
+
+<ol>
+  <li>they have checked a box, or selected an option. </li>
+  <li>they have successfully unchecked a box, or in the case of switches, successfully disabled an action. </li>
+</ol>
+<p> Radio buttons give clear feedback because when clicked the user gets extra confirmation with the disabling of the alternate button. For this reason, radio buttons must have labels that clarify their explicitly. 
+</p>
+  </div>
+</div>
+
+<h2>Platform-Specific Instances</h2>
+
+<blockquote>
+  <p>
+      Below is the comparison among the use of check boxes on various platforms, including, Mac OS X El Capitan and iOS 9.
+  </p>
+</blockquote>
+
+<h3>Mac OS X 10.11 El Capitan</h3>
+<blockquote>
+This version of the Mac operating system debuted in October of 2015, but kept many of the stylistic design choices that came out with Mac OS X 10.9 Mavericks. One of the big changes came with the addition to the Notes app that allows users to turn a list into a checklist, which makes use of the check box component.
+</blockquote>
+<h4>Mac OS X Design Principles</h4>
+<p>
+
+</p>
+<h5>Mental Model</h5>
+<p>
+"A mental model is the concept of an object or experience that people carry in their heads."<br>
+Apple believes that it is important to acknowledge the mental models that people bring with them, since those models influence their expectations.<br>
+In the case of the check box component, many users' mental models are inspired by the fact that people use checklists in their daily lives, and are therefore familiar with what the check box represents and what it means for a check box to be enabled.
+<center>
+<img src="../check-box/elCapitanChecklist.jpg" style="width:707px;height:493px;">
+</center>
+The screenshot above illustrates how Mac OS X El Capitan takes advantage of this mental model that many users have. Many users use notepads to keep track of to-do lists, and so the new Notes application makes it easy for one to convert a list into a checklist. Note that the check box icons are designed in a way that makes it easy for one to tell which ones are enabled.
+</p>
+<h5>Explicit & Implied Actions</h5>
+<p>
+According to Apple, a typical action involves three steps:
+<ol>
+  <li>Identify an object onscreen </li>
+  <li>Select or designate the object </li>
+  <li>Perform an action, either by invoking a command or by direct manipulation of the object </li>
+</ol>
+These steps lead to the two "paradigms for manipulating objects: explicit actions and implied actions."
+For check boxes, the explicit action paradigm applies, since one of the key characteristics of a check box is that a label is supplied with the check box, which explicitly tells the user why the check box is being used.
+<center>
+<img src="../check-box/systemPrefCheckbox.png" style="width:780px;height:739px;">
+</center>
+The screenshot above highlights the use of a clearly described check box. In Mac OS X, the check box is most commonly seen in the preference panes of applications, probably due to the customizable nature of a preference panel. In addition, one can see that this label does not confuse the reader, making it clear that a checked box will cause the operating system to "automatically hide and show the menu bar."
+</p>
+<h5>User Control</h5>
+<p>
+This principle presumes that the user should initiate and control actions. However, Apple admits this can be challenging for the following reasons:
+<ul>
+  <li>The ideal user experience lies somewhere between expecting users to provide instructions for every step of every action and preventing users from initiating any but the most basic actions </li>
+  <li>The right amount of user control depends on the sophistication of the user audience </li>
+</ul>
+<center>
+<img src="../check-box/disabled.png" style="width:780px;height:654px;">
+</center>
+The screenshot shown here illustrates an example where check boxes are disabled, thus taking the control away from the user. In this case, this was done as a matter of security, since the user must first "unlock" the panel by inputting his/her account information.
+</p>
+<h5>Consistency</h5>
+<p>
+Obviously, consistency is one of the most important principles, especially when thinking about the usability metrics of memorability, efficiency, and errors. Apple also believes that consistency in the interface "allows users to transfer their knowledge and skills from one app to another."<br>
+This does not mean that each application needs to looks and behave just as every other application does. Instead, an application should "respect its users and avoid forcing them to learn new ways to do things for no reason than to be different." 
+<center>
+<img src="../check-box/checkboxVsRadio.png" style="width:662px;height:556px;">
+</center>
+The image above is taken from a preferences panel in the Mail application. Note that the check boxes for the past three "settings-based" examples have used the same check box component. This makes it easy for a user to recognize that a check box will have the same behavior throughout the operating system. Next one will see how this does principle does not always apply when the concept of aesthetic integrity comes into play.
+</p>
+<h5>Aesthetic Integrity</h5>
+<p>
+Apart from consistency, one must also be thinking about how the "visual and behavioral design of an app is consistent with the content and tasks it presents." This means that the check box does not always need to be that classic blue check box when it does not flow with the application's purpose.
+<center>
+<img src="../check-box/remindersCheckboxes.png" style="width:628px;height:612px;">
+</center>
+The image above showcases this principle, as the reminders app is meant for seeing what has been done, not what is selected.
+</p
+
+
+<p>
+
+</p>
+
+
+<h3>Apple iOS 9</h3> 
+
+<blockquote>Many different variants and different designs of check boxes are used in iOS. The original check box is utilized in applictions like Mail, Messages, and Reminders. The radio button appears in setting options such as wifi, ringtone selection, and many more. Of all variants, the switch is the most popular in iOS. Applications like Clock and Settings make frequent use of the component.
+</blockquote>
+
+<center>
+	<p>Below are two examples of check boxes in Mail. Notice in the first example, when no emails are selected the Move and Trash buttons help indicate the status of the check boxes. Notice in the second example, the Mail application uses the color alteration and the original symbol to show selection. Here the component is used to indicate selection of individual emails so that an action can be applied to multiple at a time.</p>
+
+<img src="../check-box/iOSMail.PNG" style="width:400px;height:750px;"> 
+<img src="../check-box/iOSMail2.PNG" style="width:400px;height:750px;">
+
+<p> The following example emphasizes the different aesthetic design styles of iOS. The check boxes in the Reminders application stand out from other platforms with their lack of a check symbol and color specification. Although there is differentiation, because the unchecked state is indicated by the empty circle the application does attempt to stay consistent with other applications. 
+</p>
+<img src="../check-box/iOSToDo.PNG" style="width:400px;height:750px;">
+
+
+<p> Next are the examples of radio buttons, indicated by small blue check marks. Depending on which choice is selected, the blue check mark will disappear off the previous option and appear on the most recent selection. </p>
+
+<img src="../check-box/ringtonez.jpg" style="width:350px;height:360px;">
+
+
+<p>Finally are the examples of switches. Most clearly exemplified in the Clock application. The switches act as a clear indication of whether an alarm with be set, or off. Since left and right positions of the switch do not have a global state meaning, the grey and green colors provide the greatest distinguishing factor between on and off states.</p>
+<img src="../check-box/iOSclock.png" style="width:400px;height:750px;">
+</center>
+
+
+
+<h3>Credits &amp; References</h3>
+<p>
+http://www.google.com/design/spec/components <br>
+https://msdn.microsoft.com/en-us/library/windows/desktop/bb246416(v=vs.85).aspx <br>
+http://getbootstrap.com/css/ <br>
+https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.checkbox(v=vs.110).aspx <br>
+http://www.nngroup.com/articles/checkboxes-vs-radio-buttons/ <br>
+https://www.youtube.com/watch?v=_OzWxKSm1rU&feature=youtu.be Apple OS X El Capitan: What's New?  by DetroitBORG Jun 9, 2015 <br>
+https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW1 <br>
+</p>
