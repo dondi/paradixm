@@ -1,0 +1,150 @@
+---
+title: Command Loop
+layout: component
+---
+<style type="text/css">
+  text.state-text{
+    font-size:16px;
+  }
+</style>
+
+<p class="lead">One of the oldest and most iconic ways of interacting with a modern computer, the Command Loop is a way to issue commands, via plain text, directly to the operating system. Before graphical user interfaces, the command loop was the most common way to interact with a computer. Now, command loops have fallen out of favor with typical users, only seeing use from advanced users.</p>
+
+<div class="row">
+  <div class="col-sm-6">
+
+    <h3>Typical Appearance</h3>
+
+    <p>Though the aesthetics of the command loop vary slightly across many different platforms, almost all command loops are some variation on this:</p>
+<div class="well">
+    <svg style="height:160px; width:600px">
+      <text x="0" y="30" class="state-text">&gt;command param1 param2</text>
+      <text x="0" y="60" class="state-text">output</text>
+      <text x="0" y="90" class="state-text">&gt;command2 param1 param2</text>
+      <text x="0" y="120" class="state-text">output2</text>
+      <text x="0" y="150" class="state-text">&gt;</text>
+      <text x="10" y="150" class="cursor state-text">_</text>
+    </svg>
+    </div>
+
+    <p>Command loops usually consist of a <strong>history</strong> of previous commands and outputs, listed chronologically top to bottom, followed by a <strong>prompt</strong> for the next command. Command loops often also display the <strong>current directory</strong> such as this example:</p>
+    <div clas="well">
+      <svg style="height:25px; width:100% ;">
+        <text x="0" y="20" class="state-text">C:\Current\Directory\&gt;</text>
+        <text x="160" y="20" class="cursor state-text">_</text>
+      </svg>
+    </div>
+
+    <h3>Typical Behavior</h3>
+
+    <p>A command loop is used to issue commands directly to the operating system. As such, the basic behavior of a command loop varies little across platforms. The command loop begins with the <strong>prompt</strong>. The <strong>prompt</strong> allows the user to type in and enter the command they wish to execute with any parameters they wish. The command loop then <strong>executes</strong> the command, and upon completion it returns to the <strong>prompt</strong>. Command loops often have the concept of a <strong>current directory</strong>, which is the directory within the computer's file system that commands given to the loop execute relative to. The command entered into the command loop is usually a single word (a series of characters not including a whitespace). Any subsequent words are <strong>parameters</strong> passed to the command. Words are usually delimited by spaces.</p>
+
+    <h4>States: </h4>
+
+    <h4>Prompt</h4>
+    <div clas="well">
+      <svg style="height:25px;">
+        <text x="0" y="20" class="state-text">&gt;</text>
+        <text x="10" y="20" class="cursor state-text">_</text>
+      </svg>
+    </div>
+    <p>The basic state of the command loop is the <strong>prompt</strong>. The prompt is usually signaled by a symbol, such as &gt;, $, #, or %, followed by a cursor, which is usually either a flashing underscore (depicted above), a flashing vertical bar, or a flashing rectangle. The prompt symbol indicates that the command loop is ready to accept commands, and the flashing cursor indicates that the user can type into the prompt. After the user submits the command (usually via the "enter" or "return" keys on the keyboard), the command loop enters the <strong>execution</strong> state.</p>
+    <h4>Execution</h4>
+    <div clas="well">
+      <svg style="height:50px;">
+        <text x="0" y="20" class="state-text">&gt;command param1 param2</text>
+        <text x="0" y="40" class="cursor state-text">_</text>
+      </svg>
+    </div>
+    <p>After a command is issued to the command loop, it <strong>executes</strong> the command. The command loop can only execute one command at a time, so while it executes a command, it cannot take new commands (this makes the <strong>execution</strong> state and the <strong>prompt</strong> states distinct). Since, while in execution, the command loop cannot accept commands, it does not display the <strong>prompt</strong> symbol. It does, however, show the blinking cursor on a new line. The new line shows that the previous command has been executed (it is now part of the <strong>history</strong>), but the absence of the prompt symbol shows the command loop isn't accepting new commands.</p>
+    <h4>State Diagram</h4>
+    <p>Since a command loop only has two states, its state diagram is very simple. It simply provides the command <strong>prompt</strong>, and upon receiving a command,</p>
+
+    <img src="state.svg">
+
+    <h4>Component in Action</h4>
+
+    <video src="demo.mp4" autoplay="autoplay" controls="controls" loop="loop" style="width:100%">
+      Your browser doesn't support HTML5 video
+    </video>
+
+  </div>
+
+  <div class="col-sm-6">
+<h3>Variants</h3>
+
+<p>Though there are slight variations in appearance as well as specific functionality, almost all command loops feature the same methods of interaction. They all have a prompt that accepts commands as text, they all wait for the command to be executed, and they all return to the prompt after the execution is finished. Almost all command loops take commands and parameters as whitespace-delimited words and most require the enter or return keys on the keyboard to submit commands.</p>
+
+<h3>Priority Metrics</h3>
+<p>Command loops are, in some ways, the "anti-user interface". They are very basic and were almost completely supplanted by graphical user interfaces, which are considered much more intuitive to users. When looking at the usability metrics, the command loop struggles in all (except, arguably, satisfaction) but efficiency, where it soars. It makes sense, then, that it was replaced by GUIs for most users (where it wins in almost all other metrics), yet is still used by super users who value efficiency above all else.</p>
+
+<h4>Efficiency</h4>
+<p>Efficiency is where the command loop soars. Because the command loop lags in the other priority metrics, most are made with features that really cater to efficiency. A command loop is entirely textual so it does not require the use of the mouse; quick typing is the only motor skill that benefits the user of the command loop. Many commands in command loops are designed with short, abbreviated names to make them more efficient to type, such as <code>ls</code>, <code>cd</code>, and <code>rm</code>. Command loops are also often made with features that increase efficiency. One such feature is <strong>tab completion</strong>. With <strong>tab completion</strong>, the user of the command loop can type the first few letters of a command or filename and hit tab to have the command loop fill in the rest of the phrase based on the closest match. Command loops vary in their handling of multiple matches, but most allow the user to see the matches, or hit tab repeatedly to cycle through them, so the user doesn't lose their "flow". Command loops also often allow the user to quickly enter previously entered commands via the up arrow on the keyboard. In many command loops, a user can hit the up arrow to get the previously given command and continue to press the up arrow to get more and more previously given commands. </p>
+<h4>Learnability</h4>
+<p>A command loop is either very easy to learn or very difficult to learn depending on one's perspective. In the basic sense, it is a very simple interface; most users know how to type, most users know how to hit enter, and most users know how to wait. However, in practice, a new user very rarely sees a command loop and knows <em>what</em> to do with it. They see a blinking cursor and know they can type, but they don't know <em>what</em> to type. Some command loops offer a list of possible commands internally...if you know the command to summon the list. To really know the possible commands to issue, most command loops require some kind of external reference material. Also, functionality such as <strong>tab completion</strong> and accessing previously issued commands with the up arrow are not readily apparent from most command loops. These functions either have to be taught to the user by a tutor of some kind, or discovered accidentally. For the most part, an unexperienced user cannot reasonably be expected to be given a command loop and to even figure out how to use it properly on their own.</p>
+<h4>Memorability</h4>
+<p>Once again, a command loop can either be very memorable or very non-memorable depending on one's perspective. The ability to type, hit enter, wait, and repeat is very memorable. But remembering commands is less so. Since there is no graphical interface, the user must remember specific text in the form of commands in order to use the command loop. Remembering strings of text is much more difficult for visually-inclined human beings than recognizing a button has a certain kind of functionality. Certain commands are very memorable because they have such short names, such as <code>ls</code>, but they are still text that needs to be remembered. In addition, remembering the command alone isn't enough. Commands often take parameters and <code>flags</code> that change their behavior, that often vary between commands and are hard to remember. Fortunately, many command loops offer a built in "manual" or "help document" of each command so a user who remembers a command but has forgotten exactly how to use it can easily look it up. This, however, is not memorability but a remedy for poor memorability.</p>
+<h4>Errors</h4>
+<p>Errors are a common problem with command loops. Making an error using a command loop is as easy as mistpying a word. Sometimes errors are hard to recognize as well. If a command is given with an unintended parameter, the command will still execute and the user may not even realized he or she even made an error.</p>
+
+<h4>Satisfaction</h4>
+<p>Satisfaction is an especially hard metric to judge with command loops. What some users find satisfying others may not. Some users really enjoy graphical interfaces, and get much more satisfaction from seeing things and touching them than typing text. Also a command loop is generally not very satisfying when it successfully completes a command because it just returns to the prompt without giving feedback. On the other hand, some users find using a command loop very satisfying because they feel very efficient or they "feel like a hacker".</p>
+
+<h3>Key Characteristics</h3>
+
+<h4>The Prompt</h4>
+<p>A good command loop has a prompt that clearly shows that the loop is accepting commands. It should have a blinking cursor.</p>
+<h4>Tab Completion</h4>
+<p>Tab completion is an incredibly efficient feature and all command loops should have it</p>
+<h4>History</h4>
+<p>A good command loop should display previously issued commands and should make them easy to access via the up arrow or some similar key on the keyboard</p>
+<h4>No Mice</h4>
+<p>There is no such thing as a "command loop with a GUI". The command loop fails in so many of the usability metrics because it excels in efficiency. Requiring the use of a mouse hampers efficiency, the one thing command loops have going for them, and should not be a part of them</p>
+</div>
+<h3>Platform-Specific Instances</h3>
+
+<div class="row">
+  <div class="col-xs-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Windows 10 Command Prompt</h4>
+      </div>
+      <div class="panel-body">
+          <video src="demo.mp4" autoplay="autoplay" controls="controls" loop="loop" style="width:100%">
+      Your browser doesn't support HTML5 video
+    </video>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Bash</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+</div>
+<h3>Credits &amp; References</h3>
+
+<ul>
+<li><a href="http://www.gnu.org/software/bash/manual/bashref.html#Shell-Commands">http://www.gnu.org/software/bash/manual/bashref.html#Shell-Commands</a></li>
+<li><a href="https://technet.microsoft.com/en-us/library/bb490954.aspx?f=255&amp;MSPPError=-2147217396">https://technet.microsoft.com/en-us/library/bb490954.aspx?f=255&amp;MSPPError=-2147217396</a></li>
+</ul>
+
+<script type="text/javascript">
+function blinkCursor(){
+  var cursors = document.getElementsByClassName("cursor");
+  for(var i in cursors){
+    var inner = cursors[i].innerHTML;
+    if(inner == "_")
+      cursors[i].innerHTML = "";
+    else
+      cursors[i].innerHTML = "_";
+  }
+  setTimeout(blinkCursor, 500);
+}
+blinkCursor();
+</script
