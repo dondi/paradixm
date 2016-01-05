@@ -2,67 +2,44 @@
 title: Button
 layout: component
 ---
-
-<blockquote>Start your component pages with a quick description of the component, such as:</blockquote>
-
-<p class="lead">Quite possibly the single most common graphical user interface element, the push button triggers a
-  single action within an application.</p>
+<link rel="stylesheet" type="text/css" href="hotess.css"> 
+<p class="lead">Virtual buttons are a very widely used graphical interface element that emulates real world pressable buttons.</p>
 
 <div class="row">
   <div class="col-sm-6">
 
 <h3>Typical Appearance</h3>
 
-<blockquote>If a component is sufficiently widespread that it takes on a recognizable look across multiple platforms,
-  provide it here. If its appearance varies extremely widely, say so and direct the reader to platform-specific
-  instances.</blockquote>
+<blockquote>Generally, across any platform, a button will take the form of any shape whose form will elicit some understanding of the button's function, or will display a design that would hold the same purpose.</blockquote>
 
 <h3>Typical Behavior</h3>
 
 <blockquote>
-  <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
-    here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
-    reader to the platform-specific sections.</p>
-
-  <p>Helpful subsections include:</p>
+  <p>Generally speaking, a button will perform no action while idle. Upon being pressed, a button will perform its action, then will return to its idle state.</p>
 </blockquote>
 
 <h4>Events</h4>
 
-<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
-
-<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
-  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
-  within the button’s bounds.</p>
+<p>The most obvious and commonly occuring button event is the <code>click</code>. A <code>click</code> event indicates that the button has been initialized and upon release will perform its action. This is closely related to the <code>release</code> event. Secondary events </p>
 
 <h4>State Diagram</h4>
 
 <blockquote>
-  <p>A state diagram indicating the actions and states of a user interface component.</p>
-
-  <p>This is most likely an image. Bonus props if you use SVG.</p>
-
-  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
-    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
-    however, may have more activities than the “public” events that can be reported by a component.</p>
+  <p>The following diagram shows the 5 states of a standard button, and the different triggers that cause them to be entered/left.</p>
 </blockquote>
 
-<p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
-  viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
-  it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
-  state means that a user <em>cannot</em> do so.</p>
+<div class="diagram">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="431px" height="303px" version="1.1" style="background-color: rgb(255, 255, 255);"><defs/><g transform="translate(0.5,0.5)"><rect x="1" y="1" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(31,25)"><switch><foreignObject pointer-events="all" width="59" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 59px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Disabled</div></div></foreignObject><text x="30" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 388 31 L 398 31 L 398 111 L 394.37 111" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 389.12 111 L 396.12 107.5 L 394.37 111 L 396.12 114.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(367,66)"><switch><foreignObject pointer-events="all" width="62" height="15" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Mouse Over</div></div></foreignObject><text x="31" y="13" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="1" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(299,25)"><switch><foreignObject pointer-events="all" width="57" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Enabled</div></div></foreignObject><text x="29" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="241" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(299,265)"><switch><foreignObject pointer-events="all" width="57" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Pressed</div></div></foreignObject><text x="29" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 388 191 L 398 191 L 398 271 L 394.37 271" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 389.12 271 L 396.12 267.5 L 394.37 271 L 396.12 274.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(379,225)"><switch><foreignObject pointer-events="all" width="46" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Release</div></div></foreignObject><text x="23" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="161" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(304,185)"><switch><foreignObject pointer-events="all" width="47" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 47px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Armed</div></div></foreignObject><text x="24" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 268 126 L 258 126 L 258 191 L 261.63 191" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 191 L 259.88 194.5 L 261.63 191 L 259.88 187.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(245,145)"><switch><foreignObject pointer-events="all" width="28" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Click</div></div></foreignObject><text x="14" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 268 96 L 258 96 L 258 46 L 261.63 46" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 46 L 259.88 49.5 L 261.63 46 L 259.88 42.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(232,66)"><switch><foreignObject pointer-events="all" width="53" height="15" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Mouse Off</div></div></foreignObject><text x="27" y="13" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="81" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(305,105)"><switch><foreignObject pointer-events="all" width="45" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 45px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Hover</div></div></foreignObject><text x="23" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 31 61 L 31 81 Q 31 91 41 91 L 81 91 Q 91 91 91 81 L 91 67.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 91 62.12 L 94.5 69.12 L 91 67.37 L 87.5 69.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(49,86)"><switch><foreignObject pointer-events="all" width="28" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Click</div></div></foreignObject><text x="14" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 127.37 21 L 171 21 Q 181 21 191 21 L 261.63 21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 122.12 21 L 129.12 17.5 L 127.37 21 L 129.12 24.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 21 L 259.88 24.5 L 261.63 21 L 259.88 17.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 268 271 L 191 271 Q 181 271 181 261 L 181 21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/></g></svg>
+</div>
 
-<p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
-  implementations, but in general they are:</p>
+<p>The <code>enabled</code> and <code>disabled</code> states can be considered idle button states, as they are the only possible states the button can hold without user interaction. The <code>enabled</code> state indicates that a user <em>can</em> interact with it, while the <code>disabled</code> indicates that a user <em>cannot</em>.</p>
+
+<p>When a button is <code>enabled</code>, additional states may be triggered. Of course, these states are subject to vairation depending upon the system in use, but a general list of the states are:</p>
 
 <ul>
-  <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
-    change the button’s appearance. This provides a form of feedback that states that the button will respond if
-    additional activity is performed.</li>
+  <li><code>hover</code>: For platfoms with peripherals such as mice or styluses, positioning the cursor over the button will elicit this state. Generally, it is indicated visually by a highlighting effect on the button. This is done to indicate that the button is prepared to be interacted with.</li>
 
-  <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
-    the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
+  <li><code>armed</code>: Should the user interact with the button with a click, press, etc. the button may enter this state, indicating that the button is prepared to perform its action upon being released from this state. Most systems have a way to exit this state without actually activating the button Many button implementations allow an “out”
     from this state, in case the user changes his or her mind in mid-action.</li>
 </ul>
 
@@ -73,10 +50,11 @@ layout: component
 
   <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
 </blockquote>
+<div class ="media-embed"><img src="Button1.gif" alt="Button gif 1" class="img-responsive"></div>
 
 <p class="text-center">
-  <button class="btn btn-default">Standard Bootstrap Button</button>
-  <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
+  <button class="btn btn-default">Sample Button</button>
+  <button class="btn btn-default disabled">Sample Disabled Button</button>
 </p>
 
   </div>
@@ -84,83 +62,62 @@ layout: component
   <div class="col-sm-6">
 <h3>Variants</h3>
 
-<blockquote>There is almost never just one form of a user interface component. Use this section to address variations
-  on this theme. Some variations are sufficiently different that they are considered to be a different component
-  entirely, despite very similar behavior. Meanwile some variations are due to appearance only.</blockquote>
+<blockquote>Buttons are some of the most versatile and widely used interface components. They are used for slightly different and more specialized uses that deviate from the average everyday application of the button. Some of the most significant variances are as follows:</blockquote>
 
 <ul>
-  <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
-    invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
-    different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
+  <li><em>Check Boxes</em> function in almost identically to buttons, with an additional set of states. These additional states indicate whether or not the check box has been checked or not. Things like <code>hover</code> and <code>armed</code> are shared. In terms of function, check boxes are useful for visualizing options.</li>
 
-  <li><em>Links</em> can be considered as a specialized button—they are invoked almost identically, and their action
-    is even more narrowly defined as moving the user to a different view or display. The distinction here is
-    definitely less sharp than the distinction between a menu item and a button. For links within a document, the
-    document might be viewed as a menu in itself, and thus links are “menu items” indicating what the user can view
-    next. Thus, in some ways, links are hybrids between buttons and menu items.</li>
+  <li><em>Links</em> function essentially as buttons, as they generally hold all the same states and rarely have any unique states. The distinction here is that a link is specifically made to navigate to a different display from the one the link exists on. There is even less fundamental difference between buttons and links than there were with check boxes.</li>
 </ul>
 
 <h3>Priority Metrics</h3>
 
-<blockquote>Talk about the five usability metrics in relation to this component. Not all components will have the same
-  metric priorities. For example:</blockquote>
+<p>Because the button is such a widely utilized tool in virtually every user interface available today, it is fair to say that each one of the usability metrics is equally important for buttons. It is generally very easy for first time users to pick up the idea of a button, due to the fact that they closely emulate the functionality or real world physical buttons (learnability). The high priority of learnability also implies that memorability is a given.</p>
 
-<p>Because the button is such a fundamental part of virtually every user interface available today, it can be said that
-  all usability metrics are equally important for this component. Users who are seeing a button in a given platform for
-  the first time must not have any issues recognizing it and knowing what to do with it (learnability). The high
-  priority of learnability also implies that memorability is a given.</p>
+<p>It is vital that buttons not introduce significant delay to a process (efficiency), due to the fact that they are such result driven devices, and thus users expect their input to be visualized or effective immediately. Failing to do so, can lead users to hit buttons multiple times with the belief that their initial inputs were not registered (error).</p>
 
-<p>Users must also never experience undue delays with using a button (efficiency), particularly because using a button
-  almost always involves an instantaneous, immediate-result action. Users should almost never trigger a button by
-  mistake (errors)—especially buttons whose actions result in significant changes to data or the real world.</p>
-
-<p>If any metric at all can be considered as a “low priority” for buttons, it would be satisfaction. The button is such
-  a utilitarian component that “fun” or “enjoyment” is hardly associated with its use. One exception to this
-  prioritization may be for buttons in applications whose primary metric is satisfaction (e.g., games, entertainment).
-  As a part of that overall system, making buttons “fun” may then become more important than in other situations.</p>
+<p>The least significant metric in terms of buttons has to be satisfaction. This is because there is a severe limitation on the enjoyment that can be derived from hitting a button. This can easily be attributed to its purely utilitarian function and use.</p>
 
 <h3>Key Characteristics</h3>
 
-<blockquote>This section is for describing “what makes for a good <em>your component here</em>?”
-  Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
-  principles.</blockquote>
+<p>According to Google, buttons can hold different design characteristics based upon the significance they hold in comparison to the content surrounding the button. For example, adding a <em>raised</em> effect to the button or adding a shadow to it for a 3D effect can make it more pronounced. See the below images for examples.</p>
+
+<div class ="media-embed"><img src="FlatButton.png" alt="Flat Button" class="img-responsive"></div>
+
+<div class ="media-embed"><img src="RaisedButton.png" alt="Raised Button" class="img-responsive"></div>
 
 <h4>Feedback</h4>
 
-<p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
+<p>By far the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
   never doubt whether:</p>
 
 <ol>
-  <li>they did positively trigger a button (and thus its associated action)</li>
-  <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
-    the action that triggers the button</li>
+  <li>they did positively trigger a button and are thus the device is going to perform the appropriate action</li>
+  <li>they successfully <em>cancelled</em> the triggering of a button, and subsequentially the button's resulting function will not take place</li>
 </ol>
   </div>
 </div>
 
 <h3>Platform-Specific Instances</h3>
 
-<blockquote>
-  <p>This is where things can get really interesting—platform-specific sections go here. Different versions of
-    the same system are considered to be platforms in their own right (e.g., Windows 95 buttons vs. Windows 10
-    buttons). Completely customized versions of a component (e.g., a unique-looking/-acting button made specifically
-    for a game) are also acceptable here.</p>
+  <h3>CyanogenMod 12.1 based on Android 5.1.1 Lollipop</h3>
+  <p>On CyanogenMod 12.1, buttons are fully compliant with Google's material design. They are generally very simple and clean, using vibrant colors to stand out on the screen. They are almost always either simple shapes such as rectangles or circles, and use graphics on the buttons to make it clear what function will be performed after pressing the buttons.</p>
 
-  <p>The outline for platform-specific entries resembles the outline already described above, except with a focus
-    on how the platform-specific version is <em>different</em>. Thus, you will want some notes on appearance (i.e.,
-    more screenshots), behavior, variants, metrics, and characteristics. If some aspect is the same, then say so
-    explicitly so that there is no confusion.</p>
+<div class ="media-embed"><img src="ScreenshotCalander.png" alt="Calander"></div>
+<p>Here is an example of the simple, yet vibrant button design in the calander application.</p>
 
-  <p>Some platform-specific instances of certain user interface components will merit such a rich discussion that they
-    may require a sizable number of supporting assets. In that case, feel free to add subfolders to the main component
-    folder, named after the platform under examination.</p>
+  <p>Unlike devices that utilice peripherals for input such as mice and styluses, most Android based devices operate fully based upon touch input. The difference this makes is that there can be no hover state for buttons. Conversely, touch input allows for a new state that the other systems do not, which is hold. In CM 12.1, when holding a button, if the button has a secondary function, this is how it is accessed. This will usually include such things as advanced options, or a popup containing a context-sensitive menu. For buttons that do not have such features, holding the button will cause it to highlight, and a circle will expand from the point of contact with the screen to cover the whole button. This provides a pleasant visualization that makes it clear that the touch has been registered, and also adds a nice boost to the satisfaction usability metric.</p>
 
-  <p>This could well be the most distinctive part of the catalog—the sections above this generally appear in user
-    interface guidelines, albeit with a platform-specific focus. A key premise of the Paradixm project is to compare
-    user interface elements <em>across</em> platforms. Thus, feel free to be creative about presentation here. You
-    might want to display a visual gallery, for example, with links leading to individual pages for each covered
-    platform-specific user interface component.</p>
-</blockquote>
+<div class ="media-embed"><img src="ScreenshotHighlight1.png" alt="Highlight1" class="img-responsive"></div>
+
+<p>Here you can see an example of the Android Version button being held down, and is therefore being highlighted and you can see the circle blooming across the surface of the button.</p>
+
+<div class ="media-embed"><img src="ScreenshotHighlight2.png" alt="Highlight2" class="img-responsive"></div>
+
+<p>Here you can see the gear button in the top of the image being selected, and is subsequentially being highlighted to visualize the fact that it is being activated.</p>
+
+<div class ="media-embed"><img src="ScreenshotHome.png" alt="Home" class="img-responsive"></div>
+<p>Here, the home button at the bottom in the middle has been held down, and an alternate button has popped up that will, in this case, bring you to the Google Now application, should the user choose to press on it.
 
 <div class="row">
   <div class="col-xs-6 col-sm-3">
@@ -206,4 +163,4 @@ layout: component
 
 <h3>Credits &amp; References</h3>
 
-<blockquote>Provide references or links to any information, image, or media sources used.</blockquote>
+<blockquote>Button1.gif: http://microsoft-news.com/ <br> https://www.google.com/design/spec/material-design/introduction.html</blockquote>
