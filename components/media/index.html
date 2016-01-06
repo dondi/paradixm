@@ -1,0 +1,185 @@
+---
+title: Media
+layout: component
+contributors:
+    - name: Summer Shigetani
+      github: seasons109
+
+    - name: Nick Soffa
+      github: SoffaKing88
+---
+
+<p class="lead"> "An audio or video media player" </p> 
+
+<h3> Typical Appearance <small> how it usually looks </small> </h3> 
+
+<p> Simple three button interface towards the bottom of the screen, previous file, Play/Pause, and next file. Top of the screen includes the file name, and any other details about the file if available. The middle of the screen will show the video itself or the album art in case of audio files. Other buttons include volume control through buttons or a slider, options to shuffle your list of songs or repeat a single song or playlist, and a drop down menu for media settings. In the case of a video, choices for the quality of the video are usually present when streaming it online. Lastly slider that corresponds to the video or song length and how far into the file you are is present at the bottom of the screen. </p>
+
+
+<h3> Typical Behavior <small> how it usually behaves </small> </h3>
+
+<p> Songs are listed by alphabetical order, and depending on what tab you are in you can search for specific artists or albums as well. When play button is clicked/pressed, the file will begin playing. Default speakers in the device will be used unless there are user designated speakers available (e.x. headphones plugged in, blue tooth stereo system set up, etc.). If the previous file button is pressed once, the player will return to the beginning of the current file. If it is pressed twice in rapid succession it will start playing the file that came before the current one. The next file button only needs to be pressed once to skip the rest of the current file and start playing the next file in the list. </p> 
+    
+
+<h4> Events </h4>
+<p> Hovering your mouse over the video or tapping the screen while the video is on will bring up the user interface. Clicking/pressing the Play/Pause button will trigger the file to start playing or pause at that time. If the previous file button is pressed once, the player will return to the beginning of the current file. If it is pressed twice in rapid succession it will start playing the file that came before the current one. The next file button only needs to be pressed once to skip the rest of the current file and start playing the next file in the list. Moving the slider for volume will increase or decrease the volume that the file is playing at.
+</p> 
+<!-- THE FUTURE IS THE PRESENT!-->
+<h4> State Diagram </h4> 
+<p> In some media players there are two major states, when the <b>control shown</b> and <b>control hidden</b> states. In the control shown state this is when the user is able to control the video. Within this state there are multiple states: </p> 
+<ul>
+    <li>Idle/Paused: When the media is stopped </li>
+    <li>Playback: When the media is playing </li>
+    <li>(Optional) Rewinding: When the media is playing backwards </li>
+    <li>(Optional) Fast Forwarding: When the media is playing ahead </li>
+</ul>
+
+<p> For video media players there are also options to change states between having the video play full screen and the video playing at the specifed size.</p>
+
+<div class="row">
+    <div class = "col-sm-6">
+
+        <img src="images_media/Overall_v2.svg" class="img-responsive" alt= "Responsive image"style= "height: auto; width: auto">
+        
+
+    </div>
+
+    <div class= "col-sm-6">
+
+        <img src="images_media/3ButtonInterface.svg" class="img-responsive" alt="Responsive image" style= "height: auto; width: auto">
+
+    </div> 
+
+</div>
+
+
+<h4> Component in Action </h4>
+<div class= "row"> 
+    <div class= "col-sm-6">
+        
+        <iframe width="100%" height="250" src="https://www.youtube.com/embed/89bcFDlP5rw" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class= "col-sm-6">
+        To the left is an example of a media player from Youtube.
+    </div>
+</div>
+<h3> Variants <small> how it varies per location </small> </h3>
+  <h4> Audio Media Settings </h4>
+    <li> Set as _____ : Able to set the song as a ringtone or an alarm tone </li>
+    <li> Settings : Will take you to a lot of different settings for whatever platform you are using, such as Equalizers, or play speed </li>
+    <li> Details : Will give you every detail about the current song from Artist to Track length to the file size </li>
+    <li> Add to playlist : Add song to a list of the users favorite songs, useful when searching for a song in a very large library </li>
+  <h4> Video Media Settings </h4>
+    <li> Quality : Available options for high definition video playback (420p, 720p, 1080p etc.) </li>
+    <li> Size : Available sizing for the video screen, almost always comes with full screen option </li>
+
+<h3> Priority Metrics <small> Media and its Usability Metrics </small> </h3>
+
+  <p> 
+    For most users, media players are used to do one thing, to play the media that the user wants them to play. That being said, because it is more of a utilitarian component, there are some usability metrics that are not as importnat as others. Some of the important ones are learnability, efficiency, errors, and memorability. 
+  </p>
+  <p> 
+    <b>Learnability:</b> Media players have to be quickly learnable. For most users, the  media player is only a gateway for them to see the actual content. The quicker it is to learn the software the better. Many media players should come intuitively. The different buttons and icons are very similar to other physical media players such as DVDs, Blu-Ray players and CD players. This similarity helps for users to quickly learn how to watch media on their devices. 
+  </p>
+  <p> 
+    <b> Efficiency: </b> Since it is not so much the media player that is important then the actual content being played, media players must also be very efficient. Many of the players today have many keyboard shortcuts. Arrows can be used to skip songs or to fastforward or rewind per frame. Spacebar is also commonly used to play and pause. Also there are many shortcuts for fullscreen or to adjust the volume. 
+  </p>
+  <p> 
+    <b> Errors: </b> Though errors are not fatal for media players, errors can annoy the user and take away from the content being shown. Errors such as play and pausing when the user wants to or wrong volume controls may not allow the user to play the video as intended. Since as said before, a media player is a gateway for the actual audio or video media. Therefore though the user may not be fatal, as long as the media does not get deleted, the errors for Media players should be very small. 
+    </p> 
+    <p>
+      <b> Memorability:</b> Media players should be very memorable. When a media player isn't used for a long time, the user should automatically be able to remember how it functions because for the user, their intent is to watch the audio/video content that the media player is going to play. The mental model of the media player as well as the user should not be very different. To help to make sure it is memorable, similar icons are used throughout media players for common tasks such as play, stop, or skip. 
+    </p>
+    <p>
+      <b>Satisfaction:</b> Satisfaction is not a very important component for media players. As long as the media player is able to play the content that the user wants then it is doing its job. It is the job of the content itself to satisfy the users. 
+    </P> 
+
+<h3> Key Chararacteristics <small> what do all principles do all great media players have? </small> </h3>
+  
+  <ol>
+      <li> <b>Feedback:</b> It is very important for the user to always get feed back for whatever action that they do. For example of the user presses play, the content should play. Also if the player pauses the video using the pause button, after clicking the content should also pause. If the content is still loading, a loading splash screen should also show up. This way the user will always know what state the media player is in. </li>
+
+      <li><b>Universality and Consistency:</b> Media and audio content should be accesible to everyone no matter where they are from. Universal signs for play, pause, skip and even volume are all very same and also derive from the physical machine buttons on DVD, Blu-ray, and CD players. Also many great media players will also have accsesiblity options such as closed captioning.</li> 
+
+      <li> <b>Shortcuts:</b> For easy access and for easy use, media players should also have shortcuts for the most basic of functions such as pausing and skipping. </li> 
+
+      <li><b> Transparency: </b> When users use the media player, it is not the media player that they are intersted in, instead it is the content. Many great media players have hover and hover off states where when the user is no longer hovering or doing any action to the buttons the control panel for the media player disapeers.</li>
+  </ol>  
+
+<h2> Platform Specific Instances </h2> 
+<div class="row"> 
+  <div class="col-sm-4">
+    <div class="well">
+        <h3> Mac OSX: Yosemite</h3>
+        <h4> Appearance </h4>
+        <img src="images_media/OSX_screenshot.png" class="img-responsive" alt="Screenshot of OSX media player">
+        <p> Above is a screen shot of what a media player looks like in OS X Yosemite.</p>
+        <p> <b> Video Media Player</b></p> 
+        <p>For Yosemite, after double-clicking on the icon, Quicktime Media player launches in a borderless window. The difference here is that there is no setting for quality. Instead it is all the same quality across the board. </p>
+
+        <img src="images_media/preview_screenshot.png" class="img-responsive" alt="Screenshot of OSX preview media">
+        <p> Above is a screenshot of what previewing media looks like in OS X Yosemite.</p>
+        <p> This is a screenshot of what previewing media looks like in OSX Yosemite. If a file is selected, the user can hold down space bar and they can play it. Also they can press the play button on the lower right hand corner. 
+        <h4> Behavior </h4>
+        <h4> Component in Action </h4>
+          <iframe width="100%" height="250px" src="https://www.youtube.com/embed/Enu-wc-k-r8" frameborder="0" allowfullscreen></iframe>
+        <h4> Key Characteristics </h4>
+        <p> In reference to the OSX Human Interface Guideline, Apple also references that Feedback and Assistance is important. Also keyboard alternatives are also very important. They encourage to "provide keyboard-only alternatives". Other important principles that are important are:  </p>
+
+        <ul>
+          <li> Direct Manipulations: An onscreen object must remain visible while performing actions on to it. Thus even though the controls may disappear on the media player, the content itself does not disapeer. </li> 
+          <li> Feedback and Communication: There should be some reaction to every action that the user does towards the media player. </li>
+          <li> Consistency: Consistent to other versions of software and consistent to user mental models for other media players.</li>
+        </ul> 
+
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="well">
+        <h3> iOS 8.1.2 iPhone4s </h3>
+        <h4> Appearance </h4>
+        <img src="images_media/iPhone_photoPlayer.png" class="img-responsive" alt="Screenshot of iPhone media player">
+        <img src="images_media/iPhone_photoHidden.png" class="img-responsive" alt="Screenshot of iPhone media hidden">
+        <p> Above are screenshots of what a media player looks like on the iPhone4s in the Photos app.</p>
+
+        <img src="images_media/iPhone_mediaPlayer.png" class="img-responsive" alt="Screenshot of iPhone media player">
+        <img src="images_media/iPhone_mediaHidden.png" class="img-responsive" alt="Screenshot of iPhone media hidden">
+        <p> Above are screenshots of what a media player looks like on the iPhone4s in the Video app.</p>
+        <p> One of the major differences in appearance is that the timeline for iOS is located on the top of the screen separate from the buttons </p> 
+
+        <p> <b> Video Media Player</b></p> 
+        <p>For iOS, different media players appear depending on which application you are currently in. The buttons though are very similar to the original. </p>
+
+        <h4> Behavior </h4>
+        <ul>
+            <li> For the iPhone instead of clicking, the user must tap in order to use the buttons. Also instead of hovering, the user must tap on the video in order for the controls to become hidden.</li> 
+
+            <li> Pinching gestures allow you to zoom in and out of video.</li>
+            <li> Depending on the user's settings, rotating the device allows the video to also rotate from a smaller view to a larger view. </li> 
+            <li> Volume controls can be altered by either sliding the volume bar or pressing the volume buttons located on the side of the device. </li>
+
+        </ul>
+    </div>
+  </div> 
+
+
+  <div class="col-sm-4">
+    <div class="well">
+        <h3> Android S5 </h3>
+          <h4> Music </h4>
+          <li> The ability to skip songs by swiping left or right on the album cover art </li>
+          <li> Tapping on a small star in the middle below the song’s information will add the song to your “Favorites” playlist. The star will light up, and if tapped again it will take the song off of your “Favorites” playlist and the star will turn off </li>
+          <li> A button on the bottom left will show you all of the song names in the current playlist, and a button on the bottom right will add the current song to a playlist. If no playlists have been made you can create a new playlist with the current song as the first entry </li>
+          <li> In addition to the volume controls on the left side of the phone, you can tap on the speaker icon in the top right to pull up a volume control slider, that goes from a max of fifteen to a muted zero </li>
+          <h4> Video </h4>
+          <li> A button on the bottom left changes the aspect ratio of the video </li>
+          <li> A button on the bottom right puts the video in a small moveable window so you can do other tasks on the phone while watching the video </li>
+          <li> In the settings, Chapter preview will give you screen shots about a minute and a half apart that will take you to that part of the video if you tap on them </li>
+    </div>
+  </div> 
+</div>
+
+<h4> References and Sources </h4>
+<p>Apple OSX Human Interaction Guidelines document https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW1 </p> 
+
