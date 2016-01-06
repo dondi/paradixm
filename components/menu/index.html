@@ -4,6 +4,9 @@ layout: component
 contributors:
     - name: Chris Franco
       github: cf7
+
+    - name: Ed Seim
+      github: SirSeim
 ---
 <p class="lead">Menus are probably the second most used components on a given graphical interface after buttons.</p>
 
@@ -438,3 +441,250 @@ contributors:
   <a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh700898.aspx">Windows Dev Center</a>
   <p>Nielsen, Jakob. <em>Usability Engineering</em>. San Diego: American Press, 1993. Print.</p>
 </blockquote>
+
+<hr>
+
+<p class="lead">One of the earliest ways of listing equivalent information, the menu displays information, one or more of which is to be selected to perform further action.</p>
+
+<h3>Typical Appearance</h3>
+
+<blockquote>A menu is a list of options or actions to be chosen or performed. The typical menu is stacked vertically. That is to say that each item is listed from top to bottom, typically in some order.</blockquote>
+
+<div class="row">
+  <div class="col-xs-6 col-md-4 col-lg-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">OS X Finder</h4>
+      </div>
+      <div class="panel-body">
+        <img src="Mac_Finder.png" class="img-responsive" alt="OS X Finder List">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-md-4 col-lg-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">OS X Messages</h4>
+      </div>
+      <div class="panel-body">
+        <img src="Mac_Messages.png" class="img-responsive" alt="OS X Messages List">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-md-4 col-lg-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">OS X Tweetbot</h4>
+      </div>
+      <div class="panel-body">
+        <img src="Mac_Tweetbot.png" class="img-responsive" alt="OS X Tweetbot List">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-md-4 col-lg-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">iOS Contacts</h4>
+      </div>
+      <div class="panel-body">
+        <img src="iOS_Contacts.jpg" class="img-responsive" alt="iOS Contacts List">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-md-4 col-lg-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">iOS Reminders</h4>
+      </div>
+      <div class="panel-body">
+        <img src="iOS_Reminders.jpg" class="img-responsive" alt="iOS Reminders List">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-md-4 col-lg-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">iOS Tweetbot</h4>
+      </div>
+      <div class="panel-body">
+        <img src="iOS_Tweetbot.jpg" class="img-responsive" alt="iOS Tweetbot List">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-md-4 col-lg-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Pebble Menu</h4>
+      </div>
+      <div class="panel-body">
+        <img src="Pebble_Menu.png" class="img-responsive" alt="Pebble Menu List">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-md-4 col-lg-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Pebble Old</h4>
+      </div>
+      <div class="panel-body">
+        <img src="Pebble_Old.png" class="img-responsive" alt="Pebble Old List">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-md-4 col-lg-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Pebble Timeline</h4>
+      </div>
+      <div class="panel-body">
+        <img src="Pebble_Timeline.png" class="img-responsive" alt="Pebble Timeline List">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+
+<h3>Typical Behavior</h3>
+
+<blockquote>
+  <p>A menu is typically presented for the purpose of selecting an action to perform, or selecting a particular item to use. </p>
+</blockquote>
+
+<h4>Events</h4>
+
+<p>The most relevant menu event is the <code>click</code>. A <code>click</code> event indicates that the user has selected a particular action or item from the list. Another event is the <code>hover</code>, indicating that a pointing device is explicitly within the button’s bounds. Another event is the <code>scroll</code>, displaying more options than what can be presented on the screen presently. Some platforms or implementations have included other components into an item, like a <code>swipe</code>, which can display alternative actions for the item, or a checkbox.</p>
+
+<h4>State Diagram</h4>
+
+<svg class="img-responsive center-block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="433px" height="163px" version="1.1" style="background-color: rgb(255, 255, 255);"><defs/><g transform="translate(0.5,0.5)"><rect x="201" y="1" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(219,25)"><switch><foreignObject pointer-events="all" width="83" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 83px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Enabled Item</div></div></foreignObject><text x="42" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="1" y="1" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(18,25)"><switch><foreignObject pointer-events="all" width="85" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 85px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Disabled Item</div></div></foreignObject><text x="43" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="201" y="101" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(218,125)"><switch><foreignObject pointer-events="all" width="85" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 85px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Selected Item</div></div></foreignObject><text x="43" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 321 31 L 331 31 Q 341 31 341 41 L 341 121 Q 341 131 334.18 131 L 327.37 131" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 322.12 131 L 329.12 127.5 L 327.37 131 L 329.12 134.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(348,75)"><switch><foreignObject pointer-events="all" width="77" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 86px; width: 77px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">scroll or hover</div></div></foreignObject><text x="39" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 201 131 L 171 131 Q 161 131 161 121 L 161 41 Q 161 31 171 31 L 194.63 31" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 199.88 31 L 192.88 34.5 L 194.63 31 L 192.88 27.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 201 131 L 171 131 Q 161 131 161 121 L 161 41 Q 161 31 151 31 L 127.37 31" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 122.12 31 L 129.12 27.5 L 127.37 31 L 129.12 34.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(169,75)"><switch><foreignObject pointer-events="all" width="25" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 36px; width: 25px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">click</div></div></foreignObject><text x="13" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g></g></svg>
+
+<h4>Component in Action</h4>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title text-center">iOS Contacts</h4>
+  </div>
+  <div class="panel-body">
+    <img src="iOS_Contacts_video.gif" class="img-responsive center-block" alt="iOS Contacts List">
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title text-center">Pebble Timeline</h4>
+  </div>
+  <div class="panel-body">
+    <img src="Pebble_Timeline_video.gif" class="img-responsive center-block" alt="Pebble Timeline List">
+  </div>
+</div>
+
+  </div>
+
+  <div class="col-sm-6">
+
+<h3>Variants</h3>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title text-center">Grid - Apple TV Homescreen</h4>
+  </div>
+  <div class="panel-body">
+    <img src="Apple_TV_Grid.jpg" class="img-responsive center-block" alt="Apple TV Grid">
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title text-center">Custom Content - OS X Color Picker</h4>
+  </div>
+  <div class="panel-body">
+    <img src="Color_Picker.png" class="img-responsive center-block" alt="OS X Color Picker">
+  </div>
+</div>
+
+<blockquote>These are only a few of the many interfaces that can be used to display options or actions. Depending on the content displayed, it may be better to create a custom interface. In the case of the OS X color picker, instead of listing names of colors in a standard menu, they opted to recreate a crayon box and visually display what the available colors are. In the case of the Apple TV, while you could simply list all possible apps, they opted for a grid to take better advantage of the wide aspect ratio of a TV. </blockquote>
+
+<h3>Priority Metrics</h3>
+
+<p>The basic menu being a fundamental component since the creation of the command-line interface, it has had plenty of time to mature and is on virtually every platform. As such, all usability metrics are important to it. The origins of menus date back to the days of pen and paper, as an easy way to organize equivalent information.</p>
+
+<p>Users who are seeing a menu for the first time are immediately familir with its use by its similarity to the pen and paper. This makes learnability easy as the concept is present from childhood. Between platforms and across time, the fundamentals of a basic menu haven't changed which maximizes memorability.</p>
+
+<p>Users must have no delays with using menus because it is the intermediate step between choosing an action or item and that action being performed or moving on with the item selection. Efficiency is of the essenence here. The primary time consumer is the scrolling of a manu that cannot fit onto the screen in its entirety. Depending on the platform, the scrolling event must be responsive.</p>
+
+<p>Users should never select an item in the menu by mistake. This is more in the realm of the interface component that is used within the item in the menu than the menu itself. However, for example, scrolling the menu should not be mistaken for selecting a particular item. This is up to the platform to make sure that the compents that can be used within items don't conflict with the menu itself.</p>
+
+<h3>Key Characteristics</h3>
+
+<h4>Feedback</h4>
+
+<p>Perhaps the most important interaction design principle that a menu must follow is <em>feedback</em>. Users must
+  never doubt whether:</p>
+
+<ol>
+  <li>the scroll event was performed and the listings changes displayed</li>
+  <li>the item they have currently selected (for platforms needing abstract pointing)</li>
+  <li>the action being performed on a particular item (dependant on the platform and the available actions for an item)</li>
+</ol>
+
+<h4>Pebble Guidelines</h4>
+
+<p>According the Pebble design guidelines, some of the most important parts of the interface should be the speed of the interaction. Something else they emphasize is the the creation of a unique UI that isn't necessarily dependent on the Pebble UI. Simplicity is king.</p>
+
+<h4>iOS Guidelines</h4>
+
+<p>According to the iOS Guidelines, the most basic menu is the Table View. It displays data by dividing data into rows. The most basic type is plain, which options for a header, a footer, and an index that can be presented along the side of the list to more easily navigate the list. The second general type is grouped, whereby each group can have a header and/or footer. An index is not typical for this type.</p>
+
+  </div>
+</div>
+
+<h3>Platform-Specific Instances</h3>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">iOS</h4>
+      </div>
+      <div class="panel-body">
+        <center>
+          <img src="iOS_Contacts.jpg" class="img-responsive" alt="iOS Contacts List">
+          <img src="iOS_Reminders.jpg" class="img-responsive" alt="iOS Reminders List">
+          <img src="iOS_Tweetbot.jpg" class="img-responsive" alt="iOS Tweetbot List">
+        </center>
+        <p>With iOS, Apple was able to create the first direct interaction between a person and the content they are manipulating. Instead of having some device like a mouse or click wheel be the abstraction between the human interaction and the menu, the interface revolves around the direct interaction between the person and the content by way of finger touching. The event of scrolling is done by way of pushing the content on the screen up and down the screen. </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Pebble</h4>
+      </div>
+      <div class="panel-body">
+        <center>
+          <img src="Pebble_Menu.png" class="img-responsive" alt="Pebble Menu List">
+          <img src="Pebble_Old.png" class="img-responsive" alt="Pebble Old List">
+          <img src="Pebble_Timeline.png" class="img-responsive" alt="Pebble Timeline List">
+        </center>
+        <p>With Pebble, in the name of preserving battery life and minimizing user error, they decided to go with interaction by way of physical buttons along the side of the device, a touchscreen of that size argued as being a bit too clunky to hit the item you intend with your fingers.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Credits &amp; References</h3>
+
+<blockquote>Provide references or links to any information, image, or media sources used.</blockquote>
+
