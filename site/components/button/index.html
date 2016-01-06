@@ -4,6 +4,9 @@ layout: component
 contributors:
     - name: Adrian Lu
       github: adrianlu95
+
+    - name: Bryan Ku
+      github: bku14
 ---
 <link rel="stylesheet" type="text/css" href="hotess.css"> 
 <p class="lead">Virtual buttons are a very widely used graphical interface element that emulates real world pressable buttons.</p>
@@ -167,3 +170,175 @@ contributors:
 <h3>Credits &amp; References</h3>
 
 <blockquote>Button1.gif: http://microsoft-news.com/ <br> https://www.google.com/design/spec/material-design/introduction.html</blockquote>
+
+<hr>
+
+<h3>Possibly the most important component of any user interface is the button, 
+something which triggers an action.</h2>
+
+<div class="row">
+  <div class="col-xs-6">
+
+<h3>Typical Appearance</h3>
+
+<blockquote>Buttons tend to look similar throughout many platforms. Usually they are rectangular 
+and have a word or an image in them indicating what clicking on the button will actually do.</blockquote>
+
+<h3>Typical Behavior</h3>
+
+<blockquote>
+  <p>Buttons are sometimes highlighted according to the typical action that a user will take. 
+For example,the buttons OK and CANCEL might be right next to each other on a page, but it is 
+likely that OK will be highlighted while CANCEL will not be. </p>
+
+</blockquote>
+
+<h4>Events</h4>
+<blockquote>
+<p>A button's event is simply the function of a particular button. </p>
+
+<p>There are two common button events. The first is the "click". This event notifies the computer 
+that the button has been triggered and the user wants the computer to perform whatever that button 
+is there for. The second event is "hover." If the user interface is well-made, when the user hovers
+over a button, the mouse pointer will change shape to let the user know that there is an option
+for a "click" event to occur. </p>
+</blockquote>
+<h4>State Diagram</h4>
+
+<blockquote>
+  <p>Buttons typically have anywhere between two main states and possibly 2 substates, depending on the device being used. 
+The states are as follows: <code>static<code/>, <code>disabled<code/>, <code>hover<code/>, and <code>active<code/>. </p>
+
+  <p>In the <code>static<code/> state, which is the idle or enabled state, the button is ready to be clicked. The <code>disabled<code/>
+state is that in which the user is not interacting with a button, or if the button has already been clicked it may not be clicked 
+again. </p>
+
+
+  <p>When a button is in it's <code>static</code> state, additional states may be triggered. They are: </p>
+  <ul>
+  <li><code>hover</code>: This is the state in which the mouse hovers over the button and either changes the button's color or the pointer's shape
+to let the user know that the button is ready to be clicked.</li>
+
+  <li><code>active</code>: This state occurs when a button has already been triggered, or clicked and is attempting to complete it's
+action. </li>
+</ul>
+
+  <img src = "http://www.howdesign.com/wp-content/uploads/8_buttons1.png">
+</blockquote>
+<h4>Component in Action</h4>
+
+<blockquote>
+
+  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
+</blockquote>
+
+<p class="text-center">
+  <button class="btn btn-default">OK</button>
+  <button class="btn btn-default disabled">Disabled</button>
+  <button class="btn btn-success">Success</button>
+  <button class="btn btn-danger">Delete</button>
+</p>
+
+  </div>
+
+<div class = "row">
+  <div class="col-xs-6">
+<h3>Variants</h3>
+
+<blockquote>There are many variations of buttons, there isn't just one type. There are 3 main variations and they are as
+follows: </blockquote>
+
+<ul>
+  <li><em>Buttons</em> indicate an action upon touch and are typically labeled using a text, icon or both.
+ are very close to buttons in behavior—they perform individual action elements upon simple
+    invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
+    different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
+
+  <li><em>Dropdown Buttons</em> consist of a button that when clicked displays a drop-down list of mutually exclusive items.  
+  They sometimes resemble a menu and are sometimes referred to as Menu Buttons. 
+      <p>
+         <img src= "dropdown.jpg" WIDTH=80 HEIGHT=80> </p>
+     
+  
+  <li><em>Toggles</em> allow the user to change a setting between two different states. Toggle buttons are most effective 
+  when the on/off states are visually distinct. 
+     <div class="container">
+        <label class="switch">
+         <input type="checkbox" class="switch-input">
+         <span class="switch-label" data-on="On" data-off="Off"></span>
+         <span class="switch-handle"></span>
+        </label>
+  
+  <li><em>Links</em> allow the user to navigate to a different page with just the one click. Links are very easily 
+distinguishable from other buttons because they are usually underlined, blue, and when a mouse pointer hovers over them
+the mouse becomes a hand icon. </li> 
+<a href="www.yahoo.com">www.yahoo.com</a>
+</ul>
+
+<h3>Priority Metrics</h3>
+<blockquote>
+<p>Learnability/Memorability: Buttons are basically a part of every single user interface used today. Because of this buttons should on the most part
+be universal. As mentioned above, the typical appearance of a button is a simple shape with some text or an icon inside of it.
+Since buttons are typically the same throughout all platforms, it should not be difficult for users to be able to figure
+out how to use buttons. 
+</p>
+
+<p>Efficiency/Errors: Each button has one action to complete, thus once clicked the action should be performed fairly quickly. 
+There should be no delay or too much time waste from the time where the user knows what they want to do and when they actually 
+click the button. Relating to that, buttons should be well-labeled and in a position where users will not accidentally mistake
+one button for another. For example, everyone knows the placement of the OK and CANCEL buttons, so if one platform were to decide
+to switch those, a lot of users would do the wrong action. 
+</p>
+
+<p>Satisfaction: Users do not really find any satisfaction in clicking buttons so this metric is not completely applicable to 
+buttons. On the other hand, sometimes buttons do crazy things, for example, Google's "I'm feeling lucky" button sometimes shows 
+fireworks on the screen, but it won't do that every time. Besides that, satisfaction does not really apply. </p>
+</blockquote>
+<blockquote>
+<h4>Feedback</h4>
+
+<p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
+  never doubt whether:</p>
+
+<ol>
+  <li>they did positively trigger a button (and thus its associated action)</li>
+  <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
+    the action that triggers the button</li>
+</ol>
+  </div>
+
+</blockquote>
+<h3>Platform-Specific Instances</h3>
+
+<blockquote> 
+<h3>Windows 10 </h3>
+
+  <p>As mentioned above, even for Windows 10 buttons, buttons are typically rectangular but sometimes may either have mildly 
+rounded corners or really sharp edges. The default button has a blue dotted line around it. Windows also tends to draw attention 
+to more important buttons by either highlighting or making the button bigger. 
+</p>
+
+  <p>Typically the EXIT, MINIMIZE, and MAXIMIZE controls are all at the upper right hand corner of the window. </p>
+
+  <p>Windows also color-codes a lot of their buttons. For example, RED will be used for <code>SHUT DOWN</code> because RED is a 
+danger color and lets the user know that once they click that button there is no going back. YELLOW will be used for <code>LOG OFF</code>
+warning the user that this is a semi-critical button. Then there are other buttons such as HELP that are a soft blue color 
+because pressing them will not do anything to your program. 
+
+<p> Windows has recently created a completely different way to display buttons, applications and commands on their screen. Clicking one
+one of these buttons will navigate the user to a different page.</p>
+ 
+<img src= "http://www.windows10beta.net/wp-content/uploads/2015/03/Windows-8-User-Interface-600x375.png">
+
+
+
+<h3>Credits &amp; References</h3>
+
+<blockquote>
+<p>http://usabilitypost.com/2009/04/15/8-characteristics-of-successful-user-interfaces/#efficient</p>
+
+<p>http://foundation.zurb.com/docs/components/dropdown_buttons.html</p>
+
+<p>http://www.howdesign.com/web-design-resources-technology/helping-users-navigate-websites/</p>
+
+</blockquote>
