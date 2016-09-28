@@ -29,4 +29,26 @@ layout: base
         but we have to start somewhere, right?</p>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Catalog of Component Articles</h2>
+
+      <p class="lead">The project is in a very early stage, so some articles might not yet be available.</p>
+    </div>
+  </div>
+
+  <div class="row">
+{% for group in site.data.catalog %}
+    <div class="col-lg-2 col-sm-3 col-xs-4 component-nav">
+      <h3>{{ group.group }}</h3>
+
+      <ul class="nav nav-pills nav-stacked">
+  {% for component in group.components %}
+        <li><a href="{{ site.baseurl }}/components/{{ component.path }}">{{ component.name }}</a></li>
+  {% endfor %}
+      </ul>
+    </div>
+{% endfor %}
+  </div>
 </div>
