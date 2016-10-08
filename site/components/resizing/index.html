@@ -4,21 +4,30 @@ layout: component
 contributors:
     - name: Chris Dellomes
       github: cjdellomes
+    - name : Eileen Choe
+      github: eileenchoe
 ---
 
-<p class="lead">A critical feature of GUI based operating systems is the ability to resize a window.</p>
+<p class="lead">A critical feature of GUI-based operating systems is the ability to change the dimensions of elements.</p>
 
 <div class="row">
   <div class="col-sm-6">
 
     <h3>Typical Appearance</h3>
-      <p>Resizing is typically indicated by a change in the size of the affected window. When resizing with the mouse, the mousce icon will usually change from a pointer to multiple arrows, similar to the image below.</p>
-      <img src="http://www.computerhope.com/jargon/d/doubarro.gif" alt="resize_pointer" height="100" width="100">
+      <blockquote>The arrow mouse cursor and resize buttons are the most common tools for element resize across multiple platforms.</blockquote>
+      <p>Additionally, the most common element that a user resizes is the application window, thus typical appearance of resize components will reference those used for window resize. The resize of different elements require different interaction styles and are explored in the "variants" section.</p>
+      <h4>Arrow Mouse Cursor</h4>
+        <p>The dimensions of a window can be resized by manually changing the dimensions of the window. Manual resize mode is visually represented by a change in the mouse cursor icon's apprearance from a pointer to an arrow. The orientation of the arrow, indicates the direction of resize, whether horizontal, veritical or diagonal. Examples of arrow icons are shown below.</p>
+        <em>INSERT IMAGE OF ARROWS</em>
+      <h4>Resize Buttons</h4>
+        <p>Windows can be resized automatically to fit the size of the screen. Buttons, typically located at the top of the window, accomplish this functionality</p>
+        <em>INSERT IMAGE OF BUTTONS</em>
 
     <h3>Typical Behavior</h3>
-      <p>Windows are typically resized by clicking one of the edges and dragging the mouse to the desired shape. They may alternatively be resized by accessing the window menu. For minimizing and maximizing windows, users may use the buttons at the top of the window to minimize or maximize the window size.</p>
+      <p>Windows are manually resized by clicking a point on along the parameter of the window, and dragging the mouse accordingly to get the window to the desired shape. Windows may alternatively be automatically resized through resize buttons on the window menu, which typically minimize or maximize the window.</p>
 
     <h4>Events</h4>
+      <p>Standby - Hover (Reveal transformation options) - Click - (for direct) Choose Output State - Release Click - Resized - Standby</p>
       <p>The most relevent resize event is the <code>resize</code> event. A <code>resize</code> event is triggered when the size of the window has been changed. While maximizing or minimizing a window, a <code>minimize</code> or <code>maximize</code> event may also be triggered.</p>
 
     <h4>State Diagram</h4>
@@ -33,10 +42,28 @@ contributors:
   <div class="col-sm-6">
 
     <h3>Variants</h3>
-      <p>Window resizing has remained relatively the same since the introduction of windows in GUI baed operating systems. The basic characteristics of dragging edges and corners, minimizing, and maximizing have remained the primary method of window resizing.</p>
+      <blockquote>The interface behaviors of resize can vary, depending on the element that is being resized</blockquote>
+      <ul>
+        <li>
+          <em>Icon Resize</em>
+          Resizing an icon can be accomplished by...
+        </li>
+        <br>
+        <li>
+          <em>Text Resize</em>
+          Resize text...
+        </li>
+        <li>
+          <em>Image Resize</em>
+          Resize images...
+        </li>
+        <li>
+          <em>Split Screen</em>
+          A function of the resize buttons is to allow for a full screen tiling of two windows to maximize the screen space use. In split screen mode, users can manually resize the windows by shifting the separation bar between the two windows. An in depth discussion of this interaction style is found here. 
+        <br>
 
     <h3>Priority Metrics</h3>
-      <p>Since it is a critical aspect of any GUI based operating system, most of the priority metrics are vital in this component's design analysis. Users who intend to resize a window must have no confusion as to how to accomplish the task. In the physical world, the natural way of unfolding or unrolling a piece of paper is to pull from either the sides or the corners. Resizing follows this natural way of thinking by allowing the user to increase or decrease the size from the corners and sides of the window, making the process simple to learn. Also, since resizing follows the natural mental model, the way in which the user resizes windows is easily memorable.</p>
+      <p>Resize is a critical and commonly used aspect of any GUI-based operating system. When evaluating this interaction component against Ben Shneiderman's five usability metrics outlined in his book <em>Designing the User Interace</em>, the most important metrics for resize are learnability, efficiency, errors, while less important are: memorability and satisfaction. Since it is a critical aspect of any GUI based operating system, most of the priority metrics are vital in this component's design analysis. Users who intend to resize a window must have no confusion as to how to accomplish the task. In the physical world, the natural way of unfolding or unrolling a piece of paper is to pull from either the sides or the corners. Resizing follows this natural way of thinking by allowing the user to increase or decrease the size from the corners and sides of the window, making the process simple to learn. Also, since resizing follows the natural mental model, the way in which the user resizes windows is easily memorable.</p>
 
       <p>Since window resizing corresponds to either mouse input or window menu input, the response is immediate. Since window resizing is easily learnable and highly memorable, it is unlikely that users commit errors when attempting the task.</p>
     
