@@ -153,13 +153,41 @@
   <div class="col-sm-6">
 
 <h3>Typical Appearance</h3>
+  <p>As mentioned above, any form of data representation that makes use of columns and rows can be termed a table. While the overall structure of tables tends to remain uniform across platforms, there may be several aesthetic differences between table representations. Images may be used in conjunction with data, rows or elements may appear selectable, etc.</p>
 
-<blockquote>As mentioned earlier, any form of data representation that makes use of columns and rows can be termed a table. While the overall structure of tables tends to remain uniform across platforms, there may be several aesthetic differences between table representations. Images may be used in conjunction with data, rows or elements may appear selectable, etc.</blockquote>
+  <p>Below is a simple table listing the primary colors and their hex values.</p>
 
+
+<p class="text-center">
+  <table class = "table">
+  <caption>Basic Color Table</caption>   
+    <thead>
+      <tr>
+        <th>Color</th>
+        <th>Hex Value</th>
+      </tr>     
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Red</td>
+        <td>#FF0000</td>
+      </tr>
+      
+      <tr>
+        <td>Green</td>
+        <td>#00FF00</td>
+      </tr>
+      
+      <tr>
+        <td>Blue</td>
+        <td>#0000FF</td>
+      </tr>
+    </tbody>    
+  </table>
+</p>
 
 <h3>Typical Behavior</h3>
-
-<blockquote>
   <p>There are two kinds of separate behaviors that are typically seen in tables.</p>
 
   <p>The first is that of a read-only data table used simply to showcase data in a grid. Some platforms may allow for sorting of the contents within by alphabetical order, creation/modification date, etc.</p>
@@ -167,16 +195,10 @@
   <p>The second is data entry tables, in which a user is welcome to input content into the grid. Depending on the table's functionality, inputs may be able to affect or directly address the contents of other cells within the row/column grid (Notable examples of this kind of behavior are Microsoft Excel and Google Sheets).</p>
 
   <p>These behaviors may overlap depending on the platform or application in use.</p>
-</blockquote>
 
 <h4>Events</h4>
 
-<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
-
-<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
-  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
-  within the button’s bounds.</p>
+<p>Events related to tables vary depending on their functionality. For read-only tables as shown in the 'typical appearance' section, one may find it to contain only static text. Perhaps a <code>hover</code> event will be included to highlight selections. For data entry tables, <code>click</code> will be used to select cells, and the primary event will be <code>input</code> for inputting data. Events such as <code>drag</code> and <code>drop</code> may also be used to manipulate data.</p> 
 
 <h4>State Diagram</h4>
 
@@ -210,56 +232,64 @@
 
 <h4>Component in Action</h4>
 
-  <blockquote><p>A typical read-only table is shown below, listing the hex values corresponding to the primary colors.</p>  </blockquote>
+ <p>A typical read-only table is shown below, listing the hex values corresponding to the primary colors.</p> 
 
-<p class="text-center">
-    <table class = "table">
-        <caption>Basic Color Table</caption>   
-        <thead>
-            <tr>
-                <th>Color</th>
-                <th>Hex Value</th>
-            </tr>     
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>Red</td>
-                <td>#FF0000</td>
-            </tr>
-      
-            <tr>
-                <td>Green</td>
-                <td>#00FF00</td>
-            </tr>
-      
-            <tr>
-                <td>Blue</td>
-                <td>#0000FF</td>
-            </tr>
-        </tbody>    
-        </table>
-</p>
 
   </div>
 
   <div class="col-sm-6">
 <h3>Variants</h3>
 
-<blockquote>There is almost never just one form of a user interface component. Use this section to address variations
-  on this theme. Some variations are sufficiently different that they are considered to be a different component
-  entirely, despite very similar behavior. Meanwhile some variations are due to appearance only.</blockquote>
-
 <ul>
-  <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
-    invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
-    different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
+  <li><em>Read-only tables:</em> Simple representations of data sets. May be comprised entirely of text. It is not uncommon for some to use <code>hover</code> events to improve selection visibility, or to allow one to sort data by row or column headers.</li>
 
-  <li><em>Links</em> can be considered as a specialized button—they are invoked almost identically, and their action
-    is even more narrowly defined as moving the user to a different view or display. The distinction here is
-    definitely less sharp than the distinction between a menu item and a button. For links within a document, the
-    document might be viewed as a menu in itself, and thus links are “menu items” indicating what the user can view
-    next. Thus, in some ways, links are hybrids between buttons and menu items.</li>
+<p class="text-center">
+  <table class = "table table-hover">
+  <caption>Capital Cities</caption>   
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>City</th>
+      </tr>     
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>France</td>
+        <td>Paris</td>
+      </tr>
+      
+      <tr>
+        <td>Uruguay</td>
+        <td>Montevideo</td>
+      </tr>
+      
+      <tr>
+        <td>Canada</td>
+        <td>Ottawa</td>
+      </tr>
+
+      <tr>
+        <td>Austria</td>
+        <td>Vienna</td>
+      </tr>
+    </tbody>    
+  </table>
+</p>
+
+
+  <li><em>Data-entry tables:</em> Prominent examples of applications which revolve around these are Excel and Google Sheets. They allow users to input and manipulate their own data. In the case of Excel and Google sheets, cells can refer to each other, allowing for calculations to be performed while keeping the data organized.</li>
+
+  <p class="text-center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Spreadsheet_animation.gif" alt="Spreadsheet animation">
+  </p>
+
+  <li><em>Navigation tables:</em> These are most similar to menus in that elements in the grid can typically be clicked to traverse a system. In this manner, when there are links or folders involved, the navigation structure has the form of a tree. Windows's file explorer typically takes this form as a default. The representation of each 'navigation stage', however, is that of a table, with the elements themselves in the rows of one column, and the corresponding rows in other columns holding data such as modification dates, fyle types and sizes.</li>
+
+  <p class="text-center">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f0/Windows_Explorer_Vista.png" alt="Windows Explorer">
+  </p>
+
 </ul>
 
 <h3>Priority Metrics</h3>
@@ -325,45 +355,14 @@
 </blockquote>
 
 <div class="row">
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Alto</h4>
-      </div>
-      <div class="panel-body">
-      </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title text-center">Windows 10</h4>
     </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Amiga</h4>
-      </div>
-      <div class="panel-body">
-      </div>
+    <div class="panel-body">
+      <p>File explorer</p>
     </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Material Design</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">watchOS</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
+  </div> 
 </div>
 
 <h3>Credits &amp; References</h3>
