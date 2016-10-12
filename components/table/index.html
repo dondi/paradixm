@@ -134,45 +134,39 @@
 
 
         <div class="container" role="main">
-      <h2>Component Name</h2>
+      <h2>Tables</h2>
 
 <dl class="dl-horizontal">
   <dt>Contributor</dt>
   <dd>
     <ul class="list-inline">
       
-      <li><a href="https://github.com/ixdesigner-on-github">I. X. Designer</a></li>
+      <li><a href="https://github.com/ixdesigner-on-github">Andres Lazo</a></li>
       
     </ul>
   </dd>
 </dl>
 
-<blockquote>This file is meant to serve as a template sample for articles in the Paradixm component catalog.
-  Instructions/directives are presented in block quotes and sample text is included in line, as if it were actual
-  content for this page. Section headings are not samples but actual recommended titles.</blockquote>
-
-<blockquote>Start your component pages with a quick description of the component, such as:</blockquote>
-
-<p class="lead">Quite possibly the single most common graphical user interface element, the push button triggers a
-  single action within an application.</p>
+<p class="lead">Tables are a manner of data representation similar to lists which organize elements by means of rows and columns. This allows for efficient organization of data elements and their properties. </p>
 
 <div class="row">
   <div class="col-sm-6">
 
 <h3>Typical Appearance</h3>
 
-<blockquote>If a component is sufficiently widespread that it takes on a recognizable look across multiple platforms,
-  provide it here. If its appearance varies extremely widely, say so and direct the reader to platform-specific
-  instances.</blockquote>
+<blockquote>As mentioned earlier, any form of data representation that makes use of columns and rows can be termed a table. While the overall structure of tables tends to remain uniform across platforms, there may be several aesthetic differences between table representations. Images may be used in conjunction with data, rows or elements may appear selectable, etc.</blockquote>
+
 
 <h3>Typical Behavior</h3>
 
 <blockquote>
-  <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
-    here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
-    reader to the platform-specific sections.</p>
+  <p>There are two kinds of separate behaviors that are typically seen in tables.</p>
 
-  <p>Helpful subsections include:</p>
+  <p>The first is that of a read-only data table used simply to showcase data in a grid. Some platforms may allow for sorting of the contents within by alphabetical order, creation/modification date, etc.</p>
+
+  <p>The second is data entry tables, in which a user is welcome to input content into the grid. Depending on the table's functionality, inputs may be able to affect or directly address the contents of other cells within the row/column grid (Notable examples of this kind of behavior are Microsoft Excel and Google Sheets).</p>
+
+  <p>These behaviors may overlap depending on the platform or application in use.</p>
 </blockquote>
 
 <h4>Events</h4>
@@ -216,15 +210,35 @@
 
 <h4>Component in Action</h4>
 
-<blockquote>
-  <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
-
-  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
-</blockquote>
+  <blockquote><p>A typical read-only table is shown below, listing the hex values corresponding to the primary colors.</p>  </blockquote>
 
 <p class="text-center">
-  <button class="btn btn-default">Standard Bootstrap Button</button>
-  <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
+    <table class = "table">
+        <caption>Basic Color Table</caption>   
+        <thead>
+            <tr>
+                <th>Color</th>
+                <th>Hex Value</th>
+            </tr>     
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Red</td>
+                <td>#FF0000</td>
+            </tr>
+      
+            <tr>
+                <td>Green</td>
+                <td>#00FF00</td>
+            </tr>
+      
+            <tr>
+                <td>Blue</td>
+                <td>#0000FF</td>
+            </tr>
+        </tbody>    
+        </table>
 </p>
 
   </div>
