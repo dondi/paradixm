@@ -11,8 +11,6 @@ contributors:
 
 
 
-<blockquote>Start your component pages with a quick description of the component, such as:</blockquote>
-
 <p class="lead">Graphical user interface to visually display a list or array of data. A common interaction that adds utility in mobile devices.</p>
 
 <div class="row">
@@ -20,9 +18,6 @@ contributors:
 
 <h3>Typical Appearance</h3>
 
-<blockquote>If a component is sufficiently widespread that it takes on a recognizable look across multiple platforms,
-  provide it here. If its appearance varies extremely widely, say so and direct the reader to platform-specific
-  instances.</blockquote>
 
 <p>The list from an interaction design perspective has a very literal appearance,
   normally with a light colored background, and thin black bordered rows.
@@ -31,42 +26,28 @@ contributors:
   displaying a "list" or set of data. This data can be shown in an alphabetical
   order such as a list of contacts or unordered like a list of groceries. </p>
 
-<p>The list from an interaction design perspective has a very literal
-  appearance, normally with a light colored background,
-    and thin black bordered rows. Most lists tend to be navigable, with the
-    title of the list, and an option to add more entries.
-    Lists can be found in various applications that involve displaying a "list"
-    or set of data. This data can be shown in an alphabetical order such as a
-    list of contacts or chronological order based on how recent an entry of data
-    has been editted or
-    appended. </p>
-
-
 <h3>Typical Behavior</h3>
 
-<blockquote>
   <p>Able to view or display a certain amount of elements at a time. Add or
     delete entries from anywhere on the list. List normally have a title
     associated to describe the purpose of the list. List can describe procedures
     in an ordered fashion or display data with bullet points in an unordered
     fashion.</p>
 
-</blockquote>
+
 
 <h4>Events</h4>
 
-<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
 
-<p>Adding or deleting an element to a list is an example of a event. 
-   Users can specify if they wish the list to be ordered or unordered. The user may wish to sort their list using user-defined conditions. 
+<p>Adding or deleting an element to a list is an example of a event.
+   Users can specify if they wish the list to be ordered or unordered. The user may wish to sort their list using user-defined conditions.
    A element of a list can be <code>highlighted</code> or <code>disabled</code>. A <code>tag</code> can be added to element of a list to display modifications or activity.
    </p>
 
-<h4>State Diagram</h4>
-
+<h4> Highlighted List State:</h4>
+<p> Often times, an element on a list may be highlighted to show the user
+that the element is currently selected or active.</p>
 <blockquote>
-<p> Highlight List State</p>
 <div class="list-group">
   <a href="#" class="list-group-item active">
     Cras justo odio
@@ -76,7 +57,9 @@ contributors:
   <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
   <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
 </div>
-<p> Disabled List State</p>
+</blockquote>
+<h4> Disabled List State:</h4>
+  <blockquote>
   <div class="list-group">
   <a href="#" class="list-group-item disabled">
     Cras justo odio
@@ -86,7 +69,9 @@ contributors:
   <a href="#" class="list-group-item">Porta ac consectetur ac</a>
   <a href="#" class="list-group-item">Vestibulum at eros</a>
 </div>
-<p> Tag State</p>
+</blockquote>
+<h4> Tag List State:</h4>
+<blockquote>
 <ul class="list-group">
   <li class="list-group-item">
     <span class="tag tag-default tag-pill pull-xs-right">14</span>
@@ -101,7 +86,6 @@ contributors:
     Morbi leo risus
   </li>
 </ul>
-<p> 
 </blockquote>
 
 <p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
