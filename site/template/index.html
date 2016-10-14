@@ -51,7 +51,6 @@ contributors:
     in an ordered fashion or display data with bullet points in an unordered
     fashion.</p>
 
-  <p>Helpful subsections include:</p>
 </blockquote>
 
 <h4>Events</h4>
@@ -59,20 +58,50 @@ contributors:
 <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
   highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
 
-<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
-  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
-  within the button’s bounds.</p>
+<p>Adding or deleting an element to a list is an example of a event. 
+   Users can specify if they wish the list to be ordered or unordered. The user may wish to sort their list using user-defined conditions. 
+   A element of a list can be <code>highlighted</code> or <code>disabled</code>. A <code>tag</code> can be added to element of a list to display modifications or activity.
+   </p>
 
 <h4>State Diagram</h4>
 
 <blockquote>
-  <p>A state diagram indicating the actions and states of a user interface component.</p>
-
-  <p>This is most likely an image. Bonus props if you use SVG.</p>
-
-  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
-    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
-    however, may have more activities than the “public” events that can be reported by a component.</p>
+<p> Highlight List State</p>
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    Cras justo odio
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+</div>
+<p> Disabled List State</p>
+  <div class="list-group">
+  <a href="#" class="list-group-item disabled">
+    Cras justo odio
+  </a>
+  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item">Morbi leo risus</a>
+  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item">Vestibulum at eros</a>
+</div>
+<p> Tag State</p>
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="tag tag-default tag-pill pull-xs-right">14</span>
+    Cras justo odio
+  </li>
+  <li class="list-group-item">
+    <span class="tag tag-default tag-pill pull-xs-right">2</span>
+    Dapibus ac facilisis in
+  </li>
+  <li class="list-group-item">
+    <span class="tag tag-default tag-pill pull-xs-right">1</span>
+    Morbi leo risus
+  </li>
+</ul>
+<p> 
 </blockquote>
 
 <p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
