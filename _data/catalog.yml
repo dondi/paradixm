@@ -21,6 +21,9 @@
     - name: Command Loop
       path: command-loop
 
+    - name: Web
+      path: web
+
 - group: Structured
   components:
     - name: Date & Time
