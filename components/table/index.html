@@ -202,15 +202,52 @@
 
 <h4>State Diagram</h4>
 
-<blockquote>
-  <p>A state diagram indicating the actions and states of a user interface component.</p>
+Below is a state diagram for a simple table with hover, sorting, and basic data input functionalities.
 
-  <p>This is most likely an image. Bonus props if you use SVG.</p>
-
-  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
-    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
-    however, may have more activities than the “public” events that can be reported by a component.</p>
-</blockquote>
+<svg width="640.0000000000001" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000000" ry="54.5" rx="59.5" id="svg_1" cy="87.46679" cx="162.26172" fill="#ffffff"/>
+  <ellipse id="svg_2" stroke="#000000" ry="54.5" rx="59.5" cy="386.375" cx="409.1875" fill="#ffffff"/>
+  <ellipse id="svg_3" stroke="#000000" ry="54.5" rx="59.5" cy="386.375" cx="146.1875" fill="#ffffff"/>
+  <line id="svg_8" y2="323.375" x2="161.1875" y1="151.80858" x1="161.17187" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke="#000000"/>
+  <line id="svg_14" y2="152.51174" x2="160.80463" y1="159.08596" x1="155.8476" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke="#000000"/>
+  <line id="svg_15" y2="322.56251" x2="161.43745" y1="317.53517" x1="167.30854" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke="#000000"/>
+  <line id="svg_17" y2="318.83598" x2="155.10936" y1="322.94926" x1="160.9453" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke="#000000"/>
+  <line id="svg_27" y2="340.68752" x2="365.74996" y1="150.28128" x1="206.14057" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke="#000000"/>
+  <line id="svg_28" y2="155.34377" x2="205.1562" y1="148.03127" x1="205.7187" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="none"/>
+  <line id="svg_32" y2="150.70314" x2="211.3437" y1="149.01564" x1="205.7187" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="none"/>
+  <text xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" id="svg_34" y="95.90432" x="162.26949" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">Display</text>
+  <text fill="#000000" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="441.50732" y="30.5799" id="svg_4" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.5227442383766174,0,0,0.4074074029922485,-118.43177283089608,231.7037045955658) " stroke="#000000">Mouse over</text>
+  <text fill="#000000" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="146.03901" y="394.81252" id="svg_9" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve">Hover</text>
+  <text fill="#000000" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="409.19527" y="394.81252" id="svg_10" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve">Input</text>
+  <line fill="none" stroke="#000000" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="212.18745" y1="384.56252" x2="346.06245" y2="385.68752" id="svg_12"/>
+  <line fill="none" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="341.45697" y1="380.02737" x2="346.06244" y2="385.68752" id="svg_13" stroke="#000000"/>
+  <line fill="none" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="341.63277" y1="391.4883" x2="345.49996" y2="386.25002" id="svg_19" stroke="#000000"/>
+  <text fill="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="414.82048" y="221.43752" id="svg_22" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.49322372674942017,0,0,0.5833333134651184,138.92796428408474,94.37500450015068) " stroke="#000000">Click outside cell</text>
+  <text fill="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="518.94755" y="237.67243" id="svg_23" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.4656991958618164,0,0,0.6041666865348816,129.78500470519066,102.34765111282468) " stroke="#000000">(Exact &#x27;finalize input' trigger</text>
+  <text fill="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="303.96637" y="227.14994" id="svg_24" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.5038862182445314,0,0,0.5074404307774145,234.2340153802028,149.54772488134216) " stroke="#000000">dependant on table)</text>
+  <line fill="none" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="215.56253" y1="407.2031" x2="208.39065" y2="400.87497" id="svg_29"/>
+  <line fill="none" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="215.9844" y1="394.12497" x2="208.81253" y2="400.4531" id="svg_30"/>
+  <line fill="none" stroke="#000000" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="209.93749" y1="401.36718" x2="343.81249" y2="402.49218" id="svg_31"/>
+  <line fill="none" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="339.20701" y1="396.83202" x2="343.81248" y2="402.49218" stroke="#000000" id="svg_33"/>
+  <line fill="none" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="339.38281" y1="408.29296" x2="343.25" y2="403.05468" stroke="#000000" id="svg_35"/>
+  <text fill="#000000" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="751.87904" y="469.20028" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.5227442383766174,0,0,0.4074074029922485,-118.43177283089608,231.7037045955658) " stroke="#000000" id="svg_36">Mouse over</text>
+  <line y2="152.21485" x2="161.24609" y1="158.47266" x1="167.36328" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke="#000000" id="svg_5"/>
+  <text fill="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="306.03507" y="393.19398" id="svg_6" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.5952360802421026,0,0,0.6041666865348816,89.08369111040406,136.63671189174056) " stroke="#000000">Click Cell</text>
+  <ellipse id="svg_7" stroke="#000000" ry="54.5" rx="59.5" cy="88.59179" cx="425.375" fill="#ffffff"/>
+  <text xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" id="svg_16" y="97.02931" x="425.38277" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">Sorting</text>
+  <line id="svg_18" fill="none" stroke="#000000" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="228.5" y1="80.74218" x2="362.375" y2="81.86718"/>
+  <line id="svg_20" fill="none" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="357.76952" y1="76.20703" x2="362.37499" y2="81.86718" stroke="#000000"/>
+  <line id="svg_21" fill="none" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="357.94532" y1="87.66796" x2="361.81251" y2="82.42968" stroke="#000000"/>
+  <line id="svg_25" fill="none" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="233.77345" y1="106.47657" x2="226.60157" y2="100.14844"/>
+  <line id="svg_26" fill="none" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="234.19532" y1="93.39844" x2="227.02345" y2="99.72657"/>
+  <line id="svg_37" fill="none" stroke="#000000" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="228.14841" y1="100.64065" x2="362.02341" y2="101.76565"/>
+  <text stroke="#000000" transform="matrix(0.5587334036827087,0,0,0.5208333134651184,89.63227737694979,22.281250923871994) " xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" id="svg_38" y="84.63751" x="355.37198" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Click Header</text>
+  <text stroke="#000000" transform="matrix(0.592222645383213,0,0,0.6000000238418578,123.28698140535916,52.687497831881046) " xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" id="svg_42" y="116.25001" x="289.24995" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Sort finished</text>
+ </g>
+</svg>
 
 <p>Naturally, the states a table would cycle through depend on the features of that specific table. If one is looking at the simplest kind of read-only table, the table would exist in a single state, simply displaying data.</p> 
 
@@ -219,6 +256,20 @@
 <p>If a table is sortable (for example, by a <code>click</code> on top headers or main row elements) a <code>sorting</code> state must be added to the diagram which returns to the <code>display</code> state. In this case, the headers behave much like buttons which trigger a specific sorting state.</p>
 
 <p>For tables with a data-entry functionality, one may trigger an <code>input</code> state by selecting a cell in the grid (depending on the table, only specific cells may be editable). In this state, the user is free to enter data into that specific cell. It may or may not still be possible to <code>hover</code> over other cells. Once the user is finished inputting data, the table returns to its <code>display</code> state.</p>
+
+<h3>Key Characteristics</h3>
+
+<p><em>So what makes for a good table?</em></p>
+
+<h4>Make data available quickly</h4>
+
+<p>An important aspect form of data representation is how fast the information becomes available to the user. This is not an issue when there are few elements to be displayed, or these elements are easier to display (e.g: a few cells filled with text).</p>
+
+<p>When the elements are more complex and the amount of data is very large, a table should focus on making information visible to the user as quickly as possible. This means displaying simple onscreen data immediately, while displaying more complex elements like images as they become available. Including a loading bar or spinning indicator is a good practice for showing whether a table application is finished loading, dead, or loading more elements.</p>
+
+<h4>Avoid clipping</h4>
+
+<p>When a text element is long, it is natural to not display it in its entirety. However, this makes for poor readability. Good tables make their content succint, or allow the grid's size to be adjusted to show more content without truncating it. <em>Do not, under any circumstances, truncate text when there is still display room in a cell.</em></p>
 
   </div>
 
@@ -266,20 +317,20 @@
   <li><em>Data-entry tables:</em> Prominent examples of applications which revolve around these are Excel and Google Sheets. They allow users to input and manipulate their own data. In the case of Excel and Google sheets, cells can refer to each other, allowing for calculations to be performed while keeping the data organized.</li>
 
   <p class="text-center">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Spreadsheet_animation.gif" alt="Spreadsheet animation">
+    <img src="Spreadsheet_animation.gif" alt="Spreadsheet animation">
   </p>
 
   <li><em>Navigation tables:</em> These are typically a combination of certain features found in the previous two, and are often not considered tables, though their representation certainly fits with the elements described in this page. These are most similar to menus in that elements in the grid can typically be clicked to traverse a system. In this manner, when there are links or folders involved, the navigation structure has the form of a tree. Windows's file explorer typically takes this form as a default. The representation of each 'navigation stage', however, is that of a table, with the elements themselves in the rows of one column, and the corresponding rows in other columns holding data such as modification dates, fyle types and sizes.</li>
 
   <p class="text-center">
-    <img src="https://upload.wikimedia.org/wikipedia/en/f/f0/Windows_Explorer_Vista.png" alt="Windows Explorer">
+    <img src="Windows_Explorer_Vista.png" alt="Windows Explorer Vista">
   </p>
 
 </ul>
 
 <h3>Priority Metrics</h3>
  
-<p>As tables are more typically known as a form of data representation, focus is to be placed on whether it is easy to find specific data within such a grid. As such, it is important that the system be efficient, memorable, and lacking in errors.</p>
+<p>As tables are more typically known as a form of data representation, focus is to be placed on whether it is easy to find specific data within such a grid. As such, it is important that the system be <em>efficient, memorable, and resistant to errors.</em></p>
 
 <p>At their simplest, it is easy to learn how to use a table due in part to its intuitive design. The top and leftmost elements are (typically) used to signal what data will be found in each cell. It is simple logic to grasp, particularly when perusing through large sets of data that require numerous rows and columns to be accomodated. Another point in favor of tabular representations in user interfaces is that it is a very common system, and most first-time users are likely to recognize the layout on sight. These two points can also be brought up in favor of the memorability of the representation. As the use of tabular representations is both simple and widespread, it is very easy for people to remember how to read them.</p>
 
@@ -291,23 +342,6 @@
 
 <p>Satisfaction may be found in the ease with which elements can be organized in a neat manner and found through a clear procedure.</p>
 
-
-<h3>Key Characteristics</h3>
-
-<blockquote>This section is for describing “what makes for a good <em>your component here</em>?”
-  Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
-  principles.</blockquote>
-
-<h4>Feedback</h4>
-
-<p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
-  never doubt whether:</p>
-
-<ol>
-  <li>they did positively trigger a button (and thus its associated action)</li>
-  <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
-    the action that triggers the button</li>
-</ol>
   </div>
 </div>
 
