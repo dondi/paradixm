@@ -4,20 +4,28 @@ layout: component
 contributors:
 - name: Tyler Colson
 github: Teecolz
+- name: Nick Sunga
+github: nsunga
 ---
 <p class="lead">Rotating allows for manipulation of single applications and media between portrait and landscape modes, often unlocking a new user interface and access to landscape-specific features.</p>
 <div class="row">
   <div class="col-sm-6">
     <h3>Typical Appearance</h3>
-    <blockquote>
-    </blockquote>
+    <blockquote>Appearance generally differs. For operating systems like OS X and Windows, rotating the display screen
+     is done through a drop down menu. For software like Preview and word processors, it also varies. Some objects are
+     rotated through a button or an icon. Nevertheless, both styles are indicative enough to exemplify rotation.</blockquote>
     <h3>Typical Behavior</h3>
-    <blockquote>
-    </blockquote>
+    <blockquote>Rotating is widely known and applied to objects in order to change their orientation or move in a circle-like
+     motion around their center of mass. The flexibility of rotation surely enough differs from object to object. Depending on the software,
+     some objects can rotate by fixed amounts, such as intervals of 90 degrees, and some can precisely rotate from 0 to 360 degrees. </blockquote>
     <div>
       <h4>Events</h4>
-      <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-      highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+      <blockquote>Depending on the OS and software being used, rotating can be performed through multiple ways, such as buttons and swiping.
+       Therefore, the events overlap with other events that pertain to different user interface components.</blockquote>
+      <p> When rotating is done through buttons, a <code>click</code> event occurs. Other events
+        include <code>click and drag</code> , which usually allows the user to rotate an object however they would like as done with word
+        processing applications and Mac's 'Grapher' application. Though there are multiple ways to perform rotating, ultimately,
+        a <code>rotate</code> event occurs and indicates that an object was rotated.</p>
       <p class="text-left">On iOS, rotation and accelerometer movement is measured by: <code>x</code>, <code>y</code>, <code>z</code>, <code>pitch</code>, <code>roll</code>, and <code>yaw</code>. These can be defined as follows: </p>
       <ul>
         <div class="col-sm-6">
