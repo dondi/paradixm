@@ -23,24 +23,26 @@ contributors:
 
 </blockquote>
 
-<h4>Events</h4>
+<div>
+  <h4>Events</h4>
 
-<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+  <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
+    highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
 
-<p>On iOS, rotation and accelerometer movement is measured by: <code>x</code>, <code>y</code>, <code>z</code>, <code>pitch</code>, <code>roll</code>, and <code>yaw</code>. These can be defined as follows: </p>
-  <ul>
-    <div class="col-xs-4">
-        <img src="axis.png" class="img-responsive" alt="Responsive image" style="height: auto; width: auto">
-    </div>
-    <li><code>x, y, z</code>: Rotations about the x, y, and z axis.</li>
+  <p class="text-left">On iOS, rotation and accelerometer movement is measured by: <code>x</code>, <code>y</code>, <code>z</code>, <code>pitch</code>, <code>roll</code>, and <code>yaw</code>. These can be defined as follows: </p>
+    <ul>
+      <div class="col-sm-6">
+       <img src="axis.png" class="img-thumbnail" alt="Axis" style="height: auto; width: 60%">
+      </div>
+      <li><code>x, y, z</code>: Rotations about the x, y, and z axis.</li>
 
-    <li><code>pitch</code>: Face up or face down rotating about an axis running from each side of the device.</li>
+      <li><code>pitch</code>: Face up or face down rotating about an axis running from each side of the device.</li>
 
-    <li><code>roll</code>: Rotation about an axis from the top of the phone to the bottom side.</li>
+      <li><code>roll</code>: Rotation about an axis from the top of the phone to the bottom side.</li>
 
-    <li><code>yaw</code>: Rotation from either side of the device to the top or bottom.</li>
-  </ul>
+      <li><code>yaw</code>: Rotation from either side of the device to the top or bottom.</li>
+    </ul>
+</div>
 
 
 <h4>State Diagram</h4>
@@ -194,7 +196,7 @@ contributors:
         <p>The <em>accelerometer</em> is used to determinte whether to display the user interface as portrait or landscape mode. Applications often have a user interface specifically for landscape mode, or at least have relevant elements change to recognize the user is in landscape mode. This can be disabled by navigating to <em>Control Center</em> and pressing the <em>Orientation Lock</em> icon. This will disable all use of the accelerometer, thus disabling all rotation function in iOS.</p>
 
         <div class="col-md-6">
-          <img src="ios_lock_orientation_rotation.gif" class="img-responsive center-block" alt="Responsive image" style="height: auto; width: auto">
+          <img src="ios_lock_orientation_rotation.gif" class="img-responsive center-block" alt="Orientation Lock" style="height: auto; width: auto">
         </div>
 
         <p>In iOS, rather than using a trackpad to manipulate elements, iOS devices can be physically rotated to switch between oritentations. Single elements in some applications, such as photos, can be rotated either by rotating the device or using a pinch with two fingers.</p> 
@@ -207,10 +209,10 @@ contributors:
 
         <p>iOS applications can have seperate user interfaces for portrait and landscape modes. An example of this is iOS' native <em>Calculator</em> application. <em>Calculator</em> changes from a simple calculator in portrait mode to a full-featured scientific calculator when the device is rotated.</p>
         <div class="col-md-6">
-            <img src="apple-calculator-portrait.jpg" class="img-responsive center-block" alt="Responsive image" style="height: auto; width: auto">
+            <img src="apple-calculator-portrait.jpg" class="img-responsive center-block" alt="Calculator Portrait" style="height: auto; width: auto">
         </div>
         <div class="col-md-6">
-          <img src="apple-calculator-landscape.jpg" class="img-responsive center-block" alt="Responsive image" style="height: auto; width: auto">
+          <img src="apple-calculator-landscape.jpg" class="img-responsive center-block" alt="Calculator Landscape" style="height: auto; width: auto">
         </div>
       </div>
     </div>
