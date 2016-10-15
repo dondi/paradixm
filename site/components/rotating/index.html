@@ -89,6 +89,8 @@ contributors:
 <h3>Platform-Specific Instances</h3>
 <blockquote>
     <p>Rotation is an aspect that varies quite a bit depending on the class of the device. Mobile devices, such as an iOS device, have a lot more functionality when it comes to rotation because of the <em>accelerometer.</em> This component allows many different applications to interact with the current orientation of the device. Because of this added component, there are a lot more things to consider when looking at rotation in iOS devices.</p>
+    <p>For OSes, specifically OS X, rotation is done differently. Users with mobile devices can rotate the orientation of their UI by physically twisting and turning their
+    hand. OS X does not support this feature. So, direct manipulation is a little less involved, but still, rotation is still a primary component used.</p> 
 </blockquote>
 <div class="row">
     <div class="col-md-6">
@@ -97,6 +99,24 @@ contributors:
                 <h4 class="panel-title text-center">Mac OS X</h4>
             </div>
             <div class="panel-body">
+               <p>Rotating the display is done through a <em>drop down menu</em>, which is accessed through 'System Preferences' and under 'Displays'. As previously mentioned,
+               their are predominantly two different kinds of rotations: free motion and the othere being done in intervals. In this case, rotations are done in 90 degree intervals.
+               Also, rotating the display changes sense of direction from the cursor. For instance, flipping the display upside down flips the cursor's directions.</p>
+              <div class="col-md-6">
+                <img src="mac-osx-rotate-display.gif" class="img-responsive center-block" alt="OS X Display" style="height: auto; width: auto">
+              </div>
+              <p>A lot of rotations can be done through the use of the trackpad. One instance of this, is through the use of Mac's 'Grapher' application. The user can look at
+              either 2D or 3D mathematical models, and when it comes to 3D ones, the user can freely rotate the graph. This is done by <em>clicking and dragging</em> across the 
+              trackpad.</p>
+               <div class="col-sm-6">
+                 <img src="mac-osx-grapher-rotate.gif" class="img-responsive" alt="Grapher Application" style="height: auto; width: auto">
+               </div>
+              <p>Another form of rotating can be done by clicking buttons that are indicative of doing so. Image applications like 'Preview' support this feature. This can also
+              be done by accessing the 'Tools' tab which brings up a <em>drop down menu</em>. However, free motion rotation is not supported; only 90 degree rotation
+              intervals are.</p>
+              <div class="col-lg-12">
+                <img src="dog-rotate-button.gif" class="img-responsive" alt="Button Rotation" style="height: auto; width: auto">
+              </div>
             </div>
         </div>
     </div>
