@@ -347,42 +347,42 @@ Below is a state diagram for a simple table with hover, sorting, and basic data 
 
 <h3>Platform-Specific Instances</h3>
 
-<blockquote>
-  <p>This is where things can get really interesting—platform-specific sections go here. Different versions of
-    the same system are considered to be platforms in their own right (e.g., Windows 95 buttons vs. Windows 10
-    buttons). Completely customized versions of a component (e.g., a unique-looking/-acting button made specifically
-    for a game) are also acceptable here.</p>
-
-  <p>The outline for platform-specific entries resembles the outline already described above, except with a focus
-    on how the platform-specific version is <em>different</em>. Thus, you will want some notes on appearance (i.e.,
-    more screenshots), behavior, variants, metrics, and characteristics. If some aspect is the same, then say so
-    explicitly so that there is no confusion.</p>
-
-  <p>Some platform-specific instances of certain user interface components will merit such a rich discussion that they
-    may require a sizable number of supporting assets. In that case, feel free to add subfolders to the main component
-    folder, named after the platform under examination.</p>
-
-  <p>This could well be the most distinctive part of the catalog—the sections above this generally appear in user
-    interface guidelines, albeit with a platform-specific focus. A key premise of the Paradixm project is to compare
-    user interface elements <em>across</em> platforms. Thus, feel free to be creative about presentation here. You
-    might want to display a visual gallery, for example, with links leading to individual pages for each covered
-    platform-specific user interface component.</p>
-</blockquote>
-
 <div class="row">
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title text-center">Windows 10</h4>
     </div>
     <div class="panel-body">
-      <p>File explorer</p>
+      <p>The most obvious usage of tables in the Windows 10 OS is the <em>details</em> view used in the file explorer.</p>
+
+      <p class="text-center">
+        <img src="Details_View_Select.png" alt="Details view select">
+      </p>
+      <p>The following image shows this view. Choosing the <em>details</em> view organizes a folder's files such that one can see each element within, along with the last date in which it was modified, the type of file the element is, and the size of the element. In the image, data is sorted in ascending alphabetical order (sort selection shown by the arrow in the <em>Name</em> header). This tabular representation also displays a data-entry functionality in that one can also change the name of files either by right clicking an item and selecting the <em>Rename</em> option or by clicking on an element again after it has been selected (without double-clicking).</p>
+      <p class="text-center">
+        <img src="Details_View.png" alt="Details view">
+      </p>
+
+      <p>The use of tables in file explorers is a combination of the read and data-input tables mentioned in the general <em>variants</em> section, and as such come closer to the kind of table dubbed <em>navigation tablesem</em>. As such, it should be noted that they may not be considered to be strictly tables. Case in point, Microsoft's guidelines for the tabular details view classifies it as a subset of lists.</p>
+
+      <p>According to Microsoft's guidelines, the leftmost column should contain the item's icon (if there is one) and label, and the other columns should contain additional information of their corresponding item. This is shown clearly in the above picture.</p> 
+      
+      <p>Default column width is to be appropriate for longer items. Data can be truncated, but it should only be done for odd-sized items (as shown in the bottom two file types in the presented image), or as a last resort. Tabular representations are not appropriate when all or most of the items are truncated. Moreover, data should not be truncated if there is still display room.</p>
+
+      <p>The file explorer also allows for one to resize the width of its columns. The following image shows the same folder with an expanded <em>Type</em> column.</p>
+
+       <p class="text-center">
+        <img src="Details_View_ColWidth.png" alt="Details view column width">
+      </p>
+
     </div>
   </div> 
 </div>
 
 <h3>Credits &amp; References</h3>
 
-<blockquote>Provide references or links to any information, image, or media sources used.</blockquote>
+<p><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/tables/">IOS Human Interface Guidelines (Tables)</a></p>
+<p><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742408(v=vs.85).aspx">Microsoft Design Guidelines (List Views)</a></p>
 
   </div>
 
