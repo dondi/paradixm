@@ -4,6 +4,9 @@ layout: component
 contributors:
     - name: Janine Leaño
       github: jleano713
+
+    - name: Ryan Taus
+      github: RyTaus
 ---
 
 <style>
@@ -18,21 +21,20 @@ contributors:
 
 <h3>Typical Appearance</h3>
 
-	<p>Radio buttons are usually circular in appearance and are accompanied to the right with a text label describing the given option. They are often accompanied with a series of 
-	other radio buttons that have some answer to the general question of choice given to the user (ex: The question "What is your favorite color?" with the radio buttons being an assortment of different colors). 
+	<p>Radio buttons are usually circular in appearance and are accompanied with a text label on the right that describes the given option. They are often accompanied with a series of 
+	other radio buttons of which the user can select one in response to a given choice (ex: The question "What is your favorite color?" with the radio buttons being an assortment of different colors). 
 	When inactive, the circles are not colored in, giving it an "empty" look to suggest that it is not currently active. 
 	When active, a dot concentric to the circle or an entirely different color to the background color of an empty button "fills" the circle, indicating that it is currently chosen. </p>
 
 <h3>Typical Behavior</h3>
 	<p>Just like with a general button, a radio button's behavior is solely dependent on whether the user has pressed/toggled it or not. This is usually done via the pointer/cursor but can also be done with keyboard inputs.</p>
-	<p>The active/inactive state of a radio button is dependent on the active/inactive state of the other related radio buttons. The active state is exclusive to one radio button at a time (i.e. two radio buttons cannot be active simultaneously).</p>
+	<p>The active/inactive state of a radio button is dependent on the active/inactive state of the other related radio buttons. The active state is exclusive to one radio button in a set at a time (i.e. two radio buttons cannot be active simultaneously).</p>
 	<p>Disabled buttons have their circle and/or corresponding text grayed out.</p>
-	<p>When accessing via keyboard inputs using the tab button, a radio button is surrounded by a dotted square or border to indicate that it is currently the one in selection.</p>
+	<p>When accessing via keyboard inputs using the tab button, a radio button is surrounded by a dotted square or border to indicate that it is currently in selection.</p>
 
 	<h4>Events</h4>
 		<ul>
-			<li><code>hover</code>: when the pointer/cursor is within the area of the circle. Most do not display behavior during this event but some radio buttons do cast a shadow within the circle to indicate that it is currently being interacted with regardless on
-			whether it is clicked or not.</li>
+			<li><code>hover</code>: when the pointer/cursor is within the area of the circle. In this case, radio buttons either do nothing, or give the user feedback (i.e. cast a shadow within the circle) to indicate that it is ready to be interacted with.</li>
 			<li><code>selected</code>: occurs strictly when user is operating through keyboards input. Pressing the tab key scrolls through all the optional clickables and since radio buttons are grouped together they are always considered one element. To scroll through the choices of radio buttons, the user must use the directional buttons on the keyboard (up and down).</li>
 			<li><code>click + hold</code>: a user can click on a radio button (pressing within the vicinity of the circle or the label) and prevent it from being toggled by dragging and releasing the cursor away from the vicinity of the cursor. This event cannot occur using keyboard inputs.</li>
 			<li><code>click + release</code>: a user can press within the vicinity of the circle or the label and immediately release it to toggle the button. In the context of keyboard inputs, once a button is selected, pressing the enter key is the equivalent of clicking it with a cursor.</li>
@@ -40,7 +42,9 @@ contributors:
 		</ul>
 
 	<h4>State Diagram</h4>
-		<p class="text-center"><img src="http://i59.tinypic.com/2l8hvmo.png"></p>
+		<p class="text-center">
+			<img src="StateDiagram.png" class="img-responsive center-block">
+		</p>
 
 	<h4>Component in Action</h4>
 		<p class="text-center">
@@ -60,21 +64,17 @@ contributors:
   <div class="col-sm-6">
 <h3>Variants</h3>
 	<ul>
-		<li><p class="text-center"><img src="http://i60.tinypic.com/k3q00k.png"></p>
-		<p><em>menu items</em>: buttons like the picture above that bring down submenus could be considered a variation of a radio button in that only one can be toggled (to expand the submenu) once at a time.
-		However conceptually-speaking, radio buttons focus more on status (ex: the background is red and not blue) rather than actions (ex: pressing a button to access a submenu for background color) so 
-		menu buttons are not necessarily identified as a radio button.</p>
+		<li><h4>Menu Items:</h4><p class="text-center">
+			<p><p class="text-center"><img src="http://i60.tinypic.com/k3q00k.png"></p> buttons like the picture above that bring down submenus could be considered a variation of a radio button in that only one can be toggled (to expand the submenu) once at a time. However conceptually-speaking, radio buttons focus more on status (ex: the background is red and not blue) rather than actions (ex: pressing a button to access a submenu for background color) so menu buttons are not necessarily identified as a radio button.</p>
 		</li>
-		<li><p class="text-center"><img src="http://i60.tinypic.com/1236syh.png"><img src="https://csgsitestorage.blob.core.windows.net/img/1426714471678.gif"></p>
-		<p><em>menu list</em>: this variation presents itself as a list instead of circular buttons. Instead of "filling" in the circle to make a decision, the user clicks on the label itself (usually colored differently when hovered over).
-		Another variation of this is the select box which is like the menu list but requires the user to press a separate select button in order to click their choice.</p>
+		<li><h4>List Selection:</h4>
+			<p><p class="text-center"><img src="http://i60.tinypic.com/1236syh.png"><img src="https://csgsitestorage.blob.core.windows.net/img/1426714471678.gif"></p> this variation presents itself as a list instead of circular buttons. Instead of "filling" in the circle to make a decision, the user clicks on the label itself (usually colored differently when hovered over). Another variation of this is the select box which is like the menu list but requires the user to press a separate select button in order to click their choice.</p>
 		</li>
-		<li><p class="text-center"><img src="https://www.cowirrie.com/blog/wp-content/uploads/2012/07/iOSSegmentedControl.png"></p>
-		<p><em>segmented control</em>: instead of circles, they are fashioned more like tabs. This is more in the vein of actual physical radio buttons on a radio -- in that it is clear that they belong in the same group but their actions are exclusive from one another.
-		The only fault of these is that they do not allow for much text space on the labels.</p>
+		<li><h4>Segmented Control:</h4>
+			<p><p class="text-center"><img src="https://www.cowirrie.com/blog/wp-content/uploads/2012/07/iOSSegmentedControl.png"></p><em>segmented control</em>: instead of circles, they are fashioned more like tabs. This is more in the vein of actual physical radio buttons on a radio -- in that it is clear that they belong in the same group but their actions are exclusive from one another. The only fault of these is that they do not allow for much text space on the labels.</p>
 		</li>
-		<li><p class="text-center"><img src="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/art/buttonsradiomixed.gif"></p>
-		<p><em>radio buttons with multiple buttons clicked simultaneously</em>: like a regular series of radio buttons but a special case in that a user can click multiple buttons instead of just the one. It is debatable whether this fits the criteria of the radio button. The appearance is largely the same but its function (multiple instead of toggling exclusively one) is different.</p>
+		<li><h4>Multiple Selectable:</h4>
+			<p><p class="text-center"><img src="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/art/buttonsradiomixed.gif"></p><em>multiple concurrently selectable radio buttons</em> with the focus of radio buttons being on <em> exclusivity </em> it is recommended that you instead use <a href="../check-box">checkboxes</a> for this functionality.</p>
 		</li>
 	</ul>
 
@@ -84,9 +84,8 @@ contributors:
 	<ul>
 		<li><em>Learnability</em> and <em>memorability</em>: Etymologically radio buttons refer to the pop-up buttons on radios used to control its functions. When one button is pressed in, it remained pressed in and the rest popped out.
 		This concept is known even by people with no technological experience. So long as the feedback from system to user is clear, learnability and memorability should be consistently high. </li>
-		<li><em>Efficiency</em>: This depends entirely on the layout of the buttons and their distance from one another. However, generally speaking, radio buttons are pretty efficient in presenting choices since it only requires the user to
-		read the label and click the button -- a two-step process.</li>
-		<li><em>Errors:</em> Like efficiency, this relies on aesthetics and feedback response (see <strong>'Key Characteristics'</strong> for more information). But since learnability and memorability is high, errors should be highly unlikely.</li>
+		<li><em>Efficiency</em>: This depends entirely on the layout of the buttons and their distance from one another. However, generally speaking, radio buttons are efficient in presenting choices since it only requires the user to read the labels and click the needed button -- a two-step process.</li>
+		<li><em>Errors:</em> Like efficiency, this relies on aesthetics and feedback response (see <strong>'Key Characteristics'</strong> for more information). But since learnability and memorability is high, errors should be highly unlikely, especially with clear feedback.</li>
 		<li><em>Satisfaction:</em> Since radio buttons serve a more functional purpose rather than one for enjoyment, satisfaction does not have as much importance as the other metrics.
 		But satisfaction can be derived from a straightforward and error-free experience with making choices using radio buttons.</li>
 	</ul>
@@ -115,13 +114,36 @@ contributors:
 
   </div>
 </div>
+<div class="row">
+  <div class="col-sm-12">
+  <h3>Platform-Specific Instances</h3>
+  	<ul class="nav nav-pills nav-justified">
+		  <li role="presentation" class="active"><a href="#OSX10-Yosemite" data-toggle="tab"> OSX10 Yosemite</a></li>
+		  <li role="presentation"><a href="#Windows-10" data-toggle="tab"> Windows 10</a></li>
+		</ul>
+	</div>
 
-<h3>Platform-Specific Instances</h3>
-	<h4>OSX10 Yosemite</h4>
-		<p>Radio buttons for this platform function similarly to the typical radio button. Its marked difference from previous OSX versions is its aesthetics.
-		As seen from the picture below, the colors for the radio buttons are flatter and brighter with less highlighting and shadow, a brighter blue and more emphasis on white.</p>
 
-		<p class="text-center"><img src="https://data-pixelapse.s3.amazonaws.com/1/5775443/orig_3830587?AWSAccessKeyId=AKIAJXL2IXYH62T5HXDA&Expires=1717535503&Signature=VzImuOqjDofdJ5gwlM3jlw37P64%3D"></p>
+	<div class="col-xs-12">
+    <div class="tab-content">
+
+      <div role="tabpanel" class="tab-pane active" id="OSX10-Yosemite">
+        <h1>
+        	<p>Radio buttons for this platform function similarly to the typical radio button. Its marked difference from previous OSX versions is its aesthetics.
+					As seen from the picture below, the colors for the radio buttons are flatter and brighter with less highlighting and shadow, a brighter blue and more emphasis on white.</p>
+
+					<p class="text-center"><img src="https://data-pixelapse.s3.amazonaws.com/1/5775443/orig_3830587?AWSAccessKeyId=AKIAJXL2IXYH62T5HXDA&Expires=1717535503&Signature=VzImuOqjDofdJ5gwlM3jlw37P64%3D"></p>
+
+        </h1>
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="Windows-10">
+        <code>CARRR PLLLLAAAAY</code>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <h3>Credits &amp; References</h3>
 
