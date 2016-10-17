@@ -51,21 +51,21 @@ contributors:
     that the element is currently selected or active.</p>
    <blockquote>
      <div class="list-group">
-       <a href="#" class="list-group-item active">Cras justo odio</a>
-       <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-       <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-       <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-       <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+       <a href="#" class="list-group-item active">Dogs</a>
+       <a href="#" class="list-group-item list-group-item-action">Cats</a>
+       <a href="#" class="list-group-item list-group-item-action">Hamsters</a>
+       <a href="#" class="list-group-item list-group-item-action">Tigers</a>
+       <a href="#" class="list-group-item list-group-item-action">Lions</a>
      </div>
    </blockquote>
    <h4> Disabled List State:</h4>
    <blockquote>
      <div class="list-group">
-       <a href="#" class="list-group-item disabled">Cras justo odio</a>
-       <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-       <a href="#" class="list-group-item">Morbi leo risus</a>
-       <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-       <a href="#" class="list-group-item">Vestibulum at eros</a>
+       <a href="#" class="list-group-item disabled">Dogs</a>
+       <a href="#" class="list-group-item">Cats</a>
+       <a href="#" class="list-group-item">Hamsters</a>
+       <a href="#" class="list-group-item">Tigers</a>
+       <a href="#" class="list-group-item">Lions</a>
      </div>
    </blockquote>
    <h4> Tag List State:</h4>
@@ -115,20 +115,74 @@ contributors:
   <div class="col-sm-6">
 <h3>Variants</h3>
 
-<blockquote>There is almost never just one form of a user interface component. Use this section to address variations
-  on this theme. Some variations are sufficiently different that they are considered to be a different component
-  entirely, despite very similar behavior. Meanwhile some variations are due to appearance only.</blockquote>
+<blockquote>Lists are a very basic way to group together items that have some overarching similarity. The simplicity is the lists strength as well as its weakness.
+  Many other interface elements have become variants to lists because they offer more versatility in their design. 
+  Some these variants are listed<!-- (no pun intended) --> below:
+</blockquote>
 
 <ul>
-  <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
-    invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
-    different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
+  <li><em>Menus </em> are very close to the look of a list generally displaying a various amount of elements. A distinct difference between a list and 
+     menu is the menu items can be clicked on for a event to take place. Also another major difference between menus and lists is a menu item can also 
+     be a menu its self.</li>
+     <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
 
-  <li><em>Links</em> can be considered as a specialized button—they are invoked almost identically, and their action
-    is even more narrowly defined as moving the user to a different view or display. The distinction here is
-    definitely less sharp than the distinction between a menu item and a button. For links within a document, the
-    document might be viewed as a menu in itself, and thus links are “menu items” indicating what the user can view
-    next. Thus, in some ways, links are hybrids between buttons and menu items.</li>
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Vertical Navigation Bar</h2>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+  <li><em>Tables</em> A table is very similar to a list and even can be considered a list if the table is only displaying a group of elements all under
+      the same category. It however is often the case that a table is displaying a grouping of lists to see how the titles of those lists are correlated
+      in any way. Tables also create more structure and can't be unordered. </li>
+      <table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Kevin</td>
+    <td>Hamilton</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Rony</td>
+    <td>Aguilar</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Chuck</td>
+    <td>Norris</td>
+    <td>76</td>
+  </tr>
+</table>
 </ul>
 
 <h3>Priority Metrics</h3>
