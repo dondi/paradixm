@@ -1,0 +1,54 @@
+---
+title: Welcome!
+layout: base
+---
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 panel-body">
+        <h1>The Paradixm Project</h1>
+
+        <p>A survey of known user interface elements at the micro and macro levels</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-sm-6 panel-body">
+      <p>Welcome to the website of the Paradixm project. This site aims to provide a no-holds-barred catalog
+        of user interface elements, designs, and behaviors across platforms and across time.</p>
+    </div>
+
+    <div class="col-sm-6 panel-body">
+      <p>The long-term goal of the Paradixm project is to serve as the basis for a broad-based, best-of-breed
+        user interface vision that can accommodate users of all levels of proficiency as well as devices with
+        varying display and interaction technologies. The very feasibility of this goal remains to be seen,
+        but we have to start somewhere, right?</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Catalog of Component Articles</h2>
+
+      <p class="lead">The project is in a very early stage, so some articles might not yet be available.</p>
+    </div>
+  </div>
+
+  <div class="row">
+{% for group in site.data.catalog %}
+    <div class="col-lg-2 col-sm-3 col-xs-4 component-nav">
+      <h3>{{ group.group }}</h3>
+
+      <ul class="nav nav-pills nav-stacked">
+  {% for component in group.components %}
+        <li><a href="{{ site.baseurl }}/components/{{ component.path }}">{{ component.name }}</a></li>
+  {% endfor %}
+      </ul>
+    </div>
+{% endfor %}
+  </div>
+</div>
