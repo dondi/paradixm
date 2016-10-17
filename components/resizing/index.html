@@ -4,87 +4,157 @@ layout: component
 contributors:
     - name: Chris Dellomes
       github: cjdellomes
+
     - name : Eileen Choe
       github: eileenchoe
 ---
+<!--iOS ideas
+    -Facebook/Youtube: Video resize
+    -Zoom resize
+  -->
 
-<p class="lead">A critical feature of GUI-based operating systems is the ability to change the dimensions of elements.</p>
+<p class="lead">A critical feature of GUI-based operating systems is the ability to resize elements.</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Typical Appearance</h3>
+        <p><em>A resize event is characterized by a change in an element's dimensions</em>.</p>
+        <p>In contrast with zoom, which is a related feature, resize changes the dimensional properties (length and width) of the element itself, rather than the scope at which the element is displayed on a screen. Examples of commonly resized elements include windows, icons, images, and text. However, for the purposes of evaluating typical appearances and behavior, we will consider the resize behavior of windows.</p>
+        <p>The arrow mouse cursor and resize buttons are the most common interface elements for changing the dimensions of elements.</p>
+        <div class="row">
+          <div class="col-md-6 col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Arrow Mouse Cursor</h4>
+              </div>
+              <div class="panel-body">
+                <p class="text-center">Diagonal</p>
+                <img class="center-block" class="img-responsive" src="arrow-diagonal.png" alt="Resize Arrow Diagonal" height="80">
+                <p class="text-center">Horizontal</p>
+                <img class="center-block" class="img-responsive" src="arrow-horizontal.jpg" alt="Resize Arrow Horizontal" height="80">
+                <p class="text-center">Vertical</p>
+                <img class="center-block" class="img-responsive" src="arrow-vertical.jpg" alt="Resize Arrow Vertical" height="80">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Resize Button</h4>
+              </div>
+              <div class="panel-body">
+                <img class="center-block" class="img-responsive" src="resize-buttons.png" alt="Resize Buttons 1" height="50">
+                <br>
+                <img class="center-block" class="img-responsive" src="resize-buttons-2.png" alt="Resize Buttons 2" height = "50">
+                <br>
+                <img class="center-block" class="img-responsive" src="resize-buttons-3.png" alt="Resize Buttons 2" height="50">
+              </div>
+            </div>
+          </div>
+        </div>
+      <h3>Typical Behavior</h3>
+        <p>There are two categories of window resize behavior: manual and automatic.</p>
+        <h4>Manual</h4>
+        <p>The dimensions of a window can be manually resized by a drag and drop operation using the arrow resize cursor. Entering manual resize mode is visually represented by a change in the mouse cursor icon's apprearance from a pointer to an arrow. The orientation of the arrow, indicates the direction of resize, whether horizontal, veritical or diagonal. Once in the resize stage, the perimeter of the window can be manipulated.</p>
+        <h5>Events</h5>
+        <ul>
+          <li><code>hover</code></li>
+          <li><code>mouse down</code></li>
+          <li><code>resize</code></li>
+          <li><code>mouse release</code></li>
+        </ul>
+        <h4>Automatic</h4>
+        <p>Automatic resize, when initiated, causes the window to fill the entire screen or be minimized. Typically, a button click initiates automatic resize and i </p>
+        <h5>Events</h5>
+        <ul>
+          <li><code>hover</code></li>
+          <li><code>click</code></li>
+        </ul>
+      <h4>State Diagram</h4>
+        <img src="resize_chart (1).png" alt="Resize Chart" height="450" width="300">
+        <p>A resizeable element is in the <code>standby</code> state prior to resize. Once the mouse starts dragging the edge or corner, the window enters the <code>resizing</code> state. Once finished, the window reaches the <code>resized</code> state.</p>
+      <h4>Component in Action</h4>
+        <p>An example of window resizing can be seen <a href="https://www.youtube.com/watch?v=e3XntupxxtA">here</a>.</p>
+    </div>
+    <div class="col-sm-6">
+      <h3>Variants</h3>
+        <p>The interface behaviors of resize can vary, depending on the element that is being resized</p>
+        <ul>
+          <li>
+            <em>Slider</em>
+            Resize can be accomplished by a slider. 
+          </li>
+          <br>
+          <li>
+            <em>Form Fill-In</em>
+            Most commonly for resizing text to a certain font point. 
+          </li>
+          <li>
+            <em></em>
+            Resize text...
+          </li>
+          <li>
+            <em>Image Resize</em>
+            Resize images...
+          </li>
+          <li>
+            <em>Split Screen</em>
+            A function of the resize buttons is to allow for a full screen tiling of two windows to maximize the screen space use. In split screen mode, users can manually resize the windows by shifting the separation bar between the two windows. An in depth discussion of this interaction style is found here. 
+          <br>
 
-<div class="row">
-  <div class="col-sm-6">
+      <h3>Priority Metrics</h3>
+        <p>Resize is a critical and commonly used aspect of any GUI-based operating system. When evaluating this interaction component against Ben Shneiderman's five usability metrics outlined in his book <em>Designing the User Interace</em>, the most important metrics for resize are learnability, efficiency, errors, while less important are: memorability and satisfaction. Since it is a critical aspect of any GUI based operating system, most of the priority metrics are vital in this component's design analysis. Users who intend to resize a window must have no confusion as to how to accomplish the task. In the physical world, the natural way of unfolding or unrolling a piece of paper is to pull from either the sides or the corners. Resizing follows this natural way of thinking by allowing the user to increase or decrease the size from the corners and sides of the window, making the process simple to learn. Also, since resizing follows the natural mental model, the way in which the user resizes windows is easily memorable.</p>
 
-    <h3>Typical Appearance</h3>
-      <blockquote>The arrow mouse cursor and resize buttons are the most common tools for element resize across multiple platforms.</blockquote>
-      <p>Additionally, the most common element that a user resizes is the application window, thus typical appearance of resize components will reference those used for window resize. The resize of different elements require different interaction styles and are explored in the "variants" section.</p>
-      <h4>Arrow Mouse Cursor</h4>
-        <p>The dimensions of a window can be resized by manually changing the dimensions of the window. Manual resize mode is visually represented by a change in the mouse cursor icon's apprearance from a pointer to an arrow. The orientation of the arrow, indicates the direction of resize, whether horizontal, veritical or diagonal. Examples of arrow icons are shown below.</p>
-        <em>INSERT IMAGE OF ARROWS</em>
-      <h4>Resize Buttons</h4>
-        <p>Windows can be resized automatically to fit the size of the screen. Buttons, typically located at the top of the window, accomplish this functionality</p>
-        <em>INSERT IMAGE OF BUTTONS</em>
+        <p>Since window resizing corresponds to either mouse input or window menu input, the response is immediate. Since window resizing is easily learnable and highly memorable, it is unlikely that users commit errors when attempting the task.</p>
+      
+        <p>Due to its simplicity and utilitarian nature, resizing does very little in the way of providing satisfaction to the user. However, this does not detract from the overall good design of window resizing.</p>
 
-    <h3>Typical Behavior</h3>
-      <p>Windows are manually resized by clicking a point on along the parameter of the window, and dragging the mouse accordingly to get the window to the desired shape. Windows may alternatively be automatically resized through resize buttons on the window menu, which typically minimize or maximize the window.</p>
+      <h3>Key Characteristics</h3>
+        <p>Key characteristics of resizing include the changing of the mouse icon from a pointer to arrows along with the visible change in window size.</p>
 
-    <h4>Events</h4>
-      <p>Standby - Hover (Reveal transformation options) - Click - (for direct) Choose Output State - Release Click - Resized - Standby</p>
-      <p>The most relevent resize event is the <code>resize</code> event. A <code>resize</code> event is triggered when the size of the window has been changed. While maximizing or minimizing a window, a <code>minimize</code> or <code>maximize</code> event may also be triggered.</p>
-
-    <h4>State Diagram</h4>
-      <img src="resize_chart (1).png" alt="Resize Chart" height="450" width="300">
-      <p>A window is typically in a <code>standby</code> phase before being resized. Once the mouse starts dragging the edge or corner, the window enters the <code>resizing</code> state. Once finished, the window reaches the <code>resized</code> state.</p>
-
-    <h4>Component in Action</h4>
-      <p>An example of window resizing can be seen <a href="https://www.youtube.com/watch?v=e3XntupxxtA">here</a>.</p>
-
+      <h4>Feedback</h4>
+        <p>For resizing, the window visibly grows larger or shrinks according to user input. In older operating systems, a rectangle is shown to represent the size the window will change to when the user stops dragging the mouse.</p>
+    </div>
   </div>
-
-  <div class="col-sm-6">
-
-    <h3>Variants</h3>
-      <blockquote>The interface behaviors of resize can vary, depending on the element that is being resized</blockquote>
-      <ul>
-        <li>
-          <em>Icon Resize</em>
-          Resizing an icon can be accomplished by...
-        </li>
-        <br>
-        <li>
-          <em>Text Resize</em>
-          Resize text...
-        </li>
-        <li>
-          <em>Image Resize</em>
-          Resize images...
-        </li>
-        <li>
-          <em>Split Screen</em>
-          A function of the resize buttons is to allow for a full screen tiling of two windows to maximize the screen space use. In split screen mode, users can manually resize the windows by shifting the separation bar between the two windows. An in depth discussion of this interaction style is found here. 
-        <br>
-
-    <h3>Priority Metrics</h3>
-      <p>Resize is a critical and commonly used aspect of any GUI-based operating system. When evaluating this interaction component against Ben Shneiderman's five usability metrics outlined in his book <em>Designing the User Interace</em>, the most important metrics for resize are learnability, efficiency, errors, while less important are: memorability and satisfaction. Since it is a critical aspect of any GUI based operating system, most of the priority metrics are vital in this component's design analysis. Users who intend to resize a window must have no confusion as to how to accomplish the task. In the physical world, the natural way of unfolding or unrolling a piece of paper is to pull from either the sides or the corners. Resizing follows this natural way of thinking by allowing the user to increase or decrease the size from the corners and sides of the window, making the process simple to learn. Also, since resizing follows the natural mental model, the way in which the user resizes windows is easily memorable.</p>
-
-      <p>Since window resizing corresponds to either mouse input or window menu input, the response is immediate. Since window resizing is easily learnable and highly memorable, it is unlikely that users commit errors when attempting the task.</p>
-    
-      <p>Due to its simplicity and utilitarian nature, resizing does very little in the way of providing satisfaction to the user. However, this does not detract from the overall good design of window resizing.</p>
-
-    <h3>Key Characteristics</h3>
-      <p>Key characteristics of resizing include the changing of the mouse icon from a pointer to arrows along with the visible change in window size.</p>
-
-    <h4>Feedback</h4>
-      <p>For resizing, the window visibly grows larger or shrinks according to user input. In older operating systems, a rectangle is shown to represent the size the window will change to when the user stops dragging the mouse.</p>
-
+  <div class="row">
     <h3>Platform Specific Instances</h3>
-      <p>When resizing windows with a mouse in older operating systems, a rectangle would be drawn to indicate the resulting shape of the resize once finished dragging, as shown in the picture below. The computer is running on Windows 8.1, but is set to the style of older operating systems, such as Windows 98.</p>
-      <img src="resize1.png" alt="Resize1" height="250" width="550">
-      <br>
-      <p>For modern operating systems, the window dynamically changes size and content within conforms to the shape as the window is resized, as demonstrated in the components in action video.</p>
-
+    <div>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#OSX" aria-controls="OSX" role="tab" data-toggle="tab">Mac OSX</a></li>
+        <li role="presentation"><a href="#iOS" aria-controls="iOS" role="tab" data-toggle="tab">iOS</a></li>
+        <li role="presentation"><a href="#Windows10" aria-controls="windows10" role="tab" data-toggle="tab">Windows 10</a></li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="OSX">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                STUFF HERE
+              </div>
+              <div class="col-md-6">
+                AND HERE
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="iOS">iOS Insert Here</div>
+        <div role="tabpanel" class="tab-pane" id="Windows10">Windows 10 Insert</div>
+      </div>
+</div>
   </div>
 </div>
 
 <h3>Credits &amp; References</h3>
+  <a href="http://www.lowcountryren.com/nestor/Documentation/ionicons-1.4.1/png/512/arrow-resize.png">Resize Arrow Diagonal Image</a>
+  <br>
+  <a href="http://img.freepik.com/free-icon/double-arrow_318-133576.jpg?size=338&ext=jpg">Resize Arrow Vertical Image</a>
+  <br>
+  <a href="https://image.freepik.com/free-icon/horizontal-resize-option_318-41980.jpg">Resize Arrow Horizontal Image</a>
+  <br>
+  <a href="http://www.clipartbest.com/cliparts/9TR/enr/9TRenreTe.png">Mouse Cursor Image</a>
+  <br>
   <a href="https://developer.mozilla.org/en-US/docs/Web/Events/resize">Mozilla Firefox Documentation</a>
   <br>
   <a href="https://api.jquery.com/resize/">JQuery Documentation</a>
