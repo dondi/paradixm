@@ -19,24 +19,26 @@ contributors:
 
 <div class="container-fluid">
 	<div class="row">
-			  	<div class="col-lg-12">
-			  		<ul class="nav nav-pills nav-justified">
-			  			<li role="presentation" class="active"><a href="#typical-appearance" data-toggle="tab">Typical Appearance</a></li>
-			  			<li role="presentation"><a href="#typical-behavior" data-toggle="tab">Typical Behavior</a></li>
-			  			<li role="presentation"><a href="#variants" data-toggle="tab">Variants</a></li>
-			  			<li role="presentation"><a href="#priority-metrics" data-toggle="tab">Priority Metrics</a></li>
-			  			<li role="presentation"><a href="#key-characteristics" data-toggle="tab">Key Characteristics</a></li>
-					</ul>
+	  	<div class="col-lg-12">
+	  		<ul class="nav nav-pills nav-justified">
+	  			<li role="presentation" class="active"><a href="#typical-appearance" data-toggle="tab">Typical Appearance</a></li>
+	  			<li role="presentation"><a href="#typical-behavior" data-toggle="tab">Typical Behavior</a></li>
+	  			<li role="presentation"><a href="#variants" data-toggle="tab">Variants</a></li>
+	  			<li role="presentation"><a href="#priority-metrics" data-toggle="tab">Priority Metrics</a></li>
+	  			<li role="presentation"><a href="#key-characteristics" data-toggle="tab">Key Characteristics</a></li>
+			</ul>
 
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<div class="col-lg-12">
-								<div class="tab-content">
-									<div role="tabpanel" class="tab-pane active" id="typical-appearance">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="col-lg-12">
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="typical-appearance">
+								<div class="row">
+									<div class="col-lg-12">
 										<h3>Typical Appearance</h3>
 										<p class="lead">The most basic form of a string input field is a one-line, white, rectangular box. </p>
 										<p>
-											When not selected, the box appears like an ordinary rectangle; its edges are usually grey in color to show where the field is, where it begins, and where it ends. The field uses a font type and size appropriate to the overall look of the surrounding interface components. Additionally, a placeholder can be seen inside the text box in the form of a command or some other text description.
+											When not selected, the box appears like an ordinary rectangle; its edges are usually grey in color to show where the field is, where it begins, and where it ends. The field uses a font type and size appropriate to the overall look of the surrounding interface components. Additionally, a placeholder can be seen inside the text box in the form of a command or some other text description. When the user begins typing, the placeholder disappears and is replaced with the user's input. 
 										<br>
 										<br>
 										<input type="text" class="form-control" placeholder="Enter your text here...">
@@ -48,27 +50,33 @@ contributors:
 											Note: Some of the string input fields in this page have been extended width-wise to fit into the columns of the page, but they can vary in size across different webpages and platforms.
 										</p>
 									</div>
-									<div role="tabpanel" class="tab-pane" id="typical-behavior">
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="typical-behavior">
+								<div class="row">
+									<div class="col-lg-12">
 										<h3>Typical Behavior</h3>
-										<blockquote>
-											A string input components's main function is to accept user text information, therefore, it has to support keyboard focus; for more private text information, it also supports password entries. The string input field also signals the user that they can enter a value by changing the cursor icon when the user hovers over the field: the cursor will change into a shape that looks like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside the box, a blinking vertical bar (called a caret) would appear to show the user that the text field is waiting for an input.
-										</blockquote>
+										<p class="lead">
+											A string input components's main function is to accept user text information, therefore, it has to support keyboard focus; for more private text information, it also supports password entries. The string input field signals the user that they can enter a value by changing the cursor icon when the user hovers over the field: the cursor will change into a shape that looks like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside the box, a blinking vertical bar (called a caret) appears to show the user that the text field is waiting for an input.
+										</p>
+									</div>
+									<div class="col-lg-6" "col-sm-12">
 										<h4>Events</h4>
-										<blockquote>
+										<p>
 											The most important events for string input fields involve keyboard presses and entering texts. These relevant events include <code>input</code>, <code>keyup</code>, <code>keydown</code>, and <code>keypress</code>.
-										</blockquote>
+										</p>
 
-										<p> The <code>input</code> event is triggered the moment information is entered into the text field; the event is fired synchronously such that the effects can be detected immediately. The events <code>keyup</code>, <code>keydown</code>, and <code>keypress</code> all have similar functionality since they are all keyboard specific. The events are quite self-explanatory (e.g. <code>keydowm</code> is triggered when a key is pressed down, <code>keyup</code> is triggered when a key is let go, etc).
+										<p> The <code>input</code> event is triggered the moment information is entered into the text field; the event is fired synchronously such that the effects can be detected immediately. The events <code>keyup</code>, <code>keydown</code>, and <code>keypress</code> all have similar functionality since they are all keyboard specific. The events are quite self-explanatory (e.g. <code>keydown</code> is triggered when a key is pressed down, <code>keyup</code> is triggered when a key is let go, etc).
 										</p>
 										<br>
 
 										<h4>Component in Action (Default Text Field)</h4>
-										<blockquote>
+										<p>
 											The border of string input fields typically glow blue when they are enabled (i.e, when the user clicks on them). Once enabled, the user can easily type whatever they wish into the fields. While the user is typing, the caret remains visible to show the user where exactly they are inserting a key.
-										</blockquote>
+										</p>
 										Here is an example of what the string input field does: 
 										<p class="text-center">
-										<img src="gifs/hello_world.gif" height=110% width=105%>
+											<img src="gifs/hello_world.gif" height=110% width=105%>
 										</p>
 										Alternatively, the user can also highlight the text values inside the string input field. Doing this allows the user to easily and quickly replace all or some of the text they entered or remove them entirely.
 										<p class="text-center">
@@ -80,10 +88,12 @@ contributors:
 										</p>
 										If there are multiple string input fields on the page (let's say, a form on a webpage), then hitting the tab key would move the caret to and enable the next available text field on the page.
 										<br>
+									</div>
+									<div class="col-lg-6" "col-sm-12">
 										<h4>State Diagram</h4>
-										<blockquote>
+										<p>
 											String input fields await values from the user. They are used such that users can submit information and trigger other events in the interface. When a user is not interacting with the field, this component can only be classified as enabled or disabled.
-										</blockquote>
+										</p>
 										<p>
 											For enabled string input fields, the text box is awaiting the user to enter text; the field will also be in wait mode when the user is typing or cleared the text field. For a text field to actually show results, it should be accompanied by an event trigger or a submit button. For disabled text fields, the rectangular box can only do nothing. 
 										</p>
@@ -91,11 +101,17 @@ contributors:
 										<br>
 										<br>
 									</div>
-									<div role="tabpanel" class="tab-pane" id="variants">
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="variants">
+								<div class="row">
+									<div class="col-lg-12">
 										<h3>Variants</h3>
-										<blockquote>
+										<p class="lead">
 											Although text fields perform in the same manner, they can possess other design behaviors depending on where they are used. 
-										</blockquote>
+										</p>
+									</div>
+									<div class="col-lg-6" "col-sm-12">
 										<ul>
 											<li>
 												<em>String input fields with form submit buttons.</em>
@@ -114,13 +130,16 @@ contributors:
 											<br>
 								
 											<li>
-												<em>Password Entries.</em>Certain string input fields require the user to type specific text values. These text fields may use a red outline to show that the inputs entered are invalid. The text fields shown below require the user to enter the same text values in both text fields. Another aspect to note in the case below: the text values are hidden from the user. Instead of actual alpha-numeric text values, they can be visually replaced by a symbol (in this case, black dots) in order to hide the password the user enters. Only when the user enters an acceptable argument can the textbox change color into something more inviting (usually a green color for "success" or "acceptable input").
+												<em>Password Entries. </em>Certain string input fields require the user to type specific text values. These text fields may use a red outline to show that the inputs entered are invalid. The text fields shown below require the user to enter the same text values in both text fields. Another aspect to note in the case below: the text values are hidden from the user. Instead of actual alpha-numeric text values, they can be visually replaced by a symbol (in this case, black dots) in order to hide the password the user enters. Only when the user enters an acceptable argument can the textbox change color into something more inviting (usually a green color for "success" or "acceptable input").
 												<p class="text-center">
 													<img src="gifs/password_success.gif" width=100%>
 												</p>
 											</li>
 											<br>
-							
+										</ul>
+									</div>
+									<div class="col-lg-6" "col-sm-12">
+										<ul>
 											<li>
 												<em>Disabled.</em>
 												There are also some string input fields that will be disabled unless the user performs a specific action first. For example, a string input field will be disabled if the user has to first select from a variety of choices. 	  
@@ -143,11 +162,15 @@ contributors:
 											</p>
 										</ul>
 									</div>
-									<div role="tabpanel" class="tab-pane" id="priority-metrics">
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="priority-metrics">
+								<div class="row">
+									<div class="col-lg-12">
 										<h3>Priority Metrics</h3>
-										<blockquote>
+										<p class="lead">
 											With all interface elements, there has to be some way to measure how well each conveys a message to the users. How well an interface component, such as the string input field, is used can be described by the 5 usability metrics: learnability, efficiency, errors, memorability, and satisfaction. Since the string input field is such as common interface component, it can be expected that all these 5 metrics should be prioritized.
-										</blockquote>
+										</p>
 										<p>
 											<ul>
 												<li><em>Learnability</em> is the measure for how easily a new user is able to utilize the component. Since the string input field is a fundamental interface component, users must be able to recognize immediately how to use it. Since its appearance looks like an empty space, it should be able to show the user that it can accept text inputs.</li> 
@@ -158,16 +181,20 @@ contributors:
 											</ul>
 										</p>
 									</div>
-									<div role="tabpanel" class="tab-pane" id="key-characteristics">
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="key-characteristics">
+								<div class="row">
+									<div class="col-lg-12">
 										<h3>Key Characteristics</h3>
-										<blockquote>
+										<p class="lead">
 											A well-designed string input field should be able to show the user when they are needed to enter text values.
-										</blockquote>
+										</p>
 
 										<h4>Feedback</h4>
-										<blockquote>
+										<p>
 											Interaction design elements such as string input field must always give feedback to the user:
-										</blockquote>
+										</p>
 										For default string input fields:
 										<ol>
 											<li> The field should always have some sort of indication that it is enabled (e.g. by using colors).</li>
@@ -196,8 +223,10 @@ contributors:
 								</div>
 							</div>
 						</div>
-					</div>	
+					</div>
 				</div>
+			</div>	
+		</div>
 	</div>
 </div>
 <br>
@@ -389,7 +418,7 @@ For search fields:
 									In general, text boxes are designed in terms of their overall purpose/usage. They may use slightly different background colors (aside from outline colors) to differentiate them from the other application's text boxes. In Mac OS X, these are some forms that require text inputs.
 								</p>
 								<div class="row">
-								  	<div class="col-sm-6">
+								  	<div class="col-lg-6" "col-sm-12">
 										<ul>
 											<li><em>Spotlight Search</em> uses a text box to allow the user to find files anywhere in the machine. In order to make this text box appear on the screen, the user has to press the "Command" and "Space" buttons simultaneously. Like with all search boxes in Mac OS X, the text box displays a magnifying glass to indicate its purpose (i.e. to search). When a user types into this box, the box auto-fills with the most probable search terms in the system. A drop-down list also pops-up showing other possible search items.
 												<p class="text-center">
@@ -408,7 +437,10 @@ For search fields:
 												</p>
 											</li>
 											<br>
-
+										</ul>
+									</div>
+									<div class="col-lg-6" "col-sm-12">
+										<ul>
 											<li>
 												<em>Wi-fi properties window</em> allows the user to enter/find the network they wish to connect to. Similar to the printer properties text boxes, the user is allowed to enter one-line text information such as the specific network name.
 												<br>
@@ -416,11 +448,6 @@ For search fields:
 													<img src="img/osx_wifi.png" width=100%>
 												</p>
 											</li>
-										</ul>
-									</div>
-
-									<div class="col-sm-6">
-										<ul>
 											<li><em>Token Field</em> is used for text boxes that typically use the same text values. Applications, such as the OS X Mail shown below, allow the users to enter the email addresses of their contacts into the string input field without typing the entire address. This is similar to a search bar auto-fill since the values are automatically generated by recognizing the existing values being entered.
 												<br>
 												<br>
@@ -440,23 +467,23 @@ For search fields:
 													<img src="img/osx_imessage.png" width=100%>
 												</p>
 											</li>
-											<br>
-
-											<li><em>Notes</em> allow OS X users to write reminders or important information into a virtual notepad/sticky notes. This is an example of a text field that immediately shows the user the potential for creating numerous lines of text. In contrast to the other examples given, the text field is intentionally spacious to signal the user that they can use more than one line of text.
-												<br>
-												<p class="text-center">
-													<img src="img/osx_notes.png" width=100%>
-												</p>
-											</li>
 										</ul>
 									</div>
 								</div>
 							</div>
 							<div role="tabpanel" class="tab-pane active" id="ios-9">
-								<h3>iOS9</h3>
+								<h3>iOS 9</h3>
 							</div>
 							<div role="tabpanel" class="tab-pane active" id="shared-characteristics">
 								<h3>Shared Characteristics</h3>
+								<ul>
+									<li><em>Notes</em> allow OS X users to write reminders or important information into a virtual notepad/sticky notes. This is an example of a text field that immediately shows the user the potential for creating numerous lines of text. In contrast to the other examples given, the text field is intentionally spacious to signal the user that they can use more than one line of text.
+									<br>
+									<p class="text-center">
+										<img src="img/osx_notes.png" width=100%>
+									</p>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -535,6 +562,8 @@ For search fields:
 	</div>
 </div>
 -->
+<br>
+<br>
 <div class="container-fluid">
 	<div class="row">
 		<h3>Credits &amp; References</h3>
