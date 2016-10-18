@@ -1,250 +1,216 @@
 ---
-title: Lists
+title: Component Name
 layout: component
 contributors:
-    - name: Rony Aguilar
-      github: ronyaguilar09
-
-    - name : Kevin Hamilton
-      github: Khamilt7
+    - name: I. X. Designer
+      github: ixdesigner-on-github
 ---
 
-<p class="lead">Graphical user interface to visually display a list or array
-        of data. A common interaction that adds utility in mobile devices.</p>
+<blockquote>This file is meant to serve as a template sample for articles in the Paradixm component catalog.
+  Instructions/directives are presented in block quotes and sample text is included in line, as if it were actual
+  content for this page. Section headings are not samples but actual recommended titles.</blockquote>
 
-        <div class="row">
-            <div class="col-sm-6">
+<blockquote>Start your component pages with a quick description of the component, such as:</blockquote>
 
-                <h3>Typical Appearance</h3>
+<p class="lead">Quite possibly the single most common graphical user interface element, the push button triggers a
+  single action within an application.</p>
 
+<div class="row">
+  <div class="col-sm-6">
 
-                <p>The list from an interaction design perspective has a very literal appearance,
-                normally with a light colored background, and thin black bordered rows.
-                Most lists tend to be navigable, with the title of the list, and an option to
-                add more entries. Lists can be found in various applications that involve
-                displaying a "list" or set of data. This data can be shown in an alphabetical
-                order such as a list of contacts or unordered like a list of groceries. </p>
+<h3>Typical Appearance</h3>
 
-                <h3>Typical Behavior</h3>
+<blockquote>If a component is sufficiently widespread that it takes on a recognizable look across multiple platforms,
+  provide it here. If its appearance varies extremely widely, say so and direct the reader to platform-specific
+  instances.</blockquote>
 
-                <p>Able to view or display a certain amount of elements at a time. Add or
-                delete entries from anywhere on the list. List normally have a title
-                associated to describe the purpose of the list. List can describe procedures
-                in an ordered fashion or display data with bullet points in an unordered
-                fashion.</p>
+<h3>Typical Behavior</h3>
 
+<blockquote>
+  <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
+    here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
+    reader to the platform-specific sections.</p>
 
+  <p>Helpful subsections include:</p>
+</blockquote>
 
-                <h4>Events</h4>
+<h4>Events</h4>
 
+<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
+  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
 
-                <p>Adding or deleting an element to a list is an example of a event.
-                Users can specify if they wish the list to be ordered or unordered. The
-                user may wish to sort their list using user-defined conditions. A element
-                of a list can be <code>highlighted</code> or <code>disabled</code>. A
-                <code>tag</code> can be added to element of a list to display modifications
-                or activity.</p>
+<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
+  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
+  within the button’s bounds.</p>
 
-                <h4> Highlighted List State:</h4>
-                <p> Often times, an element on a list may be highlighted to show the user
-                that the element is currently selected or active.</p>
-                
-                <blockquote>
-                <div class="list-group">
-                    <a href="#" class="list-group-item active">Dogs</a>
-                    <a href="#" class="list-group-item list-group-item-action">Cats</a>
-                    <a href="#" class="list-group-item list-group-item-action">Hamsters</a>
-                    <a href="#" class="list-group-item list-group-item-action">Tigers</a>
-                    <a href="#" class="list-group-item list-group-item-action">Lions</a>
-                </div>
-                </blockquote>
-                <h4> Disabled List State:</h4>
-                <blockquote>
-                <div class="list-group">
-                    <a href="#" class="list-group-item disabled">Dogs</a>
-                    <a href="#" class="list-group-item">Cats</a>
-                    <a href="#" class="list-group-item">Hamsters</a>
-                    <a href="#" class="list-group-item">Tigers</a>
-                    <a href="#" class="list-group-item">Lions</a>
-                </div>
-                </blockquote>
-                <h4> Tag List State:</h4>
-                <blockquote>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <span class="badge">14</span>
-                        Cras justo odio
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">2</span>
-                        Dapibus ac facilisis in
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">1</span>
-                        Morbi leo risus
-                    </li>
-                </ul>
-                </blockquote>
-                <h4>Component in Action</h4>
-                <blockquote>
-                    <p class="text-center">
-                        <img src = "highlight.gif" alt="demonstration of highlighted and disabled list elements" style = "height:300px; width:500px;"/>
-                    </p>
-                </blockquote>
-            </div>
+<h4>State Diagram</h4>
 
-            <div class="col-sm-6">
-                <h3>Variants</h3>
+<blockquote>
+  <p>A state diagram indicating the actions and states of a user interface component.</p>
 
-                <blockquote>Lists are a very basic way to group together items that have some overarching similarity. The simplicity is the lists strength as well as its weakness.
-                Many other interface elements have become variants to lists because they offer more versatility in their design. 
-                Some of these variants are listed<!-- (no pun intended) --> below:
-                </blockquote>
+  <p>This is most likely an image. Bonus props if you use SVG.</p>
 
-                
-                <li><em>Menus </em> are very close to the look of a list generally displaying a various amount of elements. A distinct difference between a list and 
-                menu is the menu items can be clicked on for a event to take place. Also another major difference between menus and lists is a menu item can also 
-                be a menu its self.</li>
-              
+  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
+    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
+    however, may have more activities than the “public” events that can be reported by a component.</p>
+</blockquote>
 
-                <h4>Vertical Navigation Menu</h4>
+<p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
+  viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
+  it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
+  state means that a user <em>cannot</em> do so.</p>
 
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
+<p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
+  implementations, but in general they are:</p>
 
-                <li><em>Tables</em> A table is very similar to a list and even can be considered a list if the table is only displaying a group of elements all under
-                the same category. It however is often the case that a table is displaying a grouping of lists to see how the titles of those lists are correlated
-                in any way. Tables also create more structure and can't be unordered. </li>
-                
-                <h4>List Table Variant</h4>
-                <table class = "table table-striped" style="width:100%">
-                    <thead class="thead-inverse">
-                        <tr>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>Age</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Kevin</td>
-                            <td>Hamilton</td>
-                            <td>20</td>
-                        </tr>
-                        <tr>
-                            <td>Rony</td>
-                            <td>Aguilar</td>
-                            <td>21</td>
-                        </tr>
-                        <tr>
-                            <td>Chuck</td>
-                            <td>Norris</td>
-                            <td>76</td>
-                        </tr>
-                    </tbody>
-                </table>
+<ul>
+  <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
+    change the button’s appearance. This provides a form of feedback that states that the button will respond if
+    additional activity is performed.</li>
 
-                <h3>Priority Metrics</h3>
+  <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
+    the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
+    from this state, in case the user changes his or her mind in mid-action.</li>
+</ul>
 
-                <blockquote>Talk about the five usability metrics in relation to this component. Not all components will have the same
-                metric priorities. For example:</blockquote>
+<h4>Component in Action</h4>
 
-                <p>Practically every user interface uses lists whether its to organize data or to display further actions a user can take. When considering priority metrics with lists, its important to distinguish the variants that lists have an how those variant may have different priorities in terms of functionality.</p>
+<blockquote>
+  <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
 
-                <p>In the previous section, it was shown how a list may take up a menu functionality. In this case it would be important for the user to recognize that the menu or list is interactable. Therefore learnablility and memorability become a critical factor. The list becomes a navigable element, thus it should have a label or title relevant to where it directs a user if he or she interacts with it. The list would not be effective if it created many errors where a user mistakenly interpreted its elements.</p>
-                <p>However, with other variants, the list consists of different priorities. If a list is implemented to display a table of data which in this case is now non-interactive; learnability, memorability, and errors are no longer as significant. For this list, its sole purpose is to display data in an organizable fashion. </p>
-                <p>Perhaps the lowest priorities for a list would be satisfaction and efficiency. The lists serves a utilitarian component that has no value of enjoyment for the user but to simply display its elements. There is no reason for a user to become "efficient" with using a list since it has very low complexity.</p>
+  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
+</blockquote>
 
-                <h3>Key Characteristics</h3>
+<p class="text-center">
+  <button class="btn btn-default">Standard Bootstrap Button</button>
+  <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
+</p>
 
-                <blockquote>This section is for describing “what makes for a good <em>your component here</em>?”
-                Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
-                principles.</blockquote>
+  </div>
 
-                <h4>Feedback</h4>
+  <div class="col-sm-6">
+<h3>Variants</h3>
 
-                <p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
-                never doubt whether:</p>
+<blockquote>There is almost never just one form of a user interface component. Use this section to address variations
+  on this theme. Some variations are sufficiently different that they are considered to be a different component
+  entirely, despite very similar behavior. Meanwhile some variations are due to appearance only.</blockquote>
 
-                <ol>
-                    <li>they did positively trigger a button (and thus its associated action)</li>
-                    <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
-                    the action that triggers the button</li>
-                </ol>
-            </div>
-        </div>
+<ul>
+  <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
+    invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
+    different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
 
-            <h3>Platform-Specific Instances</h3>
+  <li><em>Links</em> can be considered as a specialized button—they are invoked almost identically, and their action
+    is even more narrowly defined as moving the user to a different view or display. The distinction here is
+    definitely less sharp than the distinction between a menu item and a button. For links within a document, the
+    document might be viewed as a menu in itself, and thus links are “menu items” indicating what the user can view
+    next. Thus, in some ways, links are hybrids between buttons and menu items.</li>
+</ul>
 
-            <blockquote>
-                <p>This is where things can get really interesting—platform-specific sections go here. Different versions of
-                the same system are considered to be platforms in their own right (e.g., Windows 95 buttons vs. Windows 10
-                buttons). Completely customized versions of a component (e.g., a unique-looking/-acting button made specifically
-                for a game) are also acceptable here.</p>
+<h3>Priority Metrics</h3>
 
-                <p>The outline for platform-specific entries resembles the outline already described above, except with a focus
-                on how the platform-specific version is <em>different</em>. Thus, you will want some notes on appearance (i.e.,
-                more screenshots), behavior, variants, metrics, and characteristics. If some aspect is the same, then say so
-                explicitly so that there is no confusion.</p>
+<blockquote>Talk about the five usability metrics in relation to this component. Not all components will have the same
+  metric priorities. For example:</blockquote>
 
-                <p>Some platform-specific instances of certain user interface components will merit such a rich discussion that they
-                may require a sizable number of supporting assets. In that case, feel free to add subfolders to the main component
-                folder, named after the platform under examination.</p>
+<p>Because the button is such a fundamental part of virtually every user interface available today, it can be said that
+  all usability metrics are equally important for this component. Users who are seeing a button in a given platform for
+  the first time must not have any issues recognizing it and knowing what to do with it (learnability). The high
+  priority of learnability also implies that memorability is a given.</p>
 
-                <p>This could well be the most distinctive part of the catalog—the sections above this generally appear in user
-                interface guidelines, albeit with a platform-specific focus. A key premise of the Paradixm project is to compare
-                user interface elements <em>across</em> platforms. Thus, feel free to be creative about presentation here. You
-                might want to display a visual gallery, for example, with links leading to individual pages for each covered
-                platform-specific user interface component.</p>
-            </blockquote>
-        
+<p>Users must also never experience undue delays with using a button (efficiency), particularly because using a button
+  almost always involves an instantaneous, immediate-result action. Users should almost never trigger a button by
+  mistake (errors)—especially buttons whose actions result in significant changes to data or the real world.</p>
 
-            <div class="row">
-                <div class="col-xs-6 col-sm-3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title text-center">Alto</h4>
-                        </div>
-                        <div class="panel-body">
-                        </div>
-                    </div>
-                </div>
+<p>If any metric at all can be considered as a “low priority” for buttons, it would be satisfaction. The button is such
+  a utilitarian component that “fun” or “enjoyment” is hardly associated with its use. One exception to this
+  prioritization may be for buttons in applications whose primary metric is satisfaction (e.g., games, entertainment).
+  As a part of that overall system, making buttons “fun” may then become more important than in other situations.</p>
 
-                <div class="col-xs-6 col-sm-3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title text-center">Amiga</h4>
-                        </div>
-                        <div class="panel-body">
-                        </div>
-                    </div>
-                </div>
+<h3>Key Characteristics</h3>
 
-                <div class="col-xs-6 col-sm-3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title text-center">Material Design</h4>
-                        </div>
-                        <div class="panel-body">
-                        </div>
-                    </div>
-                </div>
+<blockquote>This section is for describing “what makes for a good <em>your component here</em>?”
+  Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
+  principles.</blockquote>
 
-                <div class="col-xs-6 col-sm-3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title text-center">watchOS</h4>
-                        </div>
-                        <div class="panel-body">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <h3>Credits &amp; References</h3>
+<h4>Feedback</h4>
 
-            <blockquote>Provide references or links to any information, image, or media sources used.</blockquote>
+<p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
+  never doubt whether:</p>
+
+<ol>
+  <li>they did positively trigger a button (and thus its associated action)</li>
+  <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
+    the action that triggers the button</li>
+</ol>
+  </div>
+</div>
+
+<h3>Platform-Specific Instances</h3>
+
+<blockquote>
+  <p>This is where things can get really interesting—platform-specific sections go here. Different versions of
+    the same system are considered to be platforms in their own right (e.g., Windows 95 buttons vs. Windows 10
+    buttons). Completely customized versions of a component (e.g., a unique-looking/-acting button made specifically
+    for a game) are also acceptable here.</p>
+
+  <p>The outline for platform-specific entries resembles the outline already described above, except with a focus
+    on how the platform-specific version is <em>different</em>. Thus, you will want some notes on appearance (i.e.,
+    more screenshots), behavior, variants, metrics, and characteristics. If some aspect is the same, then say so
+    explicitly so that there is no confusion.</p>
+
+  <p>Some platform-specific instances of certain user interface components will merit such a rich discussion that they
+    may require a sizable number of supporting assets. In that case, feel free to add subfolders to the main component
+    folder, named after the platform under examination.</p>
+
+  <p>This could well be the most distinctive part of the catalog—the sections above this generally appear in user
+    interface guidelines, albeit with a platform-specific focus. A key premise of the Paradixm project is to compare
+    user interface elements <em>across</em> platforms. Thus, feel free to be creative about presentation here. You
+    might want to display a visual gallery, for example, with links leading to individual pages for each covered
+    platform-specific user interface component.</p>
+</blockquote>
+
+<div class="row">
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Alto</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Amiga</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Material Design</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">watchOS</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Credits &amp; References</h3>
+
+<blockquote>Provide references or links to any information, image, or media sources used.</blockquote>
