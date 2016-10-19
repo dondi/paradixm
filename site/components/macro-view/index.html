@@ -1,0 +1,160 @@
+---
+title: Macro View
+layout: component
+contributors:
+    - name: Anson Adams
+      github: ansonadams
+---
+
+<p class="lead">A macro view arranges an entire, often complex, information system into a single view for the purpose of “contrast, comparison, [or] choice.”<sup>1</sup></p>
+
+<div class="row">
+  <div class="col-sm-6">
+
+<h3>Typical Appearance</h3>
+
+<p>A macro view describes not a single component, but a visual design technique. The appearance of a macro view can only be extrapolated from the design principles it emphasizes. Therefore, the variation of its appearance is only limited to the designer’s imagination. Most notably, a macro view is most effective when enough details are present that the user absorb the information in its full complexity and subtlety. Macro views are consequentially information-dense; information systems are usually complex and screen space is limited.</p>
+
+<h3>Typical Behavior</h3>
+
+<h4>Events</h4>
+
+<p>A macro / micro view should capture the entire information set in a single view. However, it is possible to narrow one’s focus on a particular subsection of the view. For this, the user can <code>zoom</code> or perform an action accomplishing a narrowing or broadening of focus. To accomplish a <code>zoom</code>, a user could <code>select</code> progressively smaller areas of the data and the display could <code>zoom</code> on the selections. Although, this is only one imagined implementation of events when there are far more possible control schemes.</p>
+
+<h4>Component in Action</h4>
+
+<div class="thumbnail">
+  <img src = "images/Mac Overview Animated.gif" alt = "Mac Mission Control Animated">
+  <a href="http://www.macworld.com/article/2987277/operating-systems/os-x-el-capitan-review-mac-upgrade-thats-as-solid-as-a-rock.html" class="caption">
+    Image courtesy of MacWorld.com.
+  </a>
+</div>
+
+<h3>Priority Metrics</h3>
+
+<p>Learnability is crucial to the effective use of a macro view. A macro view displays a necessarily complex dataset. Therefore, if a design isn’t thoughtfully organized and clear, the sheer amount of information will overwhelm the user. A macro view’s quality can be best measured by its learnability because at its core, a macro view must present large amounts of information in an easily understandable manner.</p>
+
+<p>Efficiency could be considered important if a macro view is used frequently. For instance, a macro view could be used as a root page in an application. Efficiency could also be key for operators who need to work with large amounts of data in small amounts of time, such as air traffic control operators or, as Tufte notes in Envisioning Information, high speed train managers.</p>
+
+<p>Errors are more application-specific. Overall, a user could have committed an error if they did not understand the macro view’s representation of the data. For example, they could misconstrue one variable as another on a graph. More importantly, it could be the macro view itself that causes errors due to confusing design or poor organization of data.</p>
+
+<p>Memorability and satisfaction play less of a critical role. If a macro view is effortlessly learnable, then memorability easily follows. A poorly designed macro view would require high memorability because the user would have to partially relearn it each time they reencountered it. Satisfaction has little to do with macro views because they attempt to communicate data. Satisfaction would also derive from the learnability of the macro view, since a macro view that is difficult and confusing to learn will surely frustrate users.</p>
+
+<h3>Key Characteristics</h3>
+
+<h4>Leverages Detail</h4>
+
+<p>A macro view is highly effective when it captures an information system fully and completely. Tufte argues that detail in macro views have two primary benefits. Detail complements the human ability to read complex visual data and also enriches comparative tasks, the main purpose of using macro views. He summarizes that “to clarify, add detail.”<sup>1</sup></p>
+
+<h4>Thoughtful Arrangement / Structure</h4>
+
+<p>A macro view cannot work without an intelligently designed presentation of the designer’s mental model and or data. This is due to the inherent complexity of the presented information. A commonly overlooked distinction that Tufte notes is that “the quantity of detail is an issue completely separate from the difficulty of reading.”<sup>1</sup> Macro views must be properly designed so that they take advantage of the available details. Else, they will simply be plain, unreadable graphs of massive amounts data.</p>
+
+<h4>Empowerment of User</h4>
+
+<p>Should a macro view be excellently designed, the user will be empowered in their experience of the data or system. The presentation will be so clear that they will control the flow of information, rather than the “editors, designers, or decorators” of the view.<sup>1</sup></p>
+
+  </div>
+
+  <div class="col-sm-6">
+
+<h3>Variants</h3>
+
+<p>Macro views can either retain or hide detail. Edward Tufte describes a particular form of macro view, which he calls a “macro / micro reading” of an information set. Tufte’s macro view not only retains the data’s details, but relishes in them since “detail cumulates into larger coherent structures.“ In this case, a macro view is “rich with data” and “can report immense detail” if properly organized.<sup>1</sup></p>
+
+<div class="thumbnail">
+  <img src = "images/Iphone Calendar.jpg" alt = "Iphone Calendar App">
+  <a href="http://www.brianjcoleman.com/tutorial-setting-an-event-in-ical/" class="caption">
+    Image courtesy of BrianJColeman.com.
+  </a>
+</div>
+
+<p>A macro view could also hide subtleties and conglomerate data into larger chunks. However, this has the potential to undermine the core strengths of a macro view. One instance of this would be the iPhone’s default calendar application: in the single day view, users can chart their scheduled events across a list of individual hours. When they zoom out to the month view, hourly information is reduced to a binary “has” or “does not have” an event or multiple events on a given day.</p>
+
+<p>Further variation can be broken down into how a macro view is implemented.</p>
+
+<div class="thumbnail">
+  <img src = "images/Mac Backup.png" alt = "Mac Backup App">
+  <a href="http://www.macworld.com/article/1165784/macs/how-to-restore-data-from-time-machine.html" class="caption">
+    Image courtesy of MacWorld.com.
+  </a>
+</div>
+
+<p>The Time Machine history window on a Mac could possibly be considered a macro view in that it displays many backups at once on a single screen. However, the view could be considered ineffectual because the backups are displayed on top of each other, making visual comparison impossible. Furthermore, the entire system directory is displayed for each backup rather than highlighting the changes between states like in GitHub’s commit history.</p>
+
+<div class="thumbnail">
+  <img src = "images/Android Memory.jpg" alt = "DiskUsage Android App" style="max-height:400px">
+  <a href="https://play.google.com/store/apps/details?id=com.google.android.diskusage" class="caption">
+    Image courtesy of DiskUsage.
+  </a>
+</div>
+
+<p>The DiskUsage application for the Android phone is an excellent example of a macro view. Differently sized rectangles correspond to the relative memory usage of different types of files, resulting in an instantly clear, navigable graph. For a complete macro / micro view, the rectangles could be broken down into further subsections until individual file specificity is achieved.</p>
+
+  </div>
+</div>
+
+
+
+
+<h3>Platform-Specific Instances</h3>
+
+<h4>Mac OS X: Mission Control</h4>
+
+<div class="row">
+  <div class="col-sm-6">
+
+<div class="thumbnail">
+  <img src = "images/Mac Overview.jpg" alt = "Mac Mission Control" height="400px">
+  <a href="https://upload.wikimedia.org/wikipedia/en/a/a2/Mac_OS_X_Lion_Preview_-_Mission_Control.jpg" class="caption">
+    Image courtesy of Wikipedia.
+  </a>
+</div>
+
+<p>Mac OS X’s Mission Control feature exhibits a well-designed macro view. According to the Mission Control panel in the Mac System Preferences, “Mission Control gives you an overview of all your open windows, thumbnails of your full-screen applications, and Dashboard, all arranged in a unified view.”<sup>3</sup></p>
+
+<p>To access the Mission Control view, a Mac user must simply swipe up with three or more fingers. The following then occurs:</p>
+
+<h5>Appearance</h5>
+
+<ul>
+  <li>Every application open in the desktop decreases in size and moves to a position onscreen such that no two applications are overlapping. Every open application is now viewable. Optionally, applications of the same type can stack together.</li>
+  <li>Every application or application cluster is annotated at the bottom of its window with the application logo and typed name.</li>
+  <li>The application dashboard becomes visible if normally hidden.</li>
+  <li>The desktop dashboard, which allows users to switch between desktops, slides in from above to allow use. The desktop dashboard is a macro view in itself, rendering the open desktops in a horizontal array.</li>
+</ul>
+
+</div>
+
+  <div class="col-sm-6">
+
+<h5>Events</h5>
+
+<p>While in the Mission Control macro view, users can:</p>
+
+<ul>
+  <li>Click on an application window. The computer will exit the Mission Control view and resume the normal view, but with the selected application in the front of the screen and active.</li>
+  <li>Drag an application window up onto the desktop dashboard to send the application window to a different desktop.</li>
+  <li>Run a new application by clicking on an application icon in the application dashboard.</li>
+</ul>
+
+<h5>Priority Metrics</h5>
+
+<p>Mission Control is highly learnable for two primary reasons. First, the controls are simple: swipe up. They are also intuitive, employing direct object manipulation when users drag windows from one desktop to another. Additionally, the layout is effortlessly understandable. Different components belong exclusively to different areas of the screen. Open application windows are separated by empty space, making the layout faster to read.</p>
+
+<p>Windows are also annotated, so errors are rendered nearly impossible. However, an error could occur if the user opts to group windows of the same application. Then, windows could potentially be hidden and not selectable by the user.</p>
+
+<p>The view is also extremely efficient. The windows animate from their original position to organized position. The animation is slow enough for the user to track the movement, but not slow enough for the user to have to wait.</p>
+
+<p>The simplicity of design makes Mission Control controls highly memorable. The only gesture that seems arbitrary is swiping up to activate mission control. Considering the other controls (click to select, drag to move) are so logical, perhaps a zooming out gesture would have been more consistent. Ease of use leads to high satisfaction. The layout is aesthetically pleasing, animates smoothly, and is ultimately an extremely productive tool.</p>
+
+  </div>
+</div>
+
+<h3>Credits &amp; References</h3>
+
+<ol type="1">
+  <li>Tufte, Edward R. <i>Envisioning Information.</i> Cheshire, CT: Graphics, 1990. Print.</li>
+  <li>http://www.howtogeek.com/180677/mission-control-101-how-to-use-multiple-desktops-on-a-mac/</li>
+  <li>https://support.apple.com/en-us/HT204100</li>
+</ol>
