@@ -60,7 +60,7 @@ contributors:
 											A string input components's main function is to accept user text information, therefore, it has to support keyboard focus; for more private text information, it also supports password entries. The string input field signals the user that they can enter a value by changing the cursor icon when the user hovers over the field: the cursor will change into a shape that looks like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside the box, a blinking vertical bar (called a caret) appears to show the user that the text field is waiting for an input.
 										</p>
 									</div>
-									<div class="col-lg-6" "col-sm-12">
+									<div class="col-md-6" "col-sm-12">
 										<h4>Events</h4>
 										<p>
 											The most important events for string input fields involve keyboard presses and entering texts. These relevant events include <code>input</code>, <code>keyup</code>, <code>keydown</code>, and <code>keypress</code>.
@@ -89,7 +89,7 @@ contributors:
 										If there are multiple string input fields on the page (let's say, a form on a webpage), then hitting the tab key would move the caret to and enable the next available text field on the page.
 										<br>
 									</div>
-									<div class="col-lg-6" "col-sm-12">
+									<div class="col-md-6" "col-sm-12">
 										<h4>State Diagram</h4>
 										<p>
 											String input fields await values from the user. They are used such that users can submit information and trigger other events in the interface. When a user is not interacting with the field, this component can only be classified as enabled or disabled.
@@ -111,7 +111,7 @@ contributors:
 											Although text fields perform in the same manner, they can possess other design behaviors depending on where they are used. 
 										</p>
 									</div>
-									<div class="col-lg-6" "col-sm-12">
+									<div class="col-md-6" "col-sm-12">
 										<ul>
 											<li>
 												<em>String input fields with form submit buttons.</em>
@@ -138,7 +138,7 @@ contributors:
 											<br>
 										</ul>
 									</div>
-									<div class="col-lg-6" "col-sm-12">
+									<div class="col-md-6" "col-sm-12">
 										<ul>
 											<li>
 												<em>Disabled.</em>
@@ -251,7 +251,7 @@ contributors:
 									In general, text boxes are designed in terms of their overall purpose/usage. They may use slightly different background colors (aside from outline colors) to differentiate them from the other application's text boxes. In Mac OS X, these are some forms that require text inputs.
 								</p>
 								<div class="row">
-								  	<div class="col-lg-6" "col-sm-12">
+								  	<div class="col-md-6" "col-sm-12">
 										<ul>
 											<li><em>Spotlight Search</em> uses a text box to allow the user to find files anywhere in the machine. In order to make this text box appear on the screen, the user has to press the "Command" and "Space" buttons simultaneously. Like with all search boxes in Mac OS X, the text box displays a magnifying glass to indicate its purpose (i.e. to search). When a user types into this box, the box auto-fills with the most probable search terms in the system. A drop-down list also pops-up showing other possible search items.
 												<p class="text-center">
@@ -261,7 +261,6 @@ contributors:
 											Note: This text box is extremely similar to the search box in the "Start" menu of Windows systems.
 											<br>
 											<br>
-											
 											<li>
 												<em>Printer properties</em> are used for adding printer devices to the Mac OS X system to enable printing. In order to do this, OS X allows the user to type the address of the wireless printer that is in the same network as the OS X machine. Additional textboxes can be seen in the window to add a name to the specific printer.
 												<br>
@@ -269,10 +268,9 @@ contributors:
 													<img src="img/osx_add_printer.png" width=100%>
 												</p>
 											</li>
-											<br>
 										</ul>
 									</div>
-									<div class="col-lg-6" "col-sm-12">
+									<div class="col-md-6" "col-sm-12">
 										<ul>
 											<li>
 												<em>Wi-fi properties window</em> allows the user to enter/find the network they wish to connect to. Similar to the printer properties text boxes, the user is allowed to enter one-line text information such as the specific network name.
@@ -281,6 +279,8 @@ contributors:
 													<img src="img/osx_wifi.png" width=100%>
 												</p>
 											</li>
+											<br>
+											<br>
 											<li><em>Token Field</em> is used for text boxes that typically use the same text values. Applications, such as the OS X Mail shown below, allow the users to enter the email addresses of their contacts into the string input field without typing the entire address. This is similar to a search bar auto-fill since the values are automatically generated by recognizing the existing values being entered.
 												<br>
 												<br>
@@ -288,18 +288,9 @@ contributors:
 													<img src="img/token_field_2x.jpg" width=50%>
 												</p>
 												</li>
-											<br>
-
 											<p class="text-center">
 												<img src="img/token_menu.jpg" width=100%>
 											</p>
-
-											<li><em>iMessage</em> is one of the most commonly used application on the OS X since it allows users to respond immediately to text messages without the need to check their mobile devices. This instance of the string input field even supports emojis to give more freedom for the user's text entries. Additionally, the user is allowed to speak directly into the machine in order to enter their message.
-												<br>
-												<p class="text-center">
-													<img src="img/osx_imessage.png" width=100%>
-												</p>
-											</li>
 										</ul>
 									</div>
 								</div>
@@ -308,15 +299,62 @@ contributors:
 								<h3>iOS 9</h3>
 							</div>
 							<div role="tabpanel" class="tab-pane" id="shared-characteristics">
-								<h3>Apple Shared Characteristics</h3>
-								<ul>
-									<li><em>Notes</em> allow OS X users to write reminders or important information into a virtual notepad/sticky notes. This is an example of a text field that immediately shows the user the potential for creating numerous lines of text. In contrast to the other examples given, the text field is intentionally spacious to signal the user that they can use more than one line of text.
-									<br>
-									<p class="text-center">
-										<img src="img/osx_notes.png" width=100%>
-									</p>
-									</li>
-								</ul>
+								<div class="row">
+									<div class="col-lg-12">
+										<h3>Apple Shared Characteristics</h3>
+										<p class="lead">Because OS X and iOS 9 were both developed by Apple, they have many shared characteristics. This section is meant to show those characteristics which appear and behave essentially the same.</p>
+									</div>
+									<div class="col-md-6" "col-sm-12">
+										<ul>
+											<li><em>Notes</em> allow OS X and iOS 9 users to write reminders or important information into a virtual notepad. This is an example of a text field that immediately shows the user the potential for creating numerous lines of text. In contrast to the other examples given, the text field is intentionally spacious to signal the user that they can use more than one line of text. The notepad looks like an actual notepad, which subliminally tells the user what this application is intended for. 
+											<br>
+											<br>
+											<div id="carousel-notes" class="carousel slide" data-ride="carousel">
+												  <!-- Indicators -->
+												  <ol class="carousel-indicators">
+												    <li data-target="#osx-notes" data-slide-to="0" class="active"></li>
+												    <li data-target="#ios9-notes" data-slide-to="1"></li>
+												  </ol>
+
+												  <!-- Wrapper for slides -->
+												  <div class="carousel-inner" role="listbox">
+												    <div class="item active">
+												      <img src="img/osx_notes.png">
+												      <div class="carousel-caption">
+												      </div>
+												    </div>
+												    <div class="item">
+												      <img src="img/ios9_notes.png">
+												      <div class="carousel-caption">
+												      </div>
+												    </div>
+												  </div>
+
+												  <!-- Controls -->
+												  <a class="left carousel-control" href="#carousel-notes" role="button" data-slide="prev">
+												    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+												    <span class="sr-only">Previous</span>
+												  </a>
+												  <a class="right carousel-control" href="#carousel-notes" role="button" data-slide="next">
+												    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+												    <span class="sr-only">Next</span>
+												  </a>
+											</div>
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-6" "col-sm-12">
+										<ul>
+											<li><em>iMessage</em> is available on both OS X and iOS 9. It is one of the most commonly used applications on OS X because it allows users to respond immediately to text messages without the need to check their mobile devices. This instance of the string input field even supports emojis to give more freedom for the user's text entries. Additionally, the user can to speak directly into the machine in order to enter their message. This can be done by pressing the microphone button right next to the input field and simply speaking into the phone or computer. A single image is shown because iMessage string input looks exactly the same in OS X and iOS 9.
+												<br>
+												<br>
+												<p class="text-center">
+													<img src="img/osx_imessage.png" width=100%>
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
