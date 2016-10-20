@@ -36,9 +36,11 @@ contributors:
 <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
   highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
 
-<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
-  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
-  within the button’s bounds.</p>
+<p> Using the scrollbar component, the most relevant scrolling event is the <code>click</code>. A <code>click</code> event
+   indicates that the user has selected either the scrollbar thumb or the up and down arrows on either end of the scrollbar. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly within the bounds of the scrollbar thumb. In the event that the user clicks and holds a scrollbar, the <code>release</code> event is applicable. </p>
+
+<p> The scrollbar will highlight during a <code>hover</code> event and then highlight brighter upon being clicked. This
+    provides a form of feedback that indicates scrollbar response upon additional activity performed. </p>
 
 <h4>State Diagram</h4>
 
