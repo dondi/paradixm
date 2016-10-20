@@ -10,32 +10,32 @@ contributors:
       github: gsaranti
 ---
 
-<p class="lead">The scrolling feature is probably the most commonly used behavioral component on modern interfaces. By scrolling, users can manipulate their location on a page (both vertically and horizontally) to see content that lies beyond the dimensions of their current display.</p>
+<p class="lead">The scrolling feature is one of the most commonly used behavioral component on modern interfaces. By scrolling, users can manipulate their location on a page (both vertically and horizontally) to see content that lies beyond the dimensions of their current display.</p>
 
 <div class="row">
   <div class="col-sm-6">
 
 <h3>Typical Appearance</h3>
 
-<blockquote>If a component is sufficiently widespread that it takes on a recognizable look across multiple platforms,
-  provide it here. If its appearance varies extremely widely, say so and direct the reader to platform-specific
-  instances.</blockquote>
+<blockquote>The scrollbar has one generally-accepted appearance: a tray on the right side of the computer screen in which a slightly off-colored block, known as the scroll thumb, rests. The shape and color of the tray and thumb vary across different platforms.</blockquote>
+
+<img src="scrollbars.jpg" class="img-scrolling" alt="Different Scrollbar Appearances" width="500">
+
 
 <h3>Typical Behavior</h3>
 
 <blockquote>
-  <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
-    here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
-    reader to the platform-specific sections.</p>
-
-  <p>Helpful subsections include:</p>
+  <p>The action of scrolling up or down is universal. The user can move, or scroll, an entire page of content  
+     up or down by manipulating the scroll thumb (or one of the variants provided lower). Users can change the 
+     direction of their scroll in their settings - this will be discussed further in variants and platform-specific
+     instances. </p>
 
 </blockquote>
 
 <p> Across most devices, the scroll thumb will adjust in size to give the user an indication on the size of the document. 
-       This is a helpful form of feedback for the amount of content on any given page. A possible complaint, however, resides
-       in the event that a page has an inordinate amount of content; in this scenario, the scroll thumb becomes very small and
-       difficult to manipulate for some users. </p>
+    This is a helpful form of feedback for the amount of content on any given page. A possible complaint, however, resides
+    in the event that a page has an inordinate amount of content; in this scenario, the scroll thumb becomes very small and
+    difficult to manipulate for some users. </p>
 
    <img src="scroll_length_v1.png" class="img-scrolling" alt="Longer Scroll Thumb" width="220" height="220">
    <img src="scroll_length_v2.png" class="img-scrolling" alt="Shorter Scroll Thumb" width="220" height="220">
@@ -46,7 +46,7 @@ contributors:
   highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
 
 <p> Using the scrollbar component, the most relevant scrolling event is the <code>click</code>. A <code>click</code> event
-   indicates that the user has selected the scrollbar thumb. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly within the bounds of the scrollbar thumb. In the event that the user clicks and holds a scrollbar, the <code>release</code> event is applicable. </p>
+    indicates that the user has selected the scrollbar thumb. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly within the bounds of the scrollbar thumb. In the event that the user clicks and holds a scrollbar, the <code>release</code> event is applicable. </p>
 
 <p> The scrollbar will highlight during a <code>hover</code> event and then highlight brighter upon being clicked. This
     provides a form of feedback that indicates scrollbar response upon additional activity performed. </p>
