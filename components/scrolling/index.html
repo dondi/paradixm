@@ -21,6 +21,8 @@ contributors:
 
 <img src="scrollbars.jpg" class="img-scrolling" alt="Different Scrollbar Appearances" width="500">
 
+<p> If there is content on the page that is not immediately visible from left to right, scrollbars will also appear on the bottom of a page in a horizontal position identical in appearance to its vertical counterpart.</p>
+
 
 <h3>Typical Behavior</h3>
 
@@ -57,32 +59,17 @@ contributors:
 
 <h4>State Diagram</h4>
 
-<blockquote>
-  <p>A state diagram indicating the actions and states of a user interface component.</p>
+<img src="state_diagram.png" class="img-scrolling" alt="State Diagram">
 
-  <p>This is most likely an image. Bonus props if you use SVG.</p>
+<p>Scrollbars share the following states because of their similar functionality. The <code>drag</code> and <code>
+   instantaneous</code> "scrolling" states can be viewed as <code>enabled</code> scrolling states, since they must be activated through user interaction. The <code>initial</code> state can also be referred to as <code>dormant</code>, meaning that the user has yet to interact with the scrollbar.
 
-  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
-    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
-    however, may have more activities than the “public” events that can be reported by a component.</p>
-</blockquote>
-
-<p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
-  viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
-  it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
-  state means that a user <em>cannot</em> do so.</p>
-
-<p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
-  implementations, but in general they are:</p>
+<p>When a scrollbar is <code>enabled</code>, the two possible active states are:</p>
 
 <ul>
-  <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
-    change the button’s appearance. This provides a form of feedback that states that the button will respond if
-    additional activity is performed.</li>
+  <li><code>dragging scroll</code>: The user is "dragging" the page up or down, whether by directly manipulating the scroll thumb or by taking advantage of the two-finger scroll function of the trackpad. </li>
 
-  <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
-    the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
-    from this state, in case the user changes his or her mind in mid-action.</li>
+  <li><code>instantaneous scroll</code>: The user "skips" across the page with keyboard functions (the up and down arrow keys, the space bar, page up and page down keys, etc.). The effect is an instantaneous jump, rather than a gradual pulling drag of a page. </li>
 </ul>
 
 <h4>Component in Action</h4>
