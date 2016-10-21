@@ -22,7 +22,7 @@ contributors:
   single action within an application.</p>
 
 <div class="row">
-  <div class="col-sm-6">
+  <div class="col-sm-12">
 
 <h3>Typical Appearance</h3>
 
@@ -33,17 +33,18 @@ contributors:
 <h3>Typical Behavior</h3>
 
 <blockquote>
-  <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
-    here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
-    reader to the platform-specific sections.</p>
-
-  <p>Helpful subsections include:</p>
+  <p>Date and Time objects provide the user with the ability to store references to particular instances in time. They can be broken down into parts and manipulated accordingly (hour, minutes, seconds, month, day, year, etc.). Different timezones and particular calendars, such as a Hebrew calendar, can also be applied/referenced.
+  </p>
+  <p>source: (https://developer.apple.com/library/prerelease/content/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html)
+  </p>
 </blockquote>
 
 <h4>Events</h4>
 
 <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
   highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+
+<blockquote>The <em>date</em> component represents an invariant point in time, which implies that date is a combination of a clock <em>time</em> and a day on a particular calendar. We use a particular calendar, (the Buddhist calendar for example) to decompose the date object into its’ different components like year, month, day, hour and minute. This provides a means for comparing dates, creating a new date from a time interval relative to another date, and calculating the interval of time between two dates.</blockquote>
 
 <p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
   triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
@@ -94,7 +95,8 @@ contributors:
 
   </div>
 
-  <div class="col-sm-6">
+  <div class="col-sm-12">
+
 <h3>Variants</h3>
 
 <blockquote>There is almost never just one form of a user interface component. Use this section to address variations
@@ -206,8 +208,10 @@ contributors:
       </div>
       <div class="panel-body">
         <h5> Appearance </h5>
-        <p> Creating a new event/editing an event's details in the calendar app: </p>
+        
+        <li> Creating a new event/editing an event's details in the calendar app: </li>
 
+        <img src="media/calendarApp.png" class="img-responsive" alt="Screenshot of iPhone calendar app">
       </div>
     </div>
   </div>
