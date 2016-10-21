@@ -33,13 +33,12 @@ contributors:
 
 </style>
 
-<p class="lead"> A common, high-level task in which the user is able to group certain items such as text, images, or other components on the screen - either by clicking on them or highlighting them with keyboard commands - and signal to the machine what elements on which the user wishes to focus. </p>
+<p class="lead"> A common, high-level task in which the user is able to group certain items such as text, images, or other components on the screen - by clicking on them, touching them, or highlighting them with keyboard commands - and signal to the machine what elements on which the user wishes to focus. </p>
 
 <div class="row">
   <div class="col-sm-12">
 
 <h3>Typical Appearance</h3>
-
 <div class="container">
     <ul class="row" id="row-pictures">
       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/DropdownMenuSelect.png" alt="Drop Down Menu Select"></li>
@@ -51,11 +50,15 @@ contributors:
 
 <h3>Typical Behavior</h3>
 <p>
-  Since selection of text, web elements, files, images, etc. is a relatively common task, there is a consistent behavior associated with it across multiple platforms. When an item is selected, it is usually highlighted in a different color. On a computer, there are many types of items that may be selected. For example, when selecting text, the user should left-click and drag over the desired text to select. For folders and files, a user could mouse over and hover over the desired item and see a dim highlight encapsulating the item. If the user wants to select that item they would click on it and the dim highlight would change to a more opaque one, signifying the selection. 
+  Since selection of text, web elements, files, images, etc. is a relatively common task, there is a consistent behavior associated with it across multiple platforms. When a user selects an item, it is usually highlighted in a different color; most major platforms and operating systems as of 2016 utilize a blue-on-white color scheme by default, though some allow users to configure personalized color schemes or install themes that alter many such aesthetic features.
 </p>
 
 <p>
-  There are also different methods of selecting, notably when paired with the Shift and Ctrl/Command (&#8984;) keys on the keyboard.
+  Many types of items and elements may be selected in different computer environments. With text, for example, the cursor turns into a specialized text cursor (the appearance of which depends upon both the platform and software, but typically resembles a capital Roman letter "I") as the mouse hovers over it. When the user left-clicks and drags the mouse over the desired text to select, the choosen characters highlight in a different color. On mobile platforms, a long press will usually highlight the entire selected word by default, with "handle" tooltips appearing at each end of the selection for further adjustment. For items such as folders and files or apps, the user will typically see a dim highlight encapsulating items as they mouse or hover over them. If the user chooses to select an item, clicking on or touching it causes the dim highlight to change to a more opaque one, signifying the selection as a focus of attention.
+</p>
+
+<p>
+  There are also different methods of selecting, notably when paired with the Shift and Ctrl/Command (&#8984;) keys on a computer keyboard.
   When using the Shift key while selecting, the user can click first on the point to begin the selection, and then use a second click to signify where to end the selection. When using the Ctrl or Command key while selecting, the user can click on separate items to group them as a single selection.
 </p>
 
@@ -190,21 +193,24 @@ contributors:
 </div>
 </div>
 
-<h3>Priority Metrics</h3>
-
+<h3> Priority Metrics <small> Selecting and its Usability Metrics </small> </h3>
 <div class="well">
   <p>
-    Learnability/Memorability: Selecting is a basic and universal task a user can perform on almost all user interfaces today. Because of this selecting something on multiple user interfaces are very similar. The only difference is the types of peripherals are available to the user. Once a user learns to perform selecting with certain peripherals (i.e. mouse or touch screen), then should be able to figure it out on different platforms.
+    Selecting is a basic and universal task a user can perform on almost all user interfaces today: users frequently need to be able to select objects or text in order to perform many important functions, and the ability to move quickly and seamlessly on to the next action is important for usability. Because of this, learnability, memorability, and errors are very important metrics: 
   </p>
-  <p>
-    Efficiency/Errors: Selecting is a simple task and therefore should be performed seamlessly and lawlessly. With the selected items or text being highlighted in a noticeable color after selection should improve efficiency because the user will notice the difference. There are additional functions that the user can use to improve their selecting experience which are the Shift and Ctrl buttons on the keyboard.
-  </p>
-  <p>
-    Satisfaction: Does not really apply. Users do not find any satisfaction in selecting items in the user interface. Therefore this metric is not needed.
-  </p>
+  <ul>
+    <li>
+      Learnability/Memorability: Due in part to its universal utility and in part to inheritance or design convergence from the original Mac OS, the action of selecting something is very similar across multiple user interfaces. The biggest differences across platforms are in the types of peripheral input/output devices (i.e. mouse, trackball, touchpad, or touch screen) that are available to the user. Because there is a natural mapping between the action and the expected results, a first-time user should be able to intuit how to select an item in any particular system with any particular device. And once a user learns to select something with certain peripherals, it should not be difficult to perform the same task on different platforms, even with a novel input. All of this also lends itself to memorability: if the user has not performed such an action recently, this information should be easily recalled.
+    </li>
+    <li>
+      Efficiency/Errors: Selecting is a comparatively simple task, and therefore should be performed seamlessly and flawlessly. It is a necessary prerequisite for many functions or commands such as copying or moving files, and the more efficiently a user can perform the supporting task of selection, the more efficiently a user can continue with the desired high-level task. Errors must be minimized, as errors in selection could lead to such potentially dire consequences as deleting files or overwriting data (though modern computer systems minimize the impact of such errors system-wide by making most of them reversible). The additional selection functionality afforded by the keyboard through the Shift and Ctrl/Command keys give the user appreciably more power to perform tasks efficiently than selecting each of many individual items one at a time. With the selected items or text highlighted in a noticeable, contrasting color after selection, the difference between selected and unselected items is visible to the user, thus reducing errors. 
+    </li>
+    <li>
+      Satisfaction: While this metric generally does not apply, there are narrow circumstances in which it should be discussed. As a more utilitarian action, users typically do not derive direct satisfaction from selecting items in the user interface - although there could be limited satisfaction from animated or auditory feedback from the action in certain scenarios. There is a definite possibility, however, for negative satisfaction in situations in which the user becomes annoyed or upset if the mechanism for selecting items in the system is not learnable or efficient, or is unduly error-prone.
+    </li>
+  </ul>
 </div>
-
-
+  
 <h3>Key Characteristics</h3>
 <div class="well">
   There are a few elements that go into a good selecting process. First to select a single target the design should require the user to perform one action (click or tap). Second to select multiple targets the design should have a system in place that builds on top of the single select. For example click to select one target and click and drag to select multiple. 
@@ -322,16 +328,6 @@ contributors:
 <p style="text-align: center"> Selecting is usually seen as blue highlights for text and a white half-opaque rim around a file icon.</p> 
 
 
-<h3> Typical Behavior <small> how it usually behaves </small> </h3>
-
-<p> When a user selects, the most typical appearance is that the item itself highlights in a different color. However for different items the selection will look different. 
-</p>
-
-<p>For text, the cursor turns into a text cursor as the mouse hovers over. When the user clicks and drags the mouse, it is then that the choosen characters highlight in a different color.
-</p>
-
-<p> For items such as folders and files, when the item is clicked the a rim halo appears around the folder to signify that the computer is currently focusing on that particular object. It is from there that the user can choose to open it and do other commands with it.</p>
-
 <h4> Events </h4>			
 <div class="row"> 	
 	
@@ -365,11 +361,6 @@ contributors:
 		Depending on the user preferences, selecting's apperance may change to different colors. 
 	</p>
 
-<h3> Priority Metrics <small> Selecting and its Usability Metrics </small> </h3>
-
-	<p> Selecting is something in which learnability, memorability, as well as errors are very important metrics. Users use selecting to do other functions and being able to quickly select to go to the next action is very important. Being able to learn how to select quickly as well as efficiently is important. Also because selecting is a prior action needed for other commands such as copying or moving files, the quicker it is to get selection done is also very important (efficiency). Also if the user has not done this in a while this information should be easily recalled (memorability). Errors should also be very low, for if there are any errors in selection it could lead to dire consequences such as deleting files or overwriting data. 
-	</P> 
-	<p> The only metric that is not as important is satisfaction. This is because selecting is a much more utilitarian action and component and the user's enjoyment does not vary with selecing. The user could get annoyed if selecting is not memorable or efficient but the act of selecting does not need satsifaction for it to be a great component. </p> 
 
 <h3> Key Chararacteristics <small> What do all great selections have? </small> </h3>
 	 <ul>
@@ -396,8 +387,6 @@ contributors:
 
 			<h4> Text Selection </h4> 
 			<img src="images/text_selection.png" class="img-responsive" alt="text selection in window">
-
-
 
 
 			<ul>
