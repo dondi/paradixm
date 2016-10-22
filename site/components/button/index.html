@@ -31,18 +31,18 @@ contributors:
 
 <h3>Typical Appearance</h3>
 
-<blockquote>Generally, across any platform, a button will take the form of any shape whose form will elicit some understanding of the button's function, or will display a design that would hold the same purpose. Buttons tend to look similar throughout many platforms. Usually they are rectangular and have a word or an image in them indicating what clicking on the button will actually do.</blockquote>
+<blockquote>Generally, across any platform, a button will take the form of a shape whose form will elicit some understanding of the button's function, or will display a design that would hold the same purpose. Buttons tend to look similar throughout many platforms. </blockquote>
 
 <h3>Typical Behavior</h3>
 
 <blockquote>
-  <p>Generally speaking, a button will perform no action while idle. Upon being pressed, a button will perform its action, then will return to its idle state.Buttons are sometimes highlighted according to the typical action that a user will take. For example,the buttons OK and CANCEL might be right next to each other on a page, but it is likely that OK will be highlighted while CANCEL will not be.
+  <p> Generally speaking, a button will perform no action while idle. Upon being pressed, a button will perform its action, then will return to its idle state. Buttons are sometimes highlighted according to the typical action that a user will take. For example, the buttons OK and CANCEL might be right next to each other on a page, but it is likely that OK will be highlighted, while CANCEL will not be. 
 </p>
 </blockquote>
 
 <h4>Events</h4>
 
-<p>The most obvious and commonly occuring button event is the <code>click</code>. A <code>click</code> event indicates that the button has been initialized and upon release will perform its action. This is closely related to the <code>release</code> event. Secondary events </p>
+<p>A button's event is simply the function of a particular button. There are two common button events. The first is the <code>click</code>. A <code>click</code> event indicates that the button has been initialized and upon release will perform its action. This is closely related to the <code>release</code> event. The second event is "hover." If the user interface is well-made, when the user hovers over a button, the mouse pointer will change shape to let the user know that there is an option for a "click" event to occur. </p>
 
 <h4>State Diagram</h4>
 
@@ -61,22 +61,25 @@ contributors:
 <ul>
   <li><code>hover</code>: For platfoms with peripherals such as mice or styluses, positioning the cursor over the button will elicit this state. Generally, it is indicated visually by a highlighting effect on the button. This is done to indicate that the button is prepared to be interacted with.</li>
 
-  <li><code>armed</code>: Should the user interact with the button with a click, press, etc. the button may enter this state, indicating that the button is prepared to perform its action upon being released from this state. Most systems have a way to exit this state without actually activating the button Many button implementations allow an “out”
-    from this state, in case the user changes his or her mind in mid-action.</li>
+  <li><code>armed</code>: Should the user interact with the button with a click, press, etc. the button may enter this state, indicating that the button is prepared to perform its action upon being released from this state. Most systems have a way to exit this state without actually activating the button many button implementations allow an “out” from this state, in case the user changes his or her mind in mid-action.</li>
 </ul>
 
 <h4>Component in Action</h4>
 
 <blockquote>
-  <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
+  <p>Below is a embedded video of our component in action as well as some example buttons.</p>
 
-  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
+  
+
 </blockquote>
 <div class ="media-embed"><img src="Button1.gif" alt="Button gif 1" class="img-responsive"></div>
 
+
 <p class="text-center">
-  <button class="btn btn-default">Sample Button</button>
-  <button class="btn btn-default disabled">Sample Disabled Button</button>
+  <button class="btn btn-default">OK</button>
+  <button class="btn btn-default disabled">Disabled</button>
+  <button class="btn btn-success">Success</button>
+  <button class="btn btn-danger">Delete</button>
 </p>
 
   </div>
@@ -248,12 +251,7 @@ action. </li>
   <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
 </blockquote>
 
-<p class="text-center">
-  <button class="btn btn-default">OK</button>
-  <button class="btn btn-default disabled">Disabled</button>
-  <button class="btn btn-success">Success</button>
-  <button class="btn btn-danger">Delete</button>
-</p>
+
 
   </div>
 
@@ -446,8 +444,8 @@ follows: </blockquote>
     invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
     different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
 
-  <li><em>Dropdown Buttons</em> consist of a button that when clicked displays a drop-down list of mutually exclusive items. 	
-	They sometimes resemble a menu and are sometimes referred to as Menu Buttons. 
+  <li><em>Dropdown Buttons</em> consist of a button that when clicked displays a drop-down list of mutually exclusive items.  
+  They sometimes resemble a menu and are sometimes referred to as Menu Buttons. 
       <p>
          <img src= "dropdown.jpg" WIDTH=80 HEIGHT=80> </p>
      
@@ -551,7 +549,7 @@ one of these buttons will navigate the user to a different page.</p>
   <blockquote><font size="2">There are various types of buttons found throughout the Mac OS X interface, each providing a useful function. Examples of these buttons are shown in the following</font></blockquote>
 
 <h4>Variants of Buttons</h4>
-	<div class="row">
+  <div class="row">
   <div class="col-xs-6">
     <div class="panel panel-default">
       <div class="panel-heading">
