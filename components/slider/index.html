@@ -4,9 +4,9 @@ layout: component
 contributors:
     - name: Eko Khizanishvili
       github: IrakliK
+    - name: Jen Shin
+      github: yshin4
 ---
-
-<p class="lead">One of many graphical user interface components that users have had experience with. For example, changing the volume setting on the computer or on a video streaming website.</p>
 
 <blockquote>
 	<p> A slider is a control element that uses a knob or lever moved horizontally to control a variable, such as volume on a radio or brightness on a screen.
@@ -14,124 +14,168 @@ contributors:
 	<small>by <cite>Aurora Bedford</cite></small>
 </blockquote>
 
-<h3>Typical Appearance</h3>
-
-<p>Sliders across many different platforms have a minimum(left) value and a maximum value(right). In general, sliders can be horizontal, vertical, and radial. The main slider that we will be emphasizing on will be the horizontal slider. Graphically, the users are exposed with a bar, slider knob, and occasionally with tick marks. However, different platforms may have different designs to their sliders to follow their human interface guidelines. Underneath, a depiction of three sliders are shown Mac OS X, Windows 8, and iOS 7 & iOS 8.
-</p>
+<p class="lead">One of many graphical user interface components that users have had experience with,
+  a slider lets the user select from a range of values by moving a thumb control along a track.</p>
 
 <div class="row">
-  <div class="col-md-4 col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Mac OS X</h4>
-      </div>
-      <div class="panel-body">
-      	<img class="center-block" src="mac-os-x-elcapitan-slider.png" class="img-responsive" alt="Mac OS X El Capitan Slider">
-      </div>
-    </div>
-  </div>
+  <div class="col-md-12">
+    <h3>Typical Appearance</h3>
+    <p>Sliders across many different platforms have a minimum(left) value and a maximum value(right).
+      In general, sliders can be horizontal, vertical, and radial. The main slider that we will be emphasizing on will be the horizontal slider.
+      Graphically, the users are exposed with a bar, slider knob, and occasionally with tick marks.
+      A slider is composed of a track and a thumb. The track is a bar (which can optionally show various styles of tick marks) representing the range of values that can be input.
+      The thumb is a selector, which the user can position by either tapping the track or by scrubbing back and forth on it.
+      However, different platforms may have different designs to their sliders to follow their human interface guidelines.
+      Underneath, a depiction of four sliders are shown: Mac OS X, Windows 8, and iOS 7 &amp; iOS 8, and Windows 10.
+    </p> <br>
 
-  <div class="col-md-4 col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Windows 8</h4>
+    <div class="row">
+      <div class="col-md-6 col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title text-center">Mac OS X</h4>
+          </div>
+          <div class="panel-body">
+          	<img class="center-block" src="mac-os-x-elcapitan-slider.png" class="img-responsive" alt="Mac OS X El Capitan Slider">
+          </div>
+        </div>
       </div>
-      <div class="panel-body">
-      	<img class="center-block" src="Windows8_slider.png" class="img-responsive"  alt="Windows 8 Slider">
-      </div>
-    </div>
-  </div>
 
-  <div class="col-md-4 col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">iOS 7 vs iOS 8</h4>
+      <div class="col-md-6 col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title text-center">Windows 8</h4>
+          </div>
+          <div class="panel-body">
+          	<img class="center-block" src="Windows8_slider.png" class="img-responsive"  alt="Windows 8 Slider">
+          </div>
+        </div>
       </div>
-      <div class="panel-body">
-      	<img src="ios7andios8.jpg" class="img-responsive" alt="iOS7vsiOS8">
+
+      <div class="col-md-6 col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title text-center">iOS 7 vs iOS 8</h4>
+          </div>
+          <div class="panel-body">
+          	<img class="center-block" src="ios7andios8.png" class="img-responsive" alt="iOS7vsiOS8">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title text-center">Windows 10</h4>
+          </div>
+          <div class="panel-body">
+          	<img class="center-block" src="windows10_slider.png" class="img-responsive" alt="Windows 10 Slider">
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<h3>Typical Behavior</h3>
-
-<p>The behavior of the slider is very basic. The user is given a choice to either slide left(min) or right(max). By doing so the user can choose the proper setting they are looking for. The slider will not activate until the user clicks on the knob and then drags it to their desired setting. Most sliders across different platforms carry the same behavior. We will see how Mac OS X specifically stands through out the study. </p>
-
-
 <div class="row">
-  <h3><code>Events</code></h3>
-  <div class="col-sm-12">
-    <div class="col-sm-6">
+  <div class="col-md-12">
+    <h3>Typical Behavior</h3>
+    <p>The behavior of the slider is very basic. The user is given a choice to either slide left(min) or right(max). By doing so the user can choose the proper setting they are looking for. The slider will not activate until the user clicks on the knob and then drags it to their desired setting. Most sliders across different platforms carry the same behavior. We will see how Mac OS X and Windows 10 specifically stands through out the study. </p>
 
-      <h4>Slider with tick marks in Mac OS X</h4>
+    <h3><code>Events</code></h3>
+    <div class="col-sm-12">
+      <div class="col-sm-6">
+        <h4>Slider with tick marks in Mac OS X</h4>
+        <blockquote>
+          <ol>
+            <li><code>hover</code>-ing over the slider knob gives you a quick description of what the slider does.</li>
+            <li><code>unhover</code>-ing the slider knob dismisses the quick description.</li>
+            <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
+            <li>While <code>drag</code>-ing the slider knob, the knob focuses on the tick marks.</li>
+            <li>Clicking on the <code>bar</code> where tick marks are present, quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
+            <li><code>release</code>-ing the slider knob will set the knob to the latest value.</li>
+          </ol>
+        </blockquote>
+      </div>
 
-      <blockquote> 
-        <ol>
-          <li><code>hover</code>-ing over the slider knob gives you a quick description of what the slider does.</li>
-          <li><code>unhover</code>-ing the slider knob dismisses the quick description.</li>
-          <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
-          <li>While <code>drag</code>-ing the slider knob, the knob focuses on the tick marks.</li>
-          <li>Clicking on the <code>bar</code> where tick marks are present, quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
-          <li><code>release</code>-ing the slider knob will set the knob to the latest value.</li>
-        </ol>
-      </blockquote>
-
+      <div class="col-sm-6">
+        <h4>Slider without tick marks in Mac OS X</h4>
+        <blockquote>
+          <ol>
+            <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
+            <li>While <code>drag</code>-ing the slider knob, the knob is smoothly draggable across the bar.</li>
+            <li>Clicking anywhere on the <code>bar</code> , quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
+            <li><code>release</code>-ing the slider knob will set the knob to the latest value.</li>
+          </ol>
+        </blockquote>
+      </div>
     </div>
 
-    <div class="col-sm-6">
-
-      <h4>Slider without tick marks in Mac OS X</h4>
-
-      <blockquote> 
-        <ol>
-          <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
-          <li>While <code>drag</code>-ing the slider knob, the knob is smoothly draggable across the bar.</li>
-          <li>Clicking anywhere on the <code>bar</code> , quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
-          <li><code>release</code>-ing the slider knob will set the knob to the latest value.</li>
-
-        </ol>
-      </blockquote>
-
+    <div class="col-sm-12">
+      <div class="col-sm-6">
+        <h4>Slider without tick marcs in Windows 10</h4>
+        <blockquote>
+          <ol>
+            <li></li>
+          </ol>
+        </blockquote>
+      </div>
     </div>
 
-  </div>
-  <h3><mark>State Diagrams</mark></h3>
-  <div class="col-sm-12">
-    <div class="col-sm-6">
-      <h4>Slider with tick marks in Mac OS X</h4>
-      <blockquote> 
-        At first the user is presented with a slider that is <mark>enabled</mark> for use. When the user <code>hover</code>-s over the slider knob, a <mark>tool-tip</mark> pops up with a description of what the slider does. <code>Unhover</code>-ing the slider knob dismisses the <mark>tool-tip</mark> and returns to the <mark>enabled</mark> state. By <code>click</code>-ing the knob it changes the <mark>tint</mark> of the knob and enables the knob to become <code>drag</code>-able. <code>Release</code>-ing the knob returns to the <mark>enabled</mark> state. Finally, when the user <code>click</code>s on the <code>bar</code> it automatically returns to the <mark>enabled</mark> state.
-      </blockquote>
+    <h3><mark>State Diagrams</mark></h3>
+    <div class="col-sm-12">
+      <div class="col-sm-6">
+        <h4>Slider with tick marks in Mac OS X</h4>
+        <blockquote>
+          At first the user is presented with a slider that is <mark>enabled</mark> for use. When the user <code>hover</code>-s over the slider knob, a <mark>tool-tip</mark> pops up with a description of what the slider does. <code>Unhover</code>-ing the slider knob dismisses the <mark>tool-tip</mark> and returns to the <mark>enabled</mark> state. By <code>click</code>-ing the knob it changes the <mark>tint</mark> of the knob and enables the knob to become <code>drag</code>-able. <code>Release</code>-ing the knob returns to the <mark>enabled</mark> state. Finally, when the user <code>click</code>s on the <code>bar</code> it automatically returns to the <mark>enabled</mark> state.
+        </blockquote>
+      </div>
+      <div class="col-sm-6">
+        <h4>Slider without tick marks in Mac OS X</h4>
+        <blockquote>
+          State diagrams here are similar to those of sliders wth tick marks. At first the user is presented with a slider that is <mark>enabled</mark> for use. When the user <code>click</code>-s the slider knob it changes the <mark>tint</mark> of the knob and enables the knob to become <code>drag</code>-able. <code>Release</code>-ing the knob returns to the <mark>enabled</mark> state. Finally, when the user <code>click</code>s on the <code>bar</code> it automatically returns to the <mark>enabled</mark> state.
+        </blockquote>
+      </div>
     </div>
-    <div class="col-sm-6">
-      <h4>Slider without tick marks in Mac OS X</h4>
-      <blockquote> 
-        State diagrams here are similar to those of sliders wth tick marks. At first the user is presented with a slider that is <mark>enabled</mark> for use. When the user <code>click</code>-s the slider knob it changes the <mark>tint</mark> of the knob and enables the knob to become <code>drag</code>-able. <code>Release</code>-ing the knob returns to the <mark>enabled</mark> state. Finally, when the user <code>click</code>s on the <code>bar</code> it automatically returns to the <mark>enabled</mark> state.
-      </blockquote>
-    </div>
-  </div>
-  <div class="col-sm-12">
-    <div class="col-sm-6">
-      <img class="center-block" src="statediagram1.png" class="img-responsive" alt="State Diagram 1">
-    </div>
-    <div class="col-sm-6">
-      <img class="center-block" src="statediagram2.png" class="img-responsive" alt="State Diagram 2">
-    </div>
-  </div>
 
-<h3>Components in Action</h3>
-<br>
-<br>
-  <div class="col-sm-12">
-    <div class="col-sm-6">
-      <img class="center-block" src="ezgif.com-crop.gif" class="img-responsive" alt="Mac OS X Slider with tick marks">
+    <div class="col-sm-12">
+      <div class="col-sm-6">
+        <img class="center-block" src="statediagram1.png" class="img-responsive" alt="State Diagram 1">
+      </div>
+      <div class="col-sm-6">
+        <img class="center-block" src="statediagram2.png" class="img-responsive" alt="State Diagram 2">
+      </div>
     </div>
-    <div class="col-sm-6">
-      <img class="center-block" src="sliderw_oticks.gif" class="img-responsive" alt="Mac OS X Slider without tick marks">
-    </div>
+
+    <h3>Components in Action</h3>
+      <div class="col-sm-12">
+        <div class="col-sm-6">
+          <h4>Slider with tick marks</h4>
+          <img class="center-block" src="ezgif.com-crop.gif" class="img-responsive" alt="Mac OS X Slider with tick marks">
+        </div>
+        <div class="col-sm-6">
+          <h4>Slider without tick marcs</h4>
+          <img class="center-block" src="sliderw_oticks.gif" class="img-responsive" alt="Mac OS X Slider without tick marks">
+        </div>
+      </div>
+
+      <div class="col-sm-12">
+        <div class="col-sm-6">
+          <h4>Slider with default set to 50</h4>
+          <input type="range" min="0" max="100" value="50"/>
+        </div>
+        <div class="col-sm-6">
+          <h4>Slider with intervals of 1/4</h4>
+          <input type="range" min="0" max="100" value="0" step="25"/>
+        </div>
+      </div>
+
+
+
+
   </div>
 </div>
+
 
 <h3>Variants</h3>
 
@@ -191,19 +235,10 @@ contributors:
 
 
 <h3>Credits &amp; References</h3>
-
-<a href= "http://www.nngroup.com/articles/gui-slider-controls/"> <em>Slider Design: Rules of Thumb from Nielsen Norman Group</em> </a>
-<br>
-<a href= "https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/ControlsSelection.html"> <em>OS X Human Interface Guidelines: Slider</em> </a>
+  <a href= "http://www.nngroup.com/articles/gui-slider-controls/"> <em>Slider Design: Rules of Thumb from Nielsen Norman Group</em> </a> <br>
+  <a href= "https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/ControlsSelection.html"> <em>OS X Human Interface Guidelines: Slider</em> </a> <br>
+  <a href= "https://msdn.microsoft.com/en-us/windows/uwp/controls-and-patterns/slider"> <em>Microsoft Windows Dev Center: Slider</em> </a> <br>
+  <br>
 
   </div>
 </div>
-
-
-
-
-
-
-
-
-
