@@ -1,5 +1,5 @@
 ---
-title: zooming
+title: Zooming
 layout: component
 contributors:
     - name: Mackenzie Tjogas 
@@ -19,51 +19,53 @@ contributors:
       <img src="images1.png" alt= "Zooming Picture" height="200" width="240">
 
     <h3>Typical Behavior</h3>
-      <p>Zooming typically involves the magnification or minimizing of content. Using the zoom function is similar to the real-world action of using a magnifying glass to grow and shrink content.</p>
+      <p>Zooming typically involves the magnification or minimiziation of content. Using the zoom function is similar to the real-world action of using a magnifying glass to grow and shrink content.</p>
 
     <h4>Events</h4>
     <p>When zooming in or out of content, typically a <code>zoom</code> event occurs in the background processes.</p>
     <ul><li>A <code>hover</code> over the area you want to zoom into, preceeding a two-finger tap or an outward (or inward) motion with two fingers on the trackpad.</li> 
     <li>A <code>click</code> of the <code>command+</code> or <code>command-</code> keyboard shortcuts to signal a zoom.</li> 
-    <b>FINISH</b> </ul>
+    <li><b>FINISH</b></li></ul>
   
     <h4>State Diagram</h4>
     <img src="zoom_chart.png" alt="Zoom Chart" height="340" width="220">
     <p>A window is typically in a <code>standby</code> phase before being resized. Once the user begins resizing, either through keyboard shortcut or hand gesture, the window enters the <code>zooming</code> state. Once finished, the window reaches the <code>zoomed</code> state.</p>
 
     <h4>Component in Action</h4>
-    <p>DO</p>
-
-  </div>
-
-  <div class="col-sm-6">
-
-    <h3>Variants</h3>
-    <p>Zooming on desktops is possible through the use of the <code>CTRL+</code> and <code>CTRL-</code> keyboard commands. Desktop zooming is also typically possible through the window menu. On the other hand, users on laptops, mobile devices, such as tablets and smartphones, use a pinching motion to zoom out of content and reverse the motion in order to zoom in. Zooming in and out can also be found in some video games, especially strategy games. In many strategy games, such as Starcraft and Civilization, zooming can be done either through in game buttons or the mouse scroll wheel.</p>
-    <p>Zooming can occur in a few different forms. Window zooming, screen zooming, and app-specific zooming all share many properties, as well as some distinctions.  </p>
+    <p>DO/FINISH</p>
     <p>Zooming can be initiated in many ways:
-        <ul><li><code>Command+</code> and <code>Command-</code></li>
-        <li>Clicking View (on the top lefthand toolbar of a Mac), then either Zoom In, Zoom Out, or Actual Size</li> 
-        <li>System Preferences > Trackpad > Scroll and Zoom 
+        <ul><li>Keyboard shortcuts like <code>Command+</code> and <code>Command-</code></li>
+        <li> The View section of the menu toolbar (on the top left of a Mac), then either selecting Zoom In, Zoom Out, or Actual Size</li> 
+        <li> System Preferences > Trackpad > Scroll and Zoom 
         <img src="Zoom-in-or-out1.gif" alt= "Trackpad Zoom" height="210" width="270">
         <img src="smart-zoom1.gif" alt= "Trackpad Zoom" height="210" width="270"></li>
         <li>System Preferences > Accessibility > Zoom </ul></li> 
     </p>
 
+    <h3>Variants</h3>
+    <p>Zooming on desktops is possible through the use of the <code>Command+</code> and <code>Command-</code> keyboard commands, as well as through the view section of the menu toolbar (on the top left of a Mac). Users on laptops and mobile devices, such as tablets and smartphones, can use a pinching motion to zoom out of content and reverse the motion in order to zoom in. Zooming in and out can also be found in some video games, especially strategy games. In many strategy games, such as Starcraft and Civilization, zooming can be done either through in-game buttons or the mouse scroll wheel.</p>
+    <p>Zooming can occur in a few different forms. Window zooming, screen zooming, and app-specific zooming all share many properties, as well as some distinctions. <b>ADD MORE</b></p>
+    
+
+  </div>
+
+  <div class="col-sm-6">
+
 
     <h3>Priority Metrics</h3>
-    <p>Since it is a fundamental aspect of modern GUI based operating systems, all priority metrics are a vital in this component's design analysis. For desktops, the learnability of zooming in and out is questionable because if the user did not have any prior knowledge that <code>CTRL</code> for windows and <code>Command</code>is typically used for keyboard shortcuts, the user would not learn to use the keyboard command as it is not clearly indicated.</p> The user also has the option to zoom in using the window menu, which also has questionable learnability since the option is located within a menu. For smartphones and laptops, the learnability of zooming is signficantly greater. In the physical world, it is natural to squeeze things, like paper, to compress them and stretch them to expand them. Smartphones and laptops follow the natural mental model by using a compressing motion, pinching, to zoom out and compress the content and making the reverse motion the zoom out.
+    <p>Since it is a fundamental aspect of modern GUI based operating systems, all priority metrics are vital to this component's design analysis. For desktops, the learnability of zooming in and out is questionable, if the user did not have any prior knowledge that <code>CTRL</code> (for windows) and <code>Command</code> (for Macs) is typically used for keyboard shortcuts, then the user would not learn to use the keyboard command right away.</p> 
+    <p>The user also has the option to zoom in using the window menu, which also has questionable learnability since the option is located within a menu. For smartphones and laptops, the learnability of zooming is signficantly better. In the physical world, it is natural to squeeze things, like paper, to compress them and stretch them to expand them. Smartphones and laptops follow the natural mental model by using a compressing motion, pinching, to zoom out and compress the content and making the reverse motion the zoom out.</p>
 
-    <p>For desktops, once the user realizes that <code>CTRL</code> / <code>Command</code> is the basis for most keyboard shortcuts, it is easy for users to memorize the zoom shortcut. For laptops and mobile devices, the mental model of for zooming follows the natural way of thinking, making the zoom function simple to remember. While initally trying to zoom on desktop, the user may make several mistakes. However, the user is likely to make few errors once the keyboard shortcut is known considering the high memorability of the shortcut. Laptop and mobile device users likely make few errors while zooming since the method follows the natural mental model and is highly memorable.</p>
+    <p>For desktops, once the user realizes that <code>CTRL</code> / <code>Command</code> is the basis for most keyboard shortcuts, it is easy for users to memorize the zoom shortcut. For laptops and mobile devices, the mental model of for zooming follows the natural way of thinking, making the zoom function simple to remember. Therefore, zooming is high in memoriability for both desktops and mobile devices. When users initally try to zoom on desktops, he or she may make several mistakes. However, the user is likely to make few errors once the keyboard shortcut is known considering the high memorability of the shortcut. Laptop and mobile device users likely make few errors while zooming since the method follows the natural mental model and is highly memorable.</p>
     
-    <p>Regardless of the device, users can efficiently zoom since the keyboard shortcut and the hand gesture are easily performable actions and garner immediate response and feedback. Due to the utilitarian nature of zooming, zooming provides little in the way of user satisfaction. However, the component's utilitarian nature means the lack of satisfaction does not detract from the overall component design.</p>
+    <p>Regardless of the device, users can efficiently zoom since the keyboard shortcut and the hand gesture are easily performable actions and garner immediate response and feedback. <b>Due to the utilitarian nature of zooming, zooming provides little in the way of user satisfaction. However, the component's utilitarian nature means the lack of satisfaction does not detract from the overall component design.??? change? </b></p>
 
     <h3>Key Characteristics</h3>
-    <p>Key characteristics of zooming include the magnification or shrinking of content. A zoom should not jump to over (or under) magnifying content, but rather should scale either in or out the same distance with every initialization of the zoom. A unsatisfactory zoom may jump from the page's actual size to the most-zoomed in view of content. </p>
-    <p>A "bad zoom" occurs when, on an ios, the zoom bounces back after a user has tried to zoom in too far.</p> 
+    <p>Key characteristics of zooming include the magnification and shrinking of content. A zoom should not jump to over (or under) magnifying content, but rather should scale either in or out the same distance with every initialization of the zoom. For example, when using keyboard shortcuts to zoom in, every time the <code>Command+</code> is done the user should move the same amount inward. No one click should create a drastically different effect in the view. This idea applies to mobile pinch zooming, and trackpad zooming as well. The user should be able to control the amount of zooming that is occuring with each initialization.</p>
+    <p>An unsatisfactory zoom may jump from the page's actual size to the most-zoomed in view of content. Similarily, an undesirable zoom occurs when, on an ios, the zoom bounces back after a user has tried to zoom in too far. <b>Expand more on this</b></p> 
 
     <h4>Feedback</h4>
-    <p>With the exception of slow machines, the user receives immediate feedback when zooming through the visual change in size of the affected content.</p>
+    <p>With the exception of slow machines, the user receives immediate feedback when zooming. A user is able to watch the change in view of the affected content immediately after they have initialized said change.</p>
 
     <h3>Platform Specific Instances</h3>
     <p>When viewing content on a desktop, users can zoom in or out by way of the window menu or through predefined keyboard bindings. For example, Windows users may zoom in or out using the <code>CTRL+</code> or <code>CTRL-</code> commands respectively.</p>
