@@ -26,104 +26,133 @@ contributors:
 <link rel="stylesheet" type="text/css" href="hotess.css"> 
 <p class="lead">Virtual buttons are a very widely used graphical interface element that emulates real world pressable buttons.</p>
 
-<div class="row">
-  <div class="col-sm-6">
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#Home" data-toggle="tab">Home</a></li>
+    <li><a href="#Android" data-toggle="tab">Android</a></li>
+    <li><a href="#Windows" data-toggle="tab">Windows 10</a></li>
+    <li><a href="#watchOS" data-toggle="tab">watchOS</a></li>
+    <li><a href="#iOS10" data-toggle="tab">iOS 10</a></li>
+    <li><a href="#Ubuntu" data-toggle="tab">Ubuntu</a></li>
+  </ul>
+    <div class="tab-content active in">
+      <div class="tab-pane active" id="Home">
+        <div class="row">
+          <div class="col-sm-6">
 
-<h3>Typical Appearance</h3>
+        <h3>Typical Appearance</h3>
 
-<blockquote>Generally, across any platform, a button will take the form of a shape whose form will elicit some understanding of the button's function, or will display a design that would hold the same purpose. Buttons tend to look similar throughout many platforms. </blockquote>
+        <blockquote>Generally, across any platform, a button will take the form of a shape whose form will elicit some understanding of the button's function, or will display a design that would hold the same purpose. Buttons tend to look similar throughout many platforms. </blockquote>
 
-<h3>Typical Behavior</h3>
+        <h3>Typical Behavior</h3>
 
-<blockquote>
-  <p> Generally speaking, a button will perform no action while idle. Upon being pressed, a button will perform its action, then will return to its idle state. Buttons are sometimes highlighted according to the typical action that a user will take. For example, the buttons OK and CANCEL might be right next to each other on a page, but it is likely that OK will be highlighted, while CANCEL will not be. 
-</p>
-</blockquote>
+        <blockquote>
+          <p> Generally speaking, a button will perform no action while idle. Upon being pressed, a button will perform its action, then will return to its idle state. Buttons are sometimes highlighted according to the typical action that a user will take. For example, the buttons OK and CANCEL might be right next to each other on a page, but it is likely that OK will be highlighted, while CANCEL will not be. 
+        </p>
+        </blockquote>
 
-<h4>Events</h4>
+        <h4>Events</h4>
 
-<p>A button's event is simply the function of a particular button. There are two common button events. The first is the <code>click</code>. A <code>click</code> event indicates that the button has been initialized and upon release will perform its action. This is closely related to the <code>release</code> event. The second event is "hover." If the user interface is well-made, when the user hovers over a button, the mouse pointer will change shape to let the user know that there is an option for a "click" event to occur. </p>
+        <p>A button's event is simply the function of a particular button. There are two common button events. The first is the <code>click</code>. A <code>click</code> event indicates that the button has been initialized and upon release will perform its action. This is closely related to the <code>release</code> event. The second event is "hover." If the user interface is well-made, when the user hovers over a button, the mouse pointer will change shape to let the user know that there is an option for a "click" event to occur. </p>
 
-<h4>State Diagram</h4>
+        <h4>State Diagram</h4>
 
-<blockquote>
-  <p>The following diagram shows the 5 states of a standard button, and the different triggers that cause them to be entered/left.</p>
-</blockquote>
+        <blockquote>
+          <p>The following diagram shows the 5 states of a standard button, and the different triggers that cause them to be entered/left.</p>
+        </blockquote>
 
-<div class="diagram">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="431px" height="303px" version="1.1" style="background-color: rgb(255, 255, 255);"><defs/><g transform="translate(0.5,0.5)"><rect x="1" y="1" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(31,25)"><switch><foreignObject pointer-events="all" width="59" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 59px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Disabled</div></div></foreignObject><text x="30" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 388 31 L 398 31 L 398 111 L 394.37 111" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 389.12 111 L 396.12 107.5 L 394.37 111 L 396.12 114.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(367,66)"><switch><foreignObject pointer-events="all" width="62" height="15" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Mouse Over</div></div></foreignObject><text x="31" y="13" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="1" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(299,25)"><switch><foreignObject pointer-events="all" width="57" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Enabled</div></div></foreignObject><text x="29" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="241" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(299,265)"><switch><foreignObject pointer-events="all" width="57" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Pressed</div></div></foreignObject><text x="29" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 388 191 L 398 191 L 398 271 L 394.37 271" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 389.12 271 L 396.12 267.5 L 394.37 271 L 396.12 274.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(379,225)"><switch><foreignObject pointer-events="all" width="46" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Release</div></div></foreignObject><text x="23" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="161" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(304,185)"><switch><foreignObject pointer-events="all" width="47" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 47px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Armed</div></div></foreignObject><text x="24" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 268 126 L 258 126 L 258 191 L 261.63 191" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 191 L 259.88 194.5 L 261.63 191 L 259.88 187.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(245,145)"><switch><foreignObject pointer-events="all" width="28" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Click</div></div></foreignObject><text x="14" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 268 96 L 258 96 L 258 46 L 261.63 46" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 46 L 259.88 49.5 L 261.63 46 L 259.88 42.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(232,66)"><switch><foreignObject pointer-events="all" width="53" height="15" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Mouse Off</div></div></foreignObject><text x="27" y="13" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="81" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(305,105)"><switch><foreignObject pointer-events="all" width="45" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 45px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Hover</div></div></foreignObject><text x="23" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 31 61 L 31 81 Q 31 91 41 91 L 81 91 Q 91 91 91 81 L 91 67.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 91 62.12 L 94.5 69.12 L 91 67.37 L 87.5 69.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(49,86)"><switch><foreignObject pointer-events="all" width="28" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Click</div></div></foreignObject><text x="14" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 127.37 21 L 171 21 Q 181 21 191 21 L 261.63 21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 122.12 21 L 129.12 17.5 L 127.37 21 L 129.12 24.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 21 L 259.88 24.5 L 261.63 21 L 259.88 17.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 268 271 L 191 271 Q 181 271 181 261 L 181 21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/></g></svg>
-</div>
+        <div class="diagram">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="431px" height="303px" version="1.1" style="background-color: rgb(255, 255, 255);"><defs/><g transform="translate(0.5,0.5)"><rect x="1" y="1" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(31,25)"><switch><foreignObject pointer-events="all" width="59" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 59px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Disabled</div></div></foreignObject><text x="30" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 388 31 L 398 31 L 398 111 L 394.37 111" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 389.12 111 L 396.12 107.5 L 394.37 111 L 396.12 114.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(367,66)"><switch><foreignObject pointer-events="all" width="62" height="15" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Mouse Over</div></div></foreignObject><text x="31" y="13" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="1" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(299,25)"><switch><foreignObject pointer-events="all" width="57" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Enabled</div></div></foreignObject><text x="29" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="241" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(299,265)"><switch><foreignObject pointer-events="all" width="57" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Pressed</div></div></foreignObject><text x="29" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 388 191 L 398 191 L 398 271 L 394.37 271" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 389.12 271 L 396.12 267.5 L 394.37 271 L 396.12 274.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(379,225)"><switch><foreignObject pointer-events="all" width="46" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Release</div></div></foreignObject><text x="23" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="161" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(304,185)"><switch><foreignObject pointer-events="all" width="47" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 47px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Armed</div></div></foreignObject><text x="24" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 268 126 L 258 126 L 258 191 L 261.63 191" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 191 L 259.88 194.5 L 261.63 191 L 259.88 187.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(245,145)"><switch><foreignObject pointer-events="all" width="28" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Click</div></div></foreignObject><text x="14" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 268 96 L 258 96 L 258 46 L 261.63 46" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 46 L 259.88 49.5 L 261.63 46 L 259.88 42.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(232,66)"><switch><foreignObject pointer-events="all" width="53" height="15" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Mouse Off</div></div></foreignObject><text x="27" y="13" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="81" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(305,105)"><switch><foreignObject pointer-events="all" width="45" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 45px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Hover</div></div></foreignObject><text x="23" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 31 61 L 31 81 Q 31 91 41 91 L 81 91 Q 91 91 91 81 L 91 67.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 91 62.12 L 94.5 69.12 L 91 67.37 L 87.5 69.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(49,86)"><switch><foreignObject pointer-events="all" width="28" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Click</div></div></foreignObject><text x="14" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 127.37 21 L 171 21 Q 181 21 191 21 L 261.63 21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 122.12 21 L 129.12 17.5 L 127.37 21 L 129.12 24.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 21 L 259.88 24.5 L 261.63 21 L 259.88 17.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 268 271 L 191 271 Q 181 271 181 261 L 181 21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/></g></svg>
+        </div>
 
-<p>The <code>enabled</code> and <code>disabled</code> states can be considered idle button states, as they are the only possible states the button can hold without user interaction. The <code>enabled</code> state indicates that a user <em>can</em> interact with it, while the <code>disabled</code> indicates that a user <em>cannot</em>.</p>
+        <p>The <code>enabled</code> and <code>disabled</code> states can be considered idle button states, as they are the only possible states the button can hold without user interaction. The <code>enabled</code> state indicates that a user <em>can</em> interact with it, while the <code>disabled</code> indicates that a user <em>cannot</em>.</p>
 
-<p>When a button is <code>enabled</code>, additional states may be triggered. Of course, these states are subject to vairation depending upon the system in use, but a general list of the states are:</p>
+        <p>When a button is <code>enabled</code>, additional states may be triggered. Of course, these states are subject to vairation depending upon the system in use, but a general list of the states are:</p>
 
-<ul>
-  <li><code>hover</code>: For platfoms with peripherals such as mice or styluses, positioning the cursor over the button will elicit this state. Generally, it is indicated visually by a highlighting effect on the button. This is done to indicate that the button is prepared to be interacted with.</li>
+        <ul>
+          <li><code>hover</code>: For platfoms with peripherals such as mice or styluses, positioning the cursor over the button will elicit this state. Generally, it is indicated visually by a highlighting effect on the button. This is done to indicate that the button is prepared to be interacted with.</li>
 
-  <li><code>armed</code>: Should the user interact with the button with a click, press, etc. the button may enter this state, indicating that the button is prepared to perform its action upon being released from this state. Most systems have a way to exit this state without actually activating the button many button implementations allow an “out” from this state, in case the user changes his or her mind in mid-action.</li>
-</ul>
+          <li><code>armed</code>: Should the user interact with the button with a click, press, etc. the button may enter this state, indicating that the button is prepared to perform its action upon being released from this state. Most systems have a way to exit this state without actually activating the button many button implementations allow an “out” from this state, in case the user changes his or her mind in mid-action.</li>
+        </ul>
 
-<h4>Component in Action</h4>
+        <h4>Component in Action</h4>
 
-<blockquote>
-  <p>Below is a embedded video of our component in action as well as some example buttons.</p>
+        <blockquote>
+          <p>Below is a embedded video of our component in action as well as some example buttons.</p>
 
-  
+          
 
-</blockquote>
-<div class ="media-embed"><img src="Button1.gif" alt="Button gif 1" class="img-responsive"></div>
+        </blockquote>
+        <div class ="media-embed"><img src="Button1.gif" alt="Button gif 1" class="img-responsive"></div>
 
 
-<p class="text-center">
-  <button class="btn btn-default">OK</button>
-  <button class="btn btn-default disabled">Disabled</button>
-  <button class="btn btn-success">Success</button>
-  <button class="btn btn-danger">Delete</button>
-</p>
+        <p class="text-center">
+          <button class="btn btn-default">OK</button>
+          <button class="btn btn-default disabled">Disabled</button>
+          <button class="btn btn-success">Success</button>
+          <button class="btn btn-danger">Delete</button>
+        </p>
 
-  </div>
+          </div>
 
-  <div class="col-sm-6">
-<h3>Variants</h3>
+          <div class="col-sm-6">
+        <h3>Variants</h3>
 
-<blockquote> Buttons are some of the most versatile and widely used interface components. They indicate an action upon touch, and are typically labeled using a text icon or both. Some of the most significant variances in button function are as follows:</blockquote>
+        <blockquote> Buttons are some of the most versatile and widely used interface components. They indicate an action upon touch, and are typically labeled using a text icon or both. Some of the most significant variances in button function are as follows:</blockquote>
 
-<ul>
-  <li><em>Check Boxes</em>  function almost identically to buttons, with an additional set of states. These additional states indicate whether or not the check box has been checked or not. Things like <code>hover</code> and <code>armed</code> are shared. In terms of function, check boxes are useful for visualizing options.</li>
+        <ul>
+          <li><em>Check Boxes</em>  function almost identically to buttons, with an additional set of states. These additional states indicate whether or not the check box has been checked or not. Things like <code>hover</code> and <code>armed</code> are shared. In terms of function, check boxes are useful for visualizing options.</li>
 
-  <li><em>Links</em> allow the user to navigate to a different page with just the one click. Links function essentially as buttons, as they generally hold all the same states and rarely have any unique states. The distinction here is that a link is specifically made to navigate to a different display from the one the link exists on. Links are very easily distinguishable from other buttons because they are usually underlined, blue, and when a mouse pointer hovers over them the mouse becomes a hand icon.</li>
+          <li><em>Links</em> allow the user to navigate to a different page with just the one click. Links function essentially as buttons, as they generally hold all the same states and rarely have any unique states. The distinction here is that a link is specifically made to navigate to a different display from the one the link exists on. Links are very easily distinguishable from other buttons because they are usually underlined, blue, and when a mouse pointer hovers over them the mouse becomes a hand icon.</li>
 
-  <li><em> Dropdown Buttons</em> display a drop-down list of mutually exclusive items. They sometimes resemble a menu and can be referred to as Menu Buttons. </li>
+          <li><em> Dropdown Buttons</em> display a drop-down list of mutually exclusive items. They sometimes resemble a menu and can be referred to as Menu Buttons. </li>
 
-  <li><em>Toggles</em> allow the user to change a setting between two different states. Toggle buttons are most effective when the on/off states are visually distinct.</li>
-</ul>
+          <li><em>Toggles</em> allow the user to change a setting between two different states. Toggle buttons are most effective when the on/off states are visually distinct.</li>
+        </ul>
 
-<h3>Priority Metrics</h3>
-<ul>
-  <li><em> Learnability/Memorability: </em> Buttons are an essential part of most modern digital user interface used today. Because of this buttons should universally similar in function and appearance. As mentioned above, the typical appearance of a button is a simple shape with some text or an icon inside of it. Since buttons are typically the same throughout all platforms, it should not be difficult for users to be able to figure out how to use nor identify them.</li>
-  <li><em> Efficiency/Errors: </em>  Each button has one action to complete, thus once clicked the action should be performed fairly quickly. There should be no delay or too much time waste from the time where the user knows what they want to do and when they actually click the button. Relating to that, buttons should be well-labeled and in a position where users will not accidentally mistake one button for another. For example, everyone knows the placement of the OK and CANCEL buttons, so if one platform were to decide to switch those, a lot of users would do the wrong action.</li>
-  <li><em> Satisfaction:</em> Users do not really find any satisfaction in clicking buttons so this metric is not completely applicable to buttons. On the other hand, sometimes buttons do crazy things, for example, Google's "I'm feeling lucky" button sometimes shows fireworks on the screen, but it won't do that every time. Besides that, satisfaction does not really apply unless a certain button has a special function.</li>
-</ul>
+        <h3>Priority Metrics</h3>
+        <ul>
+          <li><em> Learnability/Memorability: </em> Buttons are an essential part of most modern digital user interface used today. Because of this buttons should universally similar in function and appearance. As mentioned above, the typical appearance of a button is a simple shape with some text or an icon inside of it. Since buttons are typically the same throughout all platforms, it should not be difficult for users to be able to figure out how to use nor identify them.</li>
+          <li><em> Efficiency/Errors: </em>  Each button has one action to complete, thus once clicked the action should be performed fairly quickly. There should be no delay or too much time waste from the time where the user knows what they want to do and when they actually click the button. Relating to that, buttons should be well-labeled and in a position where users will not accidentally mistake one button for another. For example, everyone knows the placement of the OK and CANCEL buttons, so if one platform were to decide to switch those, a lot of users would do the wrong action.</li>
+          <li><em> Satisfaction:</em> Users do not really find any satisfaction in clicking buttons so this metric is not completely applicable to buttons. On the other hand, sometimes buttons do crazy things, for example, Google's "I'm feeling lucky" button sometimes shows fireworks on the screen, but it won't do that every time. Besides that, satisfaction does not really apply unless a certain button has a special function.</li>
+        </ul>
 
-<h3>Key Characteristics</h3>
+        <h3>Key Characteristics</h3>
 
-<p>According to Google, buttons can hold different design characteristics based upon the significance they hold in comparison to the content surrounding the button. For example, adding a <em>raised</em> effect to the button or adding a shadow to it for a 3D effect can make it more pronounced. See the below images for examples.</p>
+        <p>According to Google, buttons can hold different design characteristics based upon the significance they hold in comparison to the content surrounding the button. For example, adding a <em>raised</em> effect to the button or adding a shadow to it for a 3D effect can make it more pronounced. See the below images for examples.</p>
 
-<div class ="media-embed"><img src="FlatButton.png" alt="Flat Button" class="img-responsive"></div>
+        <div class ="media-embed"><img src="FlatButton.png" alt="Flat Button" class="img-responsive"></div>
 
-<div class ="media-embed"><img src="RaisedButton.png" alt="Raised Button" class="img-responsive"></div>
+        <div class ="media-embed"><img src="RaisedButton.png" alt="Raised Button" class="img-responsive"></div>
 
-<h4>Feedback</h4>
+        <h4>Feedback</h4>
 
-<p>By far the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
-  never doubt whether:</p>
+        <p>By far the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
+          never doubt whether:</p>
 
-<ol>
-  <li>they did positively trigger a button and are thus the device is going to perform the appropriate action</li>
-  <li>they successfully <em>cancelled</em> the triggering of a button, and subsequentially the button's resulting function will not take place</li>
-</ol>
-  </div>
+        <ol>
+          <li>they did positively trigger a button and are thus the device is going to perform the appropriate action</li>
+          <li>they successfully <em>cancelled</em> the triggering of a button, and subsequentially the button's resulting function will not take place</li>
+        </ol>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="Android">
+        <p>Second para Hi there
+      </div>
+      <div class="tab-pane fade" id="Windows">
+        <p>Third para Hi there
+      </div>
+      <div class="tab-pane fade" id="watchOS">
+        <p>Second para Hi there
+      </div>
+      <div class="tab-pane fade" id="iOS10">
+        <p>Third para Hi there
+      </div>
+      <div class="tab-pane fade" id="Ubuntu">
+        <p>Third para Hi there
+      </div>
+    </div>
 </div>
 
 <h3>Platform-Specific Instances</h3>
