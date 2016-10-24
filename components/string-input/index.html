@@ -117,7 +117,7 @@ contributors:
 									<div class="col-md-6" "col-sm-12">
 										<ul>
 											<li>
-												<em>String input fields with form submit buttons.</em>
+												<em>String input fields with form submit buttons.</em> <br>
 												For submitting text entries, the text field can be inlined with a button (see Button component for more info on buttons).
 												<div class="input-append text-center">
 								  					<input class="span2" id="appendedInputButton" type="text">
@@ -126,17 +126,24 @@ contributors:
 											</li>
 											<br>
 											<li>
-												<em>String inputs with more than one line.</em>
+												<em>String inputs with more than one line.</em> <br>
 												For inputs that require more than one-line, a larger string input field can be used. In the text box below, pressing the "enter"/"return" would also allow the user to insert more lines of text.
 												<textarea rows="3" class="form-control" placeholder="Try typing long texts or pressing the enter key multiple times..."></textarea>
 											</li>
 											<br>
 
 											<li>
-												<em>Password Entries. </em>Certain string input fields require the user to type specific text values. These text fields may use a red outline to show that the inputs entered are invalid. The text fields shown below require the user to enter the same text values in both text fields. Another aspect to note in the case below: the text values are hidden from the user. Instead of actual alpha-numeric text values, they can be visually replaced by a symbol (in this case, black dots) in order to hide the password the user enters. Only when the user enters an acceptable argument can the textbox change color into something more inviting (usually a green color for "success" or "acceptable input").
+												<em>Password Entries.</em> <br>
+												Certain string input fields require the user to type specific text values. These text fields may use a red outline to show that the inputs entered are invalid. The text fields shown below require the user to enter the same text values in both text fields. Another aspect to note in the case below: the text values are hidden from the user. Instead of actual alpha-numeric text values, they can be visually replaced by a symbol (in this case, black dots) in order to hide the password the user enters. Only when the user enters an acceptable argument can the textbox change color into something more inviting (usually a green color for "success" or "acceptable input").
 												<p class="text-center">
 													<img src="gifs/password_success.gif" width=100%>
 												</p>
+											</li>
+											<br>
+
+											<li>
+												<em>Command Lines.</em> <br>
+												While they're the oldest known examples of string input, they remain to be the most flexible and interactive. Command lines can account for a plethora of actions: executing lines of code, performing mathematical computations, and answering existential questions; no other form of string input can match a command line's versatility. However, command lines, due to their flexibility, are also the least intuitive of the types of string input due to the large requirement that they place on the user to learn to how to interface with them. If one is not familiar with the commands that their given command line has at its disposal, the command line is rendered useless.
 											</li>
 											<br>
 										</ul>
@@ -144,7 +151,14 @@ contributors:
 									<div class="col-md-6" "col-sm-12">
 										<ul>
 											<li>
-												<em>Disabled.</em>
+												Some examples of popular command lines include Bash, Windows Terminal, Google Chrome's Omnibar, and assorted calculators.
+												<p class="text-center">
+													<img src="gifs/commands.gif" width=50% height=50%>
+												</p>
+											</li>
+
+											<li>
+												<em>Disabled.</em> <br>
 												There are also some string input fields that will be disabled unless the user performs a specific action first. For example, a string input field will be disabled if the user has to first select from a variety of choices.
 												<br><br>
 												In the string input field below, the cursor will not change into an "I-beam pointer" since the user is not allowed to enter any texts. The field has also been greyed out (instead of white in color) to further show the user that they cannot use the text field. In supported browsers, such as Firefox or Google Chrome, when a cursor hovers above the text field, a "no entry sign" &#x1f6ab; &nbsp;will appear below the cursor to make it even clearer that the field is disabled.
@@ -154,12 +168,14 @@ contributors:
 											</li>
 											<br>
 
-											<li><em>Search fields</em> are another form of text input fields. It is commonly observed that search fields use a behavior to "auto-fill" look-ups. The field can anticipate user queries by creating a drop-down list of possible searches. For a look at an OS X-specific search field, see the "Platform-Specific Instances" section. </li>
+											<li><em>Search fields</em> <br>
+												Another form of text input fields. It is commonly observed that search fields use a behavior to "auto-fill" look-ups. The field can anticipate user queries by creating a drop-down list of possible searches. For a look at an OS X-specific search field, see the "Platform-Specific Instances" section. </li>
 											<p class="text-center">
 												<img src="img/search_field_toolbar.jpg" width=50%>
 											</p>
 											<br>
-											<li><em>Voice recognition</em> is an up and coming design feature in newer models of systems. Developers, such as Google, have even made it possible to enter texts into textboxes by allowing the user to speak into their devices. Usually, a microphone icon, such as the one shown in the text box below, can be seen inside the text field. Pressing/clicking this button would allow the user the talk directly, instead of type with a keyboard, whatever information they wish (assuming the voice recognition capability is enabled and functions properly).</li>
+											<li><em>Voice recognition</em> <br>
+												 An up and coming design feature in newer models of systems. Developers, such as Google, have even made it possible to enter texts into textboxes by allowing the user to speak into their devices. Usually, a microphone icon, such as the one shown in the text box below, can be seen inside the text field. Pressing/clicking this button would allow the user the talk directly, instead of type with a keyboard, whatever information they wish (assuming the voice recognition capability is enabled and functions properly).</li>
 											<p class="text-center">
 												<img src="img/google_speech_recog.jpg" width=100%>
 											</p>
@@ -242,7 +258,7 @@ contributors:
 	  			<li role="presentation" class="active"><a href="#mac-os-x" data-toggle="tab">Mac OS X</a></li>
 	  			<li role="presentation"><a href="#ios" data-toggle="tab">iOS</a></li>
 	  			<li role="presentation"><a href="#shared-characteristics" data-toggle="tab">Apple Shared Characteristics</a></li>
-				<li role="presentation"><a href="#windows" data-toggle="tab">Windows 10</a></li>
+				<li role="presentation"><a href="#windows-10" data-toggle="tab">Windows 10</a></li>
 			</ul>
 
 			<div class="panel panel-default">
@@ -385,31 +401,17 @@ contributors:
 									</div>
 								</div>
 							</div>
-							<div role="tabpanel" class="tab-pane" id="windows">
+							<div role="tabpanel" class="tab-pane" id="windows-10">
 								<div class="row">
 									<div class="col-lg-12">
-										<h3>windows</h3>
+										<h3>Windows 10</h3>
 										<p class="lead">
-											For iOS, the entire screen (other than the home button) is a touch screen. This means that the mode by which users input text is on a touch screen keyboard.
+											[Placeholder Text]
 										</p>
-										<p>Note: All of the images are from iOS 9 specifically.</p>
+										<p>dummy text</p>
 									</div>
 									<div class="col-md-6" "col-sm-12">
-										<ul>
-											<li>
-												<em>A main feature</em> of iOS is that if the user clicks anywhere where text can be inserted, a keyboard will pop up. This increases usability because it clearly defines action options to the user.
-											</li>
-											<br>
-											<br>
-											<li>
-												<em>More specifically,</em> a different type of keyboard will pop up upon the user's click depending on what type of input is expected. In this example, a user is creating a new contact and has clicked in a text field that requires a phone number, so a keyboard with numbers has popped up. This even further increases usability because the user now knows that they need to input text and that the text needs to be a series of numbers.
-												<br>
-												<br>
-												<p class="text-center">
-													<img src="img/ios9_number_keyboard.png" width=100%>
-												</p>
-											</li>
-										</ul>
+										[Placeholder Text]
 									</div>
 								</div>
 							</div>
