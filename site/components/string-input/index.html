@@ -7,6 +7,9 @@ contributors:
 
     - name: Jordan Woods
       github: jordan-woods
+
+    - name: Eddie Azinge
+      github: cazinge
 ---
 
 
@@ -38,7 +41,7 @@ contributors:
 										<h3>Typical Appearance</h3>
 										<p class="lead">The most basic form of a string input field is a one-line, white, rectangular box. </p>
 										<p>
-											When not selected, the box appears like an ordinary rectangle; its edges are usually grey in color to show where the field is, where it begins, and where it ends. The field uses a font type and size appropriate to the overall look of the surrounding interface components. Additionally, a placeholder can be seen inside the text box in the form of a command or some other text description. When the user begins typing, the placeholder disappears and is replaced with the user's input. 
+											When not selected, the box appears like an ordinary rectangle; its edges are usually grey in color to show where the field is, where it begins, and where it ends. The field uses a font type and size appropriate to the overall look of the surrounding interface components. Additionally, a placeholder can be seen inside the text box in the form of a command or some other text description. When the user begins typing, the placeholder disappears and is replaced with the user's input.
 										<br>
 										<br>
 										<input type="text" class="form-control" placeholder="Enter your text here...">
@@ -74,7 +77,7 @@ contributors:
 										<p>
 											The border of string input fields typically glow blue when they are enabled (i.e, when the user clicks on them). Once enabled, the user can easily type whatever they wish into the fields. While the user is typing, the caret remains visible to show the user where exactly they are inserting a key.
 										</p>
-										Here is an example of what the string input field does: 
+										Here is an example of what the string input field does:
 										<p class="text-center">
 											<img src="gifs/hello_world.gif" height=110% width=105%>
 										</p>
@@ -95,7 +98,7 @@ contributors:
 											String input fields await values from the user. They are used such that users can submit information and trigger other events in the interface. When a user is not interacting with the field, this component can only be classified as enabled or disabled.
 										</p>
 										<p>
-											For enabled string input fields, the text box is awaiting the user to enter text; the field will also be in wait mode when the user is typing or cleared the text field. For a text field to actually show results, it should be accompanied by an event trigger or a submit button. For disabled text fields, the rectangular box can only do nothing. 
+											For enabled string input fields, the text box is awaiting the user to enter text; the field will also be in wait mode when the user is typing or cleared the text field. For a text field to actually show results, it should be accompanied by an event trigger or a submit button. For disabled text fields, the rectangular box can only do nothing.
 										</p>
 										<img src="img/string_input_diagram.svg" class="img-responsive">
 										<br>
@@ -108,13 +111,13 @@ contributors:
 									<div class="col-lg-12">
 										<h3>Variants</h3>
 										<p class="lead">
-											Although text fields perform in the same manner, they can possess other design behaviors depending on where they are used. 
+											Although text fields perform in the same manner, they can possess other design behaviors depending on where they are used.
 										</p>
 									</div>
 									<div class="col-md-6" "col-sm-12">
 										<ul>
 											<li>
-												<em>String input fields with form submit buttons.</em>
+												<em>String input fields with form submit buttons.</em> <br>
 												For submitting text entries, the text field can be inlined with a button (see Button component for more info on buttons).
 												<div class="input-append text-center">
 								  					<input class="span2" id="appendedInputButton" type="text">
@@ -123,17 +126,24 @@ contributors:
 											</li>
 											<br>
 											<li>
-												<em>String inputs with more than one line.</em>
+												<em>String inputs with more than one line.</em> <br>
 												For inputs that require more than one-line, a larger string input field can be used. In the text box below, pressing the "enter"/"return" would also allow the user to insert more lines of text.
 												<textarea rows="3" class="form-control" placeholder="Try typing long texts or pressing the enter key multiple times..."></textarea>
 											</li>
 											<br>
-								
+
 											<li>
-												<em>Password Entries. </em>Certain string input fields require the user to type specific text values. These text fields may use a red outline to show that the inputs entered are invalid. The text fields shown below require the user to enter the same text values in both text fields. Another aspect to note in the case below: the text values are hidden from the user. Instead of actual alpha-numeric text values, they can be visually replaced by a symbol (in this case, black dots) in order to hide the password the user enters. Only when the user enters an acceptable argument can the textbox change color into something more inviting (usually a green color for "success" or "acceptable input").
+												<em>Password Entries.</em> <br>
+												Certain string input fields require the user to type specific text values. These text fields may use a red outline to show that the inputs entered are invalid. The text fields shown below require the user to enter the same text values in both text fields. Another aspect to note in the case below: the text values are hidden from the user. Instead of actual alpha-numeric text values, they can be visually replaced by a symbol (in this case, black dots) in order to hide the password the user enters. Only when the user enters an acceptable argument can the textbox change color into something more inviting (usually a green color for "success" or "acceptable input").
 												<p class="text-center">
 													<img src="gifs/password_success.gif" width=100%>
 												</p>
+											</li>
+											<br>
+
+											<li>
+												<em>Command Lines.</em> <br>
+												While they're the oldest known examples of string input, they remain to be the most flexible and interactive. Command lines can account for a plethora of actions: executing lines of code, performing mathematical computations, and answering existential questions; no other form of string input can match a command line's versatility. However, command lines, due to their flexibility, are also the least intuitive of the types of string input due to the large requirement that they place on the user to learn to how to interface with them. If one is not familiar with the commands that their given command line has at its disposal, the command line is rendered useless.
 											</li>
 											<br>
 										</ul>
@@ -141,22 +151,31 @@ contributors:
 									<div class="col-md-6" "col-sm-12">
 										<ul>
 											<li>
-												<em>Disabled.</em>
-												There are also some string input fields that will be disabled unless the user performs a specific action first. For example, a string input field will be disabled if the user has to first select from a variety of choices. 	  
+												Some examples of popular command lines include Bash, Windows Terminal, Google Chrome's Omnibar, and assorted calculators.
+												<p class="text-center">
+													<img src="gifs/commands.gif" width=50% height=50%>
+												</p>
+											</li>
+
+											<li>
+												<em>Disabled.</em> <br>
+												There are also some string input fields that will be disabled unless the user performs a specific action first. For example, a string input field will be disabled if the user has to first select from a variety of choices.
 												<br><br>
-												In the string input field below, the cursor will not change into an "I-beam pointer" since the user is not allowed to enter any texts. The field has also been greyed out (instead of white in color) to further show the user that they cannot use the text field. In supported browsers, such as Firefox or Google Chrome, when a cursor hovers above the text field, a "no entry sign" &#x1f6ab; will appear below the cursor to make it even clearer that the field is disabled.
+												In the string input field below, the cursor will not change into an "I-beam pointer" since the user is not allowed to enter any texts. The field has also been greyed out (instead of white in color) to further show the user that they cannot use the text field. In supported browsers, such as Firefox or Google Chrome, when a cursor hovers above the text field, a "no entry sign" &#x1f6ab; &nbsp;will appear below the cursor to make it even clearer that the field is disabled.
 												<p class="text-center">
 													<input class="input-xlarge form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
 												</p>
 											</li>
 											<br>
 
-											<li><em>Search fields</em> are another form of text input fields. It is commonly observed that search fields use a behavior to "auto-fill" look-ups. The field can anticipate user queries by creating a drop-down list of possible searches. For a look at an OS X-specific search field, see the "Platform-Specific Instances" section. </li>
+											<li><em>Search fields</em> <br>
+												Another form of text input fields. It is commonly observed that search fields use a behavior to "auto-fill" look-ups. The field can anticipate user queries by creating a drop-down list of possible searches. For a look at an OS X-specific search field, see the "Platform-Specific Instances" section. </li>
 											<p class="text-center">
 												<img src="img/search_field_toolbar.jpg" width=50%>
 											</p>
 											<br>
-											<li><em>Voice recognition</em> is an up and coming design feature in newer models of systems. Developers, such as Google, have even made it possible to enter texts into textboxes by allowing the user to speak into their devices. Usually, a microphone icon, such as the one shown in the text box below, can be seen inside the text field. Pressing/clicking this button would allow the user the talk directly, instead of type with a keyboard, whatever information they wish (assuming the voice recognition capability is enabled and functions properly).</li>
+											<li><em>Voice recognition</em> <br>
+												 An up and coming design feature in newer models of systems. Developers, such as Google, have even made it possible to enter texts into textboxes by allowing the user to speak into their devices. Usually, a microphone icon, such as the one shown in the text box below, can be seen inside the text field. Pressing/clicking this button would allow the user the talk directly, instead of type with a keyboard, whatever information they wish (assuming the voice recognition capability is enabled and functions properly).</li>
 											<p class="text-center">
 												<img src="img/google_speech_recog.jpg" width=100%>
 											</p>
@@ -173,7 +192,7 @@ contributors:
 										</p>
 										<p>
 											<ul>
-												<li><em>Learnability</em> is the measure for how easily a new user is able to utilize the component. Since the string input field is a fundamental interface component, users must be able to recognize immediately how to use it. Since its appearance looks like an empty space, it should be able to show the user that it can accept text inputs.</li> 
+												<li><em>Learnability</em> is the measure for how easily a new user is able to utilize the component. Since the string input field is a fundamental interface component, users must be able to recognize immediately how to use it. Since its appearance looks like an empty space, it should be able to show the user that it can accept text inputs.</li>
 												<li><em>Efficiency</em> is the measure for how fast an expert user utilizes the component. For string input field, the user must be able to quickly navigate to the text field they want to use and be able to recognize when it can be enabled/when it is disabled/what kinds of information can be placed into them.</li>
 												<li><em>Error</em> is the measure for how many errors the user makes when using the component. Because its main function is to accept user text inputs, the text field should not confuse the user when they are entering values into the field. A possible case when the user does make an error with this component is when the user types information into the wrong field instead of the one they actually want to use.</li>
 												<li><em>Memorability</em> is the measure for how well the user remembers how to user a component after some period of time of not using it. Like with learnability, the user must be able to recognize quickly that a component is a text box waiting for an input even if the user has not seen it for some time.</li>
@@ -225,7 +244,7 @@ contributors:
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
 </div>
@@ -239,6 +258,7 @@ contributors:
 	  			<li role="presentation" class="active"><a href="#mac-os-x" data-toggle="tab">Mac OS X</a></li>
 	  			<li role="presentation"><a href="#ios" data-toggle="tab">iOS</a></li>
 	  			<li role="presentation"><a href="#shared-characteristics" data-toggle="tab">Apple Shared Characteristics</a></li>
+				<li role="presentation"><a href="#windows-10" data-toggle="tab">Windows 10</a></li>
 			</ul>
 
 			<div class="panel panel-default">
@@ -300,19 +320,19 @@ contributors:
 									<div class="col-lg-12">
 										<h3>iOS</h3>
 										<p class="lead">
-											For iOS, the entire screen (other than the home button) is a touch screen. This means that the mode by which users input text is on a touch screen keyboard. 
+											For iOS, the entire screen (other than the home button) is a touch screen. This means that the mode by which users input text is on a touch screen keyboard.
 										</p>
 										<p>Note: All of the images are from iOS 9 specifically.</p>
 									</div>
 									<div class="col-md-6" "col-sm-12">
 										<ul>
 											<li>
-												<em>A main feature</em> of iOS is that if the user clicks anywhere where text can be inserted, a keyboard will pop up. This increases usability because it clearly defines action options to the user. 
+												<em>A main feature</em> of iOS is that if the user clicks anywhere where text can be inserted, a keyboard will pop up. This increases usability because it clearly defines action options to the user.
 											</li>
 											<br>
 											<br>
 											<li>
-												<em>More specifically,</em> a different type of keyboard will pop up upon the user's click depending on what type of input is expected. In this example, a user is creating a new contact and has clicked in a text field that requires a phone number, so a keyboard with numbers has popped up. This even further increases usability because the user now knows that they need to input text and that the text needs to be a series of numbers. 
+												<em>More specifically,</em> a different type of keyboard will pop up upon the user's click depending on what type of input is expected. In this example, a user is creating a new contact and has clicked in a text field that requires a phone number, so a keyboard with numbers has popped up. This even further increases usability because the user now knows that they need to input text and that the text needs to be a series of numbers.
 												<br>
 												<br>
 												<p class="text-center">
@@ -331,7 +351,7 @@ contributors:
 									</div>
 									<div class="col-md-6" "col-sm-12">
 										<ul>
-											<li><em>Notes</em> allow OS X and iOS users to write reminders or important information into a virtual notepad. This is an example of a text field that immediately shows the user the potential for creating numerous lines of text. In contrast to the other examples given, the text field is intentionally spacious to signal the user that they can use more than one line of text. The notepad looks like an actual notepad, which subliminally tells the user what this application is intended for. 
+											<li><em>Notes</em> allow OS X and iOS users to write reminders or important information into a virtual notepad. This is an example of a text field that immediately shows the user the potential for creating numerous lines of text. In contrast to the other examples given, the text field is intentionally spacious to signal the user that they can use more than one line of text. The notepad looks like an actual notepad, which subliminally tells the user what this application is intended for.
 											<br>
 											<br>
 											<div id="carousel-notes" class="carousel slide" data-ride="carousel">
@@ -381,6 +401,76 @@ contributors:
 									</div>
 								</div>
 							</div>
+							<div role="tabpanel" class="tab-pane" id="windows-10">
+								<h3>Windows 10</h3>
+								<p class="lead">
+									Microsoft has it's own set of design guidelines for string input. Because of their focus on having both tablets and laptops have a standard interface, their solutions are often more accessible and universal than Apple's, but lack the distinctive platform specific strengths that Apple's devices have.
+								</p>
+								<div class="row">
+								  	<div class="col-md-6" "col-sm-12">
+										<ul>
+											<li>
+												<em>Lock Screens</em> provide a layer of security for users by requiring that they provide some sort of string input such as a predetermined password or PIN number before they are allowed access to their machine. The string input boxes are kept simple in scope and size, the text input into the field is obscured, and in cases such as PIN number input, the user is even restricted from inputting characters that would not make sense given the context of the prompt. All of these measures towards making the lock screen both straight-forward and easy to parse increases both user accessibility and efficiency in using the Lock Screen.
+												<br>
+												<p class="text-center">
+                                                    <img src="img/windows10/lock-screen.jpg" width=30%>
+												</p>
+											</li>
+											<br><br>
+
+											<li>
+												<em>Start Menu Search Bar</em> uses a text box to allow the user to find files anywhere in the machine. In order to make this text box appear on the screen, the user has to press the "Windows Start" button. Like with all search boxes in Windows 10, the text box displays a magnifying glass to indicate its purpose (i.e. to search). When a user types into this box, the box auto-fills with the most probable search terms in the system. A drop-down list also pops-up showing other possible search items.
+												<br>
+												<p class="text-center">
+													<img src="img/windows10/start-menu-search-bar.png" width=40%>
+												</p>
+                                                Note: This text box is extremely similar to the "Spotlight" bar of Mac systems.
+											</li>
+											<br><br>
+
+											<li>
+												<em>File Explorer</em> uses both a search bar and a file path bar. The file path bar allows the user to access any part of the machine immediately, provided they know the correct file path to get there. Directories (folders) can contain either files, which end the path, or more directories, which continue the file path. The delimiter (separator) for this bar is most often the forward slash (/) symbol. Once the file path has been searched, this bar changes to a breadcrumbs bar for simpler user-interface, obscuring the ability to type in a specific file path away from novice users. Due to the intimidating and often complex layout of file paths, this obscurity increases user learnability and satisfaction.
+												<br>
+												<p class="text-center">
+													<img src="img/windows10/file-explorer-menu-bar.png" width=100%>
+												</p>
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-6" "col-sm-12">
+										<ul>
+											<li>
+												<em>Settings</em> possess a search bar in order to search for specific setting to be changed. Within individual settings tabs there are sections to add text in appropriate fields for various types of configuration. In these, as much control as possible is taken away from the user through restrictive string input fields in order to prevent mistakes due to the importance of these fields in affecting how your computer works in general use.
+												<br>
+												<p class="text-center">
+													<img src="img/windows10/settings-search.png" width=50%>
+												</p>
+												<p class="text-center">
+													<img src="img/windows10/settings-fields.png" width=50%>
+												</p>
+											</li>
+											<br><br>
+
+											<li>
+												<em>Edge Address Bar</em> integrates a search bar functionality into its URL field in order to make interfacing with the internet feel more centralized and uniform. Similar to Google Chrome's Omnibar, this change allows Edge to have one sole interface point for users, reducing errors as well as increasing learnability and efficiency.
+												<br>
+												<p class="text-center">
+													<img src="img/windows10/edge-address-bar.png" width=100%>
+												</p>
+											</li>
+											<br><br>
+
+											<li>
+												<em>Terminal Command Line</em> provides a command line interface for a lower level interaction with the user's machine. Various commands can be used in order to navigate through the machine, run programs, delete or create files, and view information. While wide-reaching, terminal requires knowledge of specific commands in order to be used even at its most basic level, making it unapproachable for novice users. Arguably this is a good thing due to the fact that the command line has the most control over the user's machine and unknowing users may disrupt critical processes if they were able to work with the command line without a basic understanding of the processes of a machine.
+												<br>
+												<p class="text-center">
+													<img src="img/windows10/terminal-command-line.png" width=100%>
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -410,6 +500,6 @@ contributors:
 					</ul>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 </div>
