@@ -1,41 +1,45 @@
 ---
-title: Login / Unlock
+title: Login/Unlock
 layout: component
 contributors:
     - name: Justin Sanny
       github: jsannyjr
+    - name: Evan Hessler
+      github: evanhessler
     - name: Daniel Sjarif
       github: danielsjarif
 ---
 <p class="lead">The gateway to knowledge at your fingertips, the Login/Unlock screen for Windows 7 and OS X is the gate to the wonders of computers.</p>
 
-<h3>Typical Behavior</h3>
+<h2>Typical Behavior</h2>
 
-  <blockquote>The Login/Unlock screen is possibly the most common attritube to any computer, Windows, Mac, Linux, etc. While the aesthetics may change from platform to platform, the same idea and function is prevalent in all platforms. Each screen has a number of possible users that can be accessed via passwords. Both screens have the options to shut down or restart the system as well.</blockquote>
+  <blockquote>A desktop or laptop computer’s log in screen is likely to be recognizable whether it is run on Windows, Linux, or OSX. While the aesthetics may change from platform to platform, the same idea and function is prevalent in all platforms. Each screen has a number of possible users that can be accessed. Each interface has the options of restarting or shutting down the system as well. One has the option of clicking on a list of users. If the account is unsecured, the user is logged in; however, all platforms have security features which can behave differently. Please see <a href="#platform-specific-instances">platform-specific instances</a> for more.</blockquote>
 
-  <blockquote> Both platforms do not vary when it comes to login. Each requires the user to pick a domain and enter the domain's password. For Windows 7, if the wrong password is typed in, the login screen doesn't change and asks the user for another password. Depending on the settings, the user may allow for hints or, if installed, use the fingerprint scanner. </blockquote>
-  <blockquote>For OS X, if the user types in the wrong password, the domain image will vibrate and ask for the password again. If the user gets the password wrong three times, OS X will go into sleep mode. The user may change these options such as adding more tries for the password or adding hints for the correct password. In addition if the caps lock is on for either platform, their will be a notifcation. Windows 7 will specifically tell you on the screen while OS X will show a greyed out image. Both platforms provide buttons to enter the password after it has been typed. (See Button page for more information about buttons).</blockquote>
+<h4> Events </h4>
+  <blockquote>To be written...</blockquote>
 
-<h3> State Diagram </h3>
+<h4> State Diagram </h4>
   <img src = "https://enricohomann.files.wordpress.com/2011/11/paper_2011_nov_09_statemachine_status_002.png" alt = "State Diagram">
 
-<h3>Typical Appearance</h3>
 
-<blockquote> The Login/Unlock screens act simliar for both Windows and OS X but are aesthetically different. </blockquote>
+<br/>
+<br/>
+
+<h4> Component in Action </h4>
 
 <div class="row">
   <div class="col-sm-6">
-<h3>Windows 7 Login/Unlock Page</h3>
+<h5>Windows 7 Login/Unlock Page</h5>
   <img src = "http://img15.deviantart.net/9d6f/i/2009/210/b/6/area_se7en_login_screen_for_xp_by_save3c.jpg" height = "330" width = "555" alt = "Windows 7 Login">
   <br></br>
   <img src = "http://technovally.com/wp-content/uploads/2013/01/Snap11-1024x561.png" height = "330" width = "555" alt = "Windows 7 Unlock">
 </div>
 
   <div class="col-sm-6">
-<h3>OS X Login/Unlock Page</h3>
-    <img src = "http://images.techhive.com/images/article/2012/10/login20scree-100011060-large.png" height = "330" width = "555" alt = "OS X Login">
+<h5>OSX Yosemite Login/Unlock Page</h5>
+  <video height = "330" width = "555" loop><source src="successful-login"></source></video>
     <br></br>
-    <img src = "http://cdn.thetechjournal.com/wp-content/uploads/images/1106/1308311265-new-login-screen-on-mac-os-x-lion-2.jpg" height = "330" width = "555" alt = "OS X Unlock">
+  <video height = "330" width = "555" loop><source src="wrong-password"></source></video>
   </div>
 </div>
 <p> </p>
@@ -65,35 +69,76 @@ contributors:
       </div>
     </div>
   </div>
-<h3> Priority Metrics <h3>
-    <blockquote>The Login/Unlock screen is used by almost every interface available today and uses all five metrics to an extent. The usability metrics that affect this the most are Learnability, Efficency, Error. Users must be able to recognize and understand how to login into his or her computer or else will not be able to use it (Learnability). Login/Unlock must be efficient so the user does not have to wait to use the computer (Efficency). Users should never make an error of using the wrong domain or typing in the wrong password. This would delay and dissatisfy the user (Errors). 
-      <br> </br>
-      Satisfaction and Memorability affect Login/Unlock screens the least. To login or unlock the screen should be quick, lack of errors, and efficient which leads to satisfaction (Satisfaction). The user must memorize which domain goes with which password so as to not make errors (Errors). 
-      <br> </br>
-      Overall, the Login/Unlock screen is rarely used outside of security measures and relies mostly on Learnability, Efficency, and Errors.
-    </blockquote>
-  <blockquote> </blockquote>
-<h3> Variants </h3> 
-  <blockquote> For Windows 7, some computer have the option for a fingerprint scanner. A fingerprint scanner allows the user to suplement their fingerprint as a password by swiping their selected finger onto the scanner. As such, both the fingerprint and password for each user can be used to unlock the computer. <br> </br>
-  OS X does not have this feature. Also, across all platforms and websites, the same steps are taken except that some websites require a security question to login.<br> </br>
-  A picture of the scanner can be found below.</blockquote> 
 
-<img src = "http://img.wonderhowto.com/img/49/93/63482455627656/0/flawed-laptop-fingerprint-readers-make-your-windows-password-vulnerable-hackers.w654.jpg" height = "400"width = "1150"alt = "Fingerprint"> 
+  <h2>Typical Appearance</h2>
 
-<h3> Key Characteristics <h3>
+  <blockquote>
+  The appearance of a log in screen is very similar on desktop systems. All systems have a choice of users to log in as. OSX and Windows systems allow the user to create themselves an avatar.
+  </blockquote>
+
+  <h2> Priority Metrics </h2>
+  <blockquote>
+  The most important priority metric for a login/unlock user interface is efficiency. As login screens are so prevalent across a variety of platforms, most users will gain no satisfaction from correctly logging in; rather, they likely only care that this happens as quickly as possible. Learnability and errors are equal parts important in improving efficiency. The few users who are unaware of what a login screen does are likely also unfamiliar with the concept of a password. They might thus be confused when prompted for a password to log in. Errors are unlikely for experienced computer users -other than typing in a wrong password, which doesn’t apply here-. However, all platforms need clear navigation for sleep, restart, shut down, and clicking on the desired user so as to reduce errors and improve efficiency.
+  </blockquote>
+
+<h2> Variants </h2>
+  <blockquote>
+  The most common way to login to the computer is through a password. Both Windows and all OSX platforms have this option. If the user types in the wrong password a password hint will be shown if previously supplied by the user. Once the user types in the correct password, they are successfully logged in to their account.
+  </blockquote>
+
+  <blockquote> 
+  On Windows 7, some computers have the option for a fingerprint scanner. A fingerprint scanner allows the user to use their fingerprint as a password by swiping their selected finger onto the scanner. As such, either the fingerprint or password for each user can be used to unlock the computer.
+  <br> </br>
+  <img src = "http://img.wonderhowto.com/img/49/93/63482455627656/0/flawed-laptop-fingerprint-readers-make-your-windows-password-vulnerable-hackers.w654.jpg" height = "50%"width = "50%"alt = "Fingerprint"> 
+  </blockquote>
+
+  <blockquote> 
+  In macOS Sierra, users can also log in to their computer through their Apple Watch, if they have one. <br> </br>
+  <br> </br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/aHCSgdKHrPs" frameborder="0" allowfullscreen></iframe>
+  </blockquote> 
+
+
+<h2> Key Characteristics </h2>
   <blockquote> The Unlock/Login screen allows selection and provides an easy, spaced out layout for the different domains. It becomes easy to navigate and zooms in when a domain is selected. At the Unlock window, it provides examples and intuitive instructions. 
     <br> </br>
     Windows 7's design uses colors effectively by invoking the pleasing aeshtic of their backgrounds, following their guidelines. It provides easy to read icons that make using the Login/Unlock screen easy to navigate.
     <br> </br>
     OS X's design follows uses clear and precise languge as well as clear UI content so the screen isn't cluttered or hard to follow. The guidelines are specifically followed by making the interface the main point instead of aesthetic.</blockquote>
-    <h3> Feedback <h3> 
+    <h4> Feedback </h4> 
     <blockquote>When the button is pressed, it provides feedback by comprehensively showing that the computer is being unlocked by taking away the unlock screen. It replaces the screen with a different screen and unlocks the computer if its works otherwise it will return to the unlock screen.</blockquote>
-<h3> Summary of History of Control Alt Delete </h3>
-<blockquote> David Bradley helped build IBM’s new personal computer. Yet, when the computer encountered a glitch, then they had to manually restart the system. So Bradley created a keyboard shortcut ctrl + alt + del that triggered a system reset.<br> </br>
-The reason why those three keys were chosen was due to their placement since it wasn’t likely for all three keys to be pressed at the same time on accident. <br> </br>
- Although Bradley had created the shortcut to save time and help his fellow programmers, it was never intended for the customers. However, it wasn’t until much later on that Bradley’s shortcut became well-known. </blockquote>
 
-<a href ="http://mentalfloss.com/article/51674/history-ctrl-alt-delete"> Full history of ctrl+alt+del can be found here.</a> 
+<h2 id="platform-specific-instances"> Platform-Specific Instances <h2>
+
+<h4> OSX Mavericks </h4>
+<blockquote>
+For OSX Mavericks, if the user types in the wrong password, the domain image will vibrate and ask for the password again. If the user gets the password wrong three times, OS X will go into sleep mode. The user may change these options such as adding more tries for the password or adding hints for the correct password. In addition if the caps lock is on for either platform, their will be a notifcation. Windows 7 will specifically tell you on the screen while OS X will show a greyed out image. Both platforms provide buttons to enter the password after it has been typed. (See Button page for more information about buttons).
+</blockquote>
+
+<blockquote>
+OSX Maverick's design follows uses clear and precise languge as well as clear UI content so the screen isn't cluttered or hard to follow. The guidelines are specifically followed by making the interface the main point instead of aesthetic.
+</blockquote>
+
+
+<h4> OSX Yosemite </h4>
+
+<blockquote>
+Mac OSX Mavericks and Yosemite have exactly the same behavior. In addition to the standard behavior of a computer’s log in screen, if the user types in the wrong password in both OSX Mavericks and OSX Yosemite the screen vibrates to alert the user of their error. This is in contrast to Windows, which does not have any animation for an incorrect password.
+</blockquote>
+
+<blockquote>
+OSX Yosemite is similar in appearence to OSX Mavericks, but both are quite different from Windows 7. First, the OSX Yosemite navigation is exactly the same as that of OSX Mavericks. It is simple and easy to follow. The navigation bar options, Sleep, Restart, and Shut Down, follow the user through the steps of logging in. This is in contrast to Windows 7, where if the user icon is clicked -and the screen changes to a password prompt-, the navigation options disappear. Also, both OSX systems differ from Windows in their use of labels underneath the navigation icons.  This was likely an attempt by the developers to improve recognition of the icons, as sleep and restart icons are not seen often. OSX Yosemite users’ backgrounds also display a blurred out version of the desktop picture while OSX Mavericks, Windows 7, and other systems show an uncustomizable background. The OSX Yosemite developers likely wanted the user to gain some satisfaction from the log in screen; they accomplished this without having to make a significant change to the interface.
+</blockquote>
+
+<blockquote>
+The key characteristic of a OSX Yosemite login screen is consistency. As per Apple’s main design principles, consistency means keeping the fundamental concept of a system relatively unchanged throughout releases. This is apparent in the similarities between OSX Mavericks and Yosemite; Apple’s developers kept Yosemite’s design and functionality nearly exactly the same to avoid confusion for Mac users. Consistency also relates to the login screen’s adherence to Apple’s UI guidelines. The design of the login screen closely follows the guidelines, as seen by the labels underneath the icons, which are also a key element of the iOS home screen.
+</blockquote>
+
+<h4> macOS Sierra </h4>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aHCSgdKHrPs" frameborder="0" allowfullscreen></iframe>
+
+
 
 <h3> References </h3>
 <a href = "https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/"> Apple Guidelines </a> 
@@ -117,5 +162,6 @@ The reason why those three keys were chosen was due to their placement since it 
 <a href = "http://www.dummies.com/how-to/content/windows-7-logon-screen-options.html"> Windows Login Screen Instructions </a>
 <p> </p>
 <a href = "http://technovally.com/wp-content/uploads/2013/01/Snap11-1024x561.png"> Windows Unlock Image </a>
+<p> </p>
+<a href= "https://www.youtube.com/embed/aHCSgdKHrPs">macOS Sierra Apple Watch Unlock</a>
 <p> </p> 
-<p> <em> Written by Justin Sanny </em> </p>
