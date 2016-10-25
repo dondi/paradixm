@@ -8,11 +8,12 @@ contributors:
     - name: Ed Seim
       github: SirSeim
 
+    - name: Francis Gow
+      github: FrancisGow
+
     - name: Elizabeth Shen
       github: eshen1
 
-    - name: Francis Gow
-      github: FrancisGow
 ---
 <p class="lead">Menus are probably the second most used components on a given graphical interface after buttons.</p>
 
@@ -41,9 +42,11 @@ contributors:
                 
 
             <p>Of course, these items can often be menus themselves within other menus.<br></p>
+
             <br>
           </div>
             <img src="Mac_menu_in_menu.png" class="img-responsive" alt="Responsive image">
+
         </blockquote>
 
         <h3>Where do you find them?</h3>
@@ -456,6 +459,11 @@ contributors:
 
 <blockquote>A menu is a list of options or actions to be chosen or performed. The typical menu is stacked vertically. That is to say that each item is listed from top to bottom, typically in some order.</blockquote>
 
+<p> // Android Auto // Although obviously a Google product, it’s not as continuous as Apple’s Carplay is. The difference between Android 6.0 to Android Auto isn’t as obvious until you get into individual apps, such as Google Maps or the music player. There is a bar on the bottom which houses (in order): Google Maps, Phone, “Home”, Music, and “Return to Audi MMI (Multimedia Interface).” Within those, you nudge the controller to the right to access “Hey Google” and to the left to access more options within the app, such as showing/disabling traffic on Google Maps. Menus are typically placed on the edges of the screen to minimize intrusiveness of the selected application in use.
+
+// Apple Carplay // Similar to iOS feel that it is based on. Allows for the user to easily pick up on Carplay since they’re already familiar with their iPhone.
+Gridded menu system like the iPhone that it’s running on.</p>
+
 <div class="row">
   <div class="col-xs-6 col-md-4 col-lg-3">
     <div class="panel panel-default">
@@ -564,11 +572,12 @@ contributors:
 
 <blockquote>
   <p>A menu is typically presented for the purpose of selecting an action to perform, or selecting a particular item to use. </p>
+  <p>The most relevant event on these platforms are the “click,” which tells it whether to advance deeper or retreat out of the app. Second would be to “scroll”, which moves the selector around to allow the user to “click” what they want to. </p>
 </blockquote>
 
 <h4>Events</h4>
 
-<p>The most relevant menu event is the <code>click</code>. A <code>click</code> event indicates that the user has selected a particular action or item from the list. Another event is the <code>hover</code>, indicating that a pointing device is explicitly within the button’s bounds. Another event is the <code>scroll</code>, displaying more options than what can be presented on the screen presently. Some platforms or implementations have included other components into an item, like a <code>swipe</code>, which can display alternative actions for the item, or a checkbox.</p>
+<p>The most relevant menu event is the <code>click</code>. A <code>click</code> event indicates that the user has selected a particular action or item from the list. Another event is the <code>hover</code>, indicating that a pointing device is explicitly within the button’s bounds. Another event is the <code>scroll</code>, displaying more options than what can be presented on the screen presently. Some platforms or implementations have included other components into an item, like a <code>swipe</code>, which can display alternative actions for the item, or a checkbox. The most relevant event on these platforms are the “click,” which tells it whether to advance deeper or retreat out of the app. Second would be to “scroll”, which moves the selector around to allow the user to “click” what they want to.</p>
 
 <h4>State Diagram</h4>
 
@@ -618,7 +627,9 @@ contributors:
   </div>
 </div>
 
-<blockquote>These are only a few of the many interfaces that can be used to display options or actions. Depending on the content displayed, it may be better to create a custom interface. In the case of the OS X color picker, instead of listing names of colors in a standard menu, they opted to recreate a crayon box and visually display what the available colors are. In the case of the Apple TV, while you could simply list all possible apps, they opted for a grid to take better advantage of the wide aspect ratio of a TV. </blockquote>
+<blockquote>These are only a few of the many interfaces that can be used to display options or actions. Depending on the content displayed, it may be better to create a custom interface. In the case of the OS X color picker, instead of listing names of colors in a standard menu, they opted to recreate a crayon box and visually display what the available colors are. In the case of the Apple TV, while you could simply list all possible apps, they opted for a grid to take better advantage of the wide aspect ratio of a TV.
+
+An easy way to locate menus in Google’s system is to search for three parallel bars, which clearly indicate more options.</blockquote>
 
 <h3>Priority Metrics</h3>
 
@@ -629,6 +640,13 @@ contributors:
 <p>Users must have no delays with using menus because it is the intermediate step between choosing an action or item and that action being performed or moving on with the item selection. Efficiency is of the essenence here. The primary time consumer is the scrolling of a manu that cannot fit onto the screen in its entirety. Depending on the platform, the scrolling event must be responsive.</p>
 
 <p>Users should never select an item in the menu by mistake. This is more in the realm of the interface component that is used within the item in the menu than the menu itself. However, for example, scrolling the menu should not be mistaken for selecting a particular item. This is up to the platform to make sure that the compents that can be used within items don't conflict with the menu itself.</p>
+
+<p>Learnability: The learning curve for Android Auto is significantly worse than for Apple Carplay.
+Efficiency: It is more complicated than Apple’s simple, gridded layout, but can only accomplish the same amount of work.
+Memorability: Although it took a while to learn the system, once learned, is intuitive and usable.
+Errors: Not many errors other than how to activate the “Hey Google” button. That took a few minutes of playing around with the system and trial and error.
+Satisfaction: Doesn’t look at nice as Apple Carplay due to a non-adjusting aspect ratio (tested on two phones).</p>
+
 
 <h3>Key Characteristics</h3>
 
@@ -693,4 +711,3 @@ contributors:
 <h3>Credits &amp; References</h3>
 
 <blockquote>Provide references or links to any information, image, or media sources used.</blockquote>
-
