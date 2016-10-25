@@ -15,8 +15,7 @@ contributors:
 <style>
   #gif-container{
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 300px;
   }
   #main{
     height: 100%;
@@ -24,19 +23,20 @@ contributors:
   #overlay{
     position: absolute;
     bottom: 10%;
-    left: 99%;
+    left: 50%;
     height: 15%;
   }
 </style>
 <p class="lead">A critical feature of GUI-based operating systems is the ability to resize elements.</p>
 <div class="container">
+  <!--****************************Typical Appearance**********************************-->
   <div class="row">
     <h3>Typical Appearance</h3>
     <p><b>A resize event is characterized by a change in an element's dimensions.</b></p>
     <p>In contrast with zoom, which is a related feature, resize changes the dimensional properties (length and width) of the element itself, rather than the scope at which the element is displayed on a screen. Examples of commonly resized elements include windows, icons, images, and text. However, for the purposes of evaluating typical appearances and behavior, we will consider the resize behavior of windows.</p>
     <p>The arrow mouse cursor and resize buttons are the most common interface elements for changing the dimensions of elements.</p>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-xs-6">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title text-center">Arrow Mouse Cursor</h4>
@@ -51,7 +51,7 @@ contributors:
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-xs-6">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title text-center">Resize Button</h4>
@@ -67,7 +67,7 @@ contributors:
       </div>
     </div>
   </div>
-
+<!--****************************Typical Behavior**********************************-->
   <div class="row">
     <h3>Typical Behavior</h3>
     <p>There are two categories of window resize behavior: manual and automatic.</p>
@@ -91,7 +91,7 @@ contributors:
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-sm-6">
+      <div class="col-xs-6 col-md-6">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title text-center">Automatic</h4>
@@ -122,15 +122,15 @@ contributors:
         <p>A resizeable element is in the <code>standby</code> state prior to resize. Once the mouse starts dragging the edge or corner, the window enters the <code>resizing</code> state. Once finished, the window reaches the <code>resized</code> state.</p>
       </div>
     </div>
-
+<!--****************************Component in Action**********************************-->
     <div class="row">
       <h4>Component in Action</h4>
       <p>The following gifs represent only the resize functions within the Mac OSX platform that are common across different platforms (with minor stylistic differences). A closer look of resize in the OSX platform is explored in the "Platform-Specific Instances" section below.
         <div class="col-md-6">
           <div class="thumbnail">
             <div id="gif-container">
-              <img id="main" src="gifs/chrome-resize-manual.gif" alt="chrome resize manual" class="img-rounded" height="300">
-              <img id="overlay" src="gifs/osx-cursor-change.gif" alt="osx cursor change" class="img-rounded" height="100">
+              <img id="main" class="img-rounded" class="img-responsive" src="gifs/chrome-resize-manual.gif" alt="chrome resize manual">
+              <img id="overlay" class="img-rounded" class="img-responsive" src="gifs/osx-cursor-change.gif" alt="osx cursor change">
             </div>
           <div class="caption">
             <h3>Manual Resize</h3>
@@ -141,8 +141,8 @@ contributors:
         <div class="col-md-6">
           <div class="thumbnail">
             <div id="gif-container">
-              <img id="main" src="gifs/chrome-resize-automatic.gif" alt="chrome resize automatic" class="img-rounded" height="300">
-              <img id="overlay" src="gifs/osx-button-change.gif" alt="osx cursor change" class="img-rounded" height="100">
+              <img id="main" src="gifs/chrome-resize-automatic.gif" alt="chrome resize automatic" class="img-rounded" class="img-responsive" class="img-rounded">
+              <img id="overlay" src="gifs/osx-button-change.gif" alt="osx cursor change" class="img-rounded" class="img-responsive" class="img-rounded">
             </div>
             <div class="caption">
               <h3>Automatic Resize</h3>
@@ -151,7 +151,7 @@ contributors:
           </div>
         </div>
       </div>
-
+<!--****************************Variants**********************************-->
   <div class="row">
     <h3>Variants</h3>
     <p>The interface behaviors of resize can vary, depending on the element that is being resized</p>
@@ -173,7 +173,7 @@ contributors:
       <br>
     </ul>
   </div>
-
+<!--****************************Priority Metrics**********************************-->
   <div class="row">
     <h3>Priority Metrics</h3>
     <p>Ben Shneiderman, in his book <em>Designing the User Interace</em> defines learnability, efficiency, errors, memorability, and satisfaction, as metrics by which the usability of a system can be measured. Resize is a common interface component, and in a perfect system, all five metrics are important. Nevertheless, if the resize function as a user interface component is evaluated against these metrics, learnability and efficiency rise as the most important, whereas memorability, errors, and satisfaction are less important.</p>
@@ -186,6 +186,7 @@ contributors:
         <li role="presentation"><a href="Memorability" aria-controls="memorability" role="tab" data-toggle="tab">Memorability <i class="fa fa-lightbulb-o" aria-hidden="true"></i></a></li>
         <li role="presentation"><a href="Satisfaction" aria-controls="satisfaction" role="tab" data-toggle="tab">Satisfaction <i class="fa fa-smile-o" aria-hidden="true"></i></a></li>
       </ul>
+
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="Learnability">
           <p>Learnability</p>
@@ -212,7 +213,7 @@ contributors:
 
     <p>Due to its simplicity and utilitarian nature, resizing does very little in the way of providing satisfaction to the user. However, this does not detract from the overall good design of window resizing.</p>
   </div>
-
+<!--****************************Key Characteristics**********************************-->
    <div class="row">
       <h3>Key Characteristics</h3>
       <h4>Direct Manipulation Interaction Style</h4>
@@ -226,7 +227,7 @@ contributors:
         <p>Overall, effective interaction design must allow for the user's mental model derived from the system image to correspond with the designer's mental model. Assisting this process in manual resize is the parallels that digital direct manipulation has with how users interact with the physical world. Physically resizing a moldable substance, such as clay or elastic is mirrored in the "grasping" <code>mouse down</code> and "stretching" <code>resize state</code> of a window or element on a screen.
       </ul>
     </div>
-
+<!--****************************Platform Specific Instances**********************************-->
   <div class="row">
     <h3>Platform Specific Instances</h3>
     <div>
@@ -237,13 +238,62 @@ contributors:
       </ul>
       <!-- Tab panes -->
       <div class="tab-content">
+        <!--****************************OSX**********************************-->
         <div role="tabpanel" class="tab-pane active" id="OSX">
           <div class="container">
             <div class="row">
               <p>In this section, the resize component implmentation in the Mac OSX platform will be specifically evaulated. Specific examples of resize implementations will be provided, as well as a discussion of how Apple's interaction design principles have influenced these specific resize implmentations. "macOS Human Interface Guidelines" is a document that provides insight into the theories, principles, and guidelines that Apple Developers use to design the macOS interface.</p>
             </div>
+            <div class="row">
+                <div class="col-sm-6">
+                <div class="thumbnail">
+                  <img src="gifs/osx-notes-fullscreen.gif" alt="...">
+                  <div class="caption">
+                    <h4>Automatic Resize</h4>
+                    <p>...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="thumbnail">
+                  <img src="gifs/osx-notes-manualresize-menubarchange.gif" alt="...">
+                  <div class="caption">
+                    <h4>Manual Resize</h4>
+                    <p>...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="thumbnail">
+                  <img src="gifs/osx-dock-resize.gif" alt="...">
+                  <div class="caption">
+                    <h4>Dock Resize</h4>
+                    <p>...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="thumbnail">
+                  <img src="gifs/system-preferences-noresize.gif" alt="...">
+                  <div class="caption">
+                    <h4>System Preferences</h4>
+                    <p>...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="thumbnail">
+                  <img src="gifs/word-text-resize.gif" alt="...">
+                  <div class="caption">
+                    <h4>Text Resize</h4>
+                    <p>...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <!--****************************Windows 10**********************************-->
         <div role="tabpanel" class="tab-pane" id="Windows10">Windows 10</div>
       </div>
     </div>
