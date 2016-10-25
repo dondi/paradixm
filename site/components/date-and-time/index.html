@@ -35,18 +35,8 @@ contributors:
 
 <h4>Events</h4>
 
-<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
-
 <blockquote>The <em>date</em> component represents an invariant point in time, which implies that date is a combination of a clock <em>time</em> and a day on a particular calendar. We use a particular calendar, (the Buddhist calendar for example) to decompose the date object into its’ different components like year, month, day, hour and minute. This provides a means for comparing dates, creating a new date from a time interval relative to another date, and calculating the interval of time between two dates.</blockquote>
 
-<p>More specifically: </p>
-
-<p>The date and time components on any platform can be used to create <em>events</em> in the calendar applications on specific calendars, in specific timezones. They can also be used to set <em>alarms</em> in the clock applications for specific days of the week, in specific timezones.</p>
-
-<p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
-  triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
-  within the button’s bounds.</p>
 
 <h4>State Diagram</h4>
 
@@ -97,21 +87,8 @@ contributors:
 
 <h3>Variants</h3>
 
-<blockquote>There is almost never just one form of a user interface component. Use this section to address variations
-  on this theme. Some variations are sufficiently different that they are considered to be a different component
-  entirely, despite very similar behavior. Meanwhile some variations are due to appearance only.</blockquote>
+<blockquote>The date and time components on any platform can be used to create <em>events</em> in the calendar applications on specific calendars, in specific timezones. They can also be used to set <em>alarms</em> in the clock applications for specific days of the week. See the Platform-Specific Instances for more information on each platform's specific variants.</blockquote>
 
-<ul>
-  <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
-    invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
-    different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
-
-  <li><em>Links</em> can be considered as a specialized button—they are invoked almost identically, and their action
-    is even more narrowly defined as moving the user to a different view or display. The distinction here is
-    definitely less sharp than the distinction between a menu item and a button. For links within a document, the
-    document might be viewed as a menu in itself, and thus links are “menu items” indicating what the user can view
-    next. Thus, in some ways, links are hybrids between buttons and menu items.</li>
-</ul>
 
 <h3>Priority Metrics</h3>
 
@@ -245,8 +222,15 @@ contributors:
       </div>
 
       <div class="panel-body">
-        <h4> Appearance </h4>
-        
+        <h4> Typical Appearance </h4>
+        <div class="col-sm-12">
+          <div class="col-sm-4">
+            <img src="mediaIOS/dateAndTimeiOS.png" class="img-responsive" alt="Date and Time screenshot">
+            <p></p>
+          </div>
+        </div>
+
+        <h4> Variants </h4>
         <div class="col-sm-6">
           <blockquote>
             <li> Creating a new event/editing an event's details in the calendar app: </li>
