@@ -15,39 +15,37 @@ contributors:
 <p class="lead">A critical feature of GUI-based operating systems is the ability to resize elements.</p>
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
-      <h3>Typical Appearance</h3>
-      <p><b>A resize event is characterized by a change in an element's dimensions.</b></p>
-      <p>In contrast with zoom, which is a related feature, resize changes the dimensional properties (length and width) of the element itself, rather than the scope at which the element is displayed on a screen. Examples of commonly resized elements include windows, icons, images, and text. However, for the purposes of evaluating typical appearances and behavior, we will consider the resize behavior of windows.</p>
-      <p>The arrow mouse cursor and resize buttons are the most common interface elements for changing the dimensions of elements.</p>
-      <div class="row">
-        <div class="col-md-6 col-md-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title text-center">Arrow Mouse Cursor</h4>
-            </div>
-            <div class="panel-body">
-              <p class="text-center">Diagonal</p>
-              <img class="center-block" class="img-responsive" src="arrow-diagonal.png" alt="Resize Arrow Diagonal" height="80">
-              <p class="text-center">Horizontal</p>
-              <img class="center-block" class="img-responsive" src="arrow-horizontal.jpg" alt="Resize Arrow Horizontal" height="80">
-              <p class="text-center">Vertical</p>
-              <img class="center-block" class="img-responsive" src="arrow-vertical.jpg" alt="Resize Arrow Vertical" height="80">
-            </div>
+    <h3>Typical Appearance</h3>
+    <p><b>A resize event is characterized by a change in an element's dimensions.</b></p>
+    <p>In contrast with zoom, which is a related feature, resize changes the dimensional properties (length and width) of the element itself, rather than the scope at which the element is displayed on a screen. Examples of commonly resized elements include windows, icons, images, and text. However, for the purposes of evaluating typical appearances and behavior, we will consider the resize behavior of windows.</p>
+    <p>The arrow mouse cursor and resize buttons are the most common interface elements for changing the dimensions of elements.</p>
+    <div class="row">
+      <div class="col-md-6 col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title text-center">Arrow Mouse Cursor</h4>
+          </div>
+          <div class="panel-body">
+            <p class="text-center">Diagonal</p>
+            <img class="center-block" class="img-responsive" src="arrow-diagonal.png" alt="Resize Arrow Diagonal" height="80">
+            <p class="text-center">Horizontal</p>
+            <img class="center-block" class="img-responsive" src="arrow-horizontal.jpg" alt="Resize Arrow Horizontal" height="80">
+            <p class="text-center">Vertical</p>
+            <img class="center-block" class="img-responsive" src="arrow-vertical.jpg" alt="Resize Arrow Vertical" height="80">
           </div>
         </div>
-        <div class="col-md-6 col-md-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title text-center">Resize Button</h4>
-            </div>
-            <div class="panel-body">
-              <img class="center-block" class="img-responsive" src="resize-buttons.png" alt="Resize Buttons 1" height="50">
-              <br>
-              <img class="center-block" class="img-responsive" src="resize-buttons-2.png" alt="Resize Buttons 2" height = "50">
-              <br>
-              <img class="center-block" class="img-responsive" src="resize-buttons-3.png" alt="Resize Buttons 2" height="50">
-            </div>
+      </div>
+      <div class="col-md-6 col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title text-center">Resize Button</h4>
+          </div>
+          <div class="panel-body">
+            <img class="center-block" class="img-responsive" src="resize-buttons.png" alt="Resize Buttons 1" height="50">
+            <br>
+            <img class="center-block" class="img-responsive" src="resize-buttons-2.png" alt="Resize Buttons 2" height = "50">
+            <br>
+            <img class="center-block" class="img-responsive" src="resize-buttons-3.png" alt="Resize Buttons 2" height="50">
           </div>
         </div>
       </div>
@@ -63,6 +61,7 @@ contributors:
         <p>In effective direct manipulation, the interaction tool itself becomes transparent to the user. As a direct manipulation interface, resize "tools" disappear as the user interaction with the element being resized through the mouse cursor is understood as an extension of a user's tactile functions, emphasizing the "direct"-ness of direct manipulation.</p>
         <li>Mental Model</li>
         <p>Overall, effective interaction design must allow for the user's mental model derived from the system image to correspond with the designer's mental model. Assisting this process in manual resize is the parallels that digital direct manipulation has with how users interact with the physical world. Physically resizing a moldable substance, such as clay or elastic is mirrored in the "grasping" <code>mouse down</code> and "stretching" <code>resize state</code> of a window or element on a screen.
+        <p>Overall, effective interaction design must allow for the user's mental model to
       </ul>
     </div>
   </div>
@@ -111,21 +110,37 @@ contributors:
 
     <div class="row">
       <h4>State Diagram</h4>
-      <div class="col-md-2"></div>
-      <div class="col-md-4">
-        <img src="resize_chart (1).png" alt="Resize Chart" height="450" width="300">
+      <div class="row">
+        <div class="col-md-3 col-sm-1"></div>
+        <div class="col-md-8 col-sm-11">
+          <img src="resize_state_diagram.png" alt="Resize State Diagram">
+        </div>
       </div>
-      <div class="col-md-4">
+      <div class="row">
         <p>A resizeable element is in the <code>standby</code> state prior to resize. Once the mouse starts dragging the edge or corner, the window enters the <code>resizing</code> state. Once finished, the window reaches the <code>resized</code> state.</p>
       </div>
     </div>
 
     <div class="row">
       <h4>Component in Action</h4>
-      <img src="gifs/osx-cursor-change.gif" height="150">
-      <img src="gifs/chrome-resize-manual.gif" height="300">
-      <img src="gifs/osx-button-change.gif" height="150">
-      <img src="gifs/chrome-resize-automatic.gif" height="300">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="gifs/chrome-resize-automatic.gif" alt="chrome resize automatic" class="img-rounded" height="300">
+        </div>
+        <div class="col-md-6">
+          <img src="gifs/chrome-resize-manual.gif" alt="chrome resize manual" class="img-rounded" height="300">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <img src="gifs/osx-cursor-change.gif" alt="osx cursor change" class="img-rounded" height="150">
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <img src="gifs/osx-button-change.gif" alt="osx cursor change" class="img-rounded" height="150">
+        </div>
+      </div>
     </div>
   </div>
 
