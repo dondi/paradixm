@@ -1,0 +1,355 @@
+---
+title: Date and Time
+layout: component
+contributors:
+    - name: David Parks
+      github: davidtparks
+
+    - name: Megan Karbowski
+      github: mkarbows
+
+    - name: Josh Soriano
+      github: joshsoriano
+---
+
+<p class="lead">Quite possibly the single most common graphical user interface element, the push button triggers a
+  single action within an application.</p>
+
+<div class="row">
+  <div class="col-sm-12">
+
+<h3>Typical Appearance</h3>
+
+<blockquote>If a component is sufficiently widespread that it takes on a recognizable look across multiple platforms,
+  provide it here. If its appearance varies extremely widely, say so and direct the reader to platform-specific
+  instances.</blockquote>
+
+<h3>Typical Behavior</h3>
+
+<blockquote>
+  <p>Date and Time objects provide the user with the ability to store references to particular instances in time. They can be broken down into parts and manipulated accordingly (hour, minutes, seconds, month, day, year, etc.). Different timezones and particular calendars, such as a Hebrew calendar, can also be applied/referenced.
+  </p>
+  <p>source: (https://developer.apple.com/library/prerelease/content/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html)
+  </p>
+</blockquote>
+
+<h4>Events</h4>
+
+<blockquote>The <em>date</em> component represents an invariant point in time, which implies that date is a combination of a clock <em>time</em> and a day on a particular calendar. We use a particular calendar, (the Buddhist calendar for example) to decompose the date object into its’ different components like year, month, day, hour and minute. This provides a means for comparing dates, creating a new date from a time interval relative to another date, and calculating the interval of time between two dates.</blockquote>
+
+
+<h4>State Diagram</h4>
+
+<blockquote>
+  <p>A state diagram indicating the actions and states of a user interface component.</p>
+
+  <p>This is most likely an image. Bonus props if you use SVG.</p>
+
+  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
+    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
+    however, may have more activities than the “public” events that can be reported by a component.</p>
+</blockquote>
+
+<p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
+  viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
+  it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
+  state means that a user <em>cannot</em> do so.</p>
+
+<p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
+  implementations, but in general they are:</p>
+
+<ul>
+  <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
+    change the button’s appearance. This provides a form of feedback that states that the button will respond if
+    additional activity is performed.</li>
+
+  <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
+    the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
+    from this state, in case the user changes his or her mind in mid-action.</li>
+</ul>
+
+<h4>Component in Action</h4>
+
+<blockquote>
+  <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
+
+  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
+</blockquote>
+
+<p class="text-center">
+  <button class="btn btn-default">Standard Bootstrap Button</button>
+  <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
+</p>
+
+  </div>
+
+  <div class="col-sm-12">
+
+<h3>Variants</h3>
+
+<blockquote>The date and time components on any platform can be used to create <em>events</em> in the calendar applications on specific calendars, in specific timezones. They can also be used to set <em>alarms</em> in the clock applications for specific days of the week. See the Platform-Specific Instances for more information on each platform's specific variants.</blockquote>
+
+
+<h3>Priority Metrics</h3>
+
+<blockquote>Talk about the five usability metrics in relation to this component. Not all components will have the same
+  metric priorities. For example:</blockquote>
+
+<p>Because the button is such a fundamental part of virtually every user interface available today, it can be said that
+  all usability metrics are equally important for this component. Users who are seeing a button in a given platform for
+  the first time must not have any issues recognizing it and knowing what to do with it (learnability). The high
+  priority of learnability also implies that memorability is a given.</p>
+
+<p>Users must also never experience undue delays with using a button (efficiency), particularly because using a button
+  almost always involves an instantaneous, immediate-result action. Users should almost never trigger a button by
+  mistake (errors)—especially buttons whose actions result in significant changes to data or the real world.</p>
+
+<p>If any metric at all can be considered as a “low priority” for buttons, it would be satisfaction. The button is such
+  a utilitarian component that “fun” or “enjoyment” is hardly associated with its use. One exception to this
+  prioritization may be for buttons in applications whose primary metric is satisfaction (e.g., games, entertainment).
+  As a part of that overall system, making buttons “fun” may then become more important than in other situations.</p>
+
+<h3>Key Characteristics</h3>
+
+<blockquote>This section is for describing “what makes for a good <em>your component here</em>?”
+  Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
+  principles.</blockquote>
+
+<h4>Feedback</h4>
+
+<p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
+  never doubt whether:</p>
+
+<ol>
+  <li>they did positively trigger a button (and thus its associated action)</li>
+  <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
+    the action that triggers the button</li>
+</ol>
+  </div>
+</div>
+
+<h3>Platform-Specific Instances</h3>
+
+<blockquote>
+  <p>This is where things can get really interesting—platform-specific sections go here. Different versions of
+    the same system are considered to be platforms in their own right (e.g., Windows 95 buttons vs. Windows 10
+    buttons). Completely customized versions of a component (e.g., a unique-looking/-acting button made specifically
+    for a game) are also acceptable here.</p>
+
+  <p>The outline for platform-specific entries resembles the outline already described above, except with a focus
+    on how the platform-specific version is <em>different</em>. Thus, you will want some notes on appearance (i.e.,
+    more screenshots), behavior, variants, metrics, and characteristics. If some aspect is the same, then say so
+    explicitly so that there is no confusion.</p>
+
+  <p>Some platform-specific instances of certain user interface components will merit such a rich discussion that they
+    may require a sizable number of supporting assets. In that case, feel free to add subfolders to the main component
+    folder, named after the platform under examination.</p>
+
+  <p>This could well be the most distinctive part of the catalog—the sections above this generally appear in user
+    interface guidelines, albeit with a platform-specific focus. A key premise of the Paradixm project is to compare
+    user interface elements <em>across</em> platforms. Thus, feel free to be creative about presentation here. You
+    might want to display a visual gallery, for example, with links leading to individual pages for each covered
+    platform-specific user interface component.</p>
+</blockquote>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#macOS">mac OS</a></li>
+  <li><a data-toggle="tab" href="#windows10">Windows 10</a></li>
+  <li><a data-toggle="tab" href="#iOS">iOS</a></li>
+</ul>
+
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">macOS</h4>
+      </div>
+      <div class="panel-body">
+        <div class="col-sm-6">
+          <h4>Typical Appearance</h4>
+            <p>The date and time component's appearance has, for the most part, stayed consistent throughout macOS's (previously branded as Mac OS X) recent software updates. The interface that is presented includes three different tabs: "Date & Time", "Time Zone", and "Clock". Each tab includes its own assortment of settings and preferences that can be modified by the user to their liking.</p>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img class="img-responsive" src="Media/macOS/preferences-date-and-time.png" alt="Date and Time">
+                </div>
+
+                <div class="item">
+                  <img class="img-responsive" src="Media/macOS/preferences-timezone.png" alt="Time Zone">
+                </div>
+
+                <div class="item">
+                  <img class="img-responsive" src="Media/macOS/preferences-clock.png" alt="Clock">
+                </div>
+              </div>
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>Typical Behavior</h4>
+          <h5>State Diagram</h5>
+          <h5>Component in Action</h5>
+          <h4>Variants</h4>
+          <h4>Priority Metrics</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="windows10" class="tab-pane fade">
+    <h3>Windows 10</h3>
+    <p>Some content in menu 1.</p>
+  </div>
+
+
+  <div id="iOS" class="tab-pane fade">
+    <div class="col-sm-12">
+      <h3>iOS</h3>
+
+      <h4> Typical Appearance </h4>
+        <div class="col-sm-12">
+          <div class="col-sm-4">
+            <img src="mediaIOS/dateAndTimeiOS.png" class="img-responsive" alt="Date and Time screenshot">
+            <p></p>
+          </div>
+        </div>
+
+        <h4> Variants </h4>
+        <div class="col-sm-6">
+          <blockquote>
+            <li> Creating a new event/editing an event's details in the calendar app: </li>
+            <p></p>
+            <img src="mediaIOS/newEventiOS.gif" class="img-responsive" alt="New Event gif">
+          </blockquote>
+        </div>
+        <div class="col-sm-6">
+          <blockquote>
+            <li> Creating a new alarm in the clock app: </li>
+            <p></p>
+            <img src="mediaIOS/newAlarmiOS.gif" class="img-responsive" alt="New Alarm gif">
+          </blockquote>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Windows 10</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">macOS</h4>
+      </div>
+      <div class="panel-body">
+        <div class="col-sm-6">
+          <h4>Typical Appearance</h4>
+            <p>The date and time component's appearance has, for the most part, stayed consistent throughout macOS's (previously branded as Mac OS X) recent software updates. The interface that is presented includes three different tabs: "Date & Time", "Time Zone", and "Clock". Each tab includes its own assortment of settings and preferences that can be modified by the user to their liking.</p>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img class="img-responsive" src="Media/macOS/preferences-date-and-time.png" alt="Date and Time">
+                </div>
+
+                <div class="item">
+                  <img class="img-responsive" src="Media/macOS/preferences-timezone.png" alt="Time Zone">
+                </div>
+
+                <div class="item">
+                  <img class="img-responsive" src="Media/macOS/preferences-clock.png" alt="Clock">
+                </div>
+              </div>
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>Typical Behavior</h4>
+          <h5>State Diagram</h5>
+          <h5>Component in Action</h5>
+          <h4>Variants</h4>
+          <h4>Priority Metrics</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">iOS</h4>
+      </div>
+
+      <div class="panel-body">
+        <h4> Typical Appearance </h4>
+        <div class="col-sm-12">
+          <div class="col-sm-4">
+            <img src="mediaIOS/dateAndTimeiOS.png" class="img-responsive" alt="Date and Time screenshot">
+            <p></p>
+          </div>
+        </div>
+
+        <h4> Variants </h4>
+        <div class="col-sm-6">
+          <blockquote>
+            <li> Creating a new event/editing an event's details in the calendar app: </li>
+            <p></p>
+            <img src="mediaIOS/newEventiOS.gif" class="img-responsive" alt="New Event gif">
+          </blockquote>
+        </div>
+
+        <div class="col-sm-6">
+          <blockquote>
+            <li> Creating a new alarm in the clock app: </li>
+            <p></p>
+            <img src="mediaIOS/newAlarmiOS.gif" class="img-responsive" alt="New Alarm gif">
+          </blockquote>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Credits &amp; References</h3>
+
+<blockquote>Provide references or links to any information, image, or media sources used.</blockquote>
