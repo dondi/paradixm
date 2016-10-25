@@ -91,6 +91,14 @@ contributors:
         however, may have more activities than the “public” events that can be reported by a component.</p>
     </blockquote>
 
+    <p>The state diagram for a basic embedded web view is fairly straightforward. When a website or mobile app is initially
+      opened, the state diagram begins. This first page, generally a login or home page, will call the data from the respective
+      website that is intended to be called. Once the page and data has been completely loaded, the site or application should
+       hit a resting point. Data has been pulled into the embedded web page view and is presented at the discretion of the
+       programmer. The only condition that will change the state of the site or application is an event being triggered. Some
+       examples of this would be logging into an application or clicking on a link within the embedded web view. These events
+       require more data to be pulled or analyzed and will determine what the next state will be.</p>
+
     <p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
       viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
       it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
@@ -116,6 +124,12 @@ contributors:
 
       <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
     </blockquote>
+    <iframe src="http://www.espn.com" width="100%" height="500"></iframe>
+
+    <p style="font-style: italic">Here is a simple example of an embedded web view within the Web
+      documentation itself. By utilizing the tag iframe in html, the page is capable of displaying ESPN’s official website
+      into a fixed window. All events triggered within the embedded web page view will directly interact with ESPN’s live
+      website.</p>
 
     <p class="text-center">
       <button class="btn btn-default">Standard Bootstrap Button</button>
@@ -128,13 +142,33 @@ contributors:
     <div class="col-xs-12">
       <h3>Variants</h3>
 
-      <blockquote>Web views vary greatly in their appearence and uses across platforms and services. Almost all pages differ from each other in ways to reflect the web services content.</blockquote>
+      <p>The options for embedded web views are virtually limitless! Down below are a few common
+         implementations of how embedded web views can be used.</p>
 
-      <ul>
-        <li><em>iOS</em> web views are much different than their desktop/laptop counterparts. They tend to bring up full page inside their app, of which these apps frequently defer to what is really a login web page in the given service, but the login looks like it is "inside" the app.</li>
+      <h4 style="text-align:center">Log in stuff??(needs right term)</h4>
+        <p style="text-align:center">
+          <img src="#" alt="Log in example" style="width: 50%">
+        </p>
+        <p style="font-style: italic">Needs description</p>
 
-        <li><em>Mac</em> </li>
-      </ul>
+      <h4 style="text-align:center">Forum layout</h4>
+       <p style="text-align:center">
+         <img src="redditEWV.png" alt="Forum Layout Example" style="width: 50%">
+       </p>
+       <p style="font-style: italic">Needs description</p>
+
+      <h4 style="text-align:center">Video Streaming</h4>
+       <p style="text-align:center">
+         <img src="youtubeEWV.png" alt="Video Streaming Example" style="width: 50%">
+       </p>
+       <p style="font-style: italic">Needs description</p>
+
+      <h4 style="text-align:center">Music Streaming</h4>
+       <p style="text-align:center">
+         <img src="soundcloudEWV.png" alt="Music Streaming Example" style="width: 50%">
+       </p>
+       <p style="font-style: italic">Needs description</p>
+
     </div>
 
     <div class="col-xs-12">
@@ -166,6 +200,13 @@ contributors:
         Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
         principles.</blockquote>
 
+      <p>Relating back to the some of the priority metrics. The key to a usable and efficient embedded web page is fluid
+        navigation. The user using an embedded web page in a mobile application generally will have some kind of understanding
+        of the desktop website for the same website. With this in mind, it is important for the navigation of the desktop
+        website and the mobile application to have similar navigation flow and layout. Color themes must be the same and
+        buttons should be in the same general location are examples of keeping the layout and flow consistent between the
+        desktop website and mobile application</p>
+      
       <h4>Feedback</h4>
 
       <p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
