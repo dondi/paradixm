@@ -234,6 +234,7 @@ contributors:
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active"><a href="#OSX" aria-controls="OSX" role="tab" data-toggle="tab">Mac OSX <i class="fa fa-apple" aria-hidden="true"></i></a></li>
+        <li role="presentation" class="active"><a href="#iOS" aria-controls="iOS" role="tab" data-toggle="tab">Mac iOS <i class="fa fa-apple" aria-hidden="true"></i></a></li>
         <li role="presentation"><a href="#Windows10" aria-controls="windows10" role="tab" data-toggle="tab">Windows 10 <i class="fa fa-windows" aria-hidden="true"></i></a></li>
       </ul>
       <!-- Tab panes -->
@@ -242,7 +243,8 @@ contributors:
         <div role="tabpanel" class="tab-pane active" id="OSX">
           <div class="container">
             <div class="row">
-              <p>In this section, the resize component implmentation in the Mac OSX platform will be specifically evaulated. Specific examples of resize implementations will be provided, as well as a discussion of how Apple's interaction design principles have influenced these specific resize implmentations. "macOS Human Interface Guidelines" is a document that provides insight into the theories, principles, and guidelines that Apple Developers use to design the macOS interface.</p>
+              <h4>macOS Human Interface Guidelines</h4>
+              <p>In this section, the resize component implmentation in the <b>Mac OSX</b> platform will be specifically evaulated. Specific examples of resize implementations will be provided, as well as a discussion of how Apple's interaction design principles have influenced these specific resize implmentations. "macOS Human Interface Guidelines" is a document that provides insight into the theories, principles, and guidelines that Apple Developers use to design the macOS interface. One guideline that it states specifically for resize, is that standard document windows should have transient resize controls--controls that disappear when not needed. The interface guidelines also considers the principle of direct manipulation as a way of affirming the user's mental model of a task, because it can feel more natural than what they define as "explicit tasks."</p>
             </div>
             <div class="row">
                 <div class="col-sm-6">
@@ -250,7 +252,7 @@ contributors:
                   <img src="gifs/osx-notes-fullscreen.gif" alt="...">
                   <div class="caption">
                     <h4>Automatic Resize</h4>
-                    <p>...</p>
+                    <p>This example shows automatic resize in the Notes Application Window. Hovering over the colored buttons reveals the resize symbol, and upon click of the green fullscreen button, the window fills the entire screen. The fullscreen symbol is indicative of the function it triggers, because of the arrows that are pointing outwards. In fullscreen mode, the entire menu disappears, reflecting the macOS guideline of transient controls. When the user wants to return to a non-fullscreen mode, the resize button is accessed by displaying the menu bar, which returns to the screen when the mouse is at the top of the screen. Hovering over the button reveals the resize symbol, which is now arrows that are pointing inward, indicating that the window is now going to shrink. </p>
                   </div>
                 </div>
               </div>
@@ -259,7 +261,7 @@ contributors:
                   <img src="gifs/osx-notes-manualresize-menubarchange.gif" alt="...">
                   <div class="caption">
                     <h4>Manual Resize</h4>
-                    <p>...</p>
+                    <p>This example shows manual resize in the Note Application Window. Hovering over the permeter of the window changes the mouse cursor from a pointer to an arrow, which is indicative of the direction of resize possible at that position. Drag and drop explores different dimensions, befre setting the new dimension on mouse release. An interesting characteristic to notice is that resizing the Notes window will cause text wrap to occur, bounded by the dimensions of the Notes Windodw. Also, notice how resize causes the menu bar to add/drop components on stretch/shrink, respectibly. Resize is just one component in a network of components whose interconnectedness causes resize to change more than just the size of the window. In this case, as a consequence of the resize, the menu bar automatically formats to accomodate for the size of the window.</p>
                   </div>
                 </div>
               </div>
@@ -268,7 +270,7 @@ contributors:
                   <img src="gifs/osx-dock-resize.gif" alt="...">
                   <div class="caption">
                     <h4>Dock Resize</h4>
-                    <p>...</p>
+                    <p>Direct manipulation occurs at a higher level of abstraction in this example of a slider that accomplishes resizing the dock and its icons by means of a resize slider. The user is manipulating the position of the slider to control the size of the dock. Although the user is a acting on an element that is then acting on the dock, this is still direct manipulation because the impact of the resize action is immediately visable via the size of the dock on the screen.</p>
                   </div>
                 </div>
               </div>
@@ -277,7 +279,7 @@ contributors:
                   <img src="gifs/system-preferences-noresize.gif" alt="...">
                   <div class="caption">
                     <h4>System Preferences</h4>
-                    <p>...</p>
+                    <p>Some windows don't have resize properties, because the contents within the windows are static and cannot be changed. The fact that the OSX System Preferences window cannot resize is conveyed by the observation that on hover, the resize arrow cursor and the resize button did not respond. This observation signal mental models of the interaction design</p>
                   </div>
                 </div>
               </div>
