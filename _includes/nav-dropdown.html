@@ -1,0 +1,10 @@
+<ul class="dropdown-menu">
+{% for group in site.data.catalog %}
+  {% if forloop.index0 > 0 %}
+  <li role="separator" class="divider"></li>
+  {% endif %}
+  {% for component in group.components %}
+  <li><a href="{{ site.baseurl }}/components/{{ component.path }}">{{ component.name }}</a></li>
+  {% endfor %}
+{% endfor %}
+</ul>
