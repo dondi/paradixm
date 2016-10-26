@@ -29,6 +29,7 @@ contributors:
 </style>
 <p class="lead">A critical feature of GUI-based operating systems is the ability to resize elements.</p>
 <div class="container">
+<hr>
   <!--****************************Typical Appearance**********************************-->
   <div class="row">
     <h3>Typical Appearance</h3>
@@ -90,6 +91,7 @@ contributors:
       </div>
     </div>
   </div>
+  <hr>
 <!--****************************Typical Behavior**********************************-->
   <div class="row">
     <h3>Typical Behavior</h3>
@@ -150,32 +152,34 @@ contributors:
 <!--****************************Component in Action**********************************-->
     <div class="row">
       <h4>Component in Action</h4>
-      <p>The following gifs represent only the resize functions within the Mac OSX platform that are common across different platforms (with minor stylistic differences). A closer look of resize in the OSX platform is explored in the "Platform-Specific Instances" section below.
-        <div class="col-md-6">
-          <div class="thumbnail">
-            <div id="gif-container">
-              <img id="main" class="img-rounded" class="img-responsive" src="gifs/chrome-resize-manual.gif" alt="chrome resize manual">
-              <img id="overlay" class="img-rounded" class="img-responsive" src="gifs/osx-cursor-change.gif" alt="osx cursor change">
-            </div>
-          <div class="caption">
-            <h3>Manual Resize</h3>
-            <p>This is an example of manually resizing a window. Upon hovering over the perimeter of the window, the mouse cursor changes into a resize cursor, which indicates the direction of resize possible. Manual resize is permitted within the boundaries set by the platform, which default to the screen size. Overrides to the default max size on the macOSX platform are that the window can only be resized up to the menu bar at the top and up to the dock at the left.</p>
-            </div>
+      <p>The following gifs represent only the resize functions within the Mac OSX platform that are common across different platforms (with minor stylistic differences). A closer look of resize in the OSX platform is explored in the "Platform-Specific Instances" section below.</p>
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <div id="gif-container">
+            <img id="main" class="img-rounded" class="img-responsive" src="gifs/chrome-resize-manual.gif" alt="chrome resize manual">
+            <img id="overlay" class="img-rounded" class="img-responsive" src="gifs/osx-cursor-change.gif" alt="osx cursor change">
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="thumbnail">
-            <div id="gif-container">
-              <img id="main" src="gifs/chrome-resize-automatic.gif" alt="chrome resize automatic" class="img-rounded" class="img-responsive" class="img-rounded">
-              <img id="overlay" src="gifs/osx-button-change.gif" alt="osx cursor change" class="img-rounded" class="img-responsive" class="img-rounded">
-            </div>
-            <div class="caption">
-              <h3>Automatic Resize</h3>
-              <p>This is an example of automatically resizing a window. Hovering over the menu buttons to the left of the window reveals symbols that define the resize options possible. When in default (non-fullscreen mode), upon clicking the green button, the window will resize to fill the dimensions of the screen. When in fullscreen mode, upon clicking the same button, the window will resize to its size prior to being in fullscreen.</p>
-            </div>
+        <div class="caption">
+          <h3>Manual Resize</h3>
+          <p>This is an example of manually resizing a window. Upon hovering over the perimeter of the window, the mouse cursor changes into a resize cursor, which indicates the direction of resize possible. Manual resize is permitted within the boundaries set by the platform, which default to the screen size. Overrides to the default max size on the macOSX platform are that the window can only be resized up to the menu bar at the top and up to the dock at the left.</p>
           </div>
         </div>
       </div>
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <div id="gif-container">
+            <img id="main" src="gifs/chrome-resize-automatic.gif" alt="chrome resize automatic" class="img-rounded" class="img-responsive" class="img-rounded">
+            <img id="overlay" src="gifs/osx-button-change.gif" alt="osx cursor change" class="img-rounded" class="img-responsive" class="img-rounded">
+          </div>
+          <div class="caption">
+            <h3>Automatic Resize</h3>
+            <p>This is an example of automatically resizing a window. Hovering over the menu buttons to the left of the window reveals symbols that define the resize options possible. When in default (non-fullscreen mode), upon clicking the green button, the window will resize to fill the dimensions of the screen. When in fullscreen mode, upon clicking the same button, the window will resize to its size prior to being in fullscreen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
 <!--****************************Variants**********************************-->
   <div class="row">
     <h3>Variants</h3>
@@ -198,6 +202,7 @@ contributors:
       <br>
     </ul>
   </div>
+  <hr>
 <!--****************************Priority Metrics**********************************-->
   <div class="row">
     <h3>Priority Metrics</h3>
@@ -238,20 +243,22 @@ contributors:
 
     <p>Due to its simplicity and utilitarian nature, resizing does very little in the way of providing satisfaction to the user. However, this does not detract from the overall good design of window resizing.</p>
   </div>
+  <hr>
 <!--****************************Key Characteristics**********************************-->
-   <div class="row">
-      <h3>Key Characteristics</h3>
-      <h4>Direct Manipulation Interaction Style</h4>
-      <p>Direct manipulation is an interaction style in which the changes that a user makes to an object are incrementable, reversible, and immediately represented on the screen. Manual resize is a classic example of direct manipulation. When a user resizes an element's dimensions manually, the impact of the change is visible immediately and continually on the user's screen. Thus, key characteristics of effective manual resize will be discussed in the context its classification as a direct manipulation implementation. Well implemented direct manipulation allows the user to achieve mastery of the interface, competence in performing tasks, and enjoyment in using the interface. The following principles and guidelines are relevant for informing best practices for resize interfaces.</p>
-      <ul>
-        <li>Principle of Feedback</li>
-        <p>Feedback is a defining interaction design principle of effective direct manipulation. Feedback in manual resize is characterized by a change in element's size on the screen in real time, as the user is resizing. Feedback time must be sufficiently fast, as any latency in the response will cause a delay in the user action - visual response feedback loop. 
-        <li>Principle of Transparency</li>
-        <p>In effective direct manipulation, the interaction tool itself becomes transparent to the user. As a direct manipulation interface, resize "tools" disappear as the user interaction with the element being resized through the mouse cursor is understood as an extension of a user's tactile functions, emphasizing the "direct"-ness of direct manipulation.</p>
-        <li>Mental Model</li>
-        <p>Overall, effective interaction design must allow for the user's mental model derived from the system image to correspond with the designer's mental model. Assisting this process in manual resize is the parallels that digital direct manipulation has with how users interact with the physical world. Physically resizing a moldable substance, such as clay or elastic is mirrored in the "grasping" <code>mouse down</code> and "stretching" <code>resize state</code> of a window or element on a screen.
-      </ul>
-    </div>
+  <div class="row">
+    <h3>Key Characteristics</h3>
+    <h4>Direct Manipulation Interaction Style</h4>
+    <p>Direct manipulation is an interaction style in which the changes that a user makes to an object are incrementable, reversible, and immediately represented on the screen. Manual resize is a classic example of direct manipulation. When a user resizes an element's dimensions manually, the impact of the change is visible immediately and continually on the user's screen. Thus, key characteristics of effective manual resize will be discussed in the context its classification as a direct manipulation implementation. Well implemented direct manipulation allows the user to achieve mastery of the interface, competence in performing tasks, and enjoyment in using the interface. The following principles and guidelines are relevant for informing best practices for resize interfaces.</p>
+    <ul>
+      <li>Principle of Feedback</li>
+      <p>Feedback is a defining interaction design principle of effective direct manipulation. Feedback in manual resize is characterized by a change in element's size on the screen in real time, as the user is resizing. Feedback time must be sufficiently fast, as any latency in the response will cause a delay in the user action - visual response feedback loop.
+      <li>Principle of Transparency</li>
+      <p>In effective direct manipulation, the interaction tool itself becomes transparent to the user. As a direct manipulation interface, resize "tools" disappear as the user interaction with the element being resized through the mouse cursor is understood as an extension of a user's tactile functions, emphasizing the "direct"-ness of direct manipulation.</p>
+      <li>Mental Model</li>
+      <p>Overall, effective interaction design must allow for the user's mental model derived from the system image to correspond with the designer's mental model. Assisting this process in manual resize is the parallels that digital direct manipulation has with how users interact with the physical world. Physically resizing a moldable substance, such as clay or elastic is mirrored in the "grasping" <code>mouse down</code> and "stretching" <code>resize state</code> of a window or element on a screen.
+    </ul>
+  </div>
+  <hr>
 <!--****************************Platform Specific Instances**********************************-->
   <div class="row">
     <h3>Platform Specific Instances</h3>
@@ -328,6 +335,7 @@ contributors:
       </div>
     </div>
   </div>
+  <hr>
 
   <div class="row">
     <h3>Credits &amp; References</h3>
