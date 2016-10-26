@@ -1,0 +1,255 @@
+<mxGraphModel>
+  <root>
+    <Diagram label="My Diagram" href="http://www.jgraph.com/" id="0">
+      <mxCell/>
+    </Diagram>
+    <Layer label="Default Layer" id="1">
+      <mxCell parent="0"/>
+    </Layer>
+    <Connector label="enter search term" href="" id="41">
+      <mxCell edge="1" parent="1">
+        <mxGeometry x="0.2821" y="10" relative="1" as="geometry">
+          <mxPoint x="370" y="210" as="sourcePoint"/>
+          <mxPoint x="160" y="29.999999999999986" as="targetPoint"/>
+          <Array as="points">
+            <mxPoint x="310" y="100"/>
+          </Array>
+          <mxPoint as="offset"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Roundrect label="Static Map View" href="" id="2">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="350" y="180" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Roundrect label="Grabbed" href="" id="9">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="90" y="180" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Connector label="mouse button down" href="" id="14">
+      <mxCell edge="1" parent="1" source="9" target="9">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="10" y="200"/>
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Roundrect label="Panning" href="" id="15">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="90" y="290" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Connector label="mouse movement" href="" id="16">
+      <mxCell edge="1" parent="1">
+        <mxGeometry y="-20" relative="1" as="geometry">
+          <mxPoint x="100" y="220" as="sourcePoint"/>
+          <mxPoint x="100" y="290" as="targetPoint"/>
+          <mxPoint as="offset"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="mouse movement" href="" id="17">
+      <mxCell edge="1" parent="1" source="15" target="15">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="10" y="310"/>
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="mouse button release" href="" id="18">
+      <mxCell edge="1" parent="1" source="15" target="2">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="390" y="260"/>
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="mouse button release" href="" id="19">
+      <mxCell edge="1" parent="1" source="9" target="2">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="250" y="100"/>
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="mouse movement stops" href="" id="20">
+      <mxCell edge="1" parent="1" source="15" target="9">
+        <mxGeometry y="-30" relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="160" y="255"/>
+          </Array>
+          <mxPoint as="offset"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Roundrect label="Map Focused &#xa;on Current&#xa;Location" href="" id="21">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="370" y="484" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Connector label="click current location &#xa;button" href="" id="22">
+      <mxCell edge="1" parent="1" target="21">
+        <mxGeometry x="0.2118" relative="1" as="geometry">
+          <mxPoint x="400" y="220" as="sourcePoint"/>
+          <mxPoint x="400" y="484" as="targetPoint"/>
+          <Array as="points"/>
+          <mxPoint as="offset"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="" href="" id="24">
+      <mxCell edge="1" parent="1" source="21" target="9">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="250" y="350"/>
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Roundrect label="Zoom Increase" href="" id="25">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="580" y="180" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Roundrect label="Zoom Decrease" href="" id="30">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="580" y="320" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Connector label="click &#xa;zoom&#xa;out" href="" id="31">
+      <mxCell edge="1" parent="1" source="2" target="30">
+        <mxGeometry x="-0.1724" relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="450" y="290"/>
+          </Array>
+          <mxPoint as="offset"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="click zoom in" href="" id="26">
+      <mxCell edge="1" parent="1" source="2" target="25">
+        <mxGeometry x="0.2" relative="1" as="geometry">
+          <mxPoint as="offset"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="no input" href="" id="32">
+      <mxCell edge="1" parent="1" source="30" target="2">
+        <mxGeometry x="-0.4483" relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="420" y="350"/>
+          </Array>
+          <mxPoint as="offset"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Roundrect label="Display Pin&#xa;Info" href="" id="33">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="320" y="-80" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Connector label="Drop Pin" href="" id="34">
+      <mxCell edge="1" parent="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="359.54329048692625" y="179.99999999999997" as="sourcePoint"/>
+          <mxPoint x="359.54329048692625" y="-40" as="targetPoint"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Roundrect label="Hide Pin&#xa;Info" href="" id="36">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="530" y="-80" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Connector label="No Input" href="" id="38">
+      <mxCell edge="1" parent="1" source="36" target="2">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="490" y="-50" as="sourcePoint"/>
+          <mxPoint x="430" y="210.00000000000003" as="targetPoint"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="no input" href="" id="27">
+      <mxCell edge="1" parent="1" source="25" target="2">
+        <mxGeometry x="-0.2121" relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="485" y="130"/>
+          </Array>
+          <mxPoint as="offset"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="click elsewhere" href="" id="39">
+      <mxCell edge="1" parent="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="400" y="-70" as="sourcePoint"/>
+          <mxPoint x="530" y="-70" as="targetPoint"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Roundrect label="Display Search&#xa;Results" href="" id="40">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="80" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Connector label="mouse button down" href="" id="10">
+      <mxCell style="straightConnector" edge="1" parent="1" source="2" target="9">
+        <mxGeometry y="-10" relative="1" as="geometry">
+          <mxPoint as="offset"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="Close Search Results" href="" id="42">
+      <mxCell edge="1" parent="1" target="2">
+        <mxGeometry x="-0.4762" relative="1" as="geometry">
+          <mxPoint x="160" y="9.999999999999986" as="sourcePoint"/>
+          <mxPoint x="420" y="170" as="targetPoint"/>
+          <Array as="points">
+            <mxPoint x="410" y="90"/>
+          </Array>
+          <mxPoint as="offset"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="mouse button down" href="" id="43">
+      <mxCell edge="1" parent="1">
+        <mxGeometry x="-0.5702" relative="1" as="geometry">
+          <mxPoint x="109.63514939904883" y="40" as="sourcePoint"/>
+          <mxPoint x="109.63514939904883" y="180" as="targetPoint"/>
+          <mxPoint as="offset"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Roundrect label="Snap to Result" href="" id="44">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="80" y="-170" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Connector label="click result" href="" id="45">
+      <mxCell edge="1" parent="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="139.76706518803022" as="sourcePoint"/>
+          <mxPoint x="139.76706518803022" y="-130" as="targetPoint"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="no input" href="" id="46">
+      <mxCell edge="1" parent="1">
+        <mxGeometry x="-0.5365" relative="1" as="geometry">
+          <mxPoint x="99.76706518803022" y="-130" as="sourcePoint"/>
+          <mxPoint x="99.76706518803022" as="targetPoint"/>
+          <Array as="points">
+            <mxPoint x="100" y="-110"/>
+          </Array>
+          <mxPoint as="offset"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+  </root>
+</mxGraphModel>

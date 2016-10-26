@@ -262,7 +262,7 @@
       <h5>Search</h5>
     </div>
     <div class="panel-body">
-      <p>For the basic functionality of the search function, <a href="../components/search">click here</a></p>
+      <p>For the basic functionality of the search function, <a href="../search">click here</a></p>
       <p><em>Result Events</em>: initiated by <code>submit</code></p>
       <p>Upon successful search submission, an embedded map will return either a list of relevant results (less specific search term), or will snap directly to the location of a specific search term. In either case, the map will display feedback in the form of a marker which indicates the positions of the returned results.</p>
       <p><em>Snap to Result</em>: initiated by <code>click</code></p>
@@ -285,7 +285,7 @@
     <div class="panel-body">
       <p>The drop pin event allows the user to mark a specific point of interest on the map, and in turn allow for other behaviors to act upon that location (e.g. get directions to that location).</p>
       <figure class="figure">
-        <img src="pin-directions-apple.gif" class="figure-img img-responsive rounded">
+        <img src="" class="figure-img img-responsive rounded">
         <figcaption class="figure-caption">Dropping a pin and getting directions in Apple maps</figcaption>
       </figure>
     </div>
@@ -293,13 +293,28 @@
   
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h5 class="event-header">Get Directions</h5>: initiated by <code>click</code>
+      <h5 class="event-header">Get Directions</h5>
     </div>
     <div class="panel-body">
-      <p>The get directions event retrieves and displays directions to a specific location. The event displays a drawn route on the map, and gives the user an estimated time that the route would take. Some implementations allow for a different choice of route, and some display different routes depending on the user's preference for walking, public transit, or driving (e.g. Google and Apple Maps)</p>
+      <p><em>Get Directions to/from Specified Location</em>: initiated by <code>click</code></p>
+      <p>The get directions to/from specified location event presents a menu where the user must enter the opposite end of their journey (origin/destination respectively). This location may be selected either by a Drop Pin event or by a search result.</p>
+      <p><em>Origin/Destination Selection</em>: initiated by <code>enterText</code></p>
+      <p>The Origin/Destination Selection event takes a text input from the user in the corresponding text input box. As the user inputs her text, relevant location options will display. The user must enter an exact location or select from the presented location options to finalize their origin/destination selection.</p>
+      <p><em>Display Directions</em>: initiated by <code>submit</code></p>
+      <p>The event causes the map to draw a route between a chosen starting location and the specified location upon submission of these locations. Along with displaying the recommended route, the map will additionally present the user with an estimated time that the route would take. Some implementations allow for a different choice of route, and some display different routes depending on the user's preference for walking, public transit, or driving (e.g. Google and Apple Maps)</p>
       <figure class="figure">
-        <img src="" class="figure-img img-responsive rounded">
-        <figcaption class="figure-caption"></figcaption>
+        <img src="pin-directions-apple.gif" class="figure-img img-responsive rounded">
+        <figcaption class="figure-caption">Getting directions to a pinned location in Apple Maps</figcaption>
+      </figure>
+      <p><em>Get Directions</em>: initiated by <code>click</code></p>
+      <p>The Get Directions event is triggered when the user clicks the directions button, the appearance of which varies by platform. Upon click, the map component presents the user with two text input boxes: one for the origin location and one for the final destination.</p>
+      <p><em>Origin and Destination Selection</em>: initiated by <code>enterText</code>
+      <p>Each text input partially implements the search function described earlier so as to facilitate input entry and location selection</p>
+      <p><em>Diplay Directions</em></p> 
+      <p>The event causes the map to draw a route between a chosen starting location and the specified location upon submission of these locations. Along with displaying the recommended route, the map will additionally present the user with an estimated time that the route would take. Some implementations allow for a different choice of route, and some display different routes depending on the user's preference for walking, public transit, or driving (e.g. Google and Apple Maps)</p>
+      <figure class="figure">
+        <img src="google-maps-directions-to-from.gif" class="figure-img img-responsive rounded">
+        <figcaption class="figure-caption">Getting directions for driving, transit, walking, and cycling between two locations in Google Maps</figcaption>
       </figure>
     </div>
   </div>  
@@ -358,6 +373,12 @@
   entirely, despite very similar behavior. Meanwhile some variations are due to appearance only.</blockquote>
 
 <ul>
+  <li><em>Browser-Embedded Maps</em> appear very similar to a full-featured map, but typically restrict the availability of user interaction. For example, embedded maps on Thrillist.com do not permit the user to search for locations, drop pins, or get directions. These behaviors may vary from site to site.
+  <figure class="figure">
+        <img src="thrillist-embedded.gif" class="figure-img img-responsive rounded">
+        <figcaption class="figure-caption">Some behaviors allowed on a map embedded on thrillist.com</figcaption>
+      </figure>
+  </li>
   <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
     invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
     different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
