@@ -4,6 +4,8 @@ layout: component
 contributors:
     - name: Janine Leaño
       github: jleano713
+    - name: Mitchell Simon
+      github: mitchelljfs
 ---
 
 <style>
@@ -40,7 +42,7 @@ contributors:
 		</ul>
 
 	<h4>State Diagram</h4>
-		<p class="text-center"><img src="http://i59.tinypic.com/2l8hvmo.png"></p>
+		<p class="text-center"><img src="statediagram.png"></p>
 
 	<h4>Component in Action</h4>
 		<p class="text-center">
@@ -60,7 +62,7 @@ contributors:
   <div class="col-sm-6">
 <h3>Variants</h3>
 	<ul>
-		<li><p class="text-center"><img src="http://i60.tinypic.com/k3q00k.png"></p>
+		<li><p class="text-center"><img src="macpanelbar.png"></p>
 		<p><em>menu items</em>: buttons like the picture above that bring down submenus could be considered a variation of a radio button in that only one can be toggled (to expand the submenu) once at a time.
 		However conceptually-speaking, radio buttons focus more on status (ex: the background is red and not blue) rather than actions (ex: pressing a button to access a submenu for background color) so 
 		menu buttons are not necessarily identified as a radio button.</p>
@@ -123,15 +125,26 @@ contributors:
 
 		<p class="text-center"><img src="https://data-pixelapse.s3.amazonaws.com/1/5775443/orig_3830587?AWSAccessKeyId=AKIAJXL2IXYH62T5HXDA&Expires=1717535503&Signature=VzImuOqjDofdJ5gwlM3jlw37P64%3D"></p>
 
-<h3>Credits &amp; References</h3>
+	<h4>GNOME 3</h4>
+		<p>In the GNOME Human Interaction Guidelines, a radio button is defined as, "Radio buttons are used in groups to select from a mutually exclusive set of options. Only one radio button within a group may be set at any one time. As with check boxes, do not use radio buttons to initiate actions."</p>
+		<p>The GNOME Radio Buttons also include a mixed state. This is used in situations when the radio buttons are used in a multiselection grouping. Which, is against the idea of a radio button for most platforms.</p>
 
-	<ul>
-		<li>Page template: <a href="http://dondi.github.io/paradixm/components/button">Paradixm Button Template</a>
-		<li>Radio button in action GIF: <a href="http://news.bootswatch.com/post/110161099627/material-design-in-bootstrap-with-paper">Bootswatch</a></li>
-		<li>Segmented control: <a href="https://www.cowirrie.com/blog/what-is-the-difference-between-a-checkbox-and-a-radio-button/">Cowirrie</a></li>
-		<li>Select button GIF: <a href="http://www.csgpro.com/post/130097">CSG Pro</a></li>
-		<li>Keyboard inputs: <a href="http://stackoverflow.com/questions/14322564/can-you-tab-through-all-radio-buttons">Stack Overflow</a></li>
-		<li>Radio buttons with multiple buttons clicked simultaneously: <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/RadioButtons.html">Apple Developer</a></li>
-		<li>OSX10 comparison: <a href="https://bold.pixelapse.com/minming/mac-os-x-yosemite-under-the-magnifying-glass">Pixelapse</a></li>
-		<li>Other uncredited pictures belong to Janine Leano</li>
-	</ul>
+		<p class="text-center"><img src=radio-buttons.svg alt="GNOME Radio Buttons"><img src=radio-group.png alt="GNOME Radio Button Group"></p>
+		<div class="col-lg-4 col-md-6 col-sm-8 col-xs-12"></div>
+		<div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+			<p>These two images show examples of GNOME Radio Buttons, the left is found in the GNOME HIG and the right is found in the GTK+ API documentation. The model on the left has the current and modern design of GNOME included in GNOME 3 where as the left is likely an example from GNOME 2.</p>
+		</div>
+
+<div class="col-xs-12">
+	<h3>Credits &amp; References</h3>
+		<ul>
+			<li>Page template: <a href="http://dondi.github.io/paradixm/components/button">Paradixm Button Template</a>
+			<li>Radio button in action GIF: <a href="http://news.bootswatch.com/post/110161099627/material-design-in-bootstrap-with-paper">Bootswatch</a></li>
+			<li>Segmented control: <a href="https://www.cowirrie.com/blog/what-is-the-difference-between-a-checkbox-and-a-radio-button/">Cowirrie</a></li>
+			<li>Select button GIF: <a href="http://www.csgpro.com/post/130097">CSG Pro</a></li>
+			<li>Keyboard inputs: <a href="http://stackoverflow.com/questions/14322564/can-you-tab-through-all-radio-buttons">Stack Overflow</a></li>
+			<li>Radio buttons with multiple buttons clicked simultaneously: <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/RadioButtons.html">Apple Developer</a></li>
+			<li>OSX10 comparison: <a href="https://bold.pixelapse.com/minming/mac-os-x-yosemite-under-the-magnifying-glass">Pixelapse</a></li>
+			<li>Other uncredited pictures belong to Janine Leano</li>
+		</ul>
+	</div>
