@@ -33,8 +33,18 @@ contributors:
 
 <h4>Events</h4>
 
-<blockquote>The <em>date</em> component represents an invariant point in time, which implies that date is a combination of a clock <em>time</em> and a day on a particular calendar. We use a particular calendar, (the Buddhist calendar for example) to decompose the date object into its’ different components like year, month, day, hour and minute. This provides a means for comparing dates, creating a new date from a time interval relative to another date, and calculating the interval of time between two dates.</blockquote>
+<blockquote>Users have one way of manipulating the date and time via this component, and that is through the event of a <strong>value change</strong> that initiates changes to be made to the date or time, and essentially is what allows the user to "use" this component.</blockquote>
 
+<p>There are multiple ways to initiate a value change on a date and time component. Generally, a user has the options of:</p>
+<ul>
+  <li>Typing new values into the input form</li>
+  <li>Incrementing or decrementing values using the up and down arrows located next to the input form</li>
+  <li>Clicking on a new date on the calendar representation</li>
+</ul>
+
+<p>Upon changing the values using either of the methods above, the system reconfigures its date or time with the changes the user has made. Generally, the component requires the user to click on a "save" button in order to formally set the date and time with the new value changes.</p>
+
+<p><em>Note: The date and time component is made up of other components such as buttons, check boxes, and radio buttons, all of which have their own events. Therefore, the date and time component inherits those same events, as they allow the event of a <strong>value change</strong> to occur.</em> See those components in the catalog to learn more about those events.</p>
 
 <h4>State Diagram</h4>
 
