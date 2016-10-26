@@ -1,0 +1,418 @@
+---
+title: Modal View
+layout: component
+contributors:
+    - name: Joel Homan
+      github: joelhoman
+
+    - name: Zachary Fitzpatrick
+      github: PokeADotProductions
+---
+
+<head>
+  <link rel="stylesheet" href="modal.css">
+</head>
+
+<p class="lead">A modal view is a child window to a main window. Modal views are used to draw a user's attention to an issue or suggestion and will disable interaction between the user and main window until the modal view is dismissed.</p>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <ul class="nav nav-pills nav-justified" role="tablist">
+      <li role="nav item" class="active">
+        <a class="nav-link active" data-toggle="tab" href="#typical-appearance" role="tab">Typical Appearance</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#typical-behavior" role="tab">Typical Behavior</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#priority-metrics" role="tab">Priority Metrics</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#events" role="tab">Events</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#variants" role="tab">Variants</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#platform-specifics" role="tab">Platform Specifics</a>
+      </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="tab-content">
+
+  <div class="tab-pane active" id="typical-appearance" role="tabpanel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <h3>Typical Appearance</h3>
+
+              <blockquote>Generally speaking, a modal view will appear as a dialogue box in the center of a window or application and prompt the user with a choice, requiring the selection of a decision through a button or an exit action.</blockquote>
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Modal View Example
+              </button>
+
+              <div class="modal fade" id="myModal" role="dialog" data-backdrop="static">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header"> 
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h class="modal-title">
+                        This a Modal View.
+                      </h>
+                    </div>
+                    <div class="modal-body">
+                    <p>
+                      To close this window, press the X on the top right of the window.
+                    </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane" id="typical-behavior" role="tabpanel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <h3>Typical Behavior</h3>
+
+              <blockquote>
+                <p>Modal views typically prompt the user to perform an action before allowing the user to continue interacting with said window or application.</p>
+
+                  <p>Modal views will usually be prompted when a window or application requires the user’s attention before continuing, such as when a user is able to update their system or if the window chooses to warn the user about committing an action. Modal views are also used by websites to inform the user about logins, advertisements, updates to the site, etc.</p>
+      
+              </blockquote>
+
+              <h4>Component in Action</h4>
+              
+              <img src="ModalITunes.gif" alt="Image Missing" class="img-thumbnail img-responsive giphy-embed">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="tab-pane" id="priority-metrics" role="tabpanel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <h3>Priority Metrics</h3>
+
+              <div class="panel-group" id="priority-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority1">Learnability</a>
+                    </h3>
+                  </div>
+                  <div id="priority1" class="panel-collapse collapse">
+                    <div class="panel-body">Modal view pop ups are incredibly intuitive to new users if used correctly.  Modal view pop ups are most typically used as a reaction to something the user is currently doing, has just done, or probably wants to do.  If used correctly and labeled properly, new users should not be confused by the purpose of a modal view pop up because of this.  The second place where learnability issues could arise is during the user interaction with the pop up.  Again, if used properly, a modal view pop up should contain only a few basic buttons or, if necessary, a very short form.  If the user will not be able to continue what they are doing until the pop up has been addressed, it should be required for the pop up to be addressed before it can be collapsed.  If the pop up is providing an essential piece of information or a form, and the user can continue doing what they are doing without addressing the pop up, it should be very easy to collapse the form.  These two guidelines are aimed to ensure new users are not led into a confusing application state.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority2">Efficiency</a>
+                    </h3>
+                  </div>
+                  <div id="priority2" class="panel-collapse collapse">
+                    <div class="panel-body">If used properly, modal view pop ups should almost be unnoticeable to frequent users.  There should only be a few buttons and forms should be very short.  The most commonly used button should be highlighted so a user can simply hit the ‘Enter’ key to trigger it or so it can easily be identified.  The pop up should also consistently appear at the same time during the use of an application, so frequent users become accustomed to the timing of when the pop up will appear.  The pop up should also consistently appear in the same location, so it can easily be identified by frequent users.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority3">Errors</a>
+                    </h3>
+                  </div>
+                  <div id="priority3" class="panel-collapse collapse">
+                    <div class="panel-body">All buttons, forms, labels, and icons should follow the same guidelines as those the application triggering the modal view pop up uses.  Modal view pop ups should also not be cluttered with a lot of interactable objects to ensure the user’s mental model is correct.  Since modal view pop ups collapse after they are addressed, it is more difficult to undo an action.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority4">Memorability</a>
+                    </h3>
+                  </div>
+                  <div id="priority4" class="panel-collapse collapse">
+                    <div class="panel-body">If the guidelines for learnability and efficiency are met, modal view pop ups should not have memorability issues.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority5">Satisfaction</a>
+                    </h3>
+                  </div>
+                  <div id="priority5" class="panel-collapse collapse">
+                    <div class="panel-body">Satisfaction is a very difficult usability metric to measure, but for a modal view pop up to be satisfying to interact with, it should be able to be quickly addressed and should be easily identifiable.  It should also give meaningful feedback to the user, with nice opening and closing animations as modal view pop ups are inherently objects that a user must look at and interact with.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane" id="events" role="tabpanel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <h3>Events</h3>
+
+              <div class="panel-group" id="event-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event1">appear</a>
+                    </h3>
+                  </div>
+                  <div id="event1" class="panel-collapse collapse">
+                    <div class="panel-body">One of two main events required of any modal views. Modal views are triggered often by the user performing an action or the system requiring a task to be completed by the user. When the view is triggered, a modal window will appear on the screen.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event2">disappear</a>
+                    </h3>
+                  </div>
+                  <div id="event2" class="panel-collapse collapse">
+                    <div class="panel-body">The second main event required of a modal view. A modal view disappears after a user performs a task required by the view or if the user closes the window through an exit action.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event3">key-esc</a>
+                    </h3>
+                  </div>
+                  <div id="event3" class="panel-collapse collapse">
+                    <div class="panel-body">A user is sometimes able to leave a modal window without entering any input or selecting an option.  Users can typically press the esc key to perform this function.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event4">key-enter</a>
+                    </h3>
+                  </div>
+                  <div id="event4" class="panel-collapse collapse">
+                    <div class="panel-body">Once a user has inputted a correct string into a text box or selected an option on the modal view, users can then usually press a submit type button on the modal view or press the enter key to leave the modal view and complete the task asked by the modal view.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event5">string input</a>
+                    </h3>
+                  </div>
+                  <div id="event5" class="panel-collapse collapse">
+                    <div class="panel-body">On many systems requiring passwords, users will be prompted with a modal window and are expected to fill in string input onto a text box to close the modal view.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event6">click</a>
+                    </h3>
+                  </div>
+                  <div id="event6" class="panel-collapse collapse">
+                    <div class="panel-body">The user can select an option or press on a button to have the window, application, or system perform a certain action. Clicking may also allow for the selection of multiple options.</div>
+                  </div>
+                </div>
+
+              </div>
+
+              <h4>State Diagram</h4>
+
+              <blockquote>
+                The typical flow of a modal window appearing on a user’s screen is as follows: 
+                <p></p>
+                <ul class="list-group">
+                  <li class="list-group-item">A user will perform an action that prompts the modal window’s popup.</li>
+                  <li class="list-group-item">The modal window will ask for user input.</li>
+                  <li class="list-group-item">If the user is able and decides to, the user may close the view.</li>
+                  <li class="list-group-item">Else the user may perform the task asked by the window and thereby closing the window by either pressing the enter key or a submit button provided by the modal.</li>
+                  <li class="list-group-item">The user is then returned to the main, parent, window. </li>
+                </ul>
+              </blockquote>
+
+              <img src="ModalView.png" class="img-thumbnail img-responsive" alt="State-Diagram">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane" id="variants" role="tabpanel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <h3>Variants</h3>
+
+              <div class="panel-group" id="variants-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant1">Document Editors</a>
+                    </h3>
+                  </div>
+                  <div id="variant1" class="panel-collapse collapse">
+                    <div class="panel-body">It’s common for document editors to have some sort of modal variant. These modal views are usually triggered when a user tries to leave a editor without saving their work. The modal will ask the user if they would like to continue and leave their work unsaved or save their work. For example, an instance of a modal view appears in google docs when a user tries to share a document. The information about who to share to must be completed or exited out of first before continuing.</div>
+
+                    <img src="Screen Shot 2016-10-25 at 1.06.10 AM.png" alt="Image Missing" class="img-thumbnail img-responsive">
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant2">Advertisements</a>
+                    </h3>
+                  </div>
+                  <div id="variant2" class="panel-collapse collapse">
+                    <div class="panel-body">Many websites have advertisement pop ups to provide income for the site. Pop ups may include: becoming a member to the site, a video of a film/game coming out soon, suggested hair products for the user, etc. These pop ups are not always necessary for the user to notice. Users can typically click back to the main window to close these views, because it isn’t always necessary for a user to interact with the advertisement.</div>
+
+                    <img src="Screen Shot 2016-10-25 at 1.02.08 AM.png" alt="Image Missing" class="img-thumbnail img-responsive">
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant3">Download Confirmation</a>
+                    </h3>
+                  </div>
+                  <div id="variant3" class="panel-collapse collapse">
+                    <div class="panel-body">If a user decides to download something like an application from a website onto the system, the system will usually prompt the user with a modal view. This view must typically be interacted with by the user, because the view will directly cause a change to the user’s system. The modal view typically asks the users to either cancel the download or continue before allowing the user to continue.</div>
+
+                    <img src="Screen Shot 2016-10-25 at 2.17.44 AM.png" alt="Image Missing" class="img-thumbnail img-responsive">
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant4">Errors and Warnings</a>
+                    </h3>
+                  </div>
+                  <div id="variant4" class="panel-collapse collapse">
+                    <div class="panel-body">If a process is unable to be completed or ran into issues during execution, it is important to convey that information to the user, and thus a modal view is a good way to ensure the user receives that information.  For example, if a user attempts to print a document and the printer is unavailable, a modal view can notify the user that there was an issue printing the document.  A modal view conveying an error or a warning will not typically have a form for the user to fill out, but will simply use text to notify the user of the warning, perhaps using a few buttons to give the option to send an error report if the application they were using was being run through the network.</div>
+
+                    <img src="windows error.png" alt="Image Missing" class="img-thumbnail img-responsive">
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant5">User Verification</a>
+                    </h3>
+                  </div>
+                  <div id="variant5" class="panel-collapse collapse">
+                    <div class="panel-body">If a process requires verification of the user, a modal view can be used to ask for that information.  Since the process cannot be completed until the user has been verified, using a modal view is appropriate.  Typically in this case, only the user’s name and password is required in a very simple form.  If the user is frequently verifying processes, some user information can be saved and filled out on the form to increase the efficiency of frequent users.</div>
+
+                    <img src="password modal.png" alt="Image Missing" class="img-thumbnail img-responsive">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane" id="platform-specifics" role="tabpanel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <h3>Platform Specifics</h3>
+
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-6">
+
+                        <h2>iOS</h2>
+
+                        <p>The modal view on the Iphone is a small white box that appears in the center of the screen.  Any clickable items are in blue text to highlight that they are interactable.  There is very little text to keep the modal view compact and there are very few clickable items to make the modal view easy to interpret and interact with.  The background behind the modal view is grayed out to signify that the modal view must be interacted with.  Modal views on the Iphone can also be interacted with using the thumbprint technology.</p>
+
+                        <img src="iphone thumb.png" alt="Image Missing" class="img-thumbnail img-responsive giphy-embed">
+                      </div>
+                      <div class="col-lg-6">
+
+                        <h2>macOS Sierra</h2>
+
+                        <p>The typical modal view that appears on Mac OS X is a light gray text box providing the user with an option, such as to update or to sign in. A modal view appears on the screen to receive information from the user. The view will provide a blue button, labeled with the action the modal will perform if pressed by the user. The modal view will also typically provide a light gray cancel button for the user to press if the user doesn’t wish the modal view to perform the action the modal can execute.</p>
+
+                        <img src="Screen Shot 2016-10-25 at 1.09.17 AM.png" alt="Image Missing" class="img-thumbnail img-responsive giphy-embed">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+
+    <h3>References Used</h3>
+
+    <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/WinPanel/Concepts/UsingModalWindows.html">Apple Developer Guidelines</a>
+  </div>
+</div>
+
+
+
