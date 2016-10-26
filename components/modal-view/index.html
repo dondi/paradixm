@@ -9,8 +9,17 @@ contributors:
       github: PokeADotProductions
 ---
 
+
+
 <head>
   <link rel="stylesheet" href="modal.css">
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="test.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <p class="lead">A modal view is a child window to a main window. Modal views are used to draw a user's attention to an issue or suggestion and will disable interaction between the user and main window until the modal view is dismissed.</p>
@@ -32,7 +41,7 @@ contributors:
         <a class="nav-link" data-toggle="tab" href="#events" role="tab">Events</a>
       </li>
       <li role="nav item">
-        <a class="nav-link" data-toggle="tab" href="#variance" role="tab">Variance</a>
+        <a class="nav-link" data-toggle="tab" href="#variants" role="tab">Variants</a>
       </li>
       <li role="nav item">
         <a class="nav-link" data-toggle="tab" href="#platform-specifics" role="tab">Platform Specifics</a>
@@ -94,14 +103,25 @@ contributors:
 
               <h3>Typical Behavior</h3>
 
-              <img src="giphy.gif" alt="Image Missing" style="width:480px;height:248px;">
-
               <blockquote>
                 <p>Modal views typically prompt the user to perform an action before allowing the user to continue interacting with said window or application.</p>
 
                   <p>Modal views will usually be prompted when a window or application requires the user’s attention before continuing, such as when a user is able to update their system or if the window chooses to warn the user about committing an action. Modal views are also used by websites to inform the user about logins, advertisements, updates to the site, etc.</p>
       
               </blockquote>
+
+              <h4>Component in Action</h4>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <img src="giphy.gif" alt="Image Missing" class="img-thumbnail img-responsive">
+                  </div>
+                   <div class="col-sm-6">
+                    <img src="ModalITunes.gif" alt="Image Missing" class="img-thumbnail img-responsive giphy-embed">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -255,9 +275,7 @@ contributors:
                 </ul>
               </blockquote>
 
-              <img src="ModalView.png" class="img-thumbnail" alt="State-Diagram" class="img-responsive">
-
-              <h4>Component in Action</h4>
+              <img src="ModalView.png" class="img-thumbnail img-responsive" alt="State-Diagram">
 
             </div>
           </div>
@@ -266,7 +284,7 @@ contributors:
     </div>
   </div>
 
-  <div class="tab-pane" id="variance" role="tabpanel">
+  <div class="tab-pane" id="variants" role="tabpanel">
     <div class="panel panel-default">
       <div class="panel-body">
         <div class="container-fluid">
@@ -275,34 +293,68 @@ contributors:
 
               <h3>Variants</h3>
 
-              <blockquote>There is almost never just one form of a user interface component. Use this section to address variations
-                on this theme. Some variations are sufficiently different that they are considered to be a different component
-                entirely, despite very similar behavior. Meanwhile some variations are due to appearance only.</blockquote>
+              <div class="panel-group" id="variants-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant1">Document Editors</a>
+                    </h3>
+                  </div>
+                  <div id="variant1" class="panel-collapse collapse">
+                    <div class="panel-body">It’s common for document editors to have some sort of modal variant. These modal views are usually trigger when a user tries to leave a editor without saving their work. The modal will ask the user if they would like to continue and leave their work unsaved or save their work. There is an instance of a modal view in google docs when a user tries to share a document. The information about who to share to must be completed or exited out of first before continuing.</div>
 
-              <ul>
-                <li><em>Menu items</em> are very close to buttons in behavior—they perform individual action elements upon simple
-                  invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
-                  different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
+                    <img src="Screen Shot 2016-10-25 at 1.06.10 AM.png" alt="Image Missing" class="img-thumbnail img-responsive">
+                  </div>
+                </div>
 
-                <li><em>Links</em> can be considered as a specialized button—they are invoked almost identically, and their action
-                  is even more narrowly defined as moving the user to a different view or display. The distinction here is
-                  definitely less sharp than the distinction between a menu item and a button. For links within a document, the
-                  document might be viewed as a menu in itself, and thus links are “menu items” indicating what the user can view
-                  next. Thus, in some ways, links are hybrids between buttons and menu items.</li>
-              </ul>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant2">Advertisements</a>
+                    </h3>
+                  </div>
+                  <div id="variant2" class="panel-collapse collapse">
+                    <div class="panel-body">Many websites have advertisement pop ups to provide income for the site. The pop ups may include becoming a member to the site, be a video of a film/ game coming out soon, suggest hair products to the user, etc. These pop ups are not always necessary for the user to take notice of. Users can typically click back to the main window to close these view, because it always isn’t necessary for a user to interact with the advertisement.</div>
 
-              <h3>Key Characteristics</h3>
+                    <img src="Screen Shot 2016-10-25 at 1.02.08 AM.png" alt="Image Missing" class="img-thumbnail img-responsive">
+                  </div>
+                </div>
 
-              <h4>Feedback</h4>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant3">Download Confirmation</a>
+                    </h3>
+                  </div>
+                  <div id="variant3" class="panel-collapse collapse">
+                    <div class="panel-body">If a user decides to download something like an application from a website or elsewhere onto the system, the system will usually prompt the user with a modal view. This view must typically be interacted with by the user, because the view will directly cause a change to the user’s system. The modal view typically asks the users to either cancel the download or continue before allowing the user to continue.</div>
 
-              <p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
-                never doubt whether:</p>
+                    <img src="Screen Shot 2016-10-25 at 2.17.44 AM.png" alt="Image Missing" class="img-thumbnail img-responsive">
+                  </div>
+                </div>
 
-              <ol>
-                <li>they did positively trigger a button (and thus its associated action)</li>
-                <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
-                  the action that triggers the button</li>
-              </ol>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant4">Errors and Warnings</a>
+                    </h3>
+                  </div>
+                  <div id="variant4" class="panel-collapse collapse">
+                    <div class="panel-body">If a process in unable to be completed or ran into issues during execution, it is important to convey that information to the user, and thus a modal view is a good way to ensure the user receives that information.  For example, if a user attempts to print a document and the printer is unavailable, a modal view can notify the user that there was an issue printing the document.  A modal view conveying an error or a warning will not typically have a form for the user to fill out, but will simply use text to notify the user of the warning, perhaps using a few buttons to give the option to send an error report if the application they were using was being run through the network.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant5">User Verification</a>
+                    </h3>
+                  </div>
+                  <div id="variant5" class="panel-collapse collapse">
+                    <div class="panel-body">If a process requires verification of the user, a modal view can be used to ask for that information.  Since the process cannot be completed until the user has been verified, using a modal view is appropriate.  Typically in this case, only the user’s name and password is required in a very simple form.  If the user is frequently verifying processes, some user information can be saved and filled out on the form to increase the efficiency of frequent users.</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
