@@ -1,0 +1,18 @@
+title: Paradixm
+email: dondi@lmu.edu
+description: A survey of known user interface elements at the micro and macro levels
+twitter_username: zugzugglug
+github_username: dondi
+
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        none
+
+# Server
+destination:      _gh_pages
+host:             127.0.0.1
+baseurl:          /paradixm
+encoding:         UTF-8
