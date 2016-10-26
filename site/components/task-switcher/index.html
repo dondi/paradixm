@@ -34,6 +34,25 @@ contributors:
 
 </p>
 
+<h3>Typical Behavior</h3>
+
+<p> A fairly common way to use the task switcher is through a hot key that would bring up all the applications that are currently running. The specifics of this vary by system, but the hotkey is often good for switching between two Windows, or other tasks using the keyboard only and not the mouse. After using the hot key, you simply click on which application you would like to switch to. An example of this would be pressing ALT+Tab in windows, which would bring up the apps in that grid like structure that is shown on the Windows 10 example in the “Typical Appearance” section. In the older versions of iOS, double tapping the home button would reveal a task bar on the bottom of the screen. In the more recent versions of iOS, double tapping the home button would reveal the applications in a single row where you can swipe left and right to see which applications are running. From there, you would simply tap which application you would want to switch to. Below is a video showing off the task switcher in OSX. The taskbar pops up, taking priority of the screen, and the user can navigate to the left or to the right, quit tasks, hide them, or quickly "alt/tab" back and forth between a pair of tasks. 
+
+    <h3>Component In Action</h3>
+
+    Below is a video showing off the task switcher in OSX. The taskbar pops up, taking priority of the screen, and the user can navigate to the left or to the right, quit tasks, hide them, or quickly "alt/tab" back and forth between a pair of tasks. 
+        <br>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hlIdz__YZN0" alt="Video tour of Task Switching"></iframe>
+                </div>
+            </div>              
+        </div>
+
+</p>
+
 <h3>Events</h3>
 
 <p>Task switcher events are fairly simple. The task switcher is either <code>onscreen</code> or <code>offscreen</code>.
@@ -185,15 +204,6 @@ contributors:
 <div class="row">
   <div class="col-sm-6">
 
-	<h3>Typical Behavior</h3>
-		<p>
-		First, it is important to note that there is a long list of ways a user can switch between tasks. One way would be to use the mouse, locate the task launcher, hover over the task one wants to open, and click. Information on the task launcher can be found <a href="/paradixm/components/task-launcher/">here</a>.</p>
-
-		<p>
-		Another more efficient way, which is seen on most Operating Systems, including mobile, is to press and hold a set of keys (i.e. Windows: <code>Alt + Tab</code> ; OSX: <code>Cmd + Tab</code> ; iOS 9 double tap the <code>Home</code> button). While still holding the <code>Cmd</code> or <code>Alt</code> key, the user can keep tapping on <code>Tab</code> to quickly sift through currently open programs. Once the user lets go of all keys, the program that was selected will open. </p>
-
-		<p>It is good to note that this is a very efficient way to jump back and forth between two programs. The end goal is to switch between tasks, and the quicker and more effortless the process is, the better it is for the user. There are many different shortcuts, and other platform-specific ways to allow for further efficient manipulation (i.e. hiding an app) that will be mentioned under the <a href="#pSpecific"> Platform-Specific Instances</a> section.</p>
-
 	<h4>Events</h4>
 		<p> The most relevant task launcher event is to select the new open app and switch to it. Because of the simplicity of the action, there should not be a myriad of alternative actions. If a user hovers over a task, it simply becomes <code>selected</code>, and the previous task becomes unselected. Only one task can be selected at a time.
 
@@ -206,23 +216,6 @@ contributors:
   </div>
 
   <div class="col-sm-6">
-
-  	<h3> Typical Behavior (continued) </h4>
-
-  	<h4>Component in Action</h4>
-
-		<p> Below is a video showing off the task switcher in OSX. The taskbar pops up, taking priority of the screen, and the user can navigate to the left or to the right, quit tasks, hide them, or quickly "alt/tab" back and forth between a pair of tasks. 
-		<br>
-
-		<div class="panel panel-default">
-  			<div class="panel-body">
-				<div class="embed-responsive embed-responsive-16by9">
-		  			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hlIdz__YZN0" alt="Video tour of Task Switching"></iframe>
-				</div>
-			</div>  			
-		</div>
-
-
 
 	<h3>Variants</h3>
 		<p>Switching tasks is a standard operation on most devices. Below is a list illustrating the broad ways to accomplish task switching:</p>
