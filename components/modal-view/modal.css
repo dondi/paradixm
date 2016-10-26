@@ -1,17 +1,6 @@
-.myModal {
-  text-align: center;
-}
-
-.myModal:before {
-  display: inline-block;
-  vertical-align: middle;
-  content: " ";
-  height: 100%;
-}
-
-
 .modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
+  position: absolute !important;
+  left: 25%;
+  right: 25%;
+  top: 25%;
 }
