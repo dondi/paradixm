@@ -17,40 +17,6 @@ contributors:
 ---
 <p class="lead">Menus are probably the second most used components on a given graphical interface after buttons.</p>
 
-
-
-
-
-        <br>
-        <h4>State Diagram for a Standard Menu</h4>
-
-            <blockquote>
-              <p class="text-center">
-              <img src="Menu_state_diagram.png" width="600" height="600" class="img-responsive" alt="Responsive image">
-            </p>
-            </blockquote>
-
-            <p>Standard menus generally have 2 states: <code>Closed</code> and <code>Open</code>. The user can open a closed menu by
-              clicking on the menu title (which can be considered a button) and close a menu by clicking outside of it or by clicking on
-              one of its items (which could potentially reinitiate the cycle of opening and closing a menu if the item is a submenu).
-            </p>
-            <p>
-              Hover menus can be one variation of these states, but the only thing that would probably change is that instead of clicks,
-              the events that trigger the opening or closing of a menu is whether the mouse is over the menu or not.
-            </p>
-
-
-         <div class="col-sm-12">
-
-            <h4>Events</h4>
-
-            <blockquote>An example of event handling can be found on the Windows Dev Center website, which provides an API with methods and the respective events that they handle (for Windows
-              specifically). Menus implement a method called addEventListener to track user interactions with the menu object. Some of the events that it does handle include beforeshow, beforehide, aftershow, and afterhide. For example, the aftershow event occurs immediately after
-              the menu is displayed on the interface. The API itself defines menus in the following manner:
-              <p><br>"Displays a lightweight popup that is used to temporarily show menu commands related to what the user is currently doing. You should only show a menu in response to a user tap or click. Unlike a MessageDialog, a menu is always dismissed when the user taps or clicks outside of it" (Windows Dev Center)</p>
-            </blockquote>
-
-
             <h4>Component in Action</h4>
 
             <blockquote>
@@ -277,29 +243,6 @@ contributors:
 
 </div>
 
-<h3>Platform-Specific Instances</h3>
-
-<blockquote>
-
-  <p>From the images of the directory menus, it can be observed that OS X breaks some of Windows' rules, such as using icons
-    to represent menu titles (i.e. the settings gear icon).</p>
-
-      <img src="Mac_Directory.png" width="600" height="400" class="img-responsive" alt="Responsive image">
-    
-</blockquote>
-<blockquote>
-  <p>In addition to there being hidden menus, there are even hidden menu items (described as "Dynamic Menu Items" in OS X guidelines) that can be seen if the user holds down the "alt option" key for Mac. For example, the file menu at the top of the Desktop interface (with no applications open) has some hidden items that are revealed when the "alt option" key is pressed while the menu is open.</p>
-
-  </blockquote>
-
-  <div class="col-sm-12">
-      <div class="col-sm-6">
-      <img src="Mac_FileMenu.png" class="img-responsive" alt="Responsive image">
-    </div>
-    <div class="col-sm-6">
-      <img src="Mac_FileMenu_Option.png" class="img-responsive" alt="Responsive image">
-    </div>
-</div>
 
 
 <h2>References</h2>
@@ -516,9 +459,38 @@ Gridded menu system like the iPhone that it’s running on.</p>
 
 <p>The most relevant menu event is the <code>click</code>. A <code>click</code> event indicates that the user has selected a particular action or item from the list. Another event is the <code>hover</code>, indicating that a pointing device is explicitly within the button’s bounds. Another event is the <code>scroll</code>, displaying more options than what can be presented on the screen presently. Some platforms or implementations have included other components into an item, like a <code>swipe</code>, which can display alternative actions for the item, or a checkbox. The most relevant event on these platforms are the “click,” which tells it whether to advance deeper or retreat out of the app. Second would be to “scroll”, which moves the selector around to allow the user to “click” what they want to.</p>
 
+         <div class="col-sm-12">
+
+            <h4>Events</h4>
+
+            <blockquote>An example of event handling can be found on the Windows Dev Center website, which provides an API with methods and the respective events that they handle (for Windows
+              specifically). Menus implement a method called addEventListener to track user interactions with the menu object. Some of the events that it does handle include beforeshow, beforehide, aftershow, and afterhide. For example, the aftershow event occurs immediately after
+              the menu is displayed on the interface. The API itself defines menus in the following manner:
+              <p><br>"Displays a lightweight popup that is used to temporarily show menu commands related to what the user is currently doing. You should only show a menu in response to a user tap or click. Unlike a MessageDialog, a menu is always dismissed when the user taps or clicks outside of it" (Windows Dev Center)</p>
+            </blockquote>
+
+
 <h4>State Diagram</h4>
 
 <svg class="img-responsive center-block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="433px" height="163px" version="1.1" style="background-color: rgb(255, 255, 255);"><defs/><g transform="translate(0.5,0.5)"><rect x="201" y="1" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(219,25)"><switch><foreignObject pointer-events="all" width="83" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 83px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Enabled Item</div></div></foreignObject><text x="42" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="1" y="1" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(18,25)"><switch><foreignObject pointer-events="all" width="85" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 85px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Disabled Item</div></div></foreignObject><text x="43" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="201" y="101" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(218,125)"><switch><foreignObject pointer-events="all" width="85" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 85px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Selected Item</div></div></foreignObject><text x="43" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 321 31 L 331 31 Q 341 31 341 41 L 341 121 Q 341 131 334.18 131 L 327.37 131" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 322.12 131 L 329.12 127.5 L 327.37 131 L 329.12 134.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(348,75)"><switch><foreignObject pointer-events="all" width="77" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 86px; width: 77px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">scroll or hover</div></div></foreignObject><text x="39" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 201 131 L 171 131 Q 161 131 161 121 L 161 41 Q 161 31 171 31 L 194.63 31" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 199.88 31 L 192.88 34.5 L 194.63 31 L 192.88 27.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 201 131 L 171 131 Q 161 131 161 121 L 161 41 Q 161 31 151 31 L 127.37 31" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 122.12 31 L 129.12 27.5 L 127.37 31 L 129.12 34.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(169,75)"><switch><foreignObject pointer-events="all" width="25" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 36px; width: 25px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">click</div></div></foreignObject><text x="13" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g></g></svg>
+
+        <br>
+        <h4>State Diagram for a Standard Menu</h4>
+
+            <blockquote>
+              <p class="text-center">
+              <img src="Menu_state_diagram.png" width="600" height="600" class="img-responsive" alt="Responsive image">
+            </p>
+            </blockquote>
+
+            <p>Standard menus generally have 2 states: <code>Closed</code> and <code>Open</code>. The user can open a closed menu by
+              clicking on the menu title (which can be considered a button) and close a menu by clicking outside of it or by clicking on
+              one of its items (which could potentially reinitiate the cycle of opening and closing a menu if the item is a submenu).
+            </p>
+            <p>
+              Hover menus can be one variation of these states, but the only thing that would probably change is that instead of clicks,
+              the events that trigger the opening or closing of a menu is whether the mouse is over the menu or not.
+            </p>
 
 <h4>Component in Action</h4>
 
@@ -709,6 +681,30 @@ Satisfaction: Doesn’t look at nice as Apple Carplay due to a non-adjusting asp
     </div>
   </div>
 </div>
+<h3>Platform-Specific Instances</h3>
+
+<blockquote>
+
+  <p>From the images of the directory menus, it can be observed that OS X breaks some of Windows' rules, such as using icons
+    to represent menu titles (i.e. the settings gear icon).</p>
+
+      <img src="Mac_Directory.png" width="600" height="400" class="img-responsive" alt="Responsive image">
+    
+</blockquote>
+<blockquote>
+  <p>In addition to there being hidden menus, there are even hidden menu items (described as "Dynamic Menu Items" in OS X guidelines) that can be seen if the user holds down the "alt option" key for Mac. For example, the file menu at the top of the Desktop interface (with no applications open) has some hidden items that are revealed when the "alt option" key is pressed while the menu is open.</p>
+
+  </blockquote>
+
+  <div class="col-sm-12">
+      <div class="col-sm-6">
+      <img src="Mac_FileMenu.png" class="img-responsive" alt="Responsive image">
+    </div>
+    <div class="col-sm-6">
+      <img src="Mac_FileMenu_Option.png" class="img-responsive" alt="Responsive image">
+    </div>
+</div>
+
 
 <h3>Credits &amp; References</h3>
 
