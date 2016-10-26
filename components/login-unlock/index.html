@@ -284,8 +284,10 @@ The key characteristic of a OSX Yosemite login screen is consistency. As per App
         </div>
       </div>
 
-      <div class="col-sm-6">
+<div class="row">
+    <div class="col-sm-6">
         <div class="panel panel-default">
+<<<<<<< HEAD
             <div class="panel-heading">
               <h3 class="panel-title text-center">iOS 10</h3>
             </div>
@@ -374,69 +376,52 @@ The key characteristic of a OSX Yosemite login screen is consistency. As per App
 
                 <img src="zero-input-canvas.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
               <p class="text-center"><em><sup>"zero input canvas"</sup></em></p>
+=======
+          <div class="panel-heading">
+              <h3 class="panel-title text-center">Windows 10</h3>        
+          </div>
+        <div class="panel-body">
+      
+            <h4>General Idea</h4>
+              <blockquote class="text-justify">The Windows 10 login screen utilizes the traditional features of previous Windows operating systems with a few new and subtle additions. With the rising popularity of mobile computing, the Windows 10 login screen has implemented features inspired by popular mobile platforms such as Android and iOS. These features make Windows 10's login screen more intuitive when used with a touchscreen and even provide functionality over the basic features of a regular login screen. This includes multiple methods of security (see: <a href="#variants-windows10"> variants</a>), a display for the status of certain apps, and even access to Cortana, Windows' "intelligent personal assistant", through vocal input.<p><p>
+>>>>>>> 3eb3a63b4a0a64c4c9865104f653b003236b4d35
 
-              <ul>
-                  <li><p><b><em>Auto-suggest:</em></b> Once the user starts typing, auto-suggest replaces "zero input canvas." It continuously updates suggestions or hints to improve efficiency of the input process as the user types.</p></li><p><p>
+              <img src="win10lock.jpg"  class="img-responsive center-block" alt="General Windows 10 Lock Screen"></img>
+              <p class="text-center"><em><sup>Example of a lock screen on Windows 10</sup></em></p><p>
+              When first using a Windows 10 device, one might notice that the operating system uses both a lock screen and a login screen. From the initial lock screen, the user can click (or swipe upwards if their device has a touchscreen) to access the login screen. The lock screen displays information that you would typically check on at a glance without logging in to the computer. The information can be customized to suit the needs of the user. This includes:
+              
+                <ul>
+                      <li><p><b><em>Date and Time:</em></b> A standard feature of lock screens on most platforms. The icon of an alarm clock will be displayed if the user has an upcoming alarm set.</p></li><p><p>
+          
+                      <li><p><b><em>Notifications:</em></b> With this feature, users can view events and reminders that they've scheduled as well as notifications from various apps. The Windows 10 lock screen allows users to customize the notifications that are displayed. Supported applications for this feature include notifications from: Phone, Messaging, Xbox, Store, Calendar, and even Weather.</p></li><p><p>
+           
+                      <li><p><b><em>System Status Icons:</em></b> These icons display information about the system including: internet connectivity, battery life, system notifications, and more.</p></li><p><p>
+                      <p><p>
+                </blockquote>
                 </ul>
 
-                <img src="auto-suggest.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
-              <p class="text-center"><em><sup>Auto-suggest</sup></em></p>
+            <h4>Cortana</h4>
 
-              <h4>Events</h4>
+            <blockquote class="text-justify">Windows 10's lock screen allows the user to access Cortana through vocal commands. Users can ask her questions, create reminders, and add events to their calendars without unlocking their devices. It also allows users to open apps, conduct internet searches, send emails and texts, and more. This addition gives the user easy access to their computer when they need to be productive on the go. Cortana can be accessed using the vocal command "Hey, Cortana!"<p>
 
-              <blockquote class="text-justify">As search boxes are composed by a text field and a button, the most relevant search events are <code>enterText</code>, <code>clear</code> and <code>click</code>. Secondary events include <code>dragAndDropText</code>.</blockquote>
+              <video class="img-responsive center-block" controls loop autoplay>
+              <source src="cortanalock.webm" type="video/webm">
+              <p class="text-center"><em><sup>Cortana can be accessed from the lock screen</sup></em></p>
 
-                <h4>State Diagram</h4>
+            </blockquote>
 
-              <blockquote>
-            <img src="state-diagram.png" class="img-responsive center-block" alt="state-diagram">
-          <p class="text-center">State Diagram extracted from <em><a href="https://users.cs.jmu.edu/bernstdh/Web/CS345/h3/index.php">https://users.cs.jmu.edu/bernstdh/Web/CS345/h3/index.php</a></em></p>
-          </blockquote>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title text-center">iOS 10</h3>
+            </div>
 
-              <h4>Component in Action</h4>
-
-          <blockquote>
-            <img src="conponent-in-action.gif" class="img-responsive center-block" alt="search-bar-gif-1">
-          <p class="text-center">Example extracted from <em><a href="http://thiagonasc.com/page/2">http://helixbing.blob.core.windows.net</a></em></p>
-          </blockquote>
-
-        <h4>Variants</h4>
-
-          <blockquote class="text-justify">
-          Various examples of types of searches of Windows RT 8.1
-          </blockquote>
-
-          <img src="windows-tool-bar-search.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
-              <p class="text-center"><em><sup>A tool bar search</sup></em></p>
-
-              <img src="app-canvas-search.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
-              <p class="text-center"><em><sup>Search in the app canvas</sup></em></p>
-            
-              <img src="navigation-pane.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
-              <p class="text-center"><em><sup>Search in a navigation pane</sup></em></p>
-
-              <img src="Inline-search.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
-              <p class="text-center"><em><sup>Inline search</sup></em></p>     
-
-
-              <h4>Priority Metrics</h4>
-
-            <blockquote class="text-justify">
-            The priority metrics of search remains the same as a general seach for Windows RT 8.1.
-          </blockquote>   
-
-          <h4>Key Characteristics</h4>
-
-            <blockquote class="text-justify">
-            Having a search field as the search entry point is necessary because it provides notable footprint.
-          </blockquote> 
-
-          <img src="abc.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
-              <p class="text-center"><em><sup>Before clicking</sup></em></p>  
-              <img src="def.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
-              <p class="text-center"><em><sup>After clicking</sup></em></p>       
-           -->
+            <div class="panel-body">
+             
             </div>
         </div>
       </div>
