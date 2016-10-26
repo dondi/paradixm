@@ -185,23 +185,30 @@ contributors:
 
                 <h3>Key Characteristics</h3> <!-- i do dis-->
 
-                <blockquote>What makes for a good <em>List</em>?
-                Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
-                principles.
+                <blockquote>What makes for a good <em>List</em>? Here are some acceptable layouts and behaviors.
+                </blockquote>
+                The consensus between both Google and Microsoft is that a proper list
+                is a single column, made up of rows whos primary function is to hold text. Specifically,
+                Microsoft says, lists are for "Displaying content collections that are primarily text".
+                This is not to say lists cannot hold other data types, however there are better
+                choices if the primary data type is other than text. (i.e. grids are better for images)
+                <h5>For example, here is an acceptable usage of lists with heterogeneous data types: </h5>
+                <blockquote><img src = "MaterialDesignInbox.png" alt="example" class="img-responsive center-blocks" width="250" height="250"/>
+                  <font face="" font size="2">Note that each row primarily houses text.</font>
+                </blockquote>
 
+                </p>
+                Furthermore, it is well understood that lists only scroll vertically, read top to
+                bottom, and are single column. Without these features, a list is hopelessly inadequate.  Therefore,
+                some good implementations of lists would be for messaging, settings, contacts or, surprisingly,
+                any set of textual data that intuitively fits into a list.
 
-              </blockquote>
-
-                <h4>Feedback</h4>
-
-                <p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
-                never doubt whether:</p>
-
-                <ol>
-                    <li>they did positively trigger a button (and thus its associated action)</li>
-                    <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
-                    the action that triggers the button</li>
-                </ol>
+                </p>
+                Keeping consistency in mind between each row is incredibly important.
+                Guidelines by Apple, Microsoft, and Google, all indicate that the text's font between
+                each row should be the same.  Each cell should display the content in a uniform way,
+                the picture above again serves as a good example.  Notice how each contact image
+                is lined up with the previous row, and the font is all the same.
             </div>
         </div>
 
@@ -409,7 +416,7 @@ contributors:
 
                           <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                              <img src="grocery-list.gif" alt="First slide">
+                              <img src="MaterialDesignInbox.png" alt="First slide">
                               <div class="carousel-caption">
                                  <h3>Caption Header</h3>
                                  <p>caption sub header</p>
@@ -455,4 +462,5 @@ contributors:
 
             <h3>Credits &amp; References</h3>
 
-            <blockquote>Provide references or links to any information, image, or media sources used.</blockquote>
+            <blockquote>Google Material Design on Lists: https://material.google.com/components/lists.html</blockquote>
+            <blockquote> Microsoft on Lists: https://msdn.microsoft.com/en-us/library/windows/apps/hh465465.aspx </blockquote>
