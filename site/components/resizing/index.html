@@ -178,6 +178,19 @@ contributors:
     <h3>Priority Metrics</h3>
     <p>Ben Shneiderman, in his book <em>Designing the User Interace</em> defines learnability, efficiency, errors, memorability, and satisfaction, as metrics by which the usability of a system can be measured. Resize is a common interface component, and in a perfect system, all five metrics are important. Nevertheless, if the resize function as a user interface component is evaluated against these metrics, learnability and efficiency rise as the most important, whereas memorability, errors, and satisfaction are less important.</p>
 
+    Learnability
+    Learnability is an extremely important metric for effective resize interaction design, because its is a very utilitarian interaction that is essential to GUI-based systems.
+
+    Efficiency
+
+    Errors
+
+    Memorability
+
+    Satisfaction
+    Because resize is utilitarian in nature, satisfaction is lower on the priority list. However, it is important to note that as a subset of direct manipulation, good resize user interfaces are integral to the satisfaction of the user. For example, if the feedback is delayed in manual resize of a window, the user will quickly become frustrated when trying to resize a group of windows or pictures. Direct manipulation needs to have a short learning curve.
+
+
     <div>
       <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active"><a href="Learnability" aria-controls="Learnability" role="tab" data-toggle="tab">Learnability <i class="fa fa-pencil" aria-hidden="true"></i></a></li>
@@ -234,7 +247,6 @@ contributors:
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active"><a href="#OSX" aria-controls="OSX" role="tab" data-toggle="tab">Mac OSX <i class="fa fa-apple" aria-hidden="true"></i></a></li>
-        <li role="presentation" class="active"><a href="#iOS" aria-controls="iOS" role="tab" data-toggle="tab">Mac iOS <i class="fa fa-apple" aria-hidden="true"></i></a></li>
         <li role="presentation"><a href="#Windows10" aria-controls="windows10" role="tab" data-toggle="tab">Windows 10 <i class="fa fa-windows" aria-hidden="true"></i></a></li>
       </ul>
       <!-- Tab panes -->
@@ -249,19 +261,19 @@ contributors:
             <div class="row">
                 <div class="col-sm-6">
                 <div class="thumbnail">
-                  <img src="gifs/osx-notes-fullscreen.gif" alt="...">
+                  <img src="gifs/osx-notes-fullscreen.gif" alt="osX Notes Automatic resize">
                   <div class="caption">
                     <h4>Automatic Resize</h4>
-                    <p>This example shows automatic resize in the Notes Application Window. Hovering over the colored buttons reveals the resize symbol, and upon click of the green fullscreen button, the window fills the entire screen. The fullscreen symbol is indicative of the function it triggers, because of the arrows that are pointing outwards. In fullscreen mode, the entire menu disappears, reflecting the macOS guideline of transient controls. When the user wants to return to a non-fullscreen mode, the resize button is accessed by displaying the menu bar, which returns to the screen when the mouse is at the top of the screen. Hovering over the button reveals the resize symbol, which is now arrows that are pointing inward, indicating that the window is now going to shrink. </p>
+                    <p>This example shows automatic resize in the Notes Application Window. Hovering over the colored buttons reveals the resize symbol, and upon click of the green fullscreen button, the window fills the entire screen. The fullscreen symbol is indicative of the function it triggers, because of the arrows that are pointing outwards. In fullscreen mode, the entire menu disappears, reflecting the macOS guideline of transient controls. When the user wants to return to a non-fullscreen mode, the resize button is accessed by displaying the menu bar, which returns to the screen when the mouse is at the top of the screen. Hovering over the button reveals the resize symbol, which is now arrows that are pointing inward, indicating that the window will now shrink upon click. </p>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="thumbnail">
-                  <img src="gifs/osx-notes-manualresize-menubarchange.gif" alt="...">
+                  <img src="gifs/osx-notes-manualresize-menubarchange.gif" alt="osX notes Manual Resize">
                   <div class="caption">
                     <h4>Manual Resize</h4>
-                    <p>This example shows manual resize in the Note Application Window. Hovering over the permeter of the window changes the mouse cursor from a pointer to an arrow, which is indicative of the direction of resize possible at that position. Drag and drop explores different dimensions, befre setting the new dimension on mouse release. An interesting characteristic to notice is that resizing the Notes window will cause text wrap to occur, bounded by the dimensions of the Notes Windodw. Also, notice how resize causes the menu bar to add/drop components on stretch/shrink, respectibly. Resize is just one component in a network of components whose interconnectedness causes resize to change more than just the size of the window. In this case, as a consequence of the resize, the menu bar automatically formats to accomodate for the size of the window.</p>
+                    <p>This example shows manual resize in the Note Application Window. Hovering over the permeter of the window changes the mouse cursor from a pointer to an arrow, which is indicative of the direction of resize possible at that position. Drag and drop explores different dimensions, befre setting the new dimension on mouse release. An interesting characteristic to notice is that resizing the Notes window will cause text wrap to occur, bounded by the dimensions of the Notes Window. Also, notice how resize causes the menu bar to add/drop components on stretch/shrink, respectibly. Resize not only acts on the window size itself, but on a network of interconnected components that will also react to the resize operation. In this case, as a consequence of the resize, the menu bar automatically formats to accomodate for the size of the window.</p>
                   </div>
                 </div>
               </div>
@@ -270,7 +282,7 @@ contributors:
                   <img src="gifs/osx-dock-resize.gif" alt="...">
                   <div class="caption">
                     <h4>Dock Resize</h4>
-                    <p>Direct manipulation occurs at a higher level of abstraction in this example of a slider that accomplishes resizing the dock and its icons by means of a resize slider. The user is manipulating the position of the slider to control the size of the dock. Although the user is a acting on an element that is then acting on the dock, this is still direct manipulation because the impact of the resize action is immediately visable via the size of the dock on the screen.</p>
+                    <p>Direct manipulation occurs at a higher level of abstraction in this example of a slider that accomplishes resizing the dock and its icons by means of a resize slider. The user is manipulating the position of the slider to control the size of the dock. Although the user is a acting on the slider interface element, this is still a form of direct manipulation because the impact of the resize action is immediately visable via the changing size of the dock on the screen. Also, note that in this example, the slider resizes a group of similar elements at the same time.</p>
                   </div>
                 </div>
               </div>
@@ -279,19 +291,21 @@ contributors:
                   <img src="gifs/system-preferences-noresize.gif" alt="...">
                   <div class="caption">
                     <h4>System Preferences</h4>
-                    <p>Some windows don't have resize properties, because the contents within the windows are static and cannot be changed. The fact that the OSX System Preferences window cannot resize is conveyed by the observation that on hover, the resize arrow cursor and the resize button did not respond. This observation signal mental models of the interaction design</p>
+                    <p>Some windows don't have resize properties, because the contents within the windows are static and cannot be changed. The fact that the OSX System Preferences window cannot resize is conveyed by the observation that on hover, the resize arrow cursor and the resize button did not respond. The absence of feedback, is feedback itself, telling the user that the resize operation is not possible on the system preferences window.</p>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="thumbnail">
-                  <img src="gifs/word-text-resize.gif" alt="...">
+                  <img src="gifs/textedit.gif" alt="...">
                   <div class="caption">
-                    <h4>Text Resize</h4>
-                    <p>...</p>
+                    <h4>Word Text Resize</h4>
+                    <p>The TextEdit application on the Mac OSX, supports text resize via the fonts menu. In this menu, text can be resized in three different ways: font size form fill-in, selecting the font size from a menu, and using the font size slider. The font size slider is a form of direct manipulation, however font size form fill-in and menu takes in a discrete font size input and outputs the resized text at the specified font size. Typical use cases for the form fill-in nd menu would be if the user need to specify a particular font size, whereas the slider may be used if the user wanted to experiment with viewing the text in different sizes. TextEdit offers three different methods for text resize so that the user can manipulate the text size in a way that makes sense for the user's application.</p>
                   </div>
                 </div>
               </div>
+              <h4>The Trackpad</h4>
+              <p>In a discussion of mac OSX platform interaction design, it is also necessary to consider the role of the input device. The most common input device for the OSX platform is the trackpad. Alternatively, users interface with the mac OSX with an external mouse, however the trackpad is the default input device on the Apple MacBook Pro or MacBook Air. The Apple trackpad responds to touch input and click. For resize the 
             </div>
           </div>
         </div>
