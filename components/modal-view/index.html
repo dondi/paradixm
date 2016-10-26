@@ -8,35 +8,18 @@ contributors:
     - name: Zachary Fitzpatrick
       github: PokeADotProductions
 ---
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="test.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 
-<p class="lead">Quite possibly the single most common graphical user interface element, the push button triggers a
-  single action within an application.</p>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Modal View Example
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog" data-backdrop="static">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header"> 
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h class="modal-title">
-          This a Modal View.
-        </h>
-      </div>
-      <div class="modal-body">
-      <p>
-        To close this window, press the X on the top right of the window or click outside the modal window.
-      </p>
-    </div>
-    </div>
-  </div>
-</div>
+<p class="lead">A modal view is a child window to a main window. Modal views are used to draw a user's attention to an issue or suggestion and will disable interaction between the user and main window until the modal view is dismissed.</p>
 
 <div class="container-fluid">
   <div class="row">
@@ -76,9 +59,31 @@ contributors:
 
               <h3>Typical Appearance</h3>
 
-              <blockquote>If a component is sufficiently widespread that it takes on a recognizable look across multiple platforms,
-                provide it here. If its appearance varies extremely widely, say so and direct the reader to platform-specific
-                instances.</blockquote>
+              <blockquote>Generally speaking, a modal view will appear as a dialogue box in the center of a window or application and prompt the user with a choice, requiring the selection of a decision through a button or an exit action.</blockquote>
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Modal View Example
+              </button>
+
+              <div class="modal fade" id="myModal" role="dialog" data-backdrop="static">
+                <div class="modal-dialog modal-dialog-center modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header"> 
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h class="modal-title">
+                        This a Modal View.
+                      </h>
+                    </div>
+                    <div class="modal-body">
+                    <p>
+                      To close this window, press the X on the top right of the window.
+                    </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -98,11 +103,10 @@ contributors:
               <img src="giphy.gif" alt="Image Missing" style="width:480px;height:248px;">
 
               <blockquote>
-                <p>If a component is sufficiently widespread that some form of typical behavior can be described, describe it
-                  here. As with the “Typical Appearance” section, if there is no such consistent behavior, say as much and direct the
-                  reader to the platform-specific sections.</p>
+                <p>Modal views typically prompt the user to perform an action before allowing the user to continue interacting with said window or application.</p>
 
-                <p>Helpful subsections include:</p>
+                  <p>Modal views will usually be prompted when a window or application requires the user’s attention before continuing, such as when a user is able to update their system or if the window chooses to warn the user about committing an action. Modal views are also used by websites to inform the user about logins, advertisements, updates to the site, etc.</p>
+      
               </blockquote>
             </div>
           </div>
@@ -172,57 +176,95 @@ contributors:
           <div class="row">
             <div class="col-lg-12">
 
-              <h4>Events</h4>
+              <h3>Events</h3>
 
-              <blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-                highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+              <div class="panel-group" id="event-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event1">appear</a>
+                    </h3>
+                  </div>
+                  <div id="event1" class="panel-collapse collapse">
+                    <div class="panel-body">One of two main events required of any modal views. Modal views are triggered often by the user perform an action or the system requiring a task to be completed by the user. When the view is trigger a modal window will appear on the screen of the user.</div>
+                  </div>
+                </div>
 
-              <p>The most relevant button event is the <code>click</code>. A <code>click</code> event indicates that the user has
-                triggered the button. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly
-                within the button’s bounds.</p>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event2">disappear</a>
+                    </h3>
+                  </div>
+                  <div id="event2" class="panel-collapse collapse">
+                    <div class="panel-body">The second main event required of a modal view. A modal view disappears after a user performs a task required by the view or if the user closes the window through an exit action.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event3">key-esc</a>
+                    </h3>
+                  </div>
+                  <div id="event3" class="panel-collapse collapse">
+                    <div class="panel-body">A user is sometimes able to leave a modal window without entering any input or selecting an option.  Users can typically press the esc key perform this function.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event4">key-enter</a>
+                    </h3>
+                  </div>
+                  <div id="event4" class="panel-collapse collapse">
+                    <div class="panel-body">Once a user has inputted a correct string into a text box or selected an option on the modal view, users can then usually press a submit type button on the modal view pr press the enter key to leave the modal view and complete the task asked by the modal view.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event5">string input</a>
+                    </h3>
+                  </div>
+                  <div id="event5" class="panel-collapse collapse">
+                    <div class="panel-body">On many systems requiring passwords, users will be prompted with a modal window and expected to fill in string input onto a text box to close the modal view.</div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event6">click</a>
+                    </h3>
+                  </div>
+                  <div id="event6" class="panel-collapse collapse">
+                    <div class="panel-body">The user can select an option or press on a button to have the window, application or system perform a certain action. Clicking may also allow for the selecting of multiple actions to be decided upon.</div>
+                  </div>
+                </div>
+
+              </div>
 
               <h4>State Diagram</h4>
 
               <blockquote>
-                <p>A state diagram indicating the actions and states of a user interface component.</p>
-
-                <p>This is most likely an image. Bonus props if you use SVG.</p>
-
-                <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
-                  usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
-                  however, may have more activities than the “public” events that can be reported by a component.</p>
+                The typical flow of a modal window appearing on a user’s screen is as follows: 
+                <p></p>
+                <ul class="list-group">
+                  <li class="list-group-item">A user will perform an action that prompts the modal window’s popup.</li>
+                  <li class="list-group-item">The modal window will ask for user input.</li>
+                  <li class="list-group-item">If the user is able and decides to, the user may close the view.</li>
+                  <li class="list-group-item">Else the user may perform the task asked by the window and thereby closing the window by either pressing the enter key or a submit button provided by the modal.</li>
+                  <li class="list-group-item">The user is then returned to the main, parent, window. </li>
+                </ul>
               </blockquote>
 
-              <p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
-                viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
-                it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
-                state means that a user <em>cannot</em> do so.</p>
-
-              <p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
-                implementations, but in general they are:</p>
-
-              <ul>
-                <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
-                  change the button’s appearance. This provides a form of feedback that states that the button will respond if
-                  additional activity is performed.</li>
-
-                <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
-                  the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
-                  from this state, in case the user changes his or her mind in mid-action.</li>
-              </ul>
+              <img src="ModalView.png" class="img-thumbnail" alt="State-Diagram" class="img-responsive">
 
               <h4>Component in Action</h4>
 
-              <blockquote>
-                <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
-
-                <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
-              </blockquote>
-
-              <p class="text-center">
-                <button class="btn btn-default">Standard Bootstrap Button</button>
-                <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
-              </p>
             </div>
           </div>
         </div>
