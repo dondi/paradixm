@@ -1,0 +1,63 @@
+<mxGraphModel>
+  <root>
+    <Diagram label="My Diagram" href="http://www.jgraph.com/" id="0">
+      <mxCell/>
+    </Diagram>
+    <Layer label="Default Layer" id="1">
+      <mxCell parent="0"/>
+    </Layer>
+    <Roundrect label="3D View" href="" id="2">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="80" y="50" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Roundrect label="2D View" href="" id="3">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="370" y="50" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Connector label="Click 2D/3D View Toggle" href="" id="4">
+      <mxCell edge="1" parent="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="160" y="60" as="sourcePoint"/>
+          <mxPoint x="370" y="60" as="targetPoint"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="Click 2D/3D View Toggle" href="" id="5">
+      <mxCell edge="1" parent="1" source="3" target="2">
+        <mxGeometry relative="1" as="geometry">
+          <Array as="points">
+            <mxPoint x="265" y="80"/>
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Roundrect label="Satellite View" href="" id="6">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="80" y="150" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Roundrect label="Satellite View" href="" id="9">
+      <mxCell style="rounded" vertex="1" parent="1">
+        <mxGeometry x="370" y="150" width="80" height="40" as="geometry"/>
+      </mxCell>
+    </Roundrect>
+    <Connector label="Click View Style Toggle" href="" id="10">
+      <mxCell edge="1" parent="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="160" y="160" as="sourcePoint"/>
+          <mxPoint x="370" y="160" as="targetPoint"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+    <Connector label="Click View Style Toggle" href="" id="11">
+      <mxCell edge="1" parent="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="370" y="180" as="sourcePoint"/>
+          <mxPoint x="160" y="180" as="targetPoint"/>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+  </root>
+</mxGraphModel>
