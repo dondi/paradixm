@@ -39,7 +39,7 @@ contributors:
 <div class="row">
   <div class="col-sm-12">
 
-    <h3>Typical Appearance</h3>
+    <h2>Typical Appearance</h2>
     <!-- Used information from this stackoverflow http://stackoverflow.com/questions/10591422/bootstrap-carousel-image-doesnt-align-properly */-->
     <style> 
       
@@ -76,21 +76,21 @@ contributors:
         <div class="item">
           <img style="height: 300px; width:auto;" align="middle" src="images/icon_selection.png" alt="icon selection screenshot">
           <div class="carousel-caption">
-            <p> Icon Selection on OSX </p>
+            <p> Icon Selection on OS X </p>
           </div>
         </div>
 
         <div class="item">
           <img style="height: 300px; width:auto;" align="middle" src="images/menu_selection.png" alt="menu selection screenshot">
             <div class="carousel-caption">
-              <p> Menu Selection on OSX </p>
+              <p> Menu Selection on OS X </p>
             </div>
         </div>
 
         <div class="item">
           <img style="height: 300px; width:auto;" align="middle" src="images/text_selection.png" alt="text selection screenshot">
           <div class="carousel-caption">
-            <p> Text Selection on OSX </p>
+            <p> Text Selection on OS X </p>
           </div>
         </div>
 
@@ -118,7 +118,7 @@ contributors:
           </ul>
         </div>
 
-    <h3>Typical Behavior</h3>
+    <h2>Typical Behavior</h2>
     <p>
       Since selection of text, web elements, files, images, etc. is a relatively common task, there is a consistent behavior associated with it across multiple platforms.
       When a user selects an item, it is usually highlighted in a different color; most major platforms and operating systems as of 2016 utilize a blue-on-white color scheme by default, though some allow users to configure personalized color schemes or install themes that alter many such aesthetic features.
@@ -129,25 +129,49 @@ contributors:
       With text, for example, the cursor turns into a specialized text cursor (the appearance of which depends upon both the platform and software, but typically resembles a capital Roman letter "I") as the mouse hovers over it.
       When the user left-clicks and drags the mouse over the desired text to select, the choosen characters highlight in a different color.
       On mobile platforms, a long press will usually highlight the entire selected word by default, with "handle" tooltips appearing at each end of the selection for further adjustment.
-      For items such as folders and files or apps, the user will typically see a dim highlight encapsulating items as they mouse or hover over them.
-      If the user chooses to select an item, clicking on or touching it causes the dim highlight to change to a more opaque one, signifying the selection as a focus of attention.
+    </p>
+    <p>
+      For items such as folders and files or apps, the user will typically see a dim highlight encapsulating items as they mouse or hover over them. Details about the file or folder (e.g. size, file type, and other relevant metadata) frequently appear as a tooltip as the user hovers over an item on many desktop platforms.
+      If the user chooses to select an item, clicking on or touching it causes the dim highlight to change to a more opaque one, signifying the selection as a focus of attention. In most desktop operating systems, it is also possible to click and drag the mouse across a folder area to highlight multiple files or folders, but this is a relatively less common means of multiple selection.
     </p>
 
     <p>
-      There are also different methods of selecting, notably when paired with the Shift and Ctrl/Command (&#8984;) keys on a computer keyboard.
+      The more common methods of multiple selecting are paired with the Shift and Ctrl/Command (&#8984;) keys on a computer keyboard.
       When using the Shift key while selecting, the user can click first on the point to begin the selection, and then use a second click to signify where to end the selection.
       When using the Ctrl or Command key while selecting, the user can click on separate items to group them as a single selection.
     </p>
 
     <h4>Events</h4>
-    <div class="well">
-      <p>
-        A selecting event is simply the process of clicking or drag-clicking text or items on the screen.
-      </p>
-      <p>
-        Commonly there are to select one item, the user would click on desired item and thus the item is selected.
-        However if the user wanted to select multiple items, the user would have to drag-click and highlight the section of text or items the wish.
-      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="well"> 
+          <p> <b> Text selection </b>: When selecting text, the major low-level actions are clicking, dragging, and letting go. 
+            <ul>
+              <li>
+                Click: The click signifies the beginning of the selection. As the user is hovering over the text, the mouse cursor will then turn into a text cursor. This is usually a visible sign that a user is able to make a text selection within the area the cursor is in. After the user has made their selection, clicking again without holding down either the Ctrl/Command or Shift keys  will unselect that particular item.
+              </li>
+
+              <li>
+                Dragging: From the starting point (the intial click, in this case), the user drags along the text without releasing the mouse button to the endpoint of the text they would like to select. Whatever text is covered during this dragging operation is selected.
+              </li>
+
+              <li>
+                Letting go: When the user reaches the end of their selection, letting go of the mouse button signifies that that is the end of what they wish to select, and the text that they selected is highlighted - typically in blue, but colors vary by platform and by specific software application or color palette. It is at this point that the user can do whatever action they wish to perform with the text: copying it to the clipboard, pasting over it, using it as a search term in Google, etc.
+              </li>
+            </ul>
+          </p> 
+        </div>
+      </div>
+      <div class= "col-sm-6">
+        <div class="well"> 
+          <p> <b> File selection</b>: File selecting is very similar to the text selection except the clicking action itself is emphasized.</p> 
+          <ul>
+            <li>
+              Click: When the user clicks on the item or icon that they would like to select, that item is highlighted in much the same fashion as text to signify that it has been selected. On most computers, more items may be selected by holding down the Shift or Ctrl/Command keys. When a file is selected, clicking on a space or item within view other than another item of the same type will cause the item to become deselected.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <h4> State Diagram <h4> 
@@ -203,15 +227,14 @@ contributors:
         <div class="col-sm-6">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/97Wiwf_hkjM" frameborder="0" allowfullscreen></iframe>
         </div>
-      </div>
-      <div class="row">
+
         <div class="col-sm-6">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/AdMuZses96Q" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
 
-    <h3> Variants <small> How it varies across domains and modes </small> </h3>
+    <h2> Variants <small> How it varies across domains and modes </small> </h2>
     <p>
       Though the behavior of selection is very similar in multiple settings, there are different implementations depending on the system state and platform.
       In a typical computer interface, for example, selecting is done primarily by means of clicking and dragging, whereas, for touch devices, selecting is done primarily with taps, holds, and drags.
@@ -277,7 +300,7 @@ contributors:
     </div>
   </div>
 
-  <h3> Priority Metrics <small> Selecting and its Usability Metrics </small> </h3>
+  <h2> Priority Metrics <small> Selecting and its Usability Metrics </small> </h2>
     <p>
       Selecting is a basic and universal task a user can perform on almost all user interfaces today: users frequently need to be able to select objects or text in order to perform many important functions, and the ability to move quickly and seamlessly on to the next action is important for usability. Because of this, learnability, memorability, and errors are very important metrics: 
     </p>
@@ -293,7 +316,7 @@ contributors:
       </li>
     </ul>
   
-  <h3>Key Characteristics <small> What do all great selection frameworks have? </small> </h3>
+  <h2>Key Characteristics <small> What do all great selection frameworks have? </small> </h2>
     <p>
       There are a few elements that should go into any good selecting process:
 
@@ -326,130 +349,133 @@ contributors:
 
   <h4>Shortcuts</h4>
     <p>
-      Though there is an issue of unnatural mapping for the inexperienced user, shortcuts and commands that allow for more advanced functionality can significantly improve the efficiency of selecting for knowledgeable users. Shortcuts should be added to allow these more experienced users to do more with the system, such as by selecting a large amount of objects at once. The "CTRL + A" keyboard command is a common shortcut used to "select all" of the items or content in a given folder, page, document, etc.
+      Though there is an issue of unnatural mapping for the inexperienced user, shortcuts and commands that allow for more advanced functionality can significantly improve the efficiency of selecting for knowledgeable users. Shortcuts should be added to allow these more experienced users to do more with the system, such as by selecting a large amount of objects at once. The "Ctrl + A" keyboard command is a common shortcut used to "select all" of the items or content in a given folder, page, document, etc.
     </p>
 
-  <h3>Platform-Specific Instances</h3>
-  <h4>Windows 7</h4>
-  <div class="well">
-    <p>
-      Typically in Windows 7, selecting is a very simple task. It supports the three variants of selecting that are detailed above. In the explorer, the user can select through any folder structure, any type of file, and text in any text editor. Windows 7 default color to signify if something is highlighted is blue. However on the desktop a selection of a folder or file is highlighted with a clear outline. These colors are specific to Windows and their operating system. An application that is run in Windows could have a different color to signify a selection. Above in the typical appearances is where some selection is done in Windows 7. Also the addition functions of Shift and Ctrl are allowed in Window 7 where Shift selects from a start and end, while Ctrl allows multiple selections of single targets.
-    </p>
-  </div>
+  <h2>Platform-Specific Instances</h2>
+  <div class="row">
 
-  <h4>Android ~ 4.4.4 ~ Kitkat</h4>
-  <div class="well">
-    <p>
-      Typically in Android, selecting is different than operating systems like Windows and OSX. It does support the three variants that are explained above. However since there is no mouse the user has to rely on touch. To select a single target, usually the user would have to press and hold until more option pop up. To select multiple targets is the same process however the user would just select more. Selecting on Android 4.4.4 is very seamless and self explanatory. The user knows when something is selected because there more options and menus will pop up in response to the long press.
-    </p>
-    <div class="container">
-      <ul class="row" id="row-pictures">
-        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/fileSelectAndriod.jpg" alt="File Selection for Android"></li>
-        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/pictureSelectAndriod.jpg" alt="Picture Selection for Android"></li>
-        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/textfieldSelectAndriod.jpg" alt="Text Field Selection Android"></li>
-        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/textSelectAndriod.jpg" alt="Text Selection Android"></li>
-      </ul>
+      <div class="col-sm-6">
+        <div class="well">
+          <h3>Windows 7</h3>
+          <p>
+             In Windows 7, selecting is typically a very simple task. It supports the three variants of selecting that are detailed above. The user can select any folder structure or type of file in the file explorer, and text in any text editor or web browser.
+          </p>
+          <p>
+            The default color in Windows 7 to signify that something has been selected is blue, but on the desktop, selecting a folder or file highlights it with a clear outline. These two colors are specific to operating system-level tasks, however: applications running in Windows could and do use different colors to signify a selection.
+          </p>
+          <p>
+            Windows has long supported the additional functions of Shift and Ctrl to allow selection of multiple targets, where Shift selects from a start to an end, while Ctrl allows multiple selections of single targets. The Typical Appearance section above shows a few specific examples of selection in Windows 7.
+          </p>
+        </div>
+      </div>
+
+    <div class="col-sm-6">
+      <div class="well">
+        <h3>Legacy versions of Windows</h3>
+        <h4>Vista, XP, 2000, 98/95, 3.1 ...</h4>
+        <p>
+          The overall behavior (if not the look and feel) of current versions of Windows owes much to its forebears. As such, selection actions and even much of the aesthetic element aren't appreciably different today than they were in many previous versions of Windows.
+        </p>
+        <p>
+          Both the function and the look and feel of selection in Windows 7 is inherited virtually unchanged from Vista, which was in-turn inherited mostly unchanged from XP, and so on. The same actions described in the section on Windows 7 are possible in the same places, with the same blue highlighted feedback (although the specific shade used is a darker ocean blue in versions prior to Vista: see example images), in versions of Windows going back at least to 98/95.
+        </p>
+        <p>
+          Other differences in the graphical user interface may alter the look and feel in subtle ways (for example, as graphics processing at the level of the operating system in the 1990s didn't allow for much translucency, the highlighting effect is noticeably more opaque: see examples), but functionality is effectively the same. Shift and Ctrl as modifiers for multiple targets are both supported for more powerful functionality as far back as Windows 3.1.
+        </p>
+        <p>
+          <img src="images/win_xp_select.gif" alt="File folder selection in Windows XP">
+          <img src="images/win9x_me.png" alt="Desktop selection in Windows 95">
+        </p>
+      </div>
     </div>
+
+    <div class="col-sm-12">
+      <div class="well">
+        <h3>Android ~ 4.4.4 ~ Kitkat</h3>
+        <p>
+          Typically in Android, selecting is different than desktop operating systems like Windows and OS X. It does support the three variants that are explained above, however, since there is no mouse, the user has to rely on touch.
+        </p>
+        <p>
+          To select a single target, the user would usually have to press and hold ("long press") until more a context menu pops up with more options. Selecting multiple targets is largely the same process, with the user simply selecting more items after the first. The implementation of the selection mechanism on Android 4.4.4 makes extensive use of feedback: the user knows when something is selected because the view will change as more options and menus pop up in response to the long press.
+        </p>
+        <div class="container">
+          <ul class="row" id="row-pictures">
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/fileSelectAndriod.jpg" alt="File Selection for Android"></li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/pictureSelectAndriod.jpg" alt="Picture Selection for Android"></li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/textfieldSelectAndriod.jpg" alt="Text Field Selection Android"></li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-reponsive img-rounded" src="images/textSelectAndriod.jpg" alt="Text Selection Android"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-6">
+      <div class="well">
+        <h3> Mac OS X: Yosemite</h3>
+        <h4> File Selection </h4>
+        <img src="images/file_selection.png" class="img-responsive" alt="file selection in window">
+
+        <h4> Icon Selection </h4>
+        <img src="images/icon_selection.png" class="img-responsive" alt="icon selection in window">
+
+        <h4> Menu Selection </h4>
+        <img src="images/menu_selection.png" class="img-responsive" alt="menu selection in window">
+
+        <h4> Text Selection </h4> 
+        <img src="images/text_selection.png" class="img-responsive" alt="text selection in window">
+
+        <ul>
+          <li>Selecting on a Mac with OS X is very similar to the general overview described as above.</li>
+          <li>Users can change the highlight color in System Preferences > General Settings</li>
+          <li>Apple's Human Interface Guidelines for OS X also highlight such general key characteristics as:</li>
+          <ul>
+            <li>Direct Manipulation: As the user selects text, it is always visible, even while dragging and dropping.</li> 
+            <li>User Control: The user is the one intiating the actions.</li>
+            <li>Feedback and Communication</li> 
+          </ul>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="well"> 
+        <h3> iOS iPhone 4S </h3>
+        <p> For iOS, selecting is a little tricker. Unlike on a laptop, where a user is able to click and drag, the user must use combinations of different taps, holds, and drags in order to select different items. Another key difference with iOS is that the only selectable items are text and images. Unlike on computers, there are no selectable files, but rather apps that one taps to open. </p>
+        <h4> Appearance</h4>
+        <p>User long presses on text, and a magnifying glass-like object appears showing where the text selector is. </p>
+        <img src="images/iphone_textSelection1.png" style= "height: 50%; width:50%;" class="img-responsive" alt="text selection in notes image 1">
+        <p> After releasing hold, an option for Selecting and other options appear, as seen in the image below.</p>
+        <img src="images/iphone_textSelection2.png" style= "height: 50%; width:50%;"class="img-responsive" alt="text selection in notes image 2">
+        <p>After tapping on select, the user is able to tap and drag either ends of the selection tooltips (the blue vertical bars) and move them around to make their selection</p>
+        <img src="images/iphone_textSelection3.png" style= "height: 50%; width:50%;"class="img-responsive" alt="text selection in notes image 3">
+        <p> When there is no more action, a dialog menu pops up asking for what action the user would like to do next.</p>
+        <img src="images/iphone_textSelection4.png" style= "height: 50%; width:50%;"class="img-responsive" alt="text selection in notes image 4">
+        <p> Though the actions are different, the events and priority metrics are the same. </p>
+        <p> Also, as with the Human Interface Guidelines for OS X, the iOS guidelines highlight similar key characteristics: </p>
+        <ul>
+          <li> Feedback: the use of slight highlights whenever a user taps or uses gestures </li>
+          <li> Direct Manipulation </li> 
+          <li> User Control </li> 
+        </ul>
+      </div> 
+    </div> 
   </div>
 
 </div>
 
 <hr>
 
-<div class="container">
+<div class="container">	
 
 
-<!-- Boundary between reports -->
-
-<h4> Events </h4>			
-<div class="row"> 	
-	
-	<div class="col-sm-6">
-		<div class="well"> 
-			<p> <b> Text selection </b>: When text-selecting the major actions is clicking, dragging, and letting go. 
-				<ul>
-					<li> Click: The click signifies the beginning of the selection. As the user is hovering over the text, the mouse cursor will then turn into a text cursor. That is usually the sign that a user is able to do a text selection. Another event that occurs due to clicking is after the user has made their selection if they click without holding down the command or shift keys they will unselet that particular item. </li>
-
-					<li> Dragging: From the starting point, the user drags along the text to the last point of where they would like to select. Whereever the mouse hovers during this dragging state is what is selected. </li> 
-
-					<li> Letting go: When the user reaches the end of their selection, by letting go they signify that that is the end of what they choose. At this point the cursor now turns back into a normal mouse cursor and the text that they would like to select is in blue. It is from this step that the user can do whatever action they would like with the text, whether that is copying it to the clipboard etc. </li>
-				</ul>
-			</p> 
-		</div>
-	</div>
-	<div class= "col-sm-6">
-		<div class="well"> 
-			<p> <b> File selection</b>: File selecting is very similar to the text selection except the major event is clicking.</p> 
-			<ul>
-				<li> Click: When the user clicks on the icon that they would like, that is when the item highlights and it signifies that it is selected. For most computers, when holding down shift and command keys, more items can be selected. When a file is seleected, if a user clicks on an area that is not another file or the same sort of icon, it will deselect the selection. </li>
-			</ul>
-		</div>
-	</div>
-</div>
-
-
-<h2> Platform Specific Instances </h2> 
-<div class="row"> 
-	<div class="col-sm-6">
-		<div class="well">
-			<h3> Mac OSX: Yosemite</h3>
-			<h4> File Selection </h4>
-			<img src="images/file_selection.png" class="img-responsive" alt="file selection in window">
-
-			<h4> Icon Selection </h4>
-			<img src="images/icon_selection.png" class="img-responsive" alt="icon selection in window">
-
-			<h4> Menu Selection </h4>
-			<img src="images/menu_selection.png" class="img-responsive" alt="menu selection in window">
-
-			<h4> Text Selection </h4> 
-			<img src="images/text_selection.png" class="img-responsive" alt="text selection in window">
-
-
-			<ul>
-				<li>Selecting is very similar to the general overview described as above. </li>
-				<li>Users can change the highlight color by going into the System Preferences > General Settings </li>
-				<li>Apple's Human Interface Guidelines for OSX also highlight the general key characteristics such as: </li>
-				<ul>
-					<li>Direct Manipulation: As the user selects the text, it is always visible including dragging and dropping text. </li> 
-					<li>User Control: The user is the one intiating the actions being done such as selecting etc.</li>
-					<li>Feedback and Communication</li> 
-				</ul>
-
-			</ul>
-		</div>
-	</div>
-
-	<div class="col-sm-6">
-		<div class="well"> 
-			<h3> iOS iPhone4s </h3>
-			<p> For iOS, selecting is a little tricker. Unlike on a laptop where a user is able to click and drag, the user must use a combinations of different taps, holds, and drags in order to select different items. Also for iOS the only selection items are texts and images. Unlike computers, there are no files, instead they are apps that one must tap to open. </p>
-			<h4> Appearance</h4>
-			<p>User clicks and holds down in front of text and a magnifying like glass appears showing where the text selector is. </p>
-			<img src="images/iphone_textSelection1.png" style= "height: 50%; width:50%;" class="img-responsive" alt="text selection in notes image 1">
-			<p> After releasing hold, an option for Selecting and other options appear, as seen in the image below.</p>
-			<img src="images/iphone_textSelection2.png" style= "height: 50%; width:50%;"class="img-responsive" alt="text selection in notes image 2">
-			<p>After tapping on select, the user is able to tap and drag either ends of the selecting blue vertical bars and move them around to make their selection</p>
-			<img src="images/iphone_textSelection3.png" style= "height: 50%; width:50%;"class="img-responsive" alt="text selection in notes image 3">
-			<p> When there is no more action, a dialog menu pops up asking for what action the user would like to do next.</p>
-			<img src="images/iphone_textSelection4.png" style= "height: 50%; width:50%;"class="img-responsive" alt="text selection in notes image 4">
-			<p> Though the actions are different, the events as well as the Priority metrics are the same. </p>
-			<p> Also very similary to the Human Interface Guidelines for OSX, the iOS guidelines highlight similar key characteristics: </p>
-			<ul>
-				<li>Feedback: With the use of slight highlights whenever a user taps or uses gestures </li>
-				<li> Direct Manipulation </li> 
-				<li> User Control </li> 
-		    </ul>
-		</div> 
-	</div> 
-</div>
 <h3> Resources </h3> 
 <p> 
-	<a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW1">Apple OSX Human Interface Guidelines </a>
+	<a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW1">Apple OS X Human Interface Guidelines </a>
 </p> 
 <p>
 	<a href="https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/Principles.html#//apple_ref/doc/uid/TP40006556-CH4-SW1">Apple iOS Human Interface Guidelines</a>
 </p>
-
 
 </div>
