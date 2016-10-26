@@ -1,0 +1,11 @@
+Scraps For Paradixm Webpage
+
+<h3>Typical Appearance</h3>
+		<p>Although there are many ways to switch between tasks, most operating systems have a similar feature that portrays all currently open programs (or their respective icons) in thumbnails across the screen. They typically prioritize the screen, displaying themselves in front of any and all open windows. Please click <a href="#pSpecific"> here</a> to see examples on different operating systems. 
+
+		<br><br>Example of a desktop task switcher (Windows 10)<br>
+		<img src="img/windowstask.png" style="width:100%; height:auto;" alt="Windows 10 Task Switcher" >
+		<br><br>Example of a mobile task switcher (iOS 9)  <br>
+		<iframe src="http://i.giflike.com/embed/zHXwTLz" width="236.6" height="420" scrolling="no" alt="iOS 9 Task Switcher"></iframe><!-- Commented out windows phone task switcher for now, once css will be working with w/10 for proper formatting -->
+		<!-- <img src="windowsPhoneTaskSwitcher.png" style="width:44%; height:auto;" > -->
+		</p>
