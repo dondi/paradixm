@@ -17,6 +17,177 @@ contributors:
 ---
 <p class="lead">Menus are probably the second most used components on a given graphical interface after buttons.</p>
 
+<div class="row">
+          <div class="col-sm-12">
+
+        <h3>Appearance</h3>
+
+        <blockquote>
+            <p>Menus have been the go-to method for displaying (and hiding) lists of items and buttons for decades.</p>
+
+              <div class="col-sm-12">
+
+                  <div class="col-sm-6">
+                <img src="Mac_FileMenu.png" class="img-responsive" alt="Responsive image">
+              </div>
+
+              <div class="col-sm-6">
+                <img src="Windows_start_menu.png" class="img-responsive" alt="Responsive image">
+              </div>
+
+          </div>
+          <div class="col-sm-12">
+            <p><br><br>And like these examples, they tend to follow the standard form of having items listed from top to
+                bottom with anywhere from 1 to around 25 items to choose from.</p>
+                
+
+            <p>Of course, these items can often be menus themselves within other menus.<br></p>
+
+            <br>
+          </div>
+            <img src="Mac_menu_in_menu.png" class="img-responsive" alt="Responsive image">
+
+        </blockquote>
+
+        <h3>Where do you find them?</h3>
+            <blockquote>
+                <p>Menus are usually located on the "edges" of graphical interfaces. For example, the Mac OS X
+                graphical interface provides menus at the top of the Desktop screen that are always available, yet out of the way
+                from high-activity portions of the screen.
+              </p>
+
+              <p>This pattern seems to extend to application or browser windows as well.</p>
+            </blockquote>
+                  <div class="col-sm-12">
+                  <div class="col-sm-6">
+                  <h4>Microsoft Word</h4>
+                  <img src="Word_menu.png" class="img-responsive" alt="Responsive image">
+                  <br>
+                  <br>
+                </div>
+                <div class="col-sm-6">
+                  <h4>Google Design Guidelines Website</h4>
+                  <img src="Google_design_menu.png" class="img-responsive" alt="Responsive image">
+                </div>
+                </div>
+
+                <blockquote>There are also menus that remain hidden unless invoked by the user, such as the menu that
+                    appears when a user right-clicks (or ctrl + click in the case of Mac OS X).</blockquote>
+
+                <div class="col-sm-12">
+
+                  <div class="col-sm-6">
+                <img src="Mac_control_click_menu.png" class="img-responsive" alt="Responsive image">
+                <br>
+                <br>
+              </div>
+
+              <div class="col-sm-6">
+              <img src="Windows_right_click_menu.png" width="800" height="800" class="img-responsive" alt="Responsive image">
+              </div>
+              
+          </div>
+                
+        <h3>Key Characteristics and Best Practices</h3>
+        <blockquote>The following attributes for menus across platforms have allowed much more choice and accessibility to
+        be included in a single page (or single interface), as opposed to requiring users to navigate primarily using menus by constantly switching
+        to different windows or screens each time they need to access a new list of items to choose from.</blockquote>
+
+        <h4>Behavior and Feedback</h4>
+
+          <p>On most platforms, menus are usually accessed by first clicking on a button.The menus then expand to reveal the items they hold. On most platforms, users are also able to hover over to a different menu button and, without clicking, expand those other menus as well after havingalready clicked on one. This includes menu buttons within the menu itself. The Windows design guidelines call this "cascading," and
+          it is used a method to keep menu short. Small side-facing arrows are placed next to the labels of items that are cascadable.</p>
+          <p>To exit a menu on most platforms, the user can click outside of the open menu to close it. The menu also usually disappears
+            when the user selects one of its items.</p>
+          <p>When an item is selected, the menu indicates this action with a flashing highlight. Though, this usually happens so fast
+            that the user's eyes have likely moved to the newly opened menu or window triggered from the button rather than notice
+            the menu's indication.</p>
+          <p>As for most components on a graphical interface, feedback to the user is a crucial aspect, specifically for when the user is attempting to perceive the system state and evaluate its outcomes (as outlined by Don Norman's Stages-of-Action Model). 
+          Menus usually do have indicators, such as grayed out, unclickable items, to indicate which state the menu is in.</p>
+
+        <h4>Labeling</h4>
+
+        <p>The OS X, Windows, and Google design guidelines all recommend that menu titles should be contextualized so that users can generally know what a menu contains before they open it. This way users don't have to spend extra time exploring after having clicked on a menu with the wrong content. Apple adds to these contraints by saying that labels should be as short as possible without sacrificing clarity, and also 
+          suggest that icons should not be used as menu labels (nor should a mix of labels and icons) because users can confuse them with
+          "menu bar extra."</p>
+        <p>Each of the guidelines also set a rule that if three or more labels/items have the same word, that is when developers should choose
+          to cascade those items under a general item. (i.e. Insert Line Before, Insert Line After, Delete Word Forward, Delete Word Backward, and so on can all be cascaded under the general item "Text" to imply they are text editing commands.)
+
+        <h4>Placement</h4>
+
+        <p>Google recommends that when it comes to behaviors like expanding, menus should appear on top of the elements they are emitting from
+          so as to not remove it from its context. We can clearly see from OS X and Windows interfaces, however, that their menus often appear below or next to the element that was just clicked. Menus should not be a primary method for navigation in an app.
+
+        <h4>Items</h4>
+
+        <p>The arrangement of items within a menu is just as crucial as the menu itself. Both OS X and Windows design standards make use of <em>grouping</em> in their menus. From the previous images, we can see that there are thin lines dividing the list into groups of interdependent attributes. According to their respective guidelines, developers should generally avoid combining actions and attributes in the same group.
+
+        <p>"Arranging menu items in logical groups helps users locate commands quickly. As you figure out how to group menu items, it often works well to refer to the user’s mental model of your app’s task. To learn more about this concept, see <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW3">Mental Model</a>
+        (<a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/MenuGrouping.html#//apple_ref/doc/uid/20000957-CH25-SW1">developer.apple.com</a>) </p>
+
+        <p>
+        Additionally, OS X guidelines recommend placing the most frequently used items in groups at the top of the menu. Of course, the key
+        here is to not arrange strictly by frequency of use, but by grouping items first and then arranging by frequency.
+        </p>
+
+
+        <h3>Priority Metrics</h3>
+
+            <ul>
+              <li>Learnability</li>
+              <li>Efficiency</li>
+              <li>Memorability</li>
+              <li>Errors</li>
+              <li>Satisfaction</li>
+            </ul>
+
+        <blockquote>The five <em>usability metrics</em> outlined by Jakob Nielsen in his book, <em>Usability Engineering</em> (page 26),
+          are of critical importance to menu components on interfaces. For example, we can imagine how much less effective software development
+          in general would be had these metrics not been taken into account in the design of file Directories, which are crucial representations
+          of menus that allow users to organize and structure data.
+        </blockquote>
+
+        <p>A majority of menu components represent a list that someone might draw on paper with items to keep track of or investigate.
+          These specific representations, in this respect, are highly learnable for, say, someone who has never used a computer before. It is
+          in fact important that users are not hindered by a complex arrangement of items (Learnability).
+
+          And given that menus are so common (and crucial to the organization of a graphic interface), it is important that users can quickly learn
+          when, where, and how to access them so that there won't be too much time spent simply trying to locate items or functions in an application (Efficiency).</p>
+
+        <p>Current menu designs are extremely memorable as well because they are organized as they would be on paper, such as the table of contents at the beginning of a book (Memorability). Also, it is probably best that menus be fairly simple to access and use and have adequate feedback features for users to reduce the number of errors with using them (Errors). Menus might not be a suitable element for measuring
+        user satisfaction since it may often be taken for granted as a "component" in the system to begin with (Satisfcation). Google's design
+        guidelines mention how users don't usually notice the menu component until it malfunctions or the user makes an error.</p>
+
+        <br>
+        <h4>State Diagram for a Standard Menu</h4>
+
+            <blockquote>
+              <p class="text-center">
+              <img src="Menu_state_diagram.png" width="600" height="600" class="img-responsive" alt="Responsive image">
+            </p>
+            </blockquote>
+
+            <p>Standard menus generally have 2 states: <code>Closed</code> and <code>Open</code>. The user can open a closed menu by
+              clicking on the menu title (which can be considered a button) and close a menu by clicking outside of it or by clicking on
+              one of its items (which could potentially reinitiate the cycle of opening and closing a menu if the item is a submenu).
+            </p>
+            <p>
+              Hover menus can be one variation of these states, but the only thing that would probably change is that instead of clicks,
+              the events that trigger the opening or closing of a menu is whether the mouse is over the menu or not.
+            </p>
+
+
+         <div class="col-sm-12">
+
+            <h4>Events</h4>
+
+            <blockquote>An example of event handling can be found on the Windows Dev Center website, which provides an API with methods and the respective events that they handle (for Windows
+              specifically). Menus implement a method called addEventListener to track user interactions with the menu object. Some of the events that it does handle include beforeshow, beforehide, aftershow, and afterhide. For example, the aftershow event occurs immediately after
+              the menu is displayed on the interface. The API itself defines menus in the following manner:
+              <p><br>"Displays a lightweight popup that is used to temporarily show menu commands related to what the user is currently doing. You should only show a menu in response to a user tap or click. Unlike a MessageDialog, a menu is always dismissed when the user taps or clicks outside of it" (Windows Dev Center)</p>
+            </blockquote>
+
+
             <h4>Component in Action</h4>
 
             <blockquote>
@@ -243,6 +414,29 @@ contributors:
 
 </div>
 
+<h3>Platform-Specific Instances</h3>
+
+<blockquote>
+
+  <p>From the images of the directory menus, it can be observed that OS X breaks some of Windows' rules, such as using icons
+    to represent menu titles (i.e. the settings gear icon).</p>
+
+      <img src="Mac_Directory.png" width="600" height="400" class="img-responsive" alt="Responsive image">
+    
+</blockquote>
+<blockquote>
+  <p>In addition to there being hidden menus, there are even hidden menu items (described as "Dynamic Menu Items" in OS X guidelines) that can be seen if the user holds down the "alt option" key for Mac. For example, the file menu at the top of the Desktop interface (with no applications open) has some hidden items that are revealed when the "alt option" key is pressed while the menu is open.</p>
+
+  </blockquote>
+
+  <div class="col-sm-12">
+      <div class="col-sm-6">
+      <img src="Mac_FileMenu.png" class="img-responsive" alt="Responsive image">
+    </div>
+    <div class="col-sm-6">
+      <img src="Mac_FileMenu_Option.png" class="img-responsive" alt="Responsive image">
+    </div>
+</div>
 
 
 <h2>References</h2>
@@ -262,53 +456,6 @@ contributors:
 <p class="lead">One of the earliest ways of listing equivalent information, the menu displays information, one or more of which is to be selected to perform further action.</p>
 
 <h3>Typical Appearance</h3>
-          <div class="col-sm-12">
-
-        <blockquote>
-            <p>Menus have been the go-to method for displaying (and hiding) lists of items and buttons for decades.</p>
-
-              <div class="col-sm-12">
-
-                  <div class="col-sm-6">
-                <img src="Mac_FileMenu.png" class="img-responsive" alt="Responsive image">
-              </div>
-
-              <div class="col-sm-6">
-                <img src="Windows_start_menu.png" class="img-responsive" alt="Responsive image">
-              </div>
-
-          </div>
-          <div class="col-sm-12">
-            <p><br><br>And like these examples, they tend to follow the standard form of having items listed from top to
-                bottom with anywhere from 1 to around 25 items to choose from.</p>
-                
-
-            <p>Of course, these items can often be menus themselves within other menus.<br></p>
-
-            <br>
-          </div>
-            <img src="Mac_menu_in_menu.png" class="img-responsive" alt="Responsive image">
-
-        </blockquote>
-                <p>Menus are usually located on the "edges" of graphical interfaces. For example, the Mac OS X
-                graphical interface provides menus at the top of the Desktop screen that are always available, yet out of the way
-                from high-activity portions of the screen.
-              </p>
-
-              <p>This pattern seems to extend to application or browser windows as well.</p>
-            </blockquote>
-                  <div class="col-sm-12">
-                  <div class="col-sm-6">
-                  <h4>Microsoft Word</h4>
-                  <img src="Word_menu.png" class="img-responsive" alt="Responsive image">
-                  <br>
-                  <br>
-                </div>
-                <div class="col-sm-6">
-                  <h4>Google Design Guidelines Website</h4>
-                  <img src="Google_design_menu.png" class="img-responsive" alt="Responsive image">
-                </div>
-                </div>
 
 <blockquote>A menu is a list of options or actions to be chosen or performed. The typical menu is stacked vertically. That is to say that each item is listed from top to bottom, typically in some order.</blockquote>
 
@@ -427,70 +574,14 @@ Gridded menu system like the iPhone that it’s running on.</p>
   <p>A menu is typically presented for the purpose of selecting an action to perform, or selecting a particular item to use. </p>
   <p>The most relevant event on these platforms are the “click,” which tells it whether to advance deeper or retreat out of the app. Second would be to “scroll”, which moves the selector around to allow the user to “click” what they want to. </p>
 </blockquote>
-        <h4>Typical Behavior</h4>
 
-          <p>On most platforms, menus are usually accessed by first clicking on a button.The menus then expand to reveal the items they hold. On most platforms, users are also able to hover over to a different menu button and, without clicking, expand those other menus as well after havingalready clicked on one. This includes menu buttons within the menu itself. The Windows design guidelines call this "cascading," and
-          it is used a method to keep menu short. Small side-facing arrows are placed next to the labels of items that are cascadable.</p>
-          <p>To exit a menu on most platforms, the user can click outside of the open menu to close it. The menu also usually disappears
-            when the user selects one of its items.</p>
-          <p>When an item is selected, the menu indicates this action with a flashing highlight. Though, this usually happens so fast
-            that the user's eyes have likely moved to the newly opened menu or window triggered from the button rather than notice
-            the menu's indication.</p>
-          <p>As for most components on a graphical interface, feedback to the user is a crucial aspect, specifically for when the user is attempting to perceive the system state and evaluate its outcomes (as outlined by Don Norman's Stages-of-Action Model). 
-          Menus usually do have indicators, such as grayed out, unclickable items, to indicate which state the menu is in.</p>
-<div class="row">
-                <blockquote>There are also menus that remain hidden unless invoked by the user, such as the menu that
-                    appears when a user right-clicks (or ctrl + click in the case of Mac OS X).</blockquote>
-
-                <div class="col-sm-12">
-
-                  <div class="col-sm-6">
-                <img src="Mac_control_click_menu.png" class="img-responsive" alt="Responsive image">
-                <br>
-                <br>
-              </div>
-
-              <div class="col-sm-6">
-              <img src="Windows_right_click_menu.png" width="800" height="800" class="img-responsive" alt="Responsive image">
-              </div>
-              
-          </div>
 <h4>Events</h4>
 
 <p>The most relevant menu event is the <code>click</code>. A <code>click</code> event indicates that the user has selected a particular action or item from the list. Another event is the <code>hover</code>, indicating that a pointing device is explicitly within the button’s bounds. Another event is the <code>scroll</code>, displaying more options than what can be presented on the screen presently. Some platforms or implementations have included other components into an item, like a <code>swipe</code>, which can display alternative actions for the item, or a checkbox. The most relevant event on these platforms are the “click,” which tells it whether to advance deeper or retreat out of the app. Second would be to “scroll”, which moves the selector around to allow the user to “click” what they want to.</p>
 
-         <div class="col-sm-12">
-
-            <h4>Events</h4>
-
-            <blockquote>An example of event handling can be found on the Windows Dev Center website, which provides an API with methods and the respective events that they handle (for Windows
-              specifically). Menus implement a method called addEventListener to track user interactions with the menu object. Some of the events that it does handle include beforeshow, beforehide, aftershow, and afterhide. For example, the aftershow event occurs immediately after
-              the menu is displayed on the interface. The API itself defines menus in the following manner:
-              <p><br>"Displays a lightweight popup that is used to temporarily show menu commands related to what the user is currently doing. You should only show a menu in response to a user tap or click. Unlike a MessageDialog, a menu is always dismissed when the user taps or clicks outside of it" (Windows Dev Center)</p>
-            </blockquote>
-
-
 <h4>State Diagram</h4>
 
 <svg class="img-responsive center-block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="433px" height="163px" version="1.1" style="background-color: rgb(255, 255, 255);"><defs/><g transform="translate(0.5,0.5)"><rect x="201" y="1" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(219,25)"><switch><foreignObject pointer-events="all" width="83" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 83px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Enabled Item</div></div></foreignObject><text x="42" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="1" y="1" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(18,25)"><switch><foreignObject pointer-events="all" width="85" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 85px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Disabled Item</div></div></foreignObject><text x="43" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="201" y="101" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(218,125)"><switch><foreignObject pointer-events="all" width="85" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 85px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Selected Item</div></div></foreignObject><text x="43" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 321 31 L 331 31 Q 341 31 341 41 L 341 121 Q 341 131 334.18 131 L 327.37 131" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 322.12 131 L 329.12 127.5 L 327.37 131 L 329.12 134.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(348,75)"><switch><foreignObject pointer-events="all" width="77" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 86px; width: 77px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">scroll or hover</div></div></foreignObject><text x="39" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 201 131 L 171 131 Q 161 131 161 121 L 161 41 Q 161 31 171 31 L 194.63 31" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 199.88 31 L 192.88 34.5 L 194.63 31 L 192.88 27.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 201 131 L 171 131 Q 161 131 161 121 L 161 41 Q 161 31 151 31 L 127.37 31" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 122.12 31 L 129.12 27.5 L 127.37 31 L 129.12 34.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(169,75)"><switch><foreignObject pointer-events="all" width="25" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 36px; width: 25px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">click</div></div></foreignObject><text x="13" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g></g></svg>
-
-        <br>
-        <h4>State Diagram for a Standard Menu</h4>
-
-            <blockquote>
-              <p class="text-center">
-              <img src="Menu_state_diagram.png" width="600" height="600" class="img-responsive" alt="Responsive image">
-            </p>
-            </blockquote>
-
-            <p>Standard menus generally have 2 states: <code>Closed</code> and <code>Open</code>. The user can open a closed menu by
-              clicking on the menu title (which can be considered a button) and close a menu by clicking outside of it or by clicking on
-              one of its items (which could potentially reinitiate the cycle of opening and closing a menu if the item is a submenu).
-            </p>
-            <p>
-              Hover menus can be one variation of these states, but the only thing that would probably change is that instead of clicks,
-              the events that trigger the opening or closing of a menu is whether the mouse is over the menu or not.
-            </p>
 
 <h4>Component in Action</h4>
 
@@ -565,32 +656,7 @@ Memorability: Although it took a while to learn the system, once learned, is int
 Errors: Not many errors other than how to activate the “Hey Google” button. That took a few minutes of playing around with the system and trial and error.
 Satisfaction: Doesn’t look at nice as Apple Carplay due to a non-adjusting aspect ratio (tested on two phones).</p>
 
-        <h3>Priority Metrics</h3>
 
-            <ul>
-              <li>Learnability</li>
-              <li>Efficiency</li>
-              <li>Memorability</li>
-              <li>Errors</li>
-              <li>Satisfaction</li>
-            </ul>
-
-        <blockquote>The five <em>usability metrics</em> outlined by Jakob Nielsen in his book, <em>Usability Engineering</em> (page 26),
-          are of critical importance to menu components on interfaces. For example, we can imagine how much less effective software development
-          in general would be had these metrics not been taken into account in the design of file Directories, which are crucial representations
-          of menus that allow users to organize and structure data.
-        </blockquote>
-
-        <p>A majority of menu components represent a list that someone might draw on paper with items to keep track of or investigate.
-          These specific representations, in this respect, are highly learnable for, say, someone who has never used a computer before. It is
-          in fact important that users are not hindered by a complex arrangement of items (Learnability).
-
-          And given that menus are so common (and crucial to the organization of a graphic interface), it is important that users can quickly learn
-          when, where, and how to access them so that there won't be too much time spent simply trying to locate items or functions in an application (Efficiency).</p>
-
-        <p>Current menu designs are extremely memorable as well because they are organized as they would be on paper, such as the table of contents at the beginning of a book (Memorability). Also, it is probably best that menus be fairly simple to access and use and have adequate feedback features for users to reduce the number of errors with using them (Errors). Menus might not be a suitable element for measuring
-        user satisfaction since it may often be taken for granted as a "component" in the system to begin with (Satisfcation). Google's design
-        guidelines mention how users don't usually notice the menu component until it malfunctions or the user makes an error.</p>
 <h3>Key Characteristics</h3>
 
 <h4>Feedback</h4>
@@ -614,37 +680,6 @@ Satisfaction: Doesn’t look at nice as Apple Carplay due to a non-adjusting asp
 
   </div>
 </div>
-                
-        <h3>Key Characteristics and Best Practices</h3>
-        <blockquote>The following attributes for menus across platforms have allowed much more choice and accessibility to
-        be included in a single page (or single interface), as opposed to requiring users to navigate primarily using menus by constantly switching
-        to different windows or screens each time they need to access a new list of items to choose from.</blockquote>
-
-        <h4>Labeling</h4>
-
-        <p>The OS X, Windows, and Google design guidelines all recommend that menu titles should be contextualized so that users can generally know what a menu contains before they open it. This way users don't have to spend extra time exploring after having clicked on a menu with the wrong content. Apple adds to these contraints by saying that labels should be as short as possible without sacrificing clarity, and also 
-          suggest that icons should not be used as menu labels (nor should a mix of labels and icons) because users can confuse them with
-          "menu bar extra."</p>
-        <p>Each of the guidelines also set a rule that if three or more labels/items have the same word, that is when developers should choose
-          to cascade those items under a general item. (i.e. Insert Line Before, Insert Line After, Delete Word Forward, Delete Word Backward, and so on can all be cascaded under the general item "Text" to imply they are text editing commands.)
-
-        <h4>Placement</h4>
-
-        <p>Google recommends that when it comes to behaviors like expanding, menus should appear on top of the elements they are emitting from
-          so as to not remove it from its context. We can clearly see from OS X and Windows interfaces, however, that their menus often appear below or next to the element that was just clicked. Menus should not be a primary method for navigation in an app.
-
-        <h4>Items</h4>
-
-        <p>The arrangement of items within a menu is just as crucial as the menu itself. Both OS X and Windows design standards make use of <em>grouping</em> in their menus. From the previous images, we can see that there are thin lines dividing the list into groups of interdependent attributes. According to their respective guidelines, developers should generally avoid combining actions and attributes in the same group.
-
-        <p>"Arranging menu items in logical groups helps users locate commands quickly. As you figure out how to group menu items, it often works well to refer to the user’s mental model of your app’s task. To learn more about this concept, see <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW3">Mental Model</a>
-        (<a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/MenuGrouping.html#//apple_ref/doc/uid/20000957-CH25-SW1">developer.apple.com</a>) </p>
-
-        <p>
-        Additionally, OS X guidelines recommend placing the most frequently used items in groups at the top of the menu. Of course, the key
-        here is to not arrange strictly by frequency of use, but by grouping items first and then arranging by frequency.
-        </p>
-
 
 <h3>Platform-Specific Instances</h3>
 
@@ -681,30 +716,6 @@ Satisfaction: Doesn’t look at nice as Apple Carplay due to a non-adjusting asp
     </div>
   </div>
 </div>
-<h3>Platform-Specific Instances</h3>
-
-<blockquote>
-
-  <p>From the images of the directory menus, it can be observed that OS X breaks some of Windows' rules, such as using icons
-    to represent menu titles (i.e. the settings gear icon).</p>
-
-      <img src="Mac_Directory.png" width="600" height="400" class="img-responsive" alt="Responsive image">
-    
-</blockquote>
-<blockquote>
-  <p>In addition to there being hidden menus, there are even hidden menu items (described as "Dynamic Menu Items" in OS X guidelines) that can be seen if the user holds down the "alt option" key for Mac. For example, the file menu at the top of the Desktop interface (with no applications open) has some hidden items that are revealed when the "alt option" key is pressed while the menu is open.</p>
-
-  </blockquote>
-
-  <div class="col-sm-12">
-      <div class="col-sm-6">
-      <img src="Mac_FileMenu.png" class="img-responsive" alt="Responsive image">
-    </div>
-    <div class="col-sm-6">
-      <img src="Mac_FileMenu_Option.png" class="img-responsive" alt="Responsive image">
-    </div>
-</div>
-
 
 <h3>Credits &amp; References</h3>
 
