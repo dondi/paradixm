@@ -1,21 +1,182 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
+---
+title: Component Name
+layout: component
+contributors:
+    - name: Jay Patel
+      github: jbreaker1
+---
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-	<body>
- 		   <div class="row">
-  			 <div class="col-sm-4">
-  				<p>Persistent storage is any data storage device that retains data after power to that device is shut off. It is also sometimes referred to as non-volatile storage persistent storage </p>
-				<p>It is often necessary to store the value of the fields of an object to disk and then, later, retrieve this data. Although this is easy to achieve without relying on serialization, this approach is often cumbersome and error prone, and becomes progressively more complex when you need to track a hierarchy of objects. Imagine writing a large business application, that contains thousands of objects, and having to write code to save and restore the fields and properties to and from disk for each object.</p>				
-				<IMG SRC="image1.png" ALT="example image"> </div>
- 			 <div class="col-sm-4">
- 			 	<p> Hard disk drives and solid-state drives are common types of persistent storage. </p> </div>
-  			 <div class="col-sm-4">.col-sm-4</div>
-	</body>	
-</html>
+
+
+<p class="lead">Persistant storage is probably one of the most important aspects for user interface because it is a place where you store and keep files. If one cannot find a file they need that could be predicament.</p>
+
+<div class="row">
+  <div class="col-sm-6">
+
+<h3>Typical Appearance</h3>
+
+<blockquote>
+  <p>Persistant storage is just how it sounds, storage that persists. So when you turn off your computer the files don't just disapprear, they reside in persistant storage and are accessible through various ways.</p>
+  <p> 
+        In Mac OS X the main form for user interface for persistant storage is finder. The finder helps keep your files and folders as well as devices. </p>
+        <IMG SRC = "finderPic.png" ALT = "picture of Finder" style="width:400px;height:228px;"> 
+  <p>      
+    Another way to naviagte through persitant storage is through the terminal. </p>
+        <IMG SRC = "Terminal.png" ALT = "picture of Terminal" style="width:400px;height:228px;">
+  <p>
+    Another way is through the _removable_ like when you have a usb inserted
+  </p>
+   <IMG SRC = "remove.png" ALT = "removeable image" style="width:400px;height:228px;">
+  </blockquote>
+
+<h3>Typical Behavior</h3>
+
+<blockquote>
+  <p>Persistant Storage's typical behavior is that it can be accessed through  varies ways and exists throughout all platforms. When a person saves a file to store that is a behavior for persistant storage. Another is when someone puts in a usb into the computer and either puts a file in the usb or takes a file out and wants to copy it to their desktop. </p>
+
+  <p>Helpful subsections include: </p>
+</blockquote>
+
+<h4>Events</h4>
+
+<blockquote>
+<p>A few basic events are finding a file, creating a file, deleting a file, copy and pasting a file, and drag and drop.Many of these events require an intermediary step that requires you to do something that technically isn't part of the persistant storage. An example is when you delete a file you have to right click the file first and then press the receycle button or something of the sort.</p>
+<p>Finding a file is pretty basic you can usually use a search bar or you can go to the location. You can do this multiple ways such as just looking through finder, in Mac, till you find the the file or doing it through the terminal. </p>
+<p> Creating a file is also pretty simple it usually just requires saving a file or downloading a file. Ex. Open a Microsoft file and write the words "Hello World" and then click Save As and save the file where you would like to save it.</p>
+<p>Deleting a file is again another easy event where a person usually right clicks the file and then presses "move to thrash" or "Delete File" or one can also drag and drop the file into the thrash and it usually is move there.</p>
+<p>Copying and pasting a file is another way persistant storage works. One has to first copy the file then naviagte through the persistant storage and then paste it where they want into the persistant storage. </p></blockquote>
+
+<h4>State Diagram</h4>
+
+<blockquote>
+  <p>A state diagram indicating the actions and states of a user interface component.</p>
+
+  <p>This is most likely an image. Bonus props if you use SVG.</p>
+  <IMG SRC = "stateDiagram.png" ALT = "basic state Diagarm" style="width:400px;height:228px;">
+  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
+    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
+    however, may have more activities than the “public” events that can be reported by a component.</p>
+</blockquote>
+
+<p>The state diagram is quite simple but can be changed so much. This is the most basic state diagram you can have for persistant storage. The first step is to having something one wants to keep in persistent storage. Then some intermediate steps take place such as copy and paste or something of that sort. The final step is actually saving this file and keeping it in persistant storage.</p>
+
+<h4>Component in Action</h4>
+
+<blockquote>
+  <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
+
+  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
+</blockquote>
+
+<p class="text-center">
+  <button class="btn btn-default">Standard Bootstrap Button</button>
+  <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
+</p>
+
+  </div>
+
+  <div class="col-sm-6">
+<h3>Variants</h3>
+
+<blockquote>There is almost never just one form of a user interface component. Use this section to address variations
+  on this theme. Some variations are sufficiently different that they are considered to be a different component
+  entirely, despite very similar behavior. Meanwhile some variations are due to appearance only.</blockquote>
+
+<ul>
+  <li><em>Databases</em> are a type of persistant storage. One can navigate through a database through various ways an example of one would be Giphy and using the search bar to go through the information and find the information one was looking for</li>
+  <p>Another variant of persistant storage is iCloud and how it stores data on servers.</p>
+  <p>A usb is another source of persistent storage, but is unique in the sense that its removable and you are able plug it in to get the information when necessary or get rid of information that one doesn't need or want.</p>
+</ul>
+
+<h3>Priority Metrics</h3>
+
+<blockquote>Talk about the five usability metrics in relation to this component. Not all components will have the same
+  metric priorities. For example:</blockquote>
+
+<p>Persistant storage does have a learnability curve. One must first learn where all the folder and files are located and when doing something such as saving or downloading where the file or folder is placed. Also if you were to do it through the terminal using the commands such as cd and ls to find and acquire the file wanted does requiring learning and memory to remember where everything is and where it can be accessed from. Which relates to the memorability because the more you are able to remember where ones files are the easier it makes it to find and retrieve. </p>
+
+<p>A big usability metric for persistant storage is error. One should be able to naviagte through the persistant storage without getting lost and be able to find files easily and quickly. If someone clicks downloads and it takes them to a page that doesn't have the files that were downloaded would be problematic. A person shouldn't have trouble with errors of finding data in persistant storage. </p>
+
+<p> Satisfaction does not play a large part in persistant storage because persistant storage doesn't really bring satisfaction. It just helps one keep their data stored in a safe place and be able to access it when needed. I mean I guess without persistant storage it would be a pain so everyone is secretly satisfied by persistant storage without knowing it. </p>
+
+<h3>Key Characteristics</h3>
+
+<blockquote>This section is for describing “what makes for a good <em>your component here</em>?”
+  Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
+  principles.</blockquote>
+
+<h4>Feedback</h4>
+
+<p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
+  never doubt whether:</p>
+
+<ol>
+  <li>they did positively trigger a button (and thus its associated action)</li>
+  <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
+    the action that triggers the button</li>
+</ol>
+  </div>
+</div>
+
+<h3>Platform-Specific Instances</h3>
+
+<blockquote>
+  <p>Mac OSX has many different ways to access the persistant storage. The most commonoly used way is through the finder. The finder holds all the files and can be navigated through quite easily. Mac OSX has a friendly user interface because it has everything labeled. Also if you don't know where the file resides you can always go to "All My Files" and just search the file name. It also has a tag system to keep ones files organized as shown by the gif(middle). The gif below shows how the finder looks and a few aspects of the finder and how you can open and delete files from persistent storage. </p>
+  <p>
+  <IMG SRC = "finder.gif" ALT = "finder Gif" style="width:400px;height:300px;">
+  <IMG SRC = "tag.gif" ALT = "removeable image" style="width:400px;height:300px;">
+  <IMG SRC = "openClose.gif" ALT = "removeable image" style="width:400px;height:300px;">
+  </p>
+  <p>Another way is through the terminal which is just like the finder, but the finder is just a graphical representation. The terminal can be more efficient that finder because you can do so much more to a file with just the terminal. You can open the file, delete a file, add a file, and much more with just a few commands. There are intermediary step for persistant storage. But it will keep your changes in the persistant storage. It is quicker and more efficient than the finder once you have the memory and commands down. It can also be sometimes of a nuisance, but is more efficient in the end. The gif below shows a few things that can be done with the terminal and how it can be friendly in terms of user interface, but is plain and requires learning, while finder is much easier to learn, but slower. </p>
+  <IMG SRC = "terminalvid2.gif" ALT = "terminal gif" style="width:400px;height:228px;">
+</blockquote>
+
+<div class="row">
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Alto</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Amiga</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Material Design</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">watchOS</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Credits &amp; References</h3>
+
+<blockquote>Provide references or links to any information, image, or media sources used.</blockquote>
