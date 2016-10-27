@@ -216,8 +216,7 @@ is a rectangular shape that displays content on a computer monitor. It is a very
     <div role="tabpanel" class="tab-pane active" id="Yosemite">
 
 <div>
-    <h2>OS X Yosemite</h2>
-    <br> <br>
+    <h2 style="margin: 1em auto 1em auto;">OS X Yosemite</h2>
 
     <p class="lead"> According to the OS X Human Interface Guidelines, a window provides a frame for viewing and interacting with content in an app.</p>
     <h4 class="lead">General Differences</h4>
@@ -265,8 +264,7 @@ is a rectangular shape that displays content on a computer monitor. It is a very
       <!--Windows Section-->
 
 <div>
-    <h2>Windows 8.1</h2>
-    <br> <br>
+    <h2 style="margin: 1em auto 1em auto;">Windows 8.1</h2>
 
     <p class="lead"> According to Microsoft’s Windows User Experience Interaction Guidelines windows are the main "canvases" or UI surfaces of your desktop app, including the main windows itself and pop-ups, dialogs, and wizards. </p>
     <h4 class="lead">General Differences</h4>
@@ -314,8 +312,7 @@ is a rectangular shape that displays content on a computer monitor. It is a very
 
     <div role="tabpanel" class="tab-pane" id="Ubuntu">
     <div>
-    <h2>Ubuntu 15</h2>
-    <br> <br>
+    <h2 style="margin: 1em auto 1em auto;">Ubuntu 15</h2>
 
     <p class="lead"> Ubuntu is an open source software platform with many contributers. There is no specific guideline on design. Compared to other platforms its Windows component greatly resembles Mac OSX platforms. </p>
     <h4 class="lead">General Differences</h4>
@@ -365,180 +362,138 @@ is a rectangular shape that displays content on a computer monitor. It is a very
 
     <div role="tabpanel" class="tab-pane" id="Android">
     <div>
-    <h2>Android 6.0.1 Marshmallow</h2>
-    <br> <br>
+    <h2 style="margin: 1em auto 1em auto;">Android 6.0.1 Marshmallow</h2>
 
     <p class="lead"> According to Google, "Attention to detail makes an app truly beautiful: transitions are fast and clear, layout and typography are crisp and meaningful, and design touches that delight you in surprising ways are sprinkled throughout." </p>
     <h4 class="lead">Distinguishing Characteristics</h4>
 
-    <p>Since Android is a mobile software platform, it has no guidelines on windows as each application takes up the entire screen. There do exist guidelines for Multi-Window support however.</p>
+    <p>Given that Android is a mobile software platform, windows in Android have no obvious visual based interactions like Windows, OSX, and Ubuntu do with their three buttons for closing, maximizing, and minimizing. Rather, a window of an application can be opened by starting up that application from the home screen, and it can be closed by pressing the home button on the particular device, whether it be a soft or hard key. More often than not the entire display is taken up by a single window; unlike Windows, OSX, and Ubuntu which allow multiple windows to coexist on the same display. </p>
 
-    <p>Given that Android is a mobile software platform, more often than not the entire display is taken up by a single window; unlike Windows, OSX, and Ubuntu which allow multiple windows to coexist on the same display. </p>
-
-    <p>Windows in Android have a certain general structure and layout and function that can be found throughout almost every application the device may host. For example, the Information Bar at the top of an Android device's screen is present in every application window. This bar includes always relevant information such as mobile network connection status, battery indicator, time, and others as users may deem fit (e.g. alarms, bluetooth, etc.).</p>
+    <p>Windows in Android have a general structure, layout, and function that can be found throughout almost every application the device may host. For example, the Information Bar at the top of an Android device's screen is present in every application window. This bar includes always relevant information such as mobile network connection status, battery indicator, time, and others as users may deem fit (e.g. alarms, bluetooth, etc.).</p>
 
     <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
     <img src="android-pictures/InfoBar.png" alt="Android Info Bar" width="400">
+    <p><em>Figure A.1</em></p>
     </div>
 
     <p>A hidden necessity of the constant presence of this notification bar is the Notification and Quick Settings Bar that it expands into. The series of screenshots below shows the progression of pulling down the Bar, starting with touching the Information Bar and proceeding with pulling towards the bottom of the display.</p>
 
     <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
-      <div class="col-sm-3"><img src="android-pictures/NotificationBar1.png" alt="Reddit menu example" width="200"></div>
-      <div class="col-sm-3"><img src="android-pictures/NotificationBar2.png" alt="Google Maps menu example" width="200"></div>
-      <div class="col-sm-3"><img src="android-pictures/NotificationBar3.png" alt="Google Calendar menu example" width="200"></div>
-      <div class="col-sm-3"><img src="android-pictures/NotificationBar4.png" alt="Google Calendar menu example" width="200"></div>
+      <div class="col-sm-3"><img src="android-pictures/NotificationBar1.png" alt="Reddit menu example" width="200"><p><em>Figure A.2.1</em></p></div>
+      <div class="col-sm-3"><img src="android-pictures/NotificationBar2.png" alt="Google Maps menu example" width="200"><p><em>Figure A.2.2</em></p></div>
+      <div class="col-sm-3"><img src="android-pictures/NotificationBar3.png" alt="Google Calendar menu example" width="200"><p><em>Figure A.2.3</em></p></div>
+      <div class="col-sm-3"><img src="android-pictures/NotificationBar4.png" alt="Google Calendar menu example" width="200"><p><em>Figure A.2.4</em></p></div>
     </div>
 
-    <p>The first part of the Bar that shows up is a more detailed display of the time and date, along with a symbol that suggests settings and an expansion of some sort. Pulling down a little further reveals the Quick Settings Bar. One thing that may be a little misleading is that this is not far enough for the entire Bar to push itself onto the display. If released at this point, it recedes to the top of the screen leaving behind the Information Bar. It is only after the entire Bar has been pulled down halfway down the display that it will slide down and cover the screen, allowing interaction (seen in the third screenshot).</p>
+    <p>The first part of the Bar that shows up is a more detailed display of the time and date, along with a symbol that suggests settings and an expansion of some sort. Pulling down a little further reveals the Quick Settings Bar. One thing that may be a little misleading is that this is not far enough for the entire Bar to push itself onto the display. If released at this point, it recedes to the top of the screen leaving behind the Information Bar. It is only after the entire Bar has been pulled down past the halfway point on the display that it will slide down and cover the screen, allowing interaction (See <em>Figure A.3.3</em>).</p>
 
-    <p>There are a few different functionalities that present themselves with the presence of the Notification and Quick Settings Bar. First, the Quick Settings at the top. These tend to be the settings most often changed and/or interacted with by users (and are customizable by users). The first five are obvious, but users can also swipe to the left to reveal multiple other settings. The one other way to access the rest of the Quick Settings is to press the carrot at the top right revealed in the first screenshot. This leads into the appearance presented in the fourth screenshot.</p>
+    <p>There are a few different functionalities that present themselves with the presence of the Notification and Quick Settings Bar. First, the Quick Settings at the top. These tend to be the settings most often changed and/or interacted with by users (and are customizable by users). The first five are obvious, but users can also swipe to the left to reveal multiple other settings. The one other way to access the rest of the Quick Settings is to press the carrot at the top right revealed in <em>Figure A.3.1</em>. This leads into the appearance presented in <em>Figure A.3.4</em>.</p>
 
-    <p>The second obvious functionality of the Notification and Quick Settings Bar is in fact the presence of notifications. Notifications are presented in small rectangular form consisting of an icon on the left of the application they are from and a small description. Notifications may either be swiped away (to the left or right) to dismiss them (as seen in the second screenshot below), or pressed to activate the related application and more often than not in a way that addresses the notification. For example, in the case of receiving a text message, pressing the notification opens the Messenger application to the conversation (as seen in the third and fourth screenshots).</p>
+    <p>The second obvious functionality of the Notification and Quick Settings Bar is, in fact, the presence of notifications. Notifications are presented in small rectangular form consisting of an icon on the left of the application they are from and a small description. Notifications may either be swiped away (to the left or right) to dismiss them (See <em>Figure A.3.2</em>), or pressed to activate the related application and more often than not in a way that addresses the notification. For example, in the case of receiving a text message, pressing the notification opens the Messenger application to the conversation (See <em>Figures A.3.3 and A.3.4</em>).</p>
 
 
     <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
-      <div class="col-sm-3"><img src="android-pictures/Text1.png" alt="Reddit menu example" width="200"></div>
-      <div class="col-sm-3"><img src="android-pictures/Text2.png" alt="Google Maps menu example" width="200"></div>
-      <div class="col-sm-3"><img src="android-pictures/Text3.png" alt="Google Calendar menu example" width="200"></div>
-      <div class="col-sm-3"><img src="android-pictures/Text4.png" alt="Google Calendar menu example" width="200"></div>
+      <div class="col-sm-3"><img src="android-pictures/Text1.png" alt="Reddit menu example" width="200"><p><em>Figure A.3.1</em></p></div>
+      <div class="col-sm-3"><img src="android-pictures/Text2.png" alt="Google Maps menu example" width="200"><p><em>Figure A.3.2</em></p></div>
+      <div class="col-sm-3"><img src="android-pictures/Text3.png" alt="Google Calendar menu example" width="200"><p><em>Figure A.3.3</em></p></div>
+      <div class="col-sm-3"><img src="android-pictures/Text4.png" alt="Google Calendar menu example" width="200"><p><em>Figure A.3.4</em></p></div>
     </div>
 
-    <p>Certain applications have a permanent presence in the Notification Bar when in use (i.e. they cannot be dismissed, only activated). The "Twilight" application in the screenshot above
+    <p>Certain applications have a permanent presence in the Notification Bar when in use (i.e. they cannot be dismissed, only activated). The "Spotify" and "Twilight" applications in <em>Figure A.4</em> below have such a presence.
 
-      <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
-    <img src="android-pictures/SettingsMenu1.png" alt="Reddit menu open example" width="200">
+    <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
+      <img src="android-pictures/PermanentNotifications.png" alt="Reddit menu open example" width="200">
+      <p><em>Figure A.4</em></p>
     </div>
-
 
     <p>Another common component of Android application windows are how menus are presented. Generally, a menu presents its existence in the form of a column of three horizontal lines or dots in the top left or right corner of the display.</p>
 
     <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
-      <div class="col-sm-4"><img src="android-pictures/RedditMenus.png" alt="Reddit menu example" width="200"></div>
-      <div class="col-sm-4"><img src="android-pictures/MapsMenu.png" alt="Google Maps menu example" width="200"></div>
-      <div class="col-sm-4"><img src="android-pictures/CalendarMenu.png" alt="Google Calendar menu example" width="200"></div>
+      <div class="col-sm-4"><img src="android-pictures/RedditMenus.png" alt="Reddit menu example" width="200"><p><em>Figure A.5.1</em></p></div>
+      <div class="col-sm-4"><img src="android-pictures/MapsMenu.png" alt="Google Maps menu example" width="200"><p><em>Figure A.5.1</em></p></div>
+      <div class="col-sm-4"><img src="android-pictures/CalendarMenu.png" alt="Google Calendar menu example" width="200"><p><em>Figure A.5.1</em></p></div>
     </div>
-
-    <!-- <div><img src="android-pictures/BlankSpace.png" height="2em"></div> -->
 
     <p>These menus often have a similar structure in terms of how they and their options are displayed. Often a secondary panel slides onto the screen in a way to suggest that it is on top of the main window. Here, options are portrayed in a list fashion justified towards the outer side of the window. </p>
 
     <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
-      <div class="col-sm-4"><img src="android-pictures/RedditMenuOpen.png" alt="Reddit menu open example" width="200"></div>
-      <div class="col-sm-4"><img src="android-pictures/MapsMenuOpen.png" alt="Google Maps menu open example" width="200"></div>
-      <div class="col-sm-4"><img src="android-pictures/CalendarMenuOpen.png" alt="Google Calendar menu open example" width="200"></div>
+      <div class="col-sm-4"><img src="android-pictures/RedditMenuOpen.png" alt="Reddit menu open example" width="200"><p><em>Figure A.6.1</em></p></div>
+      <div class="col-sm-4"><img src="android-pictures/MapsMenuOpen.png" alt="Google Maps menu open example" width="200"><p><em>Figure A.6.2</em></p></div>
+      <div class="col-sm-4"><img src="android-pictures/CalendarMenuOpen.png" alt="Google Calendar menu open example" width="200"><p><em>Figure A.6.3</em></p></div>
     </div>
-
-    <!-- <div><img src="android-pictures/BlankSpace.png" height="2em"></div> -->
 
     <p>A different form of menu is a series of categories listed across the top part of the display just beneath title bar or something similar.</p>
 
-    <!-- NEED SOME SPACE -->
-
     <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
-      <div class="col-sm-4"><img src="android-pictures/RedditMenu1.png" alt="Reddit menu open example" width="200"></div>
-      <div class="col-sm-4"><img src="android-pictures/RedditMenu2.png" alt="Google Maps menu open example" width="200"></div>
-      <div class="col-sm-4"><img src="android-pictures/RedditMenu3.png" alt="Google Calendar menu open example" width="200"></div>
+      <div class="col-sm-4"><img src="android-pictures/RedditMenu1.png" alt="Reddit menu open example" width="200"><p><em>Figure A.7.1</em></p></div>
+      <div class="col-sm-4"><img src="android-pictures/RedditMenu2.png" alt="Google Maps menu open example" width="200"><p><em>Figure A.7.2</em></p></div>
+      <div class="col-sm-4"><img src="android-pictures/RedditMenu3.png" alt="Google Calendar menu open example" width="200"><p><em>Figure A.7.3</em></p></div>
     </div>
-    
-    <!-- <div><img src="android-pictures/BlankSpace.png" height="25"></div> -->
 
     <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
-      <div class="col-sm-4"><img src="android-pictures/SettingsMenu1.png" alt="Reddit menu open example" width="200"></div>
-      <div class="col-sm-4"><img src="android-pictures/SettingsMenu2.png" alt="Google Maps menu open example" width="200"></div>
-      <div class="col-sm-4"><img src="android-pictures/SettingsMenu3.png" alt="Google Calendar menu open example" width="200"></div>
+      <div class="col-sm-4"><img src="android-pictures/SettingsMenu1.png" alt="Reddit menu open example" width="200"><p><em>Figure A.8.1</em></p></div>
+      <div class="col-sm-4"><img src="android-pictures/SettingsMenu2.png" alt="Google Maps menu open example" width="200"><p><em>Figure A.8.2</em></p></div>
+      <div class="col-sm-4"><img src="android-pictures/SettingsMenu3.png" alt="Google Calendar menu open example" width="200"><p><em>Figure A.8.3</em></p></div>
+    </div>
+
+    <p>Although it is reserved for certain situations, another main component of windows in Android is the keyboard. Granted, it only appears when the user is ready to enter text, it does take a substantial amount of display room when in use, both in portrait and landscape mode (See <em>Figure A.9.1 and A.9.2</em>)</p>
+
+    <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
+      <div class="col-md-4"><img src="android-pictures/Keyboard1.png" alt="Reddit menu open example" width="200"><p><em>Figure A.9.1</em></p></div>
+      <div class="col-md-8"><img src="android-pictures/Keyboard2.png" alt="Google Maps menu open example" width="600"><p><em>Figure A.9.2</em></p></div>
     </div>
 
     <p>The main content of the application window takes up a majority of the display most of the time. Depending on the type of application, the window may be able to be navigated by scrolling, panning, or zooming. In the case of an application that presents a list or feed structure (e.g. Settings, Facebook, Reddit Is Fun), one can only scroll up and down the window. In an application that presents a page however, such as Google Chrome, one can zoom in and out of the page and also navigate the page more precisely through panning at a closer zoom. The one caveat to this is, at least for Google Chrome, many websites have a mobile version that present themselves in a feed fashion, restricting them to not being able to be panned over or zoomed into. Desktop versions of these websites however do generally allow for more freedom of navigation.</p>
 
     <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
-    <img src="android-pictures/SettingsMenu1.png" alt="Reddit menu open example" width="200">
+      <img src="android-pictures/SettingsMenu1.png" alt="Reddit menu open example" width="200">
     </div>
 
     <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
-      <div class="col-sm-4"><img src="android-pictures/AmazonMobile.png" alt="Reddit menu open example" width="200"></div>
-      <div class="col-sm-4"><img src="android-pictures/AmazonDesktop.png" alt="Google Maps menu open example" width="200"></div>
-      <div class="col-sm-4"><img src="android-pictures/AmazonDesktopZoom.png" alt="Google Calendar menu open example" width="200"></div>
+      <div class="col-sm-4"><img src="android-pictures/AmazonMobile.png" alt="Reddit menu open example" width="200"><p><em>Figure A.10.1</em></p></div>
+      <div class="col-sm-4"><img src="android-pictures/AmazonDesktop.png" alt="Google Maps menu open example" width="200"><p><em>Figure A.10.2</em></p></div>
+      <div class="col-sm-4"><img src="android-pictures/AmazonDesktopZoom.png" alt="Google Calendar menu open example" width="200"><p><em>Figure A.10.3</em></p></div>
     </div>
 
-    <p>The one exception to the fact that every application has one window that occupies the entire display at a time, is Android's capability of Multi-Window Support. "On handheld devices, two apps can run side-by-side or one-above-the-other in split-screen mode. For example, a user could split the screen, viewing a web page on the left side while composing an email on the right side." An example can be seen below where both the Google Chrome and Google Maps applications are concurrently open on the display next to each other.</p>
+    <p>A certain unique type of window that is also prevalent is a window that contains media, either video or audio. These windows don't necessarily have the default characteristics of windows, such as the Information Bar which is hidden when a fullscreen video is being played. The screenshots below show how a fullscreen video is presented on the YouTube application. Again, the Information Bar is hidden in this window. A swipe down from the top reveals the Bar (See <em>Figure A.11.2</em>) which can then be pulled down to show the Notification and Quick Settings Bar. Also, tapping on the screen brings up the video control interface which includes play/pause, next/previous video, and a scrub bar (See <em>Figure A.11.3</em>).</p>
+
+    <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
+      <div class="col-sm-4"><img src="android-pictures/Video1.png" alt="Reddit menu open example" width="300"><p><em>Figure A.11.1</em></p></div>
+      <div class="col-sm-4"><img src="android-pictures/Video2.png" alt="Google Maps menu open example" width="300"><p><em>Figure A.11.2</em></p></div>
+      <div class="col-sm-4"><img src="android-pictures/Video3.png" alt="Google Calendar menu open example" width="300"><p><em>Figure A.11.3</em></p></div>
+    </div>
+
+    <p>The biggest difference between different video applications is the control interface. Below are additional examples from Samsung's default Video Player application and the build in Android video interface.</p>
+
+    <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
+      <div class="col-md-6"><img src="android-pictures/VideoInterface1.png" alt="Reddit menu open example" width="400"><p><em>Figure A.12.1</em></p></div>
+      <div class="col-md-6"><img src="android-pictures/VideoInterface2.png" alt="Google Maps menu open example" width="400"><p><em>Figure A.12.2</em></p></div>
+    </div>
+
+    <p>One other specialty that Android devices have in viewing videos, is that they have the capability of "popping" videos out of their rigid frames and displaying them on top of others (as seen below).</p>
+
+    <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
+      <img src="android-pictures/VideoPopUp.png" alt="Reddit menu open example" width="200">
+      <p><em>Figure A.13</em></p>
+    </div>
+
+    <p>Another exception to the fact that every application has one window that occupies the entire display at a time, is Android's capability of Multi-Window Support. "On handheld devices, two apps can run side-by-side or one-above-the-other in split-screen mode. For example, a user could split the screen, viewing a web page on the left side while composing an email on the right side." An example can be seen below where both the Google Chrome and Google Maps applications are concurrently open on the display next to each other.</p>
+
+    <p>Since Android is a mobile software platform, it has no guidelines on windows as each application takes up the entire screen. There do exist guidelines for Multi-Window support however.</p>
 
     <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
     <img src="android-pictures/MultiWindow.png" alt="Reddit menu open example" width="400">
+    <p><em>Figure A.14</em></p>
     </div>
 
-    <p>This split screen interface has unique controls not present in situations with only one window. First, the application currently in use and active is indicated as such with a blue border. The white dot in the center of the screen allows the user to adjust how much display real estate is dedicated to either application. Tapping on this circle rather than dragging it reveals a small set of menu items. These include being able to make the active application full screen and eliminate the inactive application's place on the screen, switch the positions of the applications, quit the active application allowing the inactive to take up the whole display, etc.</p>
+    <p>This split screen interface has unique controls not present in situations with only one window. First, the application currently in use and active is indicated as such with a blue border. The white dot along the dividing line between the applications allows the user to adjust how much display real estate is dedicated to either application. Tapping on this circle rather than dragging it reveals a small set of menu items. These include being able to make the active application full screen and eliminate the inactive application's place on the screen, switch the positions of the applications, quit the active application allowing the inactive to take up the whole display, etc.</p>
 
     <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
-      <div class="col-md-6"><img src="android-pictures/MultiWindowResize.png" alt="Reddit menu open example" width="400"></div>
-      <div class="col-md-6"><img src="android-pictures/MultiWindowMenu.png" alt="Google Maps menu open example" width="400"></div>
+      <div class="col-md-6"><img src="android-pictures/MultiWindowResize.png" alt="Reddit menu open example" width="400"><p><em>Figure A.15.1</em></p></div>
+      <div class="col-md-6"><img src="android-pictures/MultiWindowMenu.png" alt="Google Maps menu open example" width="400"><p><em>Figure A.15.2</em></p></div>
     </div>
-
-
-    <!--
-
-    TODO:
-    - Menu structure
-    - Submenu structure across top (settings)
-    - Navigation
-      - Scrolling
-        - Restrictions depending on application
-          - Page vs Feed
-      - Zooming
-        - Restrictions depending on application
-        - Page vs Feed
-    - Multi-Window
-      - Structure
-      - Interface
-      - Interaction capabilities/manipulation
-    - General layout
-      - Icons with labels
-        - Illustrator file
-    
-    -->
-
-    <p>Windows in Android have no obvious visual based interactions like Windows, OSX, and Ubuntu do with their three buttons for closing, maximizing, and minimizing. Rather, a window of an application can be opened by starting up that application from the home screen, and it can be closed by pressing the home button on the particular device, whether it be a soft or hard key. </p>
-
-    <p>There are certain hidden interactional aspects to windows in Android though. For example,  </p>
-    <img src="AndroidWIndow.png" alt="Example of a window for Windows 8.1" width="400">
-    <br>
-    <br>
-    <p>When maximized the window does not fully fill up the entire screen. It also leaves room for the taskbar at the bottom. In it maximum state, it is also possible to minimize the window.</p>
-    <img src="Maximized.png" alt="screenshot of maximized window" width="400">
-    <br>
-    <br>
-
-    <h4 class="lead">Categorical Differences</h4>
-    <ul>
-      <li><strong>File Explorer</strong>
-<ul>
-        <li>In the frame there are buttons labeling the parent directory of the current directy you are in</li>
-        <li>The frame also contains a search button. When clicked a search text input appears and allows you to search files within the computer.</li>
-         
-
-      </ul>
-      </li>
-      
-      <li><strong>Dialog</strong> 
-      <ul>
-        <li>The user is able to exit the dialog window through the frame button</li>
-      </ul>
-      </li>
-
-      <li><strong>Alert</strong> 
-      <ul>
-        <li>The user is able to exit the dialog window through the frame button</li>
-      </ul></li>
-      <li><strong>Properties</strong> <ul>
-        <li>There are several tabs that allows the user to modify and view information of the selected file.</li>
-      </ul></li>
-    </ul>
-    <br><br>
     </div>
-
     </div>
-
-
     </div>
     <!--End of the tab section-->
   </div>
