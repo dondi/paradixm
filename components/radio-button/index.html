@@ -25,41 +25,6 @@ contributors:
 	When inactive, the circles are not colored in, giving it an "empty" look to suggest that it is not currently active. 
 	When active, a dot concentric to the circle or an entirely different color to the background color of an empty button "fills" the circle, indicating that it is currently chosen. </p>
 
-<h3>Typical Behavior</h3>
-	<p>Just like with a general button, a radio button's behavior is solely dependent on whether the user has pressed/toggled it or not. This is usually done via the pointer/cursor but can also be done with keyboard inputs.</p>
-	<p>The active/inactive state of a radio button is dependent on the active/inactive state of the other related radio buttons. The active state is exclusive to one radio button at a time (i.e. two radio buttons cannot be active simultaneously).</p>
-	<p>Disabled buttons have their circle and/or corresponding text grayed out.</p>
-	<p>When accessing via keyboard inputs using the tab button, a radio button is surrounded by a dotted square or border to indicate that it is currently the one in selection.</p>
-
-	<h4>Events</h4>
-		<ul>
-			<li><code>hover</code>: when the pointer/cursor is within the area of the circle. Most do not display behavior during this event but some radio buttons do cast a shadow within the circle to indicate that it is currently being interacted with regardless on
-			whether it is clicked or not.</li>
-			<li><code>selected</code>: occurs strictly when user is operating through keyboards input. Pressing the tab key scrolls through all the optional clickables and since radio buttons are grouped together they are always considered one element. To scroll through the choices of radio buttons, the user must use the directional buttons on the keyboard (up and down).</li>
-			<li><code>click + hold</code>: a user can click on a radio button (pressing within the vicinity of the circle or the label) and prevent it from being toggled by dragging and releasing the cursor away from the vicinity of the cursor. This event cannot occur using keyboard inputs.</li>
-			<li><code>click + release</code>: a user can press within the vicinity of the circle or the label and immediately release it to toggle the button. In the context of keyboard inputs, once a button is selected, pressing the enter key is the equivalent of clicking it with a cursor.</li>
-			<li><code>disabled</code>: a disabled button provides no response when it is clicked on. Everything remains the same indicating to the user that nothing has changed. Sometimes a cancel icon takes the place of the cursor indicating that it cannot be clicked.</li> 
-		</ul>
-
-	<h4>State Diagram</h4>
-		<p class="text-center"><img src="statediagram.png"></p>
-
-	<h4>Component in Action</h4>
-		<p class="text-center">
-			<img src="http://31.media.tumblr.com/2354f87c169620b7c064e5c4d3307178/tumblr_inline_nj9mgb2MYy1qb17pp.gif">
-		</p>
-		<p>Pictured above is a depiction of a user picking between two radio buttons in a constant loop between inactive, click and active.
-		As you can see buttons can be toggled if labels are clicked as well. Pictured below is a live demonstration of a radio button as developed by Bootstrap.</p>
-
-		<p class="text-center">
-  			<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-			<label class="radio-inline"><input type="radio" name="optradio" disabled>Option 3 (disabled)</label>
-		</p>
-
-  </div>
-
-  <div class="col-sm-6">
 <h3>Variants</h3>
 	<ul>
 		<li><p class="text-center"><img src="macpanelbar.png"></p>
@@ -92,6 +57,44 @@ contributors:
 		<li><em>Satisfaction:</em> Since radio buttons serve a more functional purpose rather than one for enjoyment, satisfaction does not have as much importance as the other metrics.
 		But satisfaction can be derived from a straightforward and error-free experience with making choices using radio buttons.</li>
 	</ul>
+
+</div>
+
+<div class="col-sm-6">
+<h3>Typical Behavior</h3>
+	<p>Just like with a general button, a radio button's behavior is solely dependent on whether the user has pressed/toggled it or not. This is usually done via the pointer/cursor but can also be done with keyboard inputs.</p>
+	<p>The active/inactive state of a radio button is dependent on the active/inactive state of the other related radio buttons. The active state is exclusive to one radio button at a time (i.e. two radio buttons cannot be active simultaneously).</p>
+	<p>Disabled buttons have their circle and/or corresponding text grayed out.</p>
+	<p>When accessing via keyboard inputs using the tab button, a radio button is surrounded by a dotted square or border to indicate that it is currently the one in selection.</p>
+
+	<h4>Events</h4>
+		<ul>
+			<li><code>hover</code>: when the pointer/cursor is within the area of the circle. Most do not display behavior during this event but some radio buttons do cast a shadow within the circle to indicate that it is currently being interacted with regardless on
+			whether it is clicked or not.</li>
+			<li><code>selected</code>: occurs strictly when user is operating through keyboards input. Pressing the tab key scrolls through all the optional clickables and since radio buttons are grouped together they are always considered one element. To scroll through the choices of radio buttons, the user must use the directional buttons on the keyboard (up and down).</li>
+			<li><code>click + hold</code>: a user can click on a radio button (pressing within the vicinity of the circle or the label) and prevent it from being toggled by dragging and releasing the cursor away from the vicinity of the cursor. This event cannot occur using keyboard inputs.</li>
+			<li><code>click + release</code>: a user can press within the vicinity of the circle or the label and immediately release it to toggle the button. In the context of keyboard inputs, once a button is selected, pressing the enter key is the equivalent of clicking it with a cursor.</li>
+			<li><code>disabled</code>: a disabled button provides no response when it is clicked on. Everything remains the same indicating to the user that nothing has changed. Sometimes a cancel icon takes the place of the cursor indicating that it cannot be clicked.</li> 
+		</ul>
+
+	<h4>State Diagram</h4>
+		<img src="statediagram.png">
+
+	<h4>Component in Action</h4>
+		<p class="text-center">
+			<img src="http://31.media.tumblr.com/2354f87c169620b7c064e5c4d3307178/tumblr_inline_nj9mgb2MYy1qb17pp.gif">
+		</p>
+		<p>Pictured above is a depiction of a user picking between two radio buttons in a constant loop between inactive, click and active.
+		As you can see buttons can be toggled if labels are clicked as well. Pictured below is a live demonstration of a radio button as developed by Bootstrap.</p>
+
+		<p class="text-center">
+  			<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
+			<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
+			<label class="radio-inline"><input type="radio" name="optradio" disabled>Option 3 (disabled)</label>
+		</p>
+</div>
+
+  <div class="col-sm-6">
 	
 <h3>Key Characteristics</h3>
 	<p>Radio buttons' metrics are entirely dependent on their aesthetics and the system's feedback to the user.
