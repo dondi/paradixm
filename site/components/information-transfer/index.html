@@ -29,7 +29,7 @@ contributors:
 <!--****************************************KEY CHARACTERISTICS*******************************************-->
     <div class="col-sm-6">
       <h3>Key Characteristics</h3>
-      <p>The main goal of cut, copy, and paste is to provide users an easy and efficient way to transfer information from a source to a target without having to redo previously done work.</p>
+      <p>The main goal of cut, copy, and paste is to provide users an easy and efficient way to transfer information from a source to a target without redoing previously done work.</p>
       <h4>Basic Rules</h4>
       <ul>
         <li>When a user selects data and completes a cut or copy command, the selected data from the current application should be stored within a pasteboard.</li>
@@ -56,9 +56,9 @@ contributors:
       <div class="col-sm-6 col-md-6 col-xs-12">
         <h4>Events</h4>
 
-        <p>The typical use case of cut, copy, paste requires a section of data selected by the user to be written into the clipboard when the user completes a cut, copy, or similar other action. The data then exists in the clipboard indeterminately until the user completes a paste action, when the data in the clipboard is applied to a user-indicated location.</p>
+        <p>The typical use case of cut, copy, paste requires a section of data to be written into the clipboard when the user completes a cut, copy, or similar other action. The data then exists in the clipboard indeterminately until the user completes a paste action, when the data in the clipboard is applied to a user-indicated location.</p>
 
-        <p>The most important events to complete these tasks are the <code>cut</code>, <code>copy</code>, and <code>paste</code> actions. Each of these events can be completed using keyboard shortcuts, right-click menus, and other application based menus. The <code>cut</code> event adds user selected data to the clipboard and simultaneously removes that same data from the source (i.e. from the location the user selected the data). The <code>copy</code> event adds the user selected data to the clipboard as well, but it keeps the data in place and unaffected at its source. The <code>paste</code> event duplicates the data in the clipboard at a user selected target location. The target location can exist within a particular document, folder, or application, or between documents, folders, and applications.</p>
+        <p>The most important events to complete these tasks are the <code>cut</code>, <code>copy</code>, and <code>paste</code> actions. Each of these events can be completed using keyboard shortcuts, right-click menus, and other application based menus. The <code>cut</code> event adds user selected data to the clipboard and simultaneously removes that same data from the source (i.e. from the location the user selected the data). The <code>copy</code> event adds the user selected data to the clipboard as well, but it keeps the data in place and unaffected at its source. The <code>paste</code> event duplicates the data in the clipboard at a user selected target location. The target location can exist within the same document, folder, or application, or at a different document, folder, or application.</p>
 
 
         <h4>State Diagram</h4>
@@ -99,9 +99,9 @@ contributors:
            </g>
           </svg>
 
-        <p>Clipboard states include <code>full</code> and <code>empty</code>. The <code>full</code> state indicates data currently sitting in the clipboard that is ready to be added to any target location. The <code>empty</code> state indicates that no data has been added to the clipboard using any of the events previously described. While the clipboard is <code>full</code>, the user can attempt to replicate that same data into whichever target location is desired. Often, the target location is limited by the data types allowed in that location (more information regarding this functionality can be found in the Key Characteristics section). </p>
+        <p>Clipboard states include <code>full</code> and <code>empty</code>. The <code>full</code> state indicates data currently sitting in the clipboard that is ready to be added to any target location. The <code>empty</code> state indicates that no data has been added to the clipboard using any of the events previously described. While the clipboard is <code>full</code>, the user can attempt to replicate that same data into whichever target location is desired. Often, the target location is limited by the data types allowed in that location (more information regarding this functionality can be found in the <em>Key Characteristics</em> section). </p>
 
-        <p>When data is replicated at the target location, the data remains in the clipboard until it is overwritten by a new <code>cut</code> or <code>copy</code> event. In a typical use case, these are the only two actions that change the data in the clipboard.</p>
+        <p>When data is replicated at the target location, the data remains in the clipboard until it is overwritten by a new <code>cut</code> or <code>copy</code> event. In a typical use case, these are the only two actions that change the data in the clipboard without restarting the system or application.</p>
       </div>
 
       <div class="col-sm-6 col-md-6 col-xs-12">
@@ -135,11 +135,11 @@ contributors:
 <!--************************************PRIORITY METRICS******************************************-->
     <div class="col-sm-12">
       <h3>Priority Metrics</h3>
-        <p>Because cut, copy, and paste is an incredibly usefull and important functionality, each of the usability metrics are equally and especially important. Cut, copy, and paste tasks can be completed via both menu options, keyboard shortcuts, and drag and drop interfaces. In addition, these functionalities are available in several menus including right-click menus and application menus. The user has the ability to go to various intuitive locations or complete intititive actions in order to complete these functions, thereby decreasing the number of errors they make along the way.</p>
+        <p>Because cut, copy, and paste is an incredibly useful and important functionality, each of the usability metrics are equally and especially important. Cut, copy, and paste tasks can be completed via menu options, keyboard shortcuts, and drag and drop interfaces. In fact, several menus in various locations carry these functionalities including right-click menus and application menus. The user has the ability to go to various intuitive locations or complete intititive actions in order to perform these functions, thereby decreasing the number of errors they might make along the way.</p>
 
         <p>Furthermore, learnability is fairly high because even users with only basic knowledge of computers are aware of right-click menus, or even more simply, Edit menus, and can therefore find and learn how to use these functionalities quickly. The names of the functionalities represent real-world actions, allowing the user to create a clear and memorable picture of the commands they are completing. The high level of learnability combined with the intuitive nature of the functions allow for great memorability.</p>
 
-        <p>Keyboard commands and drag-and-drop compatibility allow these functionalities to be completed efficiently as users can quickly use these commands without accessing any other menus. While users may not be actively thinking about satisfaction levels when completing cut, copy, and paste functions, the existence of these functions and the ease of use intrinsically allow for satisfaction. The user is saved from retyping or recreating a set of data because they can easily and efficiently move that data from location to location.</p>
+        <p>Keyboard commands and drag-and-drop compatibility allow these functionalities to be completed efficiently as users can quickly use these commands without accessing any other menus. While users may not be actively thinking about their satisfaction levels when completing cut, copy, and paste functions, the existence of these functions and the ease of use intrinsically allow for satisfaction. The user is saved from retyping or recreating a set of data because they can easily and efficiently move that data from location to location.</p>
     </div>
   </div>
 </hr>
