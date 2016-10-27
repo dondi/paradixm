@@ -32,8 +32,6 @@ contributors:
 
         <br><br>Example of a desktop task switcher (Windows 10)<br>
         <img src="img/windowstask.png" style="width:100%; height:auto;" alt="Windows 10 Task Switcher" >
-        <br><br>Example of a mobile task switcher (iOS 9)  <br>
-        <iframe src="http://i.giflike.com/embed/zHXwTLz" width="236.6" height="420" scrolling="no" alt="iOS 9 Task Switcher"></iframe>
 
 </p>
 
@@ -58,11 +56,7 @@ contributors:
 
 <h3>Events</h3>
 
-<p>Task switcher events are fairly simple. The task switcher is either <code>onscreen</code> or <code>offscreen</code>.
-    And there is usually a <code>hover</code> 
-    event when each task is selected, followed by a <code>select</code> even when the task is selected. Then, of course,
-    there is a <code>task switch</code> event when switching to the new task. There is also possibly the appearance of an 
-    <code>options menu</code> event from an alternative click and a <code>preview</code> event from a long hover.</p>
+<p>There are only a few simple events when talking about Task Switcher.  The most relevant, basic task launcher event is to select the new open app and switch to it.  Because switching between applications is a fairly simple action that is heavily used, it should not require the user to perform many steps.  First of all, the task switcher is either <code>onscreen</code> or <code>offscreen</code>.  If a user <code>hovers</code> over a task, it becomes <code>selected</code>.  The previous task then becomes unselected since only one task can be selected at a time hence task switcher.</p>
 
 <h3>Variants</h3>
 
@@ -115,16 +109,17 @@ contributors:
         
 <h3>Key Characteristics</h3>
 
-<p>I think the important characteristics for a task switcher are illuminated by the above overview of usability metrics.
-        A good task switcher should be firstly efficient. The user should be able to switch to any given task with as few clicks
-        as possible, and the switching action should be quick, avoiding unnecessary transitions or animations.  It should also be
-        unobtrusive, reasonably easy to learn, certainly easy to use, and should work the same no matter how many, or what type
-        of, tasks are active.</p>
-    
-<p>A good task switcher should be easily accessible from any screen or program, and should be able to move between any needed task
-        or kill a task without having to stop and think about what they're doing. common features include a representation of the icons
-        and/or previews of the various tasks and a button to end them. Also optionally multiple instances of the same task could be
-        embedded or overlayed and some information or metrics can be shown on various tasks.</p> 
+<p>I think the most important IxD principles every task switcher should adopt are Efficiency, Feedback, and Simplicity.</p>
+
+	<p>Efficiency – A good task switcher should prioritize efficiency and should be accessible from any screen or application.  It should have the ability to switch between, or kill tasks in 1 or 2 steps since task switching is a heavily used action.  Common task switcher features include representations of the running tasks, icons for example, and a button to quit them.  The user should be able to switch to any given task with as few clicks as possible, and the switching action should be a quick process without any unnecessary transitions or animations.  Switching tasks should be a simple, easy to learn task, and should function the same regardless of how many or what type of tasks are active.</p>
+
+	<p>Feedback – Feedback is a very important IxD principle that a task switcher must adopt.  Users should never be doubtful of these two scenarios:
+			1: a current task is highlighted, and ready to be opened on key release
+			2: all other tasks are not selected, so as there is no confusion as to which task will be opened
+		
+		Should these scenarios be inconsistent and the task switcher deems unreliable, the user will require much more time when attempting to switch tasks due to uncertainty in his interface’s function.</p>
+
+	<p>Simplicity – Simplicity is also an important IxD principle to implement in task switcher.  Users should have zero problems distinguishing which tasks are active, which task is currently selected, how to select a different task, and how to quit a running task.</p> 
  
 </div> 
 
