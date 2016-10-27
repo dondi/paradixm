@@ -10,7 +10,7 @@ contributors:
 ---
 
 <p class="lead">
-	A button, when pressed toggles some kind of action. What separates it from other buttons is that it is considered in one unit with other radio buttons to allow users to toggle <em>exclusively</em> on one option from a set of related and predetermined options.
+	A button whose function is making a choice out of a selection of choices.  The focus of a radio button is on the exclusivity of the selected response.  When pressed the button is set to active and every other button in the set is set to inactive.
 </p>
 
 <div class="row" id="geneeric-info">
@@ -44,12 +44,12 @@ contributors:
 
 		<h3>Events</h3>
 		<div class="container col-md-12 well">
-			<ul class="nav nav-tabs" role="tablist">
-		  	<li role="presentation" class="active"><a href="#hover" data-toggle="tab"> Hover <br></a></li>
-		  	<li role="presentation"><a href="#selected" data-toggle="tab"> Selected <br> </a></li>
-		  	<li role="presentation"><a href="#clickandhold" data-toggle="tab"> Click and <br> Hold</a></li>
-		  	<li role="presentation"><a href="#clickandrelease" data-toggle="tab"> Click and <br> Release</a></li>
-		  	<li role="presentation"><a href="#disabled" data-toggle="tab"> Disabled <br> </a></li>
+			<ul class="nav nav-tabs nav-justified" role="tablist">
+		  	<li role="presentation" class="active" height="100"><a href="#hover" data-toggle="tab"> Hover</a></li>
+		  	<li role="presentation"><a href="#selected" data-toggle="tab"> Selected</a></li>
+		  	<li role="presentation"><a href="#clickandhold" data-toggle="tab"> Press</a></li>
+		  	<li role="presentation"><a href="#clickandrelease" data-toggle="tab"> Release</a></li>
+		  	<li role="presentation"><a href="#disabled" data-toggle="tab"> Disabled</a></li>
 			</ul>
 			<div class="tab-content">
 				<div role="tabpanel" class="tab-pane active" id="hover">
@@ -127,7 +127,7 @@ contributors:
 		<h3>Variants</h3>
 
 		<div class="container col-xs-12 well">
-			<ul class="nav nav-tabs" role="tablist">
+			<ul class="nav nav-tabs nav-justified" role="tablist">
 		  	<li role="presentation" class="active"><a href="#Menu-Items" data-toggle="tab"> Menu <br> Items</a></li>
 		  	<li role="presentation"><a href="#List-Selection" data-toggle="tab"> List <br> Selection</a></li>
 		  	<li role="presentation"><a href="#Segmented-Control" data-toggle="tab"> Segmented <br> Control</a></li>
@@ -140,7 +140,7 @@ contributors:
 					<h4>Menu Items</h4>
 					<div class="well">
 						<p class="text-center">
-							<p><p class="text-center"><img src="http://i60.tinypic.com/k3q00k.png" class="img-responsive center-block"></p> buttons like the picture above that bring down submenus could be considered a variation of a radio button in that only one can be toggled (to expand the submenu) once at a time. However conceptually-speaking, radio buttons focus more on status (ex: the background is red and not blue) rather than actions (ex: pressing a button to access a submenu for background color) so menu buttons are not necessarily identified as a radio button.</p>
+							<p><p class="text-center"><img src="http://i60.tinypic.com/k3q00k.png" class="img-responsive center-block"></p> Buttons like the picture above that bring down submenus could be considered a variation of a radio button in that only one can be toggled (to expand the submenu) once at a time. However conceptually-speaking, radio buttons focus more on status (ex: the background is red and not blue) rather than actions (ex: pressing a button to access a submenu for background color) so menu buttons are not necessarily identified as a radio button.</p>
 					</div>
 				</div>
 				
@@ -150,14 +150,14 @@ contributors:
 						<div class="row">
 							<p class="text-center"><img class="col-md-6" src="http://i60.tinypic.com/1236syh.png"><img class="col-md-6" src="https://csgsitestorage.blob.core.windows.net/img/1426714471678.gif" class="img-responsive center-block"></p> 
 						</div>
-						<p class="row">this variation presents itself as a list instead of circular buttons. Instead of "filling" in the circle to make a decision, the user clicks on the label itself (usually colored differently when hovered over). Another variation of this is the select box which is like the menu list but requires the user to press a separate select button in order to click their choice.</p>
+						<p class="row">This variation presents itself as a list instead of circular buttons. Instead of "filling" in the circle to make a decision, the user clicks on the label itself (usually colored differently when hovered over). Another variation of this is the select box which is like the menu list but requires the user to press a separate select button in order to click their choice.</p>
 					</div>
 				</div>
 				
 				<div role="tabpanel" class="tab-pane" id="Segmented-Control">
 					<h4>Segmented Control</h4>
 					<div class="well">
-							<p><p class="text-center"><img src="https://www.cowirrie.com/blog/wp-content/uploads/2012/07/iOSSegmentedControl.png" class="img-responsive center-block"></p><em>segmented control</em>: instead of circles, they are fashioned more like tabs. This is more in the vein of actual physical radio buttons on a radio -- in that it is clear that they belong in the same group but their actions are exclusive from one another. The only fault of these is that they do not allow for much text space on the labels.
+							<p><p class="text-center"><img src="https://www.cowirrie.com/blog/wp-content/uploads/2012/07/iOSSegmentedControl.png" class="img-responsive center-block"></p>Instead of circles, they are fashioned more like tabs. This is more in the vein of actual physical radio buttons on a radio -- in that it is clear that they belong in the same group but their actions are exclusive from one another. The only fault of these is that they do not allow for much text space on the labels.
 							</p>
 						</div>
 					</div>
@@ -165,7 +165,7 @@ contributors:
 				<div role="tabpanel" class="tab-pane" id="Multiple-Selectable">
 				<h4>Multiple Selectable</h4>
 				<div class="well">
-						<p><p class="text-center"><img src="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/art/buttonsradiomixed.gif" class="img-responsive center-block"></p><em>multiple concurrently selectable radio buttons</em> with the focus of radio buttons being on <em> exclusivity </em> it is recommended that you instead use <a href="../check-box">checkboxes</a> for this functionality.</p>
+						<p><p class="text-center"><img src="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/art/buttonsradiomixed.gif" class="img-responsive center-block"></p>Multiple concurrently selectable radio buttons, while implementable with most radio button interfaces are not recomened as the focus of radio buttons being on <em> exclusivity </em> it is recommended that you instead use <a href="../check-box">checkboxes</a> for this functionality.</p>
 					</div>
 				</div>
 			
@@ -221,7 +221,7 @@ contributors:
 
 			<h4>Interactive</h4>
 			<div class="well">
-				<p>button should toggle upon clicking within the vicinity of the circle and the accompanying label itself.</p>
+				<p>Button should toggle upon clicking within the vicinity of the circle and the accompanying label itself.</p>
 			</div>
 
 			<h4>Distinct</h4>
@@ -280,17 +280,22 @@ contributors:
       </div>
 
       <div role="tabpanel" class="tab-pane fade" id="Windows-10">
-        <p>
+      <br>
         	Microsoft sets some strict guidelines on the use of radio buttons. First and most importantly, radio buttons should only be used with two or mutually exclusive options.  They should be used in  the place of a drop down list when most or all of the options are important enough to take up screen space.  In instances where the default option will be selected by the majority of users than you should use a drop-down menu instead.  In general, there is not much difference between Windows 10 radio buttons and others, although Windows does make the choice to change the cursor to indicate hovering over the button as opposed to affecting the button itself.
         	
-        	<p class="text-center"><img src="https://i-msdn.sec.s-msft.com/en-us/windows/uwp/controls-and-patterns/images/control-examples/radio-buttons-edge.png"></p>
+        	<div class="container">
+        	<div class="col-sm-6">
+	        	<p class="text-center"><img src="W10example.png" width="50%"></p>
 
-        	This image shows the design of Windows 10 radio buttons.  The selected button is shown by changing the color of the outer circle, and filling the concentric circle with black.  These colors can be changed.  Also note that each button's description is only one line long and uses sentence case.  You can also see drop-down lists being used for less impactful features.
+	        	This image shows the design of Windows 10 radio buttons.  The selected button is shown by changing the color of the outer circle, and filling the concentric circle with black.  These colors can be changed.  Also note that each button's description is only one line long and uses sentence case.  You can also see drop-down lists being used for less impactful features.
+        	</div>
 
-        	<p class="text-center"><img src="https://i-msdn.sec.s-msft.com/en-us/windows/uwp/controls-and-patterns/images/radio-button-groups.png"></p>
+        	<div class="col-sm-6">
+	        	<p class="text-center"><img src="https://i-msdn.sec.s-msft.com/en-us/windows/uwp/controls-and-patterns/images/radio-button-groups.png"></p>
 
-        	This image shows a desired way to seperate radio buttons.  The different labels make it clear that the two sets are distinct, and that selecting from Background will not affect BorderBrush.  Microsoft makes it clear that a developer must distinct different sets of buttons, as the mutually exclusive nature is prone to errors if the mental model of the user does not match the system image.
-        </p>
+	        	This image shows a desired way to seperate radio buttons.  The different labels make it clear that the two sets are distinct, and that selecting from Background will not affect BorderBrush.  Microsoft makes it clear that a developer must distinct different sets of buttons, as the mutually exclusive nature is prone to errors if the mental model of the user does not match the system image.
+	        </div>
+	        </div>
 
       </div>
 
