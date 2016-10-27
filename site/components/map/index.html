@@ -9,7 +9,7 @@
   <title>Map</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="map-style.css">
   <style>
@@ -137,7 +137,7 @@
 
 
         <div class="container" role="main">
-      <h2>Component Name</h2>
+      <h2>Map</h2>
 
 <dl class="dl-horizontal">
   <dt>Contributor</dt>
@@ -150,14 +150,7 @@
   </dd>
 </dl>
 
-
-<blockquote>This file is meant to serve as a template sample for articles in the Paradixm component catalog.
-  Instructions/directives are presented in block quotes and sample text is included in line, as if it were actual
-  content for this page. Section headings are not samples but actual recommended titles.</blockquote>
-
-<blockquote>Start your component pages with a quick description of the component, such as:</blockquote>
-
-<p class="lead">visual representations of geographic space, maps have, with the advent of mobile technology, become essential interface components in a wide range of applications.</p>
+<p class="lead">with the popularization of mobile technology, maps have become essential interface components in a wide range of applications.</p>
 
 <div class="row">
   <div class="col-sm-6">
@@ -178,8 +171,6 @@
     <li><em>Snap to Current Location</em>: maps allow the user to snap to their immediate surroundings</li>
   </ul> 
   </p>
-
-  <p>Helpful subsections include:</p>
 </blockquote>
 
 <h4>Events</h4>
@@ -200,7 +191,7 @@
       <p><em>The Release</em>: initiated by <code>mouse button release</code></p>
       <p>User-controlled map panning is completed when the user releases their mouse button. Depending on the implementation, the map may continue to move in the direction of its momentum when the mouse was released.</p>
       <figure class="figure">
-        <img src="panning-apple-maps.gif" class="figure-img img-responsive rounded">
+        <img src="panning-apple-maps.gif" id="pop" class="figure-img img-responsive rounded">
         <figcaption class="figure-caption">An example of the panning event in Apple Maps</figcaption>
       </figure>
     </div> 
@@ -271,6 +262,7 @@
         <img src="search-google.gif" class="figure-img img-responsive rounded">
         <figcaption class="figure-caption">The Google Maps search in action</figcaption>
       </figure>
+      <p><br></p>
       <figure class="figure">
         <img src="search-2-google.gif" class="figure-img img-responsive rounded">
         <figcaption class="figure-caption">Snapping to a search result in Google Maps</figcaption>
@@ -306,6 +298,7 @@
         <img src="pin-directions-apple.gif" class="figure-img img-responsive rounded">
         <figcaption class="figure-caption">Getting directions to a pinned location in Apple Maps</figcaption>
       </figure>
+      <p><br></p>
       <p><em>Get Directions</em>: initiated by <code>click</code></p>
       <p>The Get Directions event is triggered when the user clicks the directions button, the appearance of which varies by platform. Upon click, the map component presents the user with two text input boxes: one for the origin location and one for the final destination.</p>
       <p><em>Origin and Destination Selection</em>: initiated by <code>enterText</code>
@@ -322,60 +315,29 @@
 
 <h4>State Diagram</h4>
 
-<blockquote>
-  <p>A state diagram indicating the actions and states of a user interface component.</p>
+<div style="width: 100%; height: 100%;"><svg style="width: 100%; height: 100%; display: block;"><g transform="translate(-202,-134)"><g></g><g><g style="visibility: visible;" transform="translate(0.5,0.5)"><rect x="213.4" y="144.48" width="68.8" height="34.4" rx="5.16" ry="5.16" fill="white" stroke="black" transform="translate(1.72,2.58)" opacity="1"></rect></g><g style="visibility: visible;"><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="9.459999999999999px"><text x="247.3" y="164.19">3D View</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><rect x="462.8" y="144.48" width="68.8" height="34.4" rx="5.16" ry="5.16" fill="white" stroke="black" transform="translate(1.72,2.58)" opacity="1"></rect></g><g style="visibility: visible;"><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="9.459999999999999px"><text x="496.7" y="164.19">2D View</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><path d="M 282.2 153.08 L 364.4 153.08 Q 373 153.08 381.6 153.08 L 457.33 153.08" fill="none" stroke="black" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 282.2 153.08 L 364.4 153.08 Q 373 153.08 381.6 153.08 L 457.33 153.08" fill="none" stroke="#36393d" stroke-miterlimit="10"></path><path d="M 461.84 153.08 L 455.82 156.09 L 457.33 153.08 L 455.82 150.07 Z" fill="#36393d" stroke="#36393d" stroke-miterlimit="10" pointer-events="all"></path></g><g><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="8.6px"><rect fill="white" stroke="none" x="324" y="147" width="96" height="10" stroke-width="0"></rect><text x="372.2" y="155.66">Click 2D/3D View Toggle</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><path d="M 462.8 170.28 L 381.1 170.28 Q 372.5 170.28 363.9 170.28 L 287.68 170.28" fill="none" stroke="black" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 462.8 170.28 L 381.1 170.28 Q 372.5 170.28 363.9 170.28 L 287.68 170.28" fill="none" stroke="#36393d" stroke-miterlimit="10"></path><path d="M 283.17 170.28 L 289.19 167.27 L 287.68 170.28 L 289.19 173.29 Z" fill="#36393d" stroke="#36393d" stroke-miterlimit="10" pointer-events="all"></path></g><g><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="8.6px"><rect fill="white" stroke="none" x="324" y="164" width="96" height="10" stroke-width="0"></rect><text x="372.8" y="172.86">Click 2D/3D View Toggle</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><rect x="213.4" y="230.48" width="68.8" height="34.4" rx="5.16" ry="5.16" fill="white" stroke="black" transform="translate(1.72,2.58)" opacity="1"></rect></g><g style="visibility: visible;"><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="9.459999999999999px"><text x="247.3" y="250.19">Map View</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><rect x="462.8" y="230.48" width="68.8" height="34.4" rx="5.16" ry="5.16" fill="white" stroke="black" transform="translate(1.72,2.58)" opacity="1"></rect></g><g><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="9.459999999999999px"><text x="496.7" y="250.19">Satellite View</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><path d="M 282.2 239.08 L 364.4 239.08 Q 373 239.08 381.6 239.08 L 457.33 239.08" fill="none" stroke="black" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 282.2 239.08 L 364.4 239.08 Q 373 239.08 381.6 239.08 L 457.33 239.08" fill="none" stroke="#36393d" stroke-miterlimit="10"></path><path d="M 461.84 239.08 L 455.82 242.09 L 457.33 239.08 L 455.82 236.07 Z" fill="#36393d" stroke="#36393d" stroke-miterlimit="10" pointer-events="all"></path></g><g><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="8.6px"><rect fill="white" stroke="none" x="326" y="233" width="91" height="10" stroke-width="0"></rect><text x="372.2" y="241.66">Click View Style Toggle</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><path d="M 462.8 256.28 L 381.6 256.28 Q 373 256.28 364.4 256.28 L 287.68 256.28" fill="none" stroke="black" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 462.8 256.28 L 381.6 256.28 Q 373 256.28 364.4 256.28 L 287.68 256.28" fill="none" stroke="#36393d" stroke-miterlimit="10"></path><path d="M 283.17 256.28 L 289.19 253.27 L 287.68 256.28 L 289.19 259.29 Z" fill="#36393d" stroke="#36393d" stroke-miterlimit="10" pointer-events="all"></path></g><g><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="8.6px"><rect fill="white" stroke="none" x="327" y="250" width="91" height="10" stroke-width="0"></rect><text x="372.8" y="258.86">Click View Style Toggle</text></g></g></g><g></g><g></g></g></svg></div>
 
-  <p>This is most likely an image. Bonus props if you use SVG.</p>
-
-  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
-    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
-    however, may have more activities than the “public” events that can be reported by a component.</p>
-</blockquote>
-
-<p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
-  viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
-  it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
-  state means that a user <em>cannot</em> do so.</p>
-
-<p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
-  implementations, but in general they are:</p>
-
-<ul>
-  <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
-    change the button’s appearance. This provides a form of feedback that states that the button will respond if
-    additional activity is performed.</li>
-
-  <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
-    the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
-    from this state, in case the user changes his or her mind in mid-action.</li>
-</ul>
+<div class="pop"><img src="big-state.png" class="img-responsive"></div>
 
 <h4>Component in Action</h4>
 
-<blockquote>
-  <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
-
-  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
-</blockquote>
-
-<p class="text-center">
-  <button class="btn btn-default">Standard Bootstrap Button</button>
-  <button class="btn btn-default disabled">Disabled Bootstrap Button</button>
-</p>
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src=https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d195601.04562769792!2d-75.11803295!3d40.002497999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401521095201"></iframe>
+</div>
 
   </div>
 
   <div class="col-sm-6">
 <h3>Variants</h3>
+<p><br></p>
+<em>Embedded Maps</em> appear very similar to a full-featured map implementations, but typically restrict the availability of user interactions. For example, embedded maps on Thrillist.com do not permit the user to search for locations other than bars and restaurants, to drop pins, or to get directions. These behaviors vary from site to site. <p><br>
+</p>
+<figure class="figure">
+      <img src="thrillist-embedded.gif" class="figure-img img-responsive rounded">
+      <figcaption class="figure-caption">Some behaviors allowed on a map embedded on thrillist.com</figcaption>
+    </figure>
 
-<ul>
-  <li><em>Embedded Maps</em> appear very similar to a full-featured map implementations, but typically restrict the availability of user interactions. For example, embedded maps on Thrillist.com do not permit the user to search for locations other than bars and restaurants, to drop pins, or to get directions. These behaviors vary from site to site.
-  <figure class="figure">
-        <img src="thrillist-embedded.gif" class="figure-img img-responsive rounded">
-        <figcaption class="figure-caption">Some behaviors allowed on a map embedded on thrillist.com</figcaption>
-      </figure>
-  </li>
-</ul>
+
 
 <h3>Priority Metrics</h3>
 <h4>Learnability</h4>
@@ -394,10 +356,6 @@
 <p>User satisfaction is always an important measure of usability, and maps are no different. Especially in the crowded space of map applications, all of which serve relatively the same function, developers must prioritize satisfaction in order to differentiate their implementation from those of their competitors.</p>
 
 <h3>Key Characteristics</h3>
-
-<blockquote>This section is for describing “what makes for a good <em>your component here</em>?”
-  Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
-  principles.</blockquote>
 
 <h4>Feedback</h4>
 <p>Maps are populated with a great deal of information, so in order to make users best able to understand the effects of their actions, any and all feedback must convey all relevant information in a manner both visible and simple.</p>
@@ -439,9 +397,33 @@
   <div class="col-xs-6 col-sm-3">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title text-center">Alto</h4>
+        <h4 class="panel-title text-center">macOS</h4>
       </div>
       <div class="panel-body">
+        Apple Maps, Apple's proprietary map implementation, makes use of macOS specific features to allow users to manipulate maps in interesting ways. These features can be seen in the following events:
+
+        <p><br></p>
+
+        <p><em>Zoom In/Out</em>: initiated and maintained by <code>pull (two fingers outward)</code> and <code>pinch (two fingers inward)</code> respectively</p>
+        <p>The behavior of the zoom is essentially the same as in any other map, but the input provides the user with greater tactile feedback than other applications</p>
+
+        <p><br></p>
+
+        <p><em>Rotate</em>: initiated and maintained by: <code>two finger rotate</code></p>
+        <p>Rotation operates the same as in other applications, but can be triggered in Apple Maps not only by clicking the corresponding button on the interface itself, but also by a more tactile operation.</p>
+
+        <p><br></p>
+
+        <p><em>Drop Pin</em>: initiated by <code>force click</code></p>
+        <p>The drop pin can be initiated in Apple maps via force click, a proprietary operation</p>
+
+        <p><br></p>
+
+        <figure class="figure">
+          <img src="macOS-maps.gif" class="figure-img img-responsive rounded">
+          <figcaption class="figure-caption">macOS specific behaviors</figcaption>
+        </figure>
+
       </div>
     </div>
   </div>
@@ -476,6 +458,26 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">              
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img src="" class="imagepreview" style="width: 100%;" >
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function() {
+    $('.pop').on('click', function() {
+      $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+      $('#imagemodal').modal('show');   
+    });   
+});
+</script>
 
 <h3>Credits &amp; References</h3>
 

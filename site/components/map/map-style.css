@@ -3,3 +3,10 @@
 .event-header {
     display: inline-block;
 }
+
+svg {
+    font-size: 62.5%;
+    font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+    text-align: center;
+    fill: white;
+}
