@@ -209,8 +209,6 @@ contributors:
 
 <!-- REMINDER: ELABORATE ON STATES -->
 
-    <h3>Platform-Specific Instances</h3>
-
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title text-center">Windows 8.1</h4>
@@ -260,31 +258,30 @@ contributors:
 
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title text-center">OSX El Capitan</h4>
+        <h4 class="panel-title text-center">OSX El Capitan and OSX Sierra</h4>
       </div>
       
       <div class="panel-body">
-      	<p> There are two main ways a user can use task switching in OSX. </p>
+      	<p> There are two main ways a user can use task switching in OS X. There are no differences between task switcher in El Capitan and task switcher in Sierra. </p>
 		<strong>Standard Task Switching</strong>
-      	<p>The user presses and holds the <code>CMD</code> button, and taps on <code> Tab</code>. The task switcher pops up, taking screen priority, showing all currently open apps with the current app being highlighted: </p>
-
-		<img src="img/taskSwitch1.png" style="width:100%; height:auto;" alt="OSX Task Switcher 1">
-
-      	<p><em>Note that the app that is highlighted is the only one that has text under it, and has a light grey box that encompasses the icon</em> </p>
-      	<p>The user now has multiple options and can
+      	<p>The user presses and holds the <code>Command (CMD)</code> key, and then presses the <code>Tab</code> key to bring up the task switcher.  The task switcher appears large on the screen, showing all open applications and only one selected task.  The task switcher is only active and accessible as long as the user holds down the <code>CMD</code> key.  The user can then decide to perform any of these options:</p>
+      	
+      	<p>
 	      	<ul>
-	      	<li>Release the keys to switch to the currently open app.</li>
-	      	<li>Cycle through the currently open apps:</li>
-				<ul>
-					<li> to the right by using either <code>Tab</code> or the <code>Right Arrow</code> key.</li>
-					<li> to the left by using either <code>Tab + Shift</code> or the <code>Left Arrow</code> key or the <code>`</code> key.</li>
-				</ul>
+	      	<li>Release both the CMD and Tab keys to switch to the highlighted app</li>
+	      	<li>Cycle through the currently open applications by tapping either <code>Tab</code>/<code>Right Arrow</code> key to cycle right, or <code>Shift</code> key and tapping <code>Tab</code>/ <code>`</code> /<code>Left Arrow</code> key to cycle left</li>	
 			<li>Enter <i> Expose Mode </i> by hitting either the <code>Up</code> or <code>Down</code> arrow key. </li>
-			<li>Hide the application by hitting the <code>H</code> key.</li>
-			<li>Quit the application by hitting the <code>Q</code> key. </li>
+			<li>Hide the selected application by hitting the <code>H</code> key.</li>
+			<li>Quit/Kill the selected application by hitting the <code>Q</code> key. </li>
 			</ul>
 			<p> Although there are many shortcuts to accomplish multiple tasks, for the sake of simply "task switching" only the first three bullet points are relevant. For the sake of completeness, if the user decided to cycle right, the new state would be</p>
+
+			<img src="img/taskSwitch1.png" style="width:100%; height:auto;" alt="OSX Task Switcher 1">
+			<p><em>The selected task/app is the only one that has text underneath, and is highlighted by a light grey box around the icon.  </em> </p>
+
 			<img src="img/taskSwitch2.png" style="width:100%; height:auto;" alt="OSX Task Switcher 2">
+			<p><em>An example of cycling right to the next application</em> </p>
+
 			<br>
 			
      	</p>
@@ -292,11 +289,19 @@ contributors:
      	<p>
      		<strong>Mission Control Task Switching</strong>
      		
-     		<p>The user either presses the mission control key <img src="img/missionC.png" style="width:3%; height:auto;" alt="F3 key">, enters <code>Control + Up</code> keys, enables swiping gestures (ie four finger swipe up across the trackpad), or presses the <code>up</code> or <code>down</code> arrow keys when the standardk task switcher is active, and launches <em> Mission Control </em> and is greeted with the following view: </p>
+     		<p>TThe user has three different options to launch the Mission Control task switcher: </p> 
+
+     		<p>
+	      	<ul><li>Tap the F3 key <img src="img/missionC.png" style="width:3%; height:auto;" alt="F3 key">
+	      	<li>Hold down the <code>Control (Ctrl)</code> key and tap the <code>Up Arrow</code> key</li>
+	      	<li>Swipe up acorss the trackpad using four fingers</li>
+				</ul>
+
+     		<p> When any of these commands are executed, we are greeted with the following view - Mission Control's basic layout.</p>
 			
 			<p><img src="img/taskSwitch3.png" style="width:70%; height:auto;" alt="OSX Task Switcher 3"> </p>
 
-			<p>Although there are many neat features in Mission control that have to do with using OSX <em>Spaces </em>, regarding the act of task switching, they are irrelevant as it is more for window management. What is to note is the differences between the two interfaces. Mission Control displays thumbnails where a user can see what is going on inside each and every single app. They are spread across in no particular order, and none of them are highlighted until a user mouses over an app. When a user mouses over an app, a label appears with the app name. A stark contrast to the thin, simple standard task manager that only shows icons and a single selected app.</p>
+			<p>Mission Control is a huge improvement from Apple’s OS app, Spaces, regarding task switching.  Both Mission Control and Spaces were more relevant for window management, but some users use Mission Control as a task switcher as well.  Mission Control displays small desktop thumbnails at the top of the screen, where users can see a preview of what apps are open and active in each desktop page.  Users can then hover their mouse over an app, which will then highlight the app page and bring up a label of the app/file name.  In simpler terms, Mission Control is better used for window organization, but has the ability to act as a small task switcher.  </p>
 
 		</p>
 
