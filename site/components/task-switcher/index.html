@@ -12,7 +12,8 @@ contributors:
       github: jlee201
 
     - name: Jared Soliman
-   	  github: bigsolly13  
+      github: bigsolly13  
+
 ---
 
 
@@ -127,10 +128,7 @@ contributors:
 
 <img src="./state_diagram.png">   
 
-<p>Task switcher states depend on the functionality of the switcher, but as a general overview we can say that there a few
-        different states. Task not-running, Task running &amp; active, Task running &amp; non-active, and Task selected in task
-        switcher, Task options panel selected in task switcher. It is important to note that, in the taskbar or tray,
-        tasks which are not currently running can still be pinned, and selected, opened, or shown options.</p>
+<p>Keeping in mind that only one task can be selected at a time; Task switcher states depend on the functionality of the switcher.  As a general overview, we can say that there are only 5 different states: Task not running, Task running and active, Task running and non-active, Task selected in task switcher, and Task options panel selected in task switcher.  A task must be selected in order for it to be launched, which occurs on key release or it’s platform-specific way selection.  However, if the task switcher is active onscreen, a user has the option to interact with each task, but they are never disabled if the task launcher is open.  It is important to remember that in the taskbar/tray, tasks not currently running can still be selected, open, or shown options.</p>
         
 
 <hr>
