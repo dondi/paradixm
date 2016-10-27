@@ -371,7 +371,58 @@ contributors:
         </div>
 
         <!--****************************Windows 10**********************************-->
-        <div role="tabpanel" class="tab-pane fade in" id="Windows10">Windows 10</div>
+        <div role="tabpanel" class="tab-pane fade in" id="Windows10" style="padding-left: 1cm;">
+          <h4>Windows 10 Resizing Instances and Guidelines</h4>
+          <p >This section will evaluate the implementation of the resize component in the <b>Windows 10</b> platform.   In addition to providing specific examples of resizing, this section will discuss the Windows Guidelines and whether they are accurately reflected in the provided examples.  It is important to note that the Windows Guidelines is a huge collection of documentation, and because this only a handful apply directly to resizing.  Some of the specific sections of the Windows Guidelines that will be referenced are:
+            <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742502(v=vs.85).aspx">Windows Window Management</a>,
+            <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499(v=vs.85).aspx">Windows Dialogue Boxes</a>, and
+            <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742498(v=vs.85).aspx">Windows Common Dialogues</a>.
+            Some of the main concepts that can be pulled from these guideline sections are:</p>
+          <ul>
+            <li>
+              <p>Minimum effective window resolution is 800x600 pixels.</p>
+            </li>
+            <li>
+              <p>Optimal resolution for an effective resizable window is 1024x768 pixels.</p>
+            </li>
+            <li>
+              <p>Resizable windows no longer require the resize glyph in the lower right corner of the window.</p>
+              <ul>
+                <li>
+                  <p>The glyph requires a status bar in order to be displayed.</p>
+                </li>
+                <li>
+                  <p>Resizable window boarders and resize pointers are more effective at conveying a window is resizable than the glyph.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>Resizable window boarders and resize pointers are more effective at conveying a window is resizable than the glyph.</p>
+              <ul>
+                <li>
+                  <p>All windows should have a minimize button to reduce a window to a taskbar button.</p>
+                </li>
+                <li>
+                  <p>All windows should have a maximize/restore down button, unless the window isn’t resizable.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>The maximize button should make the window full screen, or maximum needed size.</p>
+            </li>
+            <li>
+              <p>The restore down button should restore the window to its previous size.</p>
+              <ul>
+                <li>
+                  <p>Use resizable windows whenever possible to avoid scroll bars and truncated data.</p>
+                </li>
+                <li>
+                  <p>A minimum window size should be set if the window will no longer be usable at certain dimensions.</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -387,5 +438,7 @@ contributors:
     <a href="https://api.jquery.com/resize/">JQuery Documentation</a><br>
     <a href="http://docs.telerik.com/kendo-ui/api/javascript/ui/window">Kendo UI Documentation</a><br>
     <a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/index.html#//apple_ref/doc/uid/20000957-CH4-SW1">macOS Human Interface Guidelines</a><br>
+    <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn688964(v=vs.85).aspx">Windows Guidelines</a><br>
+    <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742502(v=vs.85).aspx">Windows Window Management Guidelines</a><br>
   </div>
 </div>
