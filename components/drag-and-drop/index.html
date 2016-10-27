@@ -579,28 +579,27 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
     <p class = "lead">For iOS devices, like the iPhone and iPad, drag and drop functions differently because of the use of touch controls and lack of mouse and cursor. Touch controls on iOS prioritize scrolling over other controls. Because of this, to use drag and drop on iOS devices, it has to be enabled first. <mark>Note that drag and drop on the home screen will only move the app's icon and where it can be accessed. This will not change where it is stored on the device.</mark></p>
   </div>
   <br>
+  <div><h4>Home Screen Events</h4></div>
+  <div class = "col-xs-8">
+    <ul>
+    <li><h4>Enable -</h4> Initiate by <code>Tap and holding on an app</code></li><p>
+    Because holding and moving your finger down on an iOS devices home screen scroll through apps, drag and drop must be enabled by holding down on one of the apps on the device.  In this mode on the home screen, apps will start shaking, denoting that they can be moved via drag and drop, and some apps have "x" buttons on the top left, denoting that they can be deleted. In this mode, apps cannot be opened. However, the user can still scroll between apps by holding and moving their finger between apps. </p>
 
-  <div class = "col-md-8">
-    <h4>Home Screen Events</h4>
-    <div class = "inlineHeader">
-      <ul>
-      <li><h4>Enable -</h4> Initiate by <code>Tap and holding on an app</code></li><p>
-      Because holding and moving your finger down on an iOS devices home screen scroll through apps, drag and drop must be enabled by holding down on one of the apps on the device.  In this mode on the home screen, apps will start shaking, denoting that they can be moved via drag and drop, and some apps have "x" buttons on the top left, denoting that they can be deleted. In this mode, apps cannot be opened. However, the user can still scroll between apps by holding and moving their finger between apps. </p>
+    <li><h4>Drag -</h4> Maintained while <code>Finger held down</code></li><p>
+    Once the app manipulation mode has been enabled, the user can move apps around the home screen using drag and drop. By holding down on the app, it will darken and expand, denoting that it is currently being manipulated. After moving it far enough from its original position, apps that are lower and left of the original app will fill in the space. The manipulated app can be moved to a different page by moving it to farthest left or right edge of the screen.</p>
 
-      <li><h4>Drag -</h4> Maintained while <code>Finger held down</code></li><p>
-      Once the app manipulation mode has been enabled, the user can move apps around the home screen using drag and drop. By holding down on the app, it will darken and expand, denoting that it is currently being manipulated. After moving it far enough from its original position, apps that are lower and left of the original app will fill in the space. The manipulated app can be moved to a different page by moving it to farthest left or right edge of the screen.</p>
+    <li><h4>Drop -</h4> Initiated by <code>releasing finger</code></li><p>
+    The area where the user releases the app determines where it will it will land. If it lands to the left or right of another app, the manipulated app will fall inbetween and the rest of the apps will make space for it. iOS does not recognize the small space above and below apps as valid places to place apps. If an app is released in this area, it will return to the last valid area passed over. Apps can also be dropped to the bar on the bottom hotkey bar so they can be accessed from all pages, or dropped on top of another app to create a folder.</p>
 
-      <li><h4>Drop -</h4> Initiated by <code>releasing finger</code></li><p>
-      The area where the user releases the app determines where it will it will land. If it lands to the left or right of another app, the manipulated app will fall inbetween and the rest of the apps will make space for it. iOS does not recognize the small space above and below apps as valid places to place apps. If an app is released in this area, it will return to the last valid area passed over. Apps can also be dropped to the bar on the bottom hotkey bar so they can be accessed from all pages, or dropped on top of another app to create a folder.</p>
-
-      <li><h4>Disable -</h4> Initiated by <code>pressing the home button</code></li><p>
-      Once the user is done moving apps, they can deactivate this mode by pressing the home button on their device.  Apps will not be able to be moved and can now be opened.</p>
-      </ul>
-    </div>
+    <li><h4>Disable -</h4> Initiated by <code>pressing the home button</code></li><p>
+    Once the user is done moving apps, they can deactivate this mode by pressing the home button on their device.  Apps will not be able to be moved and can now be opened.</p>
+    </ul> 
   </div>
-  <div class = "col-md-4">
+  <div class = "col-xs-4">
     <img src = "iOS enable.gif" alt = "iOS enable gif" align = "center" style = "width:290px;">
+    <br>
     <img src = "iOS Drag and Drop.gif" alt = "iOS Drag and Drop gif" align = "center" style = "width:290px;">
+    <br>
     <img src = "iOS disable.gif" alt = "iOS disable gif" align = "center" style = "width:290px;">
   </div>
 </div>
