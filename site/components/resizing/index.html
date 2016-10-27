@@ -373,7 +373,7 @@ contributors:
         <!--****************************Windows 10**********************************-->
         <div role="tabpanel" class="tab-pane fade in" id="Windows10" style="padding-left: 1cm;">
           <h4>Windows 10 Resizing Instances and Guidelines</h4>
-          <p >This section will evaluate the implementation of the resize component in the <b>Windows 10</b> platform.   In addition to providing specific examples of resizing, this section will discuss the Windows Guidelines and whether they are accurately reflected in the provided examples.  It is important to note that the Windows Guidelines is a huge collection of documentation, and because this only a handful apply directly to resizing.  Some of the specific sections of the Windows Guidelines that will be referenced are:
+          <p >&nbsp;&nbsp;&nbsp;&nbsp;This section will evaluate the implementation of the resize component in the <b>Windows 10</b> platform.   In addition to providing specific examples of resizing, this section will discuss the Windows Guidelines and whether they are accurately reflected in the provided examples.  It is important to note that the Windows Guidelines is a huge collection of documentation, and because this only a handful apply directly to resizing.  Some of the specific sections of the Windows Guidelines that will be referenced are:
             <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742502(v=vs.85).aspx">Windows Window Management</a>,
             <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499(v=vs.85).aspx">Windows Dialogue Boxes</a>, and
             <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742498(v=vs.85).aspx">Windows Common Dialogues</a>.
@@ -381,12 +381,15 @@ contributors:
           <ul>
             <li>
               <p>Minimum effective window resolution is 800x600 pixels.</p>
+              <div class="thumbnail" style="width: 800px; height: 600px;" align="center">
+                <h4>800x600 example window</h4>
+              </div>
             </li>
             <li>
               <p>Optimal resolution for an effective resizable window is 1024x768 pixels.</p>
             </li>
             <li>
-              <p>Resizable windows no longer require the resize glyph in the lower right corner of the window.</p>
+              <p>Resizable windows no longer require the resize glyph ( <img src="gifs/windows10-resize-glyph.jpg"/> ) in the lower right corner of the window.</p>
               <ul>
                 <li>
                   <p>The glyph requires a status bar in order to be displayed.</p>
@@ -397,48 +400,43 @@ contributors:
               </ul>
             </li>
             <li>
-              <p>Resizable window boarders and resize pointers are more effective at conveying a window is resizable than the glyph.</p>
+              <p>All windows should have a minimize button ( <img src="windows10-minimize-button.jpg"/> ) to reduce a window to a taskbar button.</p>
+            </li>
+            <li>
+              <p>All windows should have a maximize/restore down button, unless the window isn’t resizable.</p>
               <ul>
                 <li>
-                  <p>All windows should have a minimize button to reduce a window to a taskbar button.</p>
+                  <p>The maximize button ( <img src="windows10-maximize-button.jpg"/> ) should make the window full screen, or maximum needed size.</p>
                 </li>
                 <li>
-                  <p>All windows should have a maximize/restore down button, unless the window isn’t resizable.</p>
+                  <p>The restore ( <img src="windows10-restore-down-button.jpg"/> ) down button should restore the window to its previous size.</p>
                 </li>
               </ul>
             </li>
             <li>
-              <p>The maximize button should make the window full screen, or maximum needed size.</p>
+              <p>Use resizable windows whenever possible to avoid scroll bars and truncated data.</p>
             </li>
             <li>
-              <p>The restore down button should restore the window to its previous size.</p>
-              <ul>
-                <li>
-                  <p>Use resizable windows whenever possible to avoid scroll bars and truncated data.</p>
-                </li>
-                <li>
-                  <p>A minimum window size should be set if the window will no longer be usable at certain dimensions.</p>
-                </li>
-              </ul>
+              <p>A minimum window size should be set if the window will no longer be usable at certain dimensions.</p>
             </li>
           </ul>
           <p>Building on these priciples, here are some specific examples of resizing in Windows 10 with a breif descripton and reflection on their adherence to the Windows Guidelines.</p>
           <div class="row">
             <div class="col-sm-12 col-md-6">
               <div class="thumbnail">
-                <img src="gifs/textedit1.gif" alt="Windows 10 Automatic Resize Gif">
+                <img src="gifs/windows10-automatic-resize.gif" alt="Windows 10 Automatic Resize Gif">
                 <div class="caption">
                   <h4>Automatic Resize</h4>
-                  <p>Description</p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;Description</p>
                 </div>
               </div>
             </div>
             <div class="col-sm-12 col-md-6">
               <div class="thumbnail">
-                <img src="gifs/textedit1.gif" alt="Windows 10 Manual Resize Gif">
+                <img src="gifs/windows10-manual-resize.gif" alt="Windows 10 Manual Resize Gif">
                 <div class="caption">
                   <h4>Manual Resize</h4>
-                  <p>Description</p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;Description</p>
                 </div>
               </div>
             </div>
@@ -449,16 +447,16 @@ contributors:
                 <img src="gifs/windows10-splitscreen.gif" alt="Windows 10 Split Screen Resize Gif">
                 <div class="caption">
                   <h4>Split Screen Resize</h4>
-                  <p>Description</p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;Description</p>
                 </div>
               </div>
             </div>
             <div class="col-sm-12 col-md-6">
               <div class="thumbnail">
-                <img src="gifs/textedit1.gif" alt="Windows 10 Slider Resize Gif">
+                <img src="gifs/windows10-form-fillin.gif" alt="Windows 10 Form Fill-in Resize Gif">
                 <div class="caption">
-                  <h4>Slider Resize</h4>
-                  <p>Description</p>
+                  <h4>Form Fill-in Resize</h4>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;Description</p>
                 </div>
               </div>
             </div>
@@ -466,19 +464,10 @@ contributors:
           <div class="row">
             <div class="col-sm-12 col-md-6">
               <div class="thumbnail">
-                <img src="gifs/windows10-form-fillin.gif" alt="Windows 10 Form Fill-in Resize Gif">
-                <div class="caption">
-                  <h4>Form Fill-in Resize</h4>
-                  <p>Description</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <div class="thumbnail">
                 <img src="gifs/windows10-not-resizable.gif" alt="Windows 10 No Resize Gif">
                 <div class="caption">
                   <h4>No Resize</h4>
-                  <p>Description</p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;In the example above, the System Properities settings window doesn't allow for any resizing.  Any attempts to use the window boarders doesn't work, and the resize pointers aren't visible.  It seeems that this breaks the Windows guideline that says to use resizable windows whenever possible.  However, this example adheres to the Windows guidelines because the window doesn't require any resizing because the content of the window won't change, and it is small enough to work on all screens.  Additionally, this is a Guideline compliant non-resizabel window because it doesn't include nonfunctional minimize or maximize/restore down buttons.</p>
                 </div>
               </div>
             </div>
