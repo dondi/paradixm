@@ -46,33 +46,11 @@ contributors:
 
 <h4>State Diagram</h4>
 
-<blockquote>
-  <p>A state diagram indicating the actions and states of a user interface component.</p>
+<blockquote>The date and time component consists of three states: a "locked" state, a "unlocked" state, and a "request" state. The "locked" state indicates the state in which changes are <strong>not</strong> allowed to be made to the component (unadjustable). The "unlocked" state indicates the state in which changes are allowed to be made to the component (adjustable). The "request" state indicates that changes have been initiated by the user, and are pending confirmation (apply changes/save changes).</blockquote>
 
-  <p>This is most likely an image. Bonus props if you use SVG.</p>
+<p><em>Note: This is a state diagram for date and time component's in general. It is a possible that a certain platform may contain/omit an intermediate step (which can be found in the platform-specific instances), however, this is generally what each component follows.</em></p>
 
-  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
-    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
-    however, may have more activities than the “public” events that can be reported by a component.</p>
-</blockquote>
-
-<p>Most button designs have the following states. The <code>enabled</code> and <code>disabled</code> states can be
-  viewed as “dormant” button states—they are the only states that a button can have when a user is not interacting with
-  it. The <code>enabled</code> state means that a user <em>can</em> interact with it, while the <code>disabled</code>
-  state means that a user <em>cannot</em> do so.</p>
-
-<p>When a button is <code>enabled</code>, additional states may be triggered. Not all states are present in all button
-  implementations, but in general they are:</p>
-
-<ul>
-  <li><code>hover</code>: For platforms with an explicit pointing element, positioning that element over a button may
-    change the button’s appearance. This provides a form of feedback that states that the button will respond if
-    additional activity is performed.</li>
-
-  <li><code>armed</code>: If the user initiates button-triggered behavior, such as a click on mouse-capable systems,
-    the button may enter a state indicating that it is ready to be invoked. Many button implementations allow an “out”
-    from this state, in case the user changes his or her mind in mid-action.</li>
-</ul>
+<img class="img-responsive center-block" src="Media/Date-and-Time-State-Diagram.png" alt="State Diagram of Date and Time Component">
 
 <h4>Component in Action</h4>
 
@@ -134,7 +112,7 @@ contributors:
       <div class="col-sm-6">
         <h4>Typical Appearance</h4>
           <p>The date and time component's appearance has, for the most part, stayed consistent throughout macOS's (previously branded as Mac OS X) recent software updates. The interface that is presented includes three different tabs: "Date & Time", "Time Zone", and "Clock". Each tab includes its own assortment of settings and preferences that can be modified by the user to their liking.</p>
-        <!-- Carousel -->   
+        <!-- Carousel -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -244,7 +222,7 @@ contributors:
   <div id="windows10" class="tab-pane fade">
     <h3>Windows 10</h3>
     <div class="col-sm-6">
-      <h4> Typical Appearance </h4> 
+      <h4> Typical Appearance </h4>
       <p>The date and time component for Windows 10 features a default landing tab which allows you to open up a "change time zone" modal as well as a "change date and time" modal. Additionally, there are two additional tabs which feature additional clock options and an "internet time" option. In the date and time settings you can choose from a calendar day to set for your current time, as well as see a clock view with the current time in seconds. In TimeZone settings you can pick from a subset of Time Zones to locate yourself in, as well as check a preference if you wish your date and time to adjust accordingly to Daylight Saving Time.</p>
             <h5 class="text-left">Main date and time window:</h5>
             <p>The first page you see after opening date and time settings, allowing you to enter into various personalization settings. These include changing date and time, changing the time zone, and selecting whether or not you want to be notified of a change due to daylight savings time.</p>
@@ -303,10 +281,10 @@ contributors:
 
   <div id="iOS" class="tab-pane fade">
     <h3>iOS</h3>
-    
+
     <div class="col-sm-6">
-      <h4> Typical Appearance </h4> 
-      <p> The Date and Time components on iOS devices is very simliar to the interface on a mac OS device. The interface here is more simple with fewer setting and display options.</p>         
+      <h4> Typical Appearance </h4>
+      <p> The Date and Time components on iOS devices is very simliar to the interface on a mac OS device. The interface here is more simple with fewer setting and display options.</p>
         <div class="tumbnail" style="width:320px;height:568px;">
           <img src="mediaIOS/dateAndTimeiOS.png" style="width:320px;height:568px;" alt="Typical Appearance screenshot">
         </div>
@@ -318,73 +296,73 @@ contributors:
       <h5 class="text-left">Accessing the Component via Settings:</h4>
         <div class="thumbnail" style="width:320px;height:578px;">
           <img src="mediaIOS/typBehaveiOS.gif" style="width:320px;height:568px;" alt="Accessing Component gif">
-        </div> 
+        </div>
 
     </div>
-    
+
 
     <div class="col-sm-12">
       <h4> Variants </h4>
       <p> The date and time component on the iOS platform has three main variants. Date and time are very critical for the Calendar and Clock applications. Date and time are also seen in the Settings application, under the Do Not Disturb function.</p>
       <div class="col-sm-12">
-        <div class="col-sm-6"> 
-          
+        <div class="col-sm-6">
+
             <h5 class="text-left">Creating a new event:</h5>
             <p>When the user creates a new event in the Calendar app, they can manipulate the date, the time, and the timezone. The main difference between this function on mac OS and iOS is just in the way the interface looks to the user and how the prefrences are manipulated. On the iOS platform, the user taps buttons and slides menus to change the date and time of their event.</p>
               <div class="thumbnail" style="width:320px;height:578px;">
                 <img src="mediaIOS/newEventiOS.gif" style="width:320px;height:568px;" alt="New Event gif">
               </div>
-          
+
         </div>
 
         <div class="col-sm-6">
-          
+
             <h5 class="text-left">Creating a new alarm:</h5>
               <p>When the user creates a new alarm in the Clock application, they can adjust the time at which the alarm will go off, and they have the option to choose a day/days for the alarm repeat on. The time the alarm goes off at will adjust according to the timezone the user is in. The user manipulates the time and repeat settings by taping and sliding, like in the Calendar application.
               </p>
               <div class="thumbnail" style="width:320px;height:578px;">
                 <img src="mediaIOS/newAlarmiOS.gif" style="width:320px;height:568px;" alt="New Alarm gif">
               </div>
-          
+
         </div>
       </div>
 
         <div class="col-sm-12">
           <div class="col-sm-6">
-        
+
             <h5 class="text-left">Do Not Disturb settings:</h5>
             <p>The iOS platform has a feature Do Not Disturb that allows the user to silence incoming calls and alerts. The date and time component of this preference is if the user chooses to have the feature enabled during a set window of time.</p>
               <div class="thumbnail" style="width:320px;height:578px;">
                 <img src="mediaIOS/doNotDisturb.gif" style="width:320px;height:568px;" alt="Do Not Disturb settings">
               </div>
           </div>
-        
+
 
           <div class="col-sm-6">
-          
+
             <h5 class="text-left">World Clock function:</h5>
               <p></p>
               <div class="thumbnail" style="width:320px;height:578px;">
                 <img src="mediaIOS/worldClockiOS.gif" style="width:320px;height:568px;" alt="World Clock gif">
               </div>
-          
+
           </div>
         </div>
 
         <div class="col-sm-6">
-          
+
             <h5 class="text-left">Using the Stop Watch and Timer:</h5>
               <p></p>
               <div class="thumbnail" style="width:320px;height:578px;">
                 <img src="mediaIOS/stopwatchTimeriOS.gif" style="width:320px;height:568px;" alt="Stop Watch and Timer gif">
               </div>
-          
+
         </div>
 
-      </div> 
+      </div>
     </div>
-        
-      
+
+
 
   </div>
 
