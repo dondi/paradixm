@@ -7,6 +7,9 @@ contributors:
 
     - name: Ryan Taus
       github: RyTaus
+
+    - name: Mitchell Simon
+      github: MitchellJFS
 ---
 
 <p class="lead">
@@ -264,6 +267,7 @@ contributors:
 		<ul class="nav nav-tabs nav-justified" role="tablist">
 		  <li role="presentation" class="active"><a href="#OSX10-Yosemite" data-toggle="tab"> OSX10 Yosemite</a></li>
 		  <li role="presentation"><a href="#Windows-10" data-toggle="tab"> Windows 10</a></li>
+		  <li role="presentation"><a href="#gnome-3" data-toggle="tab"> GNOME 3</a></li>
 		</ul>
 
 		<div class="tab-content">
@@ -287,7 +291,7 @@ contributors:
         	<div class="col-sm-6">
 	        	<p class="text-center"><img src="W10example.png" width="50%"></p>
 
-	        	This image shows the design of Windows 10 radio buttons.  The selected button is shown by changing the color of the outer circle, and filling the concentric circle with black.  These colors can be changed.  Also note that each button's description is only one line long and uses sentence case.  You can also see drop-down lists being used for less impactful features.
+        	  This image shows the design of Windows 10 radio buttons.  The selected button is shown by changing the color of the outer circle, and filling the concentric circle with black.  These colors can be changed.  Also note that each button's description is only one line long and uses sentence case.  You can also see drop-down lists being used for less impactful features.
         	</div>
 
         	<div class="col-sm-6">
@@ -296,6 +300,14 @@ contributors:
 	        	This image shows a desired way to seperate radio buttons.  The different labels make it clear that the two sets are distinct, and that selecting from Background will not affect BorderBrush.  Microsoft makes it clear that a developer must distinct different sets of buttons, as the mutually exclusive nature is prone to errors if the mental model of the user does not match the system image.
 	        </div>
 	        </div>
+
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="gnome-3">
+      	<br>
+      	<p>In the GNOME Human Interaction Guidelines, a radio button is defined as, "Radio buttons are used in groups to select from a mutually exclusive set of options. Only one radio button within a group may be set at any one time. As with check boxes, do not use radio buttons to initiate actions." Notable things mentioned in the GNOME HIG for radio buttons include to place the radio buttons directly to the left of anything they are immediatley affecting, using sentence capatilization for the button labels, setting an access key in the label allowing for selection from keyboard, not to place more than eight radio buttons in the same grouping, and to align them vertically.</p>
+		    <p>The GNOME Radio Buttons also includes a mixed state. This is used in situations when the radio buttons are in a multiselection grouping. Which, is against the idea of a radio button for most platforms.</p>
+		    <p class="text-center"><img src=radio-buttons.svg alt="GNOME Radio Buttons"><img src=radio-group.png alt="GNOME Radio Button Group"></p>
+		    <p>These two images show examples of GNOME Radio Buttons, the left is found in the GNOME HIG and the right is found in the GTK+ API documentation. The model on the left has the current and modern design of GNOME included in GNOME 3 and includes a button in it's mixed state, where as the left is likely an example from GNOME 2.</p>
 
       </div>
 
@@ -321,6 +333,3 @@ contributors:
 		<li>Other uncredited pictures belong to Janine Leano or Ryan Taus</li>
 	</ul>
 </div>
-
-
-
