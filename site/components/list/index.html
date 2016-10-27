@@ -32,6 +32,28 @@ contributors:
          background-color: #555;
          color: white;
      }
+         /* START OF Change the font/size/color of the Slider Titles */
+    /* Change Slider Titles (2em) font-size, (Garamond) family, (red) color */
+    /* Title text */
+    .carousel-caption h3 {
+    font-family:    Garamond;
+    font-size:      3em;
+    color:          black !important;
+    }
+    /* Description text */
+    .carousel-caption p {
+    font-family:    Garamond;
+    font-size:      2em;
+    color:          black !important;
+    }
+    /* Button text */
+    .carousel-caption .btn {
+    font-family:    Garamond;
+    font-size:      1em;
+    color:          yellow;
+    }
+    /* END OF Change the font/size/color of the Slider Titles */
+    /* I've modified some, but here is source: http://presscustomizr.com/snippet/change-fontsizecolor-slider-titles/ */
 </style>
 <p class="lead">Graphical user interface to visually display a list or array
         of data. A common interaction that adds utility in mobile devices.</p>
@@ -346,13 +368,31 @@ contributors:
                         </div>
                         <div class="panel-body">
                             <div class="row">
+
                                 <div class="col-xs-6">
                                     <h5>Typical Appearance</h5>
-                                    <p>insert typical appearance
+                                    <p>
+                                      Like most lists, lists in Google Material Design are a single column of
+                                      rows, where each row has some number of "tiles" within it. It is recommended that when
+                                      using a list, a singular data type be used, and especially text is preferred.
+                                      Google wants all lists to be in order so while dealing
+                                      with lists in Material Design, expect the data to be sorted.
+
+
                                     </p>
                                     <h5>Typical Behavior</h5>
-                                    <p>insert typical behaviour</p>
-                                     <h5>Lists in Action:</h5>
+
+                                    <p> Lists according to Google Material Design, scroll only vertically.
+                                      Each tile may be picked up, and manually reorded within the list.  Furthermore,
+                                      each tile can be sorted or filtered by date, file size, alphabetical order, or other parameters.
+                                      Whenever a swipe action is implemented, each tile should have the ability to do the same action.
+                                      Furthermore, the primary action on each tile is situated furthest left, while subsequent, less imporant,
+                                      actions are to the right side.
+
+
+                                    </p>
+                                     <h5>Examples:</h5>
+
                                 </div>
                             </div>
                 <div class = "row">
@@ -366,25 +406,24 @@ contributors:
                           </ol>
 
                           <div class="carousel-inner" role="listbox">
-                            <div class="item active">
+                            <div class="item">
+                              <img src="siri-reminder.jpg" alt="Third slide">
+                              <div class="carousel-caption">
+                              <p>Each tile can have the same action applied to it.</p>
+                              </div>
+                            </div>
+                            <div class="item">
                               <img src="MaterialDesignInbox.png" alt="First slide">
                               <div class="carousel-caption">
                                  <h3>Caption Header</h3>
                                  <p>caption sub header</p>
                               </div>
                             </div>
+
                             <div class="item">
-                              <img src="highlight.gif" alt="Second slide">
+                              <img src="ListandTiles.png" alt="Second slide">
                               <div class="carousel-caption">
-                                <h3>Caption Header</h3>
-                                <p>caption sub header</p>
-                              </div>
-                            </div>
-                            <div class="item">
-                              <img src="siri-reminder.jpg" alt="Third slide">
-                              <div class="carousel-caption">
-                              <h3>Caption Header</h3>
-                              <p>caption sub header</p>
+                                <p>A list and its tiles.</p>
                               </div>
                             </div>
                           </div>
@@ -402,10 +441,31 @@ contributors:
                             <div class = "row">
                                 <div class="col-xs-6">
                                     <h5>Priority Metrics</h5>
-                                    <p>priority metrics</p>
+                                    A huge part of Material Design lists, at least for me, is satisfaction.
+                                    Technically, the lists themselves do not deliver much satisfaction.
+                                    However, the animations that typically follow with each action make
+                                    using these lists quite enjoyable.
+                                    </p>
+                                    Furthermore, from a more practical perspective, Google's decision
+                                    to always have the data types ordered and uniform makes finding items in
+                                    Material Design lists incredibly efficient, moreso than they would be without this choice.
+                                    The consistency apparent between tile actions and row sizing is
+                                    applicable to learnability and errors, as they make the system
+                                    easier to learn, and less error prone.
+                                    </p>
+                                    After looking between iOS and Windows design guidelines for lists
+                                    it seems to me that Google easily outdoes both systems since their
+                                    specifications are so much more detailed.  Not only are these design
+                                    principles relevant to material design, but they are simply good advice for
+                                    constructing a list in any situation.
+                                    <p>learnability, memorability, errors, satisfaction, efficiency</p>
                                     <p>priority metrics</p>
                                 </div>
                             </div>
+                            <h5>List Alternatives</h5>
+                            Google explicitly mentions when not to use lists, which is reminiscent of the Key Characteristics section:
+                            "If more than three lines of text need to be shown in list tiles, use cards instead.
+                             If the primary distinguishing content consists of images, use a grid list."
                         </div>
                     </div>
                 </div>
