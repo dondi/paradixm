@@ -14,7 +14,7 @@ contributors:
         <p>Generally Implemented as a graphical menu of sorts, the task launcher's primary goal is to allow the user to initiate tasks, most frequently by launching applications. The secondary goal is to improve the speed in which the user is able to perform such tasks. Task launchers are made to increase efficiency and boost the user's satisfaction. Another goal of task launchers is to improve the learnability of a given operating system. The task launcher, depending on the type  may have built in search capabilities that enhance and improve the learnability of the entire system.</p>
       <h4>State Diagram</h4>
       <p>Below is a generalized state diagram that applies to most task-launchers. It is by no means exhaustive, only illuminating the broad strokes of task launching</p>
-      <img src="resources/state-diagram.png">
+      <img src="resources/state-diagram.png" width="544" height="306">
       <h5 align="middle">General State Diagram of Task Launchers</h5>
       <h4>Events</h4>
       <p>During the use of a task launcher the user is required to click on the image of a desired file or application. Once the text input is received the task launcher takes one of three actions:<br>
@@ -31,13 +31,13 @@ contributors:
 <div class="row">
   <div class="col-sm-6">
     <h3>Variants</h3>
-     <p>Some task launchers are a search box which takes text input and gives either a text response or a task response (i.e. the launch of an application). <br>
+     <p>Some task launchers are a search box which takes text input and gives either a text response or a task response (i.e. the launch of an application). 
+      Others have their own windows and act as applications themselves. Generally third-party task launchers are more likely to open separate windows than native launchers. 
+      A task launcher's capabilities are susceptible to change as well. Some third-party launchers support workflows as well as web searches and password storage.</p>
       <img src="resources/spotlight_in_action.gif" width="544" height="306">
       <p align="middle"><b>Spotlight Launching Terminal</b></p>
-      Others have their own windows and act as applications themselves. Generally third-party task launchers are more likely to open separate windows than native launchers. <br>
-      <img src="resources/alfred_in_action.gif" width="544" height="306">
-      <p align="middle"><b>Alfred3 Task Launcher Opens VLC Player</b></p>
-      A task launcher's capabilities are susceptible to change as well. Some third-party launchers support workflows as well as web searches and password storage.</p>
+      <img src="resources/alfred_slack.gif" width="544" height="306">
+      <p align="middle"><b>Alfred3 Task Launcher Using an integration with Slack</b></p>
     <h3>Priority Metrics</h3>
       <h4>Satisfaction</h4>
       <p>The Satisfaction of the user is critical to the task launcher's success. An operating system with a slow task launcher will not be very successful. The user is the most important part of the OS and if the user is unhappy they are completely able to switch operating systems.</p>
@@ -47,7 +47,7 @@ contributors:
         <p>Memorability and errors are not very relevant to the overall usability of a task launcher. The opportunity for errors is minimal, while the necessity for memorability is almost nonexistent given that task launchers are used almost every time a computer is used.</p>
 
     <h3>Key Characteristics</h3>
-     <p>Good task launchers are fast and easy to use. The best task launchers are intuitive. You tell it what you want to do and it initiates the tasks. The overall usability of a task launcher should be one of the best across all applications in an operating system. The task launcher is an integral part of portraying the mental model of the computer architecture to the user.</p>   
+     <p>Good task launchers are fast and easy to use. The best task launchers are intuitive. You tell it what you want to do and it initiates the tasks. These goals make it clear that the learnability (intuitiveness) and efficiency (speed and ease of use) of a task launcher determine its success. The overall usability of a task launcher should be one of the best across all applications in an operating system. The task launcher is an integral part of portraying the mental model of the computer architecture to the user. It is the starting point for any modern human computer interface.</p>   
 
 </div>
 
@@ -78,19 +78,19 @@ contributors:
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                       <div class="item active"> <img src="resources/apple_screenshots/OSX_dock_launcher.png" alt="Mac os X task launcher">
-                        <div class="carousel-caption hidden">
+                        <div class="carousel-caption">
                           Mac OS X 10.11.6 task launcher, dock
                         </div>
                       </div>
                       <div class="item"> 
                        <img src="resources/apple_screenshots/spotlight.png" alt="Mac os X task launcher, Spotlight">
-                        <div class="carousel-caption hidden">
+                        <div class="carousel-caption">
                           Mac OS X 10.11.6 task launcher, Spotlight
                         </div>
                       </div>
                       <div class="item"> 
                        <img src="resources/apple_screenshots/spotlight_in_action.png" alt="Mac os X task launcher, Spotlight">
-                        <div class="carousel-caption hidden">
+                        <div class="carousel-caption">
                           Mac OS X 10.11.6 task launcher, Spotlight in action
                         </div>
                       </div>
@@ -146,11 +146,11 @@ contributors:
         <h4 class="panel-title text-center">Windows 10</h4>
       </div>
       <div class="panel-body">
-        <p> The Windows 10 task launcher has three components, the start menu, the start bar, and cortana(?). The windows start menu has drastically changed over the course of the past 15 years, maturing into a more efficient, functional menu based system.</p>
+        <p> The Windows 10 task launcher has three components, the start menu, the task bar, and optionally cortana. The Windows start menu has drastically changed over the past few years, maturing from Windows 7 and 8 into a more efficient and functional menu based system. Windows 10 prioritizes customization in its start menu, focusing on satisfaction.</p>
         <div class="row">
           <div class="col-xs-12">
             <h3>Appearance</h3>
-            <p>The start menu shows you a customizeable selection of tiles, the start bar shows you currently open applications</p>
+            <p>The start menu shows you a customizeable selection of tiles including a search bar and optionally cortana. The task bar displays a customized set of 'pinned' applications, along with all currently open applications.</p>
             <a href="https://dondi.github.io/paradixm/components/task-launcher/resources/windows10_screenshots">
               <div class = "row">
                 <div class = "col-xs-12">
@@ -165,20 +165,20 @@ contributors:
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                       <div class="item active"> <img src="resources/windows10_screenshots/windows10_placeholder.png" alt="">
-                        <div class="carousel-caption hidden">
-                          Windows 10 start menu image 1
+                        <div class="carousel-caption">
+                          Windows 10 Start Bar
                         </div>
                       </div>
                       <div class="item"> 
                        <img src="resources/windows10_screenshots/windows10_placeholder.png" alt="">
                         <div class="carousel-caption hidden">
-                          Windows 10 start menu image 2
+                          Windows 10 Start Menu
                         </div>
                       </div>
                       <div class="item"> 
                        <img src="resources/windows10_screenshots/windows10_placeholder.png" alt="">
                         <div class="carousel-caption hidden">
-                          Windows 10 start menu image 3
+                          Windows 10 Start Search
                         </div>
                       </div>
                     </div>
@@ -207,7 +207,7 @@ contributors:
               <h4>Component in Action</h4>
               <p>Below is video that about fiddling with the settings of a Windows 10 start menu.</p>
               <div class="row">
-                  <iframe width="544" height="306" src='http://players.brightcove.net/2045965034001/rk0dTe7E_default/index.html?videoId=4655074779001' allowfullscreen frameborder=0></iframe>
+                  <iframe width="544" height="306" src="https://www.youtube.com/embed/5XrXIW6AwMc" frameborder="0" allowfullscreen></iframe>
               </div>
           </div>
 
@@ -236,10 +236,14 @@ contributors:
     <ul>
       <li>Alfred Information: <a href="https://www.alfredapp.com">alfredapp.com</a></li>
       <li>Apple OS X Human Interface Guidelines: <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/">developer.apple.com</a>
-        <a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/Dock.html">Dock Specofic Guidelines</a>
+        <ul>
+          <li><a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/Dock.html">Dock Specific Guidelines</a></li>
+        </ul>
       </li>
+      <li>Windows UWP Design Guidelines:<a href="https://developer.microsoft.com/en-us/windows/apps/design">developer.microsoft.com</a></li>
       <li>Mac OS X Dock in Action Video by <a href="https://www.youtube.com/channel/UCz77-9Ump9wpNGjrcU_FppA">Serge Siou</a></li>
       <li>Spotlight .gif by <a href="https://www.moncefbelyamani.com/images/spotlight-terminal.gif">Moncef Belyamani</a></li>
+      <li>Windows 10 Start Menu Viedeo by <a href="https://www.youtube.com/channel/UCTpFdOVq6zIlB8pBN3hBtUw">nickscomputerfix</a></li>
     </ul>
   </div>
 </div>
