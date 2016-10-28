@@ -14,7 +14,7 @@ contributors:
         <p>Generally Implemented as a graphical menu of sorts, the task launcher's primary goal is to allow the user to initiate tasks, most frequently by launching applications. The secondary goal is to improve the speed in which the user is able to perform such tasks. Task launchers are made to increase efficiency and boost the user's satisfaction. Another goal of task launchers is to improve the learnability of a given operating system. The task launcher, depending on the type  may have built in search capabilities that enhance and improve the learnability of the entire system.</p>
       <h4>State Diagram</h4>
       <p>Below is a generalized state diagram that applies to most task-launchers. It is by no means exhaustive, only illuminating the broad strokes of task launching</p>
-      <img src="resources/state-diagram.png" width="544" height="306">
+      <img src="state-diagram.png" width="544" height="306">
       <h5 align="middle">General State Diagram of Task Launchers</h5>
       <h4>Events</h4>
       <p>During the use of a task launcher the user is required to click on the image of a desired file or application. Once the text input is received the task launcher takes one of three actions:<br>
@@ -26,17 +26,15 @@ contributors:
         <p>The following video demonstrates the use of the Ubuntu task launcher at 00:18.</p>
         <iframe width="544" height="306" src="https://www.youtube.com/embed/LzcJxpt9-Ic?start=18" frameborder="0" allowfullscreen></iframe>
         <p>As you can see in the clip, the dock on the left side of the screen launches applications. The first launch is completed by clicking one of the icons, in this instance Google Chrome. The second launch of an application utilizes the secondary launcher, which includes a list of recently launched apps, as well as a search bar for textual input. The Ubuntu task launcheer mirrors Windows 10 in the use of the Operating System logo to open another task launcher.</p>
-
-</div>
-<div class="row">
+  </div>
   <div class="col-sm-6">
     <h3>Variants</h3>
      <p>Some task launchers are a search box which takes text input and gives either a text response or a task response (i.e. the launch of an application). 
       Others have their own windows and act as applications themselves. Generally third-party task launchers are more likely to open separate windows than native launchers. 
       A task launcher's capabilities are susceptible to change as well. Some third-party launchers support workflows as well as web searches and password storage.</p>
-      <img src="resources/spotlight_in_action.gif" width="544" height="306">
+      <img src="spotlight_in_action.gif" width="544" height="306">
       <p align="middle"><b>Spotlight Launching Terminal</b></p>
-      <img src="resources/alfred_slack.gif" width="544" height="306">
+      <img src="alfred_slack.gif" width="544" height="306">
       <p align="middle"><b>Alfred3 Task Launcher Using an integration with Slack</b></p>
     <h3>Priority Metrics</h3>
       <h4>Satisfaction</h4>
@@ -48,12 +46,11 @@ contributors:
 
     <h3>Key Characteristics</h3>
      <p>Good task launchers are fast and easy to use. The best task launchers are intuitive. You tell it what you want to do and it initiates the tasks. These goals make it clear that the learnability (intuitiveness) and efficiency (speed and ease of use) of a task launcher determine its success. The overall usability of a task launcher should be one of the best across all applications in an operating system. The task launcher is an integral part of portraying the mental model of the computer architecture to the user. It is the starting point for any modern human computer interface.</p>   
-
 </div>
 
 <!-- ---------------------------- MACOSX SPECIFIC DATA ------------------------------ -->
 <div class="row">
-  <div class="col-sm-12">
+  <div class="col-xs-12">
     <h3>Platform-Specific Instances</h3>
     <div class="panel panel-default col-xs-12 col-sm-12 col-md-12 col-lg-6">
       <div class="panel-heading">
@@ -65,7 +62,6 @@ contributors:
           <div class="col-xs-12">
             <h3>Appearance</h3>
               <p>The dock is a collection of graphical representations of files and applications. Spotlight is a simple search box, it takes a text input and gives either a text response or a task response (i.e. the launch of an application). </p>
-            <a href="https://dondi.github.io/paradixm/components/task-launcher/resources/apple_screenshots"><!-- This link opens the directory containing the images used in the carousel. Will work once published. Not quite sure how to make it dynamic.-->
               <div class="row">
                 <div class="col-xs-12">
                   <div id="spotlight_screenshot_carousel" class="carousel slide" data-ride="carousel">
@@ -77,19 +73,19 @@ contributors:
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
-                      <div class="item active"> <img src="resources/apple_screenshots/OSX_dock_launcher.png" alt="Mac os X task launcher">
+                      <div class="item active"> <img src="OSX_dock_launcher.png" alt="Mac os X task launcher">
                         <div class="carousel-caption">
                           Mac OS X 10.11.6 task launcher, dock
                         </div>
                       </div>
                       <div class="item"> 
-                       <img src="resources/apple_screenshots/spotlight.png" alt="Mac os X task launcher, Spotlight">
+                       <img src="spotlight.png" alt="Mac os X task launcher, Spotlight">
                         <div class="carousel-caption">
                           Mac OS X 10.11.6 task launcher, Spotlight
                         </div>
                       </div>
                       <div class="item"> 
-                       <img src="resources/apple_screenshots/spotlight_in_action.png" alt="Mac os X task launcher, Spotlight">
+                       <img src="spotlight_in_action.png" alt="Mac os X task launcher, Spotlight">
                         <div class="carousel-caption">
                           Mac OS X 10.11.6 task launcher, Spotlight in action
                         </div>
@@ -107,8 +103,6 @@ contributors:
                   </div>
                 </div>
               </div>
-            </a>
-
             <h3>Behavior</h3>
                 <p>The dock allows for the immediate launch of any application or folder stored on it with a simple click. Spotlight requires keyboard input instead.</p>
               <h4>Events</h4>
@@ -120,13 +114,13 @@ contributors:
               <h4>Component in Action</h4>
               <p>Below is a tutorial on how to change the position of the dock. Initially it uses the dock to launch the system preferences application.</p>
               <div class="row">
-                  <iframe width="544" height="306" src="https://www.youtube.com/embed/TlmhqEV34Eo" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="544" height="306" src="https://www.youtube.com/embed/TlmhqEV34Eo?rel=0&start=18" frameborder="0" allowfullscreen></iframe>
               </div>
           </div>
           <div class="row">
             <div class="col-xs-12">
               <h3>Variants</h3>
-               <p>There are third-party task launchers that have been developed specifically for Mac OS X, namely "Alfred." Alfred includes many different features not included in spotlight or the dock; it can save your passwords, create workflows and even search the web.</p>
+               <p>There are third-party task launchers that have been developed specifically for Mac OS X, namely Alfred. <a href="https://www.alfredapp.com">Alfred</a> includes many different features not included in spotlight or the dock; it can save your passwords, create workflows and even search the web.</p>
               <h3>Priority Metrics</h3>
                 <h4>Efficiency & Learnability</h4>
                 <p>Mac OS X task launchers have a help application built in which increases their learnability by teaching the the user how to use the interface. Additionally the efficiency of the dock and spotlight is increased by built in shortcuts that can be accessed in any application.</p>
@@ -134,7 +128,7 @@ contributors:
                  <p>The satisfaction of the Mac task launchers is based on the speed and ease of use, or more specifically the efficiency and learnability. The user can always look to third-party applications in the case of Mac OS X.  </p>
 
               <h3>Key Characteristics</h3>
-               <p>Spotlight and dock allow for two different communications between the user and the operating system. The dock's immediacy and simplicity makes it a great option for the launching of everyday tasks. Spotlight's access to all applications and files stored on the system allows for the fast launch of applications and the opening of files that are note regularly accessed. It drastically decreases the overall time of launching applications not stored in the dock and creates a convenient shortcut to any location in the operating system.</p>   
+               <p>Spotlight and dock allow for two different communications between the user and the operating system. The dock's immediacy and simplicity makes it a great option for the launching of everyday tasks. Spotlight's access to all applications and files stored on the system allows for the fast launch of applications and the opening of files that are not regularly accessed. It drastically decreases the overall time of launching applications not stored in the dock and creates a convenient shortcut to any location in the operating system.</p>   
             </div>
           </div>
         </div>
@@ -151,9 +145,22 @@ contributors:
           <div class="col-xs-12">
             <h3>Appearance</h3>
             <p>The start menu shows you a customizeable selection of tiles including a search bar and optionally cortana. The task bar displays a customized set of 'pinned' applications, along with all currently open applications.</p>
-            <a href="https://dondi.github.io/paradixm/components/task-launcher/resources/windows10_screenshots">
-              <div class = "row">
-                <div class = "col-xs-12">
+            <img width="544" src="windows10_task_bar.png" alt="Windows 10 Task Bar">
+            <p align="middle"><b>Windows 10 Task Bar</b></p>
+            <img src="windows10_start.png" width="544" height="306" alt="Windows 10 Start Menu">
+            <p align="middle"><b>Windows 10 Start Menu</b></p>
+            <h3>Behavior</h3>
+                <p>Windows 10 start menu has icons and search bar similar to a mac. It has much more customizeability. It allows the user to add, resize, and recolor applications. It also allows the user to resize the start menu itself. Windows 10 includes the use of Cortana, Windows' <a href="https://support.microsoft.com/en-us/help/11694/windows-phone-cortana-on-your-windows-phone">"personal assistant."</a></p>
+              <h4>Events</h4>
+              <p>During the use of a task launcher the user is required to type in the name of a desired file or application. Once the text input is received the task launcher takes one of four actions:<br>
+                1. opens desired file <br>
+                2. launches application <br>
+                3. responds with a "file/application not found" message <br>
+                4. responds with a list of web searches<br>
+                When an application is launched, its icon appears on the taskbar. When a file is opened the appropriate application is launched and its icon appears on the taskbar. When the response is a web search you can click on an search and a new browser window will open</p>
+              <h4>Component in Action</h4>
+              <div class="row">
+                <div class="col-xs-12">
                   <div id="windows_screenshot_carousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -161,28 +168,26 @@ contributors:
                       <li data-target="#windows_screenshot_carousel" data-slide-to="1"></li>
                       <li data-target="#windows_screenshot_carousel" data-slide-to="2"></li>
                     </ol>
-
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
-                      <div class="item active"> <img src="resources/windows10_screenshots/windows10_placeholder.png" alt="">
+                      <div class="item active"> <img src="windows10_move.gif" alt="Windows 10 Move Tile">
                         <div class="carousel-caption">
-                          Windows 10 Start Bar
+                          Move a Tile Windows 10 Start Menu
                         </div>
                       </div>
                       <div class="item"> 
-                       <img src="resources/windows10_screenshots/windows10_placeholder.png" alt="">
-                        <div class="carousel-caption hidden">
-                          Windows 10 Start Menu
+                       <img src="windows10_resize.gif" alt="Windows 10 Resize Start Menu">
+                        <div class="carousel-caption">
+                          Resize Windows 10 Start Menu
                         </div>
                       </div>
                       <div class="item"> 
-                       <img src="resources/windows10_screenshots/windows10_placeholder.png" alt="">
-                        <div class="carousel-caption hidden">
-                          Windows 10 Start Search
+                       <img src="windows10_pin_to_start.gif" alt="Windows 10 Pin to Start Menu">
+                        <div class="carousel-caption">
+                          Pin a Tile to Windows 10 Start Menu
                         </div>
                       </div>
                     </div>
-
                     <!-- Controls -->
                     <a class="left carousel-control" href="#windows_screenshot_carousel" role="button" data-slide="prev">
                       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -195,34 +200,22 @@ contributors:
                   </div>
                 </div>
               </div>
-            </a>
-            <h3>Behavior</h3>
-                <p>Windows 10 start menu has icons and search bar similar to a mac. It has much more customizeability. It allows the user to add, resize, and recolor applications. It also allows the user to resize the start menu itself. Windows 10 includes the use of Cortana, Windows "intelligent personal assistant."</p>
-              <h4>Events</h4>
-              <p>During the use of a task launcher the user is required to type in the name of a desired file or application. Once the text input is received the task launcher takes one of three actions:<br>
-                1. opens desired file <br>
-                2. launches application <br>
-                3. responds with a "file/application not found" message <br>
-                when an application is in use, a dot appears underneath its icon on the dock.</p>
-              <h4>Component in Action</h4>
-              <p>Below is video that about fiddling with the settings of a Windows 10 start menu.</p>
-              <div class="row">
-                  <iframe width="544" height="306" src="https://www.youtube.com/embed/5XrXIW6AwMc" frameborder="0" allowfullscreen></iframe>
-              </div>
           </div>
 
           <div class="row">
             <div class="col-xs-12">
               <h3>Variants</h3>
-               <p>There are many different third party task launchers offered for Windows 10, each offering its own set of unique features. A popular launcher is <a href="http://www.launchy.net/index.php">Launchy</a>. Launchy is a pure task launcher focusing on opening files and applications quickly.</p>
+               <p>There are many different third party task launchers offered for Windows 10, each offering its own set of unique features. A popular launcher is <a href="http://www.launchy.net/index.php">Launchy</a>. Launchy is a pure task launcher focusing on opening files and applications quickly (efficiently).</p>
               <h3>Priority Metrics</h3>                
                 <h4>Satisfaction</h4>
                  <p>The satisfaction of the Windows 10 task launcher is based more in customization than many other task launchers (focused on the speed and ease of use). In terms of usability metrics, the efficiency is heavily prioritized over learnability. The settings are not intutive and there are many features available that most users overlook. However, experienced users will be very satisfied with the ability to place exactly what they want where they want with little limitation.</p>
-                <h4>Efficiency & Learnability</h4>
-                 <p>The efficiency of the Windows 10 task launcher is very important. Once the user has spent time exploring and customizing the layout, the task launcher is intuitive. The user can basically morph the start menu into their own mental model of what it should be.</p>
-                 <p>Learnability is not totally forgotten, the icons and labels make it easier for a first time user to navigate. The mental model of a start menu is, for many, the first interaction they experienced with a computer. Windows 10's start menu follows the basics of that model performing the same general purpose with many bells and whistles.</p>
+                <h4>Efficiency</h4>
+                 <p>The Windows 10 task launcher has sacrificed some learnability for efficiency. This sacrifice makes the efficiency of the Windows 10 task launcher very important. Once the user has spent time learning how to manipulate the system, the user is able to very quickly perform an application or file launch. The user can also customize the task launcher to meet their needs, making specific tasks more efficient but less learnable. </p>
+                <h4>Learnability</h4>
+                 <p>Learnability is not totally ignored in the Windows 10 task launcher. The icons and labels make it easy for a first time user to navigate. The mental model of a start menu is, for many, a cornerstone of their first interaction with a computer. Windows 10's start menu follows the basics of that model, performing the same general purpose, while supplying many bells and whistles.</p>
               <h3>Key Characteristics</h3>
-               <p>Start Menu / bar</p>   
+               <p>The Windows 10 start menu and task bar allow for the user to almost completely customize their interaction with the system. The complexity of the start menu makes it less learnable than many task launchers, but eventually makes up for it with quicker launch times (based on customizations). The start menu and task bar can contain shortcuts to files or applications and really make an app launch immediate. The ability to change the size of icons in the start menu takes advantage of Fitts's Law, as does the location of the task bar itself. Overall, the Windows 10 task launcher strives for usability through satisfaction and efficiency. Prioritizing customizability satisfies users and (depending on the user) allows some tasks to become more efficient.
+               </p>   
             </div>
           </div>            
         </div>
@@ -240,11 +233,14 @@ contributors:
           <li><a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/Dock.html">Dock Specific Guidelines</a></li>
         </ul>
       </li>
-      <li>Windows UWP Design Guidelines:<a href="https://developer.microsoft.com/en-us/windows/apps/design">developer.microsoft.com</a></li>
+      <li>Norman's <a href="https://amzn.com/0465050654"><i>Design of Everyday Things</i></a></li>
       <li>Mac OS X Dock in Action Video by <a href="https://www.youtube.com/channel/UCz77-9Ump9wpNGjrcU_FppA">Serge Siou</a></li>
       <li>Spotlight .gif by <a href="https://www.moncefbelyamani.com/images/spotlight-terminal.gif">Moncef Belyamani</a></li>
-      <li>Windows 10 Start Menu Viedeo by <a href="https://www.youtube.com/channel/UCTpFdOVq6zIlB8pBN3hBtUw">nickscomputerfix</a></li>
-      <li><a href="http://www.windowscentral.com/cortana">Cortana Definition</a></li>
+      <li>Shneiderman and Plaisant's <a href="https://amzn.com/0321537351"><i>Designing the User Interface</i></a></li>
+      <li>Windows UWP Design Guidelines:<a href="https://developer.microsoft.com/en-us/windows/apps/design">developer.microsoft.com</a></li>
+      <li>Windows 10 Start Menu .gifs by <a href="https://support.microsoft.com/en-us/help/17218">support.microsoft.com</a></li>
+      <li>Windows 10 Start Menu .pngs<a href="https://blogs.microsoft.com/work/2015/04/13/start-here-with-windows-10/#sm.000e2141k18d5fawzgl19o9epugy8">blogs.microsoft.com</a></li>      
+      <li><a href="https://support.microsoft.com/en-us/help/11694/windows-phone-cortana-on-your-windows-phone">Cortana Definition</a></li>
     </ul>
   </div>
 </div>
