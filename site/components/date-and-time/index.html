@@ -1,0 +1,386 @@
+---
+title: Date and Time
+layout: component
+contributors:
+    - name: David Parks
+      github: davidtparks
+
+    - name: Megan Karbowski
+      github: mkarbows
+
+    - name: Josh Soriano
+      github: joshsoriano
+---
+<p class="lead"> Implemented on every device, the date and time component allows users to modify a system's date and time and the settings for each of them, which include: display, format, time conventions, time-zone, language, etc.</p>
+
+<div class="row">
+  <div class="col-sm-12">
+
+<h3>Typical Appearance</h3>
+
+<blockquote>Date and time component appearances are widely varied across all different platforms. It is typical to see visual representations of date and time (calendar and clock) to be featured, however, to view specific appearances of date and time components see the platfrom-specific instances section below.</blockquote>
+
+<h3>Typical Behavior</h3>
+
+<blockquote>
+  <p>Date and Time objects provide the user with the ability to store references to particular instances in time. They can be broken down into parts and manipulated accordingly (hour, minutes, seconds, month, day, year, etc.). Different timezones, different conventions of time, and particular calendars can also be applied/referenced.
+  </p>
+</blockquote>
+
+<h4>Events</h4>
+
+<blockquote>Users have one way of manipulating the date and time via this component, and that is through the event of a <strong>value change</strong> that initiates changes to be made to the date or time, and essentially is what allows the user to "use" this component.</blockquote>
+
+<p>There are multiple ways to initiate a value change on a date and time component. Generally, a user has the options of:</p>
+<ul>
+  <li>Typing new values into the input form</li>
+  <li>Incrementing or decrementing values using the up and down arrows located next to the input form</li>
+  <li>Clicking on a new date on the calendar representation</li>
+</ul>
+
+<p>Upon changing the values using either of the methods above, the system reconfigures its date or time with the changes the user has made. Generally, the component requires the user to click on a "save" button in order to formally set the date and time with the new value changes.</p>
+
+<p><em>Note: The date and time component is made up of other components such as <a href="http://dondi.github.io/paradixm/components/button/">buttons</a>, <a href="http://dondi.github.io/paradixm/components/check-box/">check boxes</a>, and <a href="http://dondi.github.io/paradixm/components/radio-button/">radio buttons</a>, all of which have their own events. Therefore, the date and time component inherits those same events, as they allow the event of a <strong>value change</strong> to occur.</em> See those components in the catalog to learn more about those events.</p>
+
+<h4>State Diagram</h4>
+
+<blockquote>The date and time component consists of three states: a "locked" state, a "unlocked" state, and a "request" state. The "locked" state indicates the state in which changes are <strong>not</strong> allowed to be made to the component (unadjustable). The "unlocked" state indicates the state in which changes are allowed to be made to the component (adjustable). The "request" state indicates that changes have been initiated by the user, and are pending confirmation (apply changes/save changes).</blockquote>
+
+<p><em>Note: This is a state diagram for date and time component's in general. It is a possible that a certain platform may contain/omit an intermediate step (which can be found in the platform-specific instances), however, this is generally what each component follows.</em></p>
+
+<img class="img-responsive center-block" src="Media/Date-and-Time-State-Diagram.png" alt="State Diagram of Date and Time Component">
+
+<h4>Component in Action</h4>
+
+<blockquote>
+  <p> To see the date and time component in action within different platforms, see the Platform-Specific Instances section below.
+</blockquote>
+
+  </div>
+
+  <div class="col-sm-12">
+
+<h3>Variants</h3>
+
+<blockquote>The date and time components on any platform can be used to create <em>events</em> in the calendar applications on specific calendars, in specific timezones. They can also be used to set <em>alarms</em> in the clock applications for specific days of the week. There are also many third-party applications as well as in-browser extensions and applications that allow offer different interfaces for displaying date and time. See the platform-specific instances section below for more information on each platform's specific variants.</blockquote>
+
+
+<h3>Priority Metrics</h3>
+
+<blockquote>In regards to usability metrics, it is important to note that the date and time component does not prioritize all five of Nielsen's five quality components (metrics) of usability. That being said, the date and time component on a machine prioritizes learnability and errors. But also addresses the memorability, efficiency, and satisfaction of its design.</blockquote>
+
+<ul>
+  <li><p><strong>Learnability: </strong>As one of the top prioritized metrics of usability, the interface of date and time components across the majority of platforms house many useful features that cater to first-time users. One these features includes the visual representation of a calendar and clock for date and time (respectively). Date and time component also provide simple features in order to change both date and time. Most interfaces feature a input form that allows the user to either type in a specific time/date, or they may use the up and down arrows located next to the input field to increment the date/time. The visual representation of a calendar allows users to click on specific dates, as well as scroll through different months, and on some platforms, years. This familiarity provided by the visual representations coupled with the implementation of simple components such as an input field and a clickable calendar allow the ability to use the component to be easily picked up by first-time users.</p></li>
+
+  <li><p><strong>Errors: </strong>Equally as important as learnability, error prevention is prioritized when it comes to the date and time component. This is because users are heavily dependent on the date and time that are displayed on a machine. The visual representations provided on the interface also allow users to affirm the changes they make to the date or time. Users may be more familiar with seeing the date on a physical calendar or seeing the time on a physical clock, therefore visual representaions allow those users to confirm the correctness of their modifications to the date or to the time, preventing errors. Being able to resolve user errors is also a crucical part of this metric. The component may also include a feature for setting the date and time automatically depending on the machine's location and timezone. In the case that a user changes the date and time incorrectly, this feature serves as a one-click method to correcting the change.</p></li>
+
+  <li><p><strong>Memorability: </strong>Memorability may not be one of the top priority metrics, however, it still is deemed important as the date and time component isn't an item that'll be frequently visited by users, especially if the machine does include the feature of setting the date and time automatically based on location. That being said, its vital that the user is still able to use the component despite a substantial period without its use. Familiarity plays a role in reestablishing proficiency in the use of a design. The visual representations, specifically the calendar, can remind users of the interactivity when making changes to the date and time. The up and down arrows located next to the input form suggest the logic of making changes (up to increase/increment and down to decrease/decrement). Similarly to the errors metric, how a date and time is formatted and displayed can also hint to users how to modify specific parts of a date or a time.</p></li>
+
+  <li><p><strong>Efficiency: </strong>The efficiency of the date and time component is not as prioritized due to the fact that the component is not typically visited and used often.</p></li>
+
+  <li><p><strong>Satisfaction: </strong>Satisfaction is considered the least prioritized when it comes to the usability metrics because users are more concerned with being satisfied with the result of the component, rather than the functionality of it. However, this does not mean that this metric is fully dismissed, as each of the prioritization of the metrics above also fill into addressing satisfaction, as the more learnable, less error prone, and memorable a machine, the more satisfying its functionality is likely to be.</p></li>
+</ul>
+
+<h3>Key Characteristics</h3>
+
+<blockquote>In almost every date and time component you will be able to select from a subset of timezones, the option to input a specific time, an ability to display seconds counted, a calendar view to select your current day of the calendar year, and a preference for a 24 hour clock.</blockquote>
+<h4>Feedback</h4>
+
+<p>Perhaps the most important interaction design principle that a date and time component must follow is <em>feedback</em>. Users must never doubt whether:</p>
+
+<ol>
+  <li>they successfully switched their date and time from 12-hour time to 24-hour time, or vice versa</li>
+  <li>they are in the correct timezone or not (if they chose to have the timezone set automatically), or that the timezone correct (if they chose to set the timezone manually)</li>
+  <li>they succesfully changed any of the settings regarding how they view the date and time component on their specific device</li>
+</ol>
+  </div>
+</div>
+
+<h3>Platform-Specific Instances</h3>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#macOS">macOS</a></li>
+  <li><a data-toggle="tab" href="#windows10">Windows 10</a></li>
+  <li><a data-toggle="tab" href="#iOS">iOS</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="macOS" class="tab-pane fade in active">
+    <h3>macOS</h3>
+      <div class="col-sm-6">
+        <h4>Typical Appearance</h4>
+          <p>The date and time component's appearance has, for the most part, stayed consistent throughout macOS's (previously branded as Mac OS X) recent software updates. The interface that is presented includes three different tabs: "Date & Time", "Time Zone", and "Clock". Each tab includes its own assortment of settings and preferences that can be modified by the user to their liking.</p>
+        <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+                <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img class="img-responsive" src="Media/macOS/preferences-date-and-time.png" alt="Date and Time">
+            </div>
+
+            <div class="item">
+              <img class="img-responsive" src="Media/macOS/preferences-timezone.png" alt="Time Zone">
+            </div>
+
+            <div class="item">
+              <img class="img-responsive" src="Media/macOS/preferences-clock.png" alt="Clock">
+            </div>
+          </div>
+                <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <h4>Typical Behavior</h4>
+        <p>The date and time component can be accessed by first opening "System Preferences," and then selecting "Date and Time." This will bring up the components interface. In order to make changes, the lock icon at the bottom left-hand corner must be clicked, which will prompt the user to verify administrative access by entering a username and password. An unlock animation will follow the log-in, allowing the user to modify settings. The component can also be access via the menu bar in the upper right-hand corner.</p>
+        <h6 class="text-center">Accessing the Component via System Preferences</h6>
+        <img class="img-responsive center-block" src="Media/macOS/access-component.gif" alt="Accessing Date and Time Gif">
+        <h6 class="text-center">Accessing the Component via Menu Bar</h6>
+        <img class="img-responsive center-block" src="Media/macOS/alternate-access.png" alt="Menu Bar Access for Date and Time">
+      </div>
+
+      <div class="col-sm-12">
+        <hr>
+        <h4>Component in Action</h4>
+      </div>
+      <div class="row">
+          <div class="col-sm-3">
+            <h5 class="text-center">Date Component Behavior</h5>
+            <div class="thumbnail">
+              <img class="img-responsive center-block" src="Media/macOS/set-date.gif" alt="Setting Date Gif">
+              <div class="caption">
+                <h6 class=text-center>Value change event initiated by: Incrementing/Decrementing, Typing Inputs, and Clicking Days</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <h5 class="text-center">Changing Time Zones (Manual and Auto)</h5>
+            <div class="thumbnail">
+              <img class="img-responsive center-block" src="Media/macOS/timezone.gif" alt="Setting Time Zone Gif">
+            </div>
+
+            <h5 class="text-center">Changing Clock Settings</h5>
+            <div class="thumbnail">
+              <img class="img-responsive center-block" src="Media/macOS/clock-settings.gif" alt="Clock Settings Gif">
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <h5 class="text-center">Time Component Behavior</h5>
+            <div class=thumbnail>
+              <img class="img-responsive center-block" src="Media/macOS/set-time.gif" alt="Setting Time Gif">
+              <div class="caption">
+                <h6 class=text-center>Value change event initiated by: Incrementing/Decrementing and Typing Inputs</h6>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-12">
+      <hr>
+        <h4>Variants</h4>
+        <blockquote>Applications and In-Browser Extensions/Applications are two examples of date and time component variants. However, it is important to note that these variants <em>cannot</em> formally change the system's date and time. They do, however, provide variations in displaying and presenting the system's date and time. </blockquote>
+
+        <div class="col-sm-6">
+        <p>All macOS machines have pre-installed Apple's Calendar application. The application does not allow the component to change the system date, however, it does display it in its interface as well as in it's icon found when placed on a dock as it also displays a "real-time" date.</p>
+        <h6 class="text-center">Calendar Application (pre-installed on macOS Devices)</h6>
+        <img class="img-responsive" src="Media/macOS/calendar-app.png" alt="Calendar App Screenshot">
+        </div>
+
+        <div class="col-sm-6">
+          <p>There are also in-browser extensions and applications that can be downloaded to display a system's date and time. Google Chrome has an extension called "Clock" which can be added to the browser, installing a icon on the top-right corner of the window to view both the date and calendar. Google also had an extension called "Momentum," which features a newly-opened tabs and windows with a greeting to the user and a time display.</p>
+        </div>
+
+        <div class="col-sm-3">
+          <h6 class="text-center">Google Chrome: Clock Extension</h6>
+          <img class="img-responsive" src="Media/macOS/clock.png" alt="Clock Extension Screenshot">
+        </div>
+        <div class="col-sm-3">
+          <h6 class="text-center">Google Chrome: Momentum Extension</h6>
+          <img class="img-responsive" src="Media/macOS/momentum.png" alt="Momentum Extension Screenshot">
+        </div>
+      </div>
+  </div>
+
+  <div id="windows10" class="tab-pane fade">
+    <h3>Windows 10</h3>
+    <div class="col-sm-6">
+      <h4> Typical Appearance </h4>
+      <p>The date and time component for Windows 10 features a default landing tab which allows you to open up a "change time zone" modal as well as a "change date and time" modal. Additionally, there are two additional tabs which feature additional clock options and an "internet time" option. In the date and time settings you can choose from a calendar day to set for your current time, as well as see a clock view with the current time in seconds. In TimeZone settings you can pick from a subset of Time Zones to locate yourself in, as well as check a preference if you wish your date and time to adjust accordingly to Daylight Saving Time.</p>
+            <h5 class="text-left">Main date and time window:</h5>
+            <p>The first page you see after opening date and time settings, allowing you to enter into various personalization settings. These include changing date and time, changing the time zone, and selecting whether or not you want to be notified of a change due to daylight savings time.</p>
+            <img src="MediaW10/image1.jpg" class="img-responsive" alt="Date and Time screenshot">
+            <h5 class="text-left">Change date and time modal:</h5>
+            <p>The modal available after you select "Change date and time" option from the main window.</p>
+            <img src="MediaW10/image2.jpg" class="img-responsive" alt="Date and Time screenshot">
+            <h5 class="text-left">TimeZone options modal:</h5>
+            <p>The TimeZone options as well as the option to account for daylight savings time are avalible in this modal.</p>
+            <img src="MediaW10/image3.jpg" class="img-responsive" alt="Date and Time screenshot">
+    </div>
+    <div class="col-sm-6">
+      <h4> Typical Behavior </h4>
+      <p>The date and time component for Windows 10 can be accessed by opening the start menu and searching “date and time”. This will bring up the Date and Time window which will allow you to make changes to your machines settings. No administrative privileges are required to open this component and make changes. </p>
+      </div>
+      <div class="col-sm-12">
+        <hr>
+        <h4>Component in Action</h4>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+            <h5 class="text-center">Changing Date and Time</h5>
+            <div class="thumbnail">
+              <img class="img-responsive center-block" src="MediaW10/changedate.gif" alt="Setting Date Gif">
+              <div class="caption">
+                <h6 class=text-center>Value can be changed by clicking on days, manually typing in times, or using the incrementer arrows. Changes are saved with "ok" or negated using cancel.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h5 class="text-center">Changing Time Zone</h5>
+            <div class=thumbnail>
+              <img class="img-responsive center-block" src="MediaW10/changeTimezone.gif" alt="Setting TimeZone Gif">
+              <div class="caption">
+                <h6 class=text-center>Value can be changed by selecting TimeZone subset dropdown, clicking on desired TimeZone. Daylight savings preference can also be changed by checking or unchecking box. Changed are saved with "ok" button or negated with "cancel" button.</h6>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-12">
+      <hr>
+        <h4>Variants</h4>
+        <div class="col-sm-6">
+        <h6 class="text-center">Calendar Application</h6>
+        <blockquote>All Windows 10 machines come pre-installed with a celendar application which allows you to view any day of the calendar year and add activities to it. It's important to note that although you can see the date and time, you are not allowed to actually make changes like you would be able to in the settings.</blockquote>
+        <img class="img-responsive" src="MediaW10/W10calendar.jpg" alt="Calendar App Screenshot">
+        </div>
+        <div class="col-sm-6">
+        <h6 class="text-center">Access Calendar From Desktop</h6>
+        <blockquote>You can also access this calendar by clicking in the bottom right of the desktop on the displayed date. This will, however, also not permit you to make changes to the actual date and time. It simply connects with your calendar application and lets you sift through days to see if you have any upcoming activities.</blockquote>
+        <img class="img-responsive" src="MediaW10/sideCalgif.gif" alt="Calendar App Screenshot">
+        </div>
+      </div>
+  </div>
+
+  <div id="iOS" class="tab-pane fade">
+    <h3>iOS</h3>
+
+    <div class="col-sm-6">
+      <h4> Typical Appearance </h4>
+      <p> The Date and Time components on iOS devices is very simliar to the interface on a mac OS device. The interface here is more simple with fewer setting and display options.</p>
+        <div class="tumbnail" style="width:320px;height:568px;">
+          <img src="mediaIOS/dateAndTimeiOS.png" style="width:320px;height:568px;" alt="Typical Appearance screenshot">
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+      <h4> Typical Behavior </h4>
+      <p> The date and time component can be found through the Settings application, under the tab "General," and then selecting "Date &amp; Time." Here the user can customize their date and time to be 24-hour time or 12-hour time. They can also choose to have their timezone set automatically, or they can change it manually.</p>
+      <h5 class="text-left">Accessing the Component via Settings:</h4>
+        <div class="thumbnail" style="width:320px;height:578px;">
+          <img src="mediaIOS/typBehaveiOS.gif" style="width:320px;height:568px;" alt="Accessing Component gif">
+        </div>
+
+    </div>
+
+
+    <div class="col-sm-12">
+      <h4> Variants </h4>
+      <p> The Calendar and Clock applications are two examples of the date and time component variants. While these variants do not change the system's date and time formally, they use the date and time component's ability to make calculations dependent on specific dates and times on a particular calendar.</p>
+      <div class="col-sm-12">
+        <div class="col-sm-6">
+
+            <h5 class="text-left">Creating a new event:</h5>
+            <p>When the user creates a new event in the Calendar app, they can manipulate the date, the time, and the timezone. The main difference between this function on mac OS and iOS is just in the way the interface looks to the user and how the prefrences are manipulated. On the iOS platform, the user taps buttons and slides menus to change the date, time, or timezone of their event.</p>
+              <div class="thumbnail" style="width:320px;height:578px;">
+                <img src="mediaIOS/newEventiOS.gif" style="width:320px;height:568px;" alt="New Event gif">
+              </div>
+
+        </div>
+
+        <div class="col-sm-6">
+          <h5 class="text-left">Creating a new alarm:</h5>
+            <p>When the user creates a new alarm in the Clock application, they can adjust the time at which the alarm will go off, and they have the option to choose a day/days for the alarm repeat on. The time at which the alarm will go off adjusts according to the timezone the user is in. The user manipulates the time and repeat settings by taping and sliding on menus, like in the Calendar application.</p>
+            <div class="thumbnail" style="width:320px;height:578px;">
+              <img src="mediaIOS/newAlarmiOS.gif" style="width:320px;height:568px;" alt="New Alarm gif">
+            </div>
+        </div>
+      </div>
+
+        <div class="col-sm-12">
+          <div class="col-sm-6">
+            <h5 class="text-left">World Clock function:</h5>
+              <p>An additional function in the Clock application is the World Clock. The user can search a particular location and once one is chosen, an analog clock is the default display. The user can change the display to digital by tapping once on any of the locations displayed. This feature shows the user the time of the selected destination in addition to how many hours behind or ahead that location is from their current timezone.</p>
+              <div class="thumbnail" style="width:320px;height:578px;">
+                <img src="mediaIOS/worldClockiOS.gif" style="width:320px;height:568px;" alt="World Clock gif">
+              </div>
+          </div>
+
+          <div class="col-sm-6">
+            <h5 class="text-left">Using the Stopwatch and Timer:</h5>
+              <p>The Clock application also has a Stopwatch and Timer.</p>
+              <ul>
+                <li>The Stopwatch can <em>start</em>, <em>stop</em>, <em>lap</em>, and be <em>reset</em>. In order to <em>lap</em> the Stopwatch, the user must tap "Start" and then tap "Lap" when they are ready. The Stopwatch will continue to run, but a marked lap time will be displayed. The Stopwatch can be <em>reset</em> by tapping "Reset."</li>
+                <li>The Timer can count down for a couple hours, or a just a few minutes, it is up to the user. Once the user has chosen a desired amount of time for the application to count down, the Timer will <em>start</em> by tapping "Start," <em>pause</em> by tapping "Pause," and <em>stop</em> before the count down has finished by tapping "Cancel."</li>
+              </ul>
+              <div class="thumbnail" style="width:320px;height:578px;">
+                <img src="mediaIOS/stopwatchTimeriOS.gif" style="width:320px;height:568px;" alt="Stop Watch and Timer gif">
+              </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12">
+          <div class="col-sm-6">
+            <h5 class="text-left">Do Not Disturb settings:</h5>
+            <p>The iOS platform has a feature Do Not Disturb that allows the user to silence incoming calls, notifications and alerts. The user can schedule a specific window of time for when they would like this feature to be enabled and disabled. In order to enable Do Not Disturb at a certain time, the user must enter their "Settings" application, and then tap the "Do Not Disturb" tab. Then once they <em>turn on</em> the "Scheduled" button, they can set a time frame.</p>
+              <div class="thumbnail" style="width:320px;height:578px;">
+                <img src="mediaIOS/doNotDisturb.gif" style="width:320px;height:568px;" alt="Do Not Disturb settings">
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div class="col-sm-12">
+<hr>
+<h3>Credits &amp; References</h3>
+
+  <ul>
+    <li><a href="https://developer.apple.com/library/prerelease/content/documentation/Cocoa/Conceptual/DatesAndTimes/Articles/dtDates.html#//apple_ref/doc/uid/20000183-BCIDBADB">https://developer.apple.com/library/prerelease/content/documentation/Cocoa/Conceptual/DatesAndTimes/Articles/dtDates.html#//apple_ref/doc/uid/20000183-BCIDBADB</a></li>
+    <li><a href="https://developer.apple.com/library/prerelease/content/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html">https://developer.apple.com/library/prerelease/content/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html</a></li>
+    <li><a href="http://www.imore.com/clock?gm=menu-ios9-clock#article-top"</a>http://www.imore.com/clock?gm=menu-ios9-clock#article-top</li>
+    <li><a href="https://support.apple.com/en-us/HT204321"</a>https://support.apple.com/en-us/HT204321</li>
+  </ul>
+</div>
+</div>
+
+  <hr>
+<h3>Credits &amp; References</h3>
+
+<ul>
+  <li>https://developer.apple.com/library/prerelease/content/documentation/Cocoa/Conceptual/DatesAndTimes/Articles/dtDates.html#//apple_ref/doc/uid/20000183-BCIDBADB</li>
+  <li>https://developer.apple.com/library/prerelease/content/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html</li>
+  <li>http://www.imore.com/clock?gm=menu-ios9-clock#article-top</li>
+  <li>https://support.apple.com/en-us/HT204321</li>
+</ul>
+
+</div>
