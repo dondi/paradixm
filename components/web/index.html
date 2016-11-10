@@ -1,0 +1,291 @@
+---
+title: Web
+layout: component
+contributors:
+    - name: Jeremy Hitchcock
+      github: ruhtroh
+    - name: Thomas O'Brien
+      github: obrienthomas13
+---
+
+<blockquote>
+  <p>
+    The <code>Web</code> component, an embedded web page view of a website or mobile application, is one of the most widely
+    used tool in modern technology.
+  </p>
+</blockquote>
+
+<div class="row">
+  <div class="col-sm-12 col-lg-12">
+    <div class="col-xs-12">
+      <h3>Typical Appearance</h3>
+      <blockquote>
+        <p>The typical appearance of an embedded web view can be seen in client-side applications where an embedded page view
+          is present. Embedded web page views tend to be in a window that can be manipulated and have various sizing options
+          available to change width and height. Embedded web page views are seen in most mobile applications today and certain
+          sections of websites as well. On a desktop website, an embedded web page view typically contains a bit of information
+          pulled from the database of a website. On mobile applications, embedded web page views serve a greater purpose. Embedded
+          web page views are commonly used to build the mobile application of a website. While the mobile application may not look
+          exactly the same as the website, the theme and flow of application should following its parent site. Color schemes are
+          generally similar and the overall purpose of the application should serve the same or a very similar function to the
+          original site.</p>
+      </blockquote>
+    </div>
+    <div class="col-xs-12">
+      <h4 style="text-align:center">An example of a typical appearence of a web object can be seen here with the Wells Fargo and Google client for iOS:</h4>
+    </div>
+    <div class="col-md-6 col-lg-6" style="text-align:center">
+      <img src="facebookiOS.png" alt="Wells Fargo iOS Example" style="width: 60%" class="img-thumbnail">
+    </div>
+    <div class="col-md-6 col-lg-6" style="text-align:center">
+      <img src="googleiOS.png" alt="Google iOS Example" style="width: 60%" class="img-thumbnail">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12 col-lg-12">
+    <br>
+    <div class="col-xs-12">
+      <h3>Typical Behavior</h3>
+
+      <blockquote>
+        <p>Embedded web page views are used to present a website’s information in a different format that leads to
+          greater accessibility for users.</p>
+      </blockquote>
+    </div>
+    <div class="col-xs-12">
+      <h4>Events</h4>
+
+      <p>Events can vary greatly, depending on the mobile application and its purpose. Generally speaking, the <code>click</code> function will
+        be one of the most important events for embedded web page views that the user will notice. A click on a desktop is when the user
+        hovers the cursor over a command and selects it through a physical device such as a mouse or track pad. A click on a mobile
+        device is when the user physically touches the screen at a specific point where a command is.</p>
+
+        <div class="col-lg-6">
+          <p style="text-align:center">
+            <img class="img-thumbnail" src="desktopClick.gif" alt="Desktop Click Example" style="width: 80%">
+          </p>
+        <p style="text-align:center; font-style: italic">Example of the click function on a desktop computer.</p>
+        </div>
+        <div class="col-lg-6">
+          <p style="text-align:center">
+            <img class="img-thumbnail" src="mobileClick.gif" alt="Mobile Click Example" style="width: 50%">
+          </p>
+          <p style="text-align:center; font-style: italic">Example of the click function on a mobile device. The</br> transparent circle is the
+          user physically touching the screen.</p>
+        </div>
+
+      <p>When a user clicks on an element that serves a purpose, an event is triggered in the background. The literal fact of the
+        event being triggered is invisible to the user, but the result is likely not.</p>
+
+      <p>Another important event essential to embedded web page views are <code>API requests</code>. An API request is when a program requests to
+        receive specific data located at a URL from a website. The common name of the command to request the data retrieval is <code>GET</code>.
+        If the request has permission to access the data and is conducted successfully, the embedded web page will collect the data. There
+        are numerous of different kinds of data that can be pulled from a website’s database. It is up to the developer of an embedded
+        web page to determine how that information is applied.</p>
+
+      <p style="text-align:center">
+        <img class="img-thumbnail" src="apiRequestExample.png" alt="State Diagram Web">
+      </p>
+
+      <p style="font-style:italic; text-align:center">Here is an example of an API request coming from this page itself. Later on in this documentation is an example of an embedded
+        web view. If the user utilizes Chrome’s Inspect function and looks under the tab Network, it shows that there was an API request for
+        www.espn.com. The request was successful and the page received multiple responses from ESPN’s website.</p>
+
+    </div>
+    <div class="col-xs-12">
+
+      <h4>State Diagram</h4>
+
+      <p>The state diagram for a basic embedded web view is fairly straightforward. When a website or mobile app is initially opened,
+        the state diagram begins. This first page, generally a login or home page, will call the data from the respective website that
+        is intended to be called. After receiving the API request and provided that the application has access to it, the website will
+        fulfill the request and return data to the application. Once the page and data has been completely loaded, the site or application
+        should hit a resting point. Data has been pulled into the embedded web page view and is presented at the discretion of the
+        programmer. The only condition that will change the state of the site or application is an event being triggered. Some examples of
+        this would be logging into an application or clicking on a link within the embedded web view. Since these events require more data
+        to be pulled or analyzed, the API request from the website will have to be conducted again.</p>
+
+        <p style="text-align:center">
+          <img class="img-thumbnail" src="webStateDiagram.png" alt="State Diagram Web">
+        </p>
+    </div>
+    <div class="col-xs-12">
+      <h4>Component in Action</h4>
+
+      <iframe src="http://www.espn.com" width="100%" height="500"></iframe>
+
+      <p style="font-style: italic">Here is a simple example of an embedded web view within the Web
+      documentation itself. By utilizing the tag iframe in html, the page is capable of displaying ESPN’s official website
+      into a fixed window. All events triggered within the embedded web page view will directly interact with ESPN’s live
+      website.</p>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="col-xs-12">
+      <h3>Variants</h3>
+
+      <p>The options for embedded web views are virtually limitless! Down below are a few common
+         implementations of how embedded web views can be used.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <h4 style="text-align:center">Log In</h4>
+          <p style="text-align:center">
+            <img src="googleiOS.png" class="img-thumbnail" alt="Log in example" style="width: 50%">
+          </p>
+          <p style="font-style: italic">Google’s application and specifically Facebook’s old application
+            are examples of embedded web views. Here the user is able to login in and access their
+            respective data.</p>
+      </div>
+      <div class="col-lg-6">
+        <h4 style="text-align:center">News/Forum Layout</h4>
+         <p style="text-align:center">
+           <img class="img-thumbnail" src="redditEWV.png" alt="Forum Layout Example" style="width: 50%">
+         </p>
+         <p style="font-style: italic">Reddit is fun, a third party application for accessing reddit on
+           Android, uses Reddit’s public API key to pull their data into an embedded web view.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <h4 style="text-align:center">Video Streaming</h4>
+         <p style="text-align:center">
+           <img class="img-thumbnail" src="youtubeEWV.png" alt="Video Streaming Example" style="width: 50%">
+         </p>
+         <p style="font-style: italic">Youtube and Twitch pull from their database and create a window that will
+           live stream their video.</p>
+      </div>
+      <div class="col-lg-6">
+        <h4 style="text-align:center">Music Streaming</h4>
+         <p style="text-align:center">
+           <img class="img-thumbnail" src="soundcloudEWV.png" alt="Music Streaming Example" style="width: 50%">
+         </p>
+         <p style="font-style: italic">Soundcloud pulls from their database to implant music streaming into their
+           application.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+      <h3>Priority Metrics</h3>
+
+      <blockquote><code>Efficiency</code> and <code>learnability</code> are the arguably the most important metrics.</blockquote>
+
+      <p>Because embedded web views are such a common theme of virtually every user interface available today, it can be said that
+        all usability metrics are equally important for this component. However, when web designers are trying to make sure their product stands out form the rest, they want something that is easy for their customers to use, and just as easy to learn.</p>
+
+      <p>Users want the quickest means possible while using a website (efficiency), particularly because users want to look up or find some information online in the best manner possible. Users want to be able to use and perform the same actions in the same way across multiple sites/platforms (leanrability). Web views must be easy to use and understand, without too much complication.</p>
+
+      <p>There is no distinct "low-priority" metric that can be asscociated with a web component. Because they vary in appearence, themes, and functions, a web view can be very diverse, with goals ranging from user satisfaction, as seen in sleek web apps like Alien Blue, a <a href="http://www.reddit.com">Reddit.com</a> client for iOS.</p>
+
+      <span style="text-align:center">
+        <h4>Alien Blue</h4>
+        <p style="text-align:center"><iframe width="560" height="315" src="https://www.youtube.com/embed/UbXy2-Q3N6o" frameborder="0" allowfullscreen></iframe></p>
+
+        <p>Or, there can be more simple, efficient places that will act as an easy to use mobile web interface for their bigger, online counterparts, like the Google Sheets app, as seen here:</p>
+
+        <h4>Google Sheets</h4>
+        <p style="text-align:center"><iframe width="560" height="315" src="https://www.youtube.com/embed/_2URq5n5UFA" frameborder="0" allowfullscreen></iframe></p>
+      </span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+      <h3>Key Characteristics</h3>
+
+      <p>Relating back to the some of the priority metrics, the key to a usable and efficient embedded web page is fluid
+        <code>navigation</code>. The user using an embedded web page in a mobile application generally will have some kind of understanding
+        of the desktop website for the same website. With this in mind, it is important for the navigation of the desktop
+        website and the mobile application to have similar navigation flow and layout. Color themes being the same and
+        buttons being in the same general location are examples of keeping the layout and flow consistent between the
+        desktop website and mobile application</p>
+
+         <div class="row">
+          <div class="col-lg-6">
+            <h4 style="text-align:center">Mobile Homepage</h4>
+            <p style="text-align:center">
+              <img class="img-thumbnail" src="evernoteMobileMenu.png" alt="Youtube Mobile Menu" style="width: 50%">
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <h4 style="text-align:center">Desktop Website Homepage</h4>
+            <p style="text-align:center">
+              <img class="img-thumbnail" src="evernoteWebMenu.png" alt="Youtube Website Menu" style="width: 100%">
+            </p>
+          </div>
+        </div>
+
+        <p>The two images above are Evernote’s mobile home page and desktop home page respectively when the user has logged
+          in. One consistency is the styling of Evernote on both the webpage and embedded web page view. The font and color
+          scheme is the same on both platforms. Not only that, but the icons used remain consistent. The primary difference
+          between the two is that the desktop website is able to show both the user’s notes and one specific note file
+          simultaneous. The mobile web app lacks this feature due to having a smaller screen with an emphasis on the vertical
+          height. Another distinction is the plus icon is on the bottom right of the mobile app while at the top left of the
+          desktop website. This is likely due to the plus button being easier to select with the user’s thumb for users who
+          are right handed. Overall the mobile application is essentially a compressed version of the desktop website.
+          The functionality of the desktop website is still in the mobile application, but there are some more menu
+          navigation required. It is clear that Evernote prioritized the navigation of their mobile application to be
+          similar if not identical to the desktop website which leads to an efficient and easy to learn system.</p>
+
+    </div>
+</div>
+
+<h3>Platform-Specific Instances</h3>
+
+<div class="row">
+  <div class="col-sm-12 col-lg-12">
+    <div class="col-xs-12">
+      <h4>WebView</h4>
+      <p>Android provides a powerful class called <code>webview</code> for developers to utilize. There are several commands and
+         tools that webview provides. Some of these commands are loadUrl, setJavaScriptEnabled, and so on. There is
+         a large library provided for developers to use as they please. This results in virtually endless possibilities
+         of how webview can be used to create embedded web page views. Not only that, but webview has proven to be scalable on an
+         industrial level.</p>
+      <p style="text-align:center">
+         <img class="img-thumbnail" src="https://developers.google.com/web/tools/chrome-devtools/remote-debugging/imgs/webview-debugging.png" alt="Testing Example" style="width: 50%">
+      </p>
+      <p>WebView offers plenty of options for editing and fine-tuning a developer’s mobile application with embedded web page views.
+        The image above provides an example of a mobile application being tested. A developer is able to simultaneous test their mobile
+        application and see their program at the same time. For embedded web page views, this is helpful for checking to see if API
+        requests have passed or failed, quick changes to see how the developer’s program functions, and much more.</p>
+
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 col-lg-12">
+    <div class="col-xs-12">
+      <h4>iOS content</h4>
+      <p>On iOS devices, <code>web</code> objects tend to take the form of <code>Applications</code>, being fullscreen
+         pages showing an "app" version of their contents. In contrast to desktops, iOS <code>web</code> will generally
+         try to appeal to priority metrics for apps.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h3>Credits &amp; References</h3>
+    <ul>
+      <li>
+        <a href="https://developer.android.com/guide/webapps/webview.html" target="_blank">https://developer.android.com/guide/webapps/webview.html</a>
+      </li>
+      <li>
+        <a href="http://developer.telerik.com/featured/what-is-a-webview/" target="_blank">http://developer.telerik.com/featured/what-is-a-webview/</a>
+      </li>
+      <li>
+        <a href="https://developers.google.com/youtube/v3/sample_requests" target="_blank">https://developers.google.com/youtube/v3/sample_requests</a>
+      </li>
+    </ul>
+  </div>
+</div>
