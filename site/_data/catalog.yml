@@ -72,6 +72,9 @@
     - name: Split View
       path: split-view
 
+    - name: Macro View
+      path: macro-view
+
 - group: Environment
   components:
     - name: Information Transfer
