@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Map</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="map-style.css">
+  <style>
+    .component-nav {
+        min-height: 360px;
+    }
+  </style>
+</head>
+
+
+  <body role="document">
+    <header class="site-header">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Paradixm</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                aria-haspopup="true" aria-expanded="false">Catalog <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+
+  
+  
+  <li><a href="/components/button">Button</a></li>
+  
+  <li><a href="/components/menu">Menu</a></li>
+  
+  <li><a href="/components/radio-button">Radio Button</a></li>
+  
+  <li><a href="/components/check-box">Check Box</a></li>
+  
+  <li><a href="/components/string-input">String Input</a></li>
+  
+  <li><a href="/components/slider">Slider</a></li>
+  
+  <li><a href="/components/command-loop">Command Loop</a></li>
+  
+
+  
+  <li role="separator" class="divider"></li>
+  
+  
+  <li><a href="/components/date-and-time">Date & Time</a></li>
+  
+  <li><a href="/components/list">List</a></li>
+  
+  <li><a href="/components/media">Media</a></li>
+  
+  <li><a href="/components/search">Search</a></li>
+  
+  <li><a href="/components/table">Table</a></li>
+  
+  <li><a href="/components/tree">Tree</a></li>
+  
+
+  
+  <li role="separator" class="divider"></li>
+  
+  
+  <li><a href="/components/drag-and-drop">Drag & Drop</a></li>
+  
+  <li><a href="/components/resizing">Resizing</a></li>
+  
+  <li><a href="/components/rotating">Rotating</a></li>
+  
+  <li><a href="/components/selecting">Selecting</a></li>
+  
+  <li><a href="/components/scrolling">Scrolling</a></li>
+  
+  <li><a href="/components/zooming">Zooming</a></li>
+  
+
+  
+  <li role="separator" class="divider"></li>
+  
+  
+  <li><a href="/components/modal-view">Modal View</a></li>
+  
+  <li><a href="/components/view-switcher">View Switcher</a></li>
+  
+  <li><a href="/components/split-view">Split View</a></li>
+  
+
+  
+  <li role="separator" class="divider"></li>
+  
+  
+  <li><a href="/components/information-transfer">Information Transfer</a></li>
+  
+  <li><a href="/components/login-unlock">Login/Unlock</a></li>
+  
+  <li><a href="/components/storage">Persistent Storage</a></li>
+  
+  <li><a href="/components/task-launcher">Task Launcher</a></li>
+  
+  <li><a href="/components/task-switcher">Task Switcher</a></li>
+  
+  <li><a href="/components/window">Window</a></li>
+  
+
+</ul>
+
+          </li>
+
+          <li>
+            <a href="/template">Article Template</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+        <div class="container" role="main">
+      <h2>Map</h2>
+
+<dl class="dl-horizontal">
+  <dt>Contributor</dt>
+  <dd>
+    <ul class="list-inline">
+      
+      <li><a href="https://github.com/lummish">Harris Lummis</a></li>
+      
+    </ul>
+  </dd>
+</dl>
+
+<p class="lead">with the popularization of mobile technology, maps have become essential interface components in a wide range of applications.</p>
+
+<div class="row">
+  <div class="col-sm-6">
+
+<h3>Typical Appearance</h3>
+
+<blockquote>Across platforms, maps demonstrate a number of common characteristics in their appearance. Namely, maps will give some indication of the scale at which they are currently being viewed, a means of marking points of interest, some mark which denotes the location of the user, and a rendered representation of the geography to which the map corresponds (either in drawn-map form or satellite form).</blockquote>
+
+<h3>Typical Behavior</h3>
+
+<blockquote>
+  <p>The primary function of any embedded map is to demonstrate some location in space. Maps implement behaviors such as:
+  <ul>
+    <li><em>Movement</em>: the ability to zoom, pan, and rotate the map (sometimes in 3-D space)</li>
+    <li><em>Search</em>: the ability to search for particular locations in the map</li>
+    <li><em>Marking</em>: the ability to point to and mark locations of interest</li>
+    <li><em>Directions</em>: maps typically implement a routing function that will display to the user a route between two points</li>
+    <li><em>Snap to Current Location</em>: maps allow the user to snap to their immediate surroundings</li>
+  </ul> 
+  </p>
+</blockquote>
+
+<h4>Events</h4>
+
+<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
+  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
+
+<p>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5>Panning</h5>
+    </div>
+    <div class="panel-body">
+      <p><em>The Grab</em>: initiated by <code>mouse button down</code></p>
+      <p>The grab event is initiated when the user clicks and holds their click at any non-special location on the map. The Grab is accompanied by a small piece of feedback in the form of a cursor change (at least on macOS).</p>
+      <p><em>The Pan</em>: Maintained while <code>mouse button down</code></p>
+      <p>While the user has grabbed the map, she may move her mouse in any direction to have the map pan in the direction of the movement. The movement of the map essentially happens in real time along with the movement of the mouse.</p>
+      <p><em>The Release</em>: initiated by <code>mouse button release</code></p>
+      <p>User-controlled map panning is completed when the user releases their mouse button. Depending on the implementation, the map may continue to move in the direction of its momentum when the mouse was released.</p>
+      <figure class="figure">
+        <img src="panning-apple-maps.gif" id="pop" class="figure-img img-responsive rounded">
+        <figcaption class="figure-caption">An example of the panning event in Apple Maps</figcaption>
+      </figure>
+    </div> 
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="event-header">View Style Change</h5>: initiated by <code>click</code>
+    </div>
+    <div class="panel-body">
+      <p>When the user clicks the element designated to change viewing style (satellite or map), the map will rerender in the chosen style if not already in that state.</p>
+      <figure class="figure">
+        <img src="view-style-change-gmaps.gif" class="figure-img img-responsive rounded">
+        <figcaption class="figure-caption">An example of changing view styles in Google Maps</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="event-header">3D View Toggle</h5>: initiated by <code>click</code>
+    </div>
+    <div class="panel-body">
+      <p>When the user clicks on the 3D/2D view toggle button, the viewing style of the map will toggle to the opposite state. This event may be reversed by clicking the button again.</p>
+      <figure class="figure">
+        <img src="3d-view-toggle-apple.gif" class="figure-img img-responsive rounded">
+        <figcaption class="figure-caption">Toggling between 3D and 2D viewing modes in Apple Maps</figcaption>
+      </figure>
+    </div>
+  </div>     
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="event-header">Snap To Current Location</h5>: initiated by <code>click</code>
+    </div>
+    <div class="panel-body">
+      <p>When the user clicks the snap to current location button, the map will immediately pan and zoom to the user's location</p>
+      <figure class="figure">
+        <img src="snap-to-apple.gif" class="figure-img img-responsive rounded">
+        <figcaption class="figure-caption">Snapping to the user location in Apple maps</figcaption>
+      </figure>
+    </div>
+  </div>  
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="event-header">Zoom In/Out</h5>: initiated by <code>click</code>
+    </div>
+    <div class="panel-body">
+      <p>When the user clicks on the zoom in or out buttons, the map will animate a change in display that corresponds either to a larger or smaller scale (typically there are limits imposed upon this scale). Some applications allow for different ways to initiate the zoom event (scrolling, holding a zoom button, etc.).</p>
+      <figure class="figure">
+        <img src="zoom-google.gif" class="figure-img img-responsive rounded">
+        <figcaption class="figure-caption">Zooming in Google Maps</figcaption>
+      </figure>
+    </div>
+  </div>  
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5>Search</h5>
+    </div>
+    <div class="panel-body">
+      <p>For the basic functionality of the search function, <a href="../search">click here</a></p>
+      <p><em>Result Events</em>: initiated by <code>submit</code></p>
+      <p>Upon successful search submission, an embedded map will return either a list of relevant results (less specific search term), or will snap directly to the location of a specific search term. In either case, the map will display feedback in the form of a marker which indicates the positions of the returned results.</p>
+      <p><em>Snap to Result</em>: initiated by <code>click</code></p>
+      <p>When the user clicks on a result returned by search, the map will display additional information about the location, and in some implementations trigger the "snap to" event to that particular location.</p>
+      <figure class="figure">
+        <img src="search-google.gif" class="figure-img img-responsive rounded">
+        <figcaption class="figure-caption">The Google Maps search in action</figcaption>
+      </figure>
+      <p><br></p>
+      <figure class="figure">
+        <img src="search-2-google.gif" class="figure-img img-responsive rounded">
+        <figcaption class="figure-caption">Snapping to a search result in Google Maps</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="event-header">Drop Pin</h5>: initiated by <code>click</code> or <code>holdClick</code>
+    </div>
+    <div class="panel-body">
+      <p>The drop pin event allows the user to mark a specific point of interest on the map, and in turn allow for other behaviors to act upon that location (e.g. get directions to that location).</p>
+      <figure class="figure">
+        <img src="pin-drop-google.gif" class="figure-img img-responsive rounded">
+        <figcaption class="figure-caption">Dropping a pin in Google Maps</figcaption>
+      </figure>
+    </div>
+  </div>  
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="event-header">Get Directions</h5>
+    </div>
+    <div class="panel-body">
+      <p><em>Get Directions to/from Specified Location</em>: initiated by <code>click</code></p>
+      <p>The get directions to/from specified location event presents a menu where the user must enter the opposite end of their journey (origin/destination respectively). This location may be selected either by a Drop Pin event or by a search result.</p>
+      <p><em>Origin/Destination Selection</em>: initiated by <code>enterText</code></p>
+      <p>The Origin/Destination Selection event takes a text input from the user in the corresponding text input box. As the user inputs her text, relevant location options will display. The user must enter an exact location or select from the presented location options to finalize their origin/destination selection.</p>
+      <p><em>Display Directions</em>: initiated by <code>submit</code></p>
+      <p>The event causes the map to draw a route between a chosen starting location and the specified location upon submission of these locations. Along with displaying the recommended route, the map will additionally present the user with an estimated time that the route would take. Some implementations allow for a different choice of route, and some display different routes depending on the user's preference for walking, public transit, or driving (e.g. Google and Apple Maps)</p>
+      <figure class="figure">
+        <img src="pin-directions-apple.gif" class="figure-img img-responsive rounded">
+        <figcaption class="figure-caption">Getting directions to a pinned location in Apple Maps</figcaption>
+      </figure>
+      <p><br></p>
+      <p><em>Get Directions</em>: initiated by <code>click</code></p>
+      <p>The Get Directions event is triggered when the user clicks the directions button, the appearance of which varies by platform. Upon click, the map component presents the user with two text input boxes: one for the origin location and one for the final destination.</p>
+      <p><em>Origin and Destination Selection</em>: initiated by <code>enterText</code>
+      <p>Each text input partially implements the search function described earlier so as to facilitate input entry and location selection</p>
+      <p><em>Diplay Directions</em></p> 
+      <p>The event causes the map to draw a route between a chosen starting location and the specified location upon submission of these locations. Along with displaying the recommended route, the map will additionally present the user with an estimated time that the route would take. Some implementations allow for a different choice of route, and some display different routes depending on the user's preference for walking, public transit, or driving (e.g. Google and Apple Maps)</p>
+      <figure class="figure">
+        <img src="google-maps-directions-to-from.gif" class="figure-img img-responsive rounded">
+        <figcaption class="figure-caption">Getting directions for driving, transit, walking, and cycling between two locations in Google Maps</figcaption>
+      </figure>
+    </div>
+  </div>  
+</p>
+
+<h4>State Diagram</h4>
+
+<div style="width: 100%; height: 100%;"><svg style="width: 100%; height: 100%; display: block;"><g transform="translate(-202,-134)"><g></g><g><g style="visibility: visible;" transform="translate(0.5,0.5)"><rect x="213.4" y="144.48" width="68.8" height="34.4" rx="5.16" ry="5.16" fill="white" stroke="black" transform="translate(1.72,2.58)" opacity="1"></rect></g><g style="visibility: visible;"><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="9.459999999999999px"><text x="247.3" y="164.19">3D View</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><rect x="462.8" y="144.48" width="68.8" height="34.4" rx="5.16" ry="5.16" fill="white" stroke="black" transform="translate(1.72,2.58)" opacity="1"></rect></g><g style="visibility: visible;"><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="9.459999999999999px"><text x="496.7" y="164.19">2D View</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><path d="M 282.2 153.08 L 364.4 153.08 Q 373 153.08 381.6 153.08 L 457.33 153.08" fill="none" stroke="black" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 282.2 153.08 L 364.4 153.08 Q 373 153.08 381.6 153.08 L 457.33 153.08" fill="none" stroke="#36393d" stroke-miterlimit="10"></path><path d="M 461.84 153.08 L 455.82 156.09 L 457.33 153.08 L 455.82 150.07 Z" fill="#36393d" stroke="#36393d" stroke-miterlimit="10" pointer-events="all"></path></g><g><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="8.6px"><rect fill="white" stroke="none" x="324" y="147" width="96" height="10" stroke-width="0"></rect><text x="372.2" y="155.66">Click 2D/3D View Toggle</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><path d="M 462.8 170.28 L 381.1 170.28 Q 372.5 170.28 363.9 170.28 L 287.68 170.28" fill="none" stroke="black" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 462.8 170.28 L 381.1 170.28 Q 372.5 170.28 363.9 170.28 L 287.68 170.28" fill="none" stroke="#36393d" stroke-miterlimit="10"></path><path d="M 283.17 170.28 L 289.19 167.27 L 287.68 170.28 L 289.19 173.29 Z" fill="#36393d" stroke="#36393d" stroke-miterlimit="10" pointer-events="all"></path></g><g><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="8.6px"><rect fill="white" stroke="none" x="324" y="164" width="96" height="10" stroke-width="0"></rect><text x="372.8" y="172.86">Click 2D/3D View Toggle</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><rect x="213.4" y="230.48" width="68.8" height="34.4" rx="5.16" ry="5.16" fill="white" stroke="black" transform="translate(1.72,2.58)" opacity="1"></rect></g><g style="visibility: visible;"><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="9.459999999999999px"><text x="247.3" y="250.19">Map View</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><rect x="462.8" y="230.48" width="68.8" height="34.4" rx="5.16" ry="5.16" fill="white" stroke="black" transform="translate(1.72,2.58)" opacity="1"></rect></g><g><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="9.459999999999999px"><text x="496.7" y="250.19">Satellite View</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><path d="M 282.2 239.08 L 364.4 239.08 Q 373 239.08 381.6 239.08 L 457.33 239.08" fill="none" stroke="black" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 282.2 239.08 L 364.4 239.08 Q 373 239.08 381.6 239.08 L 457.33 239.08" fill="none" stroke="#36393d" stroke-miterlimit="10"></path><path d="M 461.84 239.08 L 455.82 242.09 L 457.33 239.08 L 455.82 236.07 Z" fill="#36393d" stroke="#36393d" stroke-miterlimit="10" pointer-events="all"></path></g><g><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="8.6px"><rect fill="white" stroke="none" x="326" y="233" width="91" height="10" stroke-width="0"></rect><text x="372.2" y="241.66">Click View Style Toggle</text></g></g><g style="visibility: visible;" transform="translate(0.5,0.5)"><path d="M 462.8 256.28 L 381.6 256.28 Q 373 256.28 364.4 256.28 L 287.68 256.28" fill="none" stroke="black" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 462.8 256.28 L 381.6 256.28 Q 373 256.28 364.4 256.28 L 287.68 256.28" fill="none" stroke="#36393d" stroke-miterlimit="10"></path><path d="M 283.17 256.28 L 289.19 253.27 L 287.68 256.28 L 289.19 259.29 Z" fill="#36393d" stroke="#36393d" stroke-miterlimit="10" pointer-events="all"></path></g><g><g fill="black" font-family="Arial,Helvetica" text-anchor="middle" font-size="8.6px"><rect fill="white" stroke="none" x="327" y="250" width="91" height="10" stroke-width="0"></rect><text x="372.8" y="258.86">Click View Style Toggle</text></g></g></g><g></g><g></g></g></svg></div>
+
+<img src="big-state.png" id="state-diag" class="img-responsive">
+
+<h4>Component in Action</h4>
+
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src=https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d195601.04562769792!2d-75.11803295!3d40.002497999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401521095201"></iframe>
+</div>
+
+  </div>
+
+  <div class="col-sm-6">
+<h3>Variants</h3>
+<p><br></p>
+<em>Embedded Maps</em> appear very similar to a full-featured map implementations, but typically restrict the availability of user interactions. For example, embedded maps on Thrillist.com do not permit the user to search for locations other than bars and restaurants, to drop pins, or to get directions. These behaviors vary from site to site. <p><br>
+</p>
+<figure class="figure">
+      <img src="thrillist-embedded.gif" class="figure-img img-responsive rounded">
+      <figcaption class="figure-caption">Some behaviors allowed on a map embedded on thrillist.com</figcaption>
+    </figure>
+
+
+
+<h3>Priority Metrics</h3>
+<h4>Learnability</h4>
+<p>The ease with which users learn to make use of a map implementation should not be prioritized relative to metrics such as efficiency, errors, and satisfaction; as long as an implementation of the map component is reasonably intuitive, users should have no trouble learning how to use it.</p>
+
+<h4>Efficiency</h4>
+<p>Efficiency must be highly prioritized by any implementation of the map component. Especially in mobile maps, users will desire practically instant access to directional information to get wherever it is they desire to be. If an experienced user has difficulty accessing geographic information in an efficient manner, they will likely become frustrated and possibly migrate to a different map application</p>
+
+<h4>Memorability</h4>
+<p>Because most technology users access geographic information on a regular basis, little emphasis should be placed on the memorability metric of map interfaces. The importance of memorability is again reduced by the relative simplicity of most map interfaces, which should not require too much memorization of operations for the typical user. The memorability metric may be considered more important in complex map implementations such as arcGis, but people tend to use such applications in a professional capacity, meaning that their use will likely be more regular and thus memorability a less important measure of usability.</p>
+
+<h4>Errors</h4>
+<p>A low error rate characterizes a properly usable implementation of a map interface; this relative importance can again be attributed to the prevalance of map components on mobile technologies. Mobile users of maps may be in motion when making use of a map interface, meaning that the safety of the user and of those around them could be compromised with each additional unexpected result.</p>
+
+<h4>Satisfaction</h4>
+<p>User satisfaction is always an important measure of usability, and maps are no different. Especially in the crowded space of map applications, all of which serve relatively the same function, developers must prioritize satisfaction in order to differentiate their implementation from those of their competitors.</p>
+
+<h3>Key Characteristics</h3>
+
+<h4>Feedback</h4>
+<p>Maps are populated with a great deal of information, so in order to make users best able to understand the effects of their actions, any and all feedback must convey all relevant information in a manner both visible and simple.</p>
+
+<h4>Visibility</h4>
+<p>Some elements of visibility can be considered feedback, but others are distinct in their own right. Users must be able to easily identify both the features of the map itself and the signifiers of actions available to the user at any given time. Because maps can communicate so much information at once, the ability of the user to discern what they can and cannot interact with while at the same time remaining capable of interpreting the geographic information of the map is essential.</p>
+
+<h4>Intuitive Affordances</h4>
+<p>Maps communicate fundamentally physical information, thus interactions with a well-formed map component should mimic interactions with a physical object in order to best align with users' mental models regarding maps. This type of behavior can be seen in almost all popular map implementations; for example, Google Maps allows users to pan around the map as though they were manipulating a physical object, rather than only being able to do so with arrow keys or some kind of button interface.</p>
+
+</div>
+</div>
+
+<h3>Platform-Specific Instances</h3>
+
+<div class="row">
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">macOS</h4>
+      </div>
+      <div class="panel-body">
+        Apple Maps, Apple's proprietary map implementation, makes use of macOS specific features to allow users to manipulate maps in interesting ways. These features can be seen in the following events:
+
+        <p><br></p>
+
+        <p><em>Zoom In/Out</em>: initiated and maintained by <code>pull (two fingers outward)</code> and <code>pinch (two fingers inward)</code> respectively</p>
+        <p>The behavior of the zoom is essentially the same as in any other map, but the input provides the user with greater tactile feedback than other applications</p>
+
+        <p><br></p>
+
+        <p><em>Rotate</em>: initiated and maintained by: <code>two finger rotate</code></p>
+        <p>Rotation operates the same as in other applications, but can be triggered in Apple Maps not only by clicking the corresponding button on the interface itself, but also by a more tactile operation.</p>
+
+        <p><br></p>
+
+        <p><em>Drop Pin</em>: initiated by <code>force click</code></p>
+        <p>The drop pin can be initiated in Apple maps via force click, a proprietary operation</p>
+
+        <p><br></p>
+
+        <figure class="figure">
+          <img src="macOS-maps.gif" class="figure-img img-responsive rounded">
+          <figcaption class="figure-caption">macOS specific behaviors</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Amiga</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Material Design</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">watchOS</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">              
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img src="" class="imagepreview" style="width: 100%; height: 100%" >
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--modal code taken from w3-->
+<div id="myModal" class="modal">
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script type="text/javascript">
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById('state-diag');
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+  }
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+<h3>Credits &amp; References</h3>
+
+
+
+    </div>
+
+
+    <footer class="site-footer">
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
