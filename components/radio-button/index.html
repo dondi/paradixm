@@ -4,126 +4,322 @@ layout: component
 contributors:
     - name: Janine Leaño
       github: jleano713
+
+    - name: Ryan Taus
+      github: RyTaus
+
+    - name: Mitchell Simon
+      github: MitchellJFS
 ---
 
-<style>
-.img {max-width:250px;}
-</style>
+<p class="lead">
+	A button whose function is making a choice out of a selection of choices.  The focus of a radio button is on the exclusivity of the selected response.  When pressed the button is set to active and every other button in the set is set to inactive.
+</p>
 
-<h2>Radio Button</h2>
-<p class="lead">A button, when pressed toggles some kind of action. What separates it from other buttons is that it is considered in one unit with other radio buttons to allow users to toggle <em>exclusively</em> on one option from a set of related and predetermined options.</p>
+<div class="row" id="geneeric-info">
+	<div class="col-md-6"> <!-- COL 1 -->
+		<h3>Typical Appearance</h3>
+		<div class="well">
+			<p>
+				Radio buttons are usually circular in appearance and are accompanied with a text label on the right that describes the given option. They are often accompanied with a series of 
+				other radio buttons of which the user can select one in response to a given choice (ex: The question "What is your favorite color?" with the radio buttons being an assortment of different colors). 
+			</p>
+			<p>
+				When inactive, the circles are not colored in, giving it an "empty" look to suggest that it is not currently active. 
+				When active, a dot concentric to the circle or an entirely different color to the background color of an empty button "fills" the circle, indicating that it is currently chosen.
+			</p>
+		</div>
+		<br>
 
-<div class="row">
-  <div class="col-sm-6">
 
-<h3>Typical Appearance</h3>
+		<h3>Typical Behavior</h3>
+		<div class="well">
+			<p>
+				Just like with a general button, a radio button's behavior is solely dependent on whether the user has pressed/toggled it or not. This is usually done via the pointer/cursor but can also be done with keyboard inputs.
+			</p>
+			<p>
+				The active/inactive state of a radio button is dependent on the active/inactive state of the other related radio buttons. The active state is exclusive to one radio button in a set at a time (i.e. two radio buttons cannot be active simultaneously).
+			</p>
+			<p>Disabled buttons have their circle and/or corresponding text grayed out.</p>
+			<p>When accessing via keyboard inputs using the tab button, a radio button is surrounded by a dotted square or border to indicate that it is currently in selection.</p>
+		</div>
+		<br>
 
-	<p>Radio buttons are usually circular in appearance and are accompanied to the right with a text label describing the given option. They are often accompanied with a series of 
-	other radio buttons that have some answer to the general question of choice given to the user (ex: The question "What is your favorite color?" with the radio buttons being an assortment of different colors). 
-	When inactive, the circles are not colored in, giving it an "empty" look to suggest that it is not currently active. 
-	When active, a dot concentric to the circle or an entirely different color to the background color of an empty button "fills" the circle, indicating that it is currently chosen. </p>
+		<h3>Events</h3>
+		<div class="container col-md-12 well">
+			<ul class="nav nav-tabs nav-justified" role="tablist">
+		  	<li role="presentation" class="active" height="100"><a href="#hover" data-toggle="tab"> Hover</a></li>
+		  	<li role="presentation"><a href="#selected" data-toggle="tab"> Selected</a></li>
+		  	<li role="presentation"><a href="#clickandhold" data-toggle="tab"> Press</a></li>
+		  	<li role="presentation"><a href="#clickandrelease" data-toggle="tab"> Release</a></li>
+		  	<li role="presentation"><a href="#disabled" data-toggle="tab"> Disabled</a></li>
+			</ul>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="hover">
+					<h4>  Hover</h4> 
+					<div class="well">
+						<p>
+							When the pointer/cursor is within the area of the circle. In this case, radio buttons either do nothing, or give the user feedback (i.e. cast a shadow within the circle) to indicate that it is ready to be interacted with.
+						</p>
+					</div>
+				</div>
 
-<h3>Typical Behavior</h3>
-	<p>Just like with a general button, a radio button's behavior is solely dependent on whether the user has pressed/toggled it or not. This is usually done via the pointer/cursor but can also be done with keyboard inputs.</p>
-	<p>The active/inactive state of a radio button is dependent on the active/inactive state of the other related radio buttons. The active state is exclusive to one radio button at a time (i.e. two radio buttons cannot be active simultaneously).</p>
-	<p>Disabled buttons have their circle and/or corresponding text grayed out.</p>
-	<p>When accessing via keyboard inputs using the tab button, a radio button is surrounded by a dotted square or border to indicate that it is currently the one in selection.</p>
+				<div role="tabpanel" class="tab-pane" id="selected">
+					<h4>  Selected</h4>
+					<div class="well">
+						<p>
+							Occurs strictly when user is operating through keyboards input. Pressing the tab key scrolls through all the optional clickables and since radio buttons are grouped together they are always considered one element. To scroll through the choices of radio buttons, the user must use the directional buttons on the keyboard (up and down).
+						</p>
+					</div>
+				</div>
 
-	<h4>Events</h4>
-		<ul>
-			<li><code>hover</code>: when the pointer/cursor is within the area of the circle. Most do not display behavior during this event but some radio buttons do cast a shadow within the circle to indicate that it is currently being interacted with regardless on
-			whether it is clicked or not.</li>
-			<li><code>selected</code>: occurs strictly when user is operating through keyboards input. Pressing the tab key scrolls through all the optional clickables and since radio buttons are grouped together they are always considered one element. To scroll through the choices of radio buttons, the user must use the directional buttons on the keyboard (up and down).</li>
-			<li><code>click + hold</code>: a user can click on a radio button (pressing within the vicinity of the circle or the label) and prevent it from being toggled by dragging and releasing the cursor away from the vicinity of the cursor. This event cannot occur using keyboard inputs.</li>
-			<li><code>click + release</code>: a user can press within the vicinity of the circle or the label and immediately release it to toggle the button. In the context of keyboard inputs, once a button is selected, pressing the enter key is the equivalent of clicking it with a cursor.</li>
-			<li><code>disabled</code>: a disabled button provides no response when it is clicked on. Everything remains the same indicating to the user that nothing has changed. Sometimes a cancel icon takes the place of the cursor indicating that it cannot be clicked.</li> 
-		</ul>
+				<div role="tabpanel" class="tab-pane" id="clickandhold">
+					<h4>  Click and Hold</h4> 
+					<div class="well">
+						<p>
+							A user can click on a radio button (pressing within the vicinity of the circle or the label) and prevent it from being toggled by dragging and releasing the cursor away from the vicinity of the cursor. This event cannot occur using keyboard inputs.
+						</p>
+					</div>
+				</div>
 
-	<h4>State Diagram</h4>
-		<p class="text-center"><img src="http://i59.tinypic.com/2l8hvmo.png"></p>
+				<div role="tabpanel" class="tab-pane" id="clickandrelease">
+					<h4>  Click and Release</h4>
+					<div class="well">
+						<p>
+							A user can press within the vicinity of the circle or the label and immediately release it to toggle the button. In the context of keyboard inputs, once a button is selected, pressing the enter key is the equivalent of clicking it with a cursor.
+						</p>
+					</div>
+				</div>
 
-	<h4>Component in Action</h4>
-		<p class="text-center">
-			<img src="http://31.media.tumblr.com/2354f87c169620b7c064e5c4d3307178/tumblr_inline_nj9mgb2MYy1qb17pp.gif">
-		</p>
-		<p>Pictured above is a depiction of a user picking between two radio buttons in a constant loop between inactive, click and active.
-		As you can see buttons can be toggled if labels are clicked as well. Pictured below is a live demonstration of a radio button as developed by Bootstrap.</p>
+				<div role="tabpanel" class="tab-pane" id="disabled">
+					<h4>  Disabled</h4>
+					<div class="well">
+						<p>
+							A disabled button provides no response when it is clicked on. Everything remains the same indicating to the user that nothing has changed. Sometimes a cancel icon takes the place of the cursor indicating that it cannot be clicked.
+						</p> 
+					</div>
+				</div>
+			</div>
+		</div>
 
-		<p class="text-center">
-  			<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-			<label class="radio-inline"><input type="radio" name="optradio" disabled>Option 3 (disabled)</label>
-		</p>
+		<h3>State Diagram</h3>
+		<div class="well">
+			<p class="text-center">
+				<img src="StateDiagram.png" class="img-responsive center-block">
+			</p>
+		</div>
 
-  </div>
+		<h3>Component in Action</h3> <!-- TODO: edit this section to only talk about stuff above, or maybe pair them left and right -->
+		<div class="well">
+			<p class="text-center">
+				<img src="http://31.media.tumblr.com/2354f87c169620b7c064e5c4d3307178/tumblr_inline_nj9mgb2MYy1qb17pp.gif">
+			</p>
+			<p>
+				Pictured above is a depiction of a user picking between two radio buttons in a constant loop between inactive, click and active.
+				As you can see buttons can be toggled if labels are clicked as well. Pictured below is a live demonstration of a radio button as developed by Bootstrap.
+			</p>
 
-  <div class="col-sm-6">
-<h3>Variants</h3>
-	<ul>
-		<li><p class="text-center"><img src="http://i60.tinypic.com/k3q00k.png"></p>
-		<p><em>menu items</em>: buttons like the picture above that bring down submenus could be considered a variation of a radio button in that only one can be toggled (to expand the submenu) once at a time.
-		However conceptually-speaking, radio buttons focus more on status (ex: the background is red and not blue) rather than actions (ex: pressing a button to access a submenu for background color) so 
-		menu buttons are not necessarily identified as a radio button.</p>
-		</li>
-		<li><p class="text-center"><img src="http://i60.tinypic.com/1236syh.png"><img src="https://csgsitestorage.blob.core.windows.net/img/1426714471678.gif"></p>
-		<p><em>menu list</em>: this variation presents itself as a list instead of circular buttons. Instead of "filling" in the circle to make a decision, the user clicks on the label itself (usually colored differently when hovered over).
-		Another variation of this is the select box which is like the menu list but requires the user to press a separate select button in order to click their choice.</p>
-		</li>
-		<li><p class="text-center"><img src="https://www.cowirrie.com/blog/wp-content/uploads/2012/07/iOSSegmentedControl.png"></p>
-		<p><em>segmented control</em>: instead of circles, they are fashioned more like tabs. This is more in the vein of actual physical radio buttons on a radio -- in that it is clear that they belong in the same group but their actions are exclusive from one another.
-		The only fault of these is that they do not allow for much text space on the labels.</p>
-		</li>
-		<li><p class="text-center"><img src="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/art/buttonsradiomixed.gif"></p>
-		<p><em>radio buttons with multiple buttons clicked simultaneously</em>: like a regular series of radio buttons but a special case in that a user can click multiple buttons instead of just the one. It is debatable whether this fits the criteria of the radio button. The appearance is largely the same but its function (multiple instead of toggling exclusively one) is different.</p>
-		</li>
-	</ul>
+			<p class="text-center">
+				<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
+				<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
+				<label class="radio-inline"><input type="radio" name="optradio" disabled>Option 3 (disabled)</label>
+			</p>
 
-<h3>Priority Metrics</h3>
-	<p>All metrics are important because radio buttons appear quite universally seeing as how interaction with user and system is constant.
-	Presenting choices are often in the form of radio buttons.</p>
-	<ul>
-		<li><em>Learnability</em> and <em>memorability</em>: Etymologically radio buttons refer to the pop-up buttons on radios used to control its functions. When one button is pressed in, it remained pressed in and the rest popped out.
-		This concept is known even by people with no technological experience. So long as the feedback from system to user is clear, learnability and memorability should be consistently high. </li>
-		<li><em>Efficiency</em>: This depends entirely on the layout of the buttons and their distance from one another. However, generally speaking, radio buttons are pretty efficient in presenting choices since it only requires the user to
-		read the label and click the button -- a two-step process.</li>
-		<li><em>Errors:</em> Like efficiency, this relies on aesthetics and feedback response (see <strong>'Key Characteristics'</strong> for more information). But since learnability and memorability is high, errors should be highly unlikely.</li>
-		<li><em>Satisfaction:</em> Since radio buttons serve a more functional purpose rather than one for enjoyment, satisfaction does not have as much importance as the other metrics.
-		But satisfaction can be derived from a straightforward and error-free experience with making choices using radio buttons.</li>
-	</ul>
-	
-<h3>Key Characteristics</h3>
-	<p>Radio buttons' metrics are entirely dependent on their aesthetics and the system's feedback to the user.
-	So it is important that both of these are adjusted to provide the most error-free and least complicated process for the user.
-	</p>
-	<ul>
-		<li>An interesting feature, which can either be advantageous or detrimental depending on the argument, is that radio buttons cannot be rendered inactive ("turned off") without having to render another button active ("turned on").
-		This can be advantageous if the system absolutely requires the user to make a choice no matter what. But this can be detrimental if making a choice is not necessary and the user will have to reset the screen so as to clear the changes.</li>
-		<li><code>click</code>: button should toggle upon clicking within the vicinity of the circle and the accompanying label itself.</li>
-		<li><code>disabled</code> buttons should have their circles and labels be grayed out or at least a shade lighter than the default font color of a non-disabled button.</li>
-		<li>There should be a clear difference between the outer circle and its inner concentric circle (active vs inactive button) to explicitly indicate whether or not it is "filled" or "empty".</li>
-		<li>If there are multiple radio buttons in different categories in the same screen, they should be clearly separated in their respective groups with either a border, line break, or label. If necessary, they must be put into a separate screen.</li>
-	
-	<h4>Feedback</h4>
-		<ul>
-			<li>In some cases, a common problem of the radio button's is its lack of feedback depending on its function. For example, a radio button deciding whether the background is in color or b&w should immediately have the background be changed according to which radio button.
-			However there are some functions in which feedback is not readily apparent. 
-			<li><code>hover</code>: some radio buttons change color upon hovering but this is redundant especially since the circle itself is small. The cursor should</li>
-			<li><code>disabled</code>: upon hovering, an optional but welcomed feature of accompanying a 'cancel' icon with the cursor will stress that it cannot be interacted with.</li>
-			<li><code>click + hold</code>: radio buttons should have the feature of canceling out a click if the user drags their cursor away and releases it in another space to prevent mistaken clicks.</li>
-			<li><code>click</code>: when clicking a button, the circle should change in color (to a darker shade) in order to reflect its transient stage between being inactive and active.</li> 
-		</ul>
+		</div>
 
-  </div>
+		<h3>Variants</h3>
+
+		<div class="container col-xs-12 well">
+			<ul class="nav nav-tabs nav-justified" role="tablist">
+		  	<li role="presentation" class="active"><a href="#Menu-Items" data-toggle="tab"> Menu <br> Items</a></li>
+		  	<li role="presentation"><a href="#List-Selection" data-toggle="tab"> List <br> Selection</a></li>
+		  	<li role="presentation"><a href="#Segmented-Control" data-toggle="tab"> Segmented <br> Control</a></li>
+		  	<li role="presentation"><a href="#Multiple-Selectable" data-toggle="tab"> Multiple <br> Selectable</a></li>
+			</ul>
+
+
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="Menu-Items">
+					<h4>Menu Items</h4>
+					<div class="well">
+						<p class="text-center">
+							<p><p class="text-center"><img src="http://i60.tinypic.com/k3q00k.png" class="img-responsive center-block"></p> Buttons like the picture above that bring down submenus could be considered a variation of a radio button in that only one can be toggled (to expand the submenu) once at a time. However conceptually-speaking, radio buttons focus more on status (ex: the background is red and not blue) rather than actions (ex: pressing a button to access a submenu for background color) so menu buttons are not necessarily identified as a radio button.</p>
+					</div>
+				</div>
+				
+				<div role="tabpanel" class="tab-pane" id="List-Selection">
+					<h4>List Selection</h4>
+					<div class="well">
+						<div class="row">
+							<p class="text-center"><img class="col-md-6" src="http://i60.tinypic.com/1236syh.png"><img class="col-md-6" src="https://csgsitestorage.blob.core.windows.net/img/1426714471678.gif" class="img-responsive center-block"></p> 
+						</div>
+						<p class="row">This variation presents itself as a list instead of circular buttons. Instead of "filling" in the circle to make a decision, the user clicks on the label itself (usually colored differently when hovered over). Another variation of this is the select box which is like the menu list but requires the user to press a separate select button in order to click their choice.</p>
+					</div>
+				</div>
+				
+				<div role="tabpanel" class="tab-pane" id="Segmented-Control">
+					<h4>Segmented Control</h4>
+					<div class="well">
+							<p><p class="text-center"><img src="https://www.cowirrie.com/blog/wp-content/uploads/2012/07/iOSSegmentedControl.png" class="img-responsive center-block"></p>Instead of circles, they are fashioned more like tabs. This is more in the vein of actual physical radio buttons on a radio -- in that it is clear that they belong in the same group but their actions are exclusive from one another. The only fault of these is that they do not allow for much text space on the labels.
+							</p>
+						</div>
+					</div>
+				
+				<div role="tabpanel" class="tab-pane" id="Multiple-Selectable">
+				<h4>Multiple Selectable</h4>
+				<div class="well">
+						<p><p class="text-center"><img src="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/art/buttonsradiomixed.gif" class="img-responsive center-block"></p>Multiple concurrently selectable radio buttons, while implementable with most radio button interfaces are not recomened as the focus of radio buttons being on <em> exclusivity </em> it is recommended that you instead use <a href="../check-box">checkboxes</a> for this functionality.</p>
+					</div>
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="col-md-6"> <!-- COL 2 -->
+
+		<h3>Priority Metrics</h3>
+		<div class="well">
+			<p>All metrics are important because radio buttons appear quite universally seeing as how interaction with user and system is constant.
+			Presenting choices are often in the form of radio buttons.</p>
+				<h4>Learnability and Memorability</h4>
+				<div class="well">
+				  Etymologically radio buttons refer to the pop-up buttons on radios used to control its functions. When one button is pressed in, it remained pressed in and the rest popped out.
+				  This concept is known even by people with no technological experience. So long as the feedback from system to user is clear, learnability and memorability should be consistently high.
+				 </div>
+				<h4>Efficiency</h4>
+				<div class="well">
+					This depends entirely on the layout of the buttons and their distance from one another. However, generally speaking, radio buttons are efficient in presenting choices since it only requires the user to read the labels and click the needed button -- a two-step process.
+				</div>
+
+				<h4>Errors</h4> 
+				<div class="well">
+					Like efficiency, this relies on aesthetics and feedback response (see <strong>'Key Characteristics'</strong> for more information). But since learnability and memorability is high, errors should be highly unlikely, especially with clear feedback.
+				</div>
+
+				<h4>Satisfaction</h4>
+				<div class="well">
+					Since radio buttons serve a more functional purpose rather than one for enjoyment, satisfaction does not have as much importance as the other metrics.
+					But satisfaction can be derived from a straightforward and error-free experience with making choices using radio buttons.
+				</div>
+		</div>
+
+		<h3>Key Characteristics</h3>
+		<div class="well">
+			<p>Radio buttons' metrics are entirely dependent on their aesthetics and the system's feedback to the user.
+			So it is important that both of these are adjusted to provide the most error-free and least complicated process for the user.
+			</p>
+			<br>
+
+			<h4>Exclusive</h4>
+			<div class="well">
+				<p>
+					An interesting feature, which can either be advantageous or detrimental depending on the argument, is that radio buttons cannot be rendered inactive ("turned off") without having to render another button active ("turned on").
+					This can be advantageous if the system absolutely requires the user to make a choice no matter what. But this can be detrimental if making a choice is not necessary and the user will have to reset the screen so as to clear the changes.
+				</p>
+			</div>
+
+			<h4>Interactive</h4>
+			<div class="well">
+				<p>Button should toggle upon clicking within the vicinity of the circle and the accompanying label itself.</p>
+			</div>
+
+			<h4>Distinct</h4>
+			<div class="well">
+				<p>If there are multiple radio buttons in different categories in the same screen, they should be clearly separated in their respective groups with either a border, line break, or label. If necessary, they must be put into a separate screen.</p>
+			</div>
+
+	<!-- 		<li><code>disabled</code> buttons should have their circles and labels be grayed out or at least a shade lighter than the default font color of a non-disabled button.</li>
+			<li>There should be a clear difference between the outer circle and its inner concentric circle (active vs inactive button) to explicitly indicate whether or not it is "filled" or "empty".</li> -->
+		
+			
+			<h4>Feedback</h4>
+			<div class="well">
+				<p>It should always be clear whether or not a button is in its active (true) state or not.</p>
+				<P>The toggling of both the button pressed and the button deactivated (if any) should be clear.</P>
+				<p>Every set of radio buttons should be clearly distinct from any other set.</p>
+				<br>
+				<p>On Actions</p>
+				<div class="well">
+					<p>Press: The toggling of both the button pressed and the button deactivated (if any) should be clear.</p>
+					<p>Hover: It is up to the developer to give feedback when hovering, though the look of the hover should be distinct from active, inactive, and disabled.</p>
+					<p>Disabled: The button should be made to not stand out as much as enabled buttons. Additionally, the mouse cursor can change to more clearly show the disabled state.</p>
+					<p>Click: The button should show that it has been clicked, but not look as though it is in its active state.</p>
+					<p>Release: If released outside of the button, the radio button should remain inactive, and if released over the button then it should become active.</p>
+					</div>
+			</div>
+
+		</div>
+
+
+	</div>
 </div>
 
-<h3>Platform-Specific Instances</h3>
-	<h4>OSX10 Yosemite</h4>
-		<p>Radio buttons for this platform function similarly to the typical radio button. Its marked difference from previous OSX versions is its aesthetics.
-		As seen from the picture below, the colors for the radio buttons are flatter and brighter with less highlighting and shadow, a brighter blue and more emphasis on white.</p>
 
-		<p class="text-center"><img src="https://data-pixelapse.s3.amazonaws.com/1/5775443/orig_3830587?AWSAccessKeyId=AKIAJXL2IXYH62T5HXDA&Expires=1717535503&Signature=VzImuOqjDofdJ5gwlM3jlw37P64%3D"></p>
 
-<h3>Credits &amp; References</h3>
+<div class="row" id="platform-specific">
+	<h3>Platform Specific Instances</h3>
+	<div class="well">
+
+		<ul class="nav nav-tabs nav-justified" role="tablist">
+		  <li role="presentation" class="active"><a href="#OSX10-Yosemite" data-toggle="tab"> OSX10 Yosemite</a></li>
+		  <li role="presentation"><a href="#Windows-10" data-toggle="tab"> Windows 10</a></li>
+		  <li role="presentation"><a href="#gnome-3" data-toggle="tab"> GNOME 3</a></li>
+		</ul>
+
+		<div class="tab-content">
+
+      <div role="tabpanel" class="tab-pane active" id="OSX10-Yosemite">
+        <p>Radio buttons for this platform function similarly to the typical radio button. Its marked difference from previous OSX versions is its aesthetics.
+					As seen from the picture below, the colors for the radio buttons are flatter and brighter with less highlighting and shadow, a brighter blue and more emphasis on white.
+				</p>
+
+				<p class="text-center">
+					<img src="https://data-pixelapse.s3.amazonaws.com/1/5775443/orig_3830587?AWSAccessKeyId=AKIAJXL2IXYH62T5HXDA&Expires=1717535503&Signature=VzImuOqjDofdJ5gwlM3jlw37P64%3D">
+				</p>
+
+      </div>
+
+      <div role="tabpanel" class="tab-pane fade" id="Windows-10">
+      <br>
+        	Microsoft sets some strict guidelines on the use of radio buttons. First and most importantly, radio buttons should only be used with two or mutually exclusive options.  They should be used in  the place of a drop down list when most or all of the options are important enough to take up screen space.  In instances where the default option will be selected by the majority of users than you should use a drop-down menu instead.  In general, there is not much difference between Windows 10 radio buttons and others, although Windows does make the choice to change the cursor to indicate hovering over the button as opposed to affecting the button itself.
+        	
+        	<div class="container">
+        	<div class="col-sm-6">
+	        	<p class="text-center"><img src="W10example.png" width="50%"></p>
+
+        	  This image shows the design of Windows 10 radio buttons.  The selected button is shown by changing the color of the outer circle, and filling the concentric circle with black.  These colors can be changed.  Also note that each button's description is only one line long and uses sentence case.  You can also see drop-down lists being used for less impactful features.
+        	</div>
+
+        	<div class="col-sm-6">
+	        	<p class="text-center"><img src="https://i-msdn.sec.s-msft.com/en-us/windows/uwp/controls-and-patterns/images/radio-button-groups.png"></p>
+
+	        	This image shows a desired way to seperate radio buttons.  The different labels make it clear that the two sets are distinct, and that selecting from Background will not affect BorderBrush.  Microsoft makes it clear that a developer must distinct different sets of buttons, as the mutually exclusive nature is prone to errors if the mental model of the user does not match the system image.
+	        </div>
+	        </div>
+
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="gnome-3">
+      	<br>
+      	<p>In the GNOME Human Interaction Guidelines, a radio button is defined as, "Radio buttons are used in groups to select from a mutually exclusive set of options. Only one radio button within a group may be set at any one time. As with check boxes, do not use radio buttons to initiate actions." Notable things mentioned in the GNOME HIG for radio buttons include to place the radio buttons directly to the left of anything they are immediatley affecting, using sentence capatilization for the button labels, setting an access key in the label allowing for selection from keyboard, not to place more than eight radio buttons in the same grouping, and to align them vertically.</p>
+		    <p>The GNOME Radio Buttons also includes a mixed state. This is used in situations when the radio buttons are in a multiselection grouping. Which, is against the idea of a radio button for most platforms.</p>
+		    <p class="text-center"><img src=radio-buttons.svg alt="GNOME Radio Buttons"><img src=radio-group.png alt="GNOME Radio Button Group"></p>
+		    <p>These two images show examples of GNOME Radio Buttons, the left is found in the GNOME HIG and the right is found in the GTK+ API documentation. The model on the left has the current and modern design of GNOME included in GNOME 3 and includes a button in it's mixed state, where as the left is likely an example from GNOME 2.</p>
+
+      </div>
+
+    </div>
+
+
+	</div>
+
+</div>
+
+<div class="row">
+	<h3>Credits &amp; References</h3>
 
 	<ul>
 		<li>Page template: <a href="http://dondi.github.io/paradixm/components/button">Paradixm Button Template</a>
@@ -133,5 +329,7 @@ contributors:
 		<li>Keyboard inputs: <a href="http://stackoverflow.com/questions/14322564/can-you-tab-through-all-radio-buttons">Stack Overflow</a></li>
 		<li>Radio buttons with multiple buttons clicked simultaneously: <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Button/Concepts/RadioButtons.html">Apple Developer</a></li>
 		<li>OSX10 comparison: <a href="https://bold.pixelapse.com/minming/mac-os-x-yosemite-under-the-magnifying-glass">Pixelapse</a></li>
-		<li>Other uncredited pictures belong to Janine Leano</li>
+		<li>Windows 10 comparison: <a href="https://i-msdn.sec.s-msft.com/en-us/windows/uwp/controls-and-patterns/images/control-examples/radio-buttons-edge.png">Microsoft</a></li>
+		<li>Other uncredited pictures belong to Janine Leano or Ryan Taus</li>
 	</ul>
+</div>
