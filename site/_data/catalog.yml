@@ -21,9 +21,6 @@
     - name: Command Loop
       path: command-loop
 
-    - name: Web
-      path: web
-
 - group: Structured
   components:
     - name: Date & Time
@@ -31,6 +28,9 @@
 
     - name: List
       path: list
+
+    - name: Map
+      path: map
 
     - name: Media
       path: media
@@ -43,6 +43,9 @@
 
     - name: Tree
       path: tree
+
+    - name: Web
+      path: web
 
 - group: Behavior
   components:
