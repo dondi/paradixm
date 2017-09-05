@@ -1,154 +1,10 @@
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Map</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="map-style.css">
-  <style>
-    .component-nav {
-        min-height: 360px;
-    }
-  </style>
-</head>
-
-
-  <body role="document">
-    <header class="site-header">
-  <nav class="navbar navbar-inverse navbar-static-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-            aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">Paradixm</a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                aria-haspopup="true" aria-expanded="false">Catalog <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-
-  
-  
-  <li><a href="/components/button">Button</a></li>
-  
-  <li><a href="/components/menu">Menu</a></li>
-  
-  <li><a href="/components/radio-button">Radio Button</a></li>
-  
-  <li><a href="/components/check-box">Check Box</a></li>
-  
-  <li><a href="/components/string-input">String Input</a></li>
-  
-  <li><a href="/components/slider">Slider</a></li>
-  
-  <li><a href="/components/command-loop">Command Loop</a></li>
-  
-
-  
-  <li role="separator" class="divider"></li>
-  
-  
-  <li><a href="/components/date-and-time">Date & Time</a></li>
-  
-  <li><a href="/components/list">List</a></li>
-  
-  <li><a href="/components/media">Media</a></li>
-  
-  <li><a href="/components/search">Search</a></li>
-  
-  <li><a href="/components/table">Table</a></li>
-  
-  <li><a href="/components/tree">Tree</a></li>
-  
-
-  
-  <li role="separator" class="divider"></li>
-  
-  
-  <li><a href="/components/drag-and-drop">Drag & Drop</a></li>
-  
-  <li><a href="/components/resizing">Resizing</a></li>
-  
-  <li><a href="/components/rotating">Rotating</a></li>
-  
-  <li><a href="/components/selecting">Selecting</a></li>
-  
-  <li><a href="/components/scrolling">Scrolling</a></li>
-  
-  <li><a href="/components/zooming">Zooming</a></li>
-  
-
-  
-  <li role="separator" class="divider"></li>
-  
-  
-  <li><a href="/components/modal-view">Modal View</a></li>
-  
-  <li><a href="/components/view-switcher">View Switcher</a></li>
-  
-  <li><a href="/components/split-view">Split View</a></li>
-  
-
-  
-  <li role="separator" class="divider"></li>
-  
-  
-  <li><a href="/components/information-transfer">Information Transfer</a></li>
-  
-  <li><a href="/components/login-unlock">Login/Unlock</a></li>
-  
-  <li><a href="/components/storage">Persistent Storage</a></li>
-  
-  <li><a href="/components/task-launcher">Task Launcher</a></li>
-  
-  <li><a href="/components/task-switcher">Task Switcher</a></li>
-  
-  <li><a href="/components/window">Window</a></li>
-  
-
-</ul>
-
-          </li>
-
-          <li>
-            <a href="/template">Article Template</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
-
-
-        <div class="container" role="main">
-      <h2>Map</h2>
-
-<dl class="dl-horizontal">
-  <dt>Contributor</dt>
-  <dd>
-    <ul class="list-inline">
-      
-      <li><a href="https://github.com/lummish">Harris Lummis</a></li>
-      
-    </ul>
-  </dd>
-</dl>
+---
+title: Map
+layout: component
+contributors:
+    - name: Harris Lummis
+      github: lummish
+---
 
 <p class="lead">with the popularization of mobile technology, maps have become essential interface components in a wide range of applications.</p>
 
@@ -169,7 +25,7 @@
     <li><em>Marking</em>: the ability to point to and mark locations of interest</li>
     <li><em>Directions</em>: maps typically implement a routing function that will display to the user a route between two points</li>
     <li><em>Snap to Current Location</em>: maps allow the user to snap to their immediate surroundings</li>
-  </ul> 
+  </ul>
   </p>
 </blockquote>
 
@@ -194,7 +50,7 @@
         <img src="panning-apple-maps.gif" id="pop" class="figure-img img-responsive rounded">
         <figcaption class="figure-caption">An example of the panning event in Apple Maps</figcaption>
       </figure>
-    </div> 
+    </div>
   </div>
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -220,7 +76,7 @@
         <figcaption class="figure-caption">Toggling between 3D and 2D viewing modes in Apple Maps</figcaption>
       </figure>
     </div>
-  </div>     
+  </div>
 
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -233,7 +89,7 @@
         <figcaption class="figure-caption">Snapping to the user location in Apple maps</figcaption>
       </figure>
     </div>
-  </div>  
+  </div>
 
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -246,7 +102,7 @@
         <figcaption class="figure-caption">Zooming in Google Maps</figcaption>
       </figure>
     </div>
-  </div>  
+  </div>
 
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -281,8 +137,8 @@
         <figcaption class="figure-caption">Dropping a pin in Google Maps</figcaption>
       </figure>
     </div>
-  </div>  
-  
+  </div>
+
   <div class="panel panel-default">
     <div class="panel-heading">
       <h5 class="event-header">Get Directions</h5>
@@ -303,14 +159,14 @@
       <p>The Get Directions event is triggered when the user clicks the directions button, the appearance of which varies by platform. Upon click, the map component presents the user with two text input boxes: one for the origin location and one for the final destination.</p>
       <p><em>Origin and Destination Selection</em>: initiated by <code>enterText</code>
       <p>Each text input partially implements the search function described earlier so as to facilitate input entry and location selection</p>
-      <p><em>Diplay Directions</em></p> 
+      <p><em>Diplay Directions</em></p>
       <p>The event causes the map to draw a route between a chosen starting location and the specified location upon submission of these locations. Along with displaying the recommended route, the map will additionally present the user with an estimated time that the route would take. Some implementations allow for a different choice of route, and some display different routes depending on the user's preference for walking, public transit, or driving (e.g. Google and Apple Maps)</p>
       <figure class="figure">
         <img src="google-maps-directions-to-from.gif" class="figure-img img-responsive rounded">
         <figcaption class="figure-caption">Getting directions for driving, transit, walking, and cycling between two locations in Google Maps</figcaption>
       </figure>
     </div>
-  </div>  
+  </div>
 </p>
 
 <h4>State Diagram</h4>
@@ -439,7 +295,7 @@
 
 <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">              
+    <div class="modal-content">
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <img src="" class="imagepreview" style="width: 100%; height: 100%" >
@@ -473,23 +329,9 @@
   var span = document.getElementsByClassName("close")[0];
 
   // When the user clicks on <span> (x), close the modal
-  span.onclick = function() { 
+  span.onclick = function() {
     modal.style.display = "none";
 }
 </script>
 
 <h3>Credits &amp; References</h3>
-
-
-
-    </div>
-
-
-    <footer class="site-footer">
-</footer>
-
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-  </body>
-</html>
