@@ -6,7 +6,7 @@ layout: base
 <div class="jumbotron">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 panel-body">
+      <div class="col">
         <h1>The Paradixm Project</h1>
 
         <p>A survey of known user interface elements at the micro and macro levels</p>
@@ -43,11 +43,11 @@ layout: base
     <div class="col-lg-2 col-sm-3 col-xs-4 component-nav">
       <h3>{{ group.group }}</h3>
 
-      <ul class="nav nav-pills nav-stacked">
+      <div class="nav flex-column nav-pills">
   {% for component in group.components %}
-        <li><a href="{{ site.baseurl }}/components/{{ component.path }}">{{ component.name }}</a></li>
+        <a class="nav-link" href="{{ site.baseurl }}/components/{{ component.path }}">{{ component.name }}</a>
   {% endfor %}
-      </ul>
+      </div>
     </div>
 {% endfor %}
   </div>
