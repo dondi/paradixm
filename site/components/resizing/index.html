@@ -243,6 +243,25 @@ contributors:
   </div>
   <hr>
 <!--****************************Priority Metrics**********************************-->
+    <div class="row">
+      <h3>Priority Metrics</h3>
+      <p>Ben Shneiderman, in his book <em>Designing the User Interace</em> defines learnability, efficiency, errors, memorability, and satisfaction, as metrics by which the usability of a system can be measured. Resize is a common interface component, and in a perfect system, all five metrics are important. Nevertheless, if the resize function as a user interface component is evaluated against these metrics, learnability, efficiency, and memorability rise as the most important, whereas errors and satisfaction are less important.</p>
+      <ul>
+        <li><h4>Lernability </h4></li>
+        <p>Learnability is an extremely important metric for effective resize interaction design. Resize is a very utilitarian interaction that is essential to GUI-based systems. Thus, resize needs to have a short learning curve, with interface elements and symbols that are largely self-explanatory. For example, users who are manually resizing windows for the first time should be able to use a simple guess and check heuristic to determine the position at which the mouse should be to achieve the intended resize direction.</p>
+        <li><h4>Errors</h4></li>
+        <p>Because resize is commonly implemented as direct manipulation, errors rank lower in the priority metrics. By nature, direct manipulation can be easily reversed, giving the user confidence that a mistake can be easily fixed. Therefore, errors are less of a concern in manual resize, since errors in resize do not carry large consequences.</p>
+        <li><h4>Efficiency</h4></li>
+        <p>Efficiency is a key metric for effective resize interaction design. Feedback is integral for direct manipulation resize, and any delay in recieving the visual feedback of element resize will affect the user's productivity.</p>
+        <li><h4>Memorability</h4></li>
+        <p>Because learnability is such a high priority, memorability is also an important usability metric. The symbols and colors of resize interface elements should allow for the user to easily identify the functionality of these elements, from prior knowledge of interfacing with the element.</p>
+        <li><h4>Satisfaction</h4></li>
+        <p>Because resize is utilitarian in nature, satisfaction is lower on the priority list. However, it is important to note that as a subset of direct manipulation, good resize user interfaces are integral to the satisfaction of the user. For example, if the feedback is delayed in manual resize of a window, the user will quickly become frustrated by the disconnect between the dimension of the window as displayed on the screen, and the user's mental model of how large or small the window should actually be.</p>
+      </ul>
+    </div>
+    <hr>
+
+
   <div class="row">
     <h3>Priority Metrics</h3>
     <div class="col-md-4">
@@ -251,7 +270,7 @@ contributors:
     <div class="col-md-8">
       <div>
         <div class="thumbnail">
-          <ul class="nav nav-tabs" role="tablist">
+         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#Learnability" aria-controls="Learnability" role="tab" data-toggle="tab">Learnability <i class="fa fa-pencil" aria-hidden="true"></i></a></li>
             <li role="presentation"><a href="#Efficiency" aria-controls="Efficiency" role="tab" data-toggle="tab">Efficiency <i class="fa fa-fast-forward" aria-hidden="true"></i></a></li>
             <li role="presentation"><a href="#Errors" aria-controls="Errors" role="tab" data-toggle="tab">Errors <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a></li>
@@ -351,7 +370,7 @@ contributors:
                                 for example—let the user provide several responses at once.
                                 When a dialog permits resizing, elements that can scale with
                                 the dialog should do so accordingly. In general, views like boxes,
-                                tab views, and tables, should expand to fill the dialog. In tables, 
+                                tab views, and tables, should expand to fill the dialog. In tables,
                                 existing columns should expand, and new columns and rows should be revealed,
                                 as appropriate. Other elements that aren’t generally resized,
                                  like buttons, checkboxes, and segmented controls should
