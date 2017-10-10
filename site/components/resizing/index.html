@@ -436,14 +436,14 @@ contributors:
                   as well as a discussion of how Apple's interaction design
                   principles have influenced these specific resize implmentations.
                   "macOS Human Interface Guidelines" is a document that provides
-                  nsight into the theories, principles, and guidelines that Apple
+                  insight into the theories, principles, and guidelines that Apple
                   Developers use to design the macOS interface. One guideline that
                   it states specifically for resize, is that standard document
                   windows should have transient resize controls--controls that
                   disappear when not needed. The interface guidelines also
                   considers the principle of direct manipulation as a way of
                   affirming the user's mental model of a task, because it can
-                  feel more natural than what they define as "explicit tasks."</p>
+                  feel more natural than what they define as "explicit tasks".</p>
             </div>
             <div class="row">
                 <div class="col-sm-6">
@@ -508,13 +508,15 @@ contributors:
                            <h4>Dialog Resize</h4>
                            <p>A dialog is a type of window that’s designed to elicit
                                 a response from the user. Many dialogs—the Print dialog,
-                                for example—let the user provide several responses at once.
-                                When a dialog permits resizing, elements that can scale with
-                                the dialog do so accordingly to maintain consistency. In general, views like boxes,
-                                tab views, and tables, expand to fill the dialog. Other elements
-                                that aren’t generally resized, like buttons, checkboxes,
-                                and segmented controls remain the same size and are
-                                anchored to the sides (or the center) of the dialog.</p>
+                                for example—let the user provide several responses
+                                at once. When a dialog permits resizing, elements
+                                that can scale with the dialog do so accordingly
+                                to maintain consistency. In general, views like boxes,
+                                tab views, and tables, expand to fill the dialog.
+                                Other elements that aren’t generally resized,
+                                like buttons, checkboxes, and segmented controls
+                                remain the same size and are anchored to the sides
+                                 (or the center) of the dialog.</p>
                        </div>
                    </div>
               </div>
@@ -523,13 +525,18 @@ contributors:
                        <img src="gif/dock_consideration.gif" alt="osX Dock Consideration when Resizing">
                        <div class="caption">
                            <h4>Taking the Dock into account</h4>
-                           <p>The position of the Dock has to be taken into account when resizing windows.
-                                It’s difficult to drag or resize a portion of a window that’s positioned behind
-                                the Dock or too close to the edge of the screen that hides the Dock. For this reason
-                                once the user reaches the limits of the Dock, the application should stop allowing the user
-                                from resizing it any longer. Feedback is provided to the user by changing the
-                                doubled arrow to a single arrow to indicate that now the window can only be resized in
-                                one direction (oposite to the position on the doc) as illustrated by the gif.</p>
+                           <p>The position of the Dock has to be taken into account
+                               when resizing windows. It’s difficult to drag or
+                               resize a portion of a window that’s positioned behind
+                               the Dock or too close to the edge of the screen
+                               that hides the Dock. For this reason once the user
+                               reaches the limits of the Dock when resizing, the
+                               application should stop allowing the userfrom resizing it any
+                               longer. Feedback is provided to the user by changing
+                               the doubled arrow to a single arrow to indicate
+                               that now the window can only be resized in one
+                               direction (opposite to the position towards the doc)
+                               as illustrated by the video.</p>
                        </div>
                    </div>
               </div>
@@ -548,6 +555,23 @@ contributors:
                                 Each pane can have a minimum and maximum size,
                                 which affects how much it can be resized. Many
                                 apps let the user hide specific panes on request.</p>
+
+                            <p>When a user whans to split a screen, the user should
+                                hover over the colored buttons that reveals the resize
+                                symbol, and upon click and holding of the green
+                                fullscreen button and hold it along the edge of
+                                the screen until a box appears showing the new
+                                dimensions of the window in light bleu. At this point the user
+                                can release the window, which will fill the projected box.
+                                At this poing, the rest of the windows will
+                                automatically be shown on the remainding half of the screen,
+                                indicating the user that he/she should select another
+                                window to cover the remaining space. These actions
+                                requires direct manipulation of the window in the
+                                action of dragging the window to its new location,
+                                however the projected box takes over the resizing
+                                process once the window has been manipulated into the correct
+                                location</p>
 
                             <p>When the user wishes make a window take up more than 1/2 of the
                                 the screen they can drag the window by its divider and drag it along the
