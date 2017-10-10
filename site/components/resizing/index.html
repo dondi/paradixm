@@ -273,14 +273,46 @@ contributors:
   <div class="row">
     <h3>Key Characteristics</h3>
     <h4>Direct Manipulation Interaction Style</h4>
-    <p>Direct manipulation is an interaction style in which the changes that a user makes to an object are incrementable, reversible, and immediately represented on the screen. Manual resize is a classic example of direct manipulation. When a user resizes an element's dimensions manually, the impact of the change is visible immediately and continually on the user's screen. Thus, key characteristics of effective manual resize will be discussed in the context its classification as a direct manipulation implementation. Well implemented direct manipulation allows the user to achieve mastery of the interface, competence in performing tasks, and enjoyment in using the interface. The following principles and guidelines are relevant for informing best practices for resize interfaces.</p>
+
+    <p>Direct manipulation is an interaction style in which the changes that a
+        user makes to an object are incrementable, reversible, and immediately
+        represented on the screen. Manual resize is a classic example of direct
+        manipulation. When a user resizes an element's dimensions manually, the
+        impact of the change is visible immediately and continually on the user's
+        screen. Thus, key characteristics of effective manual resize will be
+        discussed in the context its classification as a direct manipulation
+        implementation. Well implemented direct manipulation allows the user to
+        achieve mastery of the interface, competence in performing tasks, and
+        enjoyment in using the interface. The following principles and guidelines
+        are relevant for informing best practices for resize interfaces.</p>
     <ul>
+
       <li>Principle of Feedback</li>
-      <p>Feedback is a defining interaction design principle of effective direct manipulation. Feedback in manual resize is characterized by a change in element's size on the screen in real time, as the user is resizing. Feedback time must be sufficiently fast, as any latency in the response will cause a delay in the user action - visual response feedback loop.
+
+      <p>Feedback is a defining interaction design principle of effective direct
+          manipulation. Feedback in manual resize is characterized by a change in
+          element's size on the screen in real time, as the user is resizing.
+          Feedback time must be sufficiently fast, as any latency in the response
+          will cause a delay in the user action - visual response feedback loop.
+
       <li>Principle of Transparency</li>
-      <p>In effective direct manipulation, the interaction tool itself becomes transparent to the user. As a direct manipulation interface, resize "tools" disappear as the user interaction with the element being resized through the mouse cursor is understood as an extension of a user's tactile functions, emphasizing the "direct"-ness of direct manipulation.</p>
+
+      <p>In effective direct manipulation, the interaction tool itself becomes
+          transparent to the user. As a direct manipulation interface, resize
+          "tools" disappear as the user interaction with the element being
+          resized through the mouse cursor is understood as an extension of a
+          user's tactile functions, emphasizing the "direct"-ness of direct
+          manipulation.</p>
+
       <li>Mental Model</li>
-      <p>Overall, effective interaction design must allow for the user's mental model derived from the system image to correspond with the designer's mental model. Assisting this process in manual resize is the parallels that digifal direct manipulation has with how users interact with the physical world. Physically resizing a moldable substance, such as clay or elastic is mirrored in the "grasping" <code>mouse down</code> and "stretching" <code>resize state</code> of a window or element on a screen.
+
+      <p>Overall, effective interaction design must allow for the user's mental
+          model derived from the system image to correspond with the designer's
+          mental model. Assisting this process in manual resize is the parallels
+          that digifal direct manipulation has with how users interact with the
+          physical world. Physically resizing a moldable substance, such as clay
+          or elastic is mirrored in the "grasping" <code>mouse down</code> and
+          "stretching" <code>resize state</code> of a window or element on a screen.
     </ul>
   </div>
 
@@ -301,7 +333,20 @@ contributors:
           <div class="container">
             <div class="row">
               <h4>macOS Human Interface Guidelines</h4>
-              <p>In this section, the resize component implmentation in the <b>Mac OSX</b> platform will be specifically evaulated. Specific examples of resize implementations will be provided, as well as a discussion of how Apple's interaction design principles have influenced these specific resize implmentations. "macOS Human Interface Guidelines" is a document that provides insight into the theories, principles, and guidelines that Apple Developers use to design the macOS interface. One guideline that it states specifically for resize, is that standard document windows should have transient resize controls--controls that disappear when not needed. The interface guidelines also considers the principle of direct manipulation as a way of affirming the user's mental model of a task, because it can feel more natural than what they define as "explicit tasks."</p>
+              <p>In this section, the resize component implmentation in the
+                  <b>Mac OSX</b> platform will be specifically evaulated.
+                  Specific examples of resize implementations will be provided,
+                  as well as a discussion of how Apple's interaction design
+                  principles have influenced these specific resize implmentations.
+                  "macOS Human Interface Guidelines" is a document that provides
+                  nsight into the theories, principles, and guidelines that Apple
+                  Developers use to design the macOS interface. One guideline that
+                  it states specifically for resize, is that standard document
+                  windows should have transient resize controls--controls that
+                  disappear when not needed. The interface guidelines also
+                  considers the principle of direct manipulation as a way of
+                  affirming the user's mental model of a task, because it can
+                  feel more natural than what they define as "explicit tasks."</p>
             </div>
             <div class="row">
                 <div class="col-sm-6">
@@ -309,7 +354,20 @@ contributors:
                   <img src="gif/osx-notes-fullscreen.gif" alt="osX Notes Automatic resize">
                   <div class="caption">
                     <h4>Automatic Resize</h4>
-                    <p>This example shows automatic resize in the Notes Application Window. Hovering over the colored buttons reveals the resize symbol, and upon click of the green fullscreen button, the window fills the entire screen. The fullscreen symbol is indicative of the function it triggers, because of the arrows that are pointing outwards. In fullscreen mode, the entire menu disappears, reflecting the macOS guideline of transient controls. When the user wants to return to a non-fullscreen mode, the resize button is accessed by displaying the menu bar, which returns to the screen when the mouse is at the top of the screen. Hovering over the button reveals the resize symbol, which is now arrows that are pointing inward, indicating that the window will now shrink upon click. </p>
+                    <p>This example shows automatic resize in the Notes Application
+                        Window. Hovering over the colored buttons reveals the resize
+                        symbol, and upon click of the green fullscreen button,
+                        the window fills the entire screen. The fullscreen symbol
+                        is indicative of the function it triggers, because of the
+                        arrows that are pointing outwards. In fullscreen mode,
+                        the entire menu disappears, reflecting the macOS guideline
+                        of transient controls. When the user wants to return to
+                        a non-fullscreen mode, the resize button is accessed by
+                        displaying the menu bar, which returns to the screen when
+                        the mouse is at the top of the screen. Hovering over the
+                        button reveals the resize symbol, which is now arrows that
+                        are pointing inward, indicating that the window will now
+                        shrink upon click. </p>
                   </div>
                 </div>
               </div>
@@ -417,7 +475,16 @@ contributors:
                   <img src="gif/osx-dock-resize.gif" alt="osX dock resize">
                   <div class="caption">
                     <h4>Dock Resize</h4>
-                    <p>Direct manipulation occurs at a higher level of abstraction in this example of a slider that accomplishes resizing the dock and its icons by means of a resize slider. The user is manipulating the position of the slider to control the size of the dock. Although the user is a acting on the slider interface element, this is still a form of direct manipulation because the impact of the resize action is immediately visable via the changing size of the dock on the screen. Also, note that in this example, the slider resizes a group of similar elements at the same time.</p>
+                    <p>Direct manipulation occurs at a higher level of abstraction
+                         in this example of a slider that accomplishes resizing the
+                         dock and its icons by means of a resize slider. The user
+                         is manipulating the position of the slider to control the
+                         size of the dock. Although the user is a acting on the
+                         slider interface element, this is still a form of direct
+                         manipulation because the impact of the resize action is
+                         immediately visable via the changing size of the dock on
+                         the screen. Also, note that in this example, the slider
+                         resizes a group of similar elements at the same time.</p>
                   </div>
                 </div>
               </div>
@@ -426,7 +493,15 @@ contributors:
                   <img src="gif/system-preferences-noresize.gif" alt="osx system preferences no resize">
                   <div class="caption">
                     <h4>Windows that do not support resize</h4>
-                    <p>Some windows, such as "System Preferences" don't have resize properties. This is because the contents within the windows are static and cannot be changed. The fact that the OSX System Preferences window cannot resize is conveyed by the observation that on hover, the resize arrow cursor and the resize button did not respond. The absence of feedback, is feedback itself, telling the user that the resize operation is not possible on the System Preferences window.</p>
+                    <p>Some windows, such as "System Preferences" don't have
+                        resize properties. This is because the contents within
+                        the windows are static and cannot be changed. The fact
+                        that the OSX System Preferences window cannot resize is
+                        conveyed by the observation that on hover, the resize
+                        arrow cursor and the resize button did not respond. The
+                         absence of feedback, is feedback itself, telling the
+                         user that the resize operation is not possible on the
+                         System Preferences window.</p>
                   </div>
                 </div>
               </div>
@@ -435,7 +510,21 @@ contributors:
                   <img src="gif/textedit.gif" alt="OSX TextEdit font resize">
                   <div class="caption">
                     <h4>Word Text Resize</h4>
-                    <p>The TextEdit application on the Mac OSX, supports text resize via the fonts menu. In this menu, text can be resized in three different ways: font size form fill-in, selecting the font size from a menu, and using the font size slider. The font size slider is a form of direct manipulation, however font size form fill-in and menu takes in a discrete font size input and outputs the resized text at the specified font size. Typical use cases for the form fill-in menu would be if the user need to specify a particular font size, whereas the slider may be used if the user wanted to experiment with quickly viewing the text at different sizes. TextEdit offers three different methods for text resize so that the user can manipulate the text size in a way that makes sense for the user's application.</p>
+                    <p>The TextEdit application on the Mac OSX, supports text
+                        resize via the fonts menu. In this menu, text can be
+                        resized in three different ways: font size form fill-in,
+                        selecting the font size from a menu, and using the font
+                        size slider. The font size slider is a form of direct
+                        manipulation, however font size form fill-in and menu
+                        takes in a discrete font size input and outputs the
+                        resized text at the specified font size. Typical use
+                        cases for the form fill-in menu would be if the user
+                        need to specify a particular font size, whereas the
+                        slider may be used if the user wanted to experiment
+                        with quickly viewing the text at different sizes. TextEdit
+                        offers three different methods for text resize so that
+                        the user can manipulate the text size in a way that makes
+                        sense for the user's application.</p>
                   </div>
                 </div>
               </div>
@@ -459,45 +548,67 @@ contributors:
               <p>Optimal resolution for an effective resizable window is 1024x768 pixels.</p>
             </li>
             <li>
-              <p>Resizable windows no longer require the resize glyph ( <img src="gif/windows10-resize-glyph.jpg"/> ) in the lower right corner of the window.</p>
+              <p>Resizable windows no longer require the resize glyph
+                  ( <img src="gif/windows10-resize-glyph.jpg"/> ) in the lower
+                  right corner of the window.</p>
               <ul>
                 <li>
                   <p>The glyph requires a status bar in order to be displayed.</p>
                 </li>
                 <li>
-                  <p>Resizable window boarders and resize pointers are more effective at conveying a window is resizable than the glyph.</p>
+                  <p>Resizable window boarders and resize pointers are more effective
+                       at conveying a window is resizable than the glyph.</p>
                 </li>
               </ul>
             </li>
             <li>
-              <p>All windows should have a minimize button ( <img src="img/windows10-minimize-button.jpg"/> ) to reduce a window to a taskbar button.</p>
+              <p>All windows should have a minimize button
+                  ( <img src="img/windows10-minimize-button.jpg"/> ) to reduce
+                  a window to a taskbar button.</p>
             </li>
             <li>
-              <p>All windows should have a maximize/restore down button, unless the window isn’t resizable.</p>
+              <p>All windows should have a maximize/restore down button, unless
+                  the window isn’t resizable.</p>
               <ul>
                 <li>
-                  <p>The maximize button ( <img src="img/windows10-maximize-button.jpg"/> ) should make the window full screen, or maximum needed size.</p>
+                  <p>The maximize button ( <img src="img/windows10-maximize-button.jpg"/> )
+                      should make the window full screen, or maximum needed size.</p>
                 </li>
                 <li>
-                  <p>The restore ( <img src="img/windows10-restore-down-button.jpg"/> ) down button should restore the window to its previous size.</p>
+                  <p>The restore ( <img src="img/windows10-restore-down-button.jpg"/> )
+                      down button should restore the window to its previous size.</p>
                 </li>
               </ul>
             </li>
             <li>
-              <p>Use resizable windows whenever possible to avoid scroll bars and truncated data.</p>
+              <p>Use resizable windows whenever possible to avoid scroll bars
+                  and truncated data.</p>
             </li>
             <li>
-              <p>A minimum window size should be set if the window will no longer be usable at certain dimensions.</p>
+              <p>A minimum window size should be set if the window will no
+                  longer be usable at certain dimensions.</p>
             </li>
           </ul>
-          <p>Building on these priciples, here are some specific examples of resizing in Windows 10 with a breif descripton and reflection on their adherence to the Windows Guidelines.</p>
+          <p>Building on these priciples, here are some specific examples of
+              resizing in Windows 10 with a breif descripton and reflection on
+              their adherence to the Windows Guidelines.</p>
           <div class="row">
             <div class="col-sm-12 col-md-6">
               <div class="thumbnail">
                 <img src="gif/windows10-automatic-resize.gif" alt="Windows 10 Automatic Resize Gif">
                 <div class="caption">
                   <h4>Automatic Resize</h4>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;In this example the maximize, restore down, and minimize buttons are used to manipulate the dimensions of a Google Chrome window.  When each of these buttons are clicked, they perform the action specified in the Windows Guidelines.  Also, complying with Windows guidelines, whenever the cursor hovers over on of these buttons a description box appears with the button's name.  This example illustrates automatic resizing because the user doesn't have to explicitly specify the new dimensions of the window, but still knows what dimensions the window will have.</p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;In this example the maximize, restore
+                      down, and minimize buttons are used to manipulate the
+                      dimensions of a Google Chrome window.  When each of these
+                      buttons are clicked, they perform the action specified in
+                      the Windows Guidelines.  Also, complying with Windows
+                      guidelines, whenever the cursor hovers over on of these
+                      buttons a description box appears with the button's name.
+                      This example illustrates automatic resizing because the user
+                      doesn't have to explicitly specify the new dimensions of
+                      the window, but still knows what dimensions the window will
+                      have.</p>
                 </div>
               </div>
             </div>
@@ -506,7 +617,18 @@ contributors:
                 <img src="gif/windows10-manual-resize.gif" alt="Windows 10 Manual Resize Gif">
                 <div class="caption">
                   <h4>Manual Resize</h4>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;In contrast to the last example, automatic resizing, manual resizing requires the user to explicitly specify the windows size.  While this may be accomplished through the use of scroll bars, the most common example of manual resizing in Windows 10 involves clicking and dragging the window's boarders to the desired width or height.  The window in this example complies with Windows guidelines statement that the resize glyph isn't required, and instead makes the manual resize functionality apparent through the use of resize pointers that replace the cursor when it is over the window's bottom and right boarders, with arrows pointing in the directions of possible change.</p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;In contrast to the last example,
+                      automatic resizing, manual resizing requires the user to
+                      explicitly specify the windows size.  While this may be
+                      accomplished through the use of scroll bars, the most common
+                      example of manual resizing in Windows 10 involves clicking
+                      and dragging the window's boarders to the desired width or
+                      height.  The window in this example complies with Windows
+                      guidelines statement that the resize glyph isn't required,
+                      and instead makes the manual resize functionality apparent
+                      through the use of resize pointers that replace the cursor
+                      when it is over the window's bottom and right boarders,
+                      with arrows pointing in the directions of possible change.</p>
                 </div>
               </div>
             </div>
@@ -517,7 +639,18 @@ contributors:
                 <img src="gif/windows10-splitscreen.gif" alt="Windows 10 Split Screen Resize Gif">
                 <div class="caption">
                   <h4>Split Screen Resize</h4>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;This example of resizing in Windows 10 illustrates both automatic and manual resizing.  For example, when the user wishes make a window take up 1/2 or 1/4 of the screen they drag the window by its top boarder and hold it along the edge of the screen until a box appears showing the new dimensions of the window.  At this point the user can release the window, which will fill the projected box.  As mentioned earlier, this action requires direct manipulation of the window in the action of dragging the window to its new location, however the projected box takes over the resizing process once the window has been manipulated into the correct location.</p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;This example of resizing in Windows
+                      10 illustrates both automatic and manual resizing.  For example,
+                      when the user wishes make a window take up 1/2 or 1/4 of the
+                      screen they drag the window by its top boarder and hold it
+                      along the edge of the screen until a box appears showing
+                      the new dimensions of the window.  At this point the user
+                      can release the window, which will fill the projected box.
+                      As mentioned earlier, this action requires direct manipulation
+                      of the window in the action of dragging the window to its new
+                      location, however the projected box takes over the resizing
+                      process once the window has been manipulated into the correct
+                      location.</p>
                 </div>
               </div>
             </div>
@@ -526,7 +659,17 @@ contributors:
                 <img src="gif/windows10-form-fillin.gif" alt="Windows 10 Form Fill-in Resize Gif">
                 <div class="caption">
                   <h4>Form Fill-in Resize</h4>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;This example uses Word to illustrate the resizing of text using a form fill-in.  While this is a cross platform program, it illustrates the same mechanic that is present in other Windows 10 programs for resizing windows and objects.  This type of resizing requires the user to choose or input their desired size into the form.  Once the form has been submitted the size is updated, and the user is free to input a new size.  While this process isn't exactly direct manipulation it still gives users the ability to quickly change window dimensions, and in some instances be far more explicit in the new dimensions.</p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;This example uses Word to illustrate
+                      the resizing of text using a form fill-in.  While this is
+                      a cross platform program, it illustrates the same mechanic
+                      that is present in other Windows 10 programs for resizing
+                      windows and objects.  This type of resizing requires the
+                      user to choose or input their desired size into the form.
+                      Once the form has been submitted the size is updated, and
+                      the user is free to input a new size.  While this process
+                      isn't exactly direct manipulation it still gives users the
+                      ability to quickly change window dimensions, and in some
+                      instances be far more explicit in the new dimensions.</p>
                 </div>
               </div>
             </div>
@@ -537,7 +680,18 @@ contributors:
                 <img src="gif/windows10-not-resizable.gif" alt="Windows 10 No Resize Gif">
                 <div class="caption">
                   <h4>No Resize</h4>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;In the example above, the System Properties settings window doesn't allow for any resizing.  Any attempts to use the window boarders doesn't work, and the resize pointers aren't visible.  It seems that this breaks the Windows guideline that says to use resizable windows whenever possible.  However, this example adheres to the Windows guidelines because the window doesn't require any resizing because the content of the window won't change, and it is small enough to work on all screens.  Additionally, this is a Guideline compliant non-resizable window because it doesn't include nonfunctional minimize or maximize/restore down buttons.</p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;In the example above, the System
+                      Properties settings window doesn't allow for any resizing.
+                      Any attempts to use the window boarders doesn't work, and
+                      the resize pointers aren't visible.  It seems that this
+                      breaks the Windows guideline that says to use resizable
+                      windows whenever possible.  However, this example adheres
+                      to the Windows guidelines because the window doesn't require
+                      any resizing because the content of the window won't change,
+                      and it is small enough to work on all screens.  Additionally,
+                      this is a Guideline compliant non-resizable window because
+                      it doesn't include nonfunctional minimize or maximize/restore
+                      down buttons.</p>
                 </div>
               </div>
             </div>
