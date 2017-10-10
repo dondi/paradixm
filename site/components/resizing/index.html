@@ -3,45 +3,38 @@ title: resizing
 layout: component
 contributors:
     - name: Chris Dellomes
-      github: cjdellomes
+      gifhub: cjdellomes
 
     - name : Eileen Choe
-      github: eileenchoe
+      gifhub: eileenchoe
 
     - name : Juan Neri
-      github: juanjoneri
+      gifhub: juanjoneri
 
     - name : Natalia Dibbern
-      github: ndibbern
+      gifhub: ndibbern
 
     - name : Maxwell Williams
-      github: MaxwellWilliams
+      gifhub: MaxwellWilliams
 
 ---
 <script src="https://use.fontawesome.com/23710c8728.js"></script>
 
 <p class="lead">A critical feature of GUI-based operating systems is the ability to resize elements.</p>
-
 <div class="container">
-
 <hr>
-
+  <!--****************************Typical Appearance**********************************-->
   <div class="row">
-
     <h3>Typical Appearance</h3>
     <p><b>A resize event is characterized by a change in an element's dimensions.</b></p>
     <p>In contrast with zoom, which is a related feature, resize changes the dimensional properties (length and width) of the element itself, rather than the scope at which the element is displayed on a screen. Examples of commonly resized elements include windows, icons, images, and text. However, for the purposes of evaluating typical appearances and behavior, we will consider the resize behavior of windows.</p>
     <p>The arrow mouse cursor and resize buttons are the most common interface elements for changing the dimensions of elements.</p>
-
     <div class="row">
-
-      <div class="col-xs-6"><!--Left panel: Arrow Mouse Cursor-->
+      <div class="col-xs-6">
         <div class="panel panel-default">
-
           <div class="panel-heading">
             <h4 class="panel-title text-center">Arrow Mouse Cursor</h4>
           </div>
-
           <div class="panel-body">
             <div class="col-md-4 col-sm-12">
               <p class="text-center">Diagonal</p>
@@ -56,17 +49,13 @@ contributors:
               <img class="center-block" class="img-responsive" src="img/arrow-vertical.jpg" alt="Resize Arrow Vertical" height="80">
             </div>
           </div>
-
         </div>
-      </div><!--Left panel: Arrow Mouse Cursor-->
-
-      <div class="col-xs-6"><!--Right panel: Resize Button Icons-->
+      </div>
+      <div class="col-xs-6">
         <div class="panel panel-default">
-
           <div class="panel-heading">
             <h4 class="panel-title text-center">Resize Button</h4>
           </div>
-
           <div class="panel-body">
             <div class="col-md-6 col-sm-12">
               <img class="center-block" class="img-responsive" src="img/resize-buttons-1mac.png" alt="Resize Buttons 1" height="50">
@@ -75,7 +64,6 @@ contributors:
               <img class="center-block" class="img-responsive" src="img/resize-buttons-4.jpg" alt="Resize Buttons 4" height="50">
             </div>
           </div>
-
           <div class="panel-body">
             <div class="col-md-6 col-sm-12">
               <img class="center-block" class="img-responsive" src="img/resize-buttons-2mac.png" alt="Resize Buttons 2" height = "50">
@@ -84,7 +72,6 @@ contributors:
               <img class="center-block" class="img-responsive" src="img/resize-buttons-5.jpg" alt="Resize Buttons 5" height="50">
             </div>
           </div>
-
           <div class="panel-body">
             <div class="col-md-6 col-sm-12">
               <img class="center-block" class="img-responsive" src="img/resize-buttons-3mac.png" alt="Resize Buttons 3" height="50">
@@ -93,13 +80,10 @@ contributors:
               <img class="center-block" class="img-responsive" src="img/resize-buttons-6.jpg" alt="Resize Buttons 6" height="50">
             </div>
           </div>
-
         </div>
-      </div><!--Right panel: Resize Button Icons-->
-
+      </div>
     </div>
   </div>
-
   <hr>
 <!--****************************Typical Behavior**********************************-->
   <div class="row">
@@ -161,7 +145,7 @@ contributors:
 <!--****************************Component in Action**********************************-->
     <div class="row">
       <h4>Component in Action</h4>
-      <p>The following gifs represent only the resize functions within the Mac OSX platform that are common across different platforms (with minor stylistic differences). A closer look of resize in the OSX platform is explored in the "Platform-Specific Instances" section below.</p>
+      <p>The following gif represent only the resize functions within the Mac OSX platform that are common across different platforms (with minor stylistic differences). A closer look of resize in the OSX platform is explored in the "Platform-Specific Instances" section below.</p>
       <div class="col-md-6">
         <div class="thumbnail">
           <div id="gif-container" align="center">
@@ -327,7 +311,7 @@ contributors:
       <li>Principle of Transparency</li>
       <p>In effective direct manipulation, the interaction tool itself becomes transparent to the user. As a direct manipulation interface, resize "tools" disappear as the user interaction with the element being resized through the mouse cursor is understood as an extension of a user's tactile functions, emphasizing the "direct"-ness of direct manipulation.</p>
       <li>Mental Model</li>
-      <p>Overall, effective interaction design must allow for the user's mental model derived from the system image to correspond with the designer's mental model. Assisting this process in manual resize is the parallels that digital direct manipulation has with how users interact with the physical world. Physically resizing a moldable substance, such as clay or elastic is mirrored in the "grasping" <code>mouse down</code> and "stretching" <code>resize state</code> of a window or element on a screen.
+      <p>Overall, effective interaction design must allow for the user's mental model derived from the system image to correspond with the designer's mental model. Assisting this process in manual resize is the parallels that digifal direct manipulation has with how users interact with the physical world. Physically resizing a moldable substance, such as clay or elastic is mirrored in the "grasping" <code>mouse down</code> and "stretching" <code>resize state</code> of a window or element on a screen.
     </ul>
   </div>
   <hr>
@@ -363,7 +347,22 @@ contributors:
                   <img src="gif/osx-notes-manualresize-menubarchange.gif" alt="osX notes Manual Resize">
                   <div class="caption">
                     <h4>Manual Resize</h4>
-                    <p>This example shows manual resize in the Notes Application Window. Hovering over the permeter of the window changes the mouse cursor from a pointer to an arrow, which is indicative of the direction of resize possible at that position. Dragging the edge of the window at this point allows the user to explore different window dimensions, befre setting the new dimension on mouse release. An interesting characteristic to notice is that resizing the Notes window will cause text wrap to occur, bounded by the dimensions of the Notes Window. Also, observe how resize causes the menu bar to add/drop components on stretch/shrink, respectively. Thus, for some applications in OSX, resize not only acts on the window size itself, but on a network of interconnected components that will also react to the resize operation. In this case, as a consequence of the resize, the menu bar automatically reformats as the window is resized.</p>
+                    <p>This example shows manual resize in the Notes Application
+                        Window. Hovering over the permeter of the window changes the
+                        mouse cursor from a pointer to an arrow, which is indicative
+                        of the direction of resize possible at that position. Dragging
+                        the edge of the window at this point allows the user to explore
+                        different window dimensions, befre setting the new dimension on
+                        mouse release. An interesting characteristic to notice is that
+                        resizing the Notes window will cause text wrap to occur, bounded
+                        by the dimensions of the Notes Window. Also, observe how resize
+                        causes the menu bar to add/drop components on stretch/shrink, respectively.
+                        Thus, for some applications in OSX, resize not only acts on the window size
+                        itself, but on a network of interconnected components that will also
+                        react to the resize operation. In this case, as a consequence
+                        of the resize, the menu bar automatically reformats as the window is resized.
+                        Furthermore, the sidebar hides automattically as its parent window is
+                        resizedits there's more room for content.</p>
                   </div>
                 </div>
               </div>
@@ -385,13 +384,11 @@ contributors:
                                 a response from the user. Many dialogs—the Print dialog,
                                 for example—let the user provide several responses at once.
                                 When a dialog permits resizing, elements that can scale with
-                                the dialog should do so accordingly. In general, views like boxes,
-                                tab views, and tables, should expand to fill the dialog. In tables,
-                                existing columns should expand, and new columns and rows should be revealed,
-                                as appropriate. Other elements that aren’t generally resized,
-                                 like buttons, checkboxes, and segmented controls should
-                                 remain the same size and be anchored to the sides (or the center)
-                                 of the dialog.</p>
+                                the dialog do so accordingly to maintain consistency. In general, views like boxes,
+                                tab views, and tables, expand to fill the dialog. Other elements
+                                that aren’t generally resized, like buttons, checkboxes,
+                                and segmented controls remain the same size and are
+                                anchored to the sides (or the center) of the dialog.</p>
                        </div>
                    </div>
               </div>
@@ -400,7 +397,38 @@ contributors:
                        <img src="gif/dock_consideration.gif" alt="osX Dock Consideration when Resizing">
                        <div class="caption">
                            <h4>Taking the Dock into account</h4>
-                           <p>Add info here</p>
+                           <p>The position of the Dock has to be taken into account when resizing windows.
+                                It’s difficult to drag or resize a portion of a window that’s positioned behind
+                                the Dock or too close to the edge of the screen that hides the Dock. For this reason
+                                once the user reaches the limits of the Dock, the application should stop allowing the user
+                                from resizing it any longer. Feedback is provided to the user by changing the
+                                doubled arrow to a single arrow to indicate that now the window can only be resized in
+                                one direction (oposite to the position on the doc) as illustrated by the gif.</p>
+                       </div>
+                   </div>
+              </div>
+              <div class="col-sm-6">
+                   <div class="thumbnail">
+                       <img src="gif/split.gif" alt="osX Split Window">
+                       <div class="caption">
+                           <h4>Split Windows</h4>
+                           <p>A split view manages the presentation of two or more panes
+                                of content. Each pane can contain any variety of elements,
+                                including buttons, tables, column views, text fields, and
+                                even other split views.</p>
+
+                            <p>The panes of a split are separated by a divider that
+                                can typically be dragged to resize the panes.
+                                Each pane can have a minimum and maximum size,
+                                which affects how much it can be resized. Many
+                                apps let the user hide specific panes on request.</p>
+
+                            <p>When the user wishes make a window take up more than 1/2 of the
+                                the screen they can drag the window by its divider and drag it along the
+                                other window, as if it was "pushing" it. At this point the user can release
+                                the window, which will remain in the desired size. This action requires
+                                 direct manipulation of the window in the action of dragging the divider to
+                                 its new location.</p>
                        </div>
                    </div>
               </div>
