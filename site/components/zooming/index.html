@@ -1,9 +1,12 @@
 ---
-title: zooming
+title: Zooming
 layout: component
 contributors:
-    - name: Chris Dellomes
-      github: cjdellomes
+    - name: Mackenzie Tjogas 
+      github: mackenzieTjogas
+
+    - name: Arash Lari 
+      github: ArashLari
 ---
 
 <p class="lead">A critical feature of GUI based operating systems is the ability to zoom in or out by respectively magnifying or shrinking content.</p>
@@ -12,45 +15,96 @@ contributors:
   <div class="col-sm-6">
 
     <h3>Typical Appearance</h3>
-      <p>Zooming is typically characterized by content growing or shrinking in size.</p>
+      <p>Zooming is typically characterized by content growing or shrinking in size. Across all platforms it performs the same function and has the same result, enlarged or smaller content. This component is simple due to its single focus and primary function.</p>
+      <img src="images1.png" alt= "Zooming Picture" height="200" width="280">
 
     <h3>Typical Behavior</h3>
-      <p>Zooming typically involves the magnification or minimizing of content.</p>
+      <p>Zooming typically involves the magnification or minimiziation of content. Using the zoom function is similar to the real-world action of using a magnifying glass to grow and shrink content.</p>
+      <img src="safariZoom.gif" alt= "Zooming Picture" height="240" width="280">
 
     <h4>Events</h4>
     <p>When zooming in or out of content, typically a <code>zoom</code> event occurs in the background processes.</p>
-
+    <ul><li>A <code>hover</code> over the area you want to zoom into, preceeding a two-finger tap or an outward (or inward) motion with two fingers on the trackpad.</li> 
+    <li>A <code>click</code> of the <code>command+</code> or <code>command-</code> keyboard shortcuts to signal a zoom.</li> 
+        <li>On windows machines, holding the <code>ctrl</code> key and scrolling upwards/downwards zooms inwards/outwards.</li></ul>
+  
     <h4>State Diagram</h4>
-    <img src="zoom_chart.png" alt="Zoom Chart" height="450" width="300">
+    <img src="zoom_chart.png" alt="Zoom Chart" height="340" width="220">
     <p>A window is typically in a <code>standby</code> phase before being resized. Once the user begins resizing, either through keyboard shortcut or hand gesture, the window enters the <code>zooming</code> state. Once finished, the window reaches the <code>zoomed</code> state.</p>
 
     <h4>Component in Action</h4>
-    <p>An example of zooming on a laptop and touch based device can be seen <a href="http://www.youtube.com/watch?v=2Ko655HOFhM&t=2m0s">here</a></p>
-
+    <p>Zooming can be initiated in many ways:
+        <ul><li>Keyboard shortcuts like <code>Command+</code> and <code>Command-</code></li>
+        <li> The View section of the menu toolbar (on the top left of a Mac), then either selecting Zoom In, Zoom Out, or Actual Size</li> 
+        <li> System Preferences > Trackpad > Scroll and Zoom 
+        <img src="zoom-in-or-out1.gif" alt= "Trackpad Zoom" height="210" width="270">
+        <img src="smart-zoom1.gif" alt= "Trackpad Zoom" height="210" width="270"></li>
+        <li>System Preferences > Accessibility > Zoom
+        <img src="Accessibility zoom.png" alt= "Accessibility Zoom" height="200" width="270"></li></ul>
+    </p>
+<br> </br>
   </div>
 
   <div class="col-sm-6">
 
     <h3>Variants</h3>
-    <p>Zooming on desktops is possible through the use of the <code>CTRL+</code> and <code>CTRL-</code> keyboard commands. Desktop zooming is also typically possible through the window menu. On the other hand, users on laptops mobile devices, such as tablets and smartphones, use a pinching motion to zoom out of content and reverse the motion in order to zoom in. Zooming in and out can also be found in some video games, especially strategy games. In many strategy games, such as Starcraft and Civilization, zooming can be done either through in game buttons or the mouse scroll wheel.</p>
+    <p>Zooming on desktops is possible through the use of the <code>Command+</code> and <code>Command-</code> keyboard commands, as well as through the view section of the menu toolbar (on the top left of a Mac). Users on laptops and mobile devices, such as tablets and smartphones, can use a pinching motion to zoom out of content and reverse the motion in order to zoom in. . Zooming can also be found in some video games as well. Strategy games, such as Starcraft and Civilization, frequently use zooming to allow users to see individual units/settlements more clearly. Normally in video games the zoom command is the same as in other applications.</p>
+    <p>Zooming can occur in a few different forms. Window zooming (app-specific zooming) and screen zooming all share many properties, as well as some distinctions. Screen zooming is the magnification of the entire desktop and not one specific application. On Macs it can be done by pressing <code>command-option-8</code> which, depending on what the user prefers, would either magnify the entirety of the screen to where the pointer is or it would magnify a certain portion of the screen (this is called picture-in-picture). Window zooming would be zooming inside only one particular window of an application. Most applications generally have the same keyboard shortcuts for zooming or accept touchpad commands for zooming but there are sometimes minute differences between how applications allow users to zoom. For example, both Safari and Google Chrome on MacOS accept double tapping, pinching, and pressing command+ to zoom, while Microsoft Word for instance uses different hotkeys to zoom into a page, doesn’t allow pinching, and has a slider at the bottom of the window dedicated to zooming. </p>
 
     <h3>Priority Metrics</h3>
-    <p>Since it is a fundamental aspect of modern GUI based operating systems, all priority metrics are a vital in this component's design analysis. For desktops, the learnability of zooming in and out is questionable because if the user did not have any prior knowledge that <code>CTRL</code> for windows and <code>Command</code>is typically used for keyboard shortcuts, the user would not learn to use the keyboard command as it is not clearly indicated.</p> The user also has the option to zoom in using the window menu, which also has questionable learnability since the option is located within a menu. For smartphones and laptops, the learnability of zooming is signficantly greater. In the physical world, it is natural to squeeze things, like paper, to compress them and stretch them to expand them. Smartphones and laptops follow the natural mental model by using a compressing motion, pinching, to zoom out and compress the content and making the reverse motion the zoom out.
+    <p>Since it is a fundamental aspect of modern GUI based operating systems, all priority metrics are vital to this component's design analysis. For desktops, the learnability of zooming in and out is questionable, if the user did not have any prior knowledge that <code>CTRL</code> (for windows) and <code>Command</code> (for Macs) is typically used for keyboard shortcuts, then the user would not learn to use the keyboard command right away.</p> 
+    <p>The user also has the option to zoom in using the window menu, which also has questionable learnability since the option is located within a menu. For smartphones and laptops, the learnability of zooming is much more intuitive. Smartphones and laptops follow the natural mental model by using a compressing motion, pinching, to zoom out and compress the content and making the reverse motion the zoom out. As in the physical world, it is natural to squeeze things, like paper, to compress them and stretch them to expand them.</p>
 
-    <p>For desktops, once the user realizes that <code>CTRL</code> / <code>Command</code> is the basis for most keyboard shortcuts, it is easy for users to memorize the zoom shortcut. For laptops and mobile devices, the mental model of for zooming follows the natural way of thinking, making the zoom function simple to remember. While initally trying to zoom on desktop, the user may make several mistakes. However, the user is likely to make few errors once the keyboard shortcut is known considering the high memorability of the shortcut. Laptop and mobile device users likely make few errors while zooming since the method follows the natural mental model and is highly memorable.</p>
+    <p>For desktops, once the user realizes that <code>CTRL</code> / <code>Command</code> is the basis for most keyboard shortcuts, it is easy for users to memorize the zoom shortcut. For laptops and mobile devices, the mental model of for zooming follows the natural way of thinking, making the zoom function simple to remember. Therefore, zooming has a high memorability rating for both desktops and mobile devices. When users initially try to zoom on desktops, the user may make several mistakes. However, the user is likely to make few errors once the keyboard shortcut is known considering the high memorability of the shortcut. Laptop and mobile device users likely make fewer errors while zooming since the method follows the natural mental model and is highly memorable.</p>
     
-    <p>Regardless of the device, users can efficiently zoom since the keyboard shortcut and the hand gesture are easily performable actions and garner immediate response and feedback. Due to the utilitarian nature of zooming, zooming provides little in the way of user satisfaction. However, the component's utilitarian nature means the lack of satisfaction does not detract from the overall component design.</p>
+    <p>Regardless of the device, users can efficiently zoom since the keyboard shortcut and the hand gesture are easily performable actions and garner immediate response and feedback. The utilitarian nature of zooming provides little in the way of user satisfaction, as it is never the primary function of any application and is normally considered a secondary feature for accessibility. The component's utilitarian nature means the lack of satisfaction does not detract from the overall component design but rather makes the product more accessible to all users.</p> 
+
+    <p>For many of the same reasons that zooming may be considered low in satisfaction, it could be argued that these aspects increase satisfaction for a user when zooming. The uniformity across applications and platforms allows the user to generally accomlish their zooming needs easily, ensuring he or she can resume whatever task required them to zoom in the first place. If a user is hoping to accomplish a task, and requires zooming to do so, than the absense of zooming would likely decrease overall satisfaction with the platform and/or app. This argument could lead one to be in favor of zooming fufilling the satisfaction metric.  </p>
 
     <h3>Key Characteristics</h3>
-    <p>Key characteristics of zooming include the magnification or shrinking of content.</p>
+    <p>Key characteristics of zooming include the magnification and shrinking of content. A zoom should not jump to over (or under) magnifying content, but rather should scale either in or out the same distance with every initialization of the zoom. For example, when using keyboard shortcuts to zoom in, every time the <code>Command+</code> iis done the user should move the same amount inward. No one click should create a drastically different effect in the view. This idea applies to mobile pinch zooming, and trackpad zooming as well. The user should be able to control the amount of zooming that is occurring with each initialization.</p>
+    <p>An unsatisfactory zoom may jump from the page's actual size to the most-zoomed in view of content. Similarly, an undesirable zoom occurs when, on an IOS, the zoom bounces back after a user has tried to zoom in too far. This normally happens on IOS when the resolution is too low to zoom in any further. </p> 
 
     <h4>Feedback</h4>
-    <p>With the exception of slow machines, the user receives immediate feedback when zooming through the visual change in size of the affected content.</p>
+    <p>With the exception of slow machines, the user receives immediate feedback when zooming. A user is able to watch the change in view of the affected content immediately after they have initialized said change.</p>
 
-    <h3>Platform Specific Instances</h3>
-    <p>When viewing content on a desktop, users can zoom in or out by way of the window menu or through predefined keyboard bindings. For example, Windows users may zoom in or out using the <code>CTRL+</code> or <code>CTRL-</code> commands respectively. Users on OS X can zoom in using <code>Command+</code> and <code>Command-</code> keyboard shortcuts.</p>
+  </div>
+</div>
 
-    <p>Alternatively, users with a trackpad or viewing the content on a mobile smartphone are able to zoom out through the predefined gesture of pinching and zoom in by performing the gesture in reverse.</p>
+  <div class="panel panel-primary">
+    <div class="Platform Specific Instances">
+      <h3 class="panel-title-primary"><center><b>Platform Specific Instances</b></center></h3>
+
+    </div>
+    <div class="panel-body">
+    <p>When viewing content on a desktop, users can zoom in or out by way of the window menu or through predefined keyboard bindings. For example, Windows users may zoom in or out using the <code>CTRL+</code> or <code>CTRL-</code> commands respectively.</p>
+
+    <p><b>Mac OSX</b>
+      <br>Users on an OS X can zoom in using <code>Command+</code> and <code>Command-</code> keyboard shortcuts.The capability of a desktop to zoom is controlled by a computer's settings. On the system preferences of a user's mac, zooming cabilities can be changed in the trackpad section, under Scroll and Zoom. Likewise, they can be changed in the Accessibility section, under zoom.</br>  </p>
+      <img src="keyboard zoom.png" alt= "Keyboard zooming shortcuts" height="200" width="350">
+      <img src="Zoom-on-MacBook-Accessibility.gif" alt= "Zooming Picture" height="220" width="280">
+
+      <p><b>Apple Apps and Zooming</b></p>
+        <ul><li>Pages
+        <li>Safari</li>
+        <li>Maps</li>
+        <li>Preview</li></ul>
+        <p>All of these apps have very seamless zooming, both in and out. All the apps support trackpad zooming, so the user simply needs to drag his or her fingers either inward or outward (pinching) on the trackpad to create the desired change in view. The view will zoom in toward wherever the cursor is on the page. Likewise, when zooming out, the main point of focus still remains at the cursor's location. All of these apps also allow the normal keyboard shortcuts, <code>Command+</code> and <code>CTRL+</code>, and the user is able to control the zooming from the toolbar at the top of the screen. Safari has the added feature of zooming the text only, under the view section of the menu toolbar. </p>
+      <p><b>Non-Apple Apps and Zooming</b></p>
+        <ul><li>Chrome</li>
+        <li>Microsoft Word</li>
+          <li>Adobe Creative Suite </li></ul>
+        <p>These apps perform similarily to the Apple-made apps discussed above. All of the Adobe Creative Suite follows the same zooming conventions as the Apple-made apps, as they allow all the same input methods for zooming. However, there are some differences. For example, Microsoft Word has a slider dedicated to zooming in the bottom righthand corner, this is not present in most appliations, including Apple's Pages. Word also does not allow pinch zooming. Google Chrome, unlike Safari, does not offer an option for zooming in text only. However, like Safari, Chrome accept double tapping, pinching, and keyboard shortcuts to zoom.</p>
+
+        <p>Macs also offer magnification on the Dock, where users access all of their different applications. Users can choose to use this feature or not, but if used, it allows for the inndividual maginification of a specific application when the cursor is scrolled over that area.
+        <center><img src="DockZoom.gif" alt= "Accessibility Zoom" height="130" width="390"></center>
+        </p>
+
+
+    <p><b>IOS</b></p>
+    <p>Alternatively, users with a trackpad or viewing the content on a mobile smartphone are able to zoom out through the predefined gesture of pinching and zoom in by performing the gesture in reverse. Every application that allows zooming on IOS uses the same pinching gesture (as well as the double tapping) as the official Apple applications for IOS (and even on MacOS when using a trackpad), making zooming on IOS quite learnable, memorable, and intuitive. Very rarely will developers add a seperate method for zooming as can be seen with the Google Maps app for iOS. The idea of using a one-fingered gesture for the Maps app could be because this application has mobility in mind, so while this gesture may have been a good choice for this app it would have been cumbersome as a standard gesture for zooming when considering all applications.
+ <center><img src="https://i.kinja-img.com/gawker-media/image/upload/s--7iApwaME--/c_fit,fl_progressive,q_80,w_636/18jacrl913c23gif.gif" alt= "Maps Zoom"></center>
+</p>
 
   </div>
 </div>
@@ -60,4 +114,5 @@ contributors:
   <br>
   <a href="http://leafletjs.com/reference.html#control-zoom">LeafletJS documentation</a>
   <a href="https://github.com/mbostock/d3/wiki/Zoom-Behavior">Javascript library</a>
-  <p>Component in Action video is by Youtube user <a href="https://www.youtube.com/user/Theofficialwindows8/">FreeWebTeacher</a>.</p>
+  <a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW1">Direct Manipulation</a>
+<a href= "https://developer.apple.com/ios/human-interface-guidelines/"> iOS Human Interface Guidelines </a>

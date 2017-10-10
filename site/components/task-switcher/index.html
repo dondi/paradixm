@@ -7,283 +7,144 @@ contributors:
 
     - name: Vic Frolov
       github: VicFrolov
+
+    - name: Justin Lee
+      github: jlee201
+
+    - name: Jared Soliman
+      github: bigsolly13
+
+    - name: Claire Ortega
+      github: cortega55
+
+    - name: Merci Magallanes
+      github: mmagallanes
+
+    - name: Anthony Keba
+      github: CatLoverKid
 ---
 
 
-<style>
-    body{font: 16px Arial, sans-serif;}
-</style>
-
-<p class="lead">A necessary part of any OS interface is the task switcher, without it, users would only be able to work 
+<p class="lead">A necessary part of any OS interface is the task switcher. Without it, users would only be able to work
         within one application at a time. The task switcher is a key component for increased productivity.</p>
 
 <div class="row">
 <div class="col-md-6">
 
-<h3>Typical Appearance &amp; Behavior </h3>
+<h3>Typical Appearance</h3>
 
-<p>The task switcher can come in many forms, and is very dependent on the system, but there are three main appearances
-        which exist on modern desktop OS’s . The first, and most important, is the task bar, or tray. This is a list of 
-        pictures of each application, which is always on the bottom or side or the screen. Each picture can be clicked on
-        to toggle that task being opened or hidden, and often users can alternate click on the tasks to open up a menu
-        with additional options, including ending tasks. The second common appearance is a hotkey which opens a temporary
-        window showing all the open tasks. The specifics of this vary by system, but the hotkey is often good for switching
-        between two Windows, or other tasks using the keyboard only and not the mouse. Most systems also have a third 
-        window which gives more technical information on tasks. This is called Task Manager on Windows and Activity Monitor
-        on Mac. This window can usually be opened with a keyboard shortcut and gives performance and resource usage
-        information on individual tasks. Tasks can be terminated from this window, including tasks which are not responding
-        and cannot be closed normally. </p>
+<p> The task switcher can come in many forms, and is very dependent on the system, but there are three main appearances which exist on modern desktop OS’s . The first, and most important, is the task bar, or tray. This is a list of pictures of each application, which is always on the bottom or side or the screen. Each picture can be clicked on to toggle that task being opened or hidden, and often users can alternate click on the tasks to open up a menu with additional options, including ending tasks. The second common appearance is a feature that portrays all currently open programs (or their respective icons) in thumbnails across the screen. They typically prioritize the screen, displaying themselves in front of any and all open windows. Please click here to see examples on different operating systems. Most systems also have a third window that gives more technical information on tasks. This is called Task Manager on Windows and Activity Monitor on Mac. This window can usually be opened with a keyboard shortcut and gives performance and resource usage information on individual tasks. Tasks can be terminated from this window, including tasks that are not responding and cannot be closed normally. Please click <a href="#pSpecific"> here</a> to see examples on different operating systems.
+
+        <br><br>Example of a desktop task switcher (Windows 10)<br>
+        <img src="img/windowstask.png" style="width:100%; height:auto;" alt="Windows 10 Task Switcher" >
+
+</p>
+
+<h3>Typical Behavior</h3>
+
+<p> A fairly common way to use the task switcher is through a hot key that would bring up all the applications that are currently running. The specifics of this vary by system, but the hotkey is often good for switching between two Windows, or other tasks using the keyboard only and not the mouse. After using the hot key, you simply click on which application you would like to switch to. An example of this would be pressing ALT+Tab in windows, which would bring up the apps in that grid like structure that is shown on the Windows 10 example in the “Typical Appearance” section. In the older versions of iOS, double tapping the home button would reveal a task bar on the bottom of the screen. In the more recent versions of iOS, double tapping the home button would reveal the applications in a single row where you can swipe left and right to see which applications are running. From there, you would simply tap which application you would want to switch to. Below is a video showing off the task switcher in OSX. The taskbar pops up, taking priority of the screen, and the user can navigate to the left or to the right, quit tasks, hide them, or quickly "alt/tab" back and forth between a pair of tasks.
+
+    <h3>Component In Action</h3>
+
+    Below is a video showing off the task switcher in OSX. The taskbar pops up, taking priority of the screen, and the user can navigate to the left or to the right, quit tasks, hide them, or quickly "alt/tab" back and forth between a pair of tasks.
+        <br>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hlIdz__YZN0" alt="Video tour of Task Switching"></iframe>
+                </div>
+            </div>
+        </div>
+
+</p>
 
 <h3>Events</h3>
 
-<p>Task switcher events are fairly simple. The task switcher is either <code>onscreen</code> or <code>offscreen</code>.
-    And there is usually a <code>hover</code> 
-    event when each task is selected, followed by a <code>select</code> even when the task is selected. Then, of course,
-    there is a <code>task switch</code> event when switching to the new task. There is also possibly the appearance of an 
-    <code>options menu</code> event from an alternative click and a <code>preview</code> event from a long hover.</p>
+<p>There are only a few simple events when talking about Task Switcher.  The most relevant, basic task launcher event is to select the new open app and switch to it.  Because switching between applications is a fairly simple action that is heavily used, it should not require the user to perform many steps.  First of all, the task switcher is either <code>onscreen</code> or <code>offscreen</code>.  If a user <code>hovers</code> over a task, it becomes <code>selected</code>.  The previous task then becomes unselected since only one task can be selected at a time hence task switcher.</p>
 
 <h3>Variants</h3>
 
-<p>These three versions are especially apparent on modern versions of Mac and Windows. Ubuntu has adopted a similar taskbar
-        and “system monitor”. Also Mac OS has a desktop switcher which can switch between multiple virtual populated desktops,
-        instead of individual tasks. Also it is important to mention that task switchers on mobile OS’s are very different 
-        for each platform, and do not look the same as on desktops. The taskbar and task manager have been around a very
-        long time and are on most previous versions of Windows and OSX. Hotkey task switching behavior is a more recent
-        development. </p>
-        
-<h3>Component in Action</h3>        
-        
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AbjFCjSNK_g" frameborder="0" allowfullscreen></iframe>        
-        
+<p>Switching tasks is a standard operation on most devices. Below is a list illustrating the broad ways to accomplish task switching:</p>
+
+        <ul>
+            <li> <em> Mission Control</em>, an OSX variant, displays all open windows in thumbnail view across the screen. The difference is that there are no shortcuts to navigate between currently open windows, and you get a preview of the conent of each open task, rather than just the task icon. They are not aligned neatly across the middle of the screen, but scattered. A user can click on any task to switch to it. Also Mac OS has a desktop switcher, which can switch between multiple virtual populated desktops, instead of individual tasks. More information can be found in <a href="#pSpecific">Platform-Specific Instances</a>.</li>
+            <li> Most smartphones have a task switcher. When launched, gesture-based controls allows the user to cycle through all open apps, and when they find the one they want to open, they tap on it to open it. Also it is important to mention that task switchers on mobile OS’s are very different for each platform, and do not look the same as on desktops.</li>
+            <li> Using <em>Voice Navigation</em> (i.e. Siri) and vocally ask to "open" a specific task. </li>
+
+        </ul>
+
+        There are different components all together that allow switching between apps, some examples are the <a href="/paradixm/components/task-launcher/"> Task Launcher </a>(the user clicks on an application to open it) and the command line.
+
+
 </div>
-<div class="col-sm-6">        
-        
+<div class="col-sm-6">
+
 <h3>Priority Metrics</h3>
 
 <h4><li>Learnability</li></h4>
 
-<p>The taskbar is the most used method to switch tasks, and it is very easy to learn. The user simply needs to click on
-        the picture of the task they wish to switch to, though it is a little less obvious that using an alternate click
-        on any given task will open more options. The task switcher hotkey is more difficult to learn. Firstly, the user
-        may not even know that this method exists, and if he/she does, must first discover the hotkey. Even then it takes
-        a bit to get used to the single button control, and the user will likely take a few tries to switch the wanted
-        task. The task manager is a bit more complicated as it shows more detailed statistics and information which the
-        user may not understand. There is also the same issue of finding how to get to the task switcher in the first
-        place. However, the most common use of the task manager, force ending a task, is fairly easy to learn, as there
-        is usually an obvious button.  Learnability is important, but assuming a user will be using any given OS multiple
-        times, learnability is only an issue at the outset and is not as important as efficiency, which will always be
-        a concern.</p>
-        
+<p>Its main function of switching tasks should be intuitive. Once the task switcher is active, there should be no confusion and no series of extra steps to accomplish switching to a different task. While switching tasks is relatively straightforward, the task switcher hotkey is more difficult to learn. Firstly, the user may not even know that this method exists, and if he/she does, must first discover the hotkey. Even then it takes a bit to get used to the single button control, and the user will likely take a few tries to switch the wanted task. The task manager is a bit more complicated as it shows more detailed statistics and information, which the user may not understand. There is also the same issue of finding how to get to the task switcher in the first place. However, the most common use of the task manager, force ending a task, is fairly easy to learn, as there is usually an obvious button. Learnability is important, but assuming a user will be using any given OS multiple times, learnability is only an issue at the outset and is not as important as efficiency, which will always be a concern.
+
+</p>
+
 <h4><li>Efficiency</li></h4>
 
-<p>All three versions of task switchers should be very efficient. There are little to no intermediate states between the
-        user and his/her goal. That being said, each of the three versions is more efficient for different things. The task
-        bar is the generally most efficient as it is always on screen (if not auto-hidden) and shows all tasks in one
-        view. The hotkey is most efficient for switching back and forth between two tasks, and is also the best solution
-        to switching out of a fullscreen application, where the taskbar is hidden. The task manager is not very efficient
-        at switching tasks, neither is it the most efficient at closing tasks, because it takes time to come up and navigate
-        to the wanted task, however it is the most powerful, and must be used when the other methods are not working.
-        Because the task switcher is so often used, efficiency is the most important metric.</p>
-        
+<p>All three versions of task switchers should be very efficient. There are little to no intermediate states between the user and his/her goal. That being said, each of the three versions is more efficient for different things. The task bar is the generally most efficient as it is always on screen (if not auto-hidden) and shows all tasks in one view. The hotkey is most efficient for switching back and forth between two tasks, and is also the best solution to switching out of a full screen application, where the taskbar is hidden. The task manager is not very efficient at switching tasks, neither is it the most efficient at closing tasks, because it takes time to come up and navigate to the wanted task, however it is the most powerful, and must be used when the other methods are not working. Because the task switcher is so often used, efficiency is the most important metric.
+
+</p>
+
 <h4><li>Errors</li></h4>
 
-<p>The taskbar should have few errors as it is fairly simple. However, users could often accidentally open a pinned task by
-        misclicking, or accidentally close or switch away from a task they want open. The hot key has the error or hitting
-        the key too many or few times, and therefore switching to the wrong task. The task manager takes more effort to open
-        and I cannot think of any regularly occurring errors.  Errors are definitely a concern for any given task switcher,
-        each common error is a decrease in overall productivity. </p>
-        
+<p>The taskbar should have few errors, as it is fairly simple. However, users could often accidentally open a pinned task by misclicking, or accidentally close or switch away from a task they want open. The hot key has the error or hitting the key too many or few times, and therefore switching to the wrong task. The task manager takes more effort to open and I cannot think of any regularly occurring errors. Errors are definitely a concern for any given task switcher. Each common error is a decrease in overall productivity.
+
+</p>
+
 <h4><li>Memorability</li></h4>
 
-<p>All three versions of the task switcher should be easy to remember. They are all fairly simple mechanisms, and they always
-        function the same no matter what or how many tasks are open. There should be no issue with memorability.  I cannot
-        think of any non-deterministic task switcher which would be particularly difficult to remember, as long as it is not
-        overcomplicated, this should not be an issue. </p>
+<p>Memorability would be the biggest hurdle, as users need to memorize the input to launch it. Once that one input is memorized, there should not be any confusion on what to do next. All three versions of the task switcher should be easy to remember. They are all fairly simple mechanisms, and they always function the same no matter what or how many tasks are open.
+
+</p>
 
 <h4><li>Satisfaction</li></h4>
 
-<p>If any usability metric is least important for a task switcher, it is probably satisfaction. The action of switching a task
-        speaks for itself and there is little need for feedback other than to do its job quickly and efficiently. If the other
-        metrics are satisfied for any given task switcher, satisfaction will follow. </p>
-        
+<p>If any usability metric is least important for a task switcher, it is probably satisfaction. The action of switching a task speaks for itself and there is little need for feedback other than to do its job quickly and efficiently. The user should feel that switching tasks is effortless, and feel a sense of "flow" as they are hopping between tasks. If the other metrics are satisfied for any given task switcher, satisfaction will follow.
+
+</p>
+
 <h3>Key Characteristics</h3>
 
-<p>I think the important characteristics for a task switcher are illuminated by the above overview of usability metrics.
-        A good task switcher should be firstly efficient. The user should be able to switch to any given task with as few clicks
-        as possible, and the switching action should be quick, avoiding unnecessary transitions or animations.  It should also be
-        unobtrusive, reasonably easy to learn, certainly easy to use, and should work the same no matter how many, or what type
-        of, tasks are active.</p>
-    
-<p>A good task switcher should be easily accessible from any screen or program, and should be able to move between any needed task
-        or kill a task without having to stop and think about what they're doing. common features include a representation of the icons
-        and/or previews of the various tasks and a button to end them. Also optionally multiple instances of the same task could be
-        embedded or overlayed and some information or metrics can be shown on various tasks.</p> 
- 
-</div> 
+<p>I think the most important IxD principles every task switcher should adopt are Efficiency, Feedback, and Simplicity.</p>
+
+	<p>Efficiency – A good task switcher should prioritize efficiency and should be accessible from any screen or application.  It should have the ability to switch between, or kill tasks in 1 or 2 steps since task switching is a heavily used action.  Common task switcher features include representations of the running tasks, icons for example, and a button to quit them.  The user should be able to switch to any given task with as few clicks as possible, and the switching action should be a quick process without any unnecessary transitions or animations.  Switching tasks should be a simple, easy to learn task, and should function the same regardless of how many or what type of tasks are active.</p>
+
+	<p>Feedback – Feedback is a very important IxD principle that a task switcher must adopt.  Users should never be doubtful of these two scenarios:
+			1: a current task is highlighted, and ready to be opened on key release
+			2: all other tasks are not selected, so as there is no confusion as to which task will be opened
+
+		Should these scenarios be inconsistent and the task switcher deems unreliable, the user will require much more time when attempting to switch tasks due to uncertainty in his interface’s function.</p>
+
+	<p>Simplicity – Simplicity is also an important IxD principle to implement in task switcher.  Users should have zero problems distinguishing which tasks are active, which task is currently selected, how to select a different task, and how to quit a running task.</p>
+
+</div>
 
 <h3>State Diagram</h3>
 
-<img src="./state_diagram.png">   
+<img src="./state_diagram.png"width="50%">
 
-<p>Task switcher states depend on the functionality of the switcher, but as a general overview we can say that there a few
-        different states. Task not-running, Task running &amp; active, Task running &amp; non-active, and Task selected in task
-        switcher, Task options panel selected in task switcher. It is important to note that, in the taskbar or tray,
-        tasks which are not currently running can still be pinned, and selected, opened, or shown options.</p>
-
-<h3>Platform-Specific Instances</h3>
-
-<h4><li>Windows 8.1</li></h4>
-
-<p>The three versions of the task switcher that I have mentioned are present on Windows 8.1. There is also a “Switch list”
-        feature as part of Windows 8’s “Hot Corners” but I will not be covering that as it is horrible and I have it disabled.
-        I will cover the other three in specific detail.</p>
-        
-<p>The taskbar is pretty standard; apps can be pinned for quick access, and can be opened, closed and switched at ease.
-        Hovering over an app opens a live preview of it above the taskbar. Hovering over the preview brings up a full 
-        size preview of the window or app. Apps have an options menu accessed by right 
-        clicking on them and the taskbar itself also has its own options menu accessed by right clicking on a blank spot.
-        There is also the Windows logo in the corner which opens the start menu, and on the other side of the task bar is a
-        clock with the date, and also a notification area, where system settings, such as wifi, sound levels, and power
-        settings, can be accessed along with hidden apps such as graphics settings, and apps which do not appear on the main
-        taskbar, but are docked, and still running. </p>
-        
-<p>The Microsoft windows dev guidelines state "The taskbar is the access point for programs displayed on the desktop. With
-        the new Windows 7 taskbar features, users can give commands, access resources, and view program status directly from the taskbar.
-        The taskbar is the access point for programs displayed on the desktop, even if the program is minimized. Such programs are said 
-        to have desktop presence. With the taskbar, users can view the open primary windows and certain secondary windows on the desktop
-        and can quickly switch between them."</p>
-
-<img src="./3.png">          
-        
-<p>The hotkey in Windows 8.1 is alt+tab. This opens a temporary interface where lives preview screens of the apps are visible
-        including window titles. Pressing alt+tab once will switch back and forth between the most recent opened app. Apps 
-        can be cycled through by each press of tab while holding alt, if held on one app, the the window will open in a full
-        scale preview. Once the user lets go of alt, the selected app is switched to.</p>
-        
-<img src="./1.png">  
-        
-<p>The task manager in Windows 8.1 can be accessed by selecting it from a menu accessed through the hotkey ctrl+alt+del.
-        It can also be accessed through a menu option by right clicking on the taskbar. Although it was available in previous
-        versions of Windows, task switching is not a main function of the task manager in Windows 8.1. It is primarily for 
-        ending tasks and obtaining application and system performance information. </p>
-        
-<img src="./2.png">        
-        
-        
-<h3>Credits</h3>
-
-<p>Written by Flanders Lorton 2015. Embedded video is original content. </p>
-
+<p>Keeping in mind that only one task can be selected at a time; Task switcher states depend on the functionality of the switcher.  As a general overview, we can say that there are only 5 different states: Task not running, Task running and active, Task running and non-active, Task selected in task switcher, and Task options panel selected in task switcher.  A task must be selected in order for it to be launched, which occurs on key release or it’s platform-specific way selection.  However, if the task switcher is active onscreen, a user has the option to interact with each task, but they are never disabled if the task launcher is open.  It is important to remember that in the taskbar/tray, tasks not currently running can still be selected, open, or shown options.</p>
 
 
 <hr>
 
-
-
-<p class="lead">A Task Switcher allows for quick and efficient switching between open programs for a streamlined workflow. There are a plethora of different ways to accomplish this, ranging from quick keyboard shortcuts, to using the command line. </p>
-
-<div class="row">
-  <div class="col-sm-6">
-
-	<h3>Typical Appearance</h3>
-		<p>Although there are many ways to switch between tasks, most operating systems have a similar feature that portrays all currently open programs (or their respective icons) in thumbnails across the screen. They typically prioritize the screen, displaying themselves in front of any and all open windows. Please click <a href="#pSpecific"> here</a> to see examples on different operating systems. 
-
-		<br><br>Example of a desktop task switcher (Windows 10)<br>
-		<img src="img/windowstask.png" style="width:100%; height:auto;" alt="Windows 10 Task Switcher" >
-		<br><br>Example of a mobile task switcher (iOS 9)  <br>
-		<iframe src="http://i.giflike.com/embed/zHXwTLz" width="236.6" height="420" scrolling="no" alt="iOS 9 Task Switcher"></iframe><!-- Commented out windows phone task switcher for now, once css will be working with w/10 for proper formatting -->
-		<!-- <img src="windowsPhoneTaskSwitcher.png" style="width:44%; height:auto;" > -->
-		</p>
-
-
-
-	<h3>Typical Behavior</h3>
-		<p>
-		First, it is important to note that there is a long list of ways a user can switch between tasks. One way would be to use the mouse, locate the task launcher, hover over the task one wants to open, and click. Information on the task launcher can be found <a href="/paradixm/components/task-launcher/">here</a>.</p>
-
-		<p>
-		Another more efficient way, which is seen on most Operating Systems, including mobile, is to press and hold a set of keys (i.e. Windows: <code>Alt + Tab</code> ; OSX: <code>Cmd + Tab</code> ; iOS 9 double tap the <code>Home</code> button). While still holding the <code>Cmd</code> or <code>Alt</code> key, the user can keep tapping on <code>Tab</code> to quickly sift through currently open programs. Once the user lets go of all keys, the program that was selected will open. </p>
-
-		<p>It is good to note that this is a very efficient way to jump back and forth between two programs. The end goal is to switch between tasks, and the quicker and more effortless the process is, the better it is for the user. There are many different shortcuts, and other platform-specific ways to allow for further efficient manipulation (i.e. hiding an app) that will be mentioned under the <a href="#pSpecific"> Platform-Specific Instances</a> section.</p>
-
-	<h4>Events</h4>
-		<p> The most relevant task launcher event is to select the new open app and switch to it. Because of the simplicity of the action, there should not be a myriad of alternative actions. If a user hovers over a task, it simply becomes <code>selected</code>, and the previous task becomes unselected. Only one task can be selected at a time.
-
-	<h4>State Diagram</h4>
-		<p> <img src="img/stateDiagram.png" style="width:90%; height:auto;" alt="State Diagram"> </p> 
-
-		<p> Note that only one task can be selected at a time, so when one task is <code>selected</code> all the others are not. A task must be selected in order fo it to be launched, which occurs on key release or it's platform-specific way of selection. However, if the task switcher is <code>active</code> on the screen, a user can always interact with each task, and they are never <code>disabled</code> if the task launcher is open. Please see <a href="#pSpecific"> Platform-Specific Instances</a> for more states. </p>
-
-	
   </div>
-
-  <div class="col-sm-6">
-
-  	<h3> Typical Behavior (continued) </h4>
-
-  	<h4>Component in Action</h4>
-
-		<p> Below is a video showing off the task switcher in OSX. The taskbar pops up, taking priority of the screen, and the user can navigate to the left or to the right, quit tasks, hide them, or quickly "alt/tab" back and forth between a pair of tasks. 
-		<br>
-
-		<div class="panel panel-default">
-  			<div class="panel-body">
-				<div class="embed-responsive embed-responsive-16by9">
-		  			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hlIdz__YZN0" alt="Video tour of Task Switching"></iframe>
-				</div>
-			</div>  			
-		</div>
-
-
-
-	<h3>Variants</h3>
-		<p>Switching tasks is a standard operation on most devices. Below is a list illustrating the broad ways to accomplish task switching:</p>
-
-		<ul>
-			<li> <em> Mission Control </em>, an OSX variant, displays all open windows in thumbnail view across the screen. The difference is that there are no shortcuts to navigate between currently open windows, and you get a preview of the conent of each open task, rather than just the task icon. They are not aligned neatly across the middle of the screen, but scattered. A user can click on any task to switch to it. More information can be found in <a href="#pSpecific">Platform-Specific Instances</a>.</li>
-			<li> Most smartphones have a task switcher. When launched, gesture-based controls allows the user to cycle through all open apps, and when they find the one they want to open, they tap on it to open it. </li>
-			<li> Using <em>Voice Navigation</em> (i.e. Siri) and vocally ask to "open" a specific task. </li>
-
-		</ul>
-
-		There are different components all together that allow switching between apps, some examples are the <a href="/paradixm/components/task-launcher/"> Task Launcher </a>(the user clicks on an application to open it) and the command line.
-
-	<h3>Priority Metrics</h3>
-
-		<p>The learnability of task switching should be very quick, as it is a single input (whether it is a gesture, a double tap of a button, or several key entries at once). It may take longer to discover all the features in a task switcher, like hiding or quitting applications, but it's main function of switching tasks should be intuitive. Once the task switcher is active, there should be no confusion and no series of extra steps to accompish switching to a different task. </p>
-
-		<p>Efficiency is arguably the most important usability measure, as there should be no delay after launch. Because efficiency is of such high priority, there should be almost no mistakes (errors) from a user to accidentally open the wrong program, as the program selected should be the only one that is switched to.</p>
-
-		<p>Memorability would be the biggest hurdle, as user needs to memorize the input to launch it. Once that one input is memorized, there should not be any confusion on what to do next.</p>
-
-		<p>Satisfaction is of high priority, and is closely tied to efficiency. The user should feel that switching tasks is effortless, and feel a sense of "flow" as they are hopping between tasks.</p>
-
-	<h3>Key Characteristics</h3>
-
-		<blockquote>This section is for describing “what makes for a good <em>your component here</em>?”
-		  Most likely, this is an amalgam of guidelines documents and platform-independent interaction design
-		  principles.</blockquote>
-
-	<h4>Feedback</h4>
-
-	<p>Perhaps the most important interaction design principle that a task launcher must follow is <em>feedback</em>. Users must
-	  never doubt whether:</p>
-
-	<ol>
-	  <li>a current task is highlighted, and ready to be opened on key release.</li>
-	  <li>all other tasks are clearly not selected, so as there is no confusion as to which task will be opened.</li>
-	</ol>
-
-	<h4> Simplicity </h4>
-	<p> Simplicity is a key guideline to implement properly. Upon the task switcher's launch, the user should have no trouble distinguishing which tasks are open, which task is currently selected, what the next selected task would be, and how to open the next selected task. </p>
-
 
 	  </div>
 </div>
 
 <div id="pSpecific">
-	<h3>Platform-Specific Instances</h3>
-	<p>Below are some examples of platform-specific instances.</p>
+	<center><h3>Platform-Specific Instances</h3></center>
+	<center><p>Below are some examples of platform-specific instances.</p></center>
 
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
@@ -309,28 +170,28 @@ contributors:
 	      <img src="img/carousel/unity8taskS.png" alt="UNity 8 Task Switcher">
 	      <div class="carousel-caption">
 	      <p>Windows 8 Task Switcher </p>
-	      </div>	      
+	      </div>
 	    </div>
 
 	    <div class="item">
 	      <img src="img/carousel/w7taskS.png" alt="Windows 7 Task Switcher">
 	      <div class="carousel-caption">
 	      <p>Windows 7 Task Switcher </p>
-	      </div>	      
+	      </div>
 	    </div>
 
 	    <div class="item">
 	      <img src="img/carousel/KDE4.1taskS.png" alt="KDE 4.1 Task Switcher">
 	      <div class="carousel-caption">
 	      <p>KDE 4.1 Task Switcher </p>
-	      </div>	      
+	      </div>
 	    </div>
 
 	    <div class="item">
 	  		<img src="img/osxtask.png" alt="OSX El Capitan Task Switcher">
 	      <div class="carousel-caption">
 	      <p>OS X Mountain Lion Task Switcher </p>
-	      </div>	      
+	      </div>
 	    </div>
 
 	 </div>
@@ -354,45 +215,219 @@ contributors:
 
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title text-center">OSX El Capitan</h4>
+        <h4 class="panel-title text-center">Windows 8.1</h4>
       </div>
-      
+
       <div class="panel-body">
-      	<p> There are two main ways a user can use task switching in OSX. </p>
+
+        <h4><li>Windows 8.1</li></h4>
+
+        <p>The three versions of the task switcher that I have mentioned are present on Windows 8.1. There is also a “Switch list”
+        feature as part of Windows 8’s “Hot Corners” but I will not be covering that as it is horrible and I have it disabled.
+        I will cover the other three in specific detail.</p>
+
+        <p>The taskbar is pretty standard; apps can be pinned for quick access, and can be opened, closed and switched at ease.
+        Hovering over an app opens a live preview of it above the taskbar. Hovering over the preview brings up a full
+        size preview of the window or app. Apps have an options menu accessed by right
+        clicking on them and the taskbar itself also has its own options menu accessed by right clicking on a blank spot.
+        There is also the Windows logo in the corner which opens the start menu, and on the other side of the task bar is a
+        clock with the date, and also a notification area, where system settings, such as wifi, sound levels, and power
+        settings, can be accessed along with hidden apps such as graphics settings, and apps which do not appear on the main
+        taskbar, but are docked, and still running. </p>
+
+        <p>The Microsoft windows dev guidelines state "The taskbar is the access point for programs displayed on the desktop. With
+        the new Windows 7 taskbar features, users can give commands, access resources, and view program status directly from the taskbar.
+        The taskbar is the access point for programs displayed on the desktop, even if the program is minimized. Such programs are said
+        to have desktop presence. With the taskbar, users can view the open primary windows and certain secondary windows on the desktop
+        and can quickly switch between them."</p>
+
+        <img src="./3.png">
+
+        <p>The hotkey in Windows 8.1 is alt+tab. This opens a temporary interface where lives preview screens of the apps are visible
+        including window titles. Pressing alt+tab once will switch back and forth between the most recent opened app. Apps
+        can be cycled through by each press of tab while holding alt, if held on one app, the the window will open in a full
+        scale preview. Once the user lets go of alt, the selected app is switched to.</p>
+
+        <img src="./1.png">
+
+        <p>The task manager in Windows 8.1 can be accessed by selecting it from a menu accessed through the hotkey ctrl+alt+del.
+        It can also be accessed through a menu option by right clicking on the taskbar. Although it was available in previous
+        versions of Windows, task switching is not a main function of the task manager in Windows 8.1. It is primarily for
+        ending tasks and obtaining application and system performance information. </p>
+
+        <img src="./2.png">
+
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">OSX El Capitan and OSX Sierra</h4>
+      </div>
+
+      <div class="panel-body">
+      	<p> There are two main ways a user can use task switching in OS X. There are no differences between task switcher in El Capitan and task switcher in Sierra. </p>
 		<strong>Standard Task Switching</strong>
-      	<p>The user presses and holds the <code>CMD</code> button, and taps on <code> Tab</code>. The task switcher pops up, taking screen priority, showing all currently open apps with the current app being highlighted: </p>
+      	<p>The user presses and holds the <code>Command (CMD)</code> key, and then presses the <code>Tab</code> key to bring up the task switcher.  The task switcher appears large on the screen, showing all open applications and only one selected task.  The task switcher is only active and accessible as long as the user holds down the <code>CMD</code> key.  The user can then decide to perform any of these options:</p>
 
-		<img src="img/taskSwitch1.png" style="width:100%; height:auto;" alt="OSX Task Switcher 1">
-
-      	<p><em>Note that the app that is highlighted is the only one that has text under it, and has a light grey box that encompasses the icon</em> </p>
-      	<p>The user now has multiple options and can
+      	<p>
 	      	<ul>
-	      	<li>Release the keys to switch to the currently open app.</li>
-	      	<li>Cycle through the currently open apps:</li>
-				<ul>
-					<li> to the right by using either <code>Tab</code> or the <code>Right Arrow</code> key.</li>
-					<li> to the left by using either <code>Tab + Shift</code> or the <code>Left Arrow</code> key or the <code>`</code> key.</li>
-				</ul>
+	      	<li>Release both the CMD and Tab keys to switch to the highlighted app</li>
+	      	<li>Cycle through the currently open applications by tapping either <code>Tab</code>/<code>Right Arrow</code> key to cycle right, or <code>Shift</code> key and tapping <code>Tab</code>/ <code>`</code> /<code>Left Arrow</code> key to cycle left</li>
 			<li>Enter <i> Expose Mode </i> by hitting either the <code>Up</code> or <code>Down</code> arrow key. </li>
-			<li>Hide the application by hitting the <code>H</code> key.</li>
-			<li>Quit the application by hitting the <code>Q</code> key. </li>
+			<li>Hide the selected application by hitting the <code>H</code> key.</li>
+			<li>Quit/Kill the selected application by hitting the <code>Q</code> key. </li>
 			</ul>
 			<p> Although there are many shortcuts to accomplish multiple tasks, for the sake of simply "task switching" only the first three bullet points are relevant. For the sake of completeness, if the user decided to cycle right, the new state would be</p>
+
+			<img src="img/taskSwitch1.png" style="width:100%; height:auto;" alt="OSX Task Switcher 1">
+			<p><em>The selected task/app is the only one that has text underneath, and is highlighted by a light grey box around the icon.  </em> </p>
+
 			<img src="img/taskSwitch2.png" style="width:100%; height:auto;" alt="OSX Task Switcher 2">
+			<p><em>An example of cycling right to the next application</em> </p>
+
 			<br>
-			blabla
+
      	</p>
 
      	<p>
      		<strong>Mission Control Task Switching</strong>
-     		
-     		<p>The user either presses the mission control key <img src="img/missionC.png" style="width:3%; height:auto;" alt="F3 key">, enters <code>Control + Up</code> keys, enables swiping gestures (ie four finger swipe up across the trackpad), or presses the <code>up</code> or <code>down</code> arrow keys when the standardk task switcher is active, and launches <em> Mission Control </em> and is greeted with the following view: </p>
-			
+
+     		<p>TThe user has three different options to launch the Mission Control task switcher: </p>
+
+     		<p>
+	      	<ul><li>Tap the F3 key <img src="img/missionC.png" style="width:3%; height:auto;" alt="F3 key">
+	      	<li>Hold down the <code>Control (Ctrl)</code> key and tap the <code>Up Arrow</code> key</li>
+	      	<li>Swipe up acorss the trackpad using four fingers</li>
+				</ul>
+
+     		<p> When any of these commands are executed, we are greeted with the following view - Mission Control's basic layout.</p>
+
 			<p><img src="img/taskSwitch3.png" style="width:70%; height:auto;" alt="OSX Task Switcher 3"> </p>
 
-			<p>Although there are many neat features in Mission control that have to do with using OSX <em>Spaces </em>, regarding the act of task switching, they are irrelevant as it is more for window management. What is to note is the differences between the two interfaces. Mission Control displays thumbnails where a user can see what is going on inside each and every single app. They are spread across in no particular order, and none of them are highlighted until a user mouses over an app. When a user mouses over an app, a label appears with the app name. A stark contrast to the thin, simple standard task manager that only shows icons and a single selected app.</p>
+			<p>Mission Control is a huge improvement from Apple’s OS app, Spaces, regarding task switching.  Both Mission Control and Spaces were more relevant for window management, but some users use Mission Control as a task switcher as well.  Mission Control displays small desktop thumbnails at the top of the screen, where users can see a preview of what apps are open and active in each desktop page.  Users can then hover their mouse over an app, which will then highlight the app page and bring up a label of the app/file name.  In simpler terms, Mission Control is better used for window organization, but has the ability to act as a small task switcher.  </p>
 
 		</p>
+
+		<br>
+
+		<p>
+			<strong>Picture in Picture - Sierra Exclusive</strong>
+			<p> In OSX Sierra, Apple introduced Picture in Picture (PiP), a feature that allows users to layer a persistent vieo on top of their mac workspace.  If you switch apps, the video window doesn’t get buried under everything else on your screen.  PiP is available in two applications: Safari and iTunes.   </p>
+
+			<p> How to launch PiP in Safari</p>
+			<p>
+	      	<ul><li>Open a video in Safari that is compatible with PiP</li>
+	      	<li>Play the video</li>
+	      	<li>Find and click the PiP button and the video should move to a corner of your screen.</li>
+				</ul>
+
+			<img src="https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2016/09/mac-os-sierra-picture-in-picture-1.jpg?itok=Ynwc-41A" style="width: 40%; height:auto;"/>
+			<img src="https://www.imore.com/sites/imore.com/files/styles/larger/public/field/image/2016/09/mac-os-sierra-picture-in-picture-2.jpg?itok=KrbxIo98" style="width: 40%; height:auto;"/>
+
+			<br><br>
+			<p>Once your video is simultaneously playing while you work on other apps, you can:</p>
+			<ul><li>Control playback in PiP by clicking the <code>Play</code> or <code>Pause</code> button.</li>
+			<li>Resize the PiP window by clicking and dragging a corner of the window</li>
+			<li>Move the Pip window by clicking and moving it to another corner of your screen (as you would any other window)</li>
+			<li>Shut down PiP mode by clicking the PiP button again, or clicking the X in the top left corner of the Pip Window.</li></ul></p>
+
+			<br>
+			<br>
+
+			<p> How to launch Pip in iTunes</p>
+			<p>
+	      	<ul><li>Open a video in iTunes</li>
+	      	<li>Play the video</li>
+	      	<li>Find and click the PiP button and the video should move to a corner of your screen.</li>
+				</ul>
+
+			<img src="https://www.imore.com/sites/imore.com/files/styles/larger/public/field/image/2016/09/mac-os-sierra-picture-in-picture-6.jpg?itok=sRXYeYZk" style="width: 30%; height:auto;"/>
+			<img src="https://www.imore.com/sites/imore.com/files/styles/larger/public/field/image/2016/09/mac-os-sierra-picture-in-picture-7.jpg?itok=j67ishXD" style="width: 30%; height:auto;"/>
+			<img src="https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2016/09/mac-os-sierra-picture-in-picture-8.jpg?itok=0mRVI0IG" style="width: 30%; height:auto;"/>
+
+			<br>
+			<br>
+
+			<p>Once your video is up and playing in a corner of your desktop, you can perform the same actions as if PiP were playing a video from Safari.</p>
+
+
+		</p>
+
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">iOS</h4>
+      </div>
+
+      <div class="panel-body">
+        <p>The most common way to switch tasks in iOS is to double tap the home button, which will have all the apps that are currently running appear in a single row. From there, the user can swipe left and right to see which applications they can switch to, then taps on whichever application intended for use. There are a few variants for switching tasks in iOS that include: "Slide Over", "Split View", and "Picture in Picture". They allow the user to switch tasks even quicker on the fly.
+
+        </p>
+
+        <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/iphone6-ios10-switch-apps-home.jpg" height="350"width="15%"/>
+
+        <img src="https://s.aolcdn.com/hss/storage/midas/8d50134ba20fb777c74b543c53b8d0eb/202266943/apps.jpg" height="350"width="50%"/>
+
+        <p>
+        </p>
+
+        <p>
+            <strong>Task Switching Through "Slide Over"</strong>
+
+            <p>While the user is using an application, slide over allows the user to use another application without quitting the original application the user is in. All the user needs to do is swipe from the right side of the screen towards the center of the screen in order to use another application. If the user wants to switch the application that Slide Over pulls up, the user simply swipes down from the top right side of the screen. This will bring up a taskbar that displays all the applications that the user can switch to.
+
+            </p>
+        </p>
+
+    <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ipad-ios10-slide-over.jpg" height="400"width="60%"/>
+
+        <p>
+        </p>
+
+        <p>
+            <strong>Task Switching Through "Split View"</strong>
+
+            <p>Split View allows the user to use two apps at once. Using Split View is very similar to using Slide Over. The user would swipe from the right side of the screen towards the center of the screen to enable Slide Over. Remember that in Slide Over, there is an application running in the background while the user is currently using another application. The user then taps the middle of the screen divider, which causes the application running in the background and the application that the user is using to appear side by side. The user can now use both applications at once.
+
+            </p>
+
+            <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ipad-ios10-split-view.jpg"height="400"width="60%"/>
+
+        </p>
+
+        <p>
+        </p>
+
+        <p>
+            <strong>Task Switching Through "Picture in Picture"</strong>
+
+            <p>Picture in Picture allows the user to watch movies or use FaceTime while using another application. While the user is watching a movie or using FaceTime, they press the home button, which will put the movie or FaceTime into a smaller window and bring the user to the home screen in the background. From there, the user picks whichever application they would like to run. The application they pick will run in the background while the movie or FaceTime continues to run in that smaller window. The user can drag that smaller window to whichever part of the screen they’d like. They can also make the window smaller or bigger.
+
+            </p>
+
+            <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ipad-ios10-picture-in-picture.jpg"height="400"width="60%"/>
+
+        </p>
+
+        <p>
+        </p>
+
+        <p>These are the multiple ways that a user can switch tasks on iOS. To get a better feel for how the variants of task switching in iOS works, there is a video below that demonstrates how each variant works.
+
+        </p>
+
+        <div class="row">
+        <div class="col-md-6">
+
+        <h3>iOS Task Switching Variants In Action</h3>
+
+        <p>Below is a video displaying "Slide Over", "Split View", and "Picture in Picture" in action.</p>
+
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jorwzOsPAYs" frameborder="0" allowfullscreen></iframe>
 
       </div>
     </div>
@@ -415,5 +450,210 @@ OSXDaily. "Secrets of the Command-Tab Mac Application Switcher | OSXDaily." OS X
 <br>
 Apple. "Apple." <cite>Use Mission Control on Your Mac</cite>. Apple, n.d. Web. 23 Oct. 2015.
 <!-- https://support.apple.com/en-us/HT204100-->
+<br>
+"About Multitasking on Your IPhone, IPad, and IPod Touch." Apple Support. N.p., 14 Sept. 2016. Web. 26 Oct. 2016.
+<!-- https://support.apple.com/en-us/HT202070-->
+<br>
+https://www.youtube.com/watch?v=jorwzOsPAYs
 </blockquote>
 
+<hr>
+
+<!--Claire Ortega-->
+
+<p class="lead">The Task Switcher is a vital component for increasing productivity in an operating system, and allows the user to switch between different applications.
+</p>
+
+<div class="row">
+  <div class="col-sm-6">
+
+    <h3>Typical Appearance &amp; Behavior</h3>
+
+        <blockquote>The task switcher can come in many forms, and is very dependent on the system, but there are three main appearances which exist on modern desktop operating systems. The first, and most popular, is the task bar. This contains a set of icons that represent each application, and is located on either the bottom or side of the screen. Each icon can be left-clicked on to toggle that task being opened or minimized, and users can also right-click on the tasks to access a menu with additional options, including quiting tasks. The second common appearance is a hotkey or trackpad gesture which opens a temporary screen showing all the open tasks. The specifics of this vary by system, but the hotkey is often good for switching between full screen tasks quickly, since it doesn't require and window minimization. Operating systems systems also have a third task switcher which gives more technical information on tasks. This is called Task Manager on Windows and Activity Monitor on Mac. This window can usually be opened with a keyboard shortcut and gives performance and resource usage information on individual tasks. Tasks can be terminated from this window, including tasks which are not responding and cannot be closed normally.</blockquote>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title text-center">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          MacOS Sierra
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body text-center">
+        <p><img src="img/MissionControl.jpg" style="width:90%; height:auto;" alt="Mac Switcher"></p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title text-center">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Windows 10
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body text-center">
+         <p><img src="img/Windows.png" style="width:90%; height:auto;" alt="Windows Switcher"></p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title text-center">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Ubuntu
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body text-center">
+        <p><img src="img/UbuntuLook-Gnome3WindowSwitcher.jpg" style="width:90%; height:auto;" alt="Ubuntu Switcher"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <h4>Events</h4>
+
+        <p>Task switcher events are fairly simple. The task switcher is either <code>onscreen</code> or <code>offscreen</code>. And there is usually a <code>hover</code> event when each task is selected, followed by a <code>select</code> even when the task is selected. Then, of course, there is a <code>task switch</code> event when switching to the new task. There is also possibly the appearance of an <code>options menu</code> event from an alternative click and a <code>preview</code> event from a long hover.</p>
+
+    <h3>Component in Action</h3>
+
+<div class="panel panel-default">
+            <div class="panel-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iP_PZ-84joI" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+  </div>
+
+  <div class="col-sm-6">
+<h3>Variants</h3>
+
+<blockquote>Taskbars, hotkeys, and task managers are especially apparent on modern versions of Mac, Ubuntu, and Windows. Also Mac OS has a desktop switcher which can switch between multiple virtual populated desktops, instead of individual tasks. Also it is important to mention that task switchers on mobile OS’s are very different for each platform, and do not look the same as on desktops. The taskbar and task manager have been around a very long time and are on most previous versions of Windows and OSX. Hotkey task switching behavior is a more recent development.</blockquote>
+
+
+<h3>Priority Metrics</h3>
+
+<ul>
+<li><p><strong>Efficiency</strong> is arguably the most important usability measure, as there should be no delay after the task is selected. Because efficiency is of such high priority, there should be almost no errors from a user to accidentally open the wrong program, as the program selected should be the only one that is affected. That being said, all of the task switchers vary in efficiency depending on the task. The taskbar is generally most efficient as it is accessible on any screen and shows all active tasks in one view. The hotkey is most efficient for switching back and forth between multiple tasks, and is also the best solution to switching between fullscreen applications. The task manager is not very efficient at switching tasks, neither is it the most efficient at closing tasks, because it takes time to come up and navigate to the wanted task, however it is the most powerful, and must be used when the other methods are not working.</p></li>
+
+<li><p><strong>Satisfaction</strong>  is also of high priority, and is closely tied to efficiency. The user should feel that switching tasks is effortless, and feel a sense of fluidity as they are switching between tasks.</p></li>
+
+<li><p><strong>Learnability</strong> of task switching is an important metric for a task switcher and should be very quick. It may take longer to discover all the features in a task switcher, like hiding or quitting applications, but it's main function of switching tasks should be intuitive. Once the task switcher is active, there should be no confusion and no series of extra steps to accompish switching to a different task. For example while finding the hotkey, trackpad gesture, or task manager might be harder, the action itself must be simple and inutitive. However assuming a user will be using any given OS multiple times, the difficulty of finding the different types of task switchers only affects learnability at the outset.</p></li>
+
+<li><p><strong>Memorability</strong>  is one of the less important metrics because since the taskbar is always available on screen, the user only needs to memorize the hotkey or how to launch the task manager. Once that input is memorized, there should not be any confusion on what to do next. All three versions of the task switcher are fairly simple mechanisms, and they always function the same no matter what or how many tasks are open. </p></li>
+
+<li><p><strong>Errors</strong>, while important, should not be a hurdle for the task switchers as they are fairly simple. However, users could often accidentally open a pinned task  on the taskbar by misclicking, or accidentally close or switch away from a task they want open. The hot key has the error of hitting the key too many or few times, and therefore switching to the wrong task. The task manager takes more effort to open, but once opened it is simply a matter of selecting the task you wish to close. </p></li>
+</ul>
+
+
+<h3>Key Characteristics</h3>
+
+    <blockquote>
+        <p>The most important characteristic for a task switcher is illuminated by the above overview of usability metrics. The most important characteristic  of a good task switcher is efficiency, allowing the user to be able to switch to any given task with as few clicks as possible. The switching action should be quick as well, avoiding unnecessary transitions or animations. It should be reasonably easy to learn and use, and should work the same no matter how many tasks are active.</p>
+
+        <p>Another characteristic of a good task switcher is accessibility from any screen or program, and the ability to move between any needed task or quit a task. Simplicity is also a key characteristic. Upon the task switcher's launch, the user should have no trouble distinguishing which tasks are open, which task is currently selected, and how to open the next selected task.</p>
+    </blockquote>
+
+
+  </div>
+</div>
+
+<h3>State Diagram</h3>
+
+        <p><img src="img/ha24010_created.svg" style="width:80%; height:auto;" alt="State Diagram"></p>
+
+        <blockquote>
+            <p>Task switcher states depend on the functionality of the switcher, but as a general overview we can say that there a few
+            different states such as task <em>not-running</em>, task <em>running</em>, and task <em>selected</em>. It is important to note that, in the taskbar or tray, tasks which are not currently running can still be pinned, and selected, or opened.</p>
+        </blockquote>
+
+
+<h3>Platform-Specific Instances</h3>
+
+<blockquote>
+  <p>When multiple apps and windows are open, it can be difficult for users to find the one they want. Luckily MacOS Sierra provides these platform-specific task switchers to move among apps.</p>
+</blockquote>
+
+<ul class="list-unstyled">
+
+<li>
+<button class="btn btn-primary btn-lg btn-block btn-success" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+  Mission Control Task Switching
+</button>
+<div class="collapse" id="collapseExample2">
+  <div class="well">
+        <p>Mission Control gives users an easy way to see all their desktops and full-screen windows, in addition to Dashboard and the Dock, at one time. In Mission Control, users can create a new desktop, switch between desktops and full-screen windows, or choose a specific window on the current desktop.</p>
+        <p>To open Mission Control the user either presses the F3 key, enters Control + Up, enables a trackpad gesture (i.e. swiping up with three or more fingers), or enables Hot Corners so when they move the pointer to the corner of the screen Mission Control is launched.</p>
+
+        <p><img src="img/MissionControl.jpg" style="width:90%; height:auto;" alt="Mac Switcher"></p>
+
+        <p>Once the user launches Mission Control they are met with the following view:</p>
+
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/AJ6RQixrJPk" frameborder="0" allowfullscreen></iframe>
+
+       <p> Mission Control shows all of the windows open on the desktop, arranged in a single layer so it’s easy to spot the one you need. Apps that are in full screen or Split View, and desktop spaces you created, are shown as thumbnails in the Spaces bar along the top edge of the screen.</p>
+  </div>
+</div>
+</li>
+
+<li>
+<button class="btn btn-primary btn-lg btn-block btn-success" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+  Launchpad Task Switching
+</button>
+<div class="collapse" id="collapseExample3">
+  <div class="well">
+        <p>Launchpad is a central location where you can see and open apps that are on your Mac. When you download an app from the App Store, it automatically appears in Launchpad. To open Launchpad, click the icon in the Dock. To close Launchpad without opening an app, click anywhere on the screen (except on an app), or press Esc.</p>
+
+         <p>Once the user launches Launchpad they are met with the following view:</p>
+
+        <p><img src="img/Launchpad.png" style="width:90%; height:auto;" alt="Launchpad"></p>
+
+        <p>Launchpad works especially well for opening and finding apps as well as the organization of apps, which aids efficiency when using it to switch between apps. </p>
+        <p>Users can organize apps in Launchpad by:</p>
+        <ul>
+            <li>Dragging the app to a new location on the page.</li>
+            <li>Dragging the app to the edge of the screen, and releasing it when the page the user wants appears.</li>
+            <li>Dragging one app over another to create a folder, then dragging other apps to the folder.</li>
+        </ul>
+  </div>
+</div>
+</li>
+<li>
+<button class="btn btn-primary btn-lg btn-block btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  Keyboard Shortcut Task Switching
+</button>
+<div class="collapse" id="collapseExample">
+  <div class="well">
+
+        <p>To launch the Task switcher the user presses and holds the Command button, and taps on Tab. The task switcher pops up, taking screen priority, showing all currently open apps with the current app being highlighted:</p>
+
+        <p><img src="img/native.png" style="width:90%; height:auto;" alt="App Switcher"></p>
+         <ul>
+            <li>To quickly switch to the previous app: Press Command-Tab.</li>
+            <li>To scroll through all open apps: Press and hold the Command key, press the Tab key, press the Left or Right arrow key until the user gets to the app they want, then release the Command key.</li>
+            <li>If the user changes their mind while scrolling through and don’t want to switch apps, they can press Esc (Escape) or the Period key, then release the Command key.</li>
+            <li>To enter Expose Mode: Press either the Up or Down arrow key.</li>
+            <li>To hide the selected application: Press the H key.</li>
+            <li>To quit the selected application: Press the Q key.</li>
+        </ul>
+  </div>
+</div>
+</li>
+</ul>
+
+<h3>Credits &amp; References</h3>
+
+<blockquote>
+<p>"Apple." MacOS Sierra: Use Launchpad to View and Open Apps. N.p., n.d. Web. 27 Oct. 2016.</p>
+<p> "Apple." MacOS Sierra: Manage Windows on the Desktop. N.p., n.d. Web. 27 Oct. 2016. </p>
+<p>"Apple." MacOS Sierra: Manage Windows on the Desktop. N.p., n.d. Web. 27 Oct. 2016.</p>
+<p>"MacOS Human Interface Guidelines: App Extensions." MacOS Human Interface Guidelines: App Extensions. N.p., n.d. Web. 27 Oct. 2016.<p>
+<p>Written by Claire Ortega with some integrations from both Flanders Lorton and Victor Frolov's contributions. Embedded videos are original content.</p>
+</blockquote>

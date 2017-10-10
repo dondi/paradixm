@@ -7,179 +7,826 @@ contributors:
 
     - name: Nick Soffa
       github: SoffaKing88
+
+    - name: J Goocher
+      github: AstonxMartin177
+
+    - name: Zachary Fitzpatrick
+      github: PokeADotProductions
+
+    - name: Jay Patel
+      github: Jbreaker1
 ---
-
-<p class="lead"> "An audio or video media player" </p> 
-
-<h3> Typical Appearance <small> how it usually looks </small> </h3> 
-
-<p> Simple three button interface towards the bottom of the screen, previous file, Play/Pause, and next file. Top of the screen includes the file name, and any other details about the file if available. The middle of the screen will show the video itself or the album art in case of audio files. Other buttons include volume control through buttons or a slider, options to shuffle your list of songs or repeat a single song or playlist, and a drop down menu for media settings. In the case of a video, choices for the quality of the video are usually present when streaming it online. Lastly slider that corresponds to the video or song length and how far into the file you are is present at the bottom of the screen. </p>
+<p class="lead"> "An audio or video media player" </p>
 
 
-<h3> Typical Behavior <small> how it usually behaves </small> </h3>
-
-<p> Songs are listed by alphabetical order, and depending on what tab you are in you can search for specific artists or albums as well. When play button is clicked/pressed, the file will begin playing. Default speakers in the device will be used unless there are user designated speakers available (e.x. headphones plugged in, blue tooth stereo system set up, etc.). If the previous file button is pressed once, the player will return to the beginning of the current file. If it is pressed twice in rapid succession it will start playing the file that came before the current one. The next file button only needs to be pressed once to skip the rest of the current file and start playing the next file in the list. </p> 
-    
-
-<h4> Events </h4>
-<p> Hovering your mouse over the video or tapping the screen while the video is on will bring up the user interface. Clicking/pressing the Play/Pause button will trigger the file to start playing or pause at that time. If the previous file button is pressed once, the player will return to the beginning of the current file. If it is pressed twice in rapid succession it will start playing the file that came before the current one. The next file button only needs to be pressed once to skip the rest of the current file and start playing the next file in the list. Moving the slider for volume will increase or decrease the volume that the file is playing at.
-</p> 
-<!-- THE FUTURE IS THE PRESENT!-->
-<h4> State Diagram </h4> 
-<p> In some media players there are two major states, when the <b>control shown</b> and <b>control hidden</b> states. In the control shown state this is when the user is able to control the video. Within this state there are multiple states: </p> 
-<ul>
-    <li>Idle/Paused: When the media is stopped </li>
-    <li>Playback: When the media is playing </li>
-    <li>(Optional) Rewinding: When the media is playing backwards </li>
-    <li>(Optional) Fast Forwarding: When the media is playing ahead </li>
-</ul>
-
-<p> For video media players there are also options to change states between having the video play full screen and the video playing at the specifed size.</p>
-
-<div class="row">
-    <div class = "col-sm-6">
-
-        <img src="images_media/Overall_v2.svg" class="img-responsive" alt= "Responsive image"style= "height: auto; width: auto">
-        
-
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <ul class="nav nav-pills nav-justified" role="tablist">
+      <li role="nav item" class="active">
+        <a class="nav-link active" data-toggle="tab" href="#typical-appearance" role="tab">Typical Appearance</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#typical-behavior" role="tab">Typical Behavior</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#priority-metrics" role="tab">Priority Metrics</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#events" role="tab">Events</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#variants" role="tab">Variants</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#platform-specifics" role="tab">Platform Specifics</a>
+      </li>
+     </ul>
     </div>
-
-    <div class= "col-sm-6">
-
-        <img src="images_media/3ButtonInterface.svg" class="img-responsive" alt="Responsive image" style= "height: auto; width: auto">
-
-    </div> 
-
+  </div>
 </div>
 
+<div class="tab-content">
 
-<h4> Component in Action </h4>
-<div class= "row"> 
-    <div class= "col-sm-6">
-        
-        <iframe width="100%" height="250" src="https://www.youtube.com/embed/89bcFDlP5rw" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class= "col-sm-6">
-        To the left is an example of a media player from Youtube.
-    </div>
-</div>
-<h3> Variants <small> how it varies per location </small> </h3>
-  <h4> Audio Media Settings </h4>
-    <li> Set as _____ : Able to set the song as a ringtone or an alarm tone </li>
-    <li> Settings : Will take you to a lot of different settings for whatever platform you are using, such as Equalizers, or play speed </li>
-    <li> Details : Will give you every detail about the current song from Artist to Track length to the file size </li>
-    <li> Add to playlist : Add song to a list of the users favorite songs, useful when searching for a song in a very large library </li>
-  <h4> Video Media Settings </h4>
-    <li> Quality : Available options for high definition video playback (420p, 720p, 1080p etc.) </li>
-    <li> Size : Available sizing for the video screen, almost always comes with full screen option </li>
+  <div class="tab-pane active" id="typical-appearance" role="tabpanel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
 
-<h3> Priority Metrics <small> Media and its Usability Metrics </small> </h3>
+              <h3><b><u>Typical Appearance</b></u></h3>
+              <p> Simple three button interface towards the bottom of the screen, previous file, Play/Pause, and next file. Top of the screen includes the file name, and any other details about the file if available. The middle of the screen will show the video itself or the album art in case of audio files. Other buttons include volume control through buttons or a slider, options to shuffle your list of songs or repeat a single song or playlist, and a drop down menu for media settings. In the case of a video, choices for the quality of the video are usually present when streaming it online. Lastly slider that corresponds to the video or song length and how far into the file you are is present at the bottom of the screen. </p>
 
-  <p> 
-    For most users, media players are used to do one thing, to play the media that the user wants them to play. That being said, because it is more of a utilitarian component, there are some usability metrics that are not as importnat as others. Some of the important ones are learnability, efficiency, errors, and memorability. 
-  </p>
-  <p> 
-    <b>Learnability:</b> Media players have to be quickly learnable. For most users, the  media player is only a gateway for them to see the actual content. The quicker it is to learn the software the better. Many media players should come intuitively. The different buttons and icons are very similar to other physical media players such as DVDs, Blu-Ray players and CD players. This similarity helps for users to quickly learn how to watch media on their devices. 
-  </p>
-  <p> 
-    <b> Efficiency: </b> Since it is not so much the media player that is important then the actual content being played, media players must also be very efficient. Many of the players today have many keyboard shortcuts. Arrows can be used to skip songs or to fastforward or rewind per frame. Spacebar is also commonly used to play and pause. Also there are many shortcuts for fullscreen or to adjust the volume. 
-  </p>
-  <p> 
-    <b> Errors: </b> Though errors are not fatal for media players, errors can annoy the user and take away from the content being shown. Errors such as play and pausing when the user wants to or wrong volume controls may not allow the user to play the video as intended. Since as said before, a media player is a gateway for the actual audio or video media. Therefore though the user may not be fatal, as long as the media does not get deleted, the errors for Media players should be very small. 
-    </p> 
-    <p>
-      <b> Memorability:</b> Media players should be very memorable. When a media player isn't used for a long time, the user should automatically be able to remember how it functions because for the user, their intent is to watch the audio/video content that the media player is going to play. The mental model of the media player as well as the user should not be very different. To help to make sure it is memorable, similar icons are used throughout media players for common tasks such as play, stop, or skip. 
-    </p>
-    <p>
-      <b>Satisfaction:</b> Satisfaction is not a very important component for media players. As long as the media player is able to play the content that the user wants then it is doing its job. It is the job of the content itself to satisfy the users. 
-    </P> 
-
-<h3> Key Chararacteristics <small> what do all principles do all great media players have? </small> </h3>
-  
-  <ol>
-      <li> <b>Feedback:</b> It is very important for the user to always get feed back for whatever action that they do. For example of the user presses play, the content should play. Also if the player pauses the video using the pause button, after clicking the content should also pause. If the content is still loading, a loading splash screen should also show up. This way the user will always know what state the media player is in. </li>
-
-      <li><b>Universality and Consistency:</b> Media and audio content should be accesible to everyone no matter where they are from. Universal signs for play, pause, skip and even volume are all very same and also derive from the physical machine buttons on DVD, Blu-ray, and CD players. Also many great media players will also have accsesiblity options such as closed captioning.</li> 
-
-      <li> <b>Shortcuts:</b> For easy access and for easy use, media players should also have shortcuts for the most basic of functions such as pausing and skipping. </li> 
-
-      <li><b> Transparency: </b> When users use the media player, it is not the media player that they are intersted in, instead it is the content. Many great media players have hover and hover off states where when the user is no longer hovering or doing any action to the buttons the control panel for the media player disapeers.</li>
-  </ol>  
-
-<h2> Platform Specific Instances </h2> 
-<div class="row"> 
-  <div class="col-sm-4">
-    <div class="well">
-        <h3> Mac OSX: Yosemite</h3>
-        <h4> Appearance </h4>
-        <img src="images_media/OSX_screenshot.png" class="img-responsive" alt="Screenshot of OSX media player">
-        <p> Above is a screen shot of what a media player looks like in OS X Yosemite.</p>
-        <p> <b> Video Media Player</b></p> 
-        <p>For Yosemite, after double-clicking on the icon, Quicktime Media player launches in a borderless window. The difference here is that there is no setting for quality. Instead it is all the same quality across the board. </p>
-
-        <img src="images_media/preview_screenshot.png" class="img-responsive" alt="Screenshot of OSX preview media">
-        <p> Above is a screenshot of what previewing media looks like in OS X Yosemite.</p>
-        <p> This is a screenshot of what previewing media looks like in OSX Yosemite. If a file is selected, the user can hold down space bar and they can play it. Also they can press the play button on the lower right hand corner. 
-        <h4> Behavior </h4>
-        <h4> Component in Action </h4>
-          <iframe width="100%" height="250px" src="https://www.youtube.com/embed/Enu-wc-k-r8" frameborder="0" allowfullscreen></iframe>
-        <h4> Key Characteristics </h4>
-        <p> In reference to the OSX Human Interface Guideline, Apple also references that Feedback and Assistance is important. Also keyboard alternatives are also very important. They encourage to "provide keyboard-only alternatives". Other important principles that are important are:  </p>
-
-        <ul>
-          <li> Direct Manipulations: An onscreen object must remain visible while performing actions on to it. Thus even though the controls may disappear on the media player, the content itself does not disapeer. </li> 
-          <li> Feedback and Communication: There should be some reaction to every action that the user does towards the media player. </li>
-          <li> Consistency: Consistent to other versions of software and consistent to user mental models for other media players.</li>
-        </ul> 
-
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="col-sm-4">
-    <div class="well">
-        <h3> iOS 8.1.2 iPhone4s </h3>
-        <h4> Appearance </h4>
-        <img src="images_media/iPhone_photoPlayer.png" class="img-responsive" alt="Screenshot of iPhone media player">
-        <img src="images_media/iPhone_photoHidden.png" class="img-responsive" alt="Screenshot of iPhone media hidden">
-        <p> Above are screenshots of what a media player looks like on the iPhone4s in the Photos app.</p>
+  <div class="tab-pane" id="typical-behavior" role="tabpanel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
 
-        <img src="images_media/iPhone_mediaPlayer.png" class="img-responsive" alt="Screenshot of iPhone media player">
-        <img src="images_media/iPhone_mediaHidden.png" class="img-responsive" alt="Screenshot of iPhone media hidden">
-        <p> Above are screenshots of what a media player looks like on the iPhone4s in the Video app.</p>
-        <p> One of the major differences in appearance is that the timeline for iOS is located on the top of the screen separate from the buttons </p> 
+              <h3><b><u>Typical Behavior</b></u></h3>
 
-        <p> <b> Video Media Player</b></p> 
-        <p>For iOS, different media players appear depending on which application you are currently in. The buttons though are very similar to the original. </p>
+                <p> Songs are listed by alphabetical order, and depending on what tab you are in you can search for specific artists or albums as well. When play button is clicked/pressed, the file will begin playing. Default speakers in the device will be used unless there are user designated speakers available (e.x. headphones plugged in, blue tooth stereo system set up, etc.). If the previous file button is pressed once, the player will return to the beginning of the current file. If it is pressed twice in rapid succession it will start playing the file that came before the current one. The next file button only needs to be pressed once to skip the rest of the current file and start playing the next file in the list. </p>
 
-        <h4> Behavior </h4>
-        <ul>
-            <li> For the iPhone instead of clicking, the user must tap in order to use the buttons. Also instead of hovering, the user must tap on the video in order for the controls to become hidden.</li> 
+              <h3> Component in Action </h3>
 
-            <li> Pinching gestures allow you to zoom in and out of video.</li>
-            <li> Depending on the user's settings, rotating the device allows the video to also rotate from a smaller view to a larger view. </li> 
-            <li> Volume controls can be altered by either sliding the volume bar or pressing the volume buttons located on the side of the device. </li>
-
-        </ul>
+              <div class= "row">
+                <div class= "col-sm-6">
+                  <iframe width="100%" height="250" src="https://www.youtube.com/embed/89bcFDlP5rw" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div> 
+  </div>
 
+  <div class="tab-pane" id="priority-metrics" role="tabpanel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
 
-  <div class="col-sm-4">
-    <div class="well">
-        <h3> Android S5 </h3>
-          <h4> Music </h4>
-          <li> The ability to skip songs by swiping left or right on the album cover art </li>
-          <li> Tapping on a small star in the middle below the song’s information will add the song to your “Favorites” playlist. The star will light up, and if tapped again it will take the song off of your “Favorites” playlist and the star will turn off </li>
-          <li> A button on the bottom left will show you all of the song names in the current playlist, and a button on the bottom right will add the current song to a playlist. If no playlists have been made you can create a new playlist with the current song as the first entry </li>
-          <li> In addition to the volume controls on the left side of the phone, you can tap on the speaker icon in the top right to pull up a volume control slider, that goes from a max of fifteen to a muted zero </li>
-          <h4> Video </h4>
-          <li> A button on the bottom left changes the aspect ratio of the video </li>
-          <li> A button on the bottom right puts the video in a small moveable window so you can do other tasks on the phone while watching the video </li>
-          <li> In the settings, Chapter preview will give you screen shots about a minute and a half apart that will take you to that part of the video if you tap on them </li>
+              <h3><b><u>Priority Metrics</u></b></h3>
+                <p> For most users, media players are used to do one thing, to play the media that the user wants them to play. That being said, because it is more of a utilitarian component, there are some usability metrics that are not as importnat as others. Some of the important ones are learnability, efficiency, errors, and memorability. </p>
+                <ol>
+                  <li><p> <b>Learnability:</b> Media players have to be quickly learnable. For most users, the  media player is only a gateway for them to see the actual content. The quicker it is to learn the software the better. Many media players should come intuitively. The different buttons and icons are very similar to other physical media players such as DVDs, Blu-Ray players and CD players. This similarity helps for users to quickly learn how to watch media on their devices. </p></li>
+
+                  <li><p> <b> Efficiency: </b> Since it is not so much the media player that is important then the actual content being played, media players must also be very efficient. Many of the players today have many keyboard shortcuts. Arrows can be used to skip songs or to fastforward or rewind per frame. Spacebar is also commonly used to play and pause. Also there are many shortcuts for fullscreen or to adjust the volume. </p> </li>
+
+                  <li><p> <b> Errors: </b> Though errors are not fatal for media players, errors can annoy the user and take away from the content being shown. Errors such as play and pausing when the user wants to or wrong volume controls may not allow the user to play the video as intended. Since as said before, a media player is a gateway for the actual audio or video media. Therefore though the user may not be fatal, as long as the media does not get deleted, the errors for Media players should be very small. </p></li>
+
+                  <li><p> <b> Memorability:</b> Media players should be very memorable. When a media player isn't used for a long time, the user should automatically be able to remember how it functions because for the user, their intent is to watch the audio/video content that the media player is going to play. The mental model of the media player as well as the user should not be very different. To help to make sure it is memorable, similar icons are used throughout media players for common tasks such as play, stop, or skip. </p></li>
+
+                  <li><p> <b>Satisfaction:</b> Satisfaction is not a very important component for media players. As long as the media player is able to play the content that the user wants then it is doing its job. It is the job of the content itself to satisfy the users. </p> </li>
+                </ol>
+              <h3> Key Chararacteristics <small> what do all principles do all great media players have? </small> </h3>
+
+              <ol>
+                <li> <b>Feedback:</b> It is very important for the user to always get feed back for whatever action that they do. For example of the user presses play, the content should play. Also if the player pauses the video using the pause button, after clicking the content should also pause. If the content is still loading, a loading splash screen should also show up. This way the user will always know what state the media player is in. </li>
+
+                <li> <b>Universality and Consistency:</b> Media and audio content should be accesible to everyone no matter where they are from. Universal signs for play, pause, skip and even volume are all very same and also derive from the physical machine buttons on DVD, Blu-ray, and CD players. Also many great media players will also have accsesiblity options such as closed captioning.</li>
+
+                <li> <b>Shortcuts:</b> For easy access and for easy use, media players should also have shortcuts for the most basic of functions such as pausing and skipping. </li>
+
+                <li><b> Transparency: </b>When users use the media player, it is not the media player that they are intersted in, instead it is the content. Many great media players have hover and hover off states where when the user is no longer hovering or doing any action to the buttons the control panel for the media player disapeers.</li>
+              </ol>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div> 
+  </div>
+
+  <div class="tab-pane" id="events" role="tabpanel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <h3><b><u>Events</b></u></h3>
+              <p> Hovering your mouse over the video or tapping the screen while the video is on will bring up the user interface. Clicking/pressing the Play/Pause button will trigger the file to start playing or pause at that time. If the previous file button is pressed once, the player will return to the beginning of the current file. If it is pressed twice in rapid succession it will start playing the file that came before the current one. The next file button only needs to be pressed once to skip the rest of the current file and start playing the next file in the list. Moving the slider for volume will increase or decrease the volume that the file is playing at. </p>
+
+              <h3>State Diagram</h3>
+
+              <p> In some media players there are two major states, when the <b>control shown</b> and <b>control hidden</b> states. In the control shown state this is when the user is able to control the video. Within this state there are multiple states: </p>
+
+              <ol>
+                <li><b>Idle/Paused: </b>When the media is stopped </li>
+                <li><b>Playback: </b>When the media is playing </li>
+                <li><b>(Optional) Rewinding: </b>When the media is playing backwards </li>
+                <li><b>(Optional) Fast Forwarding: </b>When the media is playing ahead </li>
+              </ol>
+
+              <p> For video media players there are also options to change states between having the video play full screen and the video playing at the specifed size.</p>
+
+              <div class="row">
+                <div class = "col-sm-6">
+                  <img src="images_media/Overall_v2.svg" class="img-responsive" alt= "Responsive image"style= "height: auto; width: auto">
+                </div>
+
+                <div class= "col-sm-6">
+                  <img src="images_media/3ButtonInterface.svg" class="img-responsive" alt="Responsive image" style= "height: auto; width: auto">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane" id="variants" role="tabpanel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <h3><b><u>Variants</b></u></h3>
+
+              <h4> Audio Media Settings </h4>
+              <ol>
+                <li><b> Set as: </b>Able to set the song as a ringtone or an alarm tone </li>
+                <li><b> Settings: </b>Will take you to a lot of different settings for whatever platform you are using, such as Equalizers, or play speed </li>
+                <li><b> Details: </b>Will give you every detail about the current song from Artist to Track length to the file size </li>
+                <li><b> Add to playlist: </b>Add song to a list of the users favorite songs, useful when searching for a song in a very large library </li>
+              </ol>
+              <h4> Video Media Settings </h4>
+              <ol>
+                <li><b> Quality: </b>Available options for high definition video playback (420p, 720p, 1080p etc.) </li>
+                <li><b> Size: </b>Available sizing for the video screen, almost always comes with full screen option </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane" id="platform-specifics" role="tabpanel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <h3><b><u>Platform Specifics</b></u></h3>
+              <div class="panel-group" id="event-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" href="#event1">Mac OSX: Yosemite</a>
+                    </h3>
+                  </div>
+                  <div id="event1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <h3> Mac OSX: Yosemite</h3>
+                      <h4> Appearance </h4>
+                      <p> Below is a screen shot of what a media player looks like in OS X Yosemite.</p>
+                      <p> <b> Video Media Player</b></p>
+                      <p>For Yosemite, after double-clicking on the icon, Quicktime Media player launches in a borderless window. The difference here is that there is no setting for quality. Instead it is all the same quality across the board. </p>
+
+                      <p> Below is a screenshot of what previewing media looks like in OS X Yosemite.</p>
+                      <p> This is a screenshot of what previewing media looks like in OSX Yosemite. If a file is selected, the user can hold down space bar and they can play it. Also they can press the play button on the lower right hand corner. </p>
+
+                      <h4> Component in Action </h4>
+                      <iframe width="100%" height="250px" src="https://www.youtube.com/embed/Enu-wc-k-r8" frameborder="0" allowfullscreen></iframe>
+
+                      <h4> Key Characteristics </h4>
+                      <p> In reference to the OSX Human Interface Guideline, Apple also references that Feedback and Assistance is important. Also keyboard alternatives are also very important. They encourage to "provide keyboard-only alternatives". Other important principles that are important are: </p>
+
+                      <ul>
+                        <li> Direct Manipulations: An onscreen object must remain visible while performing actions on to it. Thus even though the controls may disappear on the media player, the content itself does not disapeer. </li>
+                        <li> Feedback and Communication: There should be some reaction to every action that the user does towards the media player. </li>
+                        <li> Consistency: Consistent to other versions of software and consistent to user mental models for other media players.</li>
+                      </ul>
+                      <div class="panel-group" id="image-group">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">
+                              <a data-toggle="collapse" href="#image1">Appearance</a>
+                            </h3>
+                          </div>
+                          <div id="image1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <img src="images_media/OSXscreenshot.png" class="img-responsive" alt="Screenshot of OSX media player">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">
+                              <a data-toggle="collapse" href="#image2">Media Player</a>
+                            </h3>
+                          </div>
+                          <div id="image2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <img src="images_media/previewscreenshot.png" class="img-responsive" alt="Screenshot of OSX preview media">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" href="#event2">iOS 8.1.2 iPhone4s</a>
+                    </h3>
+                  </div>
+
+                  <div id="event2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <h3> iOS 8.1.2 iPhone4s </h3>
+                      <h4> Appearance </h4>
+                      <p> Below are screenshots of what a media player looks like on the iPhone4s in the Photos app.</p>
+
+                      <p> Below are screenshots of what a media player looks like on the iPhone4s in the Video app.</p>
+                      <p> One of the major differences in appearance is that the timeline for iOS is located on the top of the screen separate from the buttons </p>
+
+                      <p> <b> Video Media Player</b></p>
+                      <p>For iOS, different media players appear depending on which application you are currently in. The buttons though are very similar to the original. </p>
+
+                      <h4> Behavior </h4>
+
+                      <ul>
+                        <li> For the iPhone instead of clicking, the user must tap in order to use the buttons. Also instead of hovering, the user must tap on the video in order for the controls to become hidden.</li>
+                        <li> Pinching gestures allow you to zoom in and out of video.</li>
+                        <li> Depending on the user's settings, rotating the device allows the video to also rotate from a smaller view to a larger view. </li>
+                        <li> Volume controls can be altered by either sliding the volume bar or pressing the volume buttons located on the side of the device. </li>
+
+                      </ul>
+                      <div class="panel-group" id="image-group1">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">
+                              <a data-toggle="collapse" href="#image3">Appearance in photo app</a>
+                            </h3>
+                          </div>
+                          <div id="image3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <img src="images_media/iPhonephotoPlayer.png">
+                              <img src="images_media/iPhone_photoHidden.png">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">
+                              <a data-toggle="collapse" href="#image4">Appearance in video app</a>
+                            </h3>
+                          </div>
+                          <div id="image4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <img src="images_media/iPhonemediaPlayer.png">
+                              <img src="images_media/iPhone_mediaHidden.png">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a data-toggle="collapse" href="#event3">Android</a>
+                  </h3>
+                  </div>
+                  <div id="event3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <h3> Android S5 </h3>
+
+                      <h4> Music </h4>
+                      <ul>
+                        <li> The ability to skip songs by swiping left or right on the album cover art </li>
+                        <li> Tapping on a small star in the middle below the song’s information will add the song to your “Favorites” playlist. The star will light up, and if tapped again it will take the song off of your “Favorites” playlist and the star will turn off </li>
+                        <li> A button on the bottom left will show you all of the song names in the current playlist, and a button on the bottom right will add the current song to a playlist. If no playlists have been made you can create a new playlist with the current song as the first entry </li>
+                        <li> In addition to the volume controls on the left side of the phone, you can tap on the speaker icon in the top right to pull up a volume control slider, that goes from a max of fifteen to a muted zero </li>
+                      </ul>
+
+                    <h4> Video </h4>
+                    </ul>
+                      <li> A button on the bottom left changes the aspect ratio of the video </li>
+                      <li> A button on the bottom right puts the video in a small moveable window so you can do other tasks on the phone while watching the video </li>
+                      <li> In the settings, Chapter preview will give you screen shots about a minute and a half apart that will take you to that part of the video if you tap on them </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  <a data-toggle="collapse" href="#event4">Youtube</a>
+                </h3>
+              </div>
+              <div id="event4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <h3> Youtube </h3>
+                  <p> YouTube is a site primarily used for user’s to display their own content. YouTube also provides users with options to buy films. YouTube’s video player contains the standard video player options: Play/ Pause Button, Full Screen Button, Progress Bar and Volume Controls. </p>
+
+                  <p> The Setting Button opens a menu that has a few options: autoplay, annotations, speed, subtitles/CC, and quality. </p>
+
+                  <p> Setting Options: </p>
+
+                  <ol>
+                    <li><b> Autoplay Button: </b>The button has the red check it will keep playing the next video that youtube’s algorithm picks and think you will like because the user is watching the current video. If annotations are on then the user can see what the video creator is linking or if they have anything linked on the side. </li>
+                    <li><b> Speed Controls: </b>Allows the user to control how fast the video is playing, they have speeds going from .25 to 2 incrementing by .25 each time. </li>
+                    <li><b> Subtitles/CC (2) Controls: </li></b> Allows the user to toggle closed captioning. It also gives the user an option the have google try to translate the video. </li>
+                  </ol>
+
+                  <p> Other Features of YouTube: </p>
+
+                  <ol>
+                    <li><b> Next Button: </b>Allows the user to skip to the next video YouTube has queued up. </li>
+                    <li><b> Close Captioning Button: </b>Allows the user to toggle captions on and off of the video. </li>
+                    <li><b> Theater View Button: </b>Allows the user to toggle between Theater View and Default View. The Theater View increases the size of the video player in the tab and places black bars on either side of the player. </li>
+                    <li><b> Play on Tv Button: </b>Allows the user to cast the video to an eligible Tv. </li>
+                    <li><b> Right Clicking on Toolbar: </b>Gives user options regarding the video. Image Below. </li>
+                    <li><b> Skip Ad Button: </b>Allows the user to skip the current advertisement playing, if the option is allowed. </li>
+                    <li><b> I Icon Button: </b>At the top right of the screen, and allows the conetent creator to put links or other items into there. Ie. merchandise, playlists, advertisments, etc</li>
+                    <li><b> Replay Button: </b>Allows the user to replay the video. If the video has finished, the Play Button is replaced with the Replay Button. </li>
+                  </ol>
+
+                  <p> Below is a list of shortcut hotkeys: </p>
+
+                  <img src="images_media/Youtubeshortcuts.png" height = 550 width = 350>
+
+                  <div class="panel-group" id="image-group3">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image5">Video Player</a>
+                        </h3>
+                      </div>
+                      <div id="image5" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <img src="images_media/youtube.png">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image6">Settings</a>
+                        </h3>
+                      </div>
+                      <div id="image6" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <img src="images_media/youtube2.png">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image7">Subtitles</a>
+                        </h3>
+                      </div>
+                      <div id="image7" class="panel-collapse collapse">
+                          <div class="panel-body">
+                          <img src="images_media/youtube3.png">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image8">Right click toolbar</a>
+                        </h3>
+                      </div>
+                        <div id="image8" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <img src="images_media/youtube1.png">
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  <a data-toggle="collapse" href="#event5"> Netflix </a>
+                </h3>
+              </div>
+
+              <div id="event5" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <h3> Netflix </h3>
+                  <p> Netflix is a site that hosts TV shows and movies. After users pay a monthly subscription fee, they have access to Netflix's library.</p>
+
+                  <ol>
+                    <li><b> Title: </b>Netflix tells you the name of the episode, what episode you are on, and season number underneath the progress bar.</li>
+                    <li><b> HD Button: </b>Allows the user to change the quality to HD so 720p or higher if the computer can handle it.</li>
+                    <li><b> Season/ Episode Button: </b>Allows the user to see the other episodes and seasons of the current show in a small pop up window that appears if this button is pressed.</li>
+                    <li><b> Next Episode Button: </b>Allows the user to skip to the next episode in the queue.</li>
+                    <li><b> Skip Intro Button: </b>Allows the user to skip the intro</li>
+                    <li><b> Back Button: </b>Allows the user to go back to the options</li>
+                  </ol>
+
+                  <p> Netflix shortcut: </p>
+                  <ol>
+                    <li><b> Space: </b>Toggle Play/Pause</li>
+                    <li><b> Enter: </b>Toggle Play/Pause</li>
+                    <li><b> PgUp: </b>Play</li>
+                    <li><b> PgDn: </b>Pause</li>
+                    <li><b> F: </b>Full-screen</li>
+                    <li><b> Esc: </b>Exit full-screen</li>
+                    <li><b> Shift+Left arrow: </b>Rewind</li>
+                    <li><b> Shift+Right arrow: </b>Fast Forward</li>
+                    <li><b> Up arrow: </b>Volume Up</li>
+                    <li><b> Down arrow: </b>Volume Down</li>
+                    <li><b> M: </b>Mute toggle</li>
+                  </ol>
+                  <div class="panel-group" id="image-group4">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image9">Video Player</a>
+                        </h3>
+                      </div>
+                      <div id="image9" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <img src="images_media/netflixpic2.jpeg">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image10">Netflix bar</a>
+                        </h3>
+                      </div>
+                      <div id="image10" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <img src="images_media/netflixbar.jpg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                <a data-toggle="collapse" href="#event6">UStream</a>
+                </h3>
+              </div>
+              <div id="event6" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <h3> UStream </h3>
+                  <p> UStream is a video streaming and video hosting company. The site is primarily used by professionals and enterprises. To use the the full site users must pay a fee.<p>
+
+                  <p> Core Features: </p>
+                  <ol>
+                    <li><b> Share Button: </b>Allows the user to share the video and has 4 options, Facebook, Twitter, copy link, embed.  When a user clicks Facebook it takes you to your profile and pastes the link into the text box to post the message on your account. Same thing with Twitter. Copy link, copys the video into your clipboard. The embed makes a pop up on the video and allows you to copy the code to embed the video if you are going to use it.</li>
+                    <li><b> Flag Button: </b>Allows the user to flag a video for various reasons</li>
+                    <li><b> HD Button: </b>Allows the user to change the quality of the video to either 260p, 360p, 480p, 720p, or 1080p</li>
+                    <li><b> Theater mode: </b>Allows the user to change the video player to become about the width of the browser so it is more clearly and neatly presented.</li>
+                    <li><b> Live Icon: </b>Indicates whether or not the video is live. If it is there it means it is live otherwise it is not.</li>
+                    <li><b> Popout Button: </b>Allows the user to make the video open in a new window.</li>
+                    <li><b> Closed Captions: </b>Provides users with captions for the video.</li>
+                  </ol>
+                  <div class="panel-group" id="image-group5">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image11">Video Player</a>
+                        </h3>
+                      </div>
+                        <div id="image11" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <img src="images_media/Ustream.png">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image12">Small Video Player</a>
+                        </h3>
+                      </div>
+                        <div id="image12" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <img src="images_media/Ustream4.png">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image13">Share Button</a>
+                        </h3>
+                      </div>
+                        <div id="image13" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <img src="images_media/Ustream3.png">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image14">Flag Button</a>
+                        </h3>
+                      </div>
+                        <div id="image14" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <img src="images_media/Ustream2.png">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image15">Live Button</a>
+                        </h3>
+                      </div>
+                        <div id="image15" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <img src="images_media/Ustream5.png">
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                <a data-toggle="collapse" href="#event7">Vimeo</a>
+                </h3>
+              </div>
+              <div id="event7" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <h3> Vimeo </h3>
+                  <p> Vimeo is a site primarily used to display user created content. Vimeo’s video player reflects the sites decision to focus user content by providing unique features. </p>
+
+                  <p> Core Features:<p>
+                  <ol>
+                    <li><b> Like: </b>Allows user to like a video.</li>
+                    <li><b> Add the Watch Later: </b>Adds video to a playlist easily accessible to the user.</li>
+                    <li><b> Add to Collections: </b>Adds videos and work to ablums named collections.</li>
+                    <li><b> Share: </b>Allows user to share video with other users or through other platforms.</li>
+                    <li><b> Play/ Pause: </b>Pauses and plays the video.</li>
+                    <li><b> Buy Show: </b>Depending on the content, like if a user was watching a trailer for a show, a button may be replaced for an option to buy a season of a show. </li>
+                    <li><b> HD: </b>Options to change the resolution appear after being clicked. The various selections range from auto, allowing the player to make the decision for the user, to the max resolution the video was designed to handle.</li>
+                    <li><b> Fullscreen: </b>Expands the video to cover the screen or decreasing the video back to its original size.</li>
+                    <li><b> Progress Bar: </b> Keeps track of the duration left on the video. Hovering over the bar displays a screenshot of the scene at that time.</li>
+                    <li><b> Volume: </b>Users contorl the level of the volume with the 5 bars representing volume levels. </li>
+                  </ol>
+
+                  <p>Notes: <p>
+                  <ol>
+                    <li> The Like button has the icon of a heart. The Add to Watch Later button has the icon of a clock. The Add to Collections button has the icon of stacked papers. The Share button has the icon of a paper airplane. </li>
+                    <li> On large difference between Youtube’s video player and Vimeo’s is that even though Youtube allows for most of the above features, those buttons wouldn’t be located on the video player itself, but rather on the description of the video below the player. </li>
+                    <li> Each of the icons are highlighted blue as they are passed over. The icons at the top right also inform the user of their function. The volume icon is special though, it isn’t highlighted blue, rather whichever bar of the five bars the cursor is located on, increases in size so as not to confuse the user of what the volume level is currently at. </li>
+                    <li> The Progress Bar of the video is set up in three colors. Blue represents what part of the video has been watched already. Grey represents the amount of video already loaded. Dark grey represents the amount of video yet to be loaded or watched. </li>
+                    <li> The volume button is unique to Vimeo's webplayer. Clicking on the largest bar of 5 bars will increase the volume of the video to max, while the smallest will virtually mute the video. Users can also drag from right to left along the five bars to achieve their desired volume levels. The color on the bars changes from grey to blue to indicate volume. All grey meaning no volume, all blue meaning max volume.</li>
+                  </ol>
+                  <div class="panel-group" id="image-group7">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image19">Video Player</a>
+                        </h3>
+                      </div>
+                      <div id="image19" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p> <img src="images_media/Vimeo1.png" height = 350 width = 550> </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image20">Like</a>
+                        </h3>
+                      </div>
+                      <div id="image20" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p> <img src="images_media/Vimeo2.png"> </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image21">Watch Later</a>
+                        </h3>
+                      </div>
+                      <div id="image21" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p> <img src="images_media/Vimeo3.png"> </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image22">Add to collection</a>
+                        </h3>
+                      </div>
+                      <div id="image22" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p> <img src="images_media/Vimeo4.png"> </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image23">Share Button</a>
+                        </h3>
+                      </div>
+                      <div id="image23" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p> <img src="images_media/Vimeo5.png" height = 350 width = 550> </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                <a data-toggle="collapse" href="#event8">Twitch</a>
+                </h3>
+              </div>
+              <div id="event8" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <h3> Twitch </h3>
+                  <p> Twitch is a live streaming site meant primarily for allowing streamers to stream gameplay content. There are two players to consider when viewing Twitch’s webplayer. The first is their standard video player and the second is available when the user wishes to browse for other content. </p>
+
+                  <p> Core Features: </p>
+                  <ol>
+                    <li><b> Browse button: </b>If a user clicks onto a stream and then clicks onto the browse button, the video will shrink onto a small player displayed at the bottom left of the website allowing users to browse for a new stream while staying entertained with another stream. The window of the player tells the user whose channel the user is watching and gives the user an option to close the window. There are only two buttons available on the small player. One is the standard Play/ Pause button and the other button restores the stream to the users main stream. The icon looks like a small window turning into a fullscreen window.</li>
+                    <li><b> Live: </b>To indicate that the video streaming is live, the video player displays “a red circle” and the word “LIVE” at the top right of the screen.</li>
+                    <li><b> Play/Pause: </b>The video has a Play/Pause that alternates icons when the player is either playing or paused. This button, like most, is located at the bottom left of the screen.</li>
+                    <li><b> Volume: </b>The volume is controlled by a Speaker icon.</li>
+                    <li><b> Settings button: </b>Once pressed a box appears giving the user additional options.</li>
+                    <li><b> Theater Mode: </b>The icon beside the clip icon allows the user to put the site into theater mode. This mode increases the size of the video player when not in full screen, darkens the screen to make it easier on the user’s eyes and displays the chat room neatly beside the video. </li>
+                  </ol>
+
+                  <p> Settings: </p>
+                  <ol>
+                    <li><b> Resolution: </b>Allows the user to change the resolution of the video.</li>
+                    <li><b> Pop Out: </b>Pops the video player out into another window.</li>
+                    <li><b> Flag: </b>Reports the video to the site. Usually used to removed videos that go against the intention of the site.</li>
+                    <li><b> Advanced Options: </b>Allows the user to turn off the html5 player, remove the mini player that pops out for users when they browse and show stats regarding the video.</li>
+                  </ol>
+
+                  <p> Notes: </p>
+                  <ol>
+                    <li> When the icons are moused over they are highlighted in a soft purple hue. When the user hovers over the different buttons, users also get to see what the button does (i.e. if the user hovers over the play button, the words “play” appear over the button).</li>
+                    <li> The Speaker icon can be clicked to mute and unmute the stream. The icon will appear as a speaker with an x through it if the stream is muted. Beside the speaker is a Progress Bar that the user can use to control the level of the volume. A bar is located on the Progress Bar for the user to move left and right to control the volume. The percentage of the volume is shown by the color of the bar. If the bar is all grey the stream is muted and if the bar is all purple the stream is at max volume.</li>
+                    <li> When in Theater Mode a button appears at the top right of the screen, giving the user an option to cover the chatroom with the video player. After the user clicks the Theater Mode button, the Theater Mode button then turns into an Exit Theater Mode button.</li>
+                  </ol>
+                  <div class="panel-group" id="image-group8">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image24">Video Player</a>
+                        </h3>
+                      </div>
+                        <div id="image24" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <img src="images_media/TwitchPlayer.PNG" height = 350 width = 550>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image25">Mini Video Player</a>
+                        </h3>
+                      </div>
+                        <div id="image25" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <img src="images_media/TwitchMiniPlayer.PNG" height = 350 width = 550>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                <a data-toggle="collapse" href="#event9">HBO GO</a>
+                </h3>
+              </div>
+              <div id="event9" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <h3> HBO GO </h3>
+                  <p> Core Features: </p>
+                  <ol>
+                    <li><b> Progress Bar: </b> The progress bar is a small line above the play button.</li>
+                    <li><b> Play/Pause:</b> The video has a Play/Pause that alternates icons when the player is either playing or paused. This button, like most, is located at the bottom left of the screen.</li>
+                    <li><b> Volume Button:</b> Hovering over the volume button will open up the volume progress bar and you can slide the little dot right and left. </li>
+                    <li><b> Share Button:</b> When the share button is pressed a new video player display changes to give options to the user for sharing. From left to right the share options are Facebook, Twitter, Email and Embedding the video.</li>
+                    <li><b> Watch Next: </b> The Watch Next button when pressed displays the video next on the user’s queue, determined by HBO.</li>
+                  </ol>
+                  <p> Notes: </p>
+                  <ol>
+                    <li>The video player’s icons disappear when the mouse is inactive for a second or removed from the view of the player.</li>
+                    <li>At the top middle of the screen is the word Share in bold white and below share is the title of the video in light grey, not bolded. In the middle of the screen is a list of all options HBO allows it’s users to share their video. The icons slightly highlight when hovered over.</li>
+                  </ol>
+                  <div class="panel-group" id="image-group6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image16">Video Player</a>
+                        </h3>
+                      </div>
+                      <div id="image16" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p> <img src="images_media/HBOGO3.png" height = 350 width = 550> </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image17">Share Button</a>
+                        </h3>
+                      </div>
+                      <div id="image17" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p> <img src="images_media/HBOGO.png" height = 350 width = 550> </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a data-toggle="collapse" href="#image18">Watch Next Button</a>
+                        </h3>
+                      </div>
+                      <div id="image18" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p> <img src="images_media/HBOGO2.png" height = 350 width = 550> </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+</div>
+<!-- THE FUTURE IS THE PRESENT!-->
 
 <h4> References and Sources </h4>
-<p>Apple OSX Human Interaction Guidelines document https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW1 </p> 
-
+<p> Apple OSX Human Interaction Guidelines document https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW1 </p>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help

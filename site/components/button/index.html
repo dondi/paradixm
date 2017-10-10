@@ -13,686 +13,867 @@ contributors:
 
     - name: Ronald Uy
       github: ronaldooeee
+
+    - name: Sean Rose
+      github: seanrose123
+
+    - name: Filip Mietka
+      github: fmietka
+    
+    - name: Nicolas Le Gorrec
+      github: niclego
 ---
 <link rel="stylesheet" type="text/css" href="hotess.css"> 
 <p class="lead">Virtual buttons are a very widely used graphical interface element that emulates real world pressable buttons.</p>
 
-<div class="row">
-  <div class="col-sm-6">
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#Home" data-toggle="tab">Home</a></li>
+    <li><a href="#Android" data-toggle="tab">Android</a></li>
+    <li><a href="#Windows" data-toggle="tab">Windows 10</a></li>
+    <li><a href="#watchOS" data-toggle="tab">watchOS</a></li>
+    <li><a href="#iOS10" data-toggle="tab">iOS 10</a></li>
+    <li><a href="#Ubuntu" data-toggle="tab">Ubuntu</a></li>
+    <li><a href="#MacOSX" data-toggle="tab">Mac OS X</a></li>
+  </ul>
+    <div class="tab-content active in">
+      <div class="tab-pane active" id="Home">
+        <div class="row">
+          <div class="col-sm-6">
 
-<h3>Typical Appearance</h3>
+        <h3>Typical Appearance</h3>
 
-<blockquote>Generally, across any platform, a button will take the form of any shape whose form will elicit some understanding of the button's function, or will display a design that would hold the same purpose.</blockquote>
+        <blockquote>Generally, across any platform, a button will take the form of a shape whose form will elicit some understanding of the button's function, or will display a design that would hold the same purpose. Buttons tend to look similar throughout many platforms. </blockquote>
 
-<h3>Typical Behavior</h3>
+        <h3>Typical Behavior</h3>
 
-<blockquote>
-  <p>Generally speaking, a button will perform no action while idle. Upon being pressed, a button will perform its action, then will return to its idle state.</p>
-</blockquote>
+        <blockquote>
+          <p> Generally speaking, a button will perform no action while idle. Upon being pressed, a button will perform its action, then will return to its idle state. Buttons are sometimes highlighted according to the typical action that a user will take. For example, the buttons OK and CANCEL might be right next to each other on a page, but it is likely that OK will be highlighted, while CANCEL will not be. 
+        </p>
+        </blockquote>
 
-<h4>Events</h4>
+        <h4>Events</h4>
 
-<p>The most obvious and commonly occuring button event is the <code>click</code>. A <code>click</code> event indicates that the button has been initialized and upon release will perform its action. This is closely related to the <code>release</code> event. Secondary events </p>
+        <p>A button's event is simply the function of a particular button. There are two common button events. The first is the <code>click</code>. A <code>click</code> event indicates that the button has been initialized and upon release will perform its action. This is closely related to the <code>release</code> event. The second event is "hover." If the user interface is well-made, when the user hovers over a button, the mouse pointer will change shape to let the user know that there is an option for a "click" event to occur. </p>
 
-<h4>State Diagram</h4>
+        <h4>State Diagram</h4>
 
-<blockquote>
-  <p>The following diagram shows the 5 states of a standard button, and the different triggers that cause them to be entered/left.</p>
-</blockquote>
+        <blockquote>
+          <p>The following diagram shows the 5 states of a standard button, and the different triggers that cause them to be entered/left.</p>
+        </blockquote>
 
-<div class="diagram">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="431px" height="303px" version="1.1" style="background-color: rgb(255, 255, 255);"><defs/><g transform="translate(0.5,0.5)"><rect x="1" y="1" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(31,25)"><switch><foreignObject pointer-events="all" width="59" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 59px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Disabled</div></div></foreignObject><text x="30" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 388 31 L 398 31 L 398 111 L 394.37 111" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 389.12 111 L 396.12 107.5 L 394.37 111 L 396.12 114.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(367,66)"><switch><foreignObject pointer-events="all" width="62" height="15" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Mouse Over</div></div></foreignObject><text x="31" y="13" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="1" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(299,25)"><switch><foreignObject pointer-events="all" width="57" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Enabled</div></div></foreignObject><text x="29" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="241" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(299,265)"><switch><foreignObject pointer-events="all" width="57" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Pressed</div></div></foreignObject><text x="29" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 388 191 L 398 191 L 398 271 L 394.37 271" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 389.12 271 L 396.12 267.5 L 394.37 271 L 396.12 274.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(379,225)"><switch><foreignObject pointer-events="all" width="46" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Release</div></div></foreignObject><text x="23" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="161" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(304,185)"><switch><foreignObject pointer-events="all" width="47" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 47px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Armed</div></div></foreignObject><text x="24" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 268 126 L 258 126 L 258 191 L 261.63 191" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 191 L 259.88 194.5 L 261.63 191 L 259.88 187.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(245,145)"><switch><foreignObject pointer-events="all" width="28" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Click</div></div></foreignObject><text x="14" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 268 96 L 258 96 L 258 46 L 261.63 46" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 46 L 259.88 49.5 L 261.63 46 L 259.88 42.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(232,66)"><switch><foreignObject pointer-events="all" width="53" height="15" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Mouse Off</div></div></foreignObject><text x="27" y="13" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="81" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(305,105)"><switch><foreignObject pointer-events="all" width="45" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 45px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Hover</div></div></foreignObject><text x="23" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 31 61 L 31 81 Q 31 91 41 91 L 81 91 Q 91 91 91 81 L 91 67.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 91 62.12 L 94.5 69.12 L 91 67.37 L 87.5 69.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(49,86)"><switch><foreignObject pointer-events="all" width="28" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Click</div></div></foreignObject><text x="14" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 127.37 21 L 171 21 Q 181 21 191 21 L 261.63 21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 122.12 21 L 129.12 17.5 L 127.37 21 L 129.12 24.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 21 L 259.88 24.5 L 261.63 21 L 259.88 17.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 268 271 L 191 271 Q 181 271 181 261 L 181 21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/></g></svg>
-</div>
+        <div class="diagram">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="431px" height="303px" version="1.1" style="background-color: rgb(255, 255, 255);"><defs/><g transform="translate(0.5,0.5)"><rect x="1" y="1" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(31,25)"><switch><foreignObject pointer-events="all" width="59" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 59px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Disabled</div></div></foreignObject><text x="30" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 388 31 L 398 31 L 398 111 L 394.37 111" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 389.12 111 L 396.12 107.5 L 394.37 111 L 396.12 114.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(367,66)"><switch><foreignObject pointer-events="all" width="62" height="15" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Mouse Over</div></div></foreignObject><text x="31" y="13" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="1" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(299,25)"><switch><foreignObject pointer-events="all" width="57" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Enabled</div></div></foreignObject><text x="29" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="241" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(299,265)"><switch><foreignObject pointer-events="all" width="57" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Pressed</div></div></foreignObject><text x="29" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 388 191 L 398 191 L 398 271 L 394.37 271" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 389.12 271 L 396.12 267.5 L 394.37 271 L 396.12 274.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(379,225)"><switch><foreignObject pointer-events="all" width="46" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Release</div></div></foreignObject><text x="23" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="161" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(304,185)"><switch><foreignObject pointer-events="all" width="47" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 47px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Armed</div></div></foreignObject><text x="24" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 268 126 L 258 126 L 258 191 L 261.63 191" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 191 L 259.88 194.5 L 261.63 191 L 259.88 187.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(245,145)"><switch><foreignObject pointer-events="all" width="28" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Click</div></div></foreignObject><text x="14" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 268 96 L 258 96 L 258 46 L 261.63 46" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 46 L 259.88 49.5 L 261.63 46 L 259.88 42.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(232,66)"><switch><foreignObject pointer-events="all" width="53" height="15" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Mouse Off</div></div></foreignObject><text x="27" y="13" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="81" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(305,105)"><switch><foreignObject pointer-events="all" width="45" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 45px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Hover</div></div></foreignObject><text x="23" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 31 61 L 31 81 Q 31 91 41 91 L 81 91 Q 91 91 91 81 L 91 67.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 91 62.12 L 94.5 69.12 L 91 67.37 L 87.5 69.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(49,86)"><switch><foreignObject pointer-events="all" width="28" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Click</div></div></foreignObject><text x="14" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 127.37 21 L 171 21 Q 181 21 191 21 L 261.63 21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 122.12 21 L 129.12 17.5 L 127.37 21 L 129.12 24.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 21 L 259.88 24.5 L 261.63 21 L 259.88 17.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 268 271 L 191 271 Q 181 271 181 261 L 181 21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/></g></svg>
+        </div>
 
-<p>The <code>enabled</code> and <code>disabled</code> states can be considered idle button states, as they are the only possible states the button can hold without user interaction. The <code>enabled</code> state indicates that a user <em>can</em> interact with it, while the <code>disabled</code> indicates that a user <em>cannot</em>.</p>
+        <p>The <code>enabled</code> and <code>disabled</code> states can be considered idle button states, as they are the only possible states the button can hold without user interaction. The <code>enabled</code> state indicates that a user <em>can</em> interact with it, while the <code>disabled</code> indicates that a user <em>cannot</em>.</p>
 
-<p>When a button is <code>enabled</code>, additional states may be triggered. Of course, these states are subject to vairation depending upon the system in use, but a general list of the states are:</p>
+        <p>When a button is <code>enabled</code>, additional states may be triggered. Of course, these states are subject to vairation depending upon the system in use, but a general list of the states are:</p>
 
-<ul>
-  <li><code>hover</code>: For platfoms with peripherals such as mice or styluses, positioning the cursor over the button will elicit this state. Generally, it is indicated visually by a highlighting effect on the button. This is done to indicate that the button is prepared to be interacted with.</li>
+        <ul>
+          <li><code>hover</code>: For platfoms with peripherals such as mice or styluses, positioning the cursor over the button will elicit this state. Generally, it is indicated visually by a highlighting effect on the button. This is done to indicate that the button is prepared to be interacted with.</li>
 
-  <li><code>armed</code>: Should the user interact with the button with a click, press, etc. the button may enter this state, indicating that the button is prepared to perform its action upon being released from this state. Most systems have a way to exit this state without actually activating the button Many button implementations allow an “out”
-    from this state, in case the user changes his or her mind in mid-action.</li>
-</ul>
+          <li><code>armed</code>: Should the user interact with the button with a click, press, etc. the button may enter this state, indicating that the button is prepared to perform its action upon being released from this state. Most systems have a way to exit this state without actually activating the button many button implementations allow an “out” from this state, in case the user changes his or her mind in mid-action.</li>
+        </ul>
 
-<h4>Component in Action</h4>
+        <h4>Component in Action</h4>
 
-<blockquote>
-  <p>Embedded or linked video (by you or by others [and if by others give credit]) showing the component in action.</p>
+        <blockquote>
+          <p>Below is a embedded video of our component in action as well as some example buttons.</p>
 
-  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
-</blockquote>
-<div class ="media-embed"><img src="Button1.gif" alt="Button gif 1" class="img-responsive"></div>
+          
 
-<p class="text-center">
-  <button class="btn btn-default">Sample Button</button>
-  <button class="btn btn-default disabled">Sample Disabled Button</button>
-</p>
+        </blockquote>
+        <div class ="media-embed"><img src="Button1.gif" alt="Button gif 1" class="img-responsive"></div>
 
-  </div>
 
-  <div class="col-sm-6">
-<h3>Variants</h3>
+        <p class="text-center">
+          <button class="btn btn-default">OK</button>
+          <button class="btn btn-default disabled">Disabled</button>
+          <button class="btn btn-success">Success</button>
+          <button class="btn btn-danger">Delete</button>
+        </p>
 
-<blockquote>Buttons are some of the most versatile and widely used interface components. They are used for slightly different and more specialized uses that deviate from the average everyday application of the button. Some of the most significant variances are as follows:</blockquote>
-
-<ul>
-  <li><em>Check Boxes</em> function in almost identically to buttons, with an additional set of states. These additional states indicate whether or not the check box has been checked or not. Things like <code>hover</code> and <code>armed</code> are shared. In terms of function, check boxes are useful for visualizing options.</li>
-
-  <li><em>Links</em> function essentially as buttons, as they generally hold all the same states and rarely have any unique states. The distinction here is that a link is specifically made to navigate to a different display from the one the link exists on. There is even less fundamental difference between buttons and links than there were with check boxes.</li>
-</ul>
-
-<h3>Priority Metrics</h3>
-
-<p>Because the button is such a widely utilized tool in virtually every user interface available today, it is fair to say that each one of the usability metrics is equally important for buttons. It is generally very easy for first time users to pick up the idea of a button, due to the fact that they closely emulate the functionality or real world physical buttons (learnability). The high priority of learnability also implies that memorability is a given.</p>
-
-<p>It is vital that buttons not introduce significant delay to a process (efficiency), due to the fact that they are such result driven devices, and thus users expect their input to be visualized or effective immediately. Failing to do so, can lead users to hit buttons multiple times with the belief that their initial inputs were not registered (error).</p>
-
-<p>The least significant metric in terms of buttons has to be satisfaction. This is because there is a severe limitation on the enjoyment that can be derived from hitting a button. This can easily be attributed to its purely utilitarian function and use.</p>
-
-<h3>Key Characteristics</h3>
-
-<p>According to Google, buttons can hold different design characteristics based upon the significance they hold in comparison to the content surrounding the button. For example, adding a <em>raised</em> effect to the button or adding a shadow to it for a 3D effect can make it more pronounced. See the below images for examples.</p>
-
-<div class ="media-embed"><img src="FlatButton.png" alt="Flat Button" class="img-responsive"></div>
-
-<div class ="media-embed"><img src="RaisedButton.png" alt="Raised Button" class="img-responsive"></div>
-
-<h4>Feedback</h4>
-
-<p>By far the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
-  never doubt whether:</p>
-
-<ol>
-  <li>they did positively trigger a button and are thus the device is going to perform the appropriate action</li>
-  <li>they successfully <em>cancelled</em> the triggering of a button, and subsequentially the button's resulting function will not take place</li>
-</ol>
-  </div>
-</div>
-
-<h3>Platform-Specific Instances</h3>
-
-  <h3>CyanogenMod 12.1 based on Android 5.1.1 Lollipop</h3>
-  <p>On CyanogenMod 12.1, buttons are fully compliant with Google's material design. They are generally very simple and clean, using vibrant colors to stand out on the screen. They are almost always either simple shapes such as rectangles or circles, and use graphics on the buttons to make it clear what function will be performed after pressing the buttons.</p>
-
-<div class ="media-embed"><img src="ScreenshotCalander.png" alt="Calander"></div>
-<p>Here is an example of the simple, yet vibrant button design in the calander application.</p>
-
-  <p>Unlike devices that utilice peripherals for input such as mice and styluses, most Android based devices operate fully based upon touch input. The difference this makes is that there can be no hover state for buttons. Conversely, touch input allows for a new state that the other systems do not, which is hold. In CM 12.1, when holding a button, if the button has a secondary function, this is how it is accessed. This will usually include such things as advanced options, or a popup containing a context-sensitive menu. For buttons that do not have such features, holding the button will cause it to highlight, and a circle will expand from the point of contact with the screen to cover the whole button. This provides a pleasant visualization that makes it clear that the touch has been registered, and also adds a nice boost to the satisfaction usability metric.</p>
-
-<div class ="media-embed"><img src="ScreenshotHighlight1.png" alt="Highlight1" class="img-responsive"></div>
-
-<p>Here you can see an example of the Android Version button being held down, and is therefore being highlighted and you can see the circle blooming across the surface of the button.</p>
-
-<div class ="media-embed"><img src="ScreenshotHighlight2.png" alt="Highlight2" class="img-responsive"></div>
-
-<p>Here you can see the gear button in the top of the image being selected, and is subsequentially being highlighted to visualize the fact that it is being activated.</p>
-
-<div class ="media-embed"><img src="ScreenshotHome.png" alt="Home" class="img-responsive"></div>
-<p>Here, the home button at the bottom in the middle has been held down, and an alternate button has popped up that will, in this case, bring you to the Google Now application, should the user choose to press on it.
-
-<div class="row">
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Alto</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Amiga</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Material Design</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">watchOS</h4>
-      </div>
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-</div>
-
-<h3>Credits &amp; References</h3>
-
-<blockquote>Button1.gif: http://microsoft-news.com/ <br> https://www.google.com/design/spec/material-design/introduction.html</blockquote>
-
-<hr>
-
-<h3>Possibly the most important component of any user interface is the button, 
-something which triggers an action.</h2>
-
-<div class="row">
-  <div class="col-xs-6">
-
-<h3>Typical Appearance</h3>
-
-<blockquote>Buttons tend to look similar throughout many platforms. Usually they are rectangular 
-and have a word or an image in them indicating what clicking on the button will actually do.</blockquote>
-
-<h3>Typical Behavior</h3>
-
-<blockquote>
-  <p>Buttons are sometimes highlighted according to the typical action that a user will take. 
-For example,the buttons OK and CANCEL might be right next to each other on a page, but it is 
-likely that OK will be highlighted while CANCEL will not be. </p>
-
-</blockquote>
-
-<h4>Events</h4>
-<blockquote>
-<p>A button's event is simply the function of a particular button. </p>
-
-<p>There are two common button events. The first is the "click". This event notifies the computer 
-that the button has been triggered and the user wants the computer to perform whatever that button 
-is there for. The second event is "hover." If the user interface is well-made, when the user hovers
-over a button, the mouse pointer will change shape to let the user know that there is an option
-for a "click" event to occur. </p>
-</blockquote>
-<h4>State Diagram</h4>
-
-<blockquote>
-  <p>Buttons typically have anywhere between two main states and possibly 2 substates, depending on the device being used. 
-The states are as follows: <code>static</code>, <code>disabled</code>, <code>hover</code>, and <code>active</code>. </p>
-
-  <p>In the <code>static</code> state, which is the idle or enabled state, the button is ready to be clicked. The <code>disabled</code>
-state is that in which the user is not interacting with a button, or if the button has already been clicked it may not be clicked 
-again. </p>
-
-
-  <p>When a button is in it's <code>static</code> state, additional states may be triggered. They are: </p>
-  <ul>
-  <li><code>hover</code>: This is the state in which the mouse hovers over the button and either changes the button's color or the pointer's shape
-to let the user know that the button is ready to be clicked.</li>
-
-  <li><code>active</code>: This state occurs when a button has already been triggered, or clicked and is attempting to complete it's
-action. </li>
-</ul>
-
-  <img src = "http://www.howdesign.com/wp-content/uploads/8_buttons1.png">
-</blockquote>
-<h4>Component in Action</h4>
-
-<blockquote>
-
-  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
-</blockquote>
-
-<p class="text-center">
-  <button class="btn btn-default">OK</button>
-  <button class="btn btn-default disabled">Disabled</button>
-  <button class="btn btn-success">Success</button>
-  <button class="btn btn-danger">Delete</button>
-</p>
-
-  </div>
-
-<div class = "row">
-  <div class="col-xs-6">
-<h3>Variants</h3>
-
-<blockquote>There are many variations of buttons, there isn't just one type. There are 3 main variations and they are as
-follows: </blockquote>
-
-<ul>
-  <li><em>Buttons</em> indicate an action upon touch and are typically labeled using a text, icon or both.
- are very close to buttons in behavior—they perform individual action elements upon simple
-    invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
-    different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
-
-  <li><em>Dropdown Buttons</em> consist of a button that when clicked displays a drop-down list of mutually exclusive items.  
-  They sometimes resemble a menu and are sometimes referred to as Menu Buttons. 
-      <p>
-         <img src= "dropdown.jpg" WIDTH=80 HEIGHT=80> </p>
-     
-  
-  <li><em>Toggles</em> allow the user to change a setting between two different states. Toggle buttons are most effective 
-  when the on/off states are visually distinct. 
-     <div class="container">
-        <label class="switch">
-         <input type="checkbox" class="switch-input">
-         <span class="switch-label" data-on="On" data-off="Off"></span>
-         <span class="switch-handle"></span>
-        </label>
-  
-  <li><em>Links</em> allow the user to navigate to a different page with just the one click. Links are very easily 
-distinguishable from other buttons because they are usually underlined, blue, and when a mouse pointer hovers over them
-the mouse becomes a hand icon. </li> 
-<a href="www.yahoo.com">www.yahoo.com</a>
-</ul>
-
-<h3>Priority Metrics</h3>
-<blockquote>
-<p>Learnability/Memorability: Buttons are basically a part of every single user interface used today. Because of this buttons should on the most part
-be universal. As mentioned above, the typical appearance of a button is a simple shape with some text or an icon inside of it.
-Since buttons are typically the same throughout all platforms, it should not be difficult for users to be able to figure
-out how to use buttons. 
-</p>
-
-<p>Efficiency/Errors: Each button has one action to complete, thus once clicked the action should be performed fairly quickly. 
-There should be no delay or too much time waste from the time where the user knows what they want to do and when they actually 
-click the button. Relating to that, buttons should be well-labeled and in a position where users will not accidentally mistake
-one button for another. For example, everyone knows the placement of the OK and CANCEL buttons, so if one platform were to decide
-to switch those, a lot of users would do the wrong action. 
-</p>
-
-<p>Satisfaction: Users do not really find any satisfaction in clicking buttons so this metric is not completely applicable to 
-buttons. On the other hand, sometimes buttons do crazy things, for example, Google's "I'm feeling lucky" button sometimes shows 
-fireworks on the screen, but it won't do that every time. Besides that, satisfaction does not really apply. </p>
-</blockquote>
-<blockquote>
-<h4>Feedback</h4>
-
-<p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
-  never doubt whether:</p>
-
-<ol>
-  <li>they did positively trigger a button (and thus its associated action)</li>
-  <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
-    the action that triggers the button</li>
-</ol>
-  </div>
-
-</blockquote>
-<h3>Platform-Specific Instances</h3>
-
-<blockquote> 
-<h3>Windows 10 </h3>
-
-  <p>As mentioned above, even for Windows 10 buttons, buttons are typically rectangular but sometimes may either have mildly 
-rounded corners or really sharp edges. The default button has a blue dotted line around it. Windows also tends to draw attention 
-to more important buttons by either highlighting or making the button bigger. 
-</p>
-
-  <p>Typically the EXIT, MINIMIZE, and MAXIMIZE controls are all at the upper right hand corner of the window. </p>
-
-  <p>Windows also color-codes a lot of their buttons. For example, RED will be used for <code>SHUT DOWN</code> because RED is a 
-danger color and lets the user know that once they click that button there is no going back. YELLOW will be used for <code>LOG OFF</code>
-warning the user that this is a semi-critical button. Then there are other buttons such as HELP that are a soft blue color 
-because pressing them will not do anything to your program. 
-
-<p> Windows has recently created a completely different way to display buttons, applications and commands on their screen. Clicking one
-one of these buttons will navigate the user to a different page.</p>
- 
-<img src= "http://www.windows10beta.net/wp-content/uploads/2015/03/Windows-8-User-Interface-600x375.png">
-
-
-
-<h3>Credits &amp; References</h3>
-
-<blockquote>
-<p>http://usabilitypost.com/2009/04/15/8-characteristics-of-successful-user-interfaces/#efficient</p>
-
-<p>http://foundation.zurb.com/docs/components/dropdown_buttons.html</p>
-
-<p>http://www.howdesign.com/web-design-resources-technology/helping-users-navigate-websites/</p>
-
-</blockquote>
-
-
-
-<hr>
-
-
-
-<h3>Possibly the most important component of any user interface is the button, 
-something which triggers an action.</h2>
-
-<div class="row">
-  <div class="col-xs-6">
-
-<h3>Typical Appearance</h3>
-
-<blockquote>Buttons tend to look similar throughout many platforms. Usually they are rectangular 
-and have a word or an image in them indicating what clicking on the button will actually do.</blockquote>
-
-<h3>Typical Behavior</h3>
-
-<blockquote>
-  <p>Buttons are sometimes highlighted according to the typical action that a user will take. 
-For example,the buttons OK and CANCEL might be right next to each other on a page, but it is 
-likely that OK will be highlighted while CANCEL will not be. </p>
-
-</blockquote>
-
-<h4>Events</h4>
-<blockquote>
-<p>A button's event is simply the function of a particular button. </p>
-
-<p>There are two common button events. The first is the "click". This event notifies the computer 
-that the button has been triggered and the user wants the computer to perform whatever that button 
-is there for. The second event is "hover." If the user interface is well-made, when the user hovers
-over a button, the mouse pointer will change shape to let the user know that there is an option
-for a "click" event to occur. </p>
-</blockquote>
-<h4>State Diagram</h4>
-
-<blockquote>
-  <p>Buttons typically have anywhere between two main states and possibly 2 substates, depending on the device being used. 
-The states are as follows: <code>static</code>, <code>disabled</code>, <code>hover</code>, and <code>active</code>. </p>
-
-  <p>In the <code>static</code> state, which is the idle or enabled state, the button is ready to be clicked. The <code>disabled</code>
-state is that in which the user is not interacting with a button, or if the button has already been clicked it may not be clicked 
-again. </p>
-
-
-  <p>When a button is in it's <code>static</code> state, additional states may be triggered. They are: </p>
-  <ul>
-  <li><code>hover</code>: This is the state in which the mouse hovers over the button and either changes the button's color or the pointer's shape
-to let the user know that the button is ready to be clicked.</li>
-
-  <li><code>active</code>: This state occurs when a button has already been triggered, or clicked and is attempting to complete it's
-action. </li>
-</ul>
-
-  <img src = "http://www.howdesign.com/wp-content/uploads/8_buttons1.png">
-</blockquote>
-<h4>Component in Action</h4>
-
-<blockquote>
-
-  <p>For components that are available on a web platform, you can embed an actual component right here, such as:</p>
-</blockquote>
-
-<p class="text-center">
-  <button class="btn btn-default">OK</button>
-  <button class="btn btn-default disabled">Disabled</button>
-  <button class="btn btn-success">Success</button>
-  <button class="btn btn-danger">Delete</button>
-</p>
-
-  </div>
-
-<div class = "row">
-  <div class="col-xs-6">
-<h3>Variants</h3>
-
-<blockquote>There are many variations of buttons, there isn't just one type. There are 3 main variations and they are as
-follows: </blockquote>
-
-<ul>
-  <li><em>Buttons</em> indicate an action upon touch and are typically labeled using a text, icon or both.
- are very close to buttons in behavior—they perform individual action elements upon simple
-    invocation by a user. However, they belong to a broader context/structure of a menu, and look sufficiently
-    different that they are both conceptually and programmatically viewed as distinct from buttons.</li>
-
-  <li><em>Dropdown Buttons</em> consist of a button that when clicked displays a drop-down list of mutually exclusive items. 	
-	They sometimes resemble a menu and are sometimes referred to as Menu Buttons. 
-      <p>
-         <img src= "dropdown.jpg" WIDTH=80 HEIGHT=80> </p>
-     
-  
-  <li><em>Toggles</em> allow the user to change a setting between two different states. Toggle buttons are most effective 
-  when the on/off states are visually distinct. 
-     <div class="container">
-        <label class="switch">
-         <input type="checkbox" class="switch-input">
-         <span class="switch-label" data-on="On" data-off="Off"></span>
-         <span class="switch-handle"></span>
-        </label>
-  
-  <li><em>Links</em> allow the user to navigate to a different page with just the one click. Links are very easily 
-distinguishable from other buttons because they are usually underlined, blue, and when a mouse pointer hovers over them
-the mouse becomes a hand icon. </li> 
-<a href="www.yahoo.com">www.yahoo.com</a>
-</ul>
-
-<h3>Priority Metrics</h3>
-<blockquote>
-<p>Learnability/Memorability: Buttons are basically a part of every single user interface used today. Because of this buttons should on the most part
-be universal. As mentioned above, the typical appearance of a button is a simple shape with some text or an icon inside of it.
-Since buttons are typically the same throughout all platforms, it should not be difficult for users to be able to figure
-out how to use buttons. 
-</p>
-
-<p>Efficiency/Errors: Each button has one action to complete, thus once clicked the action should be performed fairly quickly. 
-There should be no delay or too much time waste from the time where the user knows what they want to do and when they actually 
-click the button. Relating to that, buttons should be well-labeled and in a position where users will not accidentally mistake
-one button for another. For example, everyone knows the placement of the OK and CANCEL buttons, so if one platform were to decide
-to switch those, a lot of users would do the wrong action. 
-</p>
-
-<p>Satisfaction: Users do not really find any satisfaction in clicking buttons so this metric is not completely applicable to 
-buttons. On the other hand, sometimes buttons do crazy things, for example, Google's "I'm feeling lucky" button sometimes shows 
-fireworks on the screen, but it won't do that every time. Besides that, satisfaction does not really apply. </p>
-</blockquote>
-<blockquote>
-<h4>Feedback</h4>
-
-<p>Perhaps the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
-  never doubt whether:</p>
-
-<ol>
-  <li>they did positively trigger a button (and thus its associated action)</li>
-  <li>they successfully <em>cancelled</em> the triggering of a button, due to changing their minds midway through
-    the action that triggers the button</li>
-</ol>
-  </div>
-
-</blockquote>
-<h3>Platform-Specific Instances</h3>
-
-<blockquote> 
-<h3>Windows 10 </h3>
-
-  <p>As mentioned above, even for Windows 10 buttons, buttons are typically rectangular but sometimes may either have mildly 
-rounded corners or really sharp edges. The default button has a blue dotted line around it. Windows also tends to draw attention 
-to more important buttons by either highlighting or making the button bigger. 
-</p>
-
-  <p>Typically the EXIT, MINIMIZE, and MAXIMIZE controls are all at the upper right hand corner of the window. </p>
-
-  <p>Windows also color-codes a lot of their buttons. For example, RED will be used for <code>SHUT DOWN</code> because RED is a 
-danger color and lets the user know that once they click that button there is no going back. YELLOW will be used for <code>LOG OFF</code>
-warning the user that this is a semi-critical button. Then there are other buttons such as HELP that are a soft blue color 
-because pressing them will not do anything to your program. 
-
-<p> Windows has recently created a completely different way to display buttons, applications and commands on their screen. Clicking one
-one of these buttons will navigate the user to a different page.</p>
- 
-<img src= "http://www.windows10beta.net/wp-content/uploads/2015/03/Windows-8-User-Interface-600x375.png">
-
-
-
-<h3>Credits &amp; References</h3>
-
-<blockquote>
-<p>http://usabilitypost.com/2009/04/15/8-characteristics-of-successful-user-interfaces/#efficient</p>
-
-<p>http://foundation.zurb.com/docs/components/dropdown_buttons.html</p>
-
-<p>http://www.howdesign.com/web-design-resources-technology/helping-users-navigate-websites/</p>
-
-</blockquote>
-
-
-
-<hr>
-
-
-
-<h3> Mac OS X Buttons </h3>
-
-<head><em>Buttons are probably the most common and useful graphical user interface element found in the Mac OS X interface</em></head>
-
-<p class="lead"></p>
-
-<h4>Typical Appearance</h4>
-  <blockquote><font size="2">There are various types of buttons found throughout the Mac OS X interface, each providing a useful function. Examples of these buttons are shown in the following</font></blockquote>
-
-<h4>Variants of Buttons</h4>
-	<div class="row">
-  <div class="col-xs-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Push Buttons</h4>
-      </div>
-      <div class="panel-body">
-        <div class="row"> 
-          <div class="col-sm-4">
-            <left>
-              <img src="https://i.gyazo.com/523757cf9a1ad652d7b1a6c36642d78c.png" width="150"></img>
-              <br></br>
-              <br></br>
-              <img src="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/Art/push_buttons_2x.png" height="200" width="150"></img>
-            </left>
           </div>
-          <right>
-            <blockquote><font size="2"><ul>
-              <li>Push buttons in OSX are meant to be used specifically in the window body only and always contain text, never an image.</li>
-              <li>By default, Mac OSX buttons are white unless it is the default button in a dialog window, in which case it is light blue</li>
-              <li>Push buttons are also meant to be used to perform an instantaneous action, such as Print, Delete, or Open (In these cases, the push buttons are also blue).</li>
-              <li>Push buttons should NEVER mimic the behavior of other controls. This is because push buttons are meant to give an immediate reaction when the user clicks a push button.</li>
-              <ul>
-                <li>Push buttons shouldn't indicate a state such as on or off. Instead, checkboxes should be used</li>
-                <li>Push buttons also shouldn't be used as a label or a menu</li>
-              </ul>
-            </ul>
-          </right>
-        </font>
-          </blockquote>
-      </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-xs-6 ">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Radio</h4>
-      </div>
-      <div class="panel-body">
+          <div class="col-sm-6">
+        <h3>Variants</h3>
+
+        <blockquote> Buttons are some of the most versatile and widely used interface components. They indicate an action upon touch, and are typically labeled using a text icon or both. Some of the most significant variances in button function are as follows:</blockquote>
+
+        <ul>
+          <li><em>Check Boxes</em>  function almost identically to buttons, with an additional set of states. These additional states indicate whether or not the check box has been checked or not. Things like <code>hover</code> and <code>armed</code> are shared. In terms of function, check boxes are useful for visualizing options.</li>
+
+          <li><em>Links</em> allow the user to navigate to a different page with just the one click. Links function essentially as buttons, as they generally hold all the same states and rarely have any unique states. The distinction here is that a link is specifically made to navigate to a different display from the one the link exists on. Links are very easily distinguishable from other buttons because they are usually underlined, blue, and when a mouse pointer hovers over them the mouse becomes a hand icon.</li>
+
+          <li><em> Dropdown Buttons</em> display a drop-down list of mutually exclusive items. They sometimes resemble a menu and can be referred to as Menu Buttons. </li>
+
+          <li><em>Toggles</em> allow the user to change a setting between two different states. Toggle buttons are most effective when the on/off states are visually distinct.</li>
+        </ul>
+
+        <h3>Priority Metrics</h3>
+        <ul>
+          <li><em> Learnability/Memorability: </em> Buttons are an essential part of most modern digital user interface used today. Because of this buttons should universally similar in function and appearance. As mentioned above, the typical appearance of a button is a simple shape with some text or an icon inside of it. Since buttons are typically the same throughout all platforms, it should not be difficult for users to be able to figure out how to use nor identify them.</li>
+          <li><em> Efficiency/Errors: </em>  Each button has one action to complete, thus once clicked the action should be performed fairly quickly. There should be no delay or too much time waste from the time where the user knows what they want to do and when they actually click the button. Relating to that, buttons should be well-labeled and in a position where users will not accidentally mistake one button for another. For example, everyone knows the placement of the OK and CANCEL buttons, so if one platform were to decide to switch those, a lot of users would do the wrong action.</li>
+          <li><em> Satisfaction:</em> Users do not really find any satisfaction in clicking buttons so this metric is not completely applicable to buttons. On the other hand, sometimes buttons do crazy things, for example, Google's "I'm feeling lucky" button sometimes shows fireworks on the screen, but it won't do that every time. Besides that, satisfaction does not really apply unless a certain button has a special function.</li>
+        </ul>
+
+        <h3>Key Characteristics</h3>
+
+        <p>According to Google, buttons can hold different design characteristics based upon the significance they hold in comparison to the content surrounding the button. For example, adding a <em>raised</em> effect to the button or adding a shadow to it for a 3D effect can make it more pronounced. See the below images for examples.</p>
         <center>
-          <img src="https://i.gyazo.com/2458883edb1722daa8b1ddd5fdca854c.png"></img>
+          <img src="FlatButton.png" width="200" height="300"></img>
+          <img src="RaisedButton.png" width="200" height= "300"></img>
         </center>
-        <blockquote>
-          <font size="2">
-            <ul>
-              <li>Radio buttons are used to display a group of mutulally exclusive, but related, choices</li>
-              <li>The content and labels of radio buttons don't change depending on the context nor do they display customs texts or images</li>
-              <li>Radio buttons should contain a text label to describe the choice it represents. This should be implemented in because Users need to know exactly what they're choosing.</li>
-              <li>Unlike checkboxes, radio buttons should be use ONLY if the user is picking multiple choice at the same time. Radio buttons should only be used for selecting 1 option</li>
-              <li>When it comes to labeling and arranging radio buttons, each one should contain a text label that describes the choice it represents and alos have a consistent amount of spacing between each one</li>
-            </ul>
-          </font>
+        <h4>Feedback</h4>
+
+        <p>By far the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
+          never doubt whether:</p>
+
+        <ol>
+          <li>they did positively trigger a button and are thus the device is going to perform the appropriate action</li>
+          <li>they successfully <em>cancelled</em> the triggering of a button, and subsequentially the button's resulting function will not take place</li>
+        </ol>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="Android">
+        <h3>Platform-Specific Instances</h3>
+
+        <h3>CyanogenMod 12.1 based on Android 5.1.1 Lollipop</h3>
+        <p>On CyanogenMod 12.1, buttons are fully compliant with Google's material design. They are generally very simple and clean, using vibrant colors to stand out on the screen. They are almost always either simple shapes such as rectangles or circles, and use graphics on the buttons to make it clear what function will be performed after pressing the buttons.</p>
+
+        <div class ="media-embed"><img src="ScreenshotCalander.png" alt="Calander"></div>
+        <p>Here is an example of the simple, yet vibrant button design in the calander application.</p>
+
+        <p>Unlike devices that utilice peripherals for input such as mice and styluses, most Android based devices operate fully based upon touch input. The difference this makes is that there can be no hover state for buttons. Conversely, touch input allows for a new state that the other systems do not, which is hold. In CM 12.1, when holding a button, if the button has a secondary function, this is how it is accessed. This will usually include such things as advanced options, or a popup containing a context-sensitive menu. For buttons that do not have such features, holding the button will cause it to highlight, and a circle will expand from the point of contact with the screen to cover the whole button. This provides a pleasant visualization that makes it clear that the touch has been registered, and also adds a nice boost to the satisfaction usability metric.</p>
+
+        <div class ="media-embed"><img src="ScreenshotHighlight1.png" alt="Highlight1" class="img-responsive"></div>
+
+        <p>Here you can see an example of the Android Version button being held down, and is therefore being highlighted and you can see the circle blooming across the surface of the button.</p>
+
+        <div class ="media-embed"><img src="ScreenshotHighlight2.png" alt="Highlight2" class="img-responsive"></div>
+
+        <p>Here you can see the gear button in the top of the image being selected, and is subsequentially being highlighted to visualize the fact that it is being activated.</p>
+
+        <div class ="media-embed"><img src="ScreenshotHome.png" alt="Home" class="img-responsive"></div>
+        <p>Here, the home button at the bottom in the middle has been held down, and an alternate button has popped up that will, in this case, bring you to the Google Now application, should the user choose to press on it.
+
+        <div class="row">
+          <div class="col-xs-6 col-sm-3">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Alto</h4>
+              </div>
+              <div class="panel-body">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-sm-3">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Amiga</h4>
+              </div>
+              <div class="panel-body">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-sm-3">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Material Design</h4>
+              </div>
+              <div class="panel-body">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-sm-3">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">watchOS</h4>
+              </div>
+              <div class="panel-body">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Credits &amp; References</h3>
+
+        <blockquote>Button1.gif: http://microsoft-news.com/ <br> https://www.google.com/design/spec/material-design/introduction.html <br>
         </blockquote>
       </div>
-    </div>
-  </div>
+      <div class="tab-pane fade" id="Windows">
+        <h3>Platform-Specific Instances</h3>
 
-  <div class="col-xs-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Check Box</h4>
-      </div>
-      <div class="panel-body">
-        <center>
-          <img src="https://i.gyazo.com/1e30fcf964ea830aeeee6a02f3df962d.png"></img>
-          <br></br>
-          <img src="https://i.gyazo.com/35532b86486f4de50b00c1b9b611f6d0.png"></img>
-        </center>
+        <blockquote> 
+        <h3>Windows 10 </h3>
+
+          <p>As mentioned above, even for Windows 10 buttons, buttons are typically rectangular but sometimes may either have mildly 
+        rounded corners or really sharp edges. The default button has a blue dotted line around it. Windows also tends to draw attention 
+        to more important buttons by either highlighting or making the button bigger. 
+        </p>
+
+          <p>Typically the EXIT, MINIMIZE, and MAXIMIZE controls are all at the upper right hand corner of the window. </p>
+
+          <p>Windows also color-codes a lot of their buttons. For example, RED will be used for <code>SHUT DOWN</code> because RED is a 
+        danger color and lets the user know that once they click that button there is no going back. YELLOW will be used for <code>LOG OFF</code>
+        warning the user that this is a semi-critical button. Then there are other buttons such as HELP that are a soft blue color 
+        because pressing them will not do anything to your program. 
+
+        <p> Windows has recently created a completely different way to display buttons, applications and commands on their screen. Clicking one
+        one of these buttons will navigate the user to a different page.</p>
+         
+        <img src= "http://www.windows10beta.net/wp-content/uploads/2015/03/Windows-8-User-Interface-600x375.png">
+
+
+
+        <h3>Credits &amp; References</h3>
+
         <blockquote>
-          <font size="2">
-            <ul>
-              <li>Checkboxes work like a toggle switch: they are used to describe a state, action, or value that can either be on or off.</li>
-              <li>Like radio buttons, checkboxes are used for choice selection. However, unlike the radio buttons, checkboxes are used to select more than one option or toggle a setting on or off (as shown in the picture above)</li>
-              <li>Checkboxes are also used to toggle other selections on or off. For example, in the second picture shown above, when a checkbox selection is unselected, other options such as the dropdown menu and the push button become disabled</li>
-              <li>Checkboxes should be arranged in a column. This makes it easier for users to distinguish states from one another</li>
-            </ul>
-          </font>
+        <p>http://usabilitypost.com/2009/04/15/8-characteristics-of-successful-user-interfaces/#efficient</p>
+
+        <p>http://foundation.zurb.com/docs/components/dropdown_buttons.html</p>
+
+        <p>http://www.howdesign.com/web-design-resources-technology/helping-users-navigate-websites/</p>
+
         </blockquote>
       </div>
-    </div>
-  </div>
-
-  <div class="col-xs-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Gradient Button</h4>
-      </div>
-      <div class="panel-body">
+     <div class="tab-pane fade" id="watchOS">
         <center>
-          <img src="https://i.gyazo.com/f2abbaebbb3211497893d0913e8172d1.png"></img>
+          <h3> Watch OS </h3>
+          <center>
+          <center> <head><em>A button performs an app-specific action. Buttons have customizable backgrounds and rounded corners. They can contain a label, an image, or a group object.</em></head>
+          </center>
+        <p class="lead"></p>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title text-center">Typical Appearance</h4>
+                </div>
+                <div align = "center" class="panel-body">
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <li>There are a few different button styles on the Apple watch. The most prevalent being rectangular buttons with rounded corners and the fully circular buttons; both are  as pictured below:</li>
+                      </ul>
+                    </font>
+                  </blockquote>
+                  <cemter> 
+                    <img src="IMG_3770.PNG" height="230" width="230"></img>    <img src="IMG_3771.PNG" height="230" width="230"</img>
+                  </cemter>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="row">
+          <div class="col-xs-12 ">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title text-center">Typical Behavior</h4>
+                </div>
+                <div class="panel-body">
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                         The functionality of buttons on the watchOS mirror the general button functions. They perform a function upon being pressed.
+                          Buttons generally are usually armed when pressed, but do not activate until the user releases his/her finger off the button.
+                        This allows for one to cancel the button activation by sliding the finger off the armed button instead of releasing. However, since the Apple watch’s primary input source is as touchscreen, buttons tend to sometimes have additional functions when held instead of clicked.
+                        When clicked watchOS buttons fade to provide feedback to the user.
+                      </ul>
+                    </font>
+                  </blockquote>
+                  <center>
+                  <figure>
+                    <img src="IMG_3772.PNG" height="230" width="230"></img>   <img src="FullSizeRender.png" height="230" width="230"></img>
+                    <figcaption> (The "scribble" button on the left is inactive, while the right picture is the scribble in its hold state.)</figcaption>
+                    </figure>
+                  </center>
+                </div>
+              </div>
+            </div>
+            </div>
+             <div class="row">
+            <div class="col-xs-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title text-center">Variants: </h4>
+                </div>
+                <div class="panel-body">
+                 <blockquote>
+                      <font size="2">
+                        <ul>
+                          <li> There are less variation of button types on watchOS because of the small screen of the apple watch. Certain buttons like drop down menus, or check boxes are not practical because of the less precise touch input instead of something like a mouse. However, there are two variations that are the most common on watch OS. 
+                          </li>
+                        </ul>
+                      </font>
+                    </blockquote>
+                  <blockquote>
+                      <font size="2">
+                        <ul>
+                          <li> <code>Toggle Buttons:</code> Toggle Buttons: These buttons when clicked stay activated or “toggled” state until clicked again to deactivate. This is can be seen with the silent button where red means it has been toggled.
+                          </li>
+                        </ul>
+                      </font>
+                    </blockquote>
+                  <center>
+                  <figure>
+                    <img src="IMG_3769.PNG" height="230" width="230"></img>
+                    <figcaption> (The red buttons indicates a toggled button in its active state.)</figcaption>
+                    </figure>
+                  </center>
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <li><code>Switches:</code> Another common type of button is the switch. This has the same function as the toggle button and remain active as long as they are enabled, but they have switch like appearance. The switch is active when it is on the right revealing the green.</li>
+                      </ul>
+                    </font>
+                  </blockquote>
+                  <center>
+                  <figure>
+                  <img src="IMG_3780.PNG" height="230" width="230"></img>
+                   <figcaption> (Example of an active switch.)</figcaption>
+                    </figure>
+                  </figure>
+                    
+                  </center>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title text-center">Key Characteristics: </h4>
+                </div>
+                <div class="panel-body">
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <li>The most effective buttons are the ones that are simple, and do their function seamlessly with the rest of the application. This is especially important with the watchOS because the apple watch has a small touchscreen. This makes it even more important than usual to have well designed buttons that have a quick response time. This is because most of the user inputs are quick touches, and need to be designed to be easily and quickly pressed on the wrist of the user. Certain buttons such as radio buttons appear on most other platforms, but do not appear on WatchOS because they are impractical for the small sized screen. Lastly, clear labeling of buttons (whether in text or image form) are imperative for fast identification of said button.</li>
+                      </ul>
+                    </font>
+                  </blockquote>
+                  <div class"media-embed">
+                    <center>
+                    <figure>
+                      <img src="giphy.gif" alt="Button gif 1" class="img-responsive" width= "350" height="350"></img>
+                      <figcaption>(Here is an example of a typical button click interaction.)</figcaption>
+                      </figure>
+                    </center>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title text-center">Priority Metrics:</h4>
+                </div>
+                <div class="panel-body">
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <li><code>Learnability/Memorability:</code>  As described in the appearance section WatchOS buttons generally take the same curved shape, (whether rectangular or circular) and are either clearly labeled with text or an image. This allows new users that are familiar with other apple operating systems to quickly identify the function of particular buttons.</li>
+                        <li><code>Efficiency/Errors:</code> These are arguably the most important metrics for buttons. This is because buttons are functional by nature, and their functionality is the number one priority. WatchOS’s use of clearly labeled buttons that all possess a rounded shape helps users quickly recognize them. Additionally, users that are familiar other apple products will already recognize some of the buttons. This leads to both an increase in efficiency and lowers number of errors.</li>
+                        <li><code>Satisfaction:</code> Just like on most platforms, the satisfaction metric is less of a concern for buttons on WatchOS. It is more important to make the button efficient and work correctly. </li>
+                      </ul>
+                    </font>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title text-center">Sources</h4>
+                </div>
+                <div class="panel-body">
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <li>All of Apple’s watchOS’s interface guidelines can be found here:  <a href="https://developer.apple.com/watchos/human-interface-guidelines/"> https://developer.apple.com/watchos/human-interface-guidelines/</a></li>
+                        <li>Introduction to different types of buttons can be found: <a href="https://uxplanet.org/button-ux-design-best-practices-types-and-states-647cf4ae0fc6#.2hjbyiue8"> https://uxplanet.org/button-ux-design-best-practices-types-and-states-647cf4ae0fc6#.2hjbyiue8</a></li>
+                      </ul>
+                    </font>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+      <div class="tab-pane fade" id="iOS10">
+<center>
+          <h3> iOS 10 </h3>
+          <center>
+          <center> <head><em>A button performs an app-specific action. Buttons have customizable backgrounds and rounded corners. They can contain a label, an image, or a group object. iOS 10 has made major steps to move away from the use typical buttons. iOS 10 relies heavily on new technologies such as 3Dtouch and gesture orientated navigation. These technologies can replace buttons in many areas of the operating system. However, There are many variants of the button still used in iOS 10. iOS 10 still relies on buttons to perform all of the necessary actions and has very specific guidelines for developers to follow. </em></head>
+          </center>
+        <p class="lead"></p>
+            <div class="col-xs-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title text-center">Typical Appearance</h4>
+                </div>
+                <div align = "center" class="panel-body">
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <p>
+                           iOS 10 buttons are always round, rectangular with rounded corners, or an indistinguishable shape (clear background with a title). All iOS 10 buttons have customizable backgrounds, titles, and icons. Apple's libraries provide a large amount of predefined button styles for almost every use case. If Apple's system does not cover a developer specific button use, the developer can design custom buttons. Even then, there are design guidelines to follow. All iOS 10 buttons contain very simple icons with or without capitalized titles, or only capitalized titles. The background color for buttons can differ depending on how the button is being used. In-app buttons tend to have no background color and a distinct title color. Buttons that layer on top of the application will have an white opaque background color. iOS 10 also uses simple border colors with a clear background for some of the buttons. 
+                        </p>
+                      </ul>
+                    </font>
+                  </blockquote>
+                  <cemter> 
+                    <img src="iOS10Buttons/IMG_1856.PNG" height="222" width="125"></img>  <img src="iOS10Buttons/IMG_1861.PNG" height="222" width="125"></img>  <img src="iOS10Buttons/IMG_1857.PNG" height="222" width="125"</img>
+                  </cemter>
+                </div>
+              </div>
+            </div>
+          <div class="col-xs-6 ">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title text-center">Typical Behavior</h4>
+                </div>
+                <div class="panel-body">
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <li> The functionality of buttons in iOS 10 mirror the general button functions; they perform a function upon being pressed. The Apple guidlines stress making the buttons action clear through the design.</li>
+                        <li>Buttons are armed when pressed, but do not activate until the user releases his/her finger off the button. This allows for one to cancel the button activation by sliding the finger off the armed button instead of releasing. Since the Iphone's primary input source is as touchscreen, buttons tend to sometimes have additional functions when held instead of clicked. With the introduction of 3Dtouch, most iOS 10 buttons have another layer of functionality when pressed down with force.</li>
+                        <li>When clicked, iOS 10 buttons activate an animation to provide feedback to the user input.</li>
+                      </ul>
+                    </font>
+                  </blockquote>
+                  <center>
+                    <img src="iOS10Buttons/IMG_1859.PNG" height="222" width="125"></img>  <img src="iOS10Buttons/IMG_1860.PNG" height="222" width="125"></img>  <img src="iOS10Buttons/IMG_1858.PNG" height="222" width="125"></img>
+                  </center>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title text-center">Variants: </h4>
+                  </div>
+                  <div class="panel-body">
+                    <blockquote>
+                        <font size="2">
+                          <ul>
+                            <li> <code>System Buttons:</code> Toggle Buttons: These buttons when clicked stay activated or “toggled” state until clicked again to deactivate. This is can be seen with the silent button where red means it has been toggled.
+                            </li>
+                          </ul>
+                        </font>
+                    </blockquote>
+                    <center>
+                      <img src="iOS10Buttons/system_button_2x.png" height="278" width="312"></img>
+                    </center>
+                    <blockquote>
+                      <font size="2">
+                        <ul>
+                          <li><code>Detail Disclosure and Info Buttons:</code> Another common type of button is the switch. This has the same function as the toggle button and remain active as long as they are enabled, but they have switch like appearance. The switch is active when it is on the right revealing the green.</li>
+                        </ul>
+                      </font>
+                    </blockquote>
+                    <center>
+                      <img src="iOS10Buttons/detail_disclosure_2x.png" height="278" width="312"></img> <img src="iOS10Buttons/info_button_2x.png" height="278" width="312"></img>
+                    </center>
+                    <blockquote>
+                      <font size="2">
+                        <ul>
+                          <li><code>Segmented Controls:</code> Another common type of button is the switch. This has the same function as the toggle button and remain active as long as they are enabled, but they have switch like appearance. The switch is active when it is on the right revealing the green.</li>
+                        </ul>
+                      </font>
+                    </blockquote>
+                    <center>
+                      <img src="iOS10Buttons/segmented_controls_2x.png" height="278" width="312"></img>
+                    </center>
+                    <blockquote>
+                      <font size="2">
+                        <ul>
+                          <li><code>Switches:</code> Another common type of button is the switch. This has the same function as the toggle button and remain active as long as they are enabled, but they have switch like appearance. The switch is active when it is on the right revealing the green.</li>
+                        </ul>
+                      </font>
+                    </blockquote>
+                    <center>
+                      <img src="iOS10Buttons/switches_2x.png" height="278" width="312"></img>
+                    </center>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title text-center">Key Characteristics: </h4>
+                </div>
+                <div class="panel-body">
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <li>The most effective buttons are the ones that are simple, and do their function seamlessly with the rest of the application. This is especially important with the watchOS because the apple watch has a small touchscreen. This makes it even more important than usual to have well designed buttons that have a quick response time. This is because most of the user inputs are quick touches, and need to be designed to be easily and quickly pressed on the wrist of the user. Lastly, clear labeling of buttons (whether in text or image form) are imperative for fast identification of said button.</li>
+                      </ul>
+                    </font>
+                  </blockquote>
+                  <div class"media-embed">
+                    <center>
+                      <img src="iOS10Buttons/ios10button.gif" alt="Button gif 1" class="img-responsive" width= "562" height="657"></img>
+                    </center>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title text-center">Priority Metrics:</h4>
+                </div>
+                <div class="panel-body">
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <li><code>Learnability/Memorability:</code>  As described in the appearance section WatchOS buttons generally take the same curved shape, (whether rectangular or circular) and are either clearly labeled with text or an image. This allows new users that are familiar with other apple operating systems to quickly identify the function of particular buttons.</li>
+                        <li><code>Efficiency/Errors:</code> These are arguably the most important metrics for buttons. This is because buttons are functional by nature, and their functionality is the number one priority. WatchOS’s use of clearly labeled buttons that all possess a rounded shape helps users quickly recognize them. Additionally, users that are familiar other apple products will already recognize some of the buttons. This leads to both an increase in efficiency and lowers number of errors.</li>
+                        <li><code>Satisfaction:</code> Just like on most platforms, the satisfaction metric is less of a concern for buttons on WatchOS. It is more important to make the button efficient and work correctly. </li>
+                      </ul>
+                    </font>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title text-center">Sources</h4>
+                </div>
+                <div class="panel-body">
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <li>All of Apple’s watchOS’s interface guidelines can be found here:  <a href="https://developer.apple.com/watchos/human-interface-guidelines/"> https://developer.apple.com/watchos/human-interface-guidelines/</a></li>
+                        <li>Introduction to different types of buttons can be found: <a href="https://uxplanet.org/button-ux-design-best-practices-types-and-states-647cf4ae0fc6#.2hjbyiue8"> https://uxplanet.org/button-ux-design-best-practices-types-and-states-647cf4ae0fc6#.2hjbyiue8</a></li>
+                      </ul>
+                    </font>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+      </div>
+
+      <div class="tab-pane fade" id="Ubuntu">
+        <center>
+          <h3>Ubuntu 16.04.1 LTS Unity (Xenial Xerus) </h3>
         </center>
-        <blockquote>
-          <font size="2">
-            <ul>
-              <li>Gradient buttons perform instantaneous actions related to view, such as a source list</li>
-              <li>Gradient buttons can contain push buttons, toggles, or popup menu behavior.</li>
-              <li>Unlike other buttons such as the radio button or the push button, gradient buttons only contain images. NOT text</li>
-              <li>Gradient buttons are also used to offer functionality that is closely tied to a particular action without the need to include text.</li>
-              <li>To make gradient buttons more user friendly, it is better to use system provided images as gradient buttons as they are more familiar to the user.</li>
-            </ul>
-          </font>
-        </blockquote>
+        <center>
+          <head><em>A button performs an app-specific action. Buttons have customizable backgrounds and rounded corners. They can contain a label, an image, or a group object.</em></head>
+        </center>
+        <p class="lead"></p>
+          <div class="col-xs-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Typical Appearance</h4>
+              </div>
+              <div class="panel-body">
+                <blockquote>
+                  <font size="2">
+                    <ul>
+                      <li>There are various types of buttons found throughout the Ubuntu interface, each providing a useful function.The most widely used button of them all however,  is a box with slightly rounded edges. Examples of these buttons are shown below: 
+                      </li>
+                    </ul>
+                  </font>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 ">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Typical Behavior</h4>
+              </div>
+              <div class="panel-body">
+                <blockquote>
+                  <font size="2">
+                    <ul>
+                      <li>For most buttons, when the cursor is hovered over the button, there is a slim orange line around the outer rim of the button that appears.
+                      </li>
+                      <li>When the button is actually clicked, there is a greyish hint to the actual button, sort of as a flash and then goes away when you are redirected to where the button takes you. 
+                      </li>
+                   </ul>
+                  </font>
+                </blockquote>
+                <center>
+                  <img src="behavior.gif" alt="Button gif 2" class="img-responsive" width= "315" height="315"></img>
+                </center>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Key Characteristics</h4>
+              </div>
+              <div class="panel-body">
+                <blockquote>
+                  <font size="2">
+                    <ul>
+                      <li><code>Key Characteristics:</code> Ubuntu push buttons have a clean initial look and form a visually appealing colorful outer rim when pressed or in some cases hovered over. This type of button is easily recognizeable and holds in it plain text of the buttons function. Radio buttons are different because they are only mainly when you want to select only one of the multiple options. Just as with check boxes, when radio buttons are pressed they highlight the text of the current selection and make the user feel like the whole section is selected (when the radio button/check box selected, the text is also highlighted next to it). This can ultimately distract the user when in reality all you need to do is see the radio button or check box get selected to make it more clean, however,m this is not the case with Ubuntu Unity.
+                      </li>
+                    </ul>
+                  </font>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title text-center">Variants</h4>
+                </div>
+                <div class="panel-body">
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <li> <code>Push Buttons:</code> Push Buttons for Ubuntu there is one widely used button that is white and rectangular with rounded edges. When clicked this button gets an orange color around the outer edge of the button and stays this way until the buttons function takes us to the next area. Below are two examples of such a button:</li>
+                      </ul>
+                    </font>
+                  </blockquote>
+                  <center>
+                    <img src="PushButton.png" height="250" width="250"></img>  <img src="PushButton2.png" height="250" width="250"></img>
+                  </center>
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <li><code>Radio Buttons</code> Radio buttons are used to display a group of mutually exclusive, but related, choices.Radio buttons should contain a text label to describe the choice it represents. This should be implemented in because users need to know exactly what they're choosing.Unlike checkboxes, radio buttons should be used ONLY if the user is picking multiple choice at the same time. Radio buttons should only be used for selecting 1 option. In the case of Ubuntu, there appears a highlighted orange-tinted box behind the text of the option being currently selected.</li>
+                      </ul>
+                    </font>
+                  </blockquote>
+                  <center>
+                    <img src="LeftRight.png" height="250" width="250"></img>
+                  </center>
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <li><code>Check Boxes</code> Checkboxes work like a toggle switch: they are used to describe a state, action, or value that can either be on or off. Like radio buttons, checkboxes are used for choice selection. However, unlike the radio buttons, checkboxes are used to select more than one option or toggle a setting on or off. Some checkboxes are arranged in a column, however, as show in the picture below they are used horizontal from one another. As in the radio buttons, there appears a highlighted orange-tinted box behind the text of the option being currently selected but can never be highlighted both at once because it follows the last click</li>
+                      </ul>
+                    </font>
+                  </blockquote>
+                  <center>
+                    <img src="CheckBoxes.png" height="250" width="250"></img>
+                  </center>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title text-center">Priority Metrics</h4>
+                </div>
+                <div class="panel-body">
+                  <blockquote>
+                    <font size="2">
+                      <ul>
+                        <li><code>Learnability/Memorability:</code>   Learnability/Memorability: Since the button is such a fundamental part of virtually every user interface available today, it can be argued that all usability metrics are equally important for this component. It is almost expected that when users who are seeing a button in a given platform for the first time, should not have any issues recognizing the button and knowing what to do with it (learnability). The high priority of learnability also implies that memorability is a given as well as the overall look helps with memorability if it is unique in its own way.
+                        </li>
+                        <li><code>Efficiency/Errors:</code>Users must also never experience undue delays with using a button (efficiency), particularly because using a button almost always involves an instantaneous, immediate-result action. Buttons have been almost perfected on other platforms, so there is a general expectation that a button will execute its’ function quickly and accurately. When a user doesn’t receive this they will get frustrated. Users should almost never trigger a button by mistake (errors)—especially buttons whose actions result in significant changes to data or the real world. This can be prevented by having backup messages after a button is clicked to make sure that the user is aware of their press and if they want to continue with it.
+                        </li>
+                        <li><code>Satisfaction:</code>If any metric at all can be considered as a “low priority” for buttons, it would be satisfaction. The button is such a utilitarian component that “fun” or “enjoyment” is hardly associated with its use. One exception to this prioritization may be for buttons in applications whose primary metric is satisfaction (e.g., games, entertainment). As a part of that overall system, making buttons “fun” may then become more important than in other situations. Overall, satisfaction for buttons is one of those situations where people expect the button to perform a function, and if there is any stray from the expected performance of that button click, the satisfaction goes down.</li>
+                      </ul>
+                    </font>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Sources</h4>
+              </div>
+              <div class="panel-body">
+                <blockquote>
+                  <font size="2">
+                    <ul>
+                      <li>All of Apple’s watchOS’s interfance guidlines can be found her: <a href="https://developer.apple.com/watchos/human-interface-guidelines/"> https://developer.apple.com/watchos/human-interface-guidelines/</a></li>
+                      <li>Introduction to different types of buttons can be found: <a href="https://uxplanet.org/button-ux-design-best-practices-types-and-states-647cf4ae0fc6#.2hjbyiue8"> https://uxplanet.org/button-ux-design-best-practices-types-and-states-647cf4ae0fc6#.2hjbyiue8</a></li>
+                    </ul>
+                  </font>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="tab-pane fade" id="MacOSX">
+        <h3> Mac OS X Buttons </h3>
+
+        <head><em>Buttons are probably the most common and useful graphical user interface element found in the Mac OS X interface</em></head>
+
+        <p class="lead"></p>
+
+        <h4>Typical Appearance</h4>
+          <blockquote><font size="2">There are various types of buttons found throughout the Mac OS X interface, each providing a useful function. Examples of these buttons are shown in the following</font></blockquote>
+
+        <h4>Variants of Buttons</h4>
+          <div class="row">
+          <div class="col-xs-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Push Buttons</h4>
+              </div>
+              <div class="panel-body">
+                <div class="row"> 
+                  <div class="col-sm-4">
+                    <left>
+                      <img src="https://i.gyazo.com/523757cf9a1ad652d7b1a6c36642d78c.png" width="150"></img>
+                      <br></br>
+                      <br></br>
+                      <img src="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/Art/push_buttons_2x.png" height="200" width="150"></img>
+                    </left>
+                  </div>
+                  <right>
+                    <blockquote><font size="2"><ul>
+                      <li>Push buttons in OSX are meant to be used specifically in the window body only and always contain text, never an image.</li>
+                      <li>By default, Mac OSX buttons are white unless it is the default button in a dialog window, in which case it is light blue</li>
+                      <li>Push buttons are also meant to be used to perform an instantaneous action, such as Print, Delete, or Open (In these cases, the push buttons are also blue).</li>
+                      <li>Push buttons should NEVER mimic the behavior of other controls. This is because push buttons are meant to give an immediate reaction when the user clicks a push button.</li>
+                      <ul>
+                        <li>Push buttons shouldn't indicate a state such as on or off. Instead, checkboxes should be used</li>
+                        <li>Push buttons also shouldn't be used as a label or a menu</li>
+                      </ul>
+                    </ul>
+                  </right>
+                </font>
+                  </blockquote>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 ">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Radio</h4>
+              </div>
+              <div class="panel-body">
+                <center>
+                  <img src="https://i.gyazo.com/2458883edb1722daa8b1ddd5fdca854c.png"></img>
+                </center>
+                <blockquote>
+                  <font size="2">
+                    <ul>
+                      <li>Radio buttons are used to display a group of mutulally exclusive, but related, choices</li>
+                      <li>The content and labels of radio buttons don't change depending on the context nor do they display customs texts or images</li>
+                      <li>Radio buttons should contain a text label to describe the choice it represents. This should be implemented in because Users need to know exactly what they're choosing.</li>
+                      <li>Unlike checkboxes, radio buttons should be use ONLY if the user is picking multiple choice at the same time. Radio buttons should only be used for selecting 1 option</li>
+                      <li>When it comes to labeling and arranging radio buttons, each one should contain a text label that describes the choice it represents and alos have a consistent amount of spacing between each one</li>
+                    </ul>
+                  </font>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Check Box</h4>
+              </div>
+              <div class="panel-body">
+                <center>
+                  <img src="https://i.gyazo.com/1e30fcf964ea830aeeee6a02f3df962d.png"></img>
+                  <br></br>
+                  <img src="https://i.gyazo.com/35532b86486f4de50b00c1b9b611f6d0.png"></img>
+                </center>
+                <blockquote>
+                  <font size="2">
+                    <ul>
+                      <li>Checkboxes work like a toggle switch: they are used to describe a state, action, or value that can either be on or off.</li>
+                      <li>Like radio buttons, checkboxes are used for choice selection. However, unlike the radio buttons, checkboxes are used to select more than one option or toggle a setting on or off (as shown in the picture above)</li>
+                      <li>Checkboxes are also used to toggle other selections on or off. For example, in the second picture shown above, when a checkbox selection is unselected, other options such as the dropdown menu and the push button become disabled</li>
+                      <li>Checkboxes should be arranged in a column. This makes it easier for users to distinguish states from one another</li>
+                    </ul>
+                  </font>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Gradient Button</h4>
+              </div>
+              <div class="panel-body">
+                <center>
+                  <img src="https://i.gyazo.com/f2abbaebbb3211497893d0913e8172d1.png"></img>
+                </center>
+                <blockquote>
+                  <font size="2">
+                    <ul>
+                      <li>Gradient buttons perform instantaneous actions related to view, such as a source list</li>
+                      <li>Gradient buttons can contain push buttons, toggles, or popup menu behavior.</li>
+                      <li>Unlike other buttons such as the radio button or the push button, gradient buttons only contain images. NOT text</li>
+                      <li>Gradient buttons are also used to offer functionality that is closely tied to a particular action without the need to include text.</li>
+                      <li>To make gradient buttons more user friendly, it is better to use system provided images as gradient buttons as they are more familiar to the user.</li>
+                    </ul>
+                  </font>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Help Button</h4>
+              </div>
+              <div class="panel-body">
+                <center>
+                  <img src="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/Art/help_button_2x.png"></img>
+                </center>
+                <blockquote>
+                  <font size="2">
+                    <ul>
+                      <li>The help button is always designated as a clear, circular button with a question mark graphic.</li>
+                      <li>When pressed, the help button opens up a popup window that displays app-specific help.</li>
+                      <li>Help buttons should be used to perform the function of the standard Help button. A custom button should not be made in replacement</li>
+                      <li>In most windows found on OS X, the help button is always located on the bottom right corner. In dialog boxes that include push buttons such as "OK" and "Cancel", the help button is located on the bottom left of the window</li>
+                    </ul>
+                  </font>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">Sources</h4>
+              </div>
+              <div class="panel-body">
+                <blockquote>
+                  <font size="2">
+                    <ul>
+                    <li>All information on MAc OS X buttons, as well as other features found on OS X, can be found here: <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/ControlsButtons.html#//apple_ref/doc/uid/20000957-CH48-SW1"> https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/ControlsButtons.html#//apple_ref/doc/uid/20000957-CH48-SW1</a></li>
+                    </ul>
+                  </font>
+                </blockquote>
+              </div>
+            </div>
+          </div>        
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<div class="col-xs-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Help Button</h4>
-      </div>
-      <div class="panel-body">
-        <center>
-          <img src="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/Art/help_button_2x.png"></img>
-        </center>
-        <blockquote>
-          <font size="2">
-            <ul>
-              <li>The help button is always designated as a clear, circular button with a question mark graphic.</li>
-              <li>When pressed, the help button opens up a popup window that displays app-specific help.</li>
-              <li>Help buttons should be used to perform the function of the standard Help button. A custom button should not be made in replacement</li>
-              <li>In most windows found on OS X, the help button is always located on the bottom right corner. In dialog boxes that include push buttons such as "OK" and "Cancel", the help button is located on the bottom left of the window</li>
-            </ul>
-          </font>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-</div>
-
-<h3>Priority Metrics</h3>
-  <p>Because the button is such a fundamental part of virtually every user interface available today, it can be said that
-  all usability metrics are equally important for this component. Users who are seeing a button in a given platform for
-  the first time must not have any issues recognizing it and knowing what to do with it (learnability). The high
-  priority of learnability also implies that memorability is a given.</p>
-
-  <p>Users must also never experience undue delays with using a button (efficiency), particularly because using a button
-  almost always involves an instantaneous, immediate-result action. Users should almost never trigger a button by
-  mistake (errors)—especially buttons whose actions result in significant changes to data or the real world.</p>
-
-  <p>If any metric at all can be considered as a “low priority” for buttons, it would be satisfaction. The button is such
-  a utilitarian component that “fun” or “enjoyment” is hardly associated with its use. One exception to this
-  prioritization may be for buttons in applications whose primary metric is satisfaction (e.g., games, entertainment).
-  As a part of that overall system, making buttons “fun” may then become more important than in other situations.</p>
-
-<br></br>
-
-<h4>Source</h4>
-
-<p>All information on Mac OS X buttons, as well as other features found on OS X, can be found here: https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/ControlsButtons.html#//apple_ref/doc/uid/20000957-CH48-SW1 </p>
-
-

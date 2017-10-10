@@ -1,0 +1,241 @@
+---
+title: Persistent Storage
+layout: component
+contributors:
+    - name: Jay Patel
+      github: jbreaker1
+---
+
+<p class="lead"><b>Persistent storage is the idea of storage the keeps one's files safe. The user interface aspect of this must be done in a simple, and easy way so that the user can find their files. If one cannot find a file they need that could be predicament.</b></p>
+
+
+<div class="row">
+  <div class="col-sm-6">
+
+
+<h3>Typical Appearance</h3>
+
+
+<blockquote style="font-size:15px;">
+  <p>Persistent storage is just how it sounds, storage that persists. So when you turn off your computer the files don't just disappear, they reside in persistent storage and are accessible through various ways.</p>
+  <p>
+        In Mac OS X the main form for user interface for persistent storage is finder. The finder helps keep your files and folders there while the computer is on or off. </p>
+     <div class="col-md-12 col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Finder</h4>
+      </div>
+      <div class="panel-body">
+        <img class="center-block" SRC = "Images/finderPic.png" ALT = "picture of Finder" style="width:400px;height:228px;">
+      </div>
+    </div>
+  </div>
+  <p>
+    Another way to navigate through persistent storage is through the terminal. </p>
+    <div class="col-md-12 col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Terminal</h4>
+      </div>
+      <div class="panel-body">
+        <img class="center-block" SRC = "Images/Terminal.png" ALT = "picture of Terminal" style="width:400px;height:228px;">
+      </div>
+    </div>
+  </div>
+
+  <p>
+    Another way is through the _removable_ like when you have a usb inserted
+  </p>
+  <div class="col-md-12 col-md-12">
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Terminal</h4>
+      </div>
+      <div class="panel-body">
+        <img class="center-block" SRC = "Images/remove.png" ALT = "removeable image" style="width:400px;height:228px;">
+      </div>
+    </div>
+  </div>
+  </blockquote>
+
+
+<h3>Typical Behavior</h3>
+
+
+<blockquote style="font-size:15px;">
+  <p>Persistent storage typical behavior is that it can be accessed through  varies ways and exists throughout all platforms. When a person saves a file to store persistant storage is being used here. Another is when someone puts in a usb into the computer and either puts a file in the usb or takes a file out and wants to copy it to their desktop. The persistant storage is a place for files to exists and stay until accessed again.</p>
+</blockquote>
+
+
+<h4>Events</h4>
+
+<blockquote> Events that can be done through persistant storage </blockquote>
+<blockquote style="font-size:15px;">
+<p>A few basic events are finding a file, creating a file, deleting a file, copy and pasting a file, and drag and drop. Many of these events require an intermediary step that requires you to do something that technically isn't part of the persistent storage. An example is when you delete a file you have to right click the file first and then press the recycle button or something of the sort.</p>
+<p>Finding a file is pretty basic you can usually use a search bar or you can go to the location. You can do this multiple ways such as just looking through finder, in Mac, till you find the the file or doing it through the terminal. </p>
+<p> Creating a file is also pretty simple it usually just requires saving a file or downloading a file. Ex. Open a Microsoft file and write the words "Hello World" and then click Save As and save the file where you would like to save it.</p>
+<p>Deleting a file is again another easy event where a person usually right clicks the file and then presses "move to trash" or "Delete File" or one can also drag and drop the file into the thrash and it usually is move there.</p>
+<p>Copying and pasting a file is another way persistent storage works. One has to first copy the file then navigate through the persistent storage and then paste it where they want into the persistent storage. </p></blockquote>
+
+
+<h4>State Diagram</h4>
+
+
+<blockquote style="font-size:15px;">
+  <p>A state diagram indicating the actions and states of a user interface component.</p>
+  <div class="col-md-12 col-md-12">
+   <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">State Diagram</h4>
+      </div>
+      <div class="panel-body">
+        <img class="center-block" SRC = "Images/stateDiagram.png" ALT = "basic state Diagram" style="width:400px;height:228px;">
+      </div>
+    </div>
+  </div>
+  <p>And also, a state diagram implies, well, <em>states</em>. So be sure to describe them. Note also that there will
+    usually be overlap between a component’s events and its state diagram. A sufficiently detailed state diagram,
+    however, may have more activities than the “public” events that can be reported by a component.</p>
+</blockquote>
+
+
+<p>The state diagram is quite simple but can be changed so much. This is the most basic state diagram you can have for persistent storage. The first step is to having something one wants to keep in persistent storage. Then some intermediate steps take place such as copy and paste or something of that sort. The final step is actually keeping the file in persistent storage.</p>
+
+
+<h4>Component in Action</h4>
+
+
+<blockquote style="font-size:15px;">
+ <p>
+  The component is very behind the scenes and require other aspects of user interface to work well and the component is shown in action below under the platform specific instance tab. </p>
+</blockquote>
+</p>
+
+
+  </div>
+
+
+  <div class="col-sm-6">
+<h3>Variants</h3>
+
+
+<ul style="font-size:15px;">
+  <li><em>Databases</em> are a type of persistent storage. One can navigate through a database through various ways an example of one would be Giphy and using the search bar to go through the information and find the information one was looking for</li>
+  <li>Another variant of persistent storage is <em>iCloud<em> and how it stores data on servers.
+    If you own a iphone you most likely know what iCloud is, it backs up information on one's iphone. This is a type of persistent storage because it stores the data in a place where they can be accessed. The user interface aspect of this is just going to one's itune store and accessing their iCloud storage. </p>
+  <li>A usb is another source of persistent storage, but is unique in the sense that it's removable and you are able plug it in to get the information when necessary or get rid of information that one doesn't need or want by putting the files into the usb and then unplugging the usb.</li>
+</ul>
+
+
+<h3>Priority Metrics</h3>
+
+
+<blockquote>Talk about the five usability metrics in relation to this component. Not all components will have the same
+  metric priorities. For example:</blockquote>
+<p style="font-size:15px;">
+
+<p>Persistent storage does have a learnability curve. One must first learn where all the folder and files are located and when doing something such as saving or downloading where the file or folder is placed. Also if you were to do it through the terminal using the commands such as cd and ls to find and acquire the file wanted does requiring learning and memory to remember where everything is and where it can be accessed from. Which relates to the memorability metric because the more you are able to remember where the files are the easier it makes it to find and retrieve. Organization is key here in finding and accessing files quickly. </p>
+
+
+<p>A big usability metric for persistent storage is error. One should be able to navigate through the persistent storage without getting lost and be able to find files easily and quickly. If someone clicks "Downloads" and it takes them to a page that doesn't have the files that were downloaded that would be problematic. A person shouldn't have trouble with errors of finding data in persistent storage if the user interface component is well thoughout and simple. </p>
+
+
+<p> Satisfaction does not play a large part in persistent storage because persistent storage doesn't really bring satisfaction. It just helps one keep their data stored in a safe place and be able to access it when needed. I mean I guess without persistent storage it would be a pain so everyone is secretly satisfied by persistent storage without knowing it. </p> </p>
+
+<h3>Key Characteristics</h3>
+
+
+<blockquote>What makes persistant storage effective?</blockquote>
+
+
+<h4>Organization and guidelines</h4>
+<p style="font-size:15px;">
+<p>
+  For the finder make sure your app bundle has the correct filename extension. The Finder looks for the .app filename extension and treats your app appropriately when it finds it. The Finder also shows or hides the filename extension, depending on the state of the "Show all filename extensions" preference in the Advanced pane of Finder preferences.</p>
+
+  <p>Use an information property list to supply information to the Finder. The information property list (that is, an Info.plist file) is the standard place to store information about your app and document types. For information on what to put in this file, see Runtime Configuration Guidelines. </p>
+
+  <p>Add the appropriate filename extension to documents users can create in your app. Accurate filename extensions help ensure platform interoperability. You can also set a file type and optionally a creator type for a file, although this is not strictly necessary.</p>
+
+  <p>Avoid changing the creator type of existing documents. The creator type implies a distinct sense of ownership over a file. Your app can assign a creator type for files it creates, but it should not change creator types for documents that are created by other apps unless the user gives explicit consent. Note that the user can still associate files with a specific app by using the Info window.</p>
+  <p>Include a Quick Look generator if your app creates documents in an uncommon or custom format </p> </p>
+</p>
+</blockquote>
+  </div>
+</div>
+
+
+<h3>Platform-Specific Instances</h3>
+
+
+<blockquote style="font-size:15px;">
+  <p>Mac OSX has many different ways to access the persistent storage. The most commonly used way is through the finder. The finder holds all the files and can be navigated through quite easily. Mac OS X has a friendly user interface because it has everything labeled. Also if you don't know where the file resides you can always go to "All My Files" and just search the file name. It also has a tag system to keep one's files organized as shown by the gif(middle). The gif below shows how the finder looks and a few aspects of the finder (left) and how you can open and delete files from persistent storage(right). </p>
+  <p>
+   <div class="row">
+  <div class="col-md-4 col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Finder</h4>
+      </div>
+      <div class="panel-body">
+        <img class="center-block" SRC = "Images/finder.gif" ALT = "finder Gif" style="width:350px;height:250px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Tags</h4>
+      </div>
+      <div class="panel-body">
+        <img class="center-block" SRC = "Images/tag.gif" ALT = "tag image" style="width:350px;height:250px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Open/Delete File</h4>
+      </div>
+      <div class="panel-body">
+         <IMG SRC = "Images/openClose.gif" ALT = "open and delete file" style="width:350px;height:250px;">
+      </div>
+    </div>
+  </div>
+</div>
+  </p>
+  <p>Another way is through the terminal which is just like the finder, but the finder is just a graphical representation. The terminal can be more efficient than finder because you can do so much more to a file with just the terminal. You can open the file, delete a file, add a file, and much more with certain commands. There are intermediary step for persistent storage. But it will keep your changes in the persistent storage. The terminal is quicker and more efficient than the finder once you have the memory and commands down. It can also be sometimes of a nuisance, but is more efficient in the end. The gif below shows a few things that can be done with the terminal and how it can be friendly in terms of user interface, but is plain and requires learning, while finder is much easier to learn, but slower. The terminal can be used to access persistent storage online too such as using Git.</p>
+    <div class="row">
+  <div class="col-md-6 col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Terminal Commands</h4>
+      </div>
+      <div class="panel-body">
+        <img class="center-block" SRC = "Images/terminalvid2.gif" ALT = "terminal gif" style="width:400px;height:300px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Terminal Commands</h4>
+      </div>
+      <div class="panel-body">
+        <img class="center-block" SRC = "Images/usingGit.gif" ALT = "using Git gif" style="width:400px;height:300px;">
+      </div>
+    </div>
+  </div>
+</div>
+</blockquote>
+<h3>Credits &amp; References</h3>
+
+<blockquote>Provide references or links to any information, image, or media sources used.
+Dondi
+https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/Finder.html
+https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/WindowDialogs.html#//apple_ref/doc/uid/20000957-CH43-SW7
+https://giphy.com/create/gifmaker
+</blockquote>
