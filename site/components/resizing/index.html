@@ -21,69 +21,85 @@ contributors:
 <script src="https://use.fontawesome.com/23710c8728.js"></script>
 
 <p class="lead">A critical feature of GUI-based operating systems is the ability to resize elements.</p>
+
 <div class="container">
+
 <hr>
-  <!--****************************Typical Appearance**********************************-->
+
   <div class="row">
+
     <h3>Typical Appearance</h3>
     <p><b>A resize event is characterized by a change in an element's dimensions.</b></p>
     <p>In contrast with zoom, which is a related feature, resize changes the dimensional properties (length and width) of the element itself, rather than the scope at which the element is displayed on a screen. Examples of commonly resized elements include windows, icons, images, and text. However, for the purposes of evaluating typical appearances and behavior, we will consider the resize behavior of windows.</p>
     <p>The arrow mouse cursor and resize buttons are the most common interface elements for changing the dimensions of elements.</p>
+
     <div class="row">
-      <div class="col-xs-6">
+
+      <div class="col-xs-6"><!--Left panel: Arrow Mouse Cursor-->
         <div class="panel panel-default">
+
           <div class="panel-heading">
             <h4 class="panel-title text-center">Arrow Mouse Cursor</h4>
           </div>
+
           <div class="panel-body">
             <div class="col-md-4 col-sm-12">
               <p class="text-center">Diagonal</p>
-              <img class="center-block" class="img-responsive" src="arrow-diagonal.png" alt="Resize Arrow Diagonal" height="80">
+              <img class="center-block" class="img-responsive" src="img/arrow-diagonal.png" alt="Resize Arrow Diagonal" height="80">
             </div>
             <div class="col-md-4 col-sm-12">
               <p class="text-center">Horizontal</p>
-              <img class="center-block" class="img-responsive" src="arrow-horizontal.jpg" alt="Resize Arrow Horizontal" height="80">
+              <img class="center-block" class="img-responsive" src="img/arrow-horizontal.jpg" alt="Resize Arrow Horizontal" height="80">
             </div>
             <div class="col-md-4 col-sm-12">
               <p class="text-center">Vertical</p>
-              <img class="center-block" class="img-responsive" src="arrow-vertical.jpg" alt="Resize Arrow Vertical" height="80">
+              <img class="center-block" class="img-responsive" src="img/arrow-vertical.jpg" alt="Resize Arrow Vertical" height="80">
             </div>
           </div>
+
         </div>
-      </div>
-      <div class="col-xs-6">
+      </div><!--Left panel: Arrow Mouse Cursor-->
+
+      <div class="col-xs-6"><!--Right panel: Resize Button Icons-->
         <div class="panel panel-default">
+
           <div class="panel-heading">
             <h4 class="panel-title text-center">Resize Button</h4>
           </div>
+
           <div class="panel-body">
             <div class="col-md-6 col-sm-12">
-              <img class="center-block" class="img-responsive" src="resize-buttons-1mac.png" alt="Resize Buttons 1" height="50">
+              <img class="center-block" class="img-responsive" src="img/resize-buttons-1mac.png" alt="Resize Buttons 1" height="50">
             </div>
             <div class="col-md-6 col-sm-12">
-              <img class="center-block" class="img-responsive" src="resize-buttons-4.jpg" alt="Resize Buttons 4" height="50">
+              <img class="center-block" class="img-responsive" src="img/resize-buttons-4.jpg" alt="Resize Buttons 4" height="50">
             </div>
           </div>
+
           <div class="panel-body">
             <div class="col-md-6 col-sm-12">
-              <img class="center-block" class="img-responsive" src="resize-buttons-2mac.png" alt="Resize Buttons 2" height = "50">
+              <img class="center-block" class="img-responsive" src="img/resize-buttons-2mac.png" alt="Resize Buttons 2" height = "50">
             </div>
             <div class="col-md-6 col-sm-12">
-              <img class="center-block" class="img-responsive" src="resize-buttons-5.jpg" alt="Resize Buttons 5" height="50">
+              <img class="center-block" class="img-responsive" src="img/resize-buttons-5.jpg" alt="Resize Buttons 5" height="50">
             </div>
           </div>
+
           <div class="panel-body">
             <div class="col-md-6 col-sm-12">
-              <img class="center-block" class="img-responsive" src="resize-buttons-3mac.png" alt="Resize Buttons 3" height="50">
+              <img class="center-block" class="img-responsive" src="img/resize-buttons-3mac.png" alt="Resize Buttons 3" height="50">
             </div>
             <div class="col-md-6 col-sm-12">
-              <img class="center-block" class="img-responsive" src="resize-buttons-6.jpg" alt="Resize Buttons 6" height="50">
+              <img class="center-block" class="img-responsive" src="img/resize-buttons-6.jpg" alt="Resize Buttons 6" height="50">
             </div>
           </div>
+
         </div>
-      </div>
+      </div><!--Right panel: Resize Button Icons-->
+
     </div>
   </div>
+
   <hr>
 <!--****************************Typical Behavior**********************************-->
   <div class="row">
@@ -134,7 +150,7 @@ contributors:
         <div class="row">
           <div class="col-md-3 col-sm-1"></div>
           <div class="col-md-8 col-sm-11">
-            <img src="resize_state_diagram.png" alt="Resize State Diagram">
+            <img src="img/resize_state_diagram.png" alt="Resize State Diagram">
           </div>
         </div>
         <div class="caption">
@@ -149,8 +165,8 @@ contributors:
       <div class="col-md-6">
         <div class="thumbnail">
           <div id="gif-container" align="center">
-            <img id="main" class="img-rounded img-responsive" src="gifs/chrome-resize-manual.gif" alt="chrome resize manual">
-            <img id="overlay" class="img-rounded img-responsive" src="gifs/osx-cursor-change.gif" alt="osx cursor change">
+            <img id="main" class="img-rounded img-responsive" src="gif/chrome-resize-manual.gif" alt="chrome resize manual">
+            <img id="overlay" class="img-rounded img-responsive" src="gif/osx-cursor-change.gif" alt="osx cursor change">
           </div>
         <div class="caption" align="center">
           <h3>Manual Resize</h3>
@@ -161,8 +177,8 @@ contributors:
       <div class="col-md-6">
         <div class="thumbnail">
           <div id="gif-container" align="center">
-            <img id="main" src="gifs/chrome-resize-automatic.gif" alt="chrome resize automatic" class="img-rounded img-responsive">
-            <img id="overlay" src="gifs/osx-button-change.gif" alt="osx cursor change" class="img-rounded img-responsive">
+            <img id="main" src="gif/chrome-resize-automatic.gif" alt="chrome resize automatic" class="img-rounded img-responsive">
+            <img id="overlay" src="gif/osx-button-change.gif" alt="osx cursor change" class="img-rounded img-responsive">
           </div>
           <div class="caption" align="center">
             <h3>Automatic Resize</h3>
@@ -191,14 +207,14 @@ contributors:
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox"  align="center">
         <div class="item active">
-          <img src="gifs/osx-dock-resize.gif" alt="slider resize gif" class="img-rounded img-responsive"  align="center">
+          <img src="gif/osx-dock-resize.gif" alt="slider resize gif" class="img-rounded img-responsive"  align="center">
           <div class="carousel-caption" >
             <h1>Slider Resize</h1>
             <h3>Resize can be accomplished by a slider</h3>
           </div>
         </div>
         <div class="item">
-          <img src="gifs/windows10-form-fillin.gif" alt="no resize gif" class="img-rounded img-responsive"  align="center">
+          <img src="gif/windows10-form-fillin.gif" alt="no resize gif" class="img-rounded img-responsive"  align="center">
           <div class="carousel-caption" >
             <h1>Form Fill-In</h1>
             <h3>When used for resizing, form fill-in is most commonly used for resizing text<br>
@@ -206,21 +222,21 @@ contributors:
           </div>
         </div>
         <div class="item">
-          <img src="gifs/textedit.gif" alt="no resize gif" class="img-rounded img-responsive"  align="center">
+          <img src="gif/textedit.gif" alt="no resize gif" class="img-rounded img-responsive"  align="center">
           <div class="carousel-caption" >
             <h1>Resize Text</h1>
             <h3>Text can be resized across many platforms using a variety of methods, including form fill-in, menu selection, and direct manipulation sliders.</h3>
           </div>
         </div>
         <div class="item">
-          <img src="gifs/windows10-splitscreen.gif" alt="no resize gif" class="img-rounded img-responsive"  align="center">
+          <img src="gif/windows10-splitscreen.gif" alt="no resize gif" class="img-rounded img-responsive"  align="center">
           <div class="carousel-caption" >
             <h1 >Split Screen</h1>
             <h3>A function of the resize buttons is to allow for a full screen tiling of two windows to maximize the screen space use. In split screen mode, users can manually resize the windows by shifting the separation bar between the two windows. An in depth discussion of this interaction style is found here.</h3>
           </div>
         </div>
         <div class="item">
-          <img src="gifs/windows10-not-resizable.gif" alt="no resize gif" class="img-rounded img-responsive"  align="center">
+          <img src="gif/windows10-not-resizable.gif" alt="no resize gif" class="img-rounded img-responsive"  align="center">
           <div class="carousel-caption" >
             <h1>No Resize</h1>
             <h3>Resize can't be accomplished using any methods.<br>
@@ -335,7 +351,7 @@ contributors:
             <div class="row">
                 <div class="col-sm-6">
                 <div class="thumbnail">
-                  <img src="gifs/osx-notes-fullscreen.gif" alt="osX Notes Automatic resize">
+                  <img src="gif/osx-notes-fullscreen.gif" alt="osX Notes Automatic resize">
                   <div class="caption">
                     <h4>Automatic Resize</h4>
                     <p>This example shows automatic resize in the Notes Application Window. Hovering over the colored buttons reveals the resize symbol, and upon click of the green fullscreen button, the window fills the entire screen. The fullscreen symbol is indicative of the function it triggers, because of the arrows that are pointing outwards. In fullscreen mode, the entire menu disappears, reflecting the macOS guideline of transient controls. When the user wants to return to a non-fullscreen mode, the resize button is accessed by displaying the menu bar, which returns to the screen when the mouse is at the top of the screen. Hovering over the button reveals the resize symbol, which is now arrows that are pointing inward, indicating that the window will now shrink upon click. </p>
@@ -344,7 +360,7 @@ contributors:
               </div>
               <div class="col-sm-6">
                 <div class="thumbnail">
-                  <img src="gifs/osx-notes-manualresize-menubarchange.gif" alt="osX notes Manual Resize">
+                  <img src="gif/osx-notes-manualresize-menubarchange.gif" alt="osX notes Manual Resize">
                   <div class="caption">
                     <h4>Manual Resize</h4>
                     <p>This example shows manual resize in the Notes Application Window. Hovering over the permeter of the window changes the mouse cursor from a pointer to an arrow, which is indicative of the direction of resize possible at that position. Dragging the edge of the window at this point allows the user to explore different window dimensions, befre setting the new dimension on mouse release. An interesting characteristic to notice is that resizing the Notes window will cause text wrap to occur, bounded by the dimensions of the Notes Window. Also, observe how resize causes the menu bar to add/drop components on stretch/shrink, respectively. Thus, for some applications in OSX, resize not only acts on the window size itself, but on a network of interconnected components that will also react to the resize operation. In this case, as a consequence of the resize, the menu bar automatically reformats as the window is resized.</p>
@@ -353,7 +369,7 @@ contributors:
               </div>
               <div class="col-sm-6">
                    <div class="thumbnail">
-                       <img src="NataliaGifs/resize_terminal_smaller.gif" alt="osX Folder Description Resize">
+                       <img src="gif/resize_terminal_smaller.gif" alt="osX Folder Description Resize">
                        <div class="caption">
                            <h4>Folder Description Resize</h4>
                            <p>Add info here</p>
@@ -362,7 +378,7 @@ contributors:
               </div>
               <div class="col-sm-6">
                    <div class="thumbnail">
-                       <img src="NataliaGifs/dialog_resize.gif" alt="osX Dialog Resize">
+                       <img src="gif/dialog_resize.gif" alt="osX Dialog Resize">
                        <div class="caption">
                            <h4>Dialog Resize</h4>
                            <p>A dialog is a type of window that’s designed to elicit
@@ -381,7 +397,7 @@ contributors:
               </div>
               <div class="col-sm-6">
                    <div class="thumbnail">
-                       <img src="NataliaGifs/dock_consideration.gif" alt="osX Dock Consideration when Resizing">
+                       <img src="gif/dock_consideration.gif" alt="osX Dock Consideration when Resizing">
                        <div class="caption">
                            <h4>Taking the Dock into account</h4>
                            <p>Add info here</p>
@@ -390,7 +406,7 @@ contributors:
               </div>
               <div class="col-sm-6">
                    <div class="thumbnail">
-                       <img src="NataliaGifs/minimum_resize_chrome_terminal.gif" alt="osX Minimum Resizing of Apps">
+                       <img src="gif/minimum_resize_chrome_terminal.gif" alt="osX Minimum Resizing of Apps">
                        <div class="caption">
                            <h4>Minimum resize for different apps</h4>
                            <p>Add info here</p>
@@ -399,7 +415,7 @@ contributors:
               </div>
               <div class="col-sm-6">
                 <div class="thumbnail">
-                  <img src="gifs/osx-dock-resize.gif" alt="osX dock resize">
+                  <img src="gif/osx-dock-resize.gif" alt="osX dock resize">
                   <div class="caption">
                     <h4>Dock Resize</h4>
                     <p>Direct manipulation occurs at a higher level of abstraction in this example of a slider that accomplishes resizing the dock and its icons by means of a resize slider. The user is manipulating the position of the slider to control the size of the dock. Although the user is a acting on the slider interface element, this is still a form of direct manipulation because the impact of the resize action is immediately visable via the changing size of the dock on the screen. Also, note that in this example, the slider resizes a group of similar elements at the same time.</p>
@@ -408,7 +424,7 @@ contributors:
               </div>
               <div class="col-sm-6">
                 <div class="thumbnail">
-                  <img src="gifs/system-preferences-noresize.gif" alt="osx system preferences no resize">
+                  <img src="gif/system-preferences-noresize.gif" alt="osx system preferences no resize">
                   <div class="caption">
                     <h4>Windows that do not support resize</h4>
                     <p>Some windows, such as "System Preferences" don't have resize properties. This is because the contents within the windows are static and cannot be changed. The fact that the OSX System Preferences window cannot resize is conveyed by the observation that on hover, the resize arrow cursor and the resize button did not respond. The absence of feedback, is feedback itself, telling the user that the resize operation is not possible on the System Preferences window.</p>
@@ -417,7 +433,7 @@ contributors:
               </div>
               <div class="col-sm-6">
                 <div class="thumbnail">
-                  <img src="gifs/textedit.gif" alt="OSX TextEdit font resize">
+                  <img src="gif/textedit.gif" alt="OSX TextEdit font resize">
                   <div class="caption">
                     <h4>Word Text Resize</h4>
                     <p>The TextEdit application on the Mac OSX, supports text resize via the fonts menu. In this menu, text can be resized in three different ways: font size form fill-in, selecting the font size from a menu, and using the font size slider. The font size slider is a form of direct manipulation, however font size form fill-in and menu takes in a discrete font size input and outputs the resized text at the specified font size. Typical use cases for the form fill-in menu would be if the user need to specify a particular font size, whereas the slider may be used if the user wanted to experiment with quickly viewing the text at different sizes. TextEdit offers three different methods for text resize so that the user can manipulate the text size in a way that makes sense for the user's application.</p>
@@ -444,7 +460,7 @@ contributors:
               <p>Optimal resolution for an effective resizable window is 1024x768 pixels.</p>
             </li>
             <li>
-              <p>Resizable windows no longer require the resize glyph ( <img src="gifs/windows10-resize-glyph.jpg"/> ) in the lower right corner of the window.</p>
+              <p>Resizable windows no longer require the resize glyph ( <img src="gif/windows10-resize-glyph.jpg"/> ) in the lower right corner of the window.</p>
               <ul>
                 <li>
                   <p>The glyph requires a status bar in order to be displayed.</p>
@@ -455,16 +471,16 @@ contributors:
               </ul>
             </li>
             <li>
-              <p>All windows should have a minimize button ( <img src="windows10-minimize-button.jpg"/> ) to reduce a window to a taskbar button.</p>
+              <p>All windows should have a minimize button ( <img src="img/windows10-minimize-button.jpg"/> ) to reduce a window to a taskbar button.</p>
             </li>
             <li>
               <p>All windows should have a maximize/restore down button, unless the window isn’t resizable.</p>
               <ul>
                 <li>
-                  <p>The maximize button ( <img src="windows10-maximize-button.jpg"/> ) should make the window full screen, or maximum needed size.</p>
+                  <p>The maximize button ( <img src="img/windows10-maximize-button.jpg"/> ) should make the window full screen, or maximum needed size.</p>
                 </li>
                 <li>
-                  <p>The restore ( <img src="windows10-restore-down-button.jpg"/> ) down button should restore the window to its previous size.</p>
+                  <p>The restore ( <img src="img/windows10-restore-down-button.jpg"/> ) down button should restore the window to its previous size.</p>
                 </li>
               </ul>
             </li>
@@ -479,7 +495,7 @@ contributors:
           <div class="row">
             <div class="col-sm-12 col-md-6">
               <div class="thumbnail">
-                <img src="gifs/windows10-automatic-resize.gif" alt="Windows 10 Automatic Resize Gif">
+                <img src="gif/windows10-automatic-resize.gif" alt="Windows 10 Automatic Resize Gif">
                 <div class="caption">
                   <h4>Automatic Resize</h4>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;In this example the maximize, restore down, and minimize buttons are used to manipulate the dimensions of a Google Chrome window.  When each of these buttons are clicked, they perform the action specified in the Windows Guidelines.  Also, complying with Windows guidelines, whenever the cursor hovers over on of these buttons a description box appears with the button's name.  This example illustrates automatic resizing because the user doesn't have to explicitly specify the new dimensions of the window, but still knows what dimensions the window will have.</p>
@@ -488,7 +504,7 @@ contributors:
             </div>
             <div class="col-sm-12 col-md-6">
               <div class="thumbnail">
-                <img src="gifs/windows10-manual-resize.gif" alt="Windows 10 Manual Resize Gif">
+                <img src="gif/windows10-manual-resize.gif" alt="Windows 10 Manual Resize Gif">
                 <div class="caption">
                   <h4>Manual Resize</h4>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;In contrast to the last example, automatic resizing, manual resizing requires the user to explicitly specify the windows size.  While this may be accomplished through the use of scroll bars, the most common example of manual resizing in Windows 10 involves clicking and dragging the window's boarders to the desired width or height.  The window in this example complies with Windows guidelines statement that the resize glyph isn't required, and instead makes the manual resize functionality apparent through the use of resize pointers that replace the cursor when it is over the window's bottom and right boarders, with arrows pointing in the directions of possible change.</p>
@@ -499,7 +515,7 @@ contributors:
           <div class="row">
             <div class="col-sm-12 col-md-6">
               <div class="thumbnail">
-                <img src="gifs/windows10-splitscreen.gif" alt="Windows 10 Split Screen Resize Gif">
+                <img src="gif/windows10-splitscreen.gif" alt="Windows 10 Split Screen Resize Gif">
                 <div class="caption">
                   <h4>Split Screen Resize</h4>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;This example of resizing in Windows 10 illustrates both automatic and manual resizing.  For example, when the user wishes make a window take up 1/2 or 1/4 of the screen they drag the window by its top boarder and hold it along the edge of the screen until a box appears showing the new dimensions of the window.  At this point the user can release the window, which will fill the projected box.  As mentioned earlier, this action requires direct manipulation of the window in the action of dragging the window to its new location, however the projected box takes over the resizing process once the window has been manipulated into the correct location.</p>
@@ -508,7 +524,7 @@ contributors:
             </div>
             <div class="col-sm-12 col-md-6">
               <div class="thumbnail">
-                <img src="gifs/windows10-form-fillin.gif" alt="Windows 10 Form Fill-in Resize Gif">
+                <img src="gif/windows10-form-fillin.gif" alt="Windows 10 Form Fill-in Resize Gif">
                 <div class="caption">
                   <h4>Form Fill-in Resize</h4>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;This example uses Word to illustrate the resizing of text using a form fill-in.  While this is a cross platform program, it illustrates the same mechanic that is present in other Windows 10 programs for resizing windows and objects.  This type of resizing requires the user to choose or input their desired size into the form.  Once the form has been submitted the size is updated, and the user is free to input a new size.  While this process isn't exactly direct manipulation it still gives users the ability to quickly change window dimensions, and in some instances be far more explicit in the new dimensions.</p>
@@ -519,7 +535,7 @@ contributors:
           <div class="row">
             <div class="col-sm-12 col-md-6">
               <div class="thumbnail">
-                <img src="gifs/windows10-not-resizable.gif" alt="Windows 10 No Resize Gif">
+                <img src="gif/windows10-not-resizable.gif" alt="Windows 10 No Resize Gif">
                 <div class="caption">
                   <h4>No Resize</h4>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;In the example above, the System Properties settings window doesn't allow for any resizing.  Any attempts to use the window boarders doesn't work, and the resize pointers aren't visible.  It seems that this breaks the Windows guideline that says to use resizable windows whenever possible.  However, this example adheres to the Windows guidelines because the window doesn't require any resizing because the content of the window won't change, and it is small enough to work on all screens.  Additionally, this is a Guideline compliant non-resizable window because it doesn't include nonfunctional minimize or maximize/restore down buttons.</p>
