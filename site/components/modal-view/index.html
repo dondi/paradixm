@@ -7,6 +7,9 @@ contributors:
 
     - name: Zachary Fitzpatrick
       github: PokeADotProductions
+
+    - name: Teddy Chu
+      github: it-door
 ---
 
 <head>
@@ -18,26 +21,14 @@ contributors:
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-12">
-      <ul class="nav nav-pills nav-justified" role="tablist">
-      <li role="nav item" class="active">
-        <a class="nav-link active" data-toggle="tab" href="#typical-appearance" role="tab">Typical Appearance</a>
-      </li>
-      <li role="nav item">
-        <a class="nav-link" data-toggle="tab" href="#typical-behavior" role="tab">Typical Behavior</a>
-      </li>
-      <li role="nav item">
-        <a class="nav-link" data-toggle="tab" href="#priority-metrics" role="tab">Priority Metrics</a>
-      </li>
-      <li role="nav item">
-        <a class="nav-link" data-toggle="tab" href="#events" role="tab">Events</a>
-      </li>
-      <li role="nav item">
-        <a class="nav-link" data-toggle="tab" href="#variants" role="tab">Variants</a>
-      </li>
-      <li role="nav item">
-        <a class="nav-link" data-toggle="tab" href="#platform-specifics" role="tab">Platform Specifics</a>
-      </li>
-      </ul>
+      <nav class="nav nav-pills nav-justified">
+        <a class="nav-link active" data-toggle="tab" href="#typical-appearance">Typical Appearance</a>
+        <a class="nav-link" data-toggle="tab" href="#typical-behavior">Typical Behavior</a>
+        <a class="nav-link" data-toggle="tab" href="#priority-metrics">Priority Metrics</a>
+        <a class="nav-link" data-toggle="tab" href="#events">Events</a>
+        <a class="nav-link" data-toggle="tab" href="#variants">Variants</a>
+        <a class="nav-link" data-toggle="tab" href="#platform-specifics">Platform Specifics</a>
+      </nav>
     </div>
   </div>
 </div>
@@ -62,19 +53,22 @@ contributors:
               <div class="modal fade" id="myModal" role="dialog" data-backdrop="static">
                 <div class="modal-dialog modal-sm">
                   <div class="modal-content">
-                    <div class="modal-header"> 
+                    <div class="modal-header">
+                      <h class="modal-title">
+                        This is a Modal View.
+                      </h>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
-                      <h class="modal-title">
-                        This a Modal View.
-                      </h>
                     </div>
                     <div class="modal-body">
                     <p>
-                      To close this window, press the X on the top right of the window.
+                      To close this window, press the X on the top right of the window or press the "Close" button in the bottom right.
                     </p>
-                  </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -98,11 +92,11 @@ contributors:
                 <p>Modal views typically prompt the user to perform an action before allowing the user to continue interacting with said window or application.</p>
 
                   <p>Modal views will usually be prompted when a window or application requires the user’s attention before continuing, such as when a user is able to update their system or if the window chooses to warn the user about committing an action. Modal views are also used by websites to inform the user about logins, advertisements, updates to the site, etc.</p>
-      
+
               </blockquote>
 
               <h4>Component in Action</h4>
-              
+
               <img src="ModalITunes.gif" alt="Image Missing" class="img-thumbnail img-responsive giphy-embed">
               </div>
             </div>
@@ -264,7 +258,7 @@ contributors:
               <h4>State Diagram</h4>
 
               <blockquote>
-                The typical flow of a modal window appearing on a user’s screen is as follows: 
+                The typical flow of a modal window appearing on a user’s screen is as follows:
                 <p></p>
                 <ul class="list-group">
                   <li class="list-group-item">A user will perform an action that prompts the modal window’s popup.</li>
@@ -413,6 +407,3 @@ contributors:
     <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/WinPanel/Concepts/UsingModalWindows.html">Apple Developer Guidelines</a>
   </div>
 </div>
-
-
-
