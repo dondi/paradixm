@@ -22,13 +22,20 @@ contributors:
 
 <p class="lead">A critical feature of GUI-based operating systems is the ability to resize elements.</p>
 <div class="container">
-<hr>
-  <!--****************************Typical Appearance**********************************-->
+
+<hr><!----------------------------------------------------------------------->
+
   <div class="row">
     <h3>Typical Appearance</h3>
     <p><b>A resize event is characterized by a change in an element's dimensions.</b></p>
-    <p>In contrast with zoom, which is a related feature, resize changes the dimensional properties (length and width) of the element itself, rather than the scope at which the element is displayed on a screen. Examples of commonly resized elements include windows, icons, images, and text. However, for the purposes of evaluating typical appearances and behavior, we will consider the resize behavior of windows.</p>
-    <p>The arrow mouse cursor and resize buttons are the most common interface elements for changing the dimensions of elements.</p>
+    <p>In contrast with zoom, which is a related feature, resize changes the
+      dimensional properties (length and width) of the element itself, rather
+      than the scope at which the element is displayed on a screen. Examples of
+      commonly resized elements include windows, icons, images, and text. However,
+      for the purposes of evaluating typical appearances and behavior, we will
+      consider the resize behavior of windows.</p>
+    <p>The arrow mouse cursor and resize buttons are the most common interface
+      elements for changing the dimensions of elements.</p>
     <div class="row">
       <div class="col-xs-6">
         <div class="panel panel-default">
@@ -84,8 +91,9 @@ contributors:
       </div>
     </div>
   </div>
-  <hr>
-<!--****************************Typical Behavior**********************************-->
+
+  <hr><!----------------------------------------------------------------------->
+
   <div class="row">
     <h3>Typical Behavior</h3>
     <p>There are two categories of window resize behavior: manual and automatic.</p>
@@ -106,11 +114,19 @@ contributors:
             <h5>Events</h5>
             <ul>
               <li><code><b>hover</b></code></li>
-              <p>The mouse event of <code>hover</code>ing over the perimeter of a window changes the cursor to an arrow which indicates the allowed direction of resize. When the cursor is an arrow, the user is in the <code>resize</code> state.<p>
+              <p>The mouse event of <code>hover</code>ing over the perimeter of
+                a window changes the cursor to an arrow which indicates the
+                allowed direction of resize. When the cursor is an arrow,
+                the user is in the <code>resize</code> state.<p>
               <li><code><b>mouse down</b></code></li>
-              <p>A mouse down event, once in the <code>resize</code> state, begins  manual resize. While in <code>mouse down</code>, changes in the position of the mouse will manipulate the dimension of the window. The dimension change is visually rendered in real time.</p>
+              <p>A mouse down event, once in the <code>resize</code> state,
+                begins  manual resize. While in <code>mouse down</code>, changes
+                in the position of the mouse will manipulate the dimension of
+                the window. The dimension change is visually rendered in real time.</p>
               <li><code><b>mouse release</b></code></li>
-              <p>Upon arriving at the desired dimension in <code>mouse down</code>, <code>mouse release</code> will set the window dimension and exit the <code>resize</code> state.</p>
+              <p>Upon arriving at the desired dimension in <code>mouse down</code>,
+                <code>mouse release</code> will set the window dimension and exit
+                the <code>resize</code> state.</p>
             </ul>
           </div>
         </div>
@@ -121,11 +137,15 @@ contributors:
             <h4 class="panel-title text-center">Automatic</h4>
           </div>
           <div class="panel-body">
-            <p>Automatic resize, is independent of a user-defined end dimension. Resize to full screen causes the window to fill the entire screen. Typically this is trigged by clicking a button, which toggles from full screen to non-full screen.</p>
+            <p>Automatic resize, is independent of a user-defined end dimension.
+              Resize to full screen causes the window to fill the entire screen.
+              Typically this is trigged by clicking a button, which toggles from
+              full screen to non-full screen.</p>
             <h5>Events</h5>
             <ul>
               <li><code><b>hover</b></code></li>
-              <p><code>Hover</code>ing over a window button menu reveals symbols that indicate the different options for automatic resize<p>
+              <p><code>Hover</code>ing over a window button menu reveals symbols
+                that indicate the different options for automatic resize<p>
               <li><code><b>click</b></code></li>
               <p>On <code>click</code> the window is resized to fit the entire window.
             </ul>
@@ -144,14 +164,22 @@ contributors:
           </div>
         </div>
         <div class="caption">
-          <p>A resizeable element is in the <code>standby</code> state prior to resize. Once the mouse starts dragging the edge or corner, the window enters the <code>resizing</code> state. Once finished, the window reaches the <code>resized</code> state.</p>
+          <p>A resizeable element is in the <code>standby</code> state prior to resize.
+            Once the mouse starts dragging the edge or corner, the window enters
+            the <code>resizing</code> state. Once finished, the window reaches
+            the <code>resized</code> state.</p>
         </div>
       </div>
     </div>
-<!--****************************Component in Action**********************************-->
+
+  <hr><!----------------------------------------------------------------------->
+
     <div class="row">
       <h4>Component in Action</h4>
-      <p>The following gif represent only the resize functions within the Mac OSX platform that are common across different platforms (with minor stylistic differences). A closer look of resize in the OSX platform is explored in the "Platform-Specific Instances" section below.</p>
+      <p>The following gif represent only the resize functions within the Mac OSX
+        platform that are common across different platforms (with minor stylistic differences).
+        A closer look of resize in the OSX platform is explored in the "Platform-Specific Instances"
+        section below.</p>
       <div class="col-md-6">
         <div class="thumbnail">
           <div id="gif-container" align="center">
@@ -160,7 +188,13 @@ contributors:
           </div>
         <div class="caption" align="center">
           <h3>Manual Resize</h3>
-          <p>This is an example of manually resizing a window. Upon hovering over the perimeter of the window, the mouse cursor changes into a resize cursor, which indicates the direction of resize possible. Manual resize is permitted within the boundaries set by the platform, which default to the screen size. Overrides to the default max size on the macOSX platform are that the window can only be resized up to the menu bar at the top and up to the dock at the left.</p>
+          <p>This is an example of manually resizing a window. Upon hovering
+            over the perimeter of the window, the mouse cursor changes into a
+            resize cursor, which indicates the direction of resize possible.
+            Manual resize is permitted within the boundaries set by the platform,
+            which default to the screen size. Overrides to the default max size
+            on the macOSX platform are that the window can only be resized up to
+            the menu bar at the top and up to the dock at the left.</p>
           </div>
         </div>
       </div>
@@ -172,14 +206,21 @@ contributors:
           </div>
           <div class="caption" align="center">
             <h3>Automatic Resize</h3>
-            <p>This is an example of automatically resizing a window. Hovering over the menu buttons to the left of the window reveals symbols that define the resize options possible. When in default (non-fullscreen mode), upon clicking the green button, the window will resize to fill the dimensions of the screen. When in fullscreen mode, upon clicking the same button, the window will resize to its size prior to being in fullscreen.</p>
+            <p>This is an example of automatically resizing a window.
+              Hovering over the menu buttons to the left of the window
+              reveals symbols that define the resize options possible.
+              When in default (non-fullscreen mode), upon clicking the green
+              button, the window will resize to fill the dimensions of the screen.
+              When in fullscreen mode, upon clicking the same button, the
+              window will resize to its size prior to being in fullscreen.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <hr>
-<!--****************************Variants**********************************-->
+
+  <hr><!----------------------------------------------------------------------->
+
   <div class="row">
     <h3>Variants</h3>
     <p>The interface behaviors of resize can vary, depending on the element that is being resized</p>
@@ -247,8 +288,9 @@ contributors:
       </a>
     </div>
   </div>
-  <hr>
-<!--****************************Priority Metrics**********************************-->
+
+  <hr><!----------------------------------------------------------------------->
+
     <div class="row">
       <h3>Priority Metrics</h3>
       <p>Ben Shneiderman, in his book <em>Designing the User Interace</em> defines learnability, efficiency, errors, memorability, and satisfaction, as metrics by which the usability of a system can be measured. Resize is a common interface component, and in a perfect system, all five metrics are important. Nevertheless, if the resize function as a user interface component is evaluated against these metrics, learnability, efficiency, and memorability rise as the most important, whereas errors and satisfaction are less important.</p>
