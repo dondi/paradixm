@@ -15,114 +15,81 @@ contributors:
       github: ebachoura
 ---
 
-<blockquote class="text-justify">Search components are constantly present in computational systems. Generally providing an interface for text-based inputs, their main purpose is to help users finding files, programs and other resources in an easier way.
-</blockquote>
+<div class="text-justify row">
+  <p class="col-12 lead">
+    Search components are constantly present in computational systems. Generally providing an interface
+    for text-based inputs, their main purpose is to help users finding files, programs and other resources
+    in an easier way.
+  </p>
+</div>
 
 <div class="row">
-  <div class="col-md-6 col-sm-6 col-xs-12">
-
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
     <h3>Typical Appearance</h3>
+    <p class="text-justify">
+      Search components have their style changed from one system to another, but, in a general way, its main idea remains the same. As we  can see in the images below, the search bars are basically composed by a space where users can enter a text-based input and a button they can click to initiate the search:
+    </p>
 
-    <blockquote class="text-justify">Search components have their style changed from one system to another, but, in a general way, its main idea remains the same. As we  can see in the images below, the search bars are basically composed by a space where users can enter a text-based input and a button they can click to initiate the search:
-    </blockquote>
-
-
-      <div id="search-bars-examples" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-      <ol class="carousel-indicators">
-          <li data-target="#search-bars-examples" data-slide-to="0" class="active"></li>
-          <li data-target="#search-bars-examples" data-slide-to="1"></li>
-          <li data-target="#search-bars-examples" data-slide-to="2"></li>
-          <li data-target="#search-bars-examples" data-slide-to="3"></li>
-          <li data-target="#search-bars-examples" data-slide-to="4"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-
-          <div class="item active">
-              <img src="search-bar-1.jpg" class="img-responsive center-block" alt="search-bar-1">
-              <div class="carousel-caption">
-                <p>Example 1</p>
-              </div>
-          </div>
-
-          <div class="item">
-            <img src="search-bar-2.jpg" class="img-responsive center-block" alt="search-bar-2">
-            <div class="carousel-caption">
-                <p>Example 2</p>
-              </div>
-          </div>
-
-          <div class="item">
-            <img src="search-bar-3.jpg" class="img-responsive center-block" alt="search-bar-3">
-              <div class="carousel-caption">
-                <p>Example 3</p>
-              </div>
-          </div>
-
-          <div class="item">
-              <img src="search-bar-4.jpg" class="img-responsive center-block" alt="search-bar-4">
-              <div class="carousel-caption">
-                <p>Example 4</p>
-              </div>
-          </div>
-
-          <div class="item">
-            <img src="search-bar-5.jpg" class="img-responsive center-block" alt="search-bar-5">
-              <div class="carousel-caption">
-                <p>Example 5</p>
-              </div>
-          </div>
-
+    <div id="searchBarCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="d-block img-fluid" src="search-bar-1.jpg" alt="First Search Bar">
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#search-bars-examples" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <div class="carousel-item active">
+          <img class="d-block img-fluid" src="search-bar-2.jpg" alt="Second Search Bar">
+        </div>
+        <div class="carousel-item active">
+          <img class="d-block img-fluid" src="search-bar-3.jpg" alt="Third Search Bar">
+        </div>
+        <div class="carousel-item active">
+          <img class="d-block img-fluid" src="search-bar-4.jpg" alt="Fourth Search Bar">
+        </div>
+        <div class="carousel-item active">
+          <img class="d-block img-fluid" src="search-bar-5.jpg" alt="Fifth Search Bar">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#searchBarCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-        <a class="right carousel-control" href="#search-bars-examples" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-
+      <a class="carousel-control-next" href="#searchBarCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
 
   <h3>Purpose</h3>
-
-        <blockquote class="text-justify">Search components allow users to quickly find a value in a large collection and also (depending on the search engine) create a filter to facilitate the search and make it more precise.</blockquote>
+  <p class="text-justify">Search components allow users to quickly find a value in a large collection and also (depending on the search engine) create a filter to facilitate the search and make it more precise.</p>
 
   <h3>Typical Behavior</h3>
 
-    <blockquote class="text-justify">Basically, search components receive an input (the text-based input mentioned before), the user presses the search button (generally identified by the picture of a magnifying glass or by the word "search") and then, the results of the research are shown.</blockquote>
+    <p class="text-justify">Basically, search components receive an input (the text-based input mentioned before), the user presses the search button (generally identified by the picture of a magnifying glass or by the word "search") and then, the results of the research are shown.</p>
 
     <h4>Events</h4>
 
-      <blockquote class="text-justify">As search boxes are composed by a text field and a button, the most relevant search events are <code>enterText</code>, <code>clear</code> and <code>click</code>. Secondary events include <code>dragAndDropText</code>.</blockquote>
+      <p class="text-justify">As search boxes are composed by a text field and a button, the most relevant search events are <code>enterText</code>, <code>clear</code> and <code>click</code>. Secondary events include <code>dragAndDropText</code>.</p>
 
     <h4>State Diagram</h4>
 
-      <blockquote>
+      <p>
         <img src="state-diagram.png" class="img-responsive center-block" alt="state-diagram">
       <p class="text-center">State Diagram extracted from <em><a href="https://users.cs.jmu.edu/bernstdh/Web/CS345/h3/index.php">https://users.cs.jmu.edu/bernstdh/Web/CS345/h3/index.php</a></em></p>
-      </blockquote>
+      </p>
 
     <h4>Component in Action</h4>
 
-      <blockquote>
+      <p>
         <img src="search-bar-gif-1.gif" class="img-responsive center-block" alt="search-bar-gif-1">
       <p class="text-center">Example extracted from <em><a href="http://thiagonasc.com/page/2">http://thiagonasc.com/page/2</a></em></p>
-      </blockquote>
+      </p>
 
     </div>
 
     <div class="col-md-6 col-sm-6 col-xs-12">
     <h3>Variants</h3>
 
-    <blockquote class="text-justify">Search has variations in its behavior. Despite their very similar appearances, their slight behavioral distictions create a big difference in efficiency.
-    </blockquote>
+    <p class="text-justify">Search has variations in its behavior. Despite their very similar appearances, their slight behavioral distictions create a big difference in efficiency.
+    </p>
 
     <ul class="text-justify">
         <li><em>Search on a web browser:</em> There are two different types of searches on web browsers: an address bar and a search box. They behave in the same manner as a typical search box, but an address bar helps improve efficiency if users know the exact URL of the site they are looking for. An address bar can directly go to a site when users input the site URL.
@@ -148,9 +115,9 @@ contributors:
 
       <h3>Priority Metrics</h3>
 
-        <blockquote class="text-justify">
+        <p class="text-justify">
           The usability metrics in relation to Search.
-      </blockquote>
+      </p>
 
       <ul class="text-justify">
           The usability metrics are essential for search because every single user utilize this component. Users have to recognize what to do with a search the moment they see it on any platform and should not have any problems (learnability). <p><p>
@@ -160,23 +127,22 @@ contributors:
 
       <h3>Key Characteristics</h3>
 
-      <blockquote class="text-justify">
+      <p class="text-justify">
         What makes a search a "good" search?
-    </blockquote>
+    </p>
 
     <h4>Strive for consistency</h4>
         <ul class="text-justify">
           Perhaps consistency is the most important interaction design principle that a search must follow. Users must know how to put their input in a search the moment they see it. For this reason, a search should have an identical icon and layout.
         </ul>
-
-  </div>
+    </div>
 
 <div class="col-md-12 col-sm-12 col-xs-12">
-<h3>Platform-Specific Instances</h3>
+  <h3>Platform-Specific Instances</h3>
 
-  <blockquote>
+  <p>
     <p class="text-justify">This is where platform-specific sections go. The systems presented below are the OS X from Apple and Windows RT 8.1 from Microsoft.</p>
-  </blockquote>
+  </p>
 
   <div class="row">
     <div class="col-sm-6">
@@ -187,7 +153,7 @@ contributors:
         <div class="panel-body">
 
             <h4>General Idea</h4>
-              <blockquote class="text-justify">A search bar provides an interface for text-based searches with a text box and buttons such as search and cancel. A search bar accepts text from users which can be used as input for a search.<p><p>
+              <p class="text-justify">A search bar provides an interface for text-based searches with a text box and buttons such as search and cancel. A search bar accepts text from users which can be used as input for a search.<p><p>
 
               <img src="search-bar-apple-osx.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
               <p class="text-center"><em><sup>Example of the Search Bar</sup></em></p>
@@ -218,10 +184,10 @@ contributors:
                       <p class="text-center"><em><sup>Example of the prompt feature</sup></em></p>
 
                 </ul>
-              </blockquote>
+              </p>
 
             <h4>Apple's Spotlight</h4>
-              <blockquote class="text-justify">Spotlight is a resource provided by Apple that helps users quickly find anything on MacBook, including documents, emails, apps, songs, contacts, and more. Spotlight also provides suggestions (Spotlight Suggestions) from various sources (Wikipedia, Bing, Maps, news, and iTunes) so the user can have a complete set of information without leaving the app. Search results are composed by rich and interactive previews so the user can play song previews, get directions, send email, make phone calls, and more, directly from the results.<p></p>
+              <p class="text-justify">Spotlight is a resource provided by Apple that helps users quickly find anything on MacBook, including documents, emails, apps, songs, contacts, and more. Spotlight also provides suggestions (Spotlight Suggestions) from various sources (Wikipedia, Bing, Maps, news, and iTunes) so the user can have a complete set of information without leaving the app. Search results are composed by rich and interactive previews so the user can play song previews, get directions, send email, make phone calls, and more, directly from the results.<p></p>
 
               <img src="spotlight-1.png"  class="img-responsive center-block" alt="spotlight-1"></img>
                   <p class="text-center"><em><sup>Spotlight initial screen</sup></em></p>
@@ -248,10 +214,10 @@ contributors:
 
                   Apple's website offers a tutorial to narrow down search results. When searching in Spotlight or the Finder, it is possible to add criteria to a basic search, perform Boolean queries, and search items’ metadata. This information can be found in <a href="https://support.apple.com/kb/PH18758?locale=pt_BR&viewlocale=en_US"><em>https://support.apple.com/kb/PH18758?locale=pt_BR&amp;viewlocale=en_US</em></a>. The website also provides a step-by-step on how to use Spotlight: <a href="https://support.apple.com/kb/PH18828?locale=pt_BR&viewlocale=en_US"><em>https://support.apple.com/kb/PH18828?locale=pt_BR&amp;viewlocale=en_US</em></a>
 
-              </blockquote>
+              </p>
 
             <h4>Variants</h4>
-              <blockquote class="text-justify">
+              <p class="text-justify">
               Some variants for searching in OS X Yosemite are: the search field in the web browser (in this case, Safari) and the search field inside text documents. Both follow the same characteristics mentioned above.<p></p>
               For the web browser:<p></p>
 
@@ -272,24 +238,24 @@ contributors:
                   <img src="search-bar-apple-osx-10.png"  class="img-responsive center-block" alt="search-bar-apple-website-10"></img>
                   <p class="text-center"><em><sup>Results of the search</sup></em></p>
 
-              </blockquote>
+              </p>
 
             <h4>Priority Metrics</h4>
 
-            <blockquote class="text-justify">
+            <p class="text-justify">
             As said before, the usability metrics are essential for search because there are users that deal with this feature. Learnability, as shown, is an important metric when talking about search components; users should recognize the elements that compose the search box and know what to do. <p><p>
 
             Also, all the search components should help improve users' performances (efficiency) and turn the search experience as profitable as possible. That is what Apple's search functions try to do; provide the user with a complete environment that helps to find things faster and in a more accurate way.
-            </blockquote>
+            </p>
 
           <h4>Key Characteristics</h4>
 
-            <blockquote class="text-justify">
+            <p class="text-justify">
               <h4>Strive for consistency</h4>
 
               Maybe consistency is the most important interaction design principle that a search must follow. Users must know what to do when facing a search component and, besides, the results shown by the search process must be accurate and consistant too.
 
-            </blockquote>
+            </p>
 
 
           </div>
@@ -304,29 +270,29 @@ contributors:
 
             <div class="panel-body">
               <h4>General Idea</h4>
-              <blockquote class="text-justify">Search is a graphical control element, which users utilize within many apps. Despite their similar appearances, they provide a wide range of results such as web, device searches, a user's contact list, etc.<p><p>
-              </blockquote>
+              <p class="text-justify">Search is a graphical control element, which users utilize within many apps. Despite their similar appearances, they provide a wide range of results such as web, device searches, a user's contact list, etc.<p><p>
+              </p>
 
               <h4>Typical Appearance</h4>
 
-          <blockquote class="text-justify">
+          <p class="text-justify">
           In general, all the searches look identical to each other.
-          </blockquote>
+          </p>
 
           <img src="search-bar-windows.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
               <p class="text-center"><em><sup>Example of the Search box</sup></em></p>
 
               <h4>Purpose</h4>
 
-          <blockquote class="text-justify">
+          <p class="text-justify">
           The purpose of the search remains the same as a general seach for Windows RT 8.1.
-          </blockquote>
+          </p>
 
               <h4>Typical Behavior</h4>
 
-          <blockquote class="text-justify">
+          <p class="text-justify">
           Search behaviors differ depending on the purpose of the search.
-          </blockquote>
+          </p>
 
             <ul>
                   <li><p><b><em>"zero input canvas":</em></b> Windows RT 8.1 displays a "zero input canvas" before the user enters text in a search. It usually appears in the app canvas and shows recent search history, trending searches, and hints.</p></li><p><p>
@@ -344,28 +310,28 @@ contributors:
 
               <h4>Events</h4>
 
-              <blockquote class="text-justify">As search boxes are composed by a text field and a button, the most relevant search events are <code>enterText</code>, <code>clear</code> and <code>click</code>. Secondary events include <code>dragAndDropText</code>.</blockquote>
+              <p class="text-justify">As search boxes are composed by a text field and a button, the most relevant search events are <code>enterText</code>, <code>clear</code> and <code>click</code>. Secondary events include <code>dragAndDropText</code>.</p>
 
                 <h4>State Diagram</h4>
 
-              <blockquote>
+              <p>
             <img src="state-diagram.png" class="img-responsive center-block" alt="state-diagram">
           <p class="text-center">State Diagram extracted from <em><a href="https://users.cs.jmu.edu/bernstdh/Web/CS345/h3/index.php">https://users.cs.jmu.edu/bernstdh/Web/CS345/h3/index.php</a></em></p>
-          </blockquote>
+          </p>
 
 
               <h4>Component in Action</h4>
 
-          <blockquote>
+          <p>
             <img src="conponent-in-action.gif" class="img-responsive center-block" alt="search-bar-gif-1">
           <p class="text-center">Example extracted from <em><a href="http://thiagonasc.com/page/2">http://helixbing.blob.core.windows.net</a></em></p>
-          </blockquote>
+          </p>
 
         <h4>Variants</h4>
 
-          <blockquote class="text-justify">
+          <p class="text-justify">
           Various examples of types of searches of Windows RT 8.1
-          </blockquote>
+          </p>
 
           <img src="windows-tool-bar-search.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
               <p class="text-center"><em><sup>A tool bar search</sup></em></p>
@@ -382,15 +348,15 @@ contributors:
 
               <h4>Priority Metrics</h4>
 
-            <blockquote class="text-justify">
+            <p class="text-justify">
             The priority metrics of search remains the same as a general seach for Windows RT 8.1.
-          </blockquote>
+          </p>
 
           <h4>Key Characteristics</h4>
 
-            <blockquote class="text-justify">
+            <p class="text-justify">
             Having a search field as the search entry point is necessary because it provides notable footprint.
-          </blockquote>
+          </p>
 
           <img src="abc.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
               <p class="text-center"><em><sup>Before clicking</sup></em></p>
@@ -406,35 +372,31 @@ contributors:
 
             <div class="panel-body">
               <h4>General Idea</h4>
-              <blockquote class="text-justify">
+              <p class="text-justify">
               Search is a graphical element of a user interface that allows users to sift
               and sort through a specified range of information. For example, on iOS 10 search will help a user sift through Contacts, Apps, websites, etc. <p><p>
-              </blockquote>
+              </p>
 
             <h4>Typical Appearence</h4>
-            <blockquote class = "text-justify">
+            <p class = "text-justify">
               Typically for all Apple products, the search component remains the same across the platforms.
               So the example below for the iPhone platform is identical to OS X Yosemite because designers want to keep consistancy across platforms.
-            </blockquote>
-
-            <img src="search_ios_10.png"  class="img-responsive center-block" alt="search_ios_10"></img>
-              <p class="text-center"><em><sup>Example of the Search box</sup></em></p>
-
+            </p>
             <h4>Purpose</h4>
-            <blockquote class="text-justify">
+            <p class="text-justify">
               The purpose of search remains basically the same cross platform for Apple products as well as for other software.
-            </blockquote>
+            </p>
 
             <h4>Typical Behavior</h4>
-            <blockquote class="text-justify">
+            <p class="text-justify">
               The typical behavior for iOS 10 remains the same, in that it takes an input,
               the user presses the search button and the search results are shown.
-            </blockquote>
+            </p>
 
             <h4>Apple's Siri (Special Variant)</h4>
-            <blockquote class="text-justify">
+            <p class="text-justify">
               Much like Apple's Spotlight for the laptop/computer platform. IOS 10 provides a very unique search engine in Siri. Siri is Apple's built-in "intelligent assistant" which users can utilize voice commands to operate their mobile devices or, in the lense we are looking, search their mobile device and/or the internet. Also like Spotlight, Siri provides suggestions from the search commands given to "her" which are taken from sources like Google, Wikipedia, ect.
-            </blockquote>
+            </p>
 
             <div id="search-bars-examples" class="carousel slide" data-ride="carousel">
 
@@ -470,10 +432,10 @@ contributors:
                 <span class="sr-only">Next</span>
               </a>
             </div>
-            <blockquote class= "text-justify">
+            <p class= "text-justify">
               The interesting part about Siri, is that "she" can function as a search however because of the voice command, Siri represents a drastic variant because there is no search bar, but rather a microphone button in which it graphically displays the noise being made.
               When the user speaks, their search input shows up as text, and the search results show up once the user stops speaking.
-            </blockquote>
+            </p>
             <div id="search-bars-examples" class="carousel slide" data-ride="carousel">
 
                <!-- Indicators -->
@@ -508,36 +470,36 @@ contributors:
                 <span class="sr-only">Next</span>
               </a>
             </div>
-            <blockquote class="text-justify">
+            <p class="text-justify">
               After the search, the user is able to click the now available text bar in order to edit the search text (as shown below). This is where Siri becomes a more classic search component.
-            </blockquote>
+            </p>
 
             <img src="siri_search_3.png" width="50%" height="50%" class="img-responsive center-block" alt="siri_search_3"></img>
               <p class="text-center"><em><sup>Siri Text Box Component</sup></em></p>
 
-            <blockquote>
+            <p>
               Having Siri as an "intelligent assistant" for the iPhone platform allows for a new approach towards effeicency when it comes to operating an iPhone and search both one's device and the internet. For example, if you were to give the voice command "SnapChat", then your SnapChat app will open because Siri reconized the command, searched through your apps and chose SnapChat. "She" represents a new variant to the search component which does not necissarily follow the classic User Interaction of the search component.
-            </blockquote>
+            </p>
 
             <h4>Component In Action (Siri Search)</h4>
-            <blockquote>
+            <p>
               <img src="siri_gif.gif" class="img-responsive center-block" alt="siri_gif">
               <p class="text-center">Example extracted from <em><a href="http://giphy.com/gifs/forum">http://thiagonasc.com/page/2</a></em></p>
-            </blockquote>
+            </p>
 
 
             <h4>Priority Metrics</h4>
-            <blockquote class="text-justify">
+            <p class="text-justify">
               Consistency and Lear
-            </blockquote>
+            </p>
             <ul class="text-justify">
               As previously mentioned, the usibility metrics for the search components do not change. The main ones are effiecncy and learnabilty. A search bar must be recognizable to users so they know what to do when they see it (learnability). This is why for Apple products they keep it the same across all platforms. The search component must stress efficiency becuase the is the main point of the search, it to find information as fast as possible.
             </ul>
 
             <h4>Key Components</h4>
-            <blockquote class="text-justify">
+            <p class="text-justify">
               What makes a search a "good" search?
-            </blockquote>
+            </p>
             <h5>Consistency and Efficiency</h5>
             <ul class="text-justify">
               Consistency is obviously number one in making a search component "good". And if we use Apple products as an example, they do well in keeping the search component consistent. Efficiency is the next key component, because that is the point of the search; to find information fast. However, in the example of Siri, consistency was devalued below efficiency, even though it is usually consistency which is held to the highest standard with search components. So when asking what makes a search "good"; both consitency and efficieny must be in the answer.
@@ -550,7 +512,7 @@ contributors:
 
 <h3>Credits &amp; References</h3>
 
-  <blockquote>
+  <p>
     <small>
     <p>Search bar images (carousel): <em><a href="http://www.webdesigndev.com/20-amaaazing-psd-search-boxes/">http://www.webdesigndev.com/20-amaaazing-psd-search-boxes/</a></em></p>
 
@@ -578,4 +540,4 @@ contributors:
 
     <p>Windows Guidelines (Search): <em><a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh465233.aspx">https://msdn.microsoft.com/en-us/library/windows/apps/hh465233.aspx</a></em></p>
     </small>
-  </blockquote>
+  </p>
