@@ -142,6 +142,7 @@ contributors:
 
 <hr><!------------------------------------------------------------------------->
 
+<!--Typical Behaviour---------------------------------------------------------->
   <div class="row">
     <h3>Typical Behavior</h3>
     <p>There are two categories of window resize behavior: manual and automatic.</p>
@@ -222,6 +223,7 @@ contributors:
 
   <hr><!----------------------------------------------------------------------->
 
+<!--In Action------------------------------------------------------------------>
     <div class="row">
       <h4>Component in Action</h4>
       <p>The following gif represent only the resize functions within the Mac OSX
@@ -276,6 +278,7 @@ contributors:
 
   <hr><!----------------------------------------------------------------------->
 
+<!--Variants------------------------------------------------------------------->
   <div class="row">
     <h3>Variants</h3>
     <p>The interface behaviors of resize can vary, depending on the element that is being resized</p>
@@ -346,7 +349,8 @@ contributors:
 
   <hr><!----------------------------------------------------------------------->
 
-    <div class="row">
+<!--Priority Metrics----------------------------------------------------------->
+<div class="row">
       <h3>Priority Metrics</h3>
       <p>Ben Shneiderman, in his book <em>Designing the User Interace</em> defines
         learnability, efficiency, errors, memorability, and satisfaction, as metrics
@@ -391,11 +395,10 @@ contributors:
            and the user's mental model of how large or small the window should actually be.</p>
       </ul>
     </div>
-    <hr>
-
 
   <hr><!----------------------------------------------------------------------->
 
+  <!--KeyC haracteristics------------------------------------------------------->
   <div class="row">
     <h3>Key Characteristics</h3>
     <h4>Direct Manipulation Interaction Style</h4>
@@ -443,7 +446,7 @@ contributors:
   </div>
 
 
-  <hr>
+  <hr><!----------------------------------------------------------------------->
 
   <div class="row">
     <h3>Platform Specific Instances</h3>
@@ -451,276 +454,647 @@ contributors:
       <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active"><a href="#OSX" aria-controls="OSX" role="tab" data-toggle="tab">Mac OSX <i class="fa fa-apple" aria-hidden="true"></i></a></li>
         <li role="presentation"><a href="#Windows10" aria-controls="windows10" role="tab" data-toggle="tab">Windows 10 <i class="fa fa-windows" aria-hidden="true"></i></a></li>
-        <li role="presentation"><a href="#Ubuntu17" aria-controls="windows10" role="tab" data-toggle="tab">Ubuntu 17<i class="fa fa-linux" aria-hidden="true"></i></a></li>
-        <li role="presentation"><a href="#Android8" aria-controls="Android8" role="tab" data-toggle="tab">Android 8<i class="fa fa-android" aria-hidden="true"></i></a></li>
+        <li role="presentation"><a href="#Ubuntu17" aria-controls="Ubuntu17" role="tab" data-toggle="tab">Ubuntu 17 <i class="fa fa-linux" aria-hidden="true"></i></a></li>
+        <li role="presentation"><a href="#Android8" aria-controls="Android8" role="tab" data-toggle="tab">Android 8 <i class="fa fa-android" aria-hidden="true"></i></a></li>
       </ul>
 
-      <div class="tab-content">
-        <!--****************************OSX**********************************-->
-        <div role="tabpanel" class="tab-pane fade in active" id="OSX">
-          <div class="container">
-            <div class="row">
-              <h4>macOS Human Interface Guidelines</h4>
-              <p>In this section, the resize component implmentation in the
-                  <b>Mac OSX</b> platform will be specifically evaulated.
-                  Specific examples of resize implementations will be provided,
-                  as well as a discussion of how Apple's interaction design
-                  principles have influenced these specific resize implmentations.
-                  "macOS Human Interface Guidelines" is a document that provides
-                  insight into the theories, principles, and guidelines that Apple
-                  Developers use to design the macOS interface. One guideline that
-                  it states specifically for resize, is that standard document
-                  windows should have transient resize controls--controls that
-                  disappear when not needed. The interface guidelines also
-                  considers the principle of direct manipulation as a way of
-                  affirming the user's mental model of a task, because it can
-                  feel more natural than what they define as "explicit tasks".</p>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                <div class="thumbnail">
-                  <img src="gif/osx-notes-fullscreen.gif" alt="osX Notes Automatic resize">
-                  <div class="caption">
-                    <h4>Automatic Resize</h4>
-                    <p>This example shows automatic resize in the Notes Application
-                        Window. Hovering over the colored buttons reveals the resize
-                        symbol, and upon click of the green fullscreen button,
-                        the window fills the entire screen. The fullscreen symbol
-                        is indicative of the function it triggers, because of the
-                        arrows that are pointing outwards. In fullscreen mode,
-                        the entire menu disappears, reflecting the macOS guideline
-                        of transient controls. When the user wants to return to
-                        a non-fullscreen mode, the resize button is accessed by
-                        displaying the menu bar, which returns to the screen when
-                        the mouse is at the top of the screen. Hovering over the
-                        button reveals the resize symbol, which is now arrows that
-                        are pointing inward, indicating that the window will now
-                        shrink upon click. </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="thumbnail">
-                  <img src="gif/osx-notes-manualresize-menubarchange.gif" alt="osX notes Manual Resize">
-                  <div class="caption">
-                    <h4>Manual Resize</h4>
-                    <p>This example shows manual resize in the Notes Application
-                        Window. Hovering over the permeter of the window changes the
-                        mouse cursor from a pointer to an arrow, which is indicative
-                        of the direction of resize possible at that position. Dragging
-                        the edge of the window at this point allows the user to explore
-                        different window dimensions, befre setting the new dimension on
-                        mouse release. An interesting characteristic to notice is that
-                        resizing the Notes window will cause text wrap to occur, bounded
-                        by the dimensions of the Notes Window. Also, observe how resize
-                        causes the menu bar to add/drop components on stretch/shrink, respectively.
-                        Thus, for some applications in OSX, resize not only acts on the window size
-                        itself, but on a network of interconnected components that will also
-                        react to the resize operation. In this case, as a consequence
-                        of the resize, the menu bar automatically reformats as the window is resized.
-                        Furthermore, the sidebar hides automattically as its parent window is
-                        resizedits there's more room for content.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                   <div class="thumbnail">
-                       <img src="gif/resize_terminal_smaller.gif" alt="osX Column View Resize">
-                       <div class="caption">
-                           <h4>Column View Resize</h4>
-                           <p>A column view—technically referred to as a b
-                               rowser—lets the user view and navigate a data
-                               hierarchy using a series of vertical columns.
-                               Each column represents one level of the hierarchy
-                               and contains horizontal rows of data items. Within
-                               a column, any parent item that contains nested child
-                               items is marked with a triangle icon. When the user
-                               selects a parent, the next column displays its children.</p>
+  <div class="tab-content">
 
-                            <p> Columns allow resize, this is especially important
-                                if the names of some data items are too long to
-                                fit within the default column width. The user can
-                                hover over the divider between each parent and its
-                                respective child revealling the double arrow icon
-                                that represents that the user can resize the column.
-                                The user can now click and drag to the right or left of
-                                it to make the column wider or narrower respectivelly.
-                                If the user reaches the edge of the window, but still
-                                wishes to resize more the user
-                                will need to keep draging and by doing so it will
-                                resize the window as well (as shown in the  gif).
-                                If the user does not drop the click and dragas back
-                                to the original position, the parent window will
-                                resize to become smaller, but only small as its
-                                original position (user cannot make window smaller
-                                than it was originally in this way).</p>
-                       </div>
-                   </div>
-              </div>
-              <div class="col-sm-6">
-                   <div class="thumbnail">
-                       <img src="gif/dialog_resize.gif" alt="osX Dialog Resize">
-                       <div class="caption">
-                           <h4>Dialog Resize</h4>
-                           <p>A dialog is a type of window that’s designed to elicit
-                                a response from the user. Many dialogs—the Print dialog,
-                                for example—let the user provide several responses
-                                at once. When a dialog permits resizing, elements
-                                that can scale with the dialog do so accordingly
-                                to maintain consistency. In general, views like boxes,
-                                tab views, and tables, expand to fill the dialog.
-                                Other elements that aren’t generally resized,
-                                like buttons, checkboxes, and segmented controls
-                                remain the same size and are anchored to the sides
-                                 (or the center) of the dialog.</p>
-                       </div>
-                   </div>
-              </div>
-              <div class="col-sm-6">
-                  <div class="thumbnail">
-                      <img src="gif/osx-dock-resize.gif" alt="osX dock resize">
-                      <div class="caption">
-                          <h4>Dock Resize</h4>
-                          <p>Direct manipulation occurs at a higher level of abstraction
-                              in this example of a slider that accomplishes resizing the
-                              dock and its icons by means of a resize slider. The user
-                              is manipulating the position of the slider to control the
-                              size of the dock. Although the user is a acting on the
-                              slider interface element, this is still a form of direct
-                              manipulation because the impact of the resize action is
-                              immediately visable via the changing size of the dock on
-                              the screen. Also, note that in this example, the slider
-                              resizes a group of similar elements at the same time.</p>
-                          </div>
-                      </div>
-                  </div>
-              <div class="col-sm-6">
-                   <div class="thumbnail">
-                       <img src="gif/split.gif" alt="osX Split Window">
-                       <div class="caption">
-                           <h4>Split Windows</h4>
-                           <p>A split view manages the presentation of two or more panes
-                                of content. Each pane can contain any variety of elements,
-                                including buttons, tables, column views, text fields, and
-                                even other split views.</p>
-
-                            <p>The panes of a split are separated by a divider that
-                                can typically be dragged to resize the panes.
-                                Each pane can have a minimum and maximum size,
-                                which affects how much it can be resized. Many
-                                apps let the user hide specific panes on request.</p>
-
-                            <p>When a user whans to split a screen, the user should
-                                hover over the colored buttons that reveals the resize
-                                symbol, and upon click and holding of the green
-                                fullscreen button and hold it along the edge of
-                                the screen until a box appears showing the new
-                                dimensions of the window in light bleu. At this point the user
-                                can release the window, which will fill the projected box.
-                                At this poing, the rest of the windows will
-                                automatically be shown on the remainding half of the screen,
-                                indicating the user that he/she should select another
-                                window to cover the remaining space. These actions
-                                requires direct manipulation of the window in the
-                                action of dragging the window to its new location,
-                                however the projected box takes over the resizing
-                                process once the window has been manipulated into the correct
-                                location</p>
-
-                            <p>When the user wishes make a window take up more than 1/2 of the
-                                the screen they can drag the window by its divider and drag it along the
-                                other window, as if it was "pushing" it. At this point the user can release
-                                the window, which will remain in the desired size. This action requires
-                                 direct manipulation of the window in the action of dragging the divider to
-                                 its new location.</p>
-                       </div>
-                   </div>
-              </div>
-              <div class="col-sm-6">
-                   <div class="thumbnail">
-                       <img src="gif/minimum_resize_chrome_terminal.gif" alt="osX Minimum Resizing of Apps">
-                       <div class="caption">
-                           <h4>Minimum resize for different apps</h4>
-                           <p>This video demostrates how the user has differnet
-                              resize options for diferent programs in the OS. More
-                              specifically in the gif above one can find resize
-                              for Chrome and Terminal.  Different programs have
-                              minimum minimun size constraints as it can be seen
-                              from the window.This constraint is encauraged by
-                              macOS, and in fact every built in application has
-                              this functionality. The resizing arrows gives
-                              feedback to the user by changing the double arrow
-                              to single arrow indicating that the window has
-                              reached its minimum resize. </p>
-                       </div>
-                   </div>
-              </div>
-              <div class="col-sm-6">
-                  <div class="thumbnail">
-                      <img src="gif/dock_consideration.gif" alt="osX Dock Consideration when Resizing">
-                      <div class="caption">
-                          <h4>Taking the Dock into account</h4>
-                          <p>The position of the Dock has to be taken into account
-                              when resizing windows. It’s difficult to drag or
-                              resize a portion of a window that’s positioned behind
-                              the Dock or too close to the edge of the screen
-                              that hides the Dock. For this reason once the user
-                              reaches the limits of the Dock when resizing, the
-                              application should stop allowing the userfrom resizing it any
-                              longer. Feedback is provided to the user by changing
-                              the doubled arrow to a single arrow to indicate
-                              that now the window can only be resized in one
-                              direction (opposite to the position towards the doc)
-                              as illustrated by the video.</p>
-                          </div>
-                      </div>
-                  </div>
-              <div class="col-sm-6">
-                <div class="thumbnail">
-                  <img src="gif/system-preferences-noresize.gif" alt="osx system preferences no resize">
-                  <div class="caption">
-                    <h4>Windows that do not support resize</h4>
-                    <p>Some windows, such as "System Preferences" don't have
-                        resize properties. This is because the contents within
-                        the windows are static and cannot be changed. The fact
-                        that the OSX System Preferences window cannot resize is
-                        conveyed by the observation that on hover, the resize
-                        arrow cursor and the resize button did not respond. The
-                         absence of feedback, is feedback itself, telling the
-                         user that the resize operation is not possible on the
-                         System Preferences window.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="thumbnail">
-                  <img src="gif/textedit.gif" alt="OSX TextEdit font resize">
-                  <div class="caption">
-                    <h4>Word Text Resize</h4>
-                    <p>The TextEdit application on the Mac OSX, supports text
-                        resize via the fonts menu. In this menu, text can be
-                        resized in three different ways: font size form fill-in,
-                        selecting the font size from a menu, and using the font
-                        size slider. The font size slider is a form of direct
-                        manipulation, however font size form fill-in and menu
-                        takes in a discrete font size input and outputs the
-                        resized text at the specified font size. Typical use
-                        cases for the form fill-in menu would be if the user
-                        need to specify a particular font size, whereas the
-                        slider may be used if the user wanted to experiment
-                        with quickly viewing the text at different sizes. TextEdit
-                        offers three different methods for text resize so that
-                        the user can manipulate the text size in a way that makes
-                        sense for the user's application.</p>
-                  </div>
-                </div>
-              </div>
+  <!--macOS-------------------------------------------------------------->
+  <div role="tabpanel" class="tab-pane fade in active" id="OSX">
+    <div class="container">
+      <div class="row">
+        <h4>macOS Human Interface Guidelines</h4>
+        <p>In this section, the resize component implmentation in the
+            <b>Mac OSX</b> platform will be specifically evaulated.
+            Specific examples of resize implementations will be provided,
+            as well as a discussion of how Apple's interaction design
+            principles have influenced these specific resize implmentations.
+            "macOS Human Interface Guidelines" is a document that provides
+            insight into the theories, principles, and guidelines that Apple
+            Developers use to design the macOS interface. One guideline that
+            it states specifically for resize, is that standard document
+            windows should have transient resize controls--controls that
+            disappear when not needed. The interface guidelines also
+            considers the principle of direct manipulation as a way of
+            affirming the user's mental model of a task, because it can
+            feel more natural than what they define as "explicit tasks".</p>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+          <div class="thumbnail">
+            <img src="gif/osx-notes-fullscreen.gif" alt="osX Notes Automatic resize">
+            <div class="caption">
+              <h4>Automatic Resize</h4>
+              <p>This example shows automatic resize in the Notes Application
+                  Window. Hovering over the colored buttons reveals the resize
+                  symbol, and upon click of the green fullscreen button,
+                  the window fills the entire screen. The fullscreen symbol
+                  is indicative of the function it triggers, because of the
+                  arrows that are pointing outwards. In fullscreen mode,
+                  the entire menu disappears, reflecting the macOS guideline
+                  of transient controls. When the user wants to return to
+                  a non-fullscreen mode, the resize button is accessed by
+                  displaying the menu bar, which returns to the screen when
+                  the mouse is at the top of the screen. Hovering over the
+                  button reveals the resize symbol, which is now arrows that
+                  are pointing inward, indicating that the window will now
+                  shrink upon click. </p>
             </div>
           </div>
         </div>
+        <div class="col-sm-6">
+          <div class="thumbnail">
+            <img src="gif/osx-notes-manualresize-menubarchange.gif" alt="osX notes Manual Resize">
+            <div class="caption">
+              <h4>Manual Resize</h4>
+              <p>This example shows manual resize in the Notes Application
+                  Window. Hovering over the permeter of the window changes the
+                  mouse cursor from a pointer to an arrow, which is indicative
+                  of the direction of resize possible at that position. Dragging
+                  the edge of the window at this point allows the user to explore
+                  different window dimensions, befre setting the new dimension on
+                  mouse release. An interesting characteristic to notice is that
+                  resizing the Notes window will cause text wrap to occur, bounded
+                  by the dimensions of the Notes Window. Also, observe how resize
+                  causes the menu bar to add/drop components on stretch/shrink, respectively.
+                  Thus, for some applications in OSX, resize not only acts on the window size
+                  itself, but on a network of interconnected components that will also
+                  react to the resize operation. In this case, as a consequence
+                  of the resize, the menu bar automatically reformats as the window is resized.
+                  Furthermore, the sidebar hides automattically as its parent window is
+                  resizedits there's more room for content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+             <div class="thumbnail">
+                 <img src="gif/resize_terminal_smaller.gif" alt="osX Column View Resize">
+                 <div class="caption">
+                     <h4>Column View Resize</h4>
+                     <p>A column view—technically referred to as a b
+                         rowser—lets the user view and navigate a data
+                         hierarchy using a series of vertical columns.
+                         Each column represents one level of the hierarchy
+                         and contains horizontal rows of data items. Within
+                         a column, any parent item that contains nested child
+                         items is marked with a triangle icon. When the user
+                         selects a parent, the next column displays its children.</p>
 
-        <!--****************************Android**********************************-->
-        <div role="tabpanel" class="tab-pane fade in active" id="Android8">
+                      <p> Columns allow resize, this is especially important
+                          if the names of some data items are too long to
+                          fit within the default column width. The user can
+                          hover over the divider between each parent and its
+                          respective child revealling the double arrow icon
+                          that represents that the user can resize the column.
+                          The user can now click and drag to the right or left of
+                          it to make the column wider or narrower respectivelly.
+                          If the user reaches the edge of the window, but still
+                          wishes to resize more the user
+                          will need to keep draging and by doing so it will
+                          resize the window as well (as shown in the  gif).
+                          If the user does not drop the click and dragas back
+                          to the original position, the parent window will
+                          resize to become smaller, but only small as its
+                          original position (user cannot make window smaller
+                          than it was originally in this way).</p>
+                 </div>
+             </div>
+        </div>
+        <div class="col-sm-6">
+             <div class="thumbnail">
+                 <img src="gif/dialog_resize.gif" alt="osX Dialog Resize">
+                 <div class="caption">
+                     <h4>Dialog Resize</h4>
+                     <p>A dialog is a type of window that’s designed to elicit
+                          a response from the user. Many dialogs—the Print dialog,
+                          for example—let the user provide several responses
+                          at once. When a dialog permits resizing, elements
+                          that can scale with the dialog do so accordingly
+                          to maintain consistency. In general, views like boxes,
+                          tab views, and tables, expand to fill the dialog.
+                          Other elements that aren’t generally resized,
+                          like buttons, checkboxes, and segmented controls
+                          remain the same size and are anchored to the sides
+                           (or the center) of the dialog.</p>
+                 </div>
+             </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img src="gif/osx-dock-resize.gif" alt="osX dock resize">
+                <div class="caption">
+                    <h4>Dock Resize</h4>
+                    <p>Direct manipulation occurs at a higher level of abstraction
+                        in this example of a slider that accomplishes resizing the
+                        dock and its icons by means of a resize slider. The user
+                        is manipulating the position of the slider to control the
+                        size of the dock. Although the user is a acting on the
+                        slider interface element, this is still a form of direct
+                        manipulation because the impact of the resize action is
+                        immediately visable via the changing size of the dock on
+                        the screen. Also, note that in this example, the slider
+                        resizes a group of similar elements at the same time.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="col-sm-6">
+             <div class="thumbnail">
+                 <img src="gif/split.gif" alt="osX Split Window">
+                 <div class="caption">
+                     <h4>Split Windows</h4>
+                     <p>A split view manages the presentation of two or more panes
+                          of content. Each pane can contain any variety of elements,
+                          including buttons, tables, column views, text fields, and
+                          even other split views.</p>
+
+                      <p>The panes of a split are separated by a divider that
+                          can typically be dragged to resize the panes.
+                          Each pane can have a minimum and maximum size,
+                          which affects how much it can be resized. Many
+                          apps let the user hide specific panes on request.</p>
+
+                      <p>When a user whans to split a screen, the user should
+                          hover over the colored buttons that reveals the resize
+                          symbol, and upon click and holding of the green
+                          fullscreen button and hold it along the edge of
+                          the screen until a box appears showing the new
+                          dimensions of the window in light bleu. At this point the user
+                          can release the window, which will fill the projected box.
+                          At this poing, the rest of the windows will
+                          automatically be shown on the remainding half of the screen,
+                          indicating the user that he/she should select another
+                          window to cover the remaining space. These actions
+                          requires direct manipulation of the window in the
+                          action of dragging the window to its new location,
+                          however the projected box takes over the resizing
+                          process once the window has been manipulated into the correct
+                          location</p>
+
+                      <p>When the user wishes make a window take up more than 1/2 of the
+                          the screen they can drag the window by its divider and drag it along the
+                          other window, as if it was "pushing" it. At this point the user can release
+                          the window, which will remain in the desired size. This action requires
+                           direct manipulation of the window in the action of dragging the divider to
+                           its new location.</p>
+                 </div>
+             </div>
+        </div>
+        <div class="col-sm-6">
+             <div class="thumbnail">
+                 <img src="gif/minimum_resize_chrome_terminal.gif" alt="osX Minimum Resizing of Apps">
+                 <div class="caption">
+                     <h4>Minimum resize for different apps</h4>
+                     <p>This video demostrates how the user has differnet
+                        resize options for diferent programs in the OS. More
+                        specifically in the gif above one can find resize
+                        for Chrome and Terminal.  Different programs have
+                        minimum minimun size constraints as it can be seen
+                        from the window.This constraint is encauraged by
+                        macOS, and in fact every built in application has
+                        this functionality. The resizing arrows gives
+                        feedback to the user by changing the double arrow
+                        to single arrow indicating that the window has
+                        reached its minimum resize. </p>
+                 </div>
+             </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img src="gif/dock_consideration.gif" alt="osX Dock Consideration when Resizing">
+                <div class="caption">
+                    <h4>Taking the Dock into account</h4>
+                    <p>The position of the Dock has to be taken into account
+                        when resizing windows. It’s difficult to drag or
+                        resize a portion of a window that’s positioned behind
+                        the Dock or too close to the edge of the screen
+                        that hides the Dock. For this reason once the user
+                        reaches the limits of the Dock when resizing, the
+                        application should stop allowing the userfrom resizing it any
+                        longer. Feedback is provided to the user by changing
+                        the doubled arrow to a single arrow to indicate
+                        that now the window can only be resized in one
+                        direction (opposite to the position towards the doc)
+                        as illustrated by the video.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="col-sm-6">
+          <div class="thumbnail">
+            <img src="gif/system-preferences-noresize.gif" alt="osx system preferences no resize">
+            <div class="caption">
+              <h4>Windows that do not support resize</h4>
+              <p>Some windows, such as "System Preferences" don't have
+                  resize properties. This is because the contents within
+                  the windows are static and cannot be changed. The fact
+                  that the OSX System Preferences window cannot resize is
+                  conveyed by the observation that on hover, the resize
+                  arrow cursor and the resize button did not respond. The
+                   absence of feedback, is feedback itself, telling the
+                   user that the resize operation is not possible on the
+                   System Preferences window.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="thumbnail">
+            <img src="gif/textedit.gif" alt="OSX TextEdit font resize">
+            <div class="caption">
+              <h4>Word Text Resize</h4>
+              <p>The TextEdit application on the Mac OSX, supports text
+                  resize via the fonts menu. In this menu, text can be
+                  resized in three different ways: font size form fill-in,
+                  selecting the font size from a menu, and using the font
+                  size slider. The font size slider is a form of direct
+                  manipulation, however font size form fill-in and menu
+                  takes in a discrete font size input and outputs the
+                  resized text at the specified font size. Typical use
+                  cases for the form fill-in menu would be if the user
+                  need to specify a particular font size, whereas the
+                  slider may be used if the user wanted to experiment
+                  with quickly viewing the text at different sizes. TextEdit
+                  offers three different methods for text resize so that
+                  the user can manipulate the text size in a way that makes
+                  sense for the user's application.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Windows10-------------------------------------------------------------->
+  <div role="tabpanel" class="tab-pane fade in" id="Windows10" >
+          <h4>Windows 10 Resizing Instances and Guidelines</h4>
+          <p >&nbsp;&nbsp;&nbsp;&nbsp;This section will evaluate the implementation of the resize component in the <b>Windows 10</b> platform.   In addition to providing specific examples of resizing, this section will discuss the Windows Guidelines and whether they are accurately reflected in the provided examples.  It is important to note that the Windows Guidelines is a huge collection of documentation, and because this only a handful apply directly to resizing.  Some of the specific sections of the Windows Guidelines that will be referenced are:
+            <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742502(v=vs.85).aspx">Windows Window Management</a>,
+            <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499(v=vs.85).aspx">Windows Dialogue Boxes</a>, and
+            <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742498(v=vs.85).aspx">Windows Common Dialogues</a>.
+            Some of the main concepts that can be pulled from these guideline sections are:</p>
+            <ul>
+              <li>
+                <p>Minimum effective window resolution is 800x600 pixels.</p>
+              </li>
+              <li>
+                <p>Optimal resolution for an effective resizable window is 1024x768 pixels.</p>
+              </li>
+              <li>
+                <p>Resizable windows no longer require the resize glyph
+                  ( <img src="gif/windows10-resize-glyph.jpg"/> ) in the lower
+                  right corner of the window.</p>
+                  <ul>
+                    <li>
+                      <p>The glyph requires a status bar in order to be displayed.</p>
+                    </li>
+                    <li>
+                      <p>Resizable window boarders and resize pointers are more effective
+                        at conveying a window is resizable than the glyph.</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>All windows should have a minimize button
+                      ( <img src="img/windows10-minimize-button.jpg"/> ) to reduce
+                      a window to a taskbar button.</p>
+                    </li>
+                    <li>
+                      <p>All windows should have a maximize/restore down button, unless
+                        the window isn’t resizable.</p>
+                        <ul>
+                          <li>
+                            <p>The maximize button ( <img src="img/windows10-maximize-button.jpg"/> )
+                              should make the window full screen, or maximum needed size.</p>
+                            </li>
+                            <li>
+                              <p>The restore ( <img src="img/windows10-restore-down-button.jpg"/> )
+                                down button should restore the window to its previous size.</p>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <p>Use resizable windows whenever possible to avoid scroll bars
+                              and truncated data.</p>
+                            </li>
+                            <li>
+                              <p>A minimum window size should be set if the window will no
+                                longer be usable at certain dimensions.</p>
+                              </li>
+                            </ul>
+                            <p>Building on these priciples, here are some specific examples of
+                              resizing in Windows 10 with a breif descripton and reflection on
+                              their adherence to the Windows Guidelines.</p>
+                              <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                  <div class="thumbnail">
+                                    <img src="gif/windows10-automatic-resize.gif" alt="Windows 10 Automatic Resize Gif">
+                                    <div class="caption">
+                                      <h4>Automatic Resize</h4>
+                                      <p>&nbsp;&nbsp;&nbsp;&nbsp;In this example the maximize, restore
+                                        down, and minimize buttons are used to manipulate the
+                                        dimensions of a Google Chrome window.  When each of these
+                                        buttons are clicked, they perform the action specified in
+                                        the Windows Guidelines.  Also, complying with Windows
+                                        guidelines, whenever the cursor hovers over on of these
+                                        buttons a description box appears with the button's name.
+                                        This example illustrates automatic resizing because the user
+                                        doesn't have to explicitly specify the new dimensions of
+                                        the window, but still knows what dimensions the window will
+                                        have.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-12 col-md-6">
+                                    <div class="thumbnail">
+                                      <img src="gif/windows10-manual-resize.gif" alt="Windows 10 Manual Resize Gif">
+                                      <div class="caption">
+                                        <h4>Manual Resize</h4>
+                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;In contrast to the last example,
+                                          automatic resizing, manual resizing requires the user to
+                                          explicitly specify the windows size.  While this may be
+                                          accomplished through the use of scroll bars, the most common
+                                          example of manual resizing in Windows 10 involves clicking
+                                          and dragging the window's boarders to the desired width or
+                                          height.  The window in this example complies with Windows
+                                          guidelines statement that the resize glyph isn't required,
+                                          and instead makes the manual resize functionality apparent
+                                          through the use of resize pointers that replace the cursor
+                                          when it is over the window's bottom and right boarders,
+                                          with arrows pointing in the directions of possible change.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                      <div class="thumbnail">
+                                        <img src="gif/windows10-splitscreen.gif" alt="Windows 10 Split Screen Resize Gif">
+                                        <div class="caption">
+                                          <h4>Split Screen Resize</h4>
+                                          <p>&nbsp;&nbsp;&nbsp;&nbsp;This example of resizing in Windows
+                                            10 illustrates both automatic and manual resizing.  For example,
+                                            when the user wishes make a window take up 1/2 or 1/4 of the
+                                            screen they drag the window by its top boarder and hold it
+                                            along the edge of the screen until a box appears showing
+                                            the new dimensions of the window.  At this point the user
+                                            can release the window, which will fill the projected box.
+                                            As mentioned earlier, this action requires direct manipulation
+                                            of the window in the action of dragging the window to its new
+                                            location, however the projected box takes over the resizing
+                                            process once the window has been manipulated into the correct
+                                            location.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-12 col-md-6">
+                                        <div class="thumbnail">
+                                          <img src="gif/windows10-form-fillin.gif" alt="Windows 10 Form Fill-in Resize Gif">
+                                          <div class="caption">
+                                            <h4>Form Fill-in Resize</h4>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;This example uses Word to illustrate
+                                              the resizing of text using a form fill-in.  While this is
+                                              a cross platform program, it illustrates the same mechanic
+                                              that is present in other Windows 10 programs for resizing
+                                              windows and objects.  This type of resizing requires the
+                                              user to choose or input their desired size into the form.
+                                              Once the form has been submitted the size is updated, and
+                                              the user is free to input a new size.  While this process
+                                              isn't exactly direct manipulation it still gives users the
+                                              ability to quickly change window dimensions, and in some
+                                              instances be far more explicit in the new dimensions.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+                                          <div class="thumbnail">
+                                            <img src="gif/windows10-not-resizable.gif" alt="Windows 10 No Resize Gif">
+                                            <div class="caption">
+                                              <h4>No Resize</h4>
+                                              <p>&nbsp;&nbsp;&nbsp;&nbsp;In the example above, the System
+                                                Properties settings window doesn't allow for any resizing.
+                                                Any attempts to use the window boarders doesn't work, and
+                                                the resize pointers aren't visible.  It seems that this
+                                                breaks the Windows guideline that says to use resizable
+                                                windows whenever possible.  However, this example adheres
+                                                to the Windows guidelines because the window doesn't require
+                                                any resizing because the content of the window won't change,
+                                                and it is small enough to work on all screens.  Additionally,
+                                                this is a Guideline compliant non-resizable window because
+                                                it doesn't include nonfunctional minimize or maximize/restore
+                                                down buttons.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div role="tabpanel" class="tab-pane fade in" id="Windows10" >
+                                        <h4>Windows 10 Resizing Instances and Guidelines</h4>
+                                      </div>
+
+  <!--Ubuntu17-------------------------------------------------------------->
+  <div role="tabpanel" class="tab-pane fade in" id="Ubuntu17">
+    <div class="container">
+
+      <div class="row">
+        <h4>macOS Human Interface Guidelines</h4>
+        <p>In this section, the resize component implmentation in the
+            <b>Mac OSX</b> platform will be specifically evaulated.
+            Specific examples of resize implementations will be provided,
+            as well as a discussion of how Apple's interaction design
+            principles have influenced these specific resize implmentations.
+            "macOS Human Interface Guidelines" is a document that provides
+            insight into the theories, principles, and guidelines that Apple
+            Developers use to design the macOS interface. One guideline that
+            it states specifically for resize, is that standard document
+            windows should have transient resize controls--controls that
+            disappear when not needed. The interface guidelines also
+            considers the principle of direct manipulation as a way of
+            affirming the user's mental model of a task, because it can
+            feel more natural than what they define as "explicit tasks".</p>
+      </div>
+
+          <div class="row">
+              <div class="col-sm-6">
+              <div class="thumbnail">
+                <img src="gif/ubuntu_auto.gif" alt="ubuntu Automatic resize">
+                <div class="caption">
+                  <h4>Automatic Resize</h4>
+                  <p>This example shows automatic resize in the Notes Application
+                      Window. Hovering over the colored buttons reveals the resize
+                      symbol, and upon click of the green fullscreen button,
+                      the window fills the entire screen. The fullscreen symbol
+                      is indicative of the function it triggers, because of the
+                      arrows that are pointing outwards. In fullscreen mode,
+                      the entire menu disappears, reflecting the macOS guideline
+                      of transient controls. When the user wants to return to
+                      a non-fullscreen mode, the resize button is accessed by
+                      displaying the menu bar, which returns to the screen when
+                      the mouse is at the top of the screen. Hovering over the
+                      button reveals the resize symbol, which is now arrows that
+                      are pointing inward, indicating that the window will now
+                      shrink upon click. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="thumbnail">
+                <img src="gif/ubuntu_arrows.gif" alt="Ubuntu notes Manual Resize">
+                <div class="caption">
+                  <h4>Manual Resize</h4>
+                  <p>This example shows manual resize in the Notes Application
+                      Window. Hovering over the permeter of the window changes the
+                      mouse cursor from a pointer to an arrow, which is indicative
+                      of the direction of resize possible at that position. Dragging
+                      the edge of the window at this point allows the user to explore
+                      different window dimensions, befre setting the new dimension on
+                      mouse release. An interesting characteristic to notice is that
+                      resizing the Notes window will cause text wrap to occur, bounded
+                      by the dimensions of the Notes Window. Also, observe how resize
+                      causes the menu bar to add/drop components on stretch/shrink, respectively.
+                      Thus, for some applications in OSX, resize not only acts on the window size
+                      itself, but on a network of interconnected components that will also
+                      react to the resize operation. In this case, as a consequence
+                      of the resize, the menu bar automatically reformats as the window is resized.
+                      Furthermore, the sidebar hides automattically as its parent window is
+                      resizedits there's more room for content.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+                 <div class="thumbnail">
+                     <img src="gif/ubuntu_properties.gif" alt="Ubuntu resize the properties in finder">
+                     <div class="caption">
+                         <h4>Folder Description Resize</h4>
+                         <p>Add info here</p>
+                     </div>
+                 </div>
+            </div>
+
+            <div class="col-sm-6">
+                 <div class="thumbnail">
+                     <img src="gif/ubuntu_dialog.gif" alt="Ubuntu Dialog Resize">
+                     <div class="caption">
+                         <h4>Dialog Resize</h4>
+                         <p>A dialog is a type of window that’s designed to elicit
+                              a response from the user. Many dialogs—the Print dialog,
+                              for example—let the user provide several responses
+                              at once. When a dialog permits resizing, elements
+                              that can scale with the dialog do so accordingly
+                              to maintain consistency. In general, views like boxes,
+                              tab views, and tables, expand to fill the dialog.
+                              Other elements that aren’t generally resized,
+                              like buttons, checkboxes, and segmented controls
+                              remain the same size and are anchored to the sides
+                               (or the center) of the dialog.</p>
+                     </div>
+                 </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                    <img src="gif/ubuntu_launcher.gif" alt="Ubuntu dock resize">
+                    <div class="caption">
+                        <h4>Dock Resize</h4>
+                        <p>Direct manipulation occurs at a higher level of abstraction
+                            in this example of a slider that accomplishes resizing the
+                            dock and its icons by means of a resize slider. The user
+                            is manipulating the position of the slider to control the
+                            size of the dock. Although the user is a acting on the
+                            slider interface element, this is still a form of direct
+                            manipulation because the impact of the resize action is
+                            immediately visable via the changing size of the dock on
+                            the screen. Also, note that in this example, the slider
+                            resizes a group of similar elements at the same time.</p>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col-sm-6">
+                 <div class="thumbnail">
+                     <img src="gif/ubuntu_split.gif" alt="Ubuntu Split Window">
+                     <div class="caption">
+                         <h4>Split Windows</h4>
+                         <p>A split view manages the presentation of two or more panes
+                              of content. Each pane can contain any variety of elements,
+                              including buttons, tables, column views, text fields, and
+                              even other split views.</p>
+
+                          <p>The panes of a split are separated by a divider that
+                              can typically be dragged to resize the panes.
+                              Each pane can have a minimum and maximum size,
+                              which affects how much it can be resized. Many
+                              apps let the user hide specific panes on request.</p>
+
+                          <p>When a user whans to split a screen, the user should
+                              hover over the colored buttons that reveals the resize
+                              symbol, and upon click and holding of the green
+                              fullscreen button and hold it along the edge of
+                              the screen until a box appears showing the new
+                              dimensions of the window in light bleu. At this point the user
+                              can release the window, which will fill the projected box.
+                              At this poing, the rest of the windows will
+                              automatically be shown on the remainding half of the screen,
+                              indicating the user that he/she should select another
+                              window to cover the remaining space. These actions
+                              requires direct manipulation of the window in the
+                              action of dragging the window to its new location,
+                              however the projected box takes over the resizing
+                              process once the window has been manipulated into the correct
+                              location</p>
+
+                          <p>When the user wishes make a window take up more than 1/2 of the
+                              the screen they can drag the window by its divider and drag it along the
+                              other window, as if it was "pushing" it. At this point the user can release
+                              the window, which will remain in the desired size. This action requires
+                               direct manipulation of the window in the action of dragging the divider to
+                               its new location.</p>
+                     </div>
+                 </div>
+            </div>
+
+            <div class="col-sm-6">
+                 <div class="thumbnail">
+                     <img src="gif/ubuntu_min.gif" alt="Ubuntu Minimum Resizing of Apps">
+                     <div class="caption">
+                         <h4>Minimum resize for different apps</h4>
+                         <p>This video demostrates how the user has differnet
+                              resize options for diferent programs in the OS.
+                              Some frograms will allow to resize all the way,
+                              while others will enforce a minimun size constraint.
+                              This constraint is encauraged by Ubuntu, and in fact
+                              every built in application has this functionality.
+                         </p>
+                     </div>
+                 </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                    <img src="gif/ubuntu_doc.gif" alt="Ubuntu Dock Consideration when Resizing">
+                    <div class="caption">
+                        <h4>The influence of the launcher</h4>
+                        <p>The position of the launcher has to be taken into account
+                            when resizing windows. It’s difficult to drag or
+                            resize a portion of a window that’s positioned behind
+                            the launcher. For this reason once the user
+                            reaches the limits of the launcher when resizing, the
+                            application should stop allowing the userfrom resizing it any
+                            longer. In Uvbuntu, no feedback is provided to the useras
+                            illustrated by the video.</p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+        <!--Android------------------------------------------------------------>
+
+<!--Android8-------------------------------------------------------------->
+  <div role="tabpanel" class="tab-pane fade in" id="Android8">
             <div class="container">
                 <div class="row">
                     <h4>add</h4>
@@ -754,8 +1128,7 @@ contributors:
                                     enhances the usability for all users.
                                     It’s also the right thing to do. Material design’s
                                     built-in accessibility considerations will help
-                                    you accommodate all of your users. One of the
-                                    accesibility principles is</p>
+                                    you accommodate all of your users.</p>
                             </div>
                         </div>
                     </div>
@@ -788,182 +1161,13 @@ contributors:
             </div>
         </div>
 
-
-        <!--****************************Windows 10**********************************-->
-        <div role="tabpanel" class="tab-pane fade in" id="Windows10" >
-          <h4>Windows 10 Resizing Instances and Guidelines</h4>
-          <p >&nbsp;&nbsp;&nbsp;&nbsp;This section will evaluate the implementation of the resize component in the <b>Windows 10</b> platform.   In addition to providing specific examples of resizing, this section will discuss the Windows Guidelines and whether they are accurately reflected in the provided examples.  It is important to note that the Windows Guidelines is a huge collection of documentation, and because this only a handful apply directly to resizing.  Some of the specific sections of the Windows Guidelines that will be referenced are:
-            <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742502(v=vs.85).aspx">Windows Window Management</a>,
-            <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499(v=vs.85).aspx">Windows Dialogue Boxes</a>, and
-            <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742498(v=vs.85).aspx">Windows Common Dialogues</a>.
-            Some of the main concepts that can be pulled from these guideline sections are:</p>
-          <ul>
-            <li>
-              <p>Minimum effective window resolution is 800x600 pixels.</p>
-            </li>
-            <li>
-              <p>Optimal resolution for an effective resizable window is 1024x768 pixels.</p>
-            </li>
-            <li>
-              <p>Resizable windows no longer require the resize glyph
-                  ( <img src="gif/windows10-resize-glyph.jpg"/> ) in the lower
-                  right corner of the window.</p>
-              <ul>
-                <li>
-                  <p>The glyph requires a status bar in order to be displayed.</p>
-                </li>
-                <li>
-                  <p>Resizable window boarders and resize pointers are more effective
-                       at conveying a window is resizable than the glyph.</p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p>All windows should have a minimize button
-                  ( <img src="img/windows10-minimize-button.jpg"/> ) to reduce
-                  a window to a taskbar button.</p>
-            </li>
-            <li>
-              <p>All windows should have a maximize/restore down button, unless
-                  the window isn’t resizable.</p>
-              <ul>
-                <li>
-                  <p>The maximize button ( <img src="img/windows10-maximize-button.jpg"/> )
-                      should make the window full screen, or maximum needed size.</p>
-                </li>
-                <li>
-                  <p>The restore ( <img src="img/windows10-restore-down-button.jpg"/> )
-                      down button should restore the window to its previous size.</p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p>Use resizable windows whenever possible to avoid scroll bars
-                  and truncated data.</p>
-            </li>
-            <li>
-              <p>A minimum window size should be set if the window will no
-                  longer be usable at certain dimensions.</p>
-            </li>
-          </ul>
-          <p>Building on these priciples, here are some specific examples of
-              resizing in Windows 10 with a breif descripton and reflection on
-              their adherence to the Windows Guidelines.</p>
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <div class="thumbnail">
-                <img src="gif/windows10-automatic-resize.gif" alt="Windows 10 Automatic Resize Gif">
-                <div class="caption">
-                  <h4>Automatic Resize</h4>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;In this example the maximize, restore
-                      down, and minimize buttons are used to manipulate the
-                      dimensions of a Google Chrome window.  When each of these
-                      buttons are clicked, they perform the action specified in
-                      the Windows Guidelines.  Also, complying with Windows
-                      guidelines, whenever the cursor hovers over on of these
-                      buttons a description box appears with the button's name.
-                      This example illustrates automatic resizing because the user
-                      doesn't have to explicitly specify the new dimensions of
-                      the window, but still knows what dimensions the window will
-                      have.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <div class="thumbnail">
-                <img src="gif/windows10-manual-resize.gif" alt="Windows 10 Manual Resize Gif">
-                <div class="caption">
-                  <h4>Manual Resize</h4>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;In contrast to the last example,
-                      automatic resizing, manual resizing requires the user to
-                      explicitly specify the windows size.  While this may be
-                      accomplished through the use of scroll bars, the most common
-                      example of manual resizing in Windows 10 involves clicking
-                      and dragging the window's boarders to the desired width or
-                      height.  The window in this example complies with Windows
-                      guidelines statement that the resize glyph isn't required,
-                      and instead makes the manual resize functionality apparent
-                      through the use of resize pointers that replace the cursor
-                      when it is over the window's bottom and right boarders,
-                      with arrows pointing in the directions of possible change.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <div class="thumbnail">
-                <img src="gif/windows10-splitscreen.gif" alt="Windows 10 Split Screen Resize Gif">
-                <div class="caption">
-                  <h4>Split Screen Resize</h4>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;This example of resizing in Windows
-                      10 illustrates both automatic and manual resizing.  For example,
-                      when the user wishes make a window take up 1/2 or 1/4 of the
-                      screen they drag the window by its top boarder and hold it
-                      along the edge of the screen until a box appears showing
-                      the new dimensions of the window.  At this point the user
-                      can release the window, which will fill the projected box.
-                      As mentioned earlier, this action requires direct manipulation
-                      of the window in the action of dragging the window to its new
-                      location, however the projected box takes over the resizing
-                      process once the window has been manipulated into the correct
-                      location.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <div class="thumbnail">
-                <img src="gif/windows10-form-fillin.gif" alt="Windows 10 Form Fill-in Resize Gif">
-                <div class="caption">
-                  <h4>Form Fill-in Resize</h4>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;This example uses Word to illustrate
-                      the resizing of text using a form fill-in.  While this is
-                      a cross platform program, it illustrates the same mechanic
-                      that is present in other Windows 10 programs for resizing
-                      windows and objects.  This type of resizing requires the
-                      user to choose or input their desired size into the form.
-                      Once the form has been submitted the size is updated, and
-                      the user is free to input a new size.  While this process
-                      isn't exactly direct manipulation it still gives users the
-                      ability to quickly change window dimensions, and in some
-                      instances be far more explicit in the new dimensions.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <div class="thumbnail">
-                <img src="gif/windows10-not-resizable.gif" alt="Windows 10 No Resize Gif">
-                <div class="caption">
-                  <h4>No Resize</h4>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;In the example above, the System
-                      Properties settings window doesn't allow for any resizing.
-                      Any attempts to use the window boarders doesn't work, and
-                      the resize pointers aren't visible.  It seems that this
-                      breaks the Windows guideline that says to use resizable
-                      windows whenever possible.  However, this example adheres
-                      to the Windows guidelines because the window doesn't require
-                      any resizing because the content of the window won't change,
-                      and it is small enough to work on all screens.  Additionally,
-                      this is a Guideline compliant non-resizable window because
-                      it doesn't include nonfunctional minimize or maximize/restore
-                      down buttons.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div role="tabpanel" class="tab-pane fade in" id="Windows10" >
-          <h4>Windows 10 Resizing Instances and Guidelines</h4>
-        </div>
-
       </div>
-    </div>
-  </div>
-  <hr>
+   </div>
+</div>
 
+<hr><!------------------------------------------------------------------------->
+
+<!--References----------------------------------------------------------------->
   <div class="row">
     <h3>Credits &amp; References</h3>
     <a href="http://www.lowcountryren.com/nestor/Documentation/ionicons-1.4.1/png/512/arrow-resize.png">Resize Arrow Diagonal Image</a><br>
