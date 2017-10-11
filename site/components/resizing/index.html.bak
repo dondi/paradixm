@@ -105,7 +105,7 @@ contributors:
               <img class="center-block" class="img-responsive" src="img/resize-buttons-3mac.png" alt="Resize Buttons 3" height="30">
             </div>
             <div class="col-md-4 col-sm-12">
-              <p class="text-center">Dissabled</p>
+              <p class="text-center">Disabled</p>
               <img class="center-block" class="img-responsive" src="img/resize-buttons-1mac.png" alt="Resize Buttons 1" height="30">
             </div>
           </div><!--mac-->
@@ -156,9 +156,9 @@ contributors:
             <p>The dimensions of a window can be manually resized by a drag and
               drop operation using the arrow resize cursor.
               Entering manual resize mode is visually represented by a change in
-              the mouse cursor icon's apprearance from a pointer to an arrow.
+              the mouse cursor icon's appearance from a pointer to an arrow.
               The orientation of the arrow, indicates the direction of resize,
-               whether horizontal, veritical or diagonal.Once in the resize stage,
+               whether horizontal, vertical or diagonal.Once in the resize stage,
                the perimeter of the window can be manipulated.</p>
             <h5>Events</h5>
             <ul>
@@ -259,10 +259,10 @@ contributors:
             <p>This is an example of automatically resizing a window.
               Hovering over the menu buttons to the left of the window
               reveals symbols that define the resize options possible.
-              When in default (non-fullscreen mode), upon clicking the green
+              When in default (non-full-screen mode), upon clicking the green
               button, the window will resize to fill the dimensions of the screen.
-              When in fullscreen mode, upon clicking the same button, the
-              window will resize to its size prior to being in fullscreen.</p>
+              When in full-screen mode, upon clicking the same button, the
+              window will resize to its size prior to being in full-screen.</p>
           </div>
             <img id="overlay" class="col-md-3" src="gif/osx-button-change.gif" alt="osx cursor change" class="img-rounded img-responsive">
             <img id="overlay" class="col-md-3" class="img-rounded img-responsive" src="gif/autoresize_pointer.gif" alt="osx cursor change">
@@ -352,7 +352,7 @@ contributors:
 <!--Priority Metrics----------------------------------------------------------->
 <div class="row">
       <h3>Priority Metrics</h3>
-      <p>Ben Shneiderman, in his book <em>Designing the User Interace</em> defines
+      <p>Ben Shneiderman, in his book <em>Designing the User Interface</em> defines
         learnability, efficiency, errors, memorability, and satisfaction, as metrics
         by which the usability of a system can be measured. Resize is a common
         interface component, and in a perfect system, all five metrics are important.
@@ -360,7 +360,7 @@ contributors:
         evaluated against these metrics, learnability, efficiency, and memorability
         rise as the most important, whereas errors and satisfaction are less important.</p>
       <ul>
-        <li><h4>Lernability </h4></li>
+        <li><h4>Learnability </h4></li>
         <p>Learnability is an extremely important metric for effective resize
           interaction design. Resize is a very utilitarian interaction that is
           essential to GUI-based systems. Thus, resize needs to have a short
@@ -378,7 +378,7 @@ contributors:
         <li><h4>Efficiency</h4></li>
         <p>Efficiency is a key metric for effective resize interaction design.
           Feedback is integral for direct manipulation resize, and any delay in
-          recieving the visual feedback of element resize will affect the user's
+          receiving the visual feedback of element resize will affect the user's
           productivity.</p>
         <li><h4>Memorability</h4></li>
         <p>Because learnability is such a high priority, memorability is also an
@@ -438,7 +438,7 @@ contributors:
       <p>Overall, effective interaction design must allow for the user's mental
           model derived from the system image to correspond with the designer's
           mental model. Assisting this process in manual resize is the parallels
-          that digifal direct manipulation has with how users interact with the
+          that digital direct manipulation has with how users interact with the
           physical world. Physically resizing a moldable substance, such as clay
           or elastic is mirrored in the "grasping" <code>mouse down</code> and
           "stretching" <code>resize state</code> of a window or element on a screen.
@@ -465,11 +465,11 @@ contributors:
     <div class="container">
       <div class="row">
         <h4>macOS Human Interface Guidelines</h4>
-        <p>In this section, the resize component implmentation in the
-            <b>Mac OSX</b> platform will be specifically evaulated.
+        <p>In this section, the resize component implementation in the
+            <b>Mac OSX</b> platform will be specifically evaluated.
             Specific examples of resize implementations will be provided,
             as well as a discussion of how Apple's interaction design
-            principles have influenced these specific resize implmentations.
+            principles have influenced these specific resize implementations.
             "macOS Human Interface Guidelines" is a document that provides
             insight into the theories, principles, and guidelines that Apple
             Developers use to design the macOS interface. One guideline that
@@ -488,13 +488,13 @@ contributors:
               <h4>Automatic Resize</h4>
               <p>This example shows automatic resize in the Notes Application
                   Window. Hovering over the colored buttons reveals the resize
-                  symbol, and upon click of the green fullscreen button,
-                  the window fills the entire screen. The fullscreen symbol
+                  symbol, and upon click of the green full-screen button,
+                  the window fills the entire screen. The full-screen symbol
                   is indicative of the function it triggers, because of the
-                  arrows that are pointing outwards. In fullscreen mode,
+                  arrows that are pointing outwards. In full-screen mode,
                   the entire menu disappears, reflecting the macOS guideline
                   of transient controls. When the user wants to return to
-                  a non-fullscreen mode, the resize button is accessed by
+                  a non-full-screen mode, the resize button is accessed by
                   displaying the menu bar, which returns to the screen when
                   the mouse is at the top of the screen. Hovering over the
                   button reveals the resize symbol, which is now arrows that
@@ -509,11 +509,11 @@ contributors:
             <div class="caption">
               <h4>Manual Resize</h4>
               <p>This example shows manual resize in the Notes Application
-                  Window. Hovering over the permeter of the window changes the
+                  Window. Hovering over the perimeter of the window changes the
                   mouse cursor from a pointer to an arrow, which is indicative
                   of the direction of resize possible at that position. Dragging
                   the edge of the window at this point allows the user to explore
-                  different window dimensions, befre setting the new dimension on
+                  different window dimensions, before setting the new dimension on
                   mouse release. An interesting characteristic to notice is that
                   resizing the Notes window will cause text wrap to occur, bounded
                   by the dimensions of the Notes Window. Also, observe how resize
@@ -521,9 +521,9 @@ contributors:
                   Thus, for some applications in OSX, resize not only acts on the window size
                   itself, but on a network of interconnected components that will also
                   react to the resize operation. In this case, as a consequence
-                  of the resize, the menu bar automatically reformats as the window is resized.
-                  Furthermore, the sidebar hides automattically as its parent window is
-                  resizedits there's more room for content.</p>
+                  of the resize, the menu bar automatically re-formats as the window is resized.
+                  Furthermore, the sidebar hides automatically as its parent window is
+                  resized its there's more room for content.</p>
             </div>
           </div>
         </div>
@@ -545,15 +545,15 @@ contributors:
                           if the names of some data items are too long to
                           fit within the default column width. The user can
                           hover over the divider between each parent and its
-                          respective child revealling the double arrow icon
+                          respective child revealing the double arrow icon
                           that represents that the user can resize the column.
                           The user can now click and drag to the right or left of
-                          it to make the column wider or narrower respectivelly.
+                          it to make the column wider or narrower respectively.
                           If the user reaches the edge of the window, but still
                           wishes to resize more the user
-                          will need to keep draging and by doing so it will
+                          will need to keep dragging and by doing so it will
                           resize the window as well (as shown in the  gif).
-                          If the user does not drop the click and dragas back
+                          If the user does not drop the click and drags back
                           to the original position, the parent window will
                           resize to become smaller, but only small as its
                           original position (user cannot make window smaller
@@ -567,14 +567,14 @@ contributors:
                  <div class="caption">
                      <h4>Dialog Resize</h4>
                      <p>A dialog is a type of window that’s designed to elicit
-                          a response from the user. Many dialogs—the Print dialog,
+                          a response from the user. Many dialogues—the Print dialog,
                           for example—let the user provide several responses
                           at once. When a dialog permits resizing, elements
                           that can scale with the dialog do so accordingly
                           to maintain consistency. In general, views like boxes,
                           tab views, and tables, expand to fill the dialog.
                           Other elements that aren’t generally resized,
-                          like buttons, checkboxes, and segmented controls
+                          like buttons, check-boxes, and segmented controls
                           remain the same size and are anchored to the sides
                            (or the center) of the dialog.</p>
                  </div>
@@ -592,7 +592,7 @@ contributors:
                         size of the dock. Although the user is a acting on the
                         slider interface element, this is still a form of direct
                         manipulation because the impact of the resize action is
-                        immediately visable via the changing size of the dock on
+                        immediately visible via the changing size of the dock on
                         the screen. Also, note that in this example, the slider
                         resizes a group of similar elements at the same time.</p>
                     </div>
