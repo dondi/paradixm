@@ -10,6 +10,9 @@ contributors:
 
     - name: Josh Soriano
       github: joshsoriano
+
+    - name: Francesca Kang
+      github: francescahk
 ---
 <p class="lead"> Implemented on every device, the date and time component allows users to modify a system's date and time and the settings for each of them, which include: display, format, time conventions, time-zone, language, etc.</p>
 
@@ -99,9 +102,14 @@ contributors:
 <h3>Platform-Specific Instances</h3>
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#macOS">macOS</a></li>
-  <li><a data-toggle="tab" href="#windows10">Windows 10</a></li>
-  <li><a data-toggle="tab" href="#iOS">iOS</a></li>
+  <li class="active"><a data-toggle="tab" href="#macOS">macOS</a>
+  </li>
+  <li><a data-toggle="tab" href="#windows10">Windows 10</a>
+  </li>
+  <li><a data-toggle="tab" href="#iOS">iOS</a>
+  </li>
+  <li><a data-toggle="tab" href="#watchOS">watchOS</a>
+  </li>
 </ul>
 
 <div class="tab-content">
@@ -356,6 +364,169 @@ contributors:
 
       </div>
     </div>
+
+    <div id="watchOS" class = "tab-pane fade">
+      <h3>watchOS</h3>
+
+      <div class="col-sm-12">
+        <h3>Typical Appearance</h3>
+        <p>The Date and Time component on watchOS mirrors the same time value as its bluetooth-connected corresponding iOS device. The interface is extremely minimal with only one setting option.</p>
+    </div>
+
+    <img src="watchOS media/IMG_8034.PNG" alt="Watch Settings Time 1" class="img-thumbnail">
+    <img src="watchOS media/IMG_8035.PNG" alt="Watch Settings Time 2" class="img-thumbnail">
+
+<div class="col-sm-12">
+<h3>Typical Behavior</h3>
+
+<p>The Date and Time component is found in the Settings application under the category “Time.” Because the watch corresponds to an iOS device, the accepted “real time” base cannot be altered directly through watchOS settings. </p>
+
+<img src="watchOS media/IMG_8059.PNG" class="rounded float-right" alt="Watch Settings Time 3">
+
+<div class="col-sm-6">
+<h4>Events</h4>
+
+<p>Consistent with common use of non-OS based watches, the displayed time can be changed to project a value from of 0 minutes to 59 minutes ahead of the “real time.” The time is incremented by minute intervals using a Digital Crown to scroll, another feature consistent with non-OS based watches. As stated below the time gap display, the “real time” value is used by all other applications. The only event that occurs is a substitution in the displayed time.
+<br><br><br><br><br><br><br><br>
+</p>
+
+</div>
+</div>
+
+<div class="col-sm-12">
+<h3>Variants (Clock and Clock-related watchOS applications)</h3>
+
+<div class="col-sm-6">
+<h4>Independent of iOS Device:</h4>
+
+  <div class="col-sm-12">
+    <h5 class="text-left">Stopwatch</h5>
+
+    <p>The Stopwatch application can be used to time events in the format “00:00.00” with the units of “minutes: seconds. centiseconds.” In the default display, the screen presents itself as that of a classic analog stopwatch. When selected, the green button triggers the start of measured time and immediately turns red to become the “stop” button. If pressed during running time, the white button records a “lap” time interval while allowing the time to continue without interruption. If pressed after time is stopped, it resets the recorded time(s). In order to view lap times, the user must press the visualized stopwatch portion of the screen to prompt the expanded view. The stopwatch can also be used in the expanded version with the addition of labelled buttons and a real-time view of each additional “lap” value.
+</p>
+
+<div class="row">
+
+<img src="watchOS media/IMG_8036.PNG" style="width:218px;height:272px;" alt="Stopwatch1">
+<img src="watchOS media/IMG_8037.PNG" style="width:218px;height:272px;" alt="Stopwatch2">
+
+</div>
+
+  </div>
+
+</div>
+
+<div class="col-sm-6">
+<h4>Dependent on iOS Device:</h4>
+  <div class="col-sm-12">
+    <h5 class="text-left">Clock</h5>
+
+    <p>The Clock application icon is dynamic in portraying the current time on an analog clock face with an active seconds hand. On watchOS, selecting the Clock application leads to the default display screen. However, the Watch application on the corresponding iOS device controls the specifics of the watch’s Clock settings. From here, the user can toggle a 24-Hour Time display, forwarded alerts from the iOS device’s Timers and Alarms, a red dot to indicate the presence of unread notifications, and the ability to use the Digital Crown to view past and future data for supported complications. The user can also select 1- to 4-letters for the monogram complication on the Color watch face and 1- to 3- letters for the city abbreviations from the World Clock application.
+</p>
+
+<div class="row">
+
+<img src="watchOS media/IMG_8038.PNG" style="width:250px;height:445px;" alt="Clock on Watch app1">
+<img src="watchOS media/IMG_8039.PNG" style="width:250px;height:445px;" alt="Clock on Watch app2">
+
+</div>
+
+  </div>
+
+  <div class="col-sm-12">
+    <h5 class="text-left">World Clock</h5>
+
+    <p>The World Clock displays the preset cities from the iOS device, their local times, and the time differences in relation to the watch’s base time. Selecting a city prompts a detail screen of that location labelled in a world map with a chart overlay that aligns the location dot with its respective location to the local sunrise and sunset times.
+</p>
+
+<div class="row">
+
+<img src="watchOS media/IMG_8040.PNG" style="width:218px;height:272px;" alt="World Clock1">
+<img src="watchOS media/IMG_8041.PNG" style="width:218px;height:272px;" alt="World Clock2">
+
+</div>
+
+  </div>
+
+  <div class="col-sm-12">
+    <h5 class="text-left">Calendar</h5>
+
+    <p>The Calendar application icon is dynamic in presenting the current day of the week in abbreviated form and the numbered day of the month. It opens to the current month layout. Pressing the screen leads to the daily view of events imported from the iOS device. The Digital Crown can be used to scroll through the events in chronological order, and selecting an event expands it to show specific details. The Calendar settings in the iOS Watch app control if the calendar notifications are pushed through to the watch and which calendars are used.
+</p>
+
+<div class="row">
+
+<img src="watchOS media/IMG_8042.PNG" style="width:218px;height:272px;" alt="Calendar">
+<img src="watchOS media/IMG_8043.PNG" style="width:250px;height:445px;" alt="Calendar on Watch app">
+
+</div>
+
+  </div>
+
+</div>
+
+<div class="col-sm-6">
+<h4>Variable Dependency:</h4>
+<div class="col-sm-12">
+  <h5 class="text-left">Alarm</h5>
+
+  <p>The Alarm function can integrate predetermined alarms from the iOS device without displaying them in the list of watch-specific alarms by solely pushing the notifications through to the watch. In the watch-specific list, the user can activate previously made alarms or make a new one. The set time is altered by Digital Crown, repeated instances and the snooze features are altered by touch screen, and the alarm label is altered by voice recognition.
+</p>
+
+<div class="row">
+
+  <img src="watchOS media/IMG_8045.PNG" style="width:218px;height:272px;" alt="Alarm1">
+  <img src="watchOS media/Webp.net-gifmaker.gif" style="width:218px;height:272px;" alt="Alarm gif">
+  <img src="watchOS media/IMG_8046.PNG" style="width:218px;height:272px;" alt="Alarm2">
+  <img src="watchOS media/IMG_8047.PNG" style="width:218px;height:272px;" alt="Alarm3">
+  <img src="watchOS media/IMG_8048.PNG" style="width:218px;height:272px;" alt="Alarm4">
+  <img src="watchOS media/IMG_8049.PNG" style="width:218px;height:272px;" alt="Alarm5">
+
+</div>
+
+</div>
+
+<div class="col-sm-12">
+  <h5 class="text-left">Timer</h5>
+
+  <p>Similar to the Alarm, the Timer can be activated by the iOS device or through the watch itself. The user has the option to select from the intervals of 1 min., 3 mins., 5 mins., 10 mins., 15 mins., 30 mins., 1 hour, or 2 hours. The user may also create a custom interval of hours, minutes, and seconds. The time may be scrolled through by Digital Crown or touch screen.
+</p>
+
+<div class="row">
+
+<img src="watchOS media/IMG_8050.PNG" style="width:218px;height:272px;" alt="Timer1">
+<img src="watchOS media/IMG_8051.PNG" style="width:218px;height:272px;" alt="Timer2">
+<img src="watchOS media/IMG_8052.PNG" style="width:218px;height:272px;" alt="Timer3">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-sm-12">
+<h3>Metrics</h3>
+
+<p>WatchOS’s prioritization of metrics reflects a specific priority on satisfaction. The other Date and Time metric categories resonate less significantly because the of the difference in platform expectations. WatchOS is designed to provide a convenient version of iOS features with a focus on Date and Time functions. Therefore, user satisfaction is the ruling factor that determines if that goal was met.
+</p>
+
+</div>
+
+<div class="col-sm-12">
+<h3>Key Characteristics</h3>
+
+<p>The unique component of watchOS’s user interface is its focus on providing a functional minimal aesthetic instead of elaborating individual features. As a consequence of being a “receiving partner” to an iOS device, most of the watch’s Date and Time features are based on the iOS settings. The purpose of watchOS’s Date and Time is not to provide ways of determining what becomes data but instead to allow users to customize how that data is presented to them. This customization is most visibly achieved through watchOS’s faces and complications. The user determines the format of the chosen Date and Time components for easy access upon activating the default screen. The available widgets are Alarm, Calendar, Date, Stopwatch, Timer, and World Clock. While the time will always be displayed (in digital or analog form), it is up to the user to decide which specific Date and Time features are best suited for their watch needs.
+</p>
+
+<img src="watchOS media/IMG_8053.PNG" style="width:250px;height:445px;" alt="Watch Faces Settngs">
+
+</div>
+
+
   </div>
   <hr>
 </div>
