@@ -24,13 +24,6 @@ contributors:
       github: mmagallanes
 ---
 
-
-<style>
-    body{
-      font: 16px Arial, sans-serif;
-    }
-</style>
-
 <div>
   <p class="lead" align="center">
       A necessary part of any OS interface is the task switcher, without it, users would only be able to work within one application at a time. The task switcher is a key component for increased productivity.
@@ -66,6 +59,7 @@ contributors:
 </div>
 <!-- End Top Navbar for Task Switcher -->
 
+<!-- Begin Content for Navbar -->
 <div class="tab-content">
   <div class="tab-pane active" id="typical-appearance" role="tabpanel">
     <div class="panel panel-default">
@@ -112,9 +106,7 @@ contributors:
               </p>
               <div class="panel panel-default">
                 <div class="panel-body">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hlIdz__YZN0" alt="Video tour of Task Switching"></iframe>
-                  </div>
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/hlIdz__YZN0" frameborder="0" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -135,15 +127,19 @@ contributors:
 
               <h3>Events</h3>
 
-              <p>There are only a few simple events when talking about Task Switcher.  The most relevant, basic task launcher event is to select the new open app and switch to it.  Because switching between applications is a fairly simple action that is heavily used, it should not require the user to perform many steps.  First of all, the task switcher is either <code>onscreen</code> or <code>offscreen</code>.  If a user <code>hovers</code> over a task, it becomes <code>selected</code>.  The previous task then becomes unselected since only one task can be selected at a time hence task switcher.</p>
+              <p>
+                There are only a few simple events when talking about Task Switcher.  The most relevant, basic task launcher event is to select the new open app and switch to it.  Because switching between applications is a fairly simple action that is heavily used, it should not require the user to perform many steps.  First of all, the task switcher is either <code>onscreen</code> or <code>offscreen</code>.  If a user <code>hovers</code> over a task, it becomes <code>selected</code>.  The previous task then becomes unselected since only one task can be selected at a time hence task switcher.
+              </p>
 
               <hr>
 
               <h3>State Diagram</h3>
 
-              <img src="img/state_diagram.png"width="50%">
+              <img src="img/state_diagram.png" width="90%">
 
-              <p>Keeping in mind that only one task can be selected at a time; Task switcher states depend on the functionality of the switcher.  As a general overview, we can say that there are only 5 different states: Task not running, Task running and active, Task running and non-active, Task selected in task switcher, and Task options panel selected in task switcher.  A task must be selected in order for it to be launched, which occurs on key release or it’s platform-specific way selection.  However, if the task switcher is active onscreen, a user has the option to interact with each task, but they are never disabled if the task launcher is open.  It is important to remember that in the taskbar/tray, tasks not currently running can still be selected, open, or shown options.</p>
+              <p>
+                Keeping in mind that only one task can be selected at a time; Task switcher states depend on the functionality of the switcher.  As a general overview, we can say that there are only 5 different states: Task not running, Task running and active, Task running and non-active, Task selected in task switcher, and Task options panel selected in task switcher.  A task must be selected in order for it to be launched, which occurs on key release or it’s platform-specific way selection.  However, if the task switcher is active onscreen, a user has the option to interact with each task, but they are never disabled if the task launcher is open.  It is important to remember that in the taskbar/tray, tasks not currently running can still be selected, open, or shown options.
+              </p>
 
             </div>
           </div>
@@ -162,21 +158,33 @@ contributors:
               <hr>
 
               <h3>Variants</h3>
-              <p>Switching tasks is a standard operation on most devices. Below is a list illustrating the broad ways to accomplish task switching:</p>
+              <p>
+                Switching tasks is a standard operation on most devices. Below is a list illustrating the broad ways to accomplish task switching:
+              </p>
               <ul>
-                  <li> <em> Mission Control</em>, an OSX variant, displays all open windows in thumbnail view across the screen. The difference is that there are no shortcuts to navigate between currently open windows, and you get a preview of the conent of each open task, rather than just the task icon. They are not aligned neatly across the middle of the screen, but scattered. A user can click on any task to switch to it. Also Mac OS has a desktop switcher, which can switch between multiple virtual populated desktops, instead of individual tasks. More information can be found in <a href="#pSpecific">Platform-Specific Instances</a>.</li>
-                  <li> Most smartphones have a task switcher. When launched, gesture-based controls allows the user to cycle through all open apps, and when they find the one they want to open, they tap on it to open it. Also it is important to mention that task switchers on mobile OS’s are very different for each platform, and do not look the same as on desktops.</li>
-                  <li> Using <em>Voice Navigation</em> (i.e. Siri) and vocally ask to "open" a specific task. </li>
-
+                  <li>
+                    <em> Mission Control</em>, an OSX variant, displays all open windows in thumbnail view across the screen. The difference is that there are no shortcuts to navigate between currently open windows, and you get a preview of the conent of each open task, rather than just the task icon. They are not aligned neatly across the middle of the screen, but scattered. A user can click on any task to switch to it. Also Mac OS has a desktop switcher, which can switch between multiple virtual populated desktops, instead of individual tasks. More information can be found in <a href="#pSpecific">Platform-Specific Instances</a>.
+                  </li>
+                  <li>
+                    Most smartphones have a task switcher. When launched, gesture-based controls allows the user to cycle through all open apps, and when they find the one they want to open, they tap on it to open it. Also it is important to mention that task switchers on mobile OS’s are very different for each platform, and do not look the same as on desktops.
+                  </li>
+                  <li>
+                    Using <em>Voice Navigation</em> (i.e. Siri) and vocally ask to "open" a specific task.
+                  </li>
               </ul>
-              <p>There are different components all together that allow switching between apps, some examples are the</p>
-              <a href="/paradixm/components/task-launcher/"> Task Launcher </a>(the user clicks on an application to open it) and the command line.
+
+              <p>
+                There are different components all together that allow switching between apps, some examples are:
+              </p>
+              <p>
+                <a href="/paradixm/components/task-launcher/"> Task Launcher </a>(the user clicks on an application to open it) and the command line.
+              </p>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
+  </div>
 
   <div class="tab-pane" id="priority-metrics" role="tabpanel">
     <div class="panel panel-default">
@@ -243,7 +251,7 @@ contributors:
               			1: a current task is highlighted, and ready to be opened on key release
               			2: all other tasks are not selected, so as there is no confusion as to which task will be opened
 
-              		Should these scenarios be inconsistent and the task switcher deems unreliable, the user will require much more time when attempting to switch tasks due to uncertainty in his interface’s function.
+                  Should these scenarios be inconsistent and the task switcher deems unreliable, the user will require much more time when attempting to switch tasks due to uncertainty in his interface’s function.
               </p>
               <p>
                 Simplicity – Simplicity is also an important IxD principle to implement in task switcher.  Users should have zero problems distinguishing which tasks are active, which task is currently selected, how to select a different task, and how to quit a running task.
@@ -263,6 +271,83 @@ contributors:
             <div class="col-lg-12">
 
               <hr>
+
+              <div id="pSpecific">
+
+                <center><h3>Platform-Specific Instances</h3></center>
+                <center><p>Below are some examples of platform-specific instances.</p></center>
+
+                <hr>
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <!-- OSX Mountain Lion -->
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/osxtask.png" alt="OSX El Capitan Task Switcher">
+                      <div class="carousel-caption d-none d-md-block">
+                      <p style="background-color: rgba(0,0,0,0.5); padding: 10px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: bold;">OS X Mountain Lion Task Switcher </p>
+                      </div>
+                    </div>
+
+                    <!-- Ubuntu 11 -->
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/carousel/ubuntu11taskS.png" alt="Ubuntu 11 Task Switcher">
+                      <div class="carousel-caption d-none d-md-block">
+                      <p style="background-color: rgba(0,0,0,0.5); padding: 10px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: bold;">Ubuntu 11 Task Switcher </p>
+                      </div>
+                    </div>
+
+                    <!-- Windows 7 -->
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/carousel/w7taskS.png" alt="Windows 7 Task Switcher">
+                      <div class="carousel-caption d-none d-md-block">
+                      <p style="background-color: rgba(0,0,0,0.5); padding: 10px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: bold;">Windows 7 Task Switcher </p>
+                      </div>
+                    </div>
+
+                    <!-- Windows 8 -->
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/carousel/unity8taskS.png" alt="UNity 8 Task Switcher">
+                      <div class="carousel-caption d-none d-md-block">
+                      <p style="background-color: rgba(0,0,0,0.5); padding: 10px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: bold;">Windows 8 Task Switcher </p>
+                      </div>
+                    </div>
+
+                    <!-- KDE 4.1 -->
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/carousel/KDE4.1taskS.png" alt="KDE 4.1 Task Switcher">
+                      <div class="carousel-caption d-none d-md-block">
+                      <p style="background-color: rgba(0,0,0,0.5); padding: 10px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: bold;">KDE 4.1 Task Switcher </p>
+                      </div>
+                    </div>
+
+
+                 </div>
+
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+
+              </div>
+
               <br>
 
               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -279,16 +364,126 @@ contributors:
 
                       <hr>
 
-                      MacOS Sierra/Capitan
-                      <p><img src="img/MissionControl.jpg" style="width:90%; height:auto;" alt="Mac Switcher"></p>
+                      <p>
+                        <img src="img/MissionControl.jpg" style="width:90%; height:auto;" alt="Mac Switcher">
+                      </p>
 
-                      <!-- PUT ALL OSX Sierra/Capitan CONTENT HERE -->
+                      <div class="panel-body">
+                      	<p>
+                          There are two main ways a user can use task switching in OS X. There are no differences between task switcher in El Capitan and task switcher in Sierra.
+                        </p>
+                        <strong>Standard Task Switching</strong>
+                      	<p>
+                          The user presses and holds the <code>Command (CMD)</code> key, and then presses the <code>Tab</code> key to bring up the task switcher.  The task switcher appears large on the screen, showing all open applications and only one selected task.  The task switcher is only active and accessible as long as the user holds down the <code>CMD</code> key.  The user can then decide to perform any of these options:
+                        </p>
 
+                      	<p>
+                          <div style="text-align:left">
+                            <ul>
+                              <li>Release both the CMD and Tab keys to switch to the highlighted app</li>
+                    	      	<li>
+                                Cycle through the currently open applications by tapping either <code>Tab</code>/<code>Right Arrow</code> key to cycle right, or <code>Shift</code> key and tapping <code>Tab</code>/ <code>`</code> /<code>Left Arrow</code> key to cycle left
+                              </li>
+                              <li>Enter <i> Expose Mode </i> by hitting either the <code>Up</code> or <code>Down</code> arrow key.</li>
+                              <li>Hide the selected application by hitting the <code>H</code> key.</li>
+                              <li>Quit/Kill the selected application by hitting the <code>Q</code> key.</li>
+                            </ul>
+                          </div>
+                        </p>
+                        <p>
+                          Although there are many shortcuts to accomplish multiple tasks, for the sake of simply "task switching" only the first three bullet points are relevant. For the sake of completeness, if the user decided to cycle right, the new state would be:
+                        </p>
+
+                        <img src="img/taskSwitch1.png" style="width:100%; height:auto;" alt="OSX Task Switcher 1">
+
+                        <p>
+                          <em>The selected task/app is the only one that has text underneath, and is highlighted by a light grey box around the icon.</em>
+                        </p>
+
+                        <img src="img/taskSwitch2.png" style="width:100%; height:auto;" alt="OSX Task Switcher 2">
+                        <p><em>An example of cycling right to the next application</em></p>
+
+                			<br>
+
+                     	<p>
+                     		<strong>Mission Control Task Switching</strong>
+                        <p>The user has three different options to launch the Mission Control task switcher:</p>
+                        <p>
+                	      	<ul>
+                            <li>Tap the F3 key <img src="img/missionC.png" style="width:3%; height:auto;" alt="F3 key"></li>
+                            <li>Hold down the <code>Control (Ctrl)</code> key and tap the <code>Up Arrow</code> key</li>
+                            <li>Swipe up acorss the trackpad using four fingers</li>
+                          </ul>
+                        </p>
+                      </p>
+
+                     	<p>
+                        When any of these commands are executed, we are greeted with the following view - Mission Control's basic layout.
+                      </p>
+
+                			<img src="img/taskSwitch3.png" style="width:70%; height:auto;" alt="OSX Task Switcher 3">
+
+                			<p>
+                        Mission Control is a huge improvement from Apple’s OS app, Spaces, regarding task switching.  Both Mission Control and Spaces were more relevant for window management, but some users use Mission Control as a task switcher as well.  Mission Control displays small desktop thumbnails at the top of the screen, where users can see a preview of what apps are open and active in each desktop page.  Users can then hover their mouse over an app, which will then highlight the app page and bring up a label of the app/file name.  In simpler terms, Mission Control is better used for window organization, but has the ability to act as a small task switcher.
+                      </p>
+
+                		<br>
+
+                		<p>
+                			<strong>Picture in Picture - Sierra Exclusive</strong>
+                			<p>
+                        In OSX Sierra, Apple introduced Picture in Picture (PiP), a feature that allows users to layer a persistent vieo on top of their mac workspace.  If you switch apps, the video window doesn’t get buried under everything else on your screen.  PiP is available in two applications: Safari and iTunes.
+                      </p>
+
+                			<p>How to launch PiP in Safari</p>
+                			<p>
+                	      	<ul>
+                            <li>Open a video in Safari that is compatible with PiP</li>
+                            <li>Play the video</li>
+                	      	  <li>Find and click the PiP button and the video should move to a corner of your screen.</li>
+                          </ul>
+                      </p>
+
+                			<img src="https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2016/09/mac-os-sierra-picture-in-picture-1.jpg?itok=Ynwc-41A" style="width: 40%; height:auto;"/>
+                			<img src="https://www.imore.com/sites/imore.com/files/styles/larger/public/field/image/2016/09/mac-os-sierra-picture-in-picture-2.jpg?itok=KrbxIo98" style="width: 40%; height:auto;"/>
+
+                			<br>
+                      <p>Once your video is simultaneously playing while you work on other apps, you can:</p>
+                      <p>
+                        <ul>
+                          <li>Control playback in PiP by clicking the <code>Play</code> or <code>Pause</code> button.</li>
+                          <li>Resize the PiP window by clicking and dragging a corner of the window</li>
+                          <li>Move the Pip window by clicking and moving it to another corner of your screen (as you would any other window)</li>
+                          <li>Shut down PiP mode by clicking the PiP button again, or clicking the X in the top left corner of the Pip Window.</li>
+                        </ul>
+                      </p>
+
+                			<br>
+
+                			<p> How to launch Pip in iTunes</p>
+                			<p>
+                	      	<ul>
+                            <li>Open a video in iTunes</li>
+                            <li>Play the video</li>
+                            <li>Find and click the PiP button and the video should move to a corner of your screen.</li>
+                          </ul>
+
+                			<img src="https://www.imore.com/sites/imore.com/files/styles/larger/public/field/image/2016/09/mac-os-sierra-picture-in-picture-6.jpg?itok=sRXYeYZk" style="width: 30%; height:auto;"/>
+                			<img src="https://www.imore.com/sites/imore.com/files/styles/larger/public/field/image/2016/09/mac-os-sierra-picture-in-picture-7.jpg?itok=j67ishXD" style="width: 30%; height:auto;"/>
+                			<img src="https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2016/09/mac-os-sierra-picture-in-picture-8.jpg?itok=0mRVI0IG" style="width: 30%; height:auto;"/>
+
+                			<br>
+                			<br>
+
+                			<p>Once your video is up and playing in a corner of your desktop, you can perform the same actions as if PiP were playing a video from Safari.</p>
+                		</p>
+
+                      </div>
                     </div>
+
+
                   </div>
                 </div>
-
-
 
                 <div class="panel panel-default">
                   <div class="panel-heading" role="tab" id="headingiOS">
@@ -303,16 +498,59 @@ contributors:
 
                       <hr>
 
-                      iOS
-                      <p><img src="img/Windows.png" style="width:90%; height:auto;" alt="Windows Switcher"></p>
+                      <div class="panel panel-default">
 
-                      <!-- PUT ALL iOS CONTENT HERE -->
+                        <div class="panel-body">
+                          <p>
+                            The most common way to switch tasks in iOS is to double tap the home button, which will have all the apps that are currently running appear in a single row. From there, the user can swipe left and right to see which applications they can switch to, then taps on whichever application intended for use. There are a few variants for switching tasks in iOS that include: "Slide Over", "Split View", and "Picture in Picture". They allow the user to switch tasks even quicker on the fly.
+                          </p>
+
+                          <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/iphone6-ios10-switch-apps-home.jpg" height="350"width="15%"/>
+
+                          <img src="https://s.aolcdn.com/hss/storage/midas/8d50134ba20fb777c74b543c53b8d0eb/202266943/apps.jpg" height="350"width="50%"/>
+
+                          <br>
+
+                          <p>
+                              <strong>Task Switching Through"Slide Over"</strong>
+                          </p>
+                          <p>
+                              While the user is using an application, slide over allows the user to use another application without quitting the original application the user is in. All the user needs to do is swipe from the right side of the screen towards the center of the screen in order to use another application. If the user wants to switch the application that Slide Over pulls up, the user simply swipes down from the top right side of the screen. This will bring up a taskbar that displays all the applications that the user can switch to.
+                          </p>
+                            <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ipad-ios10-slide-over.jpg" height="400"width="60%"/>
+                          <br>
+                          <p>
+                            <strong>Task Switching Through "Split View"</strong>
+                          </p>
+                          <p>
+                              Split View allows the user to use two apps at once. Using Split View is very similar to using Slide Over. The user would swipe from the right side of the screen towards the center of the screen to enable Slide Over. Remember that in Slide Over, there is an application running in the background while the user is currently using another application. The user then taps the middle of the screen divider, which causes the application running in the background and the application that the user is using to appear side by side. The user can now use both applications at once.
+                          </p>
+                            <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ipad-ios10-split-view.jpg"height="400"width="60%"/>
+                          <p>
+                            <strong>Task Switching Through "Picture in Picture"</strong>
+                          </p>
+                          <p>
+                            Picture in Picture allows the user to watch movies or use FaceTime while using another application. While the user is watching a movie or using FaceTime, they press the home button, which will put the movie or FaceTime into a smaller window and bring the user to the home screen in the background. From there, the user picks whichever application they would like to run. The application they pick will run in the background while the movie or FaceTime continues to run in that smaller window. The user can drag that smaller window to whichever part of the screen they’d like. They can also make the window smaller or bigger.
+                          </p>
+                          <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ipad-ios10-picture-in-picture.jpg"height="400"width="60%"/>
+                          <p>
+                            These are the multiple ways that a user can switch tasks on iOS. To get a better feel for how the variants of task switching in iOS works, there is a video below that demonstrates how each variant works.
+                          </p>
+
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h3>iOS Task Switching Variants In Action</h3>
+                              <p>Below is a video displaying "Slide Over", "Split View", and "Picture in Picture" in action.</p>
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/jorwzOsPAYs" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                          </div>
+
+                          <hr>
+                      </div>
 
                     </div>
                   </div>
                 </div>
-
-
 
                 <div class="panel panel-default">
                   <div class="panel-heading" role="tab" id="headingWin8">
@@ -375,6 +613,9 @@ contributors:
                   </div>
                 </div>
 
+
+
+
                 <div class="panel panel-default">
                   <div class="panel-heading" role="tab" id="headingWin10">
                     <h4 class="panel-title text-center">
@@ -396,6 +637,9 @@ contributors:
                     </div>
                   </div>
                 </div>
+
+
+
 
 
 
@@ -435,7 +679,7 @@ contributors:
                     <div class="panel-body">
 
                       <hr>
-                      
+
                       <h2 style="text-align:center"> Android "Recent Tasks" Switcher </h2>
                       <h4 style="text-align:center">Anthony Keba</h4>
 
@@ -510,225 +754,11 @@ contributors:
               </div>
 
               <!-- Note from Anthony EVERYTHING PAST THIS POINT IS NOT FINISHED!!! -->
-
-<div id="pSpecific">
-
-  <hr>
-
-	<center><h3>Platform-Specific Instances</h3></center>
-	<center><p>Below are some examples of platform-specific instances.</p></center>
-
-  <hr>
-
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	  <!-- Indicators -->
-	  <ol class="carousel-indicators">
-	    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	    <li data-target="#myCarousel" data-slide-to="1"></li>
-	    <li data-target="#myCarousel" data-slide-to="2"></li>
-	    <li data-target="#myCarousel" data-slide-to="3"></li>
-	    <li data-target="#myCarousel" data-slide-to="4"></li>
-
-	  </ol>
-
-	  <!-- Wrapper for slides -->
-	  <div class="carousel-inner" role="listbox">
-	    <div class="carousel-item active">
-	      <img class="d-block w-100" src="img/carousel/ubuntu11taskS.png" alt="Ubuntu 11 Task Switcher">
-	      <div class="carousel-caption d-none d-md-block">
-	      <p style="background-color: rgba(0,0,0,0.5); padding: 10px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: bold;">Ubuntu 11 Task Switcher </p>
-	      </div>
-	    </div>
-
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="img/carousel/unity8taskS.png" alt="UNity 8 Task Switcher">
-	      <div class="carousel-caption d-none d-md-block">
-	      <p style="background-color: rgba(0,0,0,0.5); padding: 10px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: bold;">Windows 8 Task Switcher </p>
-	      </div>
-	    </div>
-
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="img/carousel/w7taskS.png" alt="Windows 7 Task Switcher">
-	      <div class="carousel-caption d-none d-md-block">
-	      <p style="background-color: rgba(0,0,0,0.5); padding: 10px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: bold;">Windows 7 Task Switcher </p>
-	      </div>
-	    </div>
-
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="img/carousel/KDE4.1taskS.png" alt="KDE 4.1 Task Switcher">
-	      <div class="carousel-caption d-none d-md-block">
-	      <p style="background-color: rgba(0,0,0,0.5); padding: 10px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: bold;">KDE 4.1 Task Switcher </p>
-	      </div>
-	    </div>
-
-	    <div class="carousel-item">
-	  		<img class="d-block w-100" src="img/osxtask.png" alt="OSX El Capitan Task Switcher">
-	      <div class="carousel-caption d-none d-md-block">
-	      <p style="background-color: rgba(0,0,0,0.5); padding: 10px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: bold;">OS X Mountain Lion Task Switcher </p>
-	      </div>
-	    </div>
-	 </div>
-
-	  <!-- Left and right controls -->
-	  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	  </a>
-	</div>
-
-</div>
+<!-- End Content for Navbar -->
 
 <!-- REMINDER: ELABORATE ON STATES -->
-
-
-
     <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">OSX El Capitan and OSX Sierra</h4>
-      </div>
 
-      <div class="panel-body">
-      	<p> There are two main ways a user can use task switching in OS X. There are no differences between task switcher in El Capitan and task switcher in Sierra. </p>
-		<strong>Standard Task Switching</strong>
-      	<p>The user presses and holds the <code>Command (CMD)</code> key, and then presses the <code>Tab</code> key to bring up the task switcher.  The task switcher appears large on the screen, showing all open applications and only one selected task.  The task switcher is only active and accessible as long as the user holds down the <code>CMD</code> key.  The user can then decide to perform any of these options:</p>
-
-      	<p>
-	      	<ul>
-	      	<li>Release both the CMD and Tab keys to switch to the highlighted app</li>
-	      	<li>Cycle through the currently open applications by tapping either <code>Tab</code>/<code>Right Arrow</code> key to cycle right, or <code>Shift</code> key and tapping <code>Tab</code>/ <code>`</code> /<code>Left Arrow</code> key to cycle left</li>
-			<li>Enter <i> Expose Mode </i> by hitting either the <code>Up</code> or <code>Down</code> arrow key. </li>
-			<li>Hide the selected application by hitting the <code>H</code> key.</li>
-			<li>Quit/Kill the selected application by hitting the <code>Q</code> key. </li>
-			</ul>
-			<p> Although there are many shortcuts to accomplish multiple tasks, for the sake of simply "task switching" only the first three bullet points are relevant. For the sake of completeness, if the user decided to cycle right, the new state would be</p>
-
-			<img src="img/taskSwitch1.png" style="width:100%; height:auto;" alt="OSX Task Switcher 1">
-			<p><em>The selected task/app is the only one that has text underneath, and is highlighted by a light grey box around the icon.  </em> </p>
-
-			<img src="img/taskSwitch2.png" style="width:100%; height:auto;" alt="OSX Task Switcher 2">
-			<p><em>An example of cycling right to the next application</em> </p>
-
-			<br>
-
-     	</p>
-
-     	<p>
-     		<strong>Mission Control Task Switching</strong>
-
-     		<p>TThe user has three different options to launch the Mission Control task switcher: </p>
-
-     		<p>
-	      	<ul><li>Tap the F3 key <img src="img/missionC.png" style="width:3%; height:auto;" alt="F3 key">
-	      	<li>Hold down the <code>Control (Ctrl)</code> key and tap the <code>Up Arrow</code> key</li>
-	      	<li>Swipe up acorss the trackpad using four fingers</li>
-				</ul>
-
-     		<p> When any of these commands are executed, we are greeted with the following view - Mission Control's basic layout.</p>
-
-			<p><img src="img/taskSwitch3.png" style="width:70%; height:auto;" alt="OSX Task Switcher 3"> </p>
-
-			<p>Mission Control is a huge improvement from Apple’s OS app, Spaces, regarding task switching.  Both Mission Control and Spaces were more relevant for window management, but some users use Mission Control as a task switcher as well.  Mission Control displays small desktop thumbnails at the top of the screen, where users can see a preview of what apps are open and active in each desktop page.  Users can then hover their mouse over an app, which will then highlight the app page and bring up a label of the app/file name.  In simpler terms, Mission Control is better used for window organization, but has the ability to act as a small task switcher.  </p>
-
-		</p>
-
-		<br>
-
-		<p>
-			<strong>Picture in Picture - Sierra Exclusive</strong>
-			<p> In OSX Sierra, Apple introduced Picture in Picture (PiP), a feature that allows users to layer a persistent vieo on top of their mac workspace.  If you switch apps, the video window doesn’t get buried under everything else on your screen.  PiP is available in two applications: Safari and iTunes.   </p>
-
-			<p> How to launch PiP in Safari</p>
-			<p>
-	      	<ul><li>Open a video in Safari that is compatible with PiP</li>
-	      	<li>Play the video</li>
-	      	<li>Find and click the PiP button and the video should move to a corner of your screen.</li>
-				</ul>
-
-			<img src="https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2016/09/mac-os-sierra-picture-in-picture-1.jpg?itok=Ynwc-41A" style="width: 40%; height:auto;"/>
-			<img src="https://www.imore.com/sites/imore.com/files/styles/larger/public/field/image/2016/09/mac-os-sierra-picture-in-picture-2.jpg?itok=KrbxIo98" style="width: 40%; height:auto;"/>
-
-			<br><br>
-			<p>Once your video is simultaneously playing while you work on other apps, you can:</p>
-			<ul><li>Control playback in PiP by clicking the <code>Play</code> or <code>Pause</code> button.</li>
-			<li>Resize the PiP window by clicking and dragging a corner of the window</li>
-			<li>Move the Pip window by clicking and moving it to another corner of your screen (as you would any other window)</li>
-			<li>Shut down PiP mode by clicking the PiP button again, or clicking the X in the top left corner of the Pip Window.</li></ul></p>
-
-			<br>
-			<br>
-
-			<p> How to launch Pip in iTunes</p>
-			<p>
-	      	<ul><li>Open a video in iTunes</li>
-	      	<li>Play the video</li>
-	      	<li>Find and click the PiP button and the video should move to a corner of your screen.</li>
-				</ul>
-
-			<img src="https://www.imore.com/sites/imore.com/files/styles/larger/public/field/image/2016/09/mac-os-sierra-picture-in-picture-6.jpg?itok=sRXYeYZk" style="width: 30%; height:auto;"/>
-			<img src="https://www.imore.com/sites/imore.com/files/styles/larger/public/field/image/2016/09/mac-os-sierra-picture-in-picture-7.jpg?itok=j67ishXD" style="width: 30%; height:auto;"/>
-			<img src="https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2016/09/mac-os-sierra-picture-in-picture-8.jpg?itok=0mRVI0IG" style="width: 30%; height:auto;"/>
-
-			<br>
-			<br>
-
-			<p>Once your video is up and playing in a corner of your desktop, you can perform the same actions as if PiP were playing a video from Safari.</p>
-
-
-		</p>
-
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">iOS</h4>
-      </div>
-
-      <div class="panel-body">
-        <p>The most common way to switch tasks in iOS is to double tap the home button, which will have all the apps that are currently running appear in a single row. From there, the user can swipe left and right to see which applications they can switch to, then taps on whichever application intended for use. There are a few variants for switching tasks in iOS that include: "Slide Over", "Split View", and "Picture in Picture". They allow the user to switch tasks even quicker on the fly.
-
-        </p>
-
-        <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/iphone6-ios10-switch-apps-home.jpg" height="350"width="15%"/>
-
-        <img src="https://s.aolcdn.com/hss/storage/midas/8d50134ba20fb777c74b543c53b8d0eb/202266943/apps.jpg" height="350"width="50%"/>
-
-        <p>
-        </p>
-
-        <p>
-            <strong>Task Switching Through "Slide Over"</strong>
-            While the user is using an application, slide over allows the user to use another application without quitting the original application the user is in. All the user needs to do is swipe from the right side of the screen towards the center of the screen in order to use another application. If the user wants to switch the application that Slide Over pulls up, the user simply swipes down from the top right side of the screen. This will bring up a taskbar that displays all the applications that the user can switch to.
-          </p>
-        </p>
-          <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ipad-ios10-slide-over.jpg" height="400"width="60%"/>
-          <strong>Task Switching Through "Split View"</strong>
-          <p>
-            Split View allows the user to use two apps at once. Using Split View is very similar to using Slide Over. The user would swipe from the right side of the screen towards the center of the screen to enable Slide Over. Remember that in Slide Over, there is an application running in the background while the user is currently using another application. The user then taps the middle of the screen divider, which causes the application running in the background and the application that the user is using to appear side by side. The user can now use both applications at once.
-          </p>
-          <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ipad-ios10-split-view.jpg"height="400"width="60%"/>
-        <p>
-          <strong>Task Switching Through "Picture in Picture"</strong>
-        </p>
-        <p>
-          Picture in Picture allows the user to watch movies or use FaceTime while using another application. While the user is watching a movie or using FaceTime, they press the home button, which will put the movie or FaceTime into a smaller window and bring the user to the home screen in the background. From there, the user picks whichever application they would like to run. The application they pick will run in the background while the movie or FaceTime continues to run in that smaller window. The user can drag that smaller window to whichever part of the screen they’d like. They can also make the window smaller or bigger.
-        </p>
-        <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ipad-ios10-picture-in-picture.jpg"height="400"width="60%"/>
-        <p>
-          These are the multiple ways that a user can switch tasks on iOS. To get a better feel for how the variants of task switching in iOS works, there is a video below that demonstrates how each variant works.
-        </p>
-
-        <div class="row">
-          <div class="col-md-6">
-            <h3>iOS Task Switching Variants In Action</h3>
-            <p>Below is a video displaying "Slide Over", "Split View", and "Picture in Picture" in action.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jorwzOsPAYs" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
 
 <!--DO NOT TOUCH BELOW CODE!!!!! -->
 
