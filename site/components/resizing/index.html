@@ -294,7 +294,7 @@ contributors:
       </ol>
 
       <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox"  align="center">
+      <div class="carousel-inner" role="listbox"  align="center" style=" width:100%; height: 500px !important;">
         <div class="item active">
           <img src="gif/osx-dock-resize.gif" alt="slider resize gif" class="img-rounded img-responsive"  align="center">
           <div class="carousel-caption" >
@@ -304,7 +304,7 @@ contributors:
         </div>
         <div class="item">
           <img src="gif/windows10-form-fillin.gif" alt="no resize gif" class="img-rounded img-responsive"  align="center">
-          <div class="carousel-caption" >
+          <div class="carousel-caption">
             <h1>Form Fill-In</h1>
             <h3>When used for resizing, form fill-in is most commonly used for resizing text<br>
             Can also be found in other design programs like Maya.</h3>
@@ -910,113 +910,134 @@ contributors:
       <div class="row">
         <h4>The Ubuntu Brand Guidelines</h4>
         <p>In this section, the resize component implementation in the
-            <b>Ubuntu 17 (Zesty Zapus)</b> platform will be specifically evaluated.
+            <b>Ubuntu 17 (Zesty Zapus)</b> platform will be evaluated.
             Specific examples of resize implementations will be provided,
             as well as a discussion of how Ubuntu's interaction design
             principles have influenced these specific resize implementations.
             "The Ubuntu Brand Guidelines" is a document that provides
             insight into the theories, principles, and guidelines that Ubuntu
-            Developers use to design their user interfaces. One guideline that
-            it states specifically for resize, is that standard document
-            windows should have transient resize controls--controls that
-            disappear when not needed. The interface guidelines also
-            considers the principle of direct manipulation as a way of
-            affirming the user's mental model of a task, because it can
-            feel more natural than what they define as "explicit tasks".</p>
+            Developers use to design their user interfaces. Nevertheless, it should
+            be noted that Ubuntu as an operating system is aimed at software
+            engineers and as such it employs is resources accordingly. This means that,
+          in contras with other platforms discussed in this section, ubuntu does perhabs
+          not offer the most interesing case for study since its user interface
+         is far from being its selling point (although canonical has come a long
+         way to being a worthy competitor to the other major desktop OS's in the realm
+         of user interface design). </p>
       </div>
 
-          <div class="row">
-              <div class="col-sm-6">
-              <div class="thumbnail">
-                <img src="gif/ubuntu_auto.gif" alt="Ubuntu Automatic resize">
-                <div class="caption">
-                  <h4>Automatic Resize</h4>
-                  <p>This example shows automatic resize in the Notes Application
-                      Window. Hovering over the colored buttons reveals the resize
-                      symbol, and upon click of the square full-screen button,
-                      the window fills the entire screen. The full screen symbol
-                      is indicative of the function it triggers, because it represents what
-                      the final state of the window will be. In full-screen mode,
-                      the menu merges with the OS's menu, reflecting Ubuntu's guideline
-                      of transient controls. When the user wants to return to
-                      a non-full-screen mode, the resize button is accessed by
-                      displaying the menu bar, which returns to the screen when
-                      the mouse is at the top of the screen. Hovering over the
-                      button reveals the resize symbol, which is now a small square,
-                      representing a small window. </p>
-                </div>
-              </div>
+      <div class="row">
+          <div class="col-sm-6">
+          <div class="thumbnail">
+            <img src="gif/ubuntu_auto.gif" alt="Ubuntu Automatic resize">
+            <div class="caption">
+              <h4>Automatic Resize</h4>
+              <p>This example shows automatic resize in the Notes Application
+                  Window. Hovering over the colored buttons reveals the resize
+                  symbol, and upon click of the square full-screen button,
+                  the window fills the entire screen. The full screen symbol
+                  is indicative of the function it triggers, because it represents what
+                  the final state of the window will be. The user is not presented
+                  however with a tooltip specifying in words what the action
+                  specifically does.</p>
+                  <p>In full-screen mode,
+                  the menu merges with the OS's menu, following Ubuntu's guideline
+                  of transient controls. When the user wants to return to
+                  a non-full-screen mode, the resize button is accessed at the top
+                  left of the screen (in contrast to Windows and like macOS). Hovering over the
+                  button highlights the resize symbol, which is now a small square,
+                  representing a small window. the highlight works as a clue
+                  to hint the user that the action is possible.</p>
             </div>
+          </div>
+        </div>
 
-            <div class="col-sm-6">
-              <div class="thumbnail">
-                <img src="gif/ubuntu_arrows.gif" alt="Ubuntu notes Manual Resize">
-                <div class="caption">
-                  <h4>Manual Resize</h4>
-                  <p>This example shows manual resize in the Notes Application
-                      Window. Hovering over the perimeter of the window changes the
-                      mouse cursor from a pointer to an arrow, pointing in the direction.
-                      where the user is allowed to resize. Dragging
-                      the edge of the window at this point allows the user to explore
-                      different window dimensions, before setting the new dimension on
-                      mouse release. An interesting characteristic to notice is that
-                      resizing the Notes window will cause text wrap to occur, bounded
-                      by the dimensions of the Notes Window. Also, observe how resize
-                      causes the menu bar to add/drop components on stretch/shrink, respectively.
-                      Thus, for some applications in Ubuntu</p>
-                </div>
-              </div>
+        <div class="col-sm-6">
+          <div class="thumbnail">
+            <img src="gif/ubuntu_arrows.gif" alt="Ubuntu Notes Manual Resize">
+            <div class="caption">
+              <h4>Manual Resize</h4>
+              <p>This example shows manual resize in the Notes Application
+                  Window. Hovering over the perimeter of the window changes the
+                  mouse cursor from a pointer to an arrow, pointing in the direction.
+                  where the user is allowed to resize. It is interesting to note
+                  that Ubuntu offers 8 disctinct icons to perform this action, in contrast
+                  with the usual 4 that platforms like Windows and macOS offer. This makes
+                  Ubuntu more precise in indicating the user the direction of possible
+                  progress, however it might be confusing since resizing in <thead>
+                  opposite direction to where the arrow points is also allowed.
+                  </thead></p>
+                  <p>Dragging
+                  the edge of the window at this point allows the user to explore
+                  different window dimensions, before setting the new dimension on
+                  mouse release. An interesting characteristic to notice is that
+                  resizing the Notes window will cause text wrap to occur, bounded
+                  by the dimensions of the Notes Window. Also, observe how resize
+                  causes the menu bar to add/drop components on stretch/shrink, respectively.
+                  Thus, for some applications in Ubuntu</p>
             </div>
+          </div>
+        </div>
 
-            <div class="col-sm-6">
-                 <div class="thumbnail">
-                     <img src="gif/ubuntu_properties.gif" alt="Ubuntu resize the properties in finder">
-                     <div class="caption">
-                         <h4>Folder Description Resize</h4>
-                         <p>In this example we an see an interesting design choice for the Ubuntu operating system.
-                         The user is allowed to manipulate the size of the columns displaying the metadata of
-                         several documents. The OS again displays the familiar arrow icons to indicate the user
-                         that this is in fact a possibility. When extended passed the window edge however,
-                         the action will cause the column to be hidden. This appears to be an omission in the
-                         design of the OS.</p>
-                     </div>
+        <div class="col-sm-6">
+             <div class="thumbnail">
+                 <img src="gif/ubuntu_properties.gif" alt="Ubuntu resize the properties in finder">
+                 <div class="caption">
+                     <h4>Folder Description Resize</h4>
+                     <p>In this example we an see an interesting design choice for the Ubuntu operating system.
+                     The user is allowed to manipulate the size of the columns displaying the metadata of
+                     several documents. The OS again displays the familiar arrow icons to indicate the user
+                     that this is in fact a possibility. When extended passed the window edge however,
+                     the action will cause the column to be hidden. This appears to be an omission in the
+                     design of the UI since it it does not present a natural and fluent action to the user.
+                     Key characteristics that Ubuntu highlight in its desigh guidelines.</p>
                  </div>
-            </div>
+             </div>
+        </div>
 
-            <div class="col-sm-6">
-                 <div class="thumbnail">
-                     <img src="gif/ubuntu_dialog.gif" alt="Ubuntu Dialog Resize">
-                     <div class="caption">
-                         <h4>Dialog Resize</h4>
-                         <p>A dialog is a type of window that’s designed to elicit
-                              a response from the user. Many dialogues—the Print dialog,
-                              for example—let the user provide several responses
-                              at once. When a dialog permits resizing, elements
-                              that can scale with the dialog do so accordingly
-                              to maintain consistency. In general, views like boxes,
-                              tab views, and tables, expand to fill the dialog.
-                              Other elements that aren’t generally resized,
-                              like buttons, check-boxes, and segmented controls
-                              remain the same size. The behavior is very similar to the previous examples
-                              we have explored in this section.</p>
-                     </div>
+        <div class="col-sm-6">
+             <div class="thumbnail">
+                 <img src="gif/ubuntu_dialog.gif" alt="Ubuntu Dialog Resize">
+                 <div class="caption">
+                     <h4>Dialog Resize</h4>
+                     <p>A dialog is a type of window that’s designed to elicit
+                          a response from the user. Many dialogues such as the Print dialog,
+                          let the user provide several responses at once. When a dialog permits resizing, elements
+                          that can scale with the dialog do so accordingly
+                          to maintain consistency. In general, views like boxes,
+                          tab views, and tables, expand to fill the dialog.
+                          Other elements that aren’t generally resized,
+                          like buttons, check-boxes, and segmented controls
+                          remain the same size. The behavior is very similar to the previous examples
+                          we have explored in this section, in poarticular, macOS impolementation
+                          is very similar as it is in many of its other design choices we have explored.</p>
                  </div>
-            </div>
+             </div>
+        </div>
 
-            <div class="col-sm-6">
-                <div class="thumbnail">
-                    <img src="gif/ubuntu_launcher.gif" alt="Ubuntu dock resize">
-                    <div class="caption">
-                        <h4>Launcher Resize</h4>
-                        <p>Direct manipulation occurs at a higher level of abstraction
-                            in this example of a slider that accomplishes resizing the
-                            dock and its icons by means of a setting control. The user
-                            is presented with the choice of the size of the Launcher in  the units of points,
-                            this unit of measurement is widely used in user interface design, including
-                            HTML and CSS for web design.</p>
-                        </div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img src="gif/ubuntu_launcher.gif" alt="Ubuntu dock resize">
+                <div class="caption">
+                    <h4>Launcher Resize</h4>
+                    <p>Direct manipulation occurs at a higher level of abstraction
+                        in this example of a button which helps the user accomplish resizing the
+                        launcher and its icons by means of a setting control. The user
+                        is presented with the choice of the size of the Launcher in  the units of points,
+                        this unit of measurement is widely used in user interface design, including
+                        HTML and CSS for web design.</p>
+                        <p>
+                          The buttons that the user utilizes to manipulate the size of the Launcher,
+                          are consisten with other elements of the UI. The plus on top of the button
+                          signifies that the final state will be biggern thatn the initial state.
+                          In contrast, the minus button signifies to the user that the final
+                          state will in some way be smaller thatn the initial. Ubuntu uses this same
+                          choice of icons in several points in its User Interface such as for example,
+                          the button to hide the window, or create a new document.
+                        </p>
                     </div>
                 </div>
+            </div>
 
             <div class="col-sm-6">
                  <div class="thumbnail">
@@ -1028,9 +1049,12 @@ contributors:
                               the popular tool 'Unity Tweak Tool'. This tool allows Ubuntu users to replicate
                           this popular functionality that other OS's like macOS and windows have available.</p>
                           <p>In the above example the user is positioning 2 programs side by side for multitasking.
-                          This is activated by moving the windows all the way to one side. The window will display
-                          a big orange rectangle hinting at the final state of the windows as occupying half of the
+                          This is activated by moving the windows all the way to one side. The OS will display
+                          a big orange rectangle hinting at the final state of the window as occupying half of the
                           desktop space.</p>
+                          <p>The user also has the option of spliting between four windows,
+                            by dragging each of them to a corner. In this case the OS will provide the user
+                            with feedback by highlighting in orange a quarter of the screen in this case.
                      </div>
                  </div>
             </div>
@@ -1047,6 +1071,10 @@ contributors:
                               This constraint is encouraged by Ubuntu, and in fact
                               every built in application has this functionality.
                          </p>
+                         <p>To accomplish this behaviour the user needs only locate
+                           the mouse pointer in one of the corners of the window.
+                           As discribed in the Manual Resize section" this will
+                         present the user with an arrow.</p>
                      </div>
                  </div>
             </div>
@@ -1055,7 +1083,7 @@ contributors:
                 <div class="thumbnail">
                     <img src="gif/ubuntu_doc.gif" alt="Ubuntu Dock Consideration when Resizing">
                     <div class="caption">
-                        <h4>The influence of the launcher</h4>
+                        <h4>The Influence of the Launcher</h4>
                         <p>The position of the launcher has to be taken into account
                             when resizing windows. It’s difficult to drag or
                             resize a portion of a window that’s positioned behind
@@ -1063,6 +1091,9 @@ contributors:
                             reaches the limits of the launcher when resizing, the
                             application should stop allowing the user from resizing it any
                             longer.</p>
+                            <p>Further, Ubuntu will behave as it would when the user
+                            reaches any of the edges of the desktop. This behaviour was
+                            described in the section of 'Split View'.</p>
                         </div>
                     </div>
                 </div>
