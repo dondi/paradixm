@@ -19,8 +19,8 @@ contributors:
 <!-- below is a jquery script that changes the page header depending upon which tab the user has selected -->
 <script>
   $(document).ready(function() {
-    $('.nav-tabs a[href="#home"]').tab('show');
-    const HOME_TEXT = `The task launcher is an integral part of the modern operating system. It accelerates and aids in the launching of applications and the opening of files.
+    $('.nav-tabs a[href="#overview"]').tab('show');
+    const OVERVIEW_TEXT = `The task launcher is an integral part of the modern operating system. It accelerates and aids in the launching of applications and the opening of files.
     Task launchers improve the overall efficiency of the user, most modern operating systems come with a native task launcher, while there are also third party
     task launchers. Task launchers are the starting point for most GUIs, making them the conerstone of the modern operating system. As task launchers advance,
     adding voice recognition like Cortana and Siri, we move closer to the ultimate User Interface. A UI that is immersive and natural, allowing seamless
@@ -30,95 +30,120 @@ contributors:
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
       var target = $(e.target).attr("href") // activated tab
       switch(target) {
-        case "#home":
-          document.getElementById('pageHeader').innerHTML = HOME_TEXT;
+        case "#overview":
+          document.getElementById('pageHeader').innerHTML = OVERVIEW_TEXT;
           break;
         case "#macosx":
           document.getElementById('pageHeader').innerHTML = OSX_TEXT;
           break;
         default:
-          document.getElementById('pageHeader').innerHTML = HOME_TEXT;
+          document.getElementById('pageHeader').innerHTML = OVERVIEW_TEXT;
       }
     });
   });
 </script>
 
-<p class="lead" id="pageHeader">
-</p>
+<p class="lead" id="pageHeader"></p>
 
-<ul class="nav nav-tabs nav-justified mb-3" id="pills-tab" role="tablist">
+<ul class="nav nav-tabs nav-justified mb-3" id="tabs" role="tablist">
   <li class="nav-item">
-    <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="pills-home" aria-expanded="true">Home</a>
+    <a class="nav-link" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-expanded="true">Overview</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="macosx-tab" data-toggle="tab" href="#macosx" role="tab" aria-controls="pills-macosx" aria-expanded="true">MacOSX</a>
+    <a class="nav-link" id="macosx-tab" data-toggle="tab" href="#macosx" role="tab" aria-controls="macosx" aria-expanded="true">MacOSX</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="windows10-tab" data-toggle="tab" href="#windows10" role="tab" aria-controls="pills-windows10" aria-expanded="true">Windows10</a>
+    <a class="nav-link" id="windows10-tab" data-toggle="tab" href="#windows10" role="tab" aria-controls="windows10" aria-expanded="true">Windows10</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="ios8-tab" data-toggle="tab" href="#ios8" role="tab" aria-controls="pills-ios8" aria-expanded="true">ios8</a>
+    <a class="nav-link" id="ios8-tab" data-toggle="tab" href="#ios8" role="tab" aria-controls="ios8" aria-expanded="true">ios8</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="macintosh-tab" data-toggle="tab" href="#macintosh" role="tab" aria-controls="pills-macintosh" aria-expanded="true">Macintosh</a>
+    <a class="nav-link" id="macintosh-tab" data-toggle="tab" href="#macintosh" role="tab" aria-controls="macintosh" aria-expanded="true">Macintosh</a>
   </li>
 </ul>
 
-<div class="tab-content" id="pills-tabContent">
+<div class="tab-content" id="tabs-tabContent">
 
   <!-- ---------------------------- GENERAL COMPONENT DATA ------------------------------ -->
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="pills-home-tab">
-    <div id="home" class="row">
+  <div class="tab-pane" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+    <div id="overview" class="row">
       <div class="col-sm-6">
         <h3><strong>Typical Appearance</strong></h3>
-          <p>Task Launchers frequently appear as a dock at one of the edges of the screen (in accordance with Fitts' Law), often in the form of unlabeled images. Task Launchers also frequently include a text field, or search box.</p>
+          <p>Task Launchers frequently appear one of the edges of the screen (in accordance with Fitts' Law), usually
+            as a collapsable menu or a static menu. These menus are generally populated with icons representing runnable
+            programs, and sometimes show additional search or organizational features.</p>
         <h3><strong>Typical Behavior</strong></h3>
-          <p>Generally implemented as a graphical menu of sorts, the task launcher's primary goal is to allow the user to initiate tasks, most frequently, by launching applications. The secondary goal is to improve the speed in which the user is able to perform such tasks. Task launchers are made to increase efficiency and boost the user's satisfaction. Another goal of task launchers is to improve the learnability of a given operating system. The task launcher, depending on the type  may have built in search capabilities that enhance and improve the learnability of the entire system.</p>
+          <p>Generally implemented as a graphical menu, the task launcher's primary purpose is to allow the user to initiate
+            tasks, most frequently by launching programs. The user can use the task launcher to immediately run exectuable programs
+            rather than manually search through the file system to find the executable, which dramatically improves the efficiency of
+            launching programs and reduces errors. Moreover, it allows new users to bypass the somewhat complicated file/path
+            system, improving learnability. A well designed task launcher may even have built in search or organizational capabilities
+            that greatly enhance the user's experience using the operating system.</p>
         <h4>State Diagram</h4>
-          <p>Below is a generalized state diagram that applies to most task-launchers. It is by no means exhaustive, only illuminating the broad strokes of task launching</p>
+          <p>Below is a generalized state diagram that applies to most task-launchers. It is by no means exhaustive, only illuminating
+            the broad strokes of task launching</p>
           <figure class="figure">
-            <img src="state-diagram.png" alt="Task launcher state diagram" class="figure-img img-fluid rounded">
+            <img src="state-diagram.png" class="figure-img img-fluid rounded">
             <figcaption class="figure-caption text-center"><strong>General State Diagram of Task Launchers</strong></figcaption>
           </figure>
           <h3><strong>Events</strong></h3>
-          <p>During the use of a task launcher, the user is required to click on the image of a desired file or application. Once the text input is received the task launcher performs one of three actions:<br>
-            1. Opens the desired file <br>
-            2. Launches the application <br>
-            3. Responds with a message that states "file/application not found"</p>
+          <p>Typically, a task launcher remains idle until the user opens up the task menu. Second, the user must show intent by either
+            closing the menu, or clicking a program or file. If the user closes out, the launcher will return to idle. If the user clicks
+            on a program or file, the launcher will run a program and return to idle. Some launchers have more events possible, but they
+            all boil down to the same core event chain.
         <h3><strong>Component in Action</strong></h3>
         <h5>Ubuntu 12.04</h5>
           <p>The following video demonstrates the use of the Ubuntu task launcher at 00:19.</p>
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LzcJxpt9-Ic?t=19s" allowfullscreen></iframe>
           </div>
-          <p>As you can see in the clip, the dock on the left side of the screen launches applications. The first launch is completed by clicking one of the icons, in this instance Google Chrome. The second launch of an application utilizes the secondary launcher, which includes a list of recently launched apps, as well as a search bar for textual input. The Ubuntu task launcheer mirrors Windows 10 in the use of the Operating System logo to open another task launcher.</p>
+          <p>As you can see in the clip, the dock on the left side of the screen launches applications. The first launch is completed
+            by clicking one of the icons, in this instance Google Chrome. The second launch of an application utilizes the secondary
+            launcher, which includes a list of recently launched apps, as well as a search bar for textual input. The Ubuntu task
+            launcheer mirrors Windows 10 in the use of the Operating System logo to open another task launcher.</p>
       </div>
       <div class="col-sm-6">
         <h3><strong>Variants</strong></h3>
-          <p>Some task launchers are a search box, which take a text input, that give either a text response or a task response (i.e. the launching of an application). Others have their own windows and act as applications. Generally, third-party task launchers are more likely to open separate windows than native task launchers. A task launcher's capabilities are susceptible to change as well. Some third-party launchers support workflows as well as web searches and password storage.</p>
+          <p>Some operating systems have a task launching menu that pops when you click an icon, while others have the menu always visible
+            on the side of the screen. In each type, the task launcher shows a handfull of frequently used runnable programs. In addition
+            to this menu, some operating systems also have a search option, which can help the user find programs that might be less
+            frequently used. There are also countless third-party task launchers that support specific types of workflows and have special
+            capabilities.</p>
           <figure class="figure">
-            <img src="spotlight_in_action.gif" alt="Spotlight Launching Terminal" class="figure-img img-fluid rounded">
+            <img src="spotlight_in_action.gif" class="figure-img img-fluid rounded">
             <figcaption class="figure-caption text-center"><strong>Spotlight Launching Terminal</strong></figcaption>
             <br></br>
-            <img src="alfred_slack.gif" alt="Alfred3 Task Launcher Using an Integration with Slack" class="figure-img img-fluid rounded">
+            <img src="alfred_slack.gif" class="figure-img img-fluid rounded">
             <figcaption class="figure-caption text-center"><strong>Alfred3 Task Launcher Using an Integration with Slack</strong></figcaption>
           </figure>
         <h3><strong>Priority Metrics</strong></h3>
           <h4>Satisfaction</h4>
-          <p>The Satisfaction of the user is critical to the task launcher's success. An operating system with a slow task launcher will not be very successful. The user is the most important part of the OS and if the user is unhappy, they may just switch operating systems.</p>
+          <p>The Satisfaction of the user is critical to the task launcher's success. An operating system with a clunky and inneficient task
+            launcher will definitely not be successful. More specifically, useful features which allow for greater use of the task launcher,
+            such as search bars, can often give the user a more enjoyable experience with the operating system.</p>
           <h4>Efficiency &amp; Learnability</h4>
-          <p>The efficiency and learnability of a task launcher are the most relevant metrics to the satisfaction of the user. The efficiency ensures that the users needs are met as quickly as possible. The learnability ensures that any user can use the task launcher and understand its uses and capabilities and that the user can have initial interactions with the computer itself.</p>
+          <p>Efficiency and learnability are the most relevant metrics of a task launcher. The only reason task launchers exist is to give
+            users a quicker and easier way to launch tasks, so if they are inefficient or hard to learn, they are unusable. Without a usable
+            task launcher, the entire operating system would lose its usefullness.</p>
           <h4>Memorability &amp; Errors</h4>
-          <p>Memorability and errors are not very relevant to the overall usability of a task launcher. The opportunity for errors is minimal, while the necessity for memorability is almost nonexistent given that task launchers are used almost every time a computer is used.</p>
+          <p>Memorability and errors are not very relevant to the overall usability of a task launcher, mainly because task launchers were
+            largely made to reduce errors and eliminate the need for memorability. Without a task launcher, the user would have to remember how to
+            find every program manually, while trying not to get lost of mistep the entire way. The task launcher bypasses that entire difficult
+            process, so it would prove quite hard to create an error ridden task launcher that also doesn't satisfy memorability .</p>
 
         <h3><strong>Key Characteristics</strong></h3>
-         <p>Good task launchers are fast and easy to use. The best task launchers are intuitive. You tell it what you want to do and it initiates the task. These goals make it clear that the learnability (intuitiveness) and efficiency (speed and ease of use) of a task launcher determine its success. The overall usability of a task launcher should be one of the best across all applications in an operating system. The task launcher is an integral part of portraying the mental model of the computer architecture to the user. It is the starting point for any modern human computer interface.</p>
+         <p>Good task launchers are fast and easy to use, and the best task launchers are intuitive. Ideally, the user would tell it what to run and
+           it would instantly initiate the task. These desired qualities make it clear that the learnability and efficiency of a task launcher determine
+           its success. The overall usability of a task launcher is one of the most important factors of an operating system, since the task launcher
+           plays an integral part to portray the mental model of the computer architecture to the user. For this reason, task managers are usually the
+           starting point for any modern human computer interface.</p>
       </div>
     </div>
   </div>
 
   <!-- ---------------------------- MACOSX SPECIFIC DATA ------------------------------ -->
-  <div class="tab-pane fade" id="macosx" role="tabpanel" aria-labelledby="pills-profile-tab">
+  <div class="tab-pane" id="macosx" role="tabpanel" aria-labelledby="macosx-tab">
     <div id="macosx" class="row">
       <div class="col-sm-6">
         <h3><strong>Typical Appearance</strong></h3>
@@ -216,21 +241,21 @@ contributors:
   </div>
 
   <!-- ---------------------------- WINDOWS10 SPECIFIC DATA ------------------------------ -->
-  <div class="tab-pane fade" id="windows10" role="tabpanel" aria-labelledby="pills-windows10-tab">
+  <div class="tab-pane" id="windows10" role="tabpanel" aria-labelledby="windows10-tab">
     <div id="windows10" class="row">
 
     </div>
   </div>
 
   <!-- ---------------------------- IOS8 SPECIFIC DATA ------------------------------ -->
-  <div class="tab-pane fade" id="ios8" role="tabpanel" aria-labelledby="pills-ios8-tab">
+  <div class="tab-pane" id="ios8" role="tabpanel" aria-labelledby="ios8-tab">
     <div id="ios8" class="row">
 
     </div>
   </div>
 
   <!-- ---------------------------- MACINTOSH SPECIFIC DATA ------------------------------ -->
-  <div class="tab-pane fade" id="macintosh" role="tabpanel" aria-labelledby="pills-macintosh-tab">
+  <div class="tab-pane" id="macintosh" role="tabpanel" aria-labelledby="macintosh-tab">
     <div id="macintosh" class="row">
 
     </div>
