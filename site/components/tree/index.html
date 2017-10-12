@@ -4,12 +4,15 @@ layout: component
 contributors:
     - name: Jake Fujimoto
       github: jakefujimoto
+
+    - name: James Byrne
+      github: jbyrne6
 ---
 <link href="./bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 <p class="lead">The tree component allows the user to expand or collapse the presentation of data in a hierarchical fashion.</p>
 
 <div class="row">
-  <div class="col-sm-12">
+  <div class="col-sm-6">
 
     <h3>Typical Appearance</h3>
 
@@ -17,12 +20,12 @@ contributors:
 
     <div class="col-sm-12">
 
-      <div class="col-sm-6">
-        <img src="images/outline_view.png" class="img-responsive" alt="Responsive image">
+      <div class="col-sm-12">
+        <img src="images/outline_view.png" class="img-fluid" alt="Responsive image">
       </div>
 
-    <div class="col-sm-6">
-      <img src="images/column_view.png" class="img-responsive" alt="Responsive image">
+    <div class="col-sm-12">
+      <img src="images/column_view.png" class="img-fluid" alt="Responsive image">
     </div>
 
     </div>
@@ -41,32 +44,63 @@ contributors:
 
     <div class="col-sm-12">
 
-      <div class="col-sm-6">
-        <img src="images/outline.gif" class="img-responsive" alt="Responsive image">
+      <div class="col-sm-12">
+        <img src="images/outline.gif" class="img-fluid" alt="Responsive image">
       </div>
 
-      <div class="col-sm-6">
-        <img src="images/column.gif" class="img-responsive" alt="Responsive image">
+      <div class="col-sm-12">
+        <img src="images/column.gif" class="img-fluid" alt="Responsive image">
       </div>
 
     </div>
 
-  </div>
-  <div class="col-sm-6">
     <h4>State Diagram</h4>
 
-      <img src="images/state_diagram.png" class="img-responsive" alt="Responsive image">
+      <img src="images/state_diagram.png" class="img-fluid" alt="Responsive image">
 
     <h4>Component in Action</h4>
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/zS3gQ4pnmBs" frameborder="0" allowfullscreen></iframe>
+      <iframe class="embed-responsive-4by3" width="560" height="315" src="https://www.youtube.com/embed/zS3gQ4pnmBs" frameborder="0" allowfullscreen></iframe>
 
   </div>
 
   <div class="col-sm-6">
+    <h3>Variants</h3>
+
+    <blockquote>
+      <em>Nested menu items</em> are very close to tree components in behavior-they display further options for the user when <code>clicked</code> or <code>hovered</code> over. Nested menu items are categorized as a subset of a menu are are applicable in differing situations from tree components therefore having distinctions.
+    </blockquote>
+
+      <img class="center-block" src="images/variant_menu.gif" class="img-fluid" alt="Responsive image"><br><br>
+
+    <blockquote>
+      <em>Dropdown Buttons</em> can be considered to have tree-like properties such that upon being <code>clicked</code>, the button displays ore options for the user, which is similar to that of expansion. Despite this facet, similar to menus, dropdown buttons are not effectively capable of organizing items hierarchically in consideration of files or folders on a harddrive for example.
+    </blockquote>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown Button <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+        </ul>
+      </div>
+
+      <h3>Priority Metrics</h3>
+
+      <blockquote>
+      <p><em>Learnability/Memorability</em>: Tree components are widely used across various operating systems and interface designs today. Argumentatively, the tree component provides the most efficient way of navigating through folders and files to find the intended destination. Tree components effectively bridge the gap between the user's mental model and the designer's mental model such that they are very much user-friendly, and act in the way a hierarchy is actually perceived. Therefore, first-time users should have minimal problems learning to navigate through a tree component. The high priority of learnability also implies the high priority of memorability.</p>
+
+      <p><em>Efficiency/Errors</em>: As aforementioned, the tree component allows a user to navigate through a plethora of files and folders with uttmost efficiency. An alternative view to tree is an icon view. Here, each item must be doubled-clicked in order to be prompted with the contents within those items. The tree component makes use of a single click to expand and display all contents of that item. Alternatively, the tree component makes use of arrow keys to effortlessly navigate through a directory. The only room for errors here is a misclick in the designated icon that would expand or collapse the item or arrowing into an unintended directory.</p>
+
+      <p><em>Satisfaction</em>: If any metric at all can be considered as a “low priority” for tree components, it would be satisfaction. Generally, all tree components will be designed comparably with the exception of color choices, icons, fonts, etc. The efficiency and easiness of the design of a tree component is of foremost importance. Attempting to make a tree component "fun" seems counter to its purpose.</p>
+      </blockquote>
+
     <h3>Key Characteristics</h3>
 
-    <p>According to Apple, different guidelines are appropriate for different views. In the outline view, where hierarchical data is expanded vertically, items presented upon expansion should be indented. Further, the column width is to be resized so that it is just wide enough to display the widest item when a user expands or collapses items.</p> 
+    <p>According to Apple, different guidelines are appropriate for different views. In the outline view, where hierarchical data is expanded vertically, items presented upon expansion should be indented. Further, the column width is to be resized so that it is just wide enough to display the widest item when a user expands or collapses items.</p>
 
     <p>In terms of the column view, Apple says that this component view should be used when the data can only be sorted in one way, or if a user desires the information to be sorted in one way. Further, Apple provides 2 general rules to follow in a column view tree component:
     <ol>
@@ -85,83 +119,69 @@ contributors:
       <li>Once the icon is <code>clicked</code>, the item should expand. If no items are presented, there is no further data.</li>
       <li>In the proceeding animated example, pay close attention to the change in state of the designated icon when <code>clicked</code> (i.e. expanded and collapsed)</li>
     </ul>
-    <img src="images/outline_feedback.gif" class="img-responsive" alt="Responsive image">
+    <img src="images/outline_feedback.gif" class="img-fluid" alt="Responsive image">
 
     <p>In terms of column-view trees:
     <ul>
       <li>On the contrary, the column view does not depend on the state of a particular icon. Rather, the general form of feedback is denoted by a <code>selection</code> of that item</li>
       <li>In the proceeding example, note that the highlighted item is the one being expanded and the grayed item on its immediate left is the root or parent from which it was derived</li>
     </ul>
-    <img src="images/column_feedback.png" class="img-responsive" alt="Responsive image">
+    <img src="images/column_feedback.png" class="img-fluid" alt="Responsive image">
 
-  </div>
-
-  <div class="col-sm-12">
-    <h3>Variants</h3>
-
-    <blockquote>
-      <em>Nested menu items</em> are very close to tree components in behavior-they display further options for the user when <code>clicked</code> or <code>hovered</code> over. Nested menu items are categorized as a subset of a menu are are applicable in differing situations from tree components therefore having distinctions.
-    </blockquote>
-
-      <img class="center-block" src="images/variant_menu.gif" class="img-responsive" alt="Responsive image"><br><br>
-    
-    <blockquote>
-      <em>Dropdown Buttons</em> can be considered to have tree-like properties such that upon being <code>clicked</code>, the button displays ore options for the user, which is similar to that of expansion. Despite this facet, similar to menus, dropdown buttons are not effectively capable of organizing items hierarchically in consideration of files or folders on a harddrive for example.
-    </blockquote>
-
-      <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown Button <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a href="#">Item</a></li>
-          <li><a href="#">Item 2</a></li>
-          <li><a href="#">Item 3</a></li>
-        </ul>
-      </div>
-  </div>  
-
-  <div class="col-sm-12">
-    <h3>Priority Metrics</h3>
-
-    <blockquote>
-    <p><em>Learnability/Memorability</em>: Tree components are widely used across various operating systems and interface designs today. Argumentatively, the tree component provides the most efficient way of navigating through folders and files to find the intended destination. Tree components effectively bridge the gap between the user's mental model and the designer's mental model such that they are very much user-friendly, and act in the way a hierarchy is actually perceived. Therefore, first-time users should have minimal problems learning to navigate through a tree component. The high priority of learnability also implies the high priority of memorability.</p>
-
-    <p><em>Efficiency/Errors</em>: As aforementioned, the tree component allows a user to navigate through a plethora of files and folders with uttmost efficiency. An alternative view to tree is an icon view. Here, each item must be doubled-clicked in order to be prompted with the contents within those items. The tree component makes use of a single click to expand and display all contents of that item. Alternatively, the tree component makes use of arrow keys to effortlessly navigate through a directory. The only room for errors here is a misclick in the designated icon that would expand or collapse the item or arrowing into an unintended directory.</p>
-
-    <p><em>Satisfaction</em>: If any metric at all can be considered as a “low priority” for tree components, it would be satisfaction. Generally, all tree components will be designed comparably with the exception of color choices, icons, fonts, etc. The efficiency and easiness of the design of a tree component is of foremost importance. Attempting to make a tree component "fun" seems counter to its purpose.</p>
-    </blockquote>
   </div>
 
 </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Platform-Specific Instances</h3>
+      <a href="#mac_os_x_yosemite">Mac OS X: Yosemite</a>
+      &nbsp&nbsp
+      <a href="#windows_10">Windows 10</a>
+      <br></br>
+    </div>
 
-    <h3>Platform-Specific Instances</h3>
-
+    <div class="col-sm-12">
     <blockquote>
-      <div class="col-sm-6">
-        <h4>Mac OS X: Yosemite</h4>
+        <h4 id="mac_os_x_yosemite">Mac OS X: Yosemite</h4>
         <p>As previously stated, generally tree components across platforms will maintain very similar qualities. The distinctions will primarily lie within subtle design differences and the feedback given. For OS X Yosemite, in an outline view tree, each item has a disclosure triangle facing to the right, which is located immediately to the left of the item. Upon clicking that triangle, the direction the triangle points changes to face downward. Further, upon expansion, the subitems are indented.</p>
 
         <p>One other way that Mac OS X integrates the tree component is through the Terminal with the proper steps, which can be found in <em>Using A Mac Equivalent of Unix "tree" Command to View Folder at Terminal</em> denoted in the <a href="http://osxdaily.com/2016/09/09/view-folder-tree-terminal-mac-os-tree-equivalent/" target="_blank">OSX Daily</a> link also provided in the "References" section.</p>
-      </div>
     </blockquote>
+    <img src="images/terminal_view.png" class="img-fluid" alt="Responsive image"><br><br>
+    <br></br>
+    </div>
 
-    <img src="images/terminal_view.png" class="img-responsive" alt="Responsive image"><br><br>
+    <div class="col-sm-12">
+      <blockquote>
+        <h4 id="windows_10">Windows 10</h4>
+        <p>The start menu is a staple of Windows platforms. The Windows 10 start menu has a tree search feature.
+           If folders are listed in the start menu and they have an exe file or html page in them, you can click on the upside down carrot to show the file/s.
+           The start menu has an alternate access method which is typing the name of the thing you are searching for.
+           Windows 10 decided to not show the search bar right away, instead only showing it when you start typing.</p>
+      </blockquote>
+      <img src="images/windows10_start_menu.gif" class="img-fluid" alt="Responsive image"><br><br>
+      <img src="images/windows10_task_manager.gif" class="img-fluid" alt="Responsive image">
+      <img src="images/windows10_device_manager.gif" class="img-fluid" alt="Responsive image"><br><br>
+      <img src="images/windows10_check_box_list.gif" class="img-fluid" alt="Responsive image"><br><br>
+    </div>
 
-  <div class="col-sm-12">
-    <h3>References</h3>
-    <p> 
-      <a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/ControlsView.html#//apple_ref/doc/uid/20000957-CH52-SW5" target="_blank">Apple OSX Human Interface Guidelines</a>
-    </p> 
-    <p>
-      <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OutlineView/Articles/AboutOutlineViews.html#//apple_ref/doc/uid/20000107-BBCBJFFG" target="_blank">Apple Developer Website: NSOutlineView</a>
-    </p>
-    <p>
-      <a href="http://osxdaily.com/2016/09/09/view-folder-tree-terminal-mac-os-tree-equivalent/" target="_blank">OSX Daily</a>
-    </p>
-    <p>
-      <a href="http://dondi.github.io/paradixm/components/menu/" target="_blank">The Paradixm Project: Menu</a>
-    </p>
   </div>
 
-
+  <div class="col-sm-12">
+    <h3>Credits & References</h3>
+    <li>
+      <a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/ControlsView.html#//apple_ref/doc/uid/20000957-CH52-SW5" target="_blank">Apple OSX Human Interface Guidelines</a>
+    </li>
+    <li>
+      <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OutlineView/Articles/AboutOutlineViews.html#//apple_ref/doc/uid/20000107-BBCBJFFG" target="_blank">Apple Developer Website: NSOutlineView</a>
+    </li>
+    <li>
+      <a href="http://osxdaily.com/2016/09/09/view-folder-tree-terminal-mac-os-tree-equivalent/" target="_blank">OSX Daily</a>
+    </li>
+    <li>
+      <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742445(v=vs.85).aspx" target="_blank">Tree Views (Windows)</a>
+    </li>
+    <li>
+      <a href="http://dondi.github.io/paradixm/components/menu/" target="_blank">The Paradixm Project: Menu</a>
+    </li>
+  </div>
