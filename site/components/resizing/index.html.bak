@@ -294,7 +294,7 @@ contributors:
       </ol>
 
       <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox"  align="center">
+      <div class="carousel-inner" role="listbox"  align="center" style=" width:100%; height: 500px !important;">
         <div class="item active">
           <img src="gif/osx-dock-resize.gif" alt="slider resize gif" class="img-rounded img-responsive"  align="center">
           <div class="carousel-caption" >
@@ -304,7 +304,7 @@ contributors:
         </div>
         <div class="item">
           <img src="gif/windows10-form-fillin.gif" alt="no resize gif" class="img-rounded img-responsive"  align="center">
-          <div class="carousel-caption" >
+          <div class="carousel-caption">
             <h1>Form Fill-In</h1>
             <h3>When used for resizing, form fill-in is most commonly used for resizing text<br>
             Can also be found in other design programs like Maya.</h3>
@@ -455,7 +455,7 @@ contributors:
         <li role="presentation" class="active"><a href="#OSX" aria-controls="OSX" role="tab" data-toggle="tab">Mac OSX <i class="fa fa-apple" aria-hidden="true"></i></a></li>
         <li role="presentation"><a href="#Windows10" aria-controls="windows10" role="tab" data-toggle="tab">Windows 10 <i class="fa fa-windows" aria-hidden="true"></i></a></li>
         <li role="presentation"><a href="#Ubuntu17" aria-controls="Ubuntu17" role="tab" data-toggle="tab">Ubuntu 17 <i class="fa fa-linux" aria-hidden="true"></i></a></li>
-        <li role="presentation"><a href="#Android8" aria-controls="Android8" role="tab" data-toggle="tab">Android 8 <i class="fa fa-android" aria-hidden="true"></i></a></li>
+        <li role="presentation"><a href="#Android8" aria-controls="Material Design/Android8" role="tab" data-toggle="tab">Material Design/Android8 <i class="fa fa-android" aria-hidden="true"></i></a></li>
       </ul>
 
   <div class="tab-content">
@@ -532,8 +532,7 @@ contributors:
                  <img src="gif/resize_terminal_smaller.gif" alt="osX Column View Resize">
                  <div class="caption">
                      <h4>Column View Resize</h4>
-                     <p>A column view—technically referred to as a b
-                         rowser—lets the user view and navigate a data
+                     <p>A column view lets the user view and navigate a data
                          hierarchy using a series of vertical columns.
                          Each column represents one level of the hierarchy
                          and contains horizontal rows of data items. Within
@@ -557,7 +556,8 @@ contributors:
                           to the original position, the parent window will
                           resize to become smaller, but only small as its
                           original position (user cannot make window smaller
-                          than it was originally in this way).</p>
+                          than it was originally in this way). This is a good
+                          example of direct manipulation in action.</p>
                  </div>
              </div>
         </div>
@@ -569,14 +569,33 @@ contributors:
                      <p>A dialog is a type of window that’s designed to elicit
                           a response from the user. Many dialogues—the Print dialog,
                           for example—let the user provide several responses
-                          at once. When a dialog permits resizing, elements
+                          at once. </p>
+
+                     <p>When a dialog permits resizing, elements
                           that can scale with the dialog do so accordingly
                           to maintain consistency. In general, views like boxes,
                           tab views, and tables, expand to fill the dialog.
                           Other elements that aren’t generally resized,
                           like buttons, check-boxes, and segmented controls
                           remain the same size and are anchored to the sides
-                           (or the center) of the dialog.</p>
+                          (or the center) of the dialog.</p>
+
+                     <p>If the user wishes
+                          to resize a dialog he/she should do so as explained
+                          in the Manual Resize Section. It is important to notice
+                          that dialogs does not have the automatic window manipulation
+                          buttons as the regular windows do. This indicates the user
+                          that automatic resize is not available. However, when the user
+                          hovers through the edges the resizing arrows appear indicating
+                          the user can do manual resize. </p>
+
+                     <p>One last thing to note is how
+                          manual resize of dialogs compares to those in regular windows.
+                          Manualy resizing a dialog will make the window resize
+                          the same amount to both the edge being resized and the
+                          opposit edge (parallel to it). This action allows the elements
+                          mentioned before that do not support resize to remain anchored
+                          to the sides or center of the dialog.</p>
                  </div>
              </div>
         </div>
@@ -611,32 +630,24 @@ contributors:
                       <p>The panes of a split are separated by a divider that
                           can typically be dragged to resize the panes.
                           Each pane can have a minimum and maximum size,
-                          which affects how much it can be resized. Many
-                          apps let the user hide specific panes on request.</p>
+                          which affects how much it can be resized.</p>
 
                       <p>When a user whans to split a screen, the user should
                           hover over the colored buttons that reveals the resize
                           symbol, and upon click and holding of the green
-                          fullscreen button and hold it along the edge of
+                          full-screen button and hold it along the edge of
                           the screen until a box appears showing the new
-                          dimensions of the window in light bleu. At this point the user
+                          dimensions of the window in light blue. At this point the user
                           can release the window, which will fill the projected box.
-                          At this poing, the rest of the windows will
-                          automatically be shown on the remainding half of the screen,
+                          The rest of the windows will
+                          automatically be shown on the remaining half of the screen,
                           indicating the user that he/she should select another
                           window to cover the remaining space. These actions
                           requires direct manipulation of the window in the
                           action of dragging the window to its new location,
                           however the projected box takes over the resizing
                           process once the window has been manipulated into the correct
-                          location</p>
-
-                      <p>When the user wishes make a window take up more than 1/2 of the
-                          the screen they can drag the window by its divider and drag it along the
-                          other window, as if it was "pushing" it. At this point the user can release
-                          the window, which will remain in the desired size. This action requires
-                           direct manipulation of the window in the action of dragging the divider to
-                           its new location.</p>
+                          location.</p>
                  </div>
              </div>
         </div>
@@ -645,12 +656,12 @@ contributors:
                  <img src="gif/minimum_resize_chrome_terminal.gif" alt="osX Minimum Resizing of Apps">
                  <div class="caption">
                      <h4>Minimum resize for different apps</h4>
-                     <p>This video demostrates how the user has differnet
-                        resize options for diferent programs in the OS. More
+                     <p>This video demonstrates how the user has different
+                        resize options for different programs in the OS. More
                         specifically in the gif above one can find resize
                         for Chrome and Terminal.  Different programs have
-                        minimum minimun size constraints as it can be seen
-                        from the window.This constraint is encauraged by
+                        minimum size constraints as it can be seen
+                        from the window. This constraint is encouraged by
                         macOS, and in fact every built in application has
                         this functionality. The resizing arrows gives
                         feedback to the user by changing the double arrow
@@ -670,7 +681,7 @@ contributors:
                         the Dock or too close to the edge of the screen
                         that hides the Dock. For this reason once the user
                         reaches the limits of the Dock when resizing, the
-                        application should stop allowing the userfrom resizing it any
+                        application should stop allowing the user-from resizing it any
                         longer. Feedback is provided to the user by changing
                         the doubled arrow to a single arrow to indicate
                         that now the window can only be resized in one
@@ -735,10 +746,10 @@ contributors:
                 <p>Minimum effective window resolution is 800x600 pixels.</p>
               </li>
               <li>
-                <p>Optimal resolution for an effective resizable window is 1024x768 pixels.</p>
+                <p>Optimal resolution for an effective resizeable window is 1024x768 pixels.</p>
               </li>
               <li>
-                <p>Resizable windows no longer require the resize glyph
+                <p>Resizeable windows no longer require the resize glyph
                   ( <img src="gif/windows10-resize-glyph.jpg"/> ) in the lower
                   right corner of the window.</p>
                   <ul>
@@ -746,19 +757,19 @@ contributors:
                       <p>The glyph requires a status bar in order to be displayed.</p>
                     </li>
                     <li>
-                      <p>Resizable window boarders and resize pointers are more effective
-                        at conveying a window is resizable than the glyph.</p>
+                      <p>Resizeable window boarders and resize pointers are more effective
+                        at conveying a window is resizeable than the glyph.</p>
                       </li>
                     </ul>
                   </li>
                   <li>
                     <p>All windows should have a minimize button
                       ( <img src="img/windows10-minimize-button.jpg"/> ) to reduce
-                      a window to a taskbar button.</p>
+                      a window to a task-bar button.</p>
                     </li>
                     <li>
                       <p>All windows should have a maximize/restore down button, unless
-                        the window isn’t resizable.</p>
+                        the window isn’t resizeable.</p>
                         <ul>
                           <li>
                             <p>The maximize button ( <img src="img/windows10-maximize-button.jpg"/> )
@@ -771,7 +782,7 @@ contributors:
                             </ul>
                           </li>
                           <li>
-                            <p>Use resizable windows whenever possible to avoid scroll bars
+                            <p>Use resizeable windows whenever possible to avoid scroll bars
                               and truncated data.</p>
                             </li>
                             <li>
@@ -779,8 +790,8 @@ contributors:
                                 longer be usable at certain dimensions.</p>
                               </li>
                             </ul>
-                            <p>Building on these priciples, here are some specific examples of
-                              resizing in Windows 10 with a breif descripton and reflection on
+                            <p>Building on these principles, here are some specific examples of
+                              resizing in Windows 10 with a brief description and reflection on
                               their adherence to the Windows Guidelines.</p>
                               <div class="row">
                                 <div class="col-sm-12 col-md-6">
@@ -874,12 +885,12 @@ contributors:
                                                 Properties settings window doesn't allow for any resizing.
                                                 Any attempts to use the window boarders doesn't work, and
                                                 the resize pointers aren't visible.  It seems that this
-                                                breaks the Windows guideline that says to use resizable
+                                                breaks the Windows guideline that says to use resizeable
                                                 windows whenever possible.  However, this example adheres
                                                 to the Windows guidelines because the window doesn't require
                                                 any resizing because the content of the window won't change,
                                                 and it is small enough to work on all screens.  Additionally,
-                                                this is a Guideline compliant non-resizable window because
+                                                this is a Guideline compliant non-resizeable window because
                                                 it doesn't include nonfunctional minimize or maximize/restore
                                                 down buttons.</p>
                                               </div>
@@ -898,114 +909,132 @@ contributors:
 
       <div class="row">
         <h4>The Ubuntu Brand Guidelines</h4>
-        <p>In this section, the resize component implmentation in the
-            <b>Ubuntu 17 (Zesty Zapus)</b> platform will be specifically evaulated.
+        <p>In this section, the resize component implementation in the
+            <b>Ubuntu 17 (Zesty Zapus)</b> platform will be evaluated.
             Specific examples of resize implementations will be provided,
             as well as a discussion of how Ubuntu's interaction design
-            principles have influenced these specific resize implmentations.
+            principles have influenced these specific resize implementations.
             "The Ubuntu Brand Guidelines" is a document that provides
             insight into the theories, principles, and guidelines that Ubuntu
-            Developers use to design their user interfaces. One guideline that
-            it states specifically for resize, is that standard document
-            windows should have transient resize controls--controls that
-            disappear when not needed. The interface guidelines also
-            considers the principle of direct manipulation as a way of
-            affirming the user's mental model of a task, because it can
-            feel more natural than what they define as "explicit tasks".</p>
+            Developers use to design their user interfaces. Nevertheless, it should
+            be noted that Ubuntu as an operating system is aimed at software
+            engineers and as such it employs is resources accordingly.</p>
+            <p>Ubuntu's User Interface features Unity. Unity is designed to minimize distractions,
+              give you more room to work, and help the user get things done.</p>
       </div>
 
-          <div class="row">
-              <div class="col-sm-6">
-              <div class="thumbnail">
-                <img src="gif/ubuntu_auto.gif" alt="ubuntu Automatic resize">
-                <div class="caption">
-                  <h4>Automatic Resize</h4>
-                  <p>This example shows automatic resize in the Notes Application
-                      Window. Hovering over the colored buttons reveals the resize
-                      symbol, and upon click of the square fullscreen button,
-                      the window fills the entire screen. The fullscreen symbol
-                      is indicative of the function it triggers, because it represents what
-                      the final state of the window will be. In fullscreen mode,
-                      the menu merges with the OS's menu, reflecting Ubuntu's guideline
-                      of transient controls. When the user wants to return to
-                      a non-fullscreen mode, the resize button is accessed by
-                      displaying the menu bar, which returns to the screen when
-                      the mouse is at the top of the screen. Hovering over the
-                      button reveals the resize symbol, which is now a small square,
-                      representing a small window. </p>
-                </div>
-              </div>
+      <div class="row">
+          <div class="col-sm-6">
+          <div class="thumbnail">
+            <img src="gif/ubuntu_auto.gif" alt="Ubuntu Automatic resize">
+            <div class="caption">
+              <h4>Automatic Resize</h4>
+              <p>This example shows automatic resize in the Notes Application
+                  Window. Hovering over the colored buttons reveals the resize
+                  symbol, and upon click of the square full-screen button,
+                  the window fills the entire screen. The full screen symbol
+                  is indicative of the function it triggers, because it represents what
+                  the final state of the window will be. The user is not presented
+                  however with a tooltip specifying in words what the action
+                  specifically does.</p>
+                  <p>In full-screen mode,
+                  the menu merges with the OS's menu, following Ubuntu's guideline
+                  of transient controls. When the user wants to return to
+                  a non-full-screen mode, the resize button is accessed at the top
+                  left of the screen (in contrast to Windows and like macOS). Hovering over the
+                  button highlights the resize symbol, which is now a small square,
+                  representing a small window. the highlight works as a clue
+                  to hint the user that the action is possible.</p>
             </div>
+          </div>
+        </div>
 
-            <div class="col-sm-6">
-              <div class="thumbnail">
-                <img src="gif/ubuntu_arrows.gif" alt="Ubuntu notes Manual Resize">
-                <div class="caption">
-                  <h4>Manual Resize</h4>
-                  <p>This example shows manual resize in the Notes Application
-                      Window. Hovering over the permeter of the window changes the
-                      mouse cursor from a pointer to an arrow, pointing in the direction.
-                      where the user is allowed to resize. Dragging
-                      the edge of the window at this point allows the user to explore
-                      different window dimensions, befre setting the new dimension on
-                      mouse release. An interesting characteristic to notice is that
-                      resizing the Notes window will cause text wrap to occur, bounded
-                      by the dimensions of the Notes Window. Also, observe how resize
-                      causes the menu bar to add/drop components on stretch/shrink, respectively.
-                      Thus, for some applications in Ubuntu</p>
-                </div>
-              </div>
+        <div class="col-sm-6">
+          <div class="thumbnail">
+            <img src="gif/ubuntu_arrows.gif" alt="Ubuntu Notes Manual Resize">
+            <div class="caption">
+              <h4>Manual Resize</h4>
+              <p>This example shows manual resize in the Notes Application
+                  Window. Hovering over the perimeter of the window changes the
+                  mouse cursor from a pointer to an arrow, pointing in the direction.
+                  where the user is allowed to resize. It is interesting to note
+                  that Ubuntu offers 8 disctinct icons to perform this action, in contrast
+                  with the usual 4 that platforms like Windows and macOS offer. This makes
+                  Ubuntu more precise in indicating the user the direction of possible
+                  progress, however it might be confusing since resizing in <thead>
+                  opposite direction to where the arrow points is also allowed.
+                  </thead></p>
+                  <p>Dragging
+                  the edge of the window at this point allows the user to explore
+                  different window dimensions, before setting the new dimension on
+                  mouse release. An interesting characteristic to notice is that
+                  resizing the Notes window will cause text wrap to occur, bounded
+                  by the dimensions of the Notes Window. Also, observe how resize
+                  causes the menu bar to add/drop components on stretch/shrink, respectively.
+                  Thus, for some applications in Ubuntu</p>
             </div>
+          </div>
+        </div>
 
-            <div class="col-sm-6">
-                 <div class="thumbnail">
-                     <img src="gif/ubuntu_properties.gif" alt="Ubuntu resize the properties in finder">
-                     <div class="caption">
-                         <h4>Folder Description Resize</h4>
-                         <p>In this example we an see an interesting design choice for the ubuntu operating system.
-                         The user is allowed to manipulate the size of the columns displaying the metadata of
-                         several documents. The OS agains displays the familiar arrow icons to indicate the user
-                         that this is in fact a possibility. When extended passed the window edge however,
-                         the action will cause the column to be hidden. This appears to be an ommision in the
-                         design of the OS.</p>
-                     </div>
+        <div class="col-sm-6">
+             <div class="thumbnail">
+                 <img src="gif/ubuntu_properties.gif" alt="Ubuntu resize the properties in finder">
+                 <div class="caption">
+                     <h4>Folder Description Resize</h4>
+                     <p>In this example we an see an interesting design choice for the Ubuntu operating system.
+                     The user is allowed to manipulate the size of the columns displaying the metadata of
+                     several documents. The OS again displays the familiar arrow icons to indicate the user
+                     that this is in fact a possibility. When extended passed the window edge however,
+                     the action will cause the column to be hidden. This appears to be an omission in the
+                     design of the UI since it it does not present a natural and fluent action to the user.
+                     Key characteristics that Ubuntu highlight in its desigh guidelines.</p>
                  </div>
-            </div>
+             </div>
+        </div>
 
-            <div class="col-sm-6">
-                 <div class="thumbnail">
-                     <img src="gif/ubuntu_dialog.gif" alt="Ubuntu Dialog Resize">
-                     <div class="caption">
-                         <h4>Dialog Resize</h4>
-                         <p>A dialog is a type of window that’s designed to elicit
-                              a response from the user. Many dialogs—the Print dialog,
-                              for example—let the user provide several responses
-                              at once. When a dialog permits resizing, elements
-                              that can scale with the dialog do so accordingly
-                              to maintain consistency. In general, views like boxes,
-                              tab views, and tables, expand to fill the dialog.
-                              Other elements that aren’t generally resized,
-                              like buttons, checkboxes, and segmented controls
-                              remain the same size. The behaviour is very similar to the previous examples
-                              we have explored in this section.</p>
-                     </div>
+        <div class="col-sm-6">
+             <div class="thumbnail">
+                 <img src="gif/ubuntu_dialog.gif" alt="Ubuntu Dialog Resize">
+                 <div class="caption">
+                     <h4>Dialog Resize</h4>
+                     <p>A dialog is a type of window that’s designed to elicit
+                          a response from the user. Many dialogues such as the Print dialog,
+                          let the user provide several responses at once. When a dialog permits resizing, elements
+                          that can scale with the dialog do so accordingly
+                          to maintain consistency. In general, views like boxes,
+                          tab views, and tables, expand to fill the dialog.
+                          Other elements that aren’t generally resized,
+                          like buttons, check-boxes, and segmented controls
+                          remain the same size. The behavior is very similar to the previous examples
+                          we have explored in this section, in poarticular, macOS impolementation
+                          is very similar as it is in many of its other design choices we have explored.</p>
                  </div>
-            </div>
+             </div>
+        </div>
 
-            <div class="col-sm-6">
-                <div class="thumbnail">
-                    <img src="gif/ubuntu_launcher.gif" alt="Ubuntu dock resize">
-                    <div class="caption">
-                        <h4>Launcher Resize</h4>
-                        <p>Direct manipulation occurs at a higher level of abstraction
-                            in this example of a slider that accomplishes resizing the
-                            dock and its icons by means of a setting control. The user
-                            is presented with the choice of the size of the Launcher in  the units of points,
-                            this unit of measurement is widelly used in user interface design, including
-                            HTML and CSS for web design.</p>
-                        </div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img src="gif/ubuntu_launcher.gif" alt="Ubuntu dock resize">
+                <div class="caption">
+                    <h4>Launcher Resize</h4>
+                    <p>Direct manipulation occurs at a higher level of abstraction
+                        in this example of a button which helps the user accomplish resizing the
+                        launcher and its icons by means of a setting control. The user
+                        is presented with the choice of the size of the Launcher in  the units of points,
+                        this unit of measurement is widely used in user interface design, including
+                        HTML and CSS for web design.</p>
+                        <p>
+                          The buttons that the user utilizes to manipulate the size of the Launcher,
+                          are consisten with other elements of the UI. The plus on top of the button
+                          signifies that the final state will be biggern thatn the initial state.
+                          In contrast, the minus button signifies to the user that the final
+                          state will in some way be smaller thatn the initial. Ubuntu uses this same
+                          choice of icons in several points in its User Interface such as for example,
+                          the button to hide the window, or create a new document.
+                        </p>
                     </div>
                 </div>
+            </div>
 
             <div class="col-sm-6">
                  <div class="thumbnail">
@@ -1013,13 +1042,16 @@ contributors:
                      <div class="caption">
                          <h4>Split Windows</h4>
                          <p>A split view manages the presentation of two or more panes
-                              of content. In Ubuntu this behaviour is only available to users through
+                              of content. In Ubuntu this behavior is only available to users through
                               the popular tool 'Unity Tweak Tool'. This tool allows Ubuntu users to replicate
                           this popular functionality that other OS's like macOS and windows have available.</p>
                           <p>In the above example the user is positioning 2 programs side by side for multitasking.
-                          This is activated by moving the windows all the way to one side. The window will diplay
-                          a big orange rectangle hinitng at the final state of the windows as occupying half of the
+                          This is activated by moving the windows all the way to one side. The OS will display
+                          a big orange rectangle hinting at the final state of the window as occupying half of the
                           desktop space.</p>
+                          <p>The user also has the option of spliting between four windows,
+                            by dragging each of them to a corner. In this case the OS will provide the user
+                            with feedback by highlighting in orange a quarter of the screen in this case.
                      </div>
                  </div>
             </div>
@@ -1029,13 +1061,17 @@ contributors:
                      <img src="gif/ubuntu_min.gif" alt="Ubuntu Minimum Resizing of Apps">
                      <div class="caption">
                          <h4>Minimum resize for different apps</h4>
-                         <p>This video demostrates how the user has differnet
-                              resize options for diferent programs in the OS.
-                              Some frograms will allow to resize all the way,
-                              while others will enforce a minimun size constraint.
-                              This constraint is encauraged by Ubuntu, and in fact
+                         <p>This video demonstrates how the user has different
+                              resize options for different programs in the OS.
+                              Some programs will allow to resize all the way,
+                              while others will enforce a minimum size constraint.
+                              This constraint is encouraged by Ubuntu, and in fact
                               every built in application has this functionality.
                          </p>
+                         <p>To accomplish this behaviour the user needs only locate
+                           the mouse pointer in one of the corners of the window.
+                           As discribed in the Manual Resize section" this will
+                         present the user with an arrow.</p>
                      </div>
                  </div>
             </div>
@@ -1044,14 +1080,17 @@ contributors:
                 <div class="thumbnail">
                     <img src="gif/ubuntu_doc.gif" alt="Ubuntu Dock Consideration when Resizing">
                     <div class="caption">
-                        <h4>The influence of the launcher</h4>
+                        <h4>The Influence of the Launcher</h4>
                         <p>The position of the launcher has to be taken into account
                             when resizing windows. It’s difficult to drag or
                             resize a portion of a window that’s positioned behind
                             the launcher. For this reason once the user
                             reaches the limits of the launcher when resizing, the
-                            application should stop allowing the userfrom resizing it any
+                            application should stop allowing the user from resizing it any
                             longer.</p>
+                            <p>Further, Ubuntu will behave as it would when the user
+                            reaches any of the edges of the desktop. This behaviour was
+                            described in the section of 'Split View'.</p>
                         </div>
                     </div>
                 </div>
@@ -1065,47 +1104,56 @@ contributors:
   <div role="tabpanel" class="tab-pane fade in" id="Android8">
             <div class="container">
                 <div class="row">
-                    <h4>add</h4>
-                    <p>add.</p>
+                    <h4>The Material Design/Android  Guidelines:</h4>
+                    <p>In this section, the resize component implementation in the
+                        <b>Android 8/Material Design</b> platform will be specifically evaluated.
+                        Specific examples of resize implementations will be provided,
+                        as well as a discussion of how Android/Material Design's interaction design
+                        principles have influenced these specific resize implementations.
+                        "Android Guidelines" and "Material Design Guidelines" are documents that provide
+                        insight into the theories, principles, and guidelines that Android and
+                        Material Design Developers use to design their user interfaces respectively.
+                        One principle that both the Material Design and Android
+                        state is accesibility principle of "specific", meaning
+                        that assistive technology helps increase, maintain, or improve
+                        the functional capabilities of individuals with disabilities,
+                        through devices like screen readers, magnification devices,
+                        wheelchairs, hearing aids, or memory aids. In the specific
+                        case of resize, it is important for example that the device
+                        screen or font can be resized so that users with low vision
+                        can still find the interface appealing. </p>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="thumbnail">
                             <img src="gif/android-picture-in-picture.gif" alt="Android Picture-in-Picture">
                             <div class="caption">
-                                <h4>Picture-in-Picture</h4>
+                                <h4>Picture-in-Picture (PIP)</h4>
                                 <p>PIP is a special type of multi-window mode
                                     mostly used for video playback. It lets the
-                                    user watch a video in a small window pinned
+                                    user watch a video or view the maps (like shown
+                                    in this example) route in a small window pinned
                                     to a corner of the screen while navigating
                                     between apps or browsing content on the main
-                                    screen.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="thumbnail">
-                            <img src="gif/android-font-resize.gif" alt="Android font resize">
-                            <div class="caption">
-                                <h4>Font resize</h4>
-                                <p>A well-designed product is accessible to
-                                    users of all abilities, including those with
-                                    low vision, blindness, hearing impairments,
-                                    cognitive impairments, or motor impairments.
-                                    Improving your product’s accessibility
-                                    enhances the usability for all users.
-                                    It’s also the right thing to do. Material design’s
-                                    built-in accessibility considerations will help
-                                    you accommodate all of your users.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="thumbnail">
-                            <img src="gif/android-display-resize.gif" alt="Android display resize">
-                            <div class="caption">
-                                <h4>Display resize</h4>
-                                <p>add </p>
+                                    screen. For easines of discussion, lets use the
+                                    maps example shown avobe. To access picture
+                                    in picture the user should start navigation
+                                    and when pressing the home button, the maps
+                                    screen will be automatically resized and located
+                                    at the bottom right corner of the screen.</p>
+
+                                 <p>Eventhough this does not involve direct manipulation
+                                    (because the window resizes by itself), it is
+                                    the user who initiates the motion of the resize.
+                                    This is a representation of Material Design's principle
+                                    that "Motion provides meaning" since this principle
+                                    states that motion respects and reinforces the
+                                    user as the prime mover. Furthermore, primary user actions
+                                    are inflection points that initiate motion,
+                                    transforming the whole design. Lastly we can see in this
+                                    example how the resize transitions are are
+                                    efﬁcient yet coherent, which again align with
+                                     the principle mentioned.</p>
                             </div>
                         </div>
                     </div>
@@ -1113,34 +1161,88 @@ contributors:
                         <div class="thumbnail">
                             <img src="gif/android-widget-resize.gif" alt="Android widget resize">
                             <div class="caption">
-                                <h4>Widget resize</h4>
+                                <h4>Widget Resize</h4>
                                 <p>Widgets display glanceable views of an app's
                                     most important data and functionality.
                                     Resizing allows users to adjust the height
                                     or width of a widget. This allows users to
                                     influence the layout of widgets on home panels.
-                                    Some apps are completely resizable and others
+                                    Some apps are completely resizeable and others
                                     are constrained to horizontal or vertical size
-                                    changes.When a user presses on the widget
-                                    for enough time, the edges if it will now
-                                    show a white frame with four circles in the middle of each
+                                    changes. When a user presses on the widget
+                                    for enough time it will show a white frame
+                                    that surrounds it with four circles in the middle of each
                                     edge (if it is a rectangle like the one shown).
                                     These circles indicate the user that he/she can
-                                    drag acorss any of the edges to make the widget
-                                    taller or wider but not across the corners.
-                                    One thing to note is how th tansitions are not
-                                    smooth ones but rather after the user drags
-                                    and waits enough time, then the widget will
-                                    automatically change its size to that position.
-                                    Some widgets have the behavior of representing
+                                    drag across any of the edges to make the widget
+                                    taller/shorter or wider/narrower. It also indicates
+                                    the user how he/she cannot resize across the corners.
+                                    One thing to note is how the transitions are not
+                                    smooth. After the user drags the edge and waits for
+                                    enough (very little) time, the widget will
+                                    automatically change its size to that position.</p>
+
+                                    <p>Some widgets have the behavior of representing
                                     different features depending on the size they are
                                     at. This is because when a widget is smaller,
                                     it should prioritize to show the most relevant
                                     information. The keep widget for example, represents
                                     this behavior. </p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-sm-6">
+                        <div class="thumbnail">
+                            <img src="gif/android-display-resize.gif" alt="Android display resize">
+                            <div class="caption">
+                                <h4>Display Resize</h4>
+                                <p>Material Design Guidelines believe that a
+                                    well-designed product is accessible to
+                                    users of all abilities, including those with
+                                    low vision, blindness, hearing impairments,
+                                    cognitive impairments, or motor impairments.
+                                    Improving the product’s accessibility
+                                    enhances the usability for all users.</p>
+
+                                 <p>Material design’s built-in accessibility
+                                    considerations have a feature that permits
+                                    resizing the display as shown in the gif above.
+                                    To access this feature, the user should go to
+                                    Systems/Accesibility/Display Size. Once here
+                                    the user can select from
+                                    various different sizes of display. Such sizes can
+                                    be in between "smaller" and "larger" indicated with the "-"
+                                    and "+" icon respectively. These icons are used since they are
+                                    commonly associated with decrease and increase,
+                                    making it easy for the user to know how to resize appropriately.
+                                    While the user changes through these, on top
+                                    a window appears indicating how different
+                                    aspects of the screen size will now be resized
+                                    (some include text messages, icons, etc).</p>
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-6">
+                        <div class="thumbnail">
+                            <img src="gif/android-font-resize.gif" alt="Android font resize">
+                            <div class="caption">
+                                <h4>Font Resize</h4>
+                                <p>As described in the Display resize section,
+                                    according to Material Design Guidelines,
+                                    A well-designed product is accessible to
+                                    users of all abilities and hence should font resize. Very similar
+                                    to display resize, the user should go
+                                    to Systems/Accesibility/Font Size and the interface
+                                    here looks very similar to the one for the resize
+                                    of the display, with some slight differences such as:
+                                    text is resized rather than display, instead of
+                                    "+" and "-" we have little A and bigger A (as these
+                                    symbols are typically associated with font size),
+                                    and the fact that only sample text is shown to represent
+                                    the resize rather than actual icons/apps.</p>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -1158,11 +1260,14 @@ contributors:
     <a href="http://www.lowcountryren.com/nestor/Documentation/ionicons-1.4.1/png/512/arrow-resize.png">Resize Arrow Diagonal Image</a><br>
     <a href="http://img.freepik.com/free-icon/double-arrow_318-133576.jpg?size=338&ext=jpg">Resize Arrow Vertical Image</a><br>
     <a href="https://image.freepik.com/free-icon/horizontal-resize-option_318-41980.jpg">Resize Arrow Horizontal Image</a><br>
+    <a href="https://material.io/guidelines/">Matherial Design Guidelines</a><br>
     <a href="http://www.clipartbest.com/cliparts/9TR/enr/9TRenreTe.png">Mouse Cursor Image</a><br>
     <a href="https://developer.mozilla.org/en-US/docs/Web/Events/resize">Mozilla Firefox Documentation</a><br>
     <a href="https://api.jquery.com/resize/">JQuery Documentation</a><br>
     <a href="http://docs.telerik.com/kendo-ui/api/javascript/ui/window">Kendo UI Documentation</a><br>
     <a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/index.html#//apple_ref/doc/uid/20000957-CH4-SW1">macOS Human Interface Guidelines</a><br>
+    <a href="http://design.ubuntu.com/">Ubuntu Brand Guidelines</a><br>
+    <a href="https://help.ubuntu.com/stable/ubuntu-help/shell-overview.html">Ubuntu 17 User Interface Documentation</a><br>
     <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn688964(v=vs.85).aspx">Windows Guidelines</a><br>
     <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742502(v=vs.85).aspx">Windows Window Management Guidelines</a><br>
     <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499(v=vs.85).aspx">Windows Dialogue Boxes Guidelines</a><br>
