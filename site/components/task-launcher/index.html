@@ -76,7 +76,7 @@ contributors:
 
   <!-- ---------------------------- GENERAL COMPONENT DATA ------------------------------ -->
   <div class="tab-pane fade show active" id="overview" aria-labelledby="overview-tab">
-    <div id="overview" class="row">
+    <div id="overview-content" class="row">
       <div class="col-sm-6">
         <h3><strong>Typical Appearance</strong></h3>
           <p>Task Launchers frequently appear one of the edges of the screen (in accordance with Fitts' Law), usually
@@ -153,7 +153,7 @@ contributors:
 
   <!-- ---------------------------- MACOSX10 SPECIFIC DATA ------------------------------ -->
   <div class="tab-pane fade" id="macosx10" aria-labelledby="macosx10-tab">
-    <div id="macosx10" class="row">
+    <div id="macosx10-content" class="row">
       <div class="col-sm-6">
         <h3><strong>Typical Appearance</strong></h3>
         <p>
@@ -238,20 +238,20 @@ contributors:
     <div id="macosx10" class=row>
       <div class="col-sm-12">
         <h3><strong>Key Characteristics</strong></h3>
-          <p>
-            Spotlight and dock allow for two different communications between the user and the operating system. The dock's immediacy
-            and simplicity makes it a great option for the launching of everyday tasks. Spotlight's access to all applications and
-            files stored on the system allows for the fast launch of applications and the opening of files that are note regularly
-            accessed. It drastically decreases the overall time of launching applications not stored in the dock and creates convenient
-            shortcut to any location in the operating system.
-          </p>
-        </div>
+        <p>
+          Spotlight and dock allow for two different communications between the user and the operating system. The dock's immediacy
+          and simplicity makes it a great option for the launching of everyday tasks. Spotlight's access to all applications and
+          files stored on the system allows for the fast launch of applications and the opening of files that are note regularly
+          accessed. It drastically decreases the overall time of launching applications not stored in the dock and creates convenient
+          shortcut to any location in the operating system.
+        </p>
       </div>
+    </div>
   </div>
 
   <!-- ---------------------------- WINDOWS10 SPECIFIC DATA ------------------------------ -->
   <div class="tab-pane fade" id="windows10" aria-labelledby="windows10-tab">
-    <div id="windows10" class="row">
+    <div id="windows10-content" class="row">
       <div class="col-sm-6">
         <h3>Appearance</h3>
         <p>
@@ -341,7 +341,7 @@ contributors:
             </p>
       </div>
     </div>
-    <div id="windows10" class="row">
+    <div id="key-characteristics" class="row">
       <div class="col-sm-12">
         <h3>Key Characteristics</h3>
          <p>
@@ -357,201 +357,21 @@ contributors:
 
   <!-- ---------------------------- IOS11 SPECIFIC DATA ------------------------------ -->
   <div class="tab-pane fade" id="ios11" aria-labelledby="ios11-tab">
-    <div id="ios11" class="row">
+    <div id="ios11-content" class="row">
 
     </div>
   </div>
 
   <!-- ---------------------------- MACOS7 SPECIFIC DATA ------------------------------ -->
   <div class="tab-pane fade" id="macos7" aria-labelledby="macos7-tab">
-    <div id="macos7" class="row">
+    <div id="macos7-content" class="row">
 
     </div>
   </div>
 
 </div>
 
-
-
-<!-- ---------------------------- macosx1010 SPECIFIC DATA ------------------------------ -->
-<div class="row">
-  <div class="col-xs-12">
-    <h2>Platform-Specific Instances</h2>
-      <div class="panel-group">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse1">Mac OS X</a>
-            </h3>
-          </div>
-          <div id="collapse1" class="panel-collapse collapse">
-            <div class="panel-body">
-              <p> The Mac OS X task launcher has two components, the dock and spotlight. Spotlight has been a built-in feature in addition to the dock since Mac OS X 10.4. The efficiency and fluidity of the dock and spotlight are key features to its success as a task launcher. </p>
-              <div class="row">
-                <div class="col-sm-6">
-                  <h3><strong>Appearance</strong></h3>
-                    <p>The dock is a collection of graphical representations of files and applications. Spotlight is a simple search box, it takes a text input and gives either a text response or a task response (i.e. the launch of an application).
-                    </p>
-                  <div class = "row">
-                    <div class = "col-xs-12">
-                      <div id="spotlight_screenshot_carousel" class="carousel slide" data-ride="carousel">
-                          <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                          <li data-target="#spotlight_screenshot_carousel" data-slide-to="0" class="active"></li>
-                          <li data-target="#spotlight_screenshot_carousel" data-slide-to="1"></li>
-                        </ol>
-                          <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                          <div class="item active"> <img src="OSX_dock_launcher.png" alt="Mac os X task launcher">
-                            <div class="carousel-caption">
-                              Mac OS X 10.10.2 task launcher, dock
-                            </div>
-                          </div>
-                            <div class="item">
-                              <img src="spotlight_in_action.png" alt="Mac os X task launcher, Spotlight">
-                                <div class="carousel-caption">
-                                  Mac OS X 10.10.2 task launcher, Spotlight
-                                </div>
-                            </div>
-                          <div class="item">
-                           <img src="spotlight.png" alt="Mac os X task launcher, Spotlight">
-                            <div class="carousel-caption">
-                              Mac OS X 10.11.6 task launcher, Spotlight
-                            </div>
-                        </div>
-                          <!-- Controls -->
-                          <a class="left carousel-control" href="#spotlight_screenshot_carousel" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="right carousel-control" href="#spotlight_screenshot_carousel" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                          </a>
-                      </div>
-                    </div>
-                  </div>
-                  <h3><strong>Behavior</strong></h3>
-                    <p>The dock allows for the immediate launch of any application or folder stored on it with a simple click. Spotlight requires keyboard input instead.</p>
-                  <h3><strong>Events</strong></h3>
-                    <p>During the use of a task launcher the user is required to type in the name of a desired file or application. Once the text input is received the task launcher takes one of three actions:<br>
-                       1. opens desired file <br>
-                       2. launches application <br>
-                       3. responds with a "file/application not found" message <br>
-                          when an application is in use, a dot appears underneath its icon on the dock.
-                    </p>
-                  <h3><strong>Component in Action</strong></h3>
-                    <p>Below is a tutorial on how to change the position of the dock. Initially it uses the dock to launch the system preferences application.
-                    </p>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/TlmhqEV34Eo" frameborder="0" allowfullscreen></iframe>
-                </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <h3><strong>Variants</strong></h3>
-                    <p>There are third-party task launchers that have been developed specifically for Mac OS X, namely "Alfred." Alfred includes many different features not included in spotlight or the dock; it can save your passwords, create workflows and even search the web.</p>
-                  <h3><strong>Priority Metrics</strong></h3>
-                  <h4><u>Efficiency &amp; Learnability</u></h4>
-                    <p>Mac OS X task launchers have a help application built in which increases their learnability by teaching the the user how to use the interface. Additionally the efficiency of the dock and spotlight is increased by built in shortcuts that can be accessed in any application.</p>
-                  <h4><u>Satisfaction</u></h4>
-                    <p>The satisfaction of the Mac task launchers is based on the speed and ease of use, or more specifically the efficiency and learnability. The user can always look to third-party applications in the case of Mac OS X.  </p>
-
-                  <h3><strong>Key Characteristics</strong></h3>
-                    <p>Spotlight and dock allow for two different communications between the user and the operating system. The dock's immediacy and simplicity makes it a great option for the launching of everyday tasks. Spotlight's access to all applications and files stored on the system allows for the fast launch of applications and the opening of files that are note regularly accessed. It drastically decreases the overall time of launching applications not stored in the dock and creates a convenient shortcut to any location in the operating system.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-<!-- ---------------------------- Windows 10 SPECIFIC DATA ------------------------------ -->
-    <div class="panel panel-default col-xs-12 col-sm-12 col-md-12 col-lg-6">
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">Windows 10</h4>
-      </div>
-      <div class="panel-body">
-        <p> The Windows 10 task launcher has three components, the start menu, the task bar, and optionally cortana. The Windows start menu has drastically changed over the past few years, maturing from Windows 7 and 8 into a more efficient and functional menu based system. Windows 10 prioritizes customization in its start menu, focusing on satisfaction.</p>
-        <div class="row">
-          <div class="col-xs-12">
-            <h3>Appearance</h3>
-            <p>The start menu shows you a customizeable selection of tiles including a search bar and optionally cortana. The task bar displays a customized set of 'pinned' applications, along with all currently open applications.</p>
-            <img width="544" src="windows10_task_bar.png" alt="Windows 10 Task Bar">
-            <p align="middle"><b>Windows 10 Task Bar</b></p>
-            <img src="windows10_start.png" width="544" height="306" alt="Windows 10 Start Menu">
-            <p align="middle"><b>Windows 10 Start Menu</b></p>
-            <h3>Behavior</h3>
-                <p>Windows 10 start menu has icons and search bar similar to a mac. It has much more customizeability. It allows the user to add, resize, and recolor applications. It also allows the user to resize the start menu itself. Windows 10 includes the use of Cortana, Windows' <a href="https://support.microsoft.com/en-us/help/11694/windows-phone-cortana-on-your-windows-phone">"personal assistant."</a></p>
-              <h4>Events</h4>
-              <p>During the use of a task launcher the user is required to type in the name of a desired file or application. Once the text input is received the task launcher takes one of four actions:<br>
-                1. opens desired file <br>
-                2. launches application <br>
-                3. responds with a "file/application not found" message <br>
-                4. responds with a list of web searches<br>
-                When an application is launched, its icon appears on the taskbar. When a file is opened the appropriate application is launched and its icon appears on the taskbar. When the response is a web search you can click on an search and a new browser window will open</p>
-              <h4>Component in Action</h4>
-              <div class="row">
-                <div class="col-xs-12">
-                  <div id="windows_screenshot_carousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                      <li data-target="#windows_screenshot_carousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#windows_screenshot_carousel" data-slide-to="1"></li>
-                      <li data-target="#windows_screenshot_carousel" data-slide-to="2"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                      <div class="item active"> <img src="windows10_move.gif" alt="Windows 10 Move Tile">
-                        <div class="carousel-caption">
-                          Move a Tile Windows 10 Start Menu
-                        </div>
-                      </div>
-                      <div class="item">
-                       <img src="windows10_resize.gif" alt="Windows 10 Resize Start Menu">
-                        <div class="carousel-caption">
-                          Resize Windows 10 Start Menu
-                        </div>
-                      </div>
-                      <div class="item">
-                       <img src="windows10_pin_to_start.gif" alt="Windows 10 Pin to Start Menu">
-                        <div class="carousel-caption">
-                          Pin a Tile to Windows 10 Start Menu
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#windows_screenshot_carousel" role="button" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#windows_screenshot_carousel" role="button" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-12">
-              <h3>Variants</h3>
-               <p>There are many different third party task launchers offered for Windows 10, each offering its own set of unique features. A popular launcher is <a href="http://www.launchy.net/index.php">Launchy</a>. Launchy is a pure task launcher focusing on opening files and applications quickly (efficiently).</p>
-              <h3>Priority Metrics</h3>
-                <h4>Satisfaction</h4>
-                 <p>The satisfaction of the Windows 10 task launcher is based more in customization than many other task launchers (focused on the speed and ease of use). In terms of usability metrics, the efficiency is heavily prioritized over learnability. The settings are not intutive and there are many features available that most users overlook. However, experienced users will be very satisfied with the ability to place exactly what they want where they want with little limitation.</p>
-                <h4>Efficiency</h4>
-                 <p>The Windows 10 task launcher has sacrificed some learnability for efficiency. This sacrifice makes the efficiency of the Windows 10 task launcher very important. Once the user has spent time learning how to manipulate the system, the user is able to very quickly perform an application or file launch. The user can also customize the task launcher to meet their needs, making specific tasks more efficient but less learnable. </p>
-                <h4>Learnability</h4>
-                 <p>Learnability is not totally ignored in the Windows 10 task launcher. The icons and labels make it easy for a first time user to navigate. The mental model of a start menu is, for many, a cornerstone of their first interaction with a computer. Windows 10's start menu follows the basics of that model, performing the same general purpose, while supplying many bells and whistles.</p>
-              <h3>Key Characteristics</h3>
-               <p>The Windows 10 start menu and task bar allow for the user to almost completely customize their interaction with the system. The complexity of the start menu makes it less learnable than many task launchers, but eventually makes up for it with quicker launch times (based on customizations). The start menu and task bar can contain shortcuts to files or applications and really make an app launch immediate. The ability to change the size of icons in the start menu takes advantage of Fitts's Law, as does the location of the task bar itself. Overall, the Windows 10 task launcher strives for usability through satisfaction and efficiency. Prioritizing customizability satisfies users and (depending on the user) allows some tasks to become more efficient.
-               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+<!-- ---------------------------- FOOTER ------------------------------ -->
 <div class="row">
   <div class="col-xs-12">
     <h3>Credits and References</h3>
