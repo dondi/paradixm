@@ -37,34 +37,36 @@ contributors:
   </p>
 </div>
 
-        <hr>
+<hr>
 
-        <div class="container-fluid">
-          <div class="row">
-              <ul class="nav nav-pills nav-justified" role="tablist">
-              <li role="nav item" class="active">
-                <a class="nav-link" data-toggle="tab" href="#typical-appearance" role="tab">Typical Appearance</a>
-              </li>
-              <li role="nav item">
-                <a class="nav-link" data-toggle="tab" href="#typical-behavior" role="tab">Typical Behavior</a>
-              </li>
-              <li role="nav item">
-                <a class="nav-link" data-toggle="tab" href="#priority-metrics" role="tab">Priority Metrics</a>
-              </li>
-              <li role="nav item">
-                <a class="nav-link" data-toggle="tab" href="#events" role="tab">Events</a>
-              </li>
-              <li role="nav item">
-                <a class="nav-link" data-toggle="tab" href="#variants" role="tab">Variants</a>
-              </li>
-              <li role="nav item">
-                <a class="nav-link" data-toggle="tab" href="#platform-specifics" role="tab">Platform Specific Examples</a>
-              </li>
-              </ul>
-          </div>
-        </div>
+<!-- Begin Top Navbar for Task Switcher -->
+<div class="container-fluid">
+  <div class="row">
+      <ul class="nav nav-pills nav-justified" role="tablist">
+      <li role="nav item" class="active">
+        <a class="nav-link" data-toggle="tab" href="#typical-appearance" role="tab">Typical Appearance</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#typical-behavior" role="tab">Typical Behavior</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#priority-metrics" role="tab">Priority Metrics</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#events" role="tab">Events</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#variants" role="tab">Variants</a>
+      </li>
+      <li role="nav item">
+        <a class="nav-link" data-toggle="tab" href="#platform-specifics" role="tab">Platform Specific Examples</a>
+      </li>
+      </ul>
+  </div>
+</div>
+<!-- End Top Navbar for Task Switcher -->
+
 <div class="tab-content">
-
   <div class="tab-pane active" id="typical-appearance" role="tabpanel">
     <div class="panel panel-default">
       <div class="panel-body">
@@ -393,7 +395,7 @@ contributors:
                     </h4>
                   </div>
                   <div id="collapseGoogle" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingGoogle">
-                    <div class="panel-body text-center">
+                    <div class="panel-body">
                       <hr>
                       <h2 style="text-align:center"> Android "Recent Tasks" Switcher </h2>
                         <h4 style="text-align:center">Anthony Keba</h4>
@@ -428,8 +430,11 @@ contributors:
                               <li>Although it is not apparent from this image, the user is able to swipe left or right on any of the cards, in order to close the app. This functionality is accentuated by the empty space on either side of the card, implying that movement may potentially take place </li>
                           </ul>
                           <p><b>Note:</b> The user's background image remains present in the background. There is a noticable darkening however to indicate that they are no longer on that view, and the taskbar is still visible.</p>
-                          <p> &nbsp; Here, there are several apps open for the user to potentially interact with. They are (in order of apperance): Contacts, Calculator, Chrome, and Facebook. The user is easily able to determine the name of each app.
-                             <br> &nbsp; They are also presented with the app icon as an additional indicator of which app is presented to them. For two of these apps (Calculator and Chrome), multi-window mode is supported. The UI reflects that through the presence of a button containing two rectanlges.</p>
+                          <p>
+                            &nbsp; Here, there are several apps open for the user to potentially interact with. They are (in order of apperance): Contacts, Calculator, Chrome, and Facebook. The user is easily able to determine the name of each app.
+                            <br>
+                            &nbsp; They are also presented with the app icon as an additional indicator of which app is presented to them. For two of these apps (Calculator and Chrome), multi-window mode is supported. The UI reflects that through the presence of a button containing two rectanlges.
+                           </p>
                         </div>
                         <div class="hidden-xs-down col-sm-4 col-md-4 col-lg-4">
                           <img width="100%" src="img/TaskSwitcher-Android-MainTaskSwitcher.png">
@@ -450,10 +455,11 @@ contributors:
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-46">
                           <h3>Use Case:</h3>
                           <p>
-                          Here we see a use case example, of a sample user scrolling through several apps they have open. Initially the user selects the Recent Apps list, <br>
-                          and taps it to reveal a list of all apps that are currently open. From here, the user is able to scroll through the list of currently open apps by swiping up or down. <br>
-                          Swiping left or right will close any app that is currently open, and clicking on any app will switch to it. <br>
-
+                          Here we see a use case example, of a sample user scrolling through several apps they have open. Initially the user selects the Recent Apps list,
+                          <br>
+                          and taps it to reveal a list of all apps that are currently open. From here, the user is able to scroll through the list of currently open apps by swiping up or down.
+                          <br>
+                          Swiping left or right will close any app that is currently open, and clicking on any app will switch to it.
                         </div>
                       </div>
                     </div>
