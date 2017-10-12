@@ -21,7 +21,7 @@ contributors:
 </p>
 
 <div class="row">
-  <div class="col-sm-6">
+  <div class="col">
 
     <h3>Typical Appearance</h3>
     <p>
@@ -84,7 +84,7 @@ contributors:
     </p>
   </div>
 
-  <div class="col-sm-6">
+  <div class="col">
     <h3>Variants</h3>
     <p>
       Zooming on desktops is possible through the use of the <code>Command+</code>
@@ -203,116 +203,128 @@ contributors:
 </div>
 
 <br>
-  <div class="panel panel-primary">
-    <div class="Platform Specific Instances">
-      <center>
-        <h3 class="panel-title-primary"><b>Platform Specific Instances</b></h3>
-      </center>
-    </div>
-    <div class="panel-body">
-      <p>
-        When viewing content on a desktop, users can zoom in or out by way of
-        the window menu or through predefined keyboard bindings.
-        For example, Windows users may zoom in or out using the
-        <code>CTRL+</code> or <code>CTRL-</code> commands respectively.
-      </p>
+<div>
+  <center><h3 class="panel-title-primary"><b>Platform Specific Instances</b></h3></center>
+  <div class="panel-body">
+  <p>
+    When viewing content on a desktop, users can zoom in or out by way of
+    the window menu or through predefined keyboard bindings.
+    For example, Windows users may zoom in or out using the
+    <code>CTRL+</code> or <code>CTRL-</code> commands respectively.
+  </p>
+</div>
 
-      <p><h4>Mac OSX</h4></p>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="Mac-OSXtab" data-toggle="tab" href="#Mac-OSX" role="tab" aria-controls="MacOSx" aria-expanded="true">MacOSX</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="IOS-tab" data-toggle="tab" href="#IOS" role="tab" aria-controls="IOS">IOS</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="WatchOS-tab" data-toggle="tab" href="#WatchOS" role="tab" aria-controls="WatchOS">WatchOS</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="MacOSx" role="tabpanel" aria-labelledby="MacOSx-tab">
+  <p><h4>Mac OSX</h4></p>
+    <p>
+      Users on an OS X can zoom in using <code>Command+</code> and
+      <code>Command-</code> keyboard shortcuts.The capability of a
+      desktop to zoom is controlled by a computer's settings.
+      On the system preferences of a user's mac, zooming cabilities
+      can be changed in the trackpad section, under Scroll and Zoom.
+      Likewise, they can be changed in the Accessibility section,
+      under zoom.
+    </p>
+
+    <div class="row">
+      <div class="col">
+        <center>
+          <img src="keyboard zoom.png" alt= "Keyboard zooming shortcuts"
+                height="200" width="350">
+        </center>
+        <p><b>Apple Apps and Zooming</b></p>
+          <ul>
+            <li>Pages
+              <li>Safari</li>
+              <li>Maps</li>
+              <li>Preview</li>
+          </ul>
+
+          <p>
+            All of these apps have very seamless zooming, both in and out.
+            All the apps support trackpad zooming, so the user simply needs
+            to drag his or her fingers either inward or outward (pinching)
+            on the trackpad to create the desired change in view.
+            The view will zoom in toward wherever the cursor is on the page.
+            Likewise, when zooming out, the main point of focus still
+            remains at the cursor's location. All of these apps also allow
+            the normal keyboard shortcuts, <code>Command+</code> and
+            <code>CTRL+</code>, and the user is able to control the zooming
+            from the toolbar at the top of the screen. Safari has the added
+            feature of zooming the text only, under the view section of the
+            menu toolbar.
+          </p>
+
+      </div>
+      <div class="col">
+        <center>
+          <img src="Zoom-on-MacBook-Accessibility.gif" alt= "Zooming Picture" height="220" width="280">
+        </center>
+        <p><b>Non-Apple Apps and Zooming</b></p>
+        <ul>
+          <li>Chrome</li>
+          <li>Microsoft Word</li>
+          <li>Adobe Creative Suite </li>
+        </ul>
         <p>
-          Users on an OS X can zoom in using <code>Command+</code> and
-          <code>Command-</code> keyboard shortcuts.The capability of a
-          desktop to zoom is controlled by a computer's settings.
-          On the system preferences of a user's mac, zooming cabilities
-          can be changed in the trackpad section, under Scroll and Zoom.
-          Likewise, they can be changed in the Accessibility section,
-          under zoom.
+          These apps perform similarily to the Apple-made apps discussed
+          above. All of the Adobe Creative Suite follows the same zooming
+          conventions as the Apple-made apps, as they allow all the same
+          input methods for zooming. However, there are some differences.
+          For example, Microsoft Word has a slider dedicated to zooming in
+          the bottom righthand corner, this is not present in most
+          appliations, including Apple's Pages. Word also does not allow
+          pinch zooming. Google Chrome, unlike Safari, does not offer an
+          option for zooming in text only. However, like Safari, Chrome
+          accept double tapping, pinching, and keyboard shortcuts to zoom.
         </p>
 
-        <div class="row">
-          <div class="col-sm-6">
-            <center>
-              <img src="keyboard zoom.png" alt= "Keyboard zooming shortcuts"
-                    height="200" width="350">
-            </center>
-            <p><b>Apple Apps and Zooming</b></p>
-              <ul>
-                <li>Pages
-                  <li>Safari</li>
-                  <li>Maps</li>
-                  <li>Preview</li>
-              </ul>
+      </div>
+    </div>
 
-              <p>
-                All of these apps have very seamless zooming, both in and out.
-                All the apps support trackpad zooming, so the user simply needs
-                to drag his or her fingers either inward or outward (pinching)
-                on the trackpad to create the desired change in view.
-                The view will zoom in toward wherever the cursor is on the page.
-                Likewise, when zooming out, the main point of focus still
-                remains at the cursor's location. All of these apps also allow
-                the normal keyboard shortcuts, <code>Command+</code> and
-                <code>CTRL+</code>, and the user is able to control the zooming
-                from the toolbar at the top of the screen. Safari has the added
-                feature of zooming the text only, under the view section of the
-                menu toolbar.
-              </p>
-
-          </div>
-          <div class="col-sm-6">
-            <center>
-              <img src="Zoom-on-MacBook-Accessibility.gif" alt= "Zooming Picture" height="220" width="280">
-            </center>
-            <p><b>Non-Apple Apps and Zooming</b></p>
-            <ul>
-              <li>Chrome</li>
-              <li>Microsoft Word</li>
-              <li>Adobe Creative Suite </li>
-            </ul>
-            <p>
-              These apps perform similarily to the Apple-made apps discussed
-              above. All of the Adobe Creative Suite follows the same zooming
-              conventions as the Apple-made apps, as they allow all the same
-              input methods for zooming. However, there are some differences.
-              For example, Microsoft Word has a slider dedicated to zooming in
-              the bottom righthand corner, this is not present in most
-              appliations, including Apple's Pages. Word also does not allow
-              pinch zooming. Google Chrome, unlike Safari, does not offer an
-              option for zooming in text only. However, like Safari, Chrome
-              accept double tapping, pinching, and keyboard shortcuts to zoom.
-            </p>
-
-          </div>
-        </div>
-
-        <p>Macs also offer magnification on the Dock, where users access all of
-           their different applications. Users can choose to use this feature or
-            not, but if used, it allows for the inndividual maginification of a
-            specific application when the cursor is scrolled over that area.
-          </p>
-        <center>
-          <img src="DockZoom.gif" alt= "Accessibility Zoom" height="130" width="390">
-        </center>
-
-      <p><h4>IOS</h4></p>
-      <p>
-        Alternatively, users with a trackpad or viewing the content on a mobile
-        smartphone are able to zoom out through the predefined gesture of
-        pinching and zoom in by performing the gesture in reverse.
-        Every application that allows zooming on IOS uses the same pinching
-        gesture (as well as the double tapping) as the official Apple
-        applications for IOS (and even on MacOS when using a trackpad),
-        making zooming on IOS quite learnable, memorable, and intuitive.
+    <p>Macs also offer magnification on the Dock, where users access all of
+       their different applications. Users can choose to use this feature or
+        not, but if used, it allows for the inndividual maginification of a
+        specific application when the cursor is scrolled over that area.
       </p>
-      <p>
-        Very rarely will developers add a seperate method for zooming as can be
-        seen with the Google Maps app for iOS. The idea of using a one-fingered
-        gesture for the Maps app could be because this application has mobility
-        in mind, so while this gesture may have been a good choice for this app
-        it would have been cumbersome as a standard gesture for zooming when
-        considering all applications.
-      </p>
-        <center><img src="https://i.kinja-img.com/gawker-media/image/upload/s--7iApwaME--/c_fit,fl_progressive,q_80,w_636/18jacrl913c23gif.gif" alt= "Maps Zoom"></center>
-
+    <center>
+      <img src="DockZoom.gif" alt= "Accessibility Zoom" height="130" width="390">
+    </center>
+  </div>
+  <div class="tab-pane fade" id="IOS" role="tabpanel" aria-labelledby="profile-tab">
+    <p><h4>IOS</h4></p>
+    <p>
+      Alternatively, users with a trackpad or viewing the content on a mobile
+      smartphone are able to zoom out through the predefined gesture of
+      pinching and zoom in by performing the gesture in reverse.
+      Every application that allows zooming on IOS uses the same pinching
+      gesture (as well as the double tapping) as the official Apple
+      applications for IOS (and even on MacOS when using a trackpad),
+      making zooming on IOS quite learnable, memorable, and intuitive.
+    </p>
+    <p>
+      Very rarely will developers add a seperate method for zooming as can be
+      seen with the Google Maps app for iOS. The idea of using a one-fingered
+      gesture for the Maps app could be because this application has mobility
+      in mind, so while this gesture may have been a good choice for this app
+      it would have been cumbersome as a standard gesture for zooming when
+      considering all applications.
+    </p>
+      <center><img src="https://i.kinja-img.com/gawker-media/image/upload/s--7iApwaME--/c_fit,fl_progressive,q_80,w_636/18jacrl913c23gif.gif" alt= "Maps Zoom"></center>
+  </div>
+  <div class="tab-pane fade" id="WatchOS" role="tabpanel" aria-labelledby="WatchOS-tab">
     <p><h4>WatchOS</h4></p>
     <p>
       On the Apple Watch, Users are able to zoom using the Digital Crown.
@@ -333,10 +345,12 @@ contributors:
       <img src="https://www.imore.com/sites/imore.com/files/styles/larger/public/field/image/2015/05/how-to-apple-watch-voice-over-screens-01.jpg?itok=BILXjhoF" width="500">
       <img src="https://www.imore.com/sites/imore.com/files/styles/larger/public/field/image/2015/05/how-to-apple-watch-zoom-screens-01.jpg?itok=L7BtHYTU" width="500">
     </center>
-
   </div>
-
 </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 <h3>Credits &amp; References</h3>
 <ul>
