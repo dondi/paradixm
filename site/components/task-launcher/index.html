@@ -7,6 +7,12 @@ contributors:
 
     - name: Kevin Metelus
       github: kmetelus
+
+    - name: Ben Davis
+      github: bdavs3
+
+    - name: Brian Joerger
+      github: bjoerger7
 ---
 <p class="lead">The task launcher is an integral part of the modern operating system. It accelerates and aids in the launching of applications and the opening of files. Task launchers improve the overall efficiency of the user, most modern operating systems come with a native task launcher, while there are also third party task launchers. Task launchers are the starting point for most GUIs, making them the conerstone of the modern operating system. As task launchers advance, adding voice recognition like Cortana and Siri, we move closer to the ultimate User Interface. A UI that is immersive and natural, allowing seamless human-computer interaction.</p>
 
@@ -15,37 +21,41 @@ contributors:
     <h3><strong>Typical Appearance</strong></h3>
       <p>Task Launchers frequently appear as a dock at one of the edges of the screen (in accordance with Fitts' Law), often in the form of unlabeled images. Task Launchers also frequently include a text field, or search box.</p>
     <h3><strong>Typical Behavior</strong></h3>
-        <p>Generally implemented as a graphical menu of sorts, the task launcher's primary goal is to allow the user to initiate tasks, most frequently, by launching applications. The secondary goal is to improve the speed in which the user is able to perform such tasks. Task launchers are made to increase efficiency and boost the user's satisfaction. Another goal of task launchers is to improve the learnability of a given operating system. The task launcher, depending on the type  may have built in search capabilities that enhance and improve the learnability of the entire system.</p>
-      <h4>State Diagram</h4>
+      <p>Generally implemented as a graphical menu of sorts, the task launcher's primary goal is to allow the user to initiate tasks, most frequently, by launching applications. The secondary goal is to improve the speed in which the user is able to perform such tasks. Task launchers are made to increase efficiency and boost the user's satisfaction. Another goal of task launchers is to improve the learnability of a given operating system. The task launcher, depending on the type  may have built in search capabilities that enhance and improve the learnability of the entire system.</p>
+    <h4>State Diagram</h4>
       <p>Below is a generalized state diagram that applies to most task-launchers. It is by no means exhaustive, only illuminating the broad strokes of task launching</p>
-      <img src="state-diagram.png" width="544" height="306">
-      <h5 align="middle">General State Diagram of Task Launchers</h5>
+      <figure class="figure">
+        <img src="state-diagram.png" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption text-center"><strong>General State Diagram of Task Launchers</strong></figcaption>
+      </figure>
       <h3><strong>Events</strong></h3>
       <p>During the use of a task launcher, the user is required to click on the image of a desired file or application. Once the text input is received the task launcher performs one of three actions:<br>
         1. Opens the desired file <br>
         2. Launches the application <br>
         3. Responds with a message that states "file/application not found"</p>
-      <h3><strong>Component in Action</strong></h3>
-      <h5>Ubuntu 12.04</h5>
-        <p>The following video demonstrates the use of the Ubuntu task launcher at 00:19.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LzcJxpt9-Ic?t=19s" frameborder="0" allowfullscreen></iframe>
-        <p>As you can see in the clip, the dock on the left side of the screen launches applications. The first launch is completed by clicking one of the icons, in this instance Google Chrome. The second launch of an application utilizes the secondary launcher, which includes a list of recently launched apps, as well as a search bar for textual input. The Ubuntu task launcheer mirrors Windows 10 in the use of the Operating System logo to open another task launcher.</p>
+    <h3><strong>Component in Action</strong></h3>
+    <h5>Ubuntu 12.04</h5>
+      <p>The following video demonstrates the use of the Ubuntu task launcher at 00:19.</p>
+      <iframe width="460" height="255" src="https://www.youtube.com/embed/LzcJxpt9-Ic?t=19s" frameborder="0" allowfullscreen></iframe>
+      <p>As you can see in the clip, the dock on the left side of the screen launches applications. The first launch is completed by clicking one of the icons, in this instance Google Chrome. The second launch of an application utilizes the secondary launcher, which includes a list of recently launched apps, as well as a search bar for textual input. The Ubuntu task launcheer mirrors Windows 10 in the use of the Operating System logo to open another task launcher.</p>
   </div>
-<div class="row">
   <div class="col-sm-6">
     <h3><strong>Variants</strong></h3>
-     <p>Some task launchers are a search box, which take a text input, that give either a text response or a task response (i.e. the launching of an application). Others have their own windows and act as applications. Generally, third-party task launchers are more likely to open separate windows than native task launchers. A task launcher's capabilities are susceptible to change as well. Some third-party launchers support workflows as well as web searches and password storage.</p>
-      <img src="spotlight_in_action.gif" width="544" height="306">
-      <p align="middle"><b>Spotlight Launching Terminal</b></p>
-      <img src="alfred_slack.gif" width="544" height="306">
-      <p align="middle"><b>Alfred3 Task Launcher Using an integration with Slack</b></p>
+      <p>Some task launchers are a search box, which take a text input, that give either a text response or a task response (i.e. the launching of an application). Others have their own windows and act as applications. Generally, third-party task launchers are more likely to open separate windows than native task launchers. A task launcher's capabilities are susceptible to change as well. Some third-party launchers support workflows as well as web searches and password storage.</p>
+      <figure class="figure">
+        <img src="spotlight_in_action.gif" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption text-center"><strong>Spotlight Launching Terminal</strong></figcaption>
+        <br></br>
+        <img src="alfred_slack.gif" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption text-center"><strong>Alfred3 Task Launcher Using an Integration with Slack</strong></figcaption>
+      </figure>
     <h3><strong>Priority Metrics</strong></h3>
       <h4>Satisfaction</h4>
       <p>The Satisfaction of the user is critical to the task launcher's success. An operating system with a slow task launcher will not be very successful. The user is the most important part of the OS and if the user is unhappy, they may just switch operating systems.</p>
       <h4>Efficiency &amp; Learnability</h4>
-       <p>The efficiency and learnability of a task launcher are the most relevant metrics to the satisfaction of the user. The efficiency ensures that the users needs are met as quickly as possible. The learnability ensures that any user can use the task launcher and understand its uses and capabilities and that the user can have initial interactions with the computer itself.</p>
+      <p>The efficiency and learnability of a task launcher are the most relevant metrics to the satisfaction of the user. The efficiency ensures that the users needs are met as quickly as possible. The learnability ensures that any user can use the task launcher and understand its uses and capabilities and that the user can have initial interactions with the computer itself.</p>
       <h4>Memorability &amp; Errors</h4>
-        <p>Memorability and errors are not very relevant to the overall usability of a task launcher. The opportunity for errors is minimal, while the necessity for memorability is almost nonexistent given that task launchers are used almost every time a computer is used.</p>
+      <p>Memorability and errors are not very relevant to the overall usability of a task launcher. The opportunity for errors is minimal, while the necessity for memorability is almost nonexistent given that task launchers are used almost every time a computer is used.</p>
 
     <h3><strong>Key Characteristics</strong></h3>
      <p>Good task launchers are fast and easy to use. The best task launchers are intuitive. You tell it what you want to do and it initiates the task. These goals make it clear that the learnability (intuitiveness) and efficiency (speed and ease of use) of a task launcher determine its success. The overall usability of a task launcher should be one of the best across all applications in an operating system. The task launcher is an integral part of portraying the mental model of the computer architecture to the user. It is the starting point for any modern human computer interface.</p>
@@ -69,7 +79,7 @@ contributors:
               <div class="row">
                 <div class="col-sm-6">
                   <h3><strong>Appearance</strong></h3>
-                    <p>The dock is a collection of graphical representations of files and applications. Spotlight is a simple search box, it takes a text input and gives either a text response or a task response (i.e. the launch of an application). 
+                    <p>The dock is a collection of graphical representations of files and applications. Spotlight is a simple search box, it takes a text input and gives either a text response or a task response (i.e. the launch of an application).
                     </p>
                   <div class = "row">
                     <div class = "col-xs-12">
@@ -86,7 +96,7 @@ contributors:
                               Mac OS X 10.10.2 task launcher, dock
                             </div>
                           </div>
-                            <div class="item"> 
+                            <div class="item">
                               <img src="spotlight_in_action.png" alt="Mac os X task launcher, Spotlight">
                                 <div class="carousel-caption">
                                   Mac OS X 10.10.2 task launcher, Spotlight
@@ -135,7 +145,7 @@ contributors:
                     <p>The satisfaction of the Mac task launchers is based on the speed and ease of use, or more specifically the efficiency and learnability. The user can always look to third-party applications in the case of Mac OS X.  </p>
 
                   <h3><strong>Key Characteristics</strong></h3>
-                    <p>Spotlight and dock allow for two different communications between the user and the operating system. The dock's immediacy and simplicity makes it a great option for the launching of everyday tasks. Spotlight's access to all applications and files stored on the system allows for the fast launch of applications and the opening of files that are note regularly accessed. It drastically decreases the overall time of launching applications not stored in the dock and creates a convenient shortcut to any location in the operating system.</p>   
+                    <p>Spotlight and dock allow for two different communications between the user and the operating system. The dock's immediacy and simplicity makes it a great option for the launching of everyday tasks. Spotlight's access to all applications and files stored on the system allows for the fast launch of applications and the opening of files that are note regularly accessed. It drastically decreases the overall time of launching applications not stored in the dock and creates a convenient shortcut to any location in the operating system.</p>
                 </div>
               </div>
             </div>
@@ -182,13 +192,13 @@ contributors:
                           Move a Tile Windows 10 Start Menu
                         </div>
                       </div>
-                      <div class="item"> 
+                      <div class="item">
                        <img src="windows10_resize.gif" alt="Windows 10 Resize Start Menu">
                         <div class="carousel-caption">
                           Resize Windows 10 Start Menu
                         </div>
                       </div>
-                      <div class="item"> 
+                      <div class="item">
                        <img src="windows10_pin_to_start.gif" alt="Windows 10 Pin to Start Menu">
                         <div class="carousel-caption">
                           Pin a Tile to Windows 10 Start Menu
@@ -213,7 +223,7 @@ contributors:
             <div class="col-xs-12">
               <h3>Variants</h3>
                <p>There are many different third party task launchers offered for Windows 10, each offering its own set of unique features. A popular launcher is <a href="http://www.launchy.net/index.php">Launchy</a>. Launchy is a pure task launcher focusing on opening files and applications quickly (efficiently).</p>
-              <h3>Priority Metrics</h3>                
+              <h3>Priority Metrics</h3>
                 <h4>Satisfaction</h4>
                  <p>The satisfaction of the Windows 10 task launcher is based more in customization than many other task launchers (focused on the speed and ease of use). In terms of usability metrics, the efficiency is heavily prioritized over learnability. The settings are not intutive and there are many features available that most users overlook. However, experienced users will be very satisfied with the ability to place exactly what they want where they want with little limitation.</p>
                 <h4>Efficiency</h4>
@@ -222,9 +232,9 @@ contributors:
                  <p>Learnability is not totally ignored in the Windows 10 task launcher. The icons and labels make it easy for a first time user to navigate. The mental model of a start menu is, for many, a cornerstone of their first interaction with a computer. Windows 10's start menu follows the basics of that model, performing the same general purpose, while supplying many bells and whistles.</p>
               <h3>Key Characteristics</h3>
                <p>The Windows 10 start menu and task bar allow for the user to almost completely customize their interaction with the system. The complexity of the start menu makes it less learnable than many task launchers, but eventually makes up for it with quicker launch times (based on customizations). The start menu and task bar can contain shortcuts to files or applications and really make an app launch immediate. The ability to change the size of icons in the start menu takes advantage of Fitts's Law, as does the location of the task bar itself. Overall, the Windows 10 task launcher strives for usability through satisfaction and efficiency. Prioritizing customizability satisfies users and (depending on the user) allows some tasks to become more efficient.
-               </p>   
+               </p>
             </div>
-          </div>            
+          </div>
         </div>
       </div>
     </div>
@@ -247,7 +257,7 @@ contributors:
       <li>Shneiderman and Plaisant's <a href="https://amzn.com/0321537351"><i>Designing the User Interface</i></a></li>
       <li>Windows UWP Design Guidelines:<a href="https://developer.microsoft.com/en-us/windows/apps/design">developer.microsoft.com</a></li>
       <li>Windows 10 Start Menu .gifs by <a href="https://support.microsoft.com/en-us/help/17218">support.microsoft.com</a></li>
-      <li>Windows 10 Start Menu .pngs<a href="https://blogs.microsoft.com/work/2015/04/13/start-here-with-windows-10/#sm.000e2141k18d5fawzgl19o9epugy8">blogs.microsoft.com</a></li>      
+      <li>Windows 10 Start Menu .pngs<a href="https://blogs.microsoft.com/work/2015/04/13/start-here-with-windows-10/#sm.000e2141k18d5fawzgl19o9epugy8">blogs.microsoft.com</a></li>
       <li><a href="https://support.microsoft.com/en-us/help/11694/windows-phone-cortana-on-your-windows-phone">Cortana Definition</a></li>
     </ul>
   </div>
