@@ -72,7 +72,7 @@ contributors:
   </li>
 </ul>
 
-<div class="tab-content">
+<div class="tab-content"  id="tabs">
 
   <!-- ---------------------------- GENERAL COMPONENT DATA ------------------------------ -->
   <div class="tab-pane fade show active" id="overview" aria-labelledby="overview-tab">
@@ -149,6 +149,27 @@ contributors:
            starting point for any modern human computer interface.</p>
       </div>
     </div>
+    <div id="overview" class="row">
+      <div class="col-sm-12">
+        <h3>Credits and References</h3>
+        <ul>
+          <li>Alfred Information: <a href="https://www.alfredapp.com">alfredapp.com</a></li>
+          <li>Apple OS X Human Interface Guidelines: <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/">developer.apple.com</a>
+            <ul>
+              <li><a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/Dock.html">Dock Specific Guidelines</a></li>
+            </ul>
+          </li>
+          <li>Norman's <a href="https://amzn.com/0465050654"><i>Design of Everyday Things</i></a></li>
+          <li>Mac OS X Dock in Action Video by <a href="https://www.youtube.com/channel/UCz77-9Ump9wpNGjrcU_FppA">Serge Siou</a></li>
+          <li>Spotlight .gif by <a href="https://www.moncefbelyamani.com/images/spotlight-terminal.gif">Moncef Belyamani</a></li>
+          <li>Shneiderman and Plaisant's <a href="https://amzn.com/0321537351"><i>Designing the User Interface</i></a></li>
+          <li>Windows UWP Design Guidelines:<a href="https://developer.microsoft.com/en-us/windows/apps/design">developer.microsoft.com</a></li>
+          <li>Windows 10 Start Menu .gifs by <a href="https://support.microsoft.com/en-us/help/17218">support.microsoft.com</a></li>
+          <li>Windows 10 Start Menu .pngs<a href="https://blogs.microsoft.com/work/2015/04/13/start-here-with-windows-10/#sm.000e2141k18d5fawzgl19o9epugy8">blogs.microsoft.com</a></li>
+          <li><a href="https://support.microsoft.com/en-us/help/11694/windows-phone-cortana-on-your-windows-phone">Cortana Definition</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <!-- ---------------------------- MACOSX10 SPECIFIC DATA ------------------------------ -->
@@ -161,36 +182,10 @@ contributors:
           a simple search box, it takes a text input and gives either a text response or a task response
           (i.e. the launch of an application).
         </p>
-        <div id="OSXTaskLauncherSlides" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#OSXTaskLauncherSlides" data-slide-to="0" class="active"></li>
-            <li data-target="#OSXTaskLauncherSlides" data-slide-to="1"></li>
-            <li data-target="#OSXTaskLauncherSlides" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <img src="OSX_dock_launcher.png" alt="Mac OS X task launcher" class="figure-img img-fluid rounded">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Spotlight search in action</h3>
-                <p>Various applications can be launched by entering text into the search bar</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="spotlight.png" alt="Mac OS X Spotlight" class="figure-img img-fluid rounded">
-            </div>
-            <div class="carousel-item">
-              <img src="spotlight_in_action.png" alt="Spotlight in action" class="figure-img img-fluid rounded">
-            </div>
-            <a class="carousel-control-prev" href="#OSXTaskLauncherSlides" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#OSXTaskLauncherSlides" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
+        <figure class="figure">
+          <img src="spotlight_in_action.png" class="figure-img img-fluid rounded">
+          <figcaption class="figure-caption text-center"><strong>Using Spotlight to launch applications</strong></figcaption>
+        </figure>
         <h3><strong>Behavior</strong></h3>
           <p>
             The dock allows for the immediate launch of any application or folder stored on it with a
@@ -285,35 +280,28 @@ contributors:
       </div>
       <div class="col-sm-6">
         <h4>Component in Action</h4>
-        <div id="Windows10TaskLauncherSlides" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#Windows10TaskLauncherSlides" data-slide-to="0" class="active"></li>
-            <li data-target="#Windows10TaskLauncherSlides" data-slide-to="1"></li>
-            <li data-target="#Windows10TaskLauncherSlides" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
+          <ul class="nav nav-tabs nav-justified mb-3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="move-tab" data-toggle="tab" role="tab" href="#move" aria-controls="move" aria-expanded="true">Move</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="resize-tab" data-toggle="tab" role="tab" href="#resize" aria-controls="resize" aria-expanded="true">Resize</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pintostart-tab" data-toggle="tab" role="tab" href="#pintostart" aria-controls="pintostart" aria-expanded="true">Pin to Start</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="gifTabs">
+            <div class="tab-pane fade show active" id="move" aria-labelledby="move-tab">
               <img src="windows10_move.gif" alt="Windows10 Move" class="figure-img img-fluid rounded">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Using the task launcher</h3>
-              </div>
             </div>
-            <div class="carousel-item">
+            <div class="tab-pane fade" id="resize" aria-labelledby="move-tab">
               <img src="windows10_resize.gif" alt="Windows10 Resize" class="figure-img img-fluid rounded">
             </div>
-            <div class="carousel-item">
+            <div class="tab-pane fade" id="pintostart" aria-labelledby="move-tab">
               <img src="windows10_pin_to_start.gif" alt="Windows10 Pin to Start" class="figure-img img-fluid rounded">
             </div>
-            <a class="carousel-control-prev" href="#Windows10TaskLauncherSlides" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#Windows10TaskLauncherSlides" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
-        </div>
         <h3>Variants</h3>
           <p>
             There are many different third party task launchers offered for Windows 10, each offering its own set of unique features. A popular launcher is
@@ -369,27 +357,4 @@ contributors:
     </div>
   </div>
 
-</div>
-
-<!-- ---------------------------- FOOTER ------------------------------ -->
-<div class="row">
-  <div class="col-xs-12">
-    <h3>Credits and References</h3>
-    <ul>
-      <li>Alfred Information: <a href="https://www.alfredapp.com">alfredapp.com</a></li>
-      <li>Apple OS X Human Interface Guidelines: <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/">developer.apple.com</a>
-        <ul>
-          <li><a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/Dock.html">Dock Specific Guidelines</a></li>
-        </ul>
-      </li>
-      <li>Norman's <a href="https://amzn.com/0465050654"><i>Design of Everyday Things</i></a></li>
-      <li>Mac OS X Dock in Action Video by <a href="https://www.youtube.com/channel/UCz77-9Ump9wpNGjrcU_FppA">Serge Siou</a></li>
-      <li>Spotlight .gif by <a href="https://www.moncefbelyamani.com/images/spotlight-terminal.gif">Moncef Belyamani</a></li>
-      <li>Shneiderman and Plaisant's <a href="https://amzn.com/0321537351"><i>Designing the User Interface</i></a></li>
-      <li>Windows UWP Design Guidelines:<a href="https://developer.microsoft.com/en-us/windows/apps/design">developer.microsoft.com</a></li>
-      <li>Windows 10 Start Menu .gifs by <a href="https://support.microsoft.com/en-us/help/17218">support.microsoft.com</a></li>
-      <li>Windows 10 Start Menu .pngs<a href="https://blogs.microsoft.com/work/2015/04/13/start-here-with-windows-10/#sm.000e2141k18d5fawzgl19o9epugy8">blogs.microsoft.com</a></li>
-      <li><a href="https://support.microsoft.com/en-us/help/11694/windows-phone-cortana-on-your-windows-phone">Cortana Definition</a></li>
-    </ul>
-  </div>
 </div>
