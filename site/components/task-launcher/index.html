@@ -43,36 +43,43 @@ contributors:
         <h3><strong>Typical Appearance</strong></h3>
           <p>Task Launchers frequently appear as a dock at one of the edges of the screen (in accordance with Fitts' Law), often in the form of unlabeled images. Task Launchers also frequently include a text field, or search box.</p>
         <h3><strong>Typical Behavior</strong></h3>
-            <p>Generally implemented as a graphical menu of sorts, the task launcher's primary goal is to allow the user to initiate tasks, most frequently, by launching applications. The secondary goal is to improve the speed in which the user is able to perform such tasks. Task launchers are made to increase efficiency and boost the user's satisfaction. Another goal of task launchers is to improve the learnability of a given operating system. The task launcher, depending on the type  may have built in search capabilities that enhance and improve the learnability of the entire system.</p>
-          <h4>State Diagram</h4>
+          <p>Generally implemented as a graphical menu of sorts, the task launcher's primary goal is to allow the user to initiate tasks, most frequently, by launching applications. The secondary goal is to improve the speed in which the user is able to perform such tasks. Task launchers are made to increase efficiency and boost the user's satisfaction. Another goal of task launchers is to improve the learnability of a given operating system. The task launcher, depending on the type  may have built in search capabilities that enhance and improve the learnability of the entire system.</p>
+        <h4>State Diagram</h4>
           <p>Below is a generalized state diagram that applies to most task-launchers. It is by no means exhaustive, only illuminating the broad strokes of task launching</p>
-          <img src="state-diagram.png" width="544" height="306">
-          <h5 align="middle">General State Diagram of Task Launchers</h5>
+          <figure class="figure">
+            <img src="state-diagram.png" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption text-center"><strong>General State Diagram of Task Launchers</strong></figcaption>
+          </figure>
           <h3><strong>Events</strong></h3>
           <p>During the use of a task launcher, the user is required to click on the image of a desired file or application. Once the text input is received the task launcher performs one of three actions:<br>
             1. Opens the desired file <br>
             2. Launches the application <br>
             3. Responds with a message that states "file/application not found"</p>
-          <h3><strong>Component in Action</strong></h3>
-          <h5>Ubuntu 12.04</h5>
-            <p>The following video demonstrates the use of the Ubuntu task launcher at 00:19.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LzcJxpt9-Ic?t=19s" frameborder="0" allowfullscreen></iframe>
-            <p>As you can see in the clip, the dock on the left side of the screen launches applications. The first launch is completed by clicking one of the icons, in this instance Google Chrome. The second launch of an application utilizes the secondary launcher, which includes a list of recently launched apps, as well as a search bar for textual input. The Ubuntu task launcheer mirrors Windows 10 in the use of the Operating System logo to open another task launcher.</p>
+        <h3><strong>Component in Action</strong></h3>
+        <h5>Ubuntu 12.04</h5>
+          <p>The following video demonstrates the use of the Ubuntu task launcher at 00:19.</p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LzcJxpt9-Ic?t=19s" allowfullscreen></iframe>
+          </div>
+          <p>As you can see in the clip, the dock on the left side of the screen launches applications. The first launch is completed by clicking one of the icons, in this instance Google Chrome. The second launch of an application utilizes the secondary launcher, which includes a list of recently launched apps, as well as a search bar for textual input. The Ubuntu task launcheer mirrors Windows 10 in the use of the Operating System logo to open another task launcher.</p>
       </div>
       <div class="col-sm-6">
         <h3><strong>Variants</strong></h3>
-         <p>Some task launchers are a search box, which take a text input, that give either a text response or a task response (i.e. the launching of an application). Others have their own windows and act as applications. Generally, third-party task launchers are more likely to open separate windows than native task launchers. A task launcher's capabilities are susceptible to change as well. Some third-party launchers support workflows as well as web searches and password storage.</p>
-          <img src="spotlight_in_action.gif" width="544" height="306">
-          <p align="middle"><b>Spotlight Launching Terminal</b></p>
-          <img src="alfred_slack.gif" width="544" height="306">
-          <p align="middle"><b>Alfred3 Task Launcher Using an integration with Slack</b></p>
+          <p>Some task launchers are a search box, which take a text input, that give either a text response or a task response (i.e. the launching of an application). Others have their own windows and act as applications. Generally, third-party task launchers are more likely to open separate windows than native task launchers. A task launcher's capabilities are susceptible to change as well. Some third-party launchers support workflows as well as web searches and password storage.</p>
+          <figure class="figure">
+            <img src="spotlight_in_action.gif" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption text-center"><strong>Spotlight Launching Terminal</strong></figcaption>
+            <br></br>
+            <img src="alfred_slack.gif" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption text-center"><strong>Alfred3 Task Launcher Using an Integration with Slack</strong></figcaption>
+          </figure>
         <h3><strong>Priority Metrics</strong></h3>
           <h4>Satisfaction</h4>
           <p>The Satisfaction of the user is critical to the task launcher's success. An operating system with a slow task launcher will not be very successful. The user is the most important part of the OS and if the user is unhappy, they may just switch operating systems.</p>
           <h4>Efficiency &amp; Learnability</h4>
-           <p>The efficiency and learnability of a task launcher are the most relevant metrics to the satisfaction of the user. The efficiency ensures that the users needs are met as quickly as possible. The learnability ensures that any user can use the task launcher and understand its uses and capabilities and that the user can have initial interactions with the computer itself.</p>
+          <p>The efficiency and learnability of a task launcher are the most relevant metrics to the satisfaction of the user. The efficiency ensures that the users needs are met as quickly as possible. The learnability ensures that any user can use the task launcher and understand its uses and capabilities and that the user can have initial interactions with the computer itself.</p>
           <h4>Memorability &amp; Errors</h4>
-            <p>Memorability and errors are not very relevant to the overall usability of a task launcher. The opportunity for errors is minimal, while the necessity for memorability is almost nonexistent given that task launchers are used almost every time a computer is used.</p>
+          <p>Memorability and errors are not very relevant to the overall usability of a task launcher. The opportunity for errors is minimal, while the necessity for memorability is almost nonexistent given that task launchers are used almost every time a computer is used.</p>
 
         <h3><strong>Key Characteristics</strong></h3>
          <p>Good task launchers are fast and easy to use. The best task launchers are intuitive. You tell it what you want to do and it initiates the task. These goals make it clear that the learnability (intuitiveness) and efficiency (speed and ease of use) of a task launcher determine its success. The overall usability of a task launcher should be one of the best across all applications in an operating system. The task launcher is an integral part of portraying the mental model of the computer architecture to the user. It is the starting point for any modern human computer interface.</p>
