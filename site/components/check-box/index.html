@@ -363,72 +363,89 @@ As a part of that overall system, making check boxes “pleasurable” may then 
           such as built-in co-operative multitasking, personal file sharing, drag and drop, and an improved user interface.
       </blockquote>
 
-        <h4>Definition</h4>
+        <h3>Definition</h3>
          <p>
             According to the Macintosh Human Interface Guidelines, published in 1995, a checkbox is defined as:
             "A standard Macintosh control that displays a setting, either checked (on) or unchecked (off).
-            Clicking a checkbox or its text label reverses its setting. One or more checkboxes can be checked. Compare radio button."
+            Clicking a checkbox or its text label reverses its setting. One or more checkboxes can be checked."
             <strong>As seen in the figure below, checkboxes are typically seen as squares and radio boxes are typically seen circular.</strong>
           </p>
+          <center>
+            <img src="../check-box/MacOS7checkbox:radiobox.png" alt="checkbox vs. radio box" height"200" width="500">
+          </center>
+
+        <h3>Labels</h3>
+             <ul>
+             <li>Every checkbox needs a label that clearly designates two opposing states.</li>
+               <ul>
+               <li>If a label does not imply opposing states, use radio boxes.</li>
+                <ul>
+                  <li>Labels for checkboxes allow users to understand the signficance of options.</li>
+                </ul>
+               </ul>
+             <li>Labels must use book title capitalization style, i.e capitalize every word except articles, coordinating words and prepositions. </li>
+             <li>Labels must be as specific as possible, but also concise and clear.</li>
+             <ul>
+               <li>In the dialog section below indicates a concise, but clear check box.</li>
+             </ul>
+             <li>Users must be able to click the box and/or label text.</li>
+            </ul>
+        <h3>Dialog Boxes</h3>
+
+        <div class="row">
           <div class="col-sm-6">
-            <img src="../check-box/MacOS7checkbox:radiobox.png" alt="indeterminate check box" height="400">
-          </div>
-      <h3>Labels</h3>
-        <p>
-           Windows 10 follows the below guidelines outlined by the most recent Windows developer guidelines found <a href="https://msdn.microsoft.com/en-us/windows/uwp/controls-and-patterns/checkbox">here</a>.
-           These guidelines include, but are not limited to:
-           <ul>
-           <li>Check box text is on two lines or less. </li>
-           <li>The label must be worded as a statement that the checkmark designates as true. </li>
-         </ul>
-      <h3>Examples of Check Box Use </h3>
-
-      <div class="row">
-        <div class="col-sm-6">
-            <p>
-              Although the choice is said to be binary, Windows 10 actually allows for a checkbox to be in three (not two) states: selected, unselected, and indeterminate. Indeterminate is used when the choice is composed of both selected and unselected sub-choices. The indeterminate checkbox is very rarely used, likely because it is confusing for the user. For example, A check box in the indeterminate state is shown in the screen shot to the right. The checkbox is filled with a square. If the user clicks on the square, the square disapears. If the user clicks on the box again, a checkmark appears, and if the user clicks a third time, the box reappears.
-            </p>
-            <p>
-            Checkboxes are commonly used to mark a statement as either true or false, and in cases where the indeterminate is allowed, a naive user is unsure of what they are marking the statement as when indeterminate is an option. This example of the indeterminate seems to violate the Microsoft guidelines above because the sub-choices are not visible.
-            </p>
-          </div>
-      </div>
-
-      <br>
-      <div class="row">
-        <div class="col-sm-6">
+            <ul>
+            <li>Dialog boxes include checkboxes with options</li>
+              <ul>
+              <li>Often phrases will introduce a set of options</li>
+               <ul>
+                 <li>If phrase is preceeeding options no colon should be used</li>
+                 <li>See example below:</li>
+               </ul>
+              </ul>
+            <center>
+              <img src="../check-box/MacOS7nocolonuse.png" alt="no colon use example" height="130">
+            </center>
+            <li>All changes that a user enters in a dialog box should appear to take effect immediately whenever possible</li>
+            <ul>
+              <li>This is similar to the screenshot to the right which indicates once "Read-Only" is checked the document can only be read not editted.</li>
+              <li>Immediate action is necessary to make it clear to the user which input goes into effect. </li>
+            </ul>
+            </ul>
           <p>
-            Microsoft defines the appropriate time to use a check box for a yes/no choice instead of a toggle as when the check box designates a status rather than causing an immediate action.
+            Within Menus, checkmarks are used to indicate which item is selected for a particular section. Menus contain two types of groups: exclusive versus nonexclusive attribute groups.
+            In a mutually exclusive attribute group one item is affected at a time. However, in an accumulating (nonexclusive) attribute group, multiple attributes can be in effect at the same time.
+            An example of this nonexclusive group in action is seen in dialog boxes, represented by checkboxes, as seen to the right. This checkbox contains the label: Read-Only. As mentioned earlier by the guidelines, this allows the user to clearly see an opposite state.
+            In this case, when the option is off, the user can read and write (or make changes to) a file.
           </p>
-          <p>
-            The screenshot to the right shows a single check box being used in Windows 10. When the box is checked,  a status is saved but there is no immediate action. The action instead happens when the form is submitted by clicking a button at the bottom of the window.
-            Other examples include agreeing to a terms of service agreement and a “Remember me?” box when logging in.
-          </p>
+          </div>
+          <div class="col-sm-6">
+            <img src="../check-box/MacOS7dialogbox.png" class = "rounded" alt="dialog box" height="400">
+          </div>
         </div>
-        <div class="col-sm-6">
-          <img src="../check-box/MacOS7dialogbox.png" alt="single check box" height="400">
-        </div>
-      </div>
 
         <br>
+
+        <h3>Balloon Help</h3>
         <div class="row">
           <div class="col-sm-6">
             <p>
-              Another difference between toggles and check boxes is that only check boxes are used for multi-selection. The choices cannot be mutually exclusive (in that scenario, a radio button would be appropriate).
-              The below screenshot shows multiple checkboxes being used in Windows 10. The checkboxes allow the user to select which days the alarm will repeat on. The days of the week are selected with checkboxes, but to turn the alarm itself on or off, a toggle is used.
-            </p>
+              Help balloons give the user a look at the current state of the system by the way they phrase the sentences. For example, in the picture to the right the help ballon states: "To turn on text soothing, click this box." Currently, text soothing is not being used, but if the help balloon said: “To turn off text smoothing, click this box,” it would indicate text soothing is being used.
+              Utilizing this simple, but effective help balloon allows users to make a mental note of how their action of "clicking the box" affects their next steps. As mentioned earlier, this is correctly labeling your checkbox for users to "understand the significance of options."
             <p>
-              Multiple checkboxes can also be used when selecting folders or files in the file explorer. This allows the user to designate files and folders to do some other action to. The check marks them as selected, and then the user is able to perform actions such as move, delete and copy to all of the selected items at once.
+              Help balloons are also needed when explaining unavailable checkboxes. This means describing what the box does when it’s selected and then why it is unavailable, similar to the unavailibility of a radio button.
+              The figure bellow indicates an unavailable explaination; however, it is not a checkbox, it is just an example.
             </p>
-            </div>
-            <div class="col-sm-6">
-              <img src="../check-box/MacOS7popup.png" alt="multiple checkboxes" height="400">
-            </div>
-            <div class="col-sm-6">
-              <img src="../check-box/MacOS7dropdown.png" alt="multiple checkboxes" height="400">
-            </div>
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <img src="../check-box/MacOS7helpballoon.png" class = "rounded" alt="dialog box" height="300" width="600">
+          </div>
+          <div class="col-sm-6">
+            <img src="../check-box/MacOS7unavailable.png" class = "rounded" alt="dialog box" height="200" width="500">
+          </div>
+        </div>
        </div>
-     </div>
 
 
     <div role="tabpanel" class="tab-pane fade" id="iOS9">
@@ -506,4 +523,5 @@ http://www.nngroup.com/articles/checkboxes-vs-radio-buttons/ <br>
 https://www.youtube.com/watch?v=_OzWxKSm1rU&feature=youtu.be Apple OS X El Capitan: What's New?  by DetroitBORG Jun 9, 2015 <br>
 https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW1 <br>
 http://www.mac-history.net/computer-history/2008-05-24/mac-os-70-2 <br>
+http://interface.free.fr/Archives/Apple_HIGuidelines.pdf <br>
 </p>
