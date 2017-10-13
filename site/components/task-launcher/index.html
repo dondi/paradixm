@@ -32,7 +32,7 @@ contributors:
     menu, focusing on satisfaction.`;
     const IOS11_TEXT = `Dummy text 2`;
     const MACOS7_TEXT = `MacOS 7 is one of the earliest operating systems made, and so it has a very primitive task launcher. Task launchers have since advanced enourmously,
-    but the one for MacOS 7 is the simplest, and therefore expresses the intent of task launchers in general very clearly.`;
+    but the one for MacOS 7 is the simplest, and therefore clearly expresses the intent of task launchers in general.`;
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
       var target = $(e.target).attr("href") // activated tab
       switch(target) {
@@ -341,76 +341,94 @@ contributors:
 
   <!-- ---------------------------- MACOS7 SPECIFIC DATA ------------------------------ -->
   <div class="tab-pane fade" id="macos7" aria-labelledby="macos7-tab">
-    <div id="macos7-content" class="row">
+
+    <h3><strong>Appearance</strong></h3>
+      <p>
+        The primary task launcher is a menu full of program icons and titles. It is the simplest possible layout for a task launcher. It is
+        worth mentioning that in addition to the standard task launcher, there is a search feature to find programs and files in their folders,
+        to then run them. However, this search option does not immdiately run the program like most modern task launchers do.
+      </p>
+
+    <div class="row">
       <div class="col-sm-6">
-        <h3><strong>Appearance</strong></h3>
-        <p>
-          The primary task launcher is a menu full of program icons. There is also a search feature that allows you to easily find programs and run them in their folders.
-        </p>
         <figure class="figure">
           <img src="MacOS_7_task_menu.png" class="figure-img img-fluid rounded">
-          <figcaption class="figure-caption text-center"><strong>Using Spotlight to launch applications</strong></figcaption>
+          <figcaption class="figure-caption text-center"><strong>Apple task launcher menu, with icons and text</strong></figcaption>
         </figure>
-        <figure class="figure">
-          <img src="MacOS_7_search.gif" class="figure-img img-fluid rounded">
-          <figcaption class="figure-caption text-center"><strong>Using Spotlight to launch applications</strong></figcaption>
-        </figure>
-        <h3><strong>Behavior</strong></h3>
-          <p>
-            The dock allows for the immediate launch of any application or folder stored on it with a
-            simple click. Spotlight requires keyboard input instead.
-          </p>
-        <h3><strong>Events</strong></h3>
-          <p>
-            During the use of a task launcher the user is required to type in the name of a desired file or application.
-            Once the text input is received the task launcher takes one of three actions:<br>
-             1. opens desired file <br>
-             2. launches application <br>
-             3. responds with a "file/application not found" message <br>
-                when an application is in use, a dot appears underneath its icon on the dock.
-          </p>
       </div>
       <div class="col-sm-6">
-        <h3><strong>Component in Action</strong></h3>
-          <p>
-            Below is a tutorial on how to change the position of the dock. Initially
-            it uses the dock to launch the system preferences application.
-          </p>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TlmhqEV34Eo" allowfullscreen></iframe>
-          </div>
-        <h3><strong>Variants</strong></h3>
-          <p>
-            There are third-party task launchers that have been developed specifically for Mac OS X, namely "Alfred." Alfred
-            includes many different features not included in spotlight or the dock; it can save your passwords, create workflows
-            and even search the web.
-          </p>
-        <h3><strong>Priority Metrics</strong></h3>
-        <h4><u>Efficiency &amp; Learnability</u></h4>
-          <p>
-            Mac OS X task launchers have a help application built in which increases their learnability by teaching the the
-            user how to use the interface. Additionally the efficiency of the dock and spotlight is increased by built in shortcuts
-            that can be accessed in any application.
-          </p>
-        <h4><u>Satisfaction</u></h4>
-          <p>
-            The satisfaction of the Mac task launchers is based on the speed and ease of use, or more specifically the efficiency and
-            learnability. The user can always look to third-party applications in the case of Mac OS X.
-          </p>
+        <figure class="figure">
+          <img src="MacOS_7_search.png" class="figure-img img-fluid rounded">
+          <figcaption class="figure-caption text-center"><strong>Search feature to find programs and files</strong></figcaption>
+        </figure>
       </div>
     </div>
-    <div id="macosx10" class=row>
-      <div class="col-sm-12">
-        <h3><strong>Key Characteristics</strong></h3>
-        <p>
-          Spotlight and dock allow for two different communications between the user and the operating system. The dock's immediacy
-          and simplicity makes it a great option for the launching of everyday tasks. Spotlight's access to all applications and
-          files stored on the system allows for the fast launch of applications and the opening of files that are note regularly
-          accessed. It drastically decreases the overall time of launching applications not stored in the dock and creates convenient
-          shortcut to any location in the operating system.
-        </p>
-      </div>
-    </div>
-  </div>
 
+    <h3><strong>Behavior</strong></h3>
+      <p>
+        The task menu allows for immdiate launch of multiple pre-chosen programs. All the user has to do is mouse over to, click, and hold the apple icon in the
+        top left, move the cursor over the program they want to run, and then release. Unlike in modern operating systems, frequently used or suggested
+        programs don't show up automatically.
+      </p>
+
+    <h3><strong>Component in Action</strong></h3>
+      <p>
+        To add programs to the task menu, the user must navigate to the "Apple Menu Items folder" and add their programs there. Luckily
+        the search feature comes in handy here to find the program and the folder to add it to. This is very similar to modern task launchers.
+      </p>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <figure class="figure">
+          <img src="MacOS_7_add_menu_option.gif" class="figure-img img-fluid rounded">
+          <figcaption class="figure-caption text-center"><strong>Adding a program to the Apple Menu Items Folder</strong></figcaption>
+        </figure>
+      </div>
+      <div class="col-sm-6">
+        <figure class="figure">
+          <img src="MacOS_7_search.gif" class="figure-img img-fluid rounded">
+          <figcaption class="figure-caption text-center"><strong>Using the search feature</strong></figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <h3><strong>Priority Metrics</strong></h3>
+      <h5><u>Efficiency &amp; Errors</u></h4>
+        <p>
+          The MacOS 7 task launcher greatly improves the efficiency of the operating system. If you have a program in a folder
+          somewhere that you want to run multiple times, it would be a huge time sink to navigate to the program in its folder every time, especially
+          with a prehistoric file explorer like this one. It is also very easy to make errors in the folder navigation, so it is best to avoid. One extra
+          step of adding the program to the task menu will turn a 20 second process into a 2 second process and reduce errors. However, the extra step
+          of adding the program to the task menu is a bit more tedious than it needs to be.
+        </p>
+
+      <h5><u>Learnability &amp; Memorability</u></h4>
+        <p>
+          Since the focus of the task launcher is efficiency, the learnability of the MacOS 7 isn't as great as modern ones. Unfortunately,
+          figuring out how to add programs to the task menu is confusing at first. There is a built in help feature to tell the user how to do it, but
+          the goal of any user interface is to make it simple enough that a help feature is unnecessary. It's easy to use once set up,
+          and removes the need to remember how to navigate to every program manually, drastically improving the systems memorability.
+        </p>
+
+      <h5><u>Satisfaction</u></h4>
+        <p>
+          While realizing how old the operating system is, using the task launcher is quite satisfactory. It makes running programs on the Mac far easier
+          and reduces the need to tediously search through the file explorer to do things. Anyone who used an older version of Mac before this one would
+          enjoy their experience 10-fold.
+        </p>
+
+    <h3><strong>Previous Versions</strong></h3>
+      <p>
+        The task launcher for MacOS 7 doesn't seem to be too great at first glance, but it has some great features in comparison to previous versions.
+        In the task launcher for MacOS 6, there are no icons for each program, only text fields. This can seriously impact the efficiency of use, since
+        it is slower to process words than images. There was also no option to add more programs to the task menu which seriously reduces its usability.
+      </p>
+
+    <h3><strong>Key Characteristics</strong></h3>
+      <h5>Simplicity</h4>
+        <p>
+          If a task launcher is any way confusing or misleading to use, it has failed at it's job. A task launcher must be intuitive.
+        </p>
+
+  </div>
 </div>
