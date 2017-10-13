@@ -20,6 +20,13 @@ contributors:
 
 <p class="lead">One of the earliest and most common ways of representing equivalent information, the menu displays options for the user to select in order to find information or execute a function.</p>
 
+<div class="alert alert-success" role="alert">
+  <h4><strong>Typical Appearance</strong></h4>
+</div>
+  <p>A menu is a displayed set of options or commands for the user to select.
+    These options/commands are often stacked vertically in the form of a list that
+    can be read from top to bottom, ideally in an order that is convenient for the user.
+    Common occurrences of these vertical menus are shown in the below slide show.</p>
 <div id="carouselExampleIndicators" class="carousel slide bg-secondary" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -117,20 +124,20 @@ contributors:
 
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h4 class="panel-title text-center alert-success">Typical Apperance</h4>
-        </div>
-        <div class="panel-body">
-          <p>A menu is a displayed set of options or commands for the user to select. These options/commands are often stacked vertically in the form of a list that can be read from top to bottom, ideally in an order that is convenient for the user. Common occurrences of these vertical menus are shown in the above slide show.</p>
-        </div>
-      </div>
-
-      <div class="panel panel-default">
-        <div class="panel-heading">
           <h4 class="panel-title text-center alert-success">Typical Behavior</h4>
         </div>
         <div class="panel-body">
-          <p>Menus behave by reacting when a user selects an option, typically in the form of a 'click'. </p>
+          <p>Menus behave by reacting when a user selects an option, typically in the form of a 'click'.
+             The "touch and hold" feature are now similar to an actual "click", as well as just
+             simply touching the operation needed.</p>
           <p>The menu responds to a 'click' by carrying out the function that the user has selected. It is common behavior for menus to display contain one or more sub-menus, allowing for organization and efficiency. Accordian menus, for example, can expand/collapse to displace more/fewer options. This makes it easier for the user to navigate through a multitude of options without being overwhelmed with too much information at one time. </p>
+          <p> Another example of some behaviors is having selection menus within other menus,
+            a huge example of this is seen not only from Android but also across iOS platforms.
+            When a selection in a menu is "clicked" it is often followed by another "sub menu"
+            or called a "context menu" by android developers. </p>
+            <p> Typically menus are layout in an order from frequently used operations first in the application
+              currently opened, followed by commands in order of decreasing use,
+              with the least used command at the bottom. </p>
         </div>
       </div>
 
@@ -142,6 +149,10 @@ contributors:
           <p>The most relevant menu event is the <code>click</code>. A <code>click</code> event indicates that the user has selected a particular action or item from the list. Another event is the <code>hover</code>, indicating that a pointing device is explicitly within the button’s bounds. Another event is the <code>scroll</code>, allowing the user to maneuver through the available options. Some platforms or implementations have included other components into an item, like a <code>swipe</code>, which can display alternative actions for the item, or a checkbox.</p>
 
           <p>In this instance, a click tells it whether to advance deeper or retreat out of the app. Scroll moves the selector around to allow the user to “click” what they want to.</p>
+          <p> While the <code>click</code> event is used in both apple platforms and android, one unique feature
+          that is apart of android is the <code>click and hold</code> event. Which allows the user
+          to hold down the button triggered and move onto a seperate menu area. More of this can be seen
+          in the Android Generic platform tab.</p>
         </div>
       </div>
 
@@ -352,7 +363,12 @@ contributors:
             <p> Based on Android menu Guidelines, there is a sense that user
             interaction plays a huge role into what type of menus that are created.
             When creating a menu there is a certain mind map that goes into play when creating features
-            with menu screens.</p>
+            with menu screens. One main feature the is special to android is the
+            <code>click and hold</code> event. In which the user touch and holds
+                the button triggered and it opens up a "context menu" which is
+                a sub menu of other related opinions to the operation triggered.</p>
+                <p> This primiarly used for <em>overflow</em>, in order to make the application
+                  taskbar less cluttered.
             <img src="androidMindMap.png" style="width: 50%; height: 50%" class="image-fluid" alt="Android Mind Map">
             <p> As noted the position of icons, the layout, the order in which the operations are
               organized all effect the experience of the user. Selecting the right kind of menu to present,
