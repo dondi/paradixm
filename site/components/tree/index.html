@@ -59,9 +59,9 @@ contributors:
       <img src="images/state_diagram.png" class="img-fluid" alt="Responsive image">
 
     <h4>Component in Action</h4>
-
-      <iframe class="embed-responsive-4by3" width="560" height="315" src="https://www.youtube.com/embed/zS3gQ4pnmBs" frameborder="0" allowfullscreen></iframe>
-
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zS3gQ4pnmBs" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
 
   <div class="col-sm-6">
@@ -126,7 +126,7 @@ contributors:
       <li>On the contrary, the column view does not depend on the state of a particular icon. Rather, the general form of feedback is denoted by a <code>selection</code> of that item</li>
       <li>In the proceeding example, note that the highlighted item is the one being expanded and the grayed item on its immediate left is the root or parent from which it was derived</li>
     </ul>
-    <img src="images/column_feedback.png" class="img-fluid" alt="Responsive image">
+    <img src="images/column_feedback.png" class="img-fluid" alt="Responsive image"><br><br><br>
 
   </div>
 
@@ -147,24 +147,48 @@ contributors:
 
         <p>One other way that Mac OS X integrates the tree component is through the Terminal with the proper steps, which can be found in <em>Using A Mac Equivalent of Unix "tree" Command to View Folder at Terminal</em> denoted in the <a href="http://osxdaily.com/2016/09/09/view-folder-tree-terminal-mac-os-tree-equivalent/" target="_blank">OSX Daily</a> link also provided in the "References" section.</p>
     </blockquote>
-    <img src="images/terminal_view.png" class="img-fluid" alt="Responsive image"><br><br>
-    <br></br>
+    <img src="images/terminal_view.png" class="img-fluid" alt="Responsive image"><br><br><br>
     </div>
 
     <div class="col-sm-12">
       <blockquote>
-        <h4 id="windows_10">Windows 10</h4>
+        <h4 id="windows_10">Windows 10</h4><br>
+        <h5>Start Menu</h5>
         <p>The start menu is a staple of Windows platforms. The Windows 10 start menu has a tree search feature.
-           If folders are listed in the start menu and they have an exe file or html page in them, you can click on the upside down carrot to show the file/s.
-           The start menu has an alternate access method which is typing the name of the thing you are searching for.
-           Windows 10 decided to not show the search bar right away, instead only showing it when you start typing.</p>
+          If folders are listed in the start menu and they have an exe file or html page in them, you can click on the upside down carrot to show the file/s.
+          The start menu has an alternate access method which is typing the name of the thing you are searching for.
+          Windows 10 decided to not show the search bar right away, instead only showing it when you start typing.
+          The <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742445(v=vs.85).aspx" target="_blank">windows tree view guidelines</a> state that if an alternate search method is available (like the search bar in the start menu),
+          then the tree must be optimized to focus on the most useful content. It also says that to simplify the tree so that it
+          is easier for the user to find the most useful content.
+        </p>
+          <img src="images/windows10_start_menu.gif" class="img-fluid" alt="Responsive image"><br><br>
+          <h5>Command Prompt</h5>
+        <p>In the windows command prompt you can make a tree view of your current directory. It looks almost identical to the Mac OS X: Yosemite command prompt tree view
+          except that the files within folders do not have lines going to them. These lines are omitted because of a Windows guideline that tells you to reconsider connecting lines.
+          This guideline says that even though lines connecting to every element of a tree can clearly show the relationships between nodes and their children,
+          they add too much clutter for the extra comprehension to be worth it.
+        </p>
+        <img src="images/windows10_command_prompt_tree.PNG" class="img-fluid" alt="Responsive image"><br><br>
+        <h5>Check Boxes</h5>
+        <p>
+          The check box tree view is a tree that is used in selecting items. It combines the check box component with the tree layout.
+          The drop down buttons are square in this case instead of the normal "v" shape to better match the look of the square check boxes.
+        </p>
+        <img src="images/windows10_check_box_list.gif" class="img-fluid" alt="Responsive image"><br><br>
+        <h5>Examples of Windows 10 Trees</h5>
+        <div class="row">
+          <div class="col-sm-6">
+            <h6>Task Manager</h6>
+            <img src="images/windows10_task_manager.gif" class="img-fluid" alt="Responsive image"><br><br>
+          </div>
+          <div class="col-sm-6">
+            <h6>Device Manager</h6>
+            <img src="images/windows10_device_manager.gif" class="img-fluid" alt="Responsive image"><br><br>
+          </div>
+        </div>
       </blockquote>
-      <img src="images/windows10_start_menu.gif" class="img-fluid" alt="Responsive image"><br><br>
-      <img src="images/windows10_task_manager.gif" class="img-fluid" alt="Responsive image">
-      <img src="images/windows10_device_manager.gif" class="img-fluid" alt="Responsive image"><br><br>
-      <img src="images/windows10_check_box_list.gif" class="img-fluid" alt="Responsive image"><br><br>
     </div>
-
   </div>
 
   <div class="col-sm-12">
