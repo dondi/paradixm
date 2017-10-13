@@ -59,10 +59,10 @@ contributors:
 
                                     <h1> Typical Appearance</h1>
                                     <hr>
-                                    <p style="font-size:16px;">Sliders across many different platforms each have a minimum(left or bottom) value and a maximum value(right or top). Usually, sliders can be horizontal, vertical, and radial. The main slider that we will be emphasizing
+                                    <p class="lead">Sliders across many different platforms each have a minimum(left or bottom) value and a maximum value(right or top). Usually, sliders can be horizontal, vertical, and radial. The main slider that we will be emphasizing
                                         on will be the horizontal slider. Graphically, the users are exposed with a bar, slider knob, and occasionally with tick marks. A slider is composed of a track and a thumb. The track is a bar (which can optionally
                                         show various styles of tick marks) representing the range of values that can be input. The thumb is a selector, which the user can position by either tapping the track or by scrubbing back and forth on it.</p>
-                                    <p style="font-size:16px;">However, different platforms may have different designs to their sliders to follow their human interface guidelines. Underneath, a depiction of five sliders are shown: Mac OS X, iOS 7 &amp; iOS 8, Windows 8, Windows
+                                    <p class="lead">However, different platforms may have different designs to their sliders to follow their human interface guidelines. Underneath, a depiction of five sliders are shown: Mac OS X, iOS 7 &amp; iOS 8, Windows 8, Windows
                                         10, and Ubuntu 17.04 (or more specifically Unity 7.5.0).</p>
                                     <hr>
 
@@ -146,39 +146,44 @@ contributors:
                             <div class="row">
                                 <div class="col-md-12">
 
-                                    <h3>Typical Behavior</h3>
+                                  <h1>Typical Behavior</h1>
+                                  <hr>
 
                                     <blockquote>The behavior of the slider is very basic. The user is given a choice to either slide left(min) or right(max). By doing so, the user can choose the proper setting they are looking for. The slider will not activate until
                                         the user clicks on the knob and then drags it to their desired setting. Most sliders across different platforms carry the same behavior. We will see how Mac OS X and Windows 10 specifically stands through out the
-                                        study.</blockquote>
+                                        study.
+                                    </blockquote>
 
-                                    <h3><code>Events</code></h3>
-                                    <div class="col-sm-12">
-                                        <div class="col-sm-6">
-                                            <h4>Slider with tick marks in Mac OS X</h4>
-                                            <blockquote>
-                                                <ol>
-                                                    <li><code>hover</code>-ing over the slider knob gives you a quick description of what the slider does.</li>
-                                                    <li><code>unhover</code>-ing the slider knob dismisses the quick description.</li>
-                                                    <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
-                                                    <li>While <code>drag</code>-ing the slider knob, the knob focuses on the tick marks.</li>
-                                                    <li>Clicking on the <code>bar</code> where tick marks are present, quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
-                                                    <li><code>release</code>-ing the slider knob will set the knob to the latest value.</li>
-                                                </ol>
-                                            </blockquote>
-                                        </div>
+                                  <hr>
 
-                                        <div class="col-sm-6">
-                                            <h4>Slider without tick marks in Mac OS X</h4>
-                                            <blockquote>
-                                                <ol>
-                                                    <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
-                                                    <li>While <code>drag</code>-ing the slider knob, the knob is smoothly draggable across the bar.</li>
-                                                    <li>Clicking anywhere on the <code>bar</code> , quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
-                                                    <li><code>release</code>-ing the slider knob will set the knob to the latest value.</li>
-                                                </ol>
-                                            </blockquote>
-                                        </div>
+
+                                  <h3><code>Events</code></h3>
+                                  <div class="col-sm-12">
+                                      <div class="col-sm-6">
+                                          <h4>Slider with tick marks in Mac OS X</h4>
+                                          <blockquote>
+                                              <ol>
+                                                  <li><code>hover</code>-ing over the slider knob gives you a quick description of what the slider does.</li>
+                                                  <li><code>unhover</code>-ing the slider knob dismisses the quick description.</li>
+                                                  <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
+                                                  <li>While <code>drag</code>-ing the slider knob, the knob focuses on the tick marks.</li>
+                                                  <li>Clicking on the <code>bar</code> where tick marks are present, quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
+                                                  <li><code>release</code>-ing the slider knob will set the knob to the latest value.</li>
+                                              </ol>
+                                          </blockquote>
+                                      </div>
+
+                                      <div class="col-sm-6">
+                                          <h4>Slider without tick marks in Mac OS X</h4>
+                                          <blockquote>
+                                              <ol>
+                                                  <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
+                                                  <li>While <code>drag</code>-ing the slider knob, the knob is smoothly draggable across the bar.</li>
+                                                  <li>Clicking anywhere on the <code>bar</code> , quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
+                                                  <li><code>release</code>-ing the slider knob will set the knob to the latest value.</li>
+                                              </ol>
+                                          </blockquote>
+                                      </div>
                                     </div>
 
                                     <div class="col-sm-12">
@@ -227,7 +232,7 @@ contributors:
                                         <div class="col-sm-6" "col-md-6">
                                             <div class="card">
                                                 <div class="card-headers">
-                                                    <h4 class="panel-title text-center">State Diagram 2</h4>
+                                                    <h4 class="card-title text-center">State Diagram 2</h4>
                                                 </div>
                                                 <div class="card-body">
                                                     <img class="center-block" src="statediagram2.png" class="img-responsive" alt="State Diagram 2">
@@ -245,21 +250,22 @@ contributors:
         </div>
 
         <div class="tab-pane fade" id="ComponentsInAction" role="tabpanel" aria-labelledby="components-in-action-tab">
-            <div class="panel panel-default">
-                <div class="panel-body">
+            <div class="card">
+                <div class="card-body">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="row">
                                     <div class="col-md-12">
 
-                                        <h3>Components in Action</h3>
+                                        <h1>Components in Action</h1>
+                                        <hr>
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="col-md-6" "col-md-6">
                                                     <div class="panel panel-default">
                                                         <div class="card-header">
-                                                            <h4 class="panel-title text-center">Slider with tick marks</h4>
+                                                            <h4 class="card-title text-center">Slider with tick marks</h4>
                                                         </div>
                                                         <div class="card-body">
                                                             <img class="center-block" src="ezgif.com-crop.gif" class="img-responsive" alt="Mac OS X Slider with tick marks">
@@ -270,7 +276,7 @@ contributors:
                                                 <div class="col-md-6" "col-md-6">
                                                     <div class="panel panel-default">
                                                         <div class="card-header">
-                                                            <h4 class="panel-title text-center">Slider without tick marcs</h4>
+                                                            <h4 class="card-title text-center">Slider without tick marcs</h4>
                                                         </div>
                                                         <div class="card-body">
                                                             <img class="center-block" src="sliderw_oticks.gif" class="img-responsive" alt="Mac OS X Slider without tick marks">
@@ -280,10 +286,10 @@ contributors:
                                             </div>
 
                                             <div class="col-sm-12">
-                                                <div class="col-md-6" "col-md-6">
+                                                <div class="col-md-">
                                                     <div class="panel panel-default">
                                                         <div class="card-header">
-                                                            <h4 class="panel-title text-center">Slider without intervals</h4>
+                                                            <h4 class="card-title text-center">Slider without intervals</h4>
                                                         </div>
                                                         <div class="card-body">
                                                             <input type="range" min="0" max="100" value="50" />
@@ -291,10 +297,10 @@ contributors:
                                                     </div>
                                                 </div>
 
-                                                <div class="col-sm-6" "col-md-6">
+                                                <div class="col-sm-6">
                                                     <div class="panel panel-default">
                                                         <div class="card-header">
-                                                            <h4 class="panel-title text-center">Slider with 4 intervals</h4>
+                                                            <h4 class="card-title text-center">Slider with 4 intervals</h4>
                                                         </div>
                                                         <div class="card-body">
                                                             <input type="range" min="0" max="100" value="0" step="25" />
@@ -314,9 +320,9 @@ contributors:
                                                     how the spinner component works. </blockquote>
 
                                                 <div class="col-sm-12">
-                                                    <div class="panel panel-default">
+                                                    <div class="card">
                                                         <div class="card-header">
-                                                            <h4 class="panel-title text-center">Spinner</h4>
+                                                            <h4 class="card-title text-center">Spinner</h4>
                                                         </div>
                                                         <div class="card-body">
                                                             <img class="center-block" src="Spinner.gif" class="img-responsive" alt="Spinner">
@@ -328,10 +334,10 @@ contributors:
                                                     its volume mixer window(right). This helps the users to compare the volume of multiple differnt apps and adjust volume relative to each other.</blockquote>
 
                                                 <div class="col-sm-12">
-                                                    <div class="col-md-6" "col-md-6">
-                                                        <div class="panel panel-default">
+                                                    <div class="col-md-6">
+                                                        <div class="card">
                                                             <div class="card-header">
-                                                                <h4 class="panel-title text-center">Windows 10 Horizontal Sliders</h4>
+                                                                <h4 class="card-title text-center">Windows 10 Horizontal Sliders</h4>
                                                             </div>
                                                             <div class="card-body">
                                                                 <img class="center-block" src="w10horizontal.png" class="img-responsive" alt="Windows 10 Horizontal Sliders">
@@ -339,10 +345,10 @@ contributors:
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-6" "col-md-6">
-                                                        <div class="panel panel-default">
+                                                    <div class="col-md-6">
+                                                        <div class="card">
                                                             <div class="card-header">
-                                                                <h4 class="panel-title text-center">Windows 10 Vertical Sliders</h4>
+                                                                <h4 class="card-title text-center">Windows 10 Vertical Sliders</h4>
                                                             </div>
                                                             <div class="card-body">
                                                                 <img class="center-block" src="w10vertical.png" class="img-responsive" alt="Windows 10 Vertical Sliders">
@@ -365,8 +371,8 @@ contributors:
 
 
         <div class="tab-pane fade" id="PriorityMetrics" role="tabpanel" aria-labelledby="priority-metrics-tab">
-            <div class="panel panel-default">
-                <div class="panel-body">
+            <div class="card">
+                <div class="card-body">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-12">
@@ -402,7 +408,7 @@ contributors:
 
         <div class="tab-pane fade" id="KeyCharacteristics" role="tabpanel" aria-labelledby="key-characteristics-tab">
             <div class="card">
-                <div class="panel-body">
+                <div class="card-body">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-12">
@@ -457,10 +463,10 @@ contributors:
                                         in the latest version of Mac OS X. Underneath we see both Mac OS X Leopard(Left) and Mac OS X El Capitan sliders.(Right)</blockquote>
 
                                     <div class="col-sm-12">
-                                        <div class="col-md-6" "col-md-6">
-                                            <div class="panel panel-default">
+                                        <div class="col-md-6">
+                                            <div class="card">
                                                 <div class="card-header">
-                                                    <h4 class="panel-title text-center">Mac OS X Leopard</h4>
+                                                    <h4 class="card-title text-center">Mac OS X Leopard</h4>
                                                 </div>
                                                 <div class="card-body">
                                                     <img height="300" class="center-block" src="LeopardSliders.png" class="img-responsive" alt="Leopard Sliders">
@@ -468,10 +474,10 @@ contributors:
                                             </div>
                                         </div>
 
-                                        <div class="col-md-6" "col-md-6">
-                                            <div class="panel panel-default">
+                                        <div class="col-md-6">
+                                            <div class="card">
                                                 <div class="card-header">
-                                                    <h4 class="panel-title text-center">Mac OS X El Capitan</h4>
+                                                    <h4 class="card-title text-center">Mac OS X El Capitan</h4>
                                                 </div>
                                                 <div class="card-body">
                                                     <img height="300" class="center-block" src="ElCapitanSliders.jpg" class="img-responsive" alt="El Capitan Sliders">
@@ -488,9 +494,9 @@ contributors:
 
                                     <div class="col-sm-12">
                                         <div class="col-md-6" "col-md-6">
-                                            <div class="panel panel-default">
+                                            <div class="card">
                                                 <div class="card-header">
-                                                    <h4 class="panel-title text-center">Windows 95 Volume Mixer</h4>
+                                                    <h4 class="card-title text-center">Windows 95 Volume Mixer</h4>
                                                 </div>
                                                 <div class="card-body">
                                                     <img height="300" class="center-block" src="win95.png" class="img-responsive" alt="Windows 95 Volume Mixer">
@@ -501,7 +507,7 @@ contributors:
                                         <div class="col-md-6" "col-md-6">
                                             <div class="panel panel-default">
                                                 <div class="card-header">
-                                                    <h4 class="panel-title text-center">Windows 7 Volume Mixer</h4>
+                                                    <h4 class="card-title text-center">Windows 7 Volume Mixer</h4>
                                                 </div>
                                                 <div class="card-body">
                                                     <img height="300" class="center-block" src="win7.jpg" class="img-responsive" alt="Windows 7 Volume Mixer">
