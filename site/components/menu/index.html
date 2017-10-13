@@ -90,7 +90,7 @@ contributors:
     <a class="nav-link" data-toggle="tab" href="#menu5">Android Auto</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#menu5">Android (General)</a>
+    <a class="nav-link" data-toggle="tab" href="#menu6">Android (Generic)</a>
   </li>
 </ul>
 
@@ -99,7 +99,7 @@ contributors:
 
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h4 class="panel-title text-center">Typical Apperance</h4>
+          <h4 class="panel-title text-center alert-success">Typical Apperance</h4>
         </div>
         <div class="panel-body">
           <p>A menu is a displayed set of options or commands for the user to select. These options/commands are often stacked vertically in the form of a list that can be read from top to bottom, ideally in an order that is convenient for the user. Common occurrences of these vertical menus are shown in the above slide show. As well as a few sample images here:</p>
@@ -108,7 +108,7 @@ contributors:
 
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h4 class="panel-title text-center">Typical Behavior</h4>
+          <h4 class="panel-title text-center alert-success">Typical Behavior</h4>
         </div>
         <div class="panel-body">
           <p>Menus behave by reacting when a user selects an option, typically in the form of a 'click'. </p>
@@ -118,7 +118,7 @@ contributors:
 
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h4 class="panel-title text-center">Events</h4>
+          <h4 class="panel-title text-center alert-success">Events</h4>
         </div>
         <div class="panel-body">
           <p>The most relevant menu event is the <code>click</code>. A <code>click</code> event indicates that the user has selected a particular action or item from the list. Another event is the <code>hover</code>, indicating that a pointing device is explicitly within the button’s bounds. Another event is the <code>scroll</code>, allowing the user to maneuver through the available options. Some platforms or implementations have included other components into an item, like a <code>swipe</code>, which can display alternative actions for the item, or a checkbox.</p>
@@ -129,44 +129,113 @@ contributors:
 
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h4 class="panel-title text-center">State Diagram</h4>
+          <h4 class="panel-title text-center alert-success">State Diagram</h4>
         </div>
         <div class="panel-body text-center">
           <img src="statediagram1.png" style="width: 50%; height: 50%" class="image-fluid" alt="State Diagram">
       </div>
     </div>
 
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center alert-success">Component in Action</h4>
+      </div>
+      <div class="panel-body text-center">
+        <p> iOS Contacts </p>
+        <img src="iOS_Contacts_video.gif" class="img-responsive center-block" alt="iOS Contacts">
+        <p> Pebble Timeline List </p>
+        <img src="Pebble_Timeline_video.gif" class="img-responsive center-block" alt="Pebble Timeline List">
+      </div>
+    </div>
 
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title text-center">Component in Action</h4>
+        <h4 class="panel-title text-center alert-success">Variants</h4>
       </div>
       <div class="panel-body text-center">
-        <h5> iOS Contacts </h5>
-        <img src="iOS_Contacts_video.gif" class="img-responsive center-block" alt="iOS Contacts">
+        <p>Grid - Apple TV Homescreen</p>
+        <img src="Apple_TV_Grid.jpg" class="img-responsive center-block" alt="Apple TV Grid">
+        <p>Grid - OS X Color picker</p>
+        <img src="Color_Picker.png" class="img-responsive center-block" alt="OS X Color Picker">
+        <p> These are only a few of the many interfaces that can be used to display options or actions. Depending on the content displayed, it may be better to create a custom interface. In the case of the OS X color picker, instead of listing names of colors in a standard menu, they opted to recreate a crayon box and visually display what the available colors are. In the case of the Apple TV, while you could simply list all possible apps, they opted for a grid to take better advantage of the wide aspect ratio of a TV.</p>
+        <p>An easy way to locate menus in Google’s system is to search for three parallel bars, which clearly indicate more options.</p>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center alert-success">Priority Metrics</h4>
+      </div>
+      <div class="panel-body text-center">
+        <p>The basic menu being a fundamental component since the creation of the command-line interface, it has had plenty of time to mature and is on virtually every platform. As such, all usability metrics are important to it. The origins of menus date back to the days of pen and paper, as an easy way to organize equivalent information.</p>
+        <p>Users who are seeing a menu for the first time are immediately familir with its use by its similarity to the pen and paper. This makes learnability easy as the concept is present from childhood. Between platforms and across time, the fundamentals of a basic menu haven't changed which maximizes memorability.</p>
+        <p>Users must have no delays with using menus because it is the intermediate step between choosing an action or item and that action being performed or moving on with the item selection. Efficiency is of the essenence here. The primary time consumer is the scrolling of a manu that cannot fit onto the screen in its entirety. Depending on the platform, the scrolling event must be responsive.</p>
+        <p>Users should never select an item in the menu by mistake. This is more in the realm of the interface component that is used within the item in the menu than the menu itself. However, for example, scrolling the menu should not be mistaken for selecting a particular item. This is up to the platform to make sure that the compents that can be used within items don't conflict with the menu itself.</p>
+        <p><br><strong>Learnability:</strong> The learning curve for Android Auto is significantly worse than for Apple Carplay.
+        <br><strong>Efficiency:</strong> Android Auto is more complicated than Apple’s simple, gridded layout, but can only accomplish the same amount of work.
+        <br><strong>Memorability:</strong> Although it took a while to learn the system, once learned, is intuitive and usable.
+        <br><strong>Errors:</strong> Not many errors other than how to activate the “Hey Google” button. That took a few minutes of playing around with the system and trial and error.
+        <br><strong>Satisfaction:</strong> Doesn’t look at nice as Apple Carplay due to a non-adjusting aspect ratio (tested on two phones).</p>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center alert-success">Key Characteristics</h4>
+      </div>
+      <div class="panel-body text-center">
+        <h6>Feedback</h6>
+        <p>Perhaps the most important interaction design principle that a menu must follow is <em>feedback</em>. Users must
+          never doubt whether:</p>
+        <ol>
+          <li>the scroll event was performed and the listings changes displayed</li>
+          <li>the item they have currently selected (for platforms needing abstract pointing)</li>
+          <li>the action being performed on a particular item (dependant on the platform and the available actions for an item)</li>
+        </ol>
       </div>
     </div>
   </div>
 
     <div id="menu1" class="tab-pane fade">
-      <h3>iOS</h3>
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h4 class="panel-title text-center">iOS</h4>
+          <h4 class="panel-title text-center">OS X Directory</h4>
         </div>
         <div class="panel-body">
-        <center>
-          <img src="iOS_Contacts.jpg" style="width: 50%; height: 50%" class="img-responsive" alt="iOS Contacts List">
-          <img src="iOS_Reminders.jpg" style="width: 50%; height: 50%"  class="img-responsive" alt="iOS Reminders List">
-          <img src="iOS_Tweetbot.jpg" style="width: 50%; height: 50%" class="img-responsive" alt="iOS Tweetbot List">
-          </center>
-          <p>With iOS, Apple was able to create the first direct interaction between a person and the content they are manipulating. Instead of having some device like a mouse or click wheel be the abstraction between the human interaction and the menu, the interface revolves around the direct interaction between the person and the content by way of finger touching. The event of scrolling is done by way of pushing the content on the screen up and down the screen. </p>
+          <img src="Mac_Directory.png" style="width: 40%; height: 40%" class="image-fluid" alt="Responsive Image">
+          <img src="Mac_FileMenu_Option.png" style="width: 25%; height: 25%" class="image-fluid" alt="Responsive Image">
+          <p>From the images of the directory menus, it can be observed that OS X breaks some of Windows' rules, such as using icons
+          to represent menu titles (i.e. the settings gear icon).</p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title text-center">Mac File Menu</h4>
+        </div>
+        <div class="panel-body">
+          <img src="Mac_FileMenu.png" style="width: 25%; height: 25%" class="img-responsive center-block" alt="Responsive Image">
+          <img src="Mac_FileMenu_Option.png" style="width: 25%; height: 25%" class="img-responsive center-block" alt="Responsive Image">
+          <p>In addition to there being hidden menus, there are even hidden menu items (described as "Dynamic Menu Items" in OS X guidelines) that can be seen if the user holds down the "alt option" key for Mac. For example, the file menu at the top of the Desktop interface (with no applications open) has some hidden items that are revealed when the "alt option" key is pressed while the menu is open.</p>
         </div>
       </div>
     </div>
 
     <div id="menu2" class="tab-pane fade">
-      <h3>Pebble</h3>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title text-center">iOS</h4>
+        </div>
+        <div class="panel-body">
+          <img src="iOS_Contacts.jpg" style="width: 50%; height: 50%" class="img-responsive" alt="iOS Contacts List">
+          <img src="iOS_Reminders.jpg" style="width: 50%; height: 50%"  class="img-responsive" alt="iOS Reminders List">
+          <img src="iOS_Tweetbot.jpg" style="width: 50%; height: 50%" class="img-responsive" alt="iOS Tweetbot List">
+          <p>With iOS, Apple was able to create the first direct interaction between a person and the content they are manipulating. Instead of having some device like a mouse or click wheel be the abstraction between the human interaction and the menu, the interface revolves around the direct interaction between the person and the content by way of finger touching. The event of scrolling is done by way of pushing the content on the screen up and down the screen. </p>
+      </div>
+    </div>
+  </div>
+
+    <div id="menu3" class="tab-pane fade">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h4 class="panel-title text-center">Pebble Menu List</h4>
@@ -176,47 +245,44 @@ contributors:
           <img src="Pebble_Old.png" style="width: 50%; height: 50%" class="img-responsive center-block" alt="Pebble Old List">
           <img src="Pebble_Timeline.png" style="width: 50%; height: 50%" class="img-responsive center-block" alt="Pebble Timeline List">
           <p>With Pebble, in the name of preserving battery life and minimizing user error, they decided to go with interaction by way of physical buttons along the side of the device, a touchscreen of that size argued as being a bit too clunky to hit the item you intend with your fingers.</p>
-        </div>
       </div>
     </div>
-
-    <div id="menu3" class="tab-pane fade">
-      <h3>Apple CarPlay</h3>
-
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title text-center">Apple CarPlay Home</h4>
-        </div>
-        <div class="panel-body">
-          <img src="AppleHomeScreen.jpg" style="width: 50%; height: 50%" class="img-responsive center-block" alt="Apple Carplay Home">
-          <p>Apple CarPlay is similar to iOS feel that it is based on. It allows the user to easily learn CarPlay since they are already familiar with their iPhone. It has a gridded menu system that is organized to mirror the iPhone that it is running on.</p>
-        </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title text-center">Apple CarPlay Music</h4>
-        </div>
-        <div class="panel-body">
-          <img src="AppleMusic.jpg" style="width: 50%; height: 50%" class="img-responsive center-block" alt="Apple CarPlay Music">
-          <p>The music app is has a different appearance than the iPhone as far as style and color scheme, but it is organized in a similar fashion. It is also very simple and easy to navigate through, which is an important feature since music apps are often used during car rides.</p>
-        </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title text-center">Apple CarPlay Home</h4>
-        </div>
-        <div class="panel-body">
-          <img src="AppleMessages.jpg" style="width: 50%; height: 50%" class="img-responsive center-block" alt="Apple Messages">
-          <p>Like many of the menus on Apple CarPlay, the message menu follows a consistent layout. The simplicity and consistency of these menu styles allow the user to make efficient selections without being distracted while driving.</p>
-        </div>
-      </div>
-    </div>
+  </div>
 
       <div id="menu4" class="tab-pane fade">
-        <h3>Android Auto</h3>
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h4 class="panel-title text-center">Android Auto Home</h4>
+            <h4 class="panel-title text-center">Apple CarPlay</h4>
+          </div>
+          <div class="panel-body">
+            <img src="AppleHomeScreen.jpg" style="width: 50%; height: 50%" class="img-responsive center-block" alt="Apple Carplay Home">
+            <p>Apple CarPlay is similar to iOS feel that it is based on. It allows the user to easily learn CarPlay since they are already familiar with their iPhone. It has a gridded menu system that is organized to mirror the iPhone that it is running on.</p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title text-center">Apple CarPlay Music</h4>
+          </div>
+          <div class="panel-body">
+            <img src="AppleMusic.jpg" style="width: 50%; height: 50%" class="img-responsive center-block" alt="Apple CarPlay Music">
+            <p>The music app is has a different appearance than the iPhone as far as style and color scheme, but it is organized in a similar fashion. It is also very simple and easy to navigate through, which is an important feature since music apps are often used during car rides.</p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title text-center">Apple CarPlay Home</h4>
+          </div>
+          <div class="panel-body">
+            <img src="AppleMessages.jpg" style="width: 50%; height: 50%" class="img-responsive center-block" alt="Apple Messages">
+            <p>Like many of the menus on Apple CarPlay, the message menu follows a consistent layout. The simplicity and consistency of these menu styles allow the user to make efficient selections without being distracted while driving.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="menu5" class="tab-pane fade">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title text-center">Android Auto</h4>
           </div>
           <div class="panel-body">
             <img src="AndroidHome.jpg" style="width: 50%; height: 50%" class="img-responsive center-block" alt="Android Auto Home">
@@ -243,36 +309,17 @@ contributors:
         </div>
       </div>
 
-      <div id="menu4" class="tab-pane fade">
-        <h3>Android Auto</h3>
+      <div id="menu6" class="tab-pane fade">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h4 class="panel-title text-center">Android Auto Home</h4>
+            <h4 class="panel-title text-center">Android (Generic)</h4>
           </div>
           <div class="panel-body">
-            <img src="AndroidHome.jpg" style="width: 50%; height: 50%" class="img-responsive center-block" alt="Android Auto Home">
-            <p>There is a bar on the bottom which houses (in order): Google Maps, Phone, “Home”, Music, and “Return to Audi MMI (Multimedia Interface).” Within those, you nudge the controller to the right to access “Hey Google” and to the left to access more options within the app, such as showing/disabling traffic on Google Maps. Menus are typically placed on the edges of the screen to minimize intrusiveness of the selected application in use</p>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title text-center">Android Auto Phone</h4>
-          </div>
-          <div class="panel-body">
-            <img src="AndroidPhone.jpg" style="width: 50%; height: 50%" class="img-responsive center-block" alt="Android Auto Phone">
-            <p>Although obviously a Google product, it’s not as continuous as Apple’s Carplay is. The difference between Android 6.0 to Android Auto isn’t as obvious until you get into individual apps, such as Google Maps or the music player. This phone app is a good example, which has an Android look and feel to it.</p>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title text-center">Android Auto Music</h4>
-          </div>
-          <div class="panel-body">
-            <img src="AndroidMusic.jpg" style="width: 50%; height: 50%" class="img-responsive center-block" alt="Android Auto Music">
-            <p>Android Auto takes a form closer to it's device's music app than Apple's CarPlay, which although is less complicated, takes longer to learn shortcuts.</p>
-          </div>
-        </div>
+            <p> stuff goes here </p>
       </div>
+    </div>
+  </div>
+
     </div>
   </div>
 </div>
