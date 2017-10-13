@@ -161,16 +161,17 @@ contributors:
               <li><a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/Dock.html">Dock Specific Guidelines</a></li>
             </ul>
           </li>
+          <li>Apple iOS <a href="https://developer.apple.com/ios/human-interface-guidelines/overview/themes/">Human Interface Guidelines</a></li>
+          <li><a href="https://support.microsoft.com/en-us/help/11694/windows-phone-cortana-on-your-windows-phone">Cortana Definition</a></li>
           <li>Norman's <a href="https://amzn.com/0465050654">Design of Everyday Things</a></li>
           <li>Mac OS X Dock in Action Video by <a href="https://www.youtube.com/channel/UCz77-9Ump9wpNGjrcU_FppA">Serge Siou</a></li>
+          <li><a href="https://archive.org/details/mac_MacOS_7.0.1_compilation">MacOS 7 emulator</a></li>
+          <li><a href="https://archive.org/details/mac_MacOS_6.0.8">MacOS 6 emulator</a></li>
           <li>Spotlight .gif by <a href="https://www.moncefbelyamani.com/images/spotlight-terminal.gif">Moncef Belyamani</a></li>
           <li>Shneiderman and Plaisant's <a href="https://amzn.com/0321537351">Designing the User Interface</a></li>
           <li>Windows UWP Design Guidelines: <a href="https://developer.microsoft.com/en-us/windows/apps/design">developer.microsoft.com</a></li>
           <li>Windows 10 Start Menu .gifs by <a href="https://support.microsoft.com/en-us/help/17218">support.microsoft.com</a></li>
           <li>Windows 10 Start Menu .pngs <a href="https://blogs.microsoft.com/work/2015/04/13/start-here-with-windows-10/#sm.000e2141k18d5fawzgl19o9epugy8">blogs.microsoft.com</a></li>
-          <li><a href="https://support.microsoft.com/en-us/help/11694/windows-phone-cortana-on-your-windows-phone">Cortana Definition</a></li>
-          <li><a href="https://archive.org/details/mac_MacOS_7.0.1_compilation">MacOS 7 emulator</a></li>
-          <li><a href="https://archive.org/details/mac_MacOS_6.0.8">MacOS 6 emulator</a></li>
         </ul>
       </div>
     </div>
@@ -374,6 +375,7 @@ contributors:
                 the launcher is the surface layer above the various sub-layers which exist inside the many applications that iPhone has to offer.  A single action, either
                 clicking the home button or selecting an application, is all that is ever required to move between launcher and application.  It should also be noted that
                 Siri can also be easily accessed with the home button by holding it down.
+              </p>
             </div>
             <div class="col-sm-5">
               <img src="ios11-homescreen-demonstration.gif" alt="Homescreen demonstration" class="figure-img img-fluid rounded">
@@ -382,7 +384,88 @@ contributors:
             <div class="col-sm-1"></div>
           </div>
         <h2>State Diagram</h2>
+          <br></br>
           <img src="ios11-state-diagram.png" alt="State diagram" class="figure-img img-fluid rounded">
+      </div>
+      <div class="col-sm-6">
+        <h3><strong>Variants</strong></h3>
+        <div class="row">
+          <div class="col-sm-6">
+            <p>
+              In iOS11, there is one component which seamlessly integrates with the task launcher.  Accessed by double-tapping the home button at any time, the task <i>switcher</i>
+              is a component which allows for navigation between active applications.  Though it lets user close open applicatons, it does not support opening new applications, which
+              is what separates it from the task launcher.  Still, understanding this component is conducive to also using the task launcher effectively.  The switcher and launcer
+              are separate entities, but there is still one aspect of the iOS11 task launcher that has yet to be mentioned.  By swiping up from the bottom edge of the screen at any
+              time, the user will find several buttons.  This is known as the "control center", of which the bottom portion also certain applications to be launched.  Because the
+              applications that can be accessed this way are limited, this feature was not included in the general description of the iOS11 task launcher.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <img src="ios11-task-switcher.gif" alt="Task switcher demonstration" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption text-center"><strong>The task switcher</strong></figcaption>
+            <br></br>
+            <img src="ios11-control-center.png" alt="Control center" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption text-center"><strong>Certain productivity apps can be accessed from the control center</strong></figcaption>
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="ios11-control-center-settings.png" alt="Control center settings" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption text-center"><strong>
+              A new feature of iOS11 is that it allows for the selection apps that appear in the control center
+            </strong></figcaption>
+          </div>
+          <div class="col-sm-7">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yf2cNy48WyM" allowfullscreen></iframe>
+            </div>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UGWjmt6UXJI" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <h3><strong>Priority Metrics</strong></h3>
+          <h5><u>Efficiency &amp; Errors</u></h4>
+            <p>
+              Overall, the iOS11 task launcher is extremely straightforward.  As described earlier, usage consists of mostly single-step actions, making
+              application-launching a very simple task.  Though Siri is somewhat infamous for strange or silly responses to user input, it generally has an
+              easy time launching apps since the only input needs to be "Siri, launch [application]".  So, the low likelihood of errors makes for a highly
+              efficient task launcher in iOS11.
+            </p>
+          <h5><u>Learnability &amp; Memorability</u></h4>
+            <p>
+              The simplicity of the task launcher also makes for high ratings in these two categories.  It is very intuitive and there are almost no aspects
+              that aren't obvious.  Perhaps this is partially due to the fact that iPhones are so well-known, but that it is a fact that Apple uses to their
+              advantage quite well.
+            </p>
+          <h5><u>Satisfaction</u></h4>
+            <p>
+              Of course, this is hard to measure on a theoretical basis.  Still, most would hesitate to say that the iOS11 task launcher does anything that
+              blatantly gets in the user's way.  Its multidimensional nature allows for some users to use a traditional touch screen interface, others to speak
+              their commands, and many more others to do a combination of the two.  So, on average, usage of this launcher is appealing.
+            </p>
+      </div>
+      <h3><strong>Key Characteristics</strong></h3>
+      <div class="row">
+        <div class="col-sm-12">
+          <h5>Transparency</h5>
+            <p>
+              Especially on an iPhone, which will inevitably be used several hundred times per day, the user should not feel as though using the task launcher is a
+              process.  In iOS, this is addressed extremely effectively, as the launcher allows for one-step navigation.  Users can go about their business without
+              thinking for a minute about how they have to find or start any applications.
+            </p>
+          <h5>Multidimensionality</h5>
+            <p>
+              As mentioned, the fact that users can launch tasks in two very distinct ways is nothing but a positive.  It makes the software appealing to more people,
+              including those who have some sort of physical impairment.
+            </p>
+          <h5>Trademark Look</h5>
+            <p>
+              Many of us may not think it, but we all know it: The iPhone is perhaps the most familiar piece of computer hardware in the world right now, and the
+              software that powers it is not different.  The familiar look of the iOS task launcher gives it inherant learnability and satisfiability.
+            </p>
+        </div>
       </div>
     </div>
   </div>
