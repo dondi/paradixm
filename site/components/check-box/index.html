@@ -209,10 +209,10 @@ As a part of that overall system, making check boxes “pleasurable” may then 
       <a class="nav-link" href="#MacOS" aria-controls="MacOS" role="tab" data-toggle="tab">Mac OS X 10.11 El Capitan</a>
     </li>
     <li role="presentation">
-      <a class="nav-link" href="#iOS9" aria-controls="iOS9" role="tab" data-toggle="tab">Apple iOS 9</a>
+      <a class="nav-link" href="#MacOS7" aria-controls="MacOS7" role="tab" data-toggle="tab">Mac OS 7</a>
     </li>
     <li role="presentation">
-      <a class="nav-link" href="#MacOS6" aria-controls="MacOS6" role="tab" data-toggle="tab">Mac OS 6/7</a>
+      <a class="nav-link" href="#iOS9" aria-controls="iOS9" role="tab" data-toggle="tab">Apple iOS 9</a>
     </li>
     <li role="presentation">
       <a class="nav-link" href="#watchOS" aria-controls="watchOS" role="tab" data-toggle="tab">watchOS</a>
@@ -221,7 +221,7 @@ As a part of that overall system, making check boxes “pleasurable” may then 
 
   <div class="tab-content">
 
-    <div role="tabpanel" class="tab-pane fade in active" id="Windows10">
+    <div role="tabpanel" class="tab-pane fade show active" id="Windows10">
      <blockquote>
         In Windows 10, a check box is used to record a single binary choice or to select multiple options from a list.
      </blockquote>
@@ -354,8 +354,86 @@ As a part of that overall system, making check boxes “pleasurable” may then 
                 </p>
     </div>
 
-    <div role="tabpanel" class="tab-pane fade" id="MacOS6">
-      <h4>Mac OS X Design Principles</h4>
+    <div role="tabpanel" class="tab-pane fade" id="MacOS7">
+    <div class="container">
+
+    <h3>"System 7" or Vintage Mac OS 7.0.1</h3>
+
+    <blockquote>
+        System 7 version of the Mac operating system debuted in May 13, 1995. This system was introduced by Apple Computer preceeding the Mac OS 6, or "System 6", and both were succeeded by Mac OS 8 in 1997.
+        Some of the main differences between System 6 to 7 are additional features, such as built-in co-operative multitasking, personal file sharing, drag and drop, and an improved user interface.
+    </blockquote>
+
+      <h4>Definition</h4>
+       <p>
+          The Macintosh Human Interface Guidelines, published in 1995, defined a checkbox as: "A standard Macintosh control that displays a setting, either checked (on) or unchecked (off). Clicking a checkbox or its text label reverses its setting. One or more checkboxes can be checked. Compare radio button."
+        </p>
+
+    <h3>Guidelines</h3>
+     <p>
+        System 7 followed the folloing guidelines located: <a href="http://interface.free.fr/Archives/Apple_HIGuidelines.pdf">here</a>.
+        These guidelines include, but are not limited to:
+        <ul>
+        <li>Check box text is on two lines or less. </li>
+        <li>The label must be worded as a statement that the checkmark designates as true. </li>
+        <li>Don’t put two check box groups next to each other without a clear label to separate them.</li>
+        <li>If there are mutually exclusive statements in a check box list, use radio buttons instead.</li>
+        <li>Checkboxes should not be used to perform or control a command, use a toggle instead.</li>
+        <li>Checking a box should not cause a display or control to be displayed.</li>
+        <li> The indeterminate state should be used when the user is able to see the sub-choices.</li>
+      </ul>
+      </p>
+      <h3>Examples of Check Box Use </h3>
+      <div class="row">
+      <div class="col-sm-6">
+        <p>
+          Although the choice is said to be binary, Windows 10 actually allows for a checkbox to be in three (not two) states: selected, unselected, and indeterminate. Indeterminate is used when the choice is composed of both selected and unselected sub-choices. The indeterminate checkbox is very rarely used, likely because it is confusing for the user. For example, A check box in the indeterminate state is shown in the screen shot to the right. The checkbox is filled with a square. If the user clicks on the square, the square disapears. If the user clicks on the box again, a checkmark appears, and if the user clicks a third time, the box reappears.
+          </p>
+          <p>
+          Checkboxes are commonly used to mark a statement as either true or false, and in cases where the indeterminate is allowed, a naive user is unsure of what they are marking the statement as when indeterminate is an option. This example of the indeterminate seems to violate the Microsoft guidelines above because the sub-choices are not visible.
+        </p>
+      </div>
+      <div class="col-sm-6">
+      <img src="../check-box/MacOS7checkbox:radiobox.png" alt="indeterminate check box" height="400">
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <p>
+          Microsoft defines the appropriate time to use a check box for a yes/no choice instead of a toggle as when the check box designates a status rather than causing an immediate action.
+        </p>
+        <p>
+          The screenshot to the right shows a single check box being used in Windows 10. When the box is checked,  a status is saved but there is no immediate action. The action instead happens when the form is submitted by clicking a button at the bottom of the window.
+          Other examples include agreeing to a terms of service agreement and a “Remember me?” box when logging in.
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <img src="../check-box/MacOS7dialogbox.png" alt="single check box" height="400">
+      </div>
+      </div>
+
+      <br>
+      <div class="row">
+        <div class="col-sm-6">
+          <p>
+            Another difference between toggles and check boxes is that only check boxes are used for multi-selection. The choices cannot be mutually exclusive (in that scenario, a radio button would be appropriate).
+            The below screenshot shows multiple checkboxes being used in Windows 10. The checkboxes allow the user to select which days the alarm will repeat on. The days of the week are selected with checkboxes, but to turn the alarm itself on or off, a toggle is used.
+          </p>
+          <p>
+            Multiple checkboxes can also be used when selecting folders or files in the file explorer. This allows the user to designate files and folders to do some other action to. The check marks them as selected, and then the user is able to perform actions such as move, delete and copy to all of the selected items at once.
+          </p>
+          </div>
+          <div class="col-sm-6">
+            <img src="../check-box/MacOS7popup.png" alt="multiple checkboxes" height="400">
+          </div>
+          </div>
+          <div class="col-sm-6">
+            <img src="../check-box/MacOS7dropdown.png" alt="multiple checkboxes" height="400">
+          </div>
+          </div>
+     </div>
     </div>
 
     <div role="tabpanel" class="tab-pane fade" id="iOS9">
@@ -406,4 +484,5 @@ https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.checkbox(v=vs
 http://www.nngroup.com/articles/checkboxes-vs-radio-buttons/ <br>
 https://www.youtube.com/watch?v=_OzWxKSm1rU&feature=youtu.be Apple OS X El Capitan: What's New?  by DetroitBORG Jun 9, 2015 <br>
 https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW1 <br>
+http://www.mac-history.net/computer-history/2008-05-24/mac-os-70-2 <br>
 </p>
