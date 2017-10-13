@@ -115,23 +115,23 @@ contributors:
                                             </div>
                                         </div>
                                     </div>
+
                                     <br>
 
                                     <div class="row">
-
                                         <div class="col-md-6">
                                             <div class="card">
                                                 <div class="card-header">
                                                     <h4 class="card-title text-center">Ubuntu (using graphical shell Unity 7.5.0)</h4>
                                                 </div>
                                                 <div class="card-body">
-                                                    <img class="center-block" src="ubuntu_17.04_slider_gnome_unity_shell.gif" class="img-fluid" alt="Unity 7.5.0 Slider" style="width: 100%;">
+                                                    <img class="card-img" src="ubuntu_17.04_slider_gnome_unity_shell.gif" class="img-fluid" alt="Unity 7.5.0 Slider" style="width: 100%;">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <br>
 
+                                    <br>
 
                                 </div>
                             </div>
@@ -150,42 +150,43 @@ contributors:
                                 <div class="col-md-12">
 
                                     <h1>Typical Behavior</h1>
+
                                     <hr>
 
-                                    <blockquote>The behavior of the slider is very basic. The user is given a choice to either slide left(min) or right(max). By doing so, the user can choose the proper setting they are looking for. The slider will not activate until
+                                    <p class="lead">The behavior of the slider is very basic. The user is given a choice to either slide left(min) or right(max). By doing so, the user can choose the proper setting they are looking for. The slider will not activate until
                                         the user clicks on the knob and then drags it to their desired setting. Most sliders across different platforms carry the same behavior. We will see how Mac OS X and Windows 10 specifically stands through out the
                                         study.
-                                    </blockquote>
+                                    </p>
 
                                     <hr>
 
+                                    </br>
 
-                                    <h3><code>Events</code></h3>
-                                    <div class="col-sm-12">
-                                        <div class="col-sm-6">
-                                            <h4>Slider with tick marks in Mac OS X</h4>
-                                            <blockquote>
-                                                <ol>
-                                                    <li><code>hover</code>-ing over the slider knob gives you a quick description of what the slider does.</li>
-                                                    <li><code>unhover</code>-ing the slider knob dismisses the quick description.</li>
-                                                    <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
-                                                    <li>While <code>drag</code>-ing the slider knob, the knob focuses on the tick marks.</li>
-                                                    <li>Clicking on the <code>bar</code> where tick marks are present, quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
-                                                    <li><code>release</code>-ing the slider knob will set the knob to the latest value.</li>
-                                                </ol>
-                                            </blockquote>
-                                        </div>
+                                    <h2><code>Events</code></h2>
 
-                                        <div class="col-sm-6">
+                                    <br>
+
+                                    <div class="row">
+                                          <div class="col-6">
+                                              <h4>Slider with tick marks in Mac OS X</h4>
+                                                  <ol>
+                                                      <li><code>hover</code>-ing over the slider knob gives you a quick description of what the slider does.</li>
+                                                      <li><code>unhover</code>-ing the slider knob dismisses the quick description.</li>
+                                                      <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
+                                                      <li>While <code>drag</code>-ing the slider knob, the knob focuses on the tick marks.</li>
+                                                      <li>Clicking on the <code>bar</code> where tick marks are present, quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
+                                                      <li><code>release</code>-ing the slider knob will set the knob to the latest value.</li>
+                                                  </ol>
+                                          </div>
+
+                                        <div class="col-6">
                                             <h4>Slider without tick marks in Mac OS X</h4>
-                                            <blockquote>
                                                 <ol>
                                                     <li><code>click</code>-ing the slider knob changes the tint of the knob and activates the knob to either be dragged left or right.</li>
                                                     <li>While <code>drag</code>-ing the slider knob, the knob is smoothly draggable across the bar.</li>
                                                     <li>Clicking anywhere on the <code>bar</code> , quickly allows the user to set their setting without performing the <code>drag</code>-ing event</li>
                                                     <li><code>release</code>-ing the slider knob will set the knob to the latest value.</li>
                                                 </ol>
-                                            </blockquote>
                                         </div>
                                     </div>
 
@@ -204,8 +205,12 @@ contributors:
                                         </div>
                                     </div>
 
-                                    <h3 style="font-size:20px;"><mark>State Diagrams</mark></h3>
-                                    <div class="col-sm-12">
+                                    <hr>
+
+                                    <br>
+                                    <h2><mark>State Diagrams</mark></h2>
+                                    <br>
+                                      <div class="row">
                                         <div class="col-sm-6">
                                             <h4>Slider with tick marks in Mac OS X</h4>
                                             <blockquote>At first the user is presented with a slider that is <mark>enabled</mark> for use. When the user <code>hover</code>-s over the slider knob, a <mark>tool-tip</mark> pops up with a description of what the slider
@@ -218,32 +223,30 @@ contributors:
                                                 the <mark>tint</mark> of the knob and enables the knob to become <code>drag</code>-able. <code>Release</code>-ing the knob returns to the <mark>enabled</mark> state. Finally, when the user <code>click</code>s
                                                 on the <code>bar</code> it automatically returns to the <mark>enabled</mark> state.</blockquote>
                                         </div>
-                                    </div>
-
-                                    <div class="col-sm-12">
+                                      </div>
+                                      <div class="row">
                                         <div class="col-md-6" "col-md-6">
                                             <div class="card">
                                                 <div class="card-header">
                                                     <h4 class="card-title text-center">State Diagram 1</h4>
                                                 </div>
                                                 <div class="card-body">
-                                                    <img class="center-block" src="statediagram1.png" class="img-responsive" alt="State Diagram 1">
+                                                    <img class="card-image" src="statediagram1.png" class="img-responsive" alt="State Diagram 1">
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-sm-6" "col-md-6">
                                             <div class="card">
-                                                <div class="card-headers">
+                                                <div class="card-header">
                                                     <h4 class="card-title text-center">State Diagram 2</h4>
                                                 </div>
                                                 <div class="card-body">
-                                                    <img class="center-block" src="statediagram2.png" class="img-responsive" alt="State Diagram 2">
+                                                    <img class="card-image" src="statediagram2.png" class="img-responsive" alt="State Diagram 2">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
