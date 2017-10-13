@@ -31,7 +31,8 @@ contributors:
     changed over the past few years, maturing from Windows 7 and 8 into a more efficient and functional menu based system. Windows 10 prioritizes customization in its start
     menu, focusing on satisfaction.`;
     const IOS11_TEXT = `Dummy text 2`;
-    const MACOS7_TEXT = `Dummy text 3`;
+    const MACOS7_TEXT = `MacOS 7 is one of the earliest operating systems made, and so it has a very primitive task launcher. Task launchers have since advanced enourmously,
+    but the one for MacOS 7 is the simplest, and therefore expresses the intent of task launchers in general very clearly.`;
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
       var target = $(e.target).attr("href") // activated tab
       switch(target) {
@@ -176,12 +177,16 @@ contributors:
   <div class="tab-pane fade" id="macosx10" aria-labelledby="macosx10-tab">
     <div id="macosx10-content" class="row">
       <div class="col-sm-6">
-        <h3><strong>Typical Appearance</strong></h3>
+        <h3><strong>Appearance</strong></h3>
         <p>
           The dock is a collection of graphical representations of files and applications. Spotlight is
           a simple search box, it takes a text input and gives either a text response or a task response
           (i.e. the launch of an application).
         </p>
+        <figure class="figure">
+          <img src="OSX_dock_launcher.png" class="figure-img img-fluid rounded">
+          <figcaption class="figure-caption text-center"><strong>The task launcher dock at the bottom of screen</strong></figcaption>
+        </figure>
         <figure class="figure">
           <img src="spotlight_in_action.png" class="figure-img img-fluid rounded">
           <figcaption class="figure-caption text-center"><strong>Using Spotlight to launch applications</strong></figcaption>
@@ -197,7 +202,6 @@ contributors:
             Once the text input is received the task launcher takes one of three actions:<br>
              1. opens desired file <br>
              2. launches application <br>
-             3. responds with a "file/application not found" message <br>
                 when an application is in use, a dot appears underneath its icon on the dock.
           </p>
       </div>
@@ -210,6 +214,7 @@ contributors:
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TlmhqEV34Eo" allowfullscreen></iframe>
           </div>
+          <br>
         <h3><strong>Variants</strong></h3>
           <p>
             There are third-party task launchers that have been developed specifically for Mac OS X, namely "Alfred." Alfred
@@ -228,18 +233,14 @@ contributors:
             The satisfaction of the Mac task launchers is based on the speed and ease of use, or more specifically the efficiency and
             learnability. The user can always look to third-party applications in the case of Mac OS X.
           </p>
-      </div>
-    </div>
-    <div id="macosx10" class=row>
-      <div class="col-sm-12">
-        <h3><strong>Key Characteristics</strong></h3>
-        <p>
-          Spotlight and dock allow for two different communications between the user and the operating system. The dock's immediacy
-          and simplicity makes it a great option for the launching of everyday tasks. Spotlight's access to all applications and
-          files stored on the system allows for the fast launch of applications and the opening of files that are note regularly
-          accessed. It drastically decreases the overall time of launching applications not stored in the dock and creates convenient
-          shortcut to any location in the operating system.
-        </p>
+          <h3><strong>Key Characteristics</strong></h3>
+          <p>
+            Spotlight and dock allow for two different communications between the user and the operating system. The dock's immediacy
+            and simplicity makes it a great option for the launching of everyday tasks. Spotlight's access to all applications and
+            files stored on the system allows for the fast launch of applications and the opening of files that are note regularly
+            accessed. It drastically decreases the overall time of launching applications not stored in the dock and creates convenient
+            shortcut to any location in the operating system.
+          </p>
       </div>
     </div>
   </div>
@@ -341,7 +342,74 @@ contributors:
   <!-- ---------------------------- MACOS7 SPECIFIC DATA ------------------------------ -->
   <div class="tab-pane fade" id="macos7" aria-labelledby="macos7-tab">
     <div id="macos7-content" class="row">
-      <img src="MacOS_7_add_menu_option.gif" alt="MacOS 7 add menu option" class="figure-img img-fluid rounded">
+      <div class="col-sm-6">
+        <h3><strong>Appearance</strong></h3>
+        <p>
+          The primary task launcher is a menu full of program icons. There is also a search feature that allows you to easily find programs and run them in their folders.
+        </p>
+        <figure class="figure">
+          <img src="MacOS_7_task_menu.png" class="figure-img img-fluid rounded">
+          <figcaption class="figure-caption text-center"><strong>Using Spotlight to launch applications</strong></figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="MacOS_7_search.gif" class="figure-img img-fluid rounded">
+          <figcaption class="figure-caption text-center"><strong>Using Spotlight to launch applications</strong></figcaption>
+        </figure>
+        <h3><strong>Behavior</strong></h3>
+          <p>
+            The dock allows for the immediate launch of any application or folder stored on it with a
+            simple click. Spotlight requires keyboard input instead.
+          </p>
+        <h3><strong>Events</strong></h3>
+          <p>
+            During the use of a task launcher the user is required to type in the name of a desired file or application.
+            Once the text input is received the task launcher takes one of three actions:<br>
+             1. opens desired file <br>
+             2. launches application <br>
+             3. responds with a "file/application not found" message <br>
+                when an application is in use, a dot appears underneath its icon on the dock.
+          </p>
+      </div>
+      <div class="col-sm-6">
+        <h3><strong>Component in Action</strong></h3>
+          <p>
+            Below is a tutorial on how to change the position of the dock. Initially
+            it uses the dock to launch the system preferences application.
+          </p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TlmhqEV34Eo" allowfullscreen></iframe>
+          </div>
+        <h3><strong>Variants</strong></h3>
+          <p>
+            There are third-party task launchers that have been developed specifically for Mac OS X, namely "Alfred." Alfred
+            includes many different features not included in spotlight or the dock; it can save your passwords, create workflows
+            and even search the web.
+          </p>
+        <h3><strong>Priority Metrics</strong></h3>
+        <h4><u>Efficiency &amp; Learnability</u></h4>
+          <p>
+            Mac OS X task launchers have a help application built in which increases their learnability by teaching the the
+            user how to use the interface. Additionally the efficiency of the dock and spotlight is increased by built in shortcuts
+            that can be accessed in any application.
+          </p>
+        <h4><u>Satisfaction</u></h4>
+          <p>
+            The satisfaction of the Mac task launchers is based on the speed and ease of use, or more specifically the efficiency and
+            learnability. The user can always look to third-party applications in the case of Mac OS X.
+          </p>
+      </div>
+    </div>
+    <div id="macosx10" class=row>
+      <div class="col-sm-12">
+        <h3><strong>Key Characteristics</strong></h3>
+        <p>
+          Spotlight and dock allow for two different communications between the user and the operating system. The dock's immediacy
+          and simplicity makes it a great option for the launching of everyday tasks. Spotlight's access to all applications and
+          files stored on the system allows for the fast launch of applications and the opening of files that are note regularly
+          accessed. It drastically decreases the overall time of launching applications not stored in the dock and creates convenient
+          shortcut to any location in the operating system.
+        </p>
+      </div>
     </div>
   </div>
 
