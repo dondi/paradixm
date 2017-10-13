@@ -30,7 +30,8 @@ contributors:
     const WINDOWS10_TEXT = `The Windows 10 task launcher has three components, the start menu, the task bar, and optionally cortana. The Windows start menu has drastically
     changed over the past few years, maturing from Windows 7 and 8 into a more efficient and functional menu based system. Windows 10 prioritizes customization in its start
     menu, focusing on satisfaction.`;
-    const IOS11_TEXT = `Dummy text 2`;
+    const IOS11_TEXT = `Apple iOS completely redefines the idea of the task launcher by putting it at the forefront of the entire operating system.  It is cleverly intergrated
+    and accessible at any stage, whether the user is browsing the web or even unable to look at their phone`;
     const MACOS7_TEXT = `MacOS 7 is one of the earliest operating systems made, and so it has a very primitive task launcher. Task launchers have since advanced enourmously,
     but the one for MacOS 7 is the simplest, and therefore expresses the intent of task launchers in general very clearly.`;
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
@@ -335,7 +336,52 @@ contributors:
   <!-- ---------------------------- IOS11 SPECIFIC DATA ------------------------------ -->
   <div class="tab-pane fade" id="ios11" aria-labelledby="ios11-tab">
     <div id="ios11-content" class="row">
-
+      <div class="col-sm-6">
+        <h3><strong>Appearance</strong></h3>
+          <p>
+            The task launcher in iOS11 takes on a few forms, of which the homescreen is perhaps the most recognizable.  Its icons each directly launch respective applications.
+            There is also search-oriented portion of the launcher which can be accessed by swiping down on the homescreen.  Of course, Siri is probably the most notorious way
+            that the iOS11 task launcher manifests itself.  Similar to Cortana (Windows), Siri recognizes voice commands and can launch applications or perform other tasks for the
+            user, making it much more than just a launcher.
+          </p>
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="ios_11_homescreen.png" alt="Homescreen" class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption text-center"><strong>iOS11 Homescreen</strong></figcaption>
+            </div>
+            <div class="col-sm-4">
+              <img src="ios11-search.png" alt="Search Function" class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption text-center"><strong>Homescreen search function</strong></figcaption>
+            </div>
+            <div class="col-sm-4">
+              <img src="ios11-siri.png" alt="Siri" class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption text-center"><strong>Siri</strong></figcaption>
+            </div>
+          </div>
+        <h3><strong>Typical Behavior</strong></h3>
+          <p>
+            The <a href="https://developer.apple.com/ios/human-interface-guidelines/overview/themes/">website</a> for iOS design guidelines state that "clarity" (legible text,
+            appropriate focus, etc.), "defernce" (fluid motion, beautiful interface, etc.), and "depth" (distinct visual layers and hierarchical layout) are the three
+            distinguishing characteristics that makes iOS stand out from other platforms.  The infrastructure of the task launcher is clearly oriented around these ideas.
+          </p>
+        <h2>Events</h2>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>
+                The homescreen offers a fluid, visually pleasing, way to launch applications.  The screen transitions simulate the sensation of moving between layers, as if
+                the launcher is the surface layer above the various sub-layers which exist inside the many applications that iPhone has to offer.  A single action, either
+                clicking the home button or selecting an application, is all that is ever required to move between launcher and application.  It should also be noted that
+                Siri can also be easily accessed with the home button by holding it down.
+            </div>
+            <div class="col-sm-5">
+              <img src="ios11-homescreen-demonstration.gif" alt="Homescreen demonstration" class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption text-center"><strong>The homescreen launcher</strong></figcaption>
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+        <h2>State Diagram</h2>
+          <img src="ios11-state-diagram.png" alt="State diagram" class="figure-img img-fluid rounded">
+      </div>
     </div>
   </div>
 
