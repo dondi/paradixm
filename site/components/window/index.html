@@ -20,14 +20,10 @@ is a rectangular shape that displays content on a computer monitor. It is a very
   <div class="row">
     <div class="col-xl-12">
       <ul class="nav nav-pills nav-justified" role="tablist">
-        <li role="nav item" class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#appearance" role="tab">Appearance</a>
-        </li>
-        <li role="nav item" class="nav-item"> <a class="nav-link" data-toggle="tab" href="#behavior" role="tab">Behavior</a>
-        </li>
-        <li role="nav item" class="nav-item"> <a class="nav-link" data-toggle="tab" href="#priority-metrics" role="tab">Priority Metrics</a>
-        </li>
-        <li role="nav item" class="nav-item"> <a class="nav-link" data-toggle="tab" href="#platform-specifics" role="tab">Platform Specifics</a>
-        </li>
+        <li role="nav item" class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#appearance" role="tab">Appearance</a></li>
+        <li role="nav item" class="nav-item"> <a class="nav-link" data-toggle="tab" href="#behavior" role="tab">Behavior</a></li>
+        <li role="nav item" class="nav-item"> <a class="nav-link" data-toggle="tab" href="#priority-metrics" role="tab">Priority Metrics</a></li>
+        <li role="nav item" class="nav-item"> <a class="nav-link" data-toggle="tab" href="#platform-specifics" role="tab">Platform Specifics</a></li>
       </ul>
     </div>
   </div>
@@ -55,9 +51,13 @@ is a rectangular shape that displays content on a computer monitor. It is a very
                     <small>An example of the "Content"</small>
                   </ul>
 
-                  <p>In the frame there are buttons located on the top left corner or top right corner, depending on the platform. (<em>See <a href="#platform-specific-content">Platform Specific Content</a></em>) There is a slight variation on the frame depending on what type of window one is accessing. <em>(See the <a href="#variants">'Variant Appearance'</a> section below.)</em> Generally in the middle of the frame, there is a title containing the name of the content.</p>
-                  <p>The content component of  the window, varies greatly and is dependent upon the type of window you are accessing. Depending on the platform one is using the frame might envelope the content and acting in a literal sense like a frame. <em>See <a href="#platform-specific-content">Platform Specific Content</a></em>)</p>
-                  <img src="Yosemite-Screenshot.png" alt="picture of Yosemite window" height="200">
+                  <p>In the frame there are buttons located on the top left corner or top right corner, depending on the platform.
+                    There is a slight variation on the frame depending on what type of window one is accessing.
+                    Generally in the middle of the frame, there is a title containing the name of the content.
+                    The content component of  the window, varies greatly and is dependent upon the type of window you are accessing.
+                    Depending on the platform one is using the frame might envelope the content and acting in a literal sense like a frame.
+                  </p>
+                  <img src="Yosemite-Screenshot.png" alt="picture of Yosemite window" height="280">
                 </div>
 
                 <div class="col-xl-6">
@@ -114,7 +114,7 @@ is a rectangular shape that displays content on a computer monitor. It is a very
                   <h5>The frame</h5>
                   <ul>
                     <li>If you click and hold the frame, you are able to move the window by dragging your mouse</li>
-                    <li>By double clicking the the frame you can expand or compress the size of the window. As to how big it varies from different platforms.</li>
+                    <li>By double clicking the the frame you can expand or compress the size of the window. As to how big it varies for different platforms.</li>
                   </ul>
 
                   <h5>The window</h5>
@@ -139,41 +139,32 @@ is a rectangular shape that displays content on a computer monitor. It is a very
 
                     <img src="Selected-Deselected.png" alt="An example of an active and passive window" height="300">
                     <p>When a window is opened it is in its <code>active</code> state by default. In this scenario we will call this <strong>window 1</strong>. In this state <strong>window 1's</strong> you are able to either <code>maximize</code>, <code>minimize</code> or <code>exit</code> the window.</p>
-                    <img src="Diagram-1.png" alt="A single window open" height="200" width="400">
+                    <img src="Diagram-1.png" alt="A single window open" height="300">
                     <p>When the <strong>window 1</strong> is in its <code>maximized</code> state, the window expands to the size of ones computer monitor. Depending on the platform used a window can be <code>minimized</code> or <code>exited</code> in this state. By clicking the <code>maximize</code> button the user can restore the window to it's original size.</p>
                     <p>When the minimize button is clicked, <strong>window 1</strong> enters <code>minimized</code> state. In this state the window disappears and it resides in the dock/menu bar. If you click the <code>minimized</code> window in the dock/menu bar it restores in size.</p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/RRtMpZDEk1o" frameborder="0" allowfullscreen></iframe>
                     <p>Lets assume the user opens up another window called <strong>window 2</strong>. When this happens <strong>window 1</strong> is in it's <code>passive</code> state while <strong>window 2</strong> would be in its active. The user is alerted to this change when <strong>window 1</strong> appears to grayer than <strong>window 2</strong>.</p>
-                    <img src="Diagram-2.png" alt="A single window open" width="400">
+                    <img src="Diagram-2.png" alt="A single window open" height="300">
                     <p>If the user clicks <strong>window 1</strong>, then <strong>window 2</strong> would become passive while <strong>window 1</strong> would be active.</p>
-                    <img src="Diagram-3.png" alt="A single window open" width="400">
+                    <img src="Diagram-3.png" alt="A single window open" height="300">
                     <p>If the user opens up another window, in which we will call <strong>window 3</strong>, both <strong>window 1</strong> and <strong>window 2</strong> will be in its passive state and <strong>window 3</strong> will be in its active state.</p>
-                    <img src="ThreeWindows.png" alt="An active window and two passive windows" width="400">
+                    <img src="ThreeWindows.png" alt="An active window and two passive windows" height="300">
                     <p>When <strong>window 1</strong> and <strong>window 2</strong> are in its passive state, it acts like a background. In that <strong>window 3</strong> and windows in a passive state can overlap with <strong>window 3</strong> being on top.</p>
-                    <img src="ActiveOverlap.png" alt="An example of active passive window overlap"  width="400">
+                    <img src="ActiveOverlap.png" alt="An example of active passive window overlap"  height="300">
                   </div>
                 </div>
                 <div class="col-xl-6">
                   <h3>Additional Behavior</h3>
                   <h5>File Explorer</h5>
-                  <p>Along with the events described in the above. In the frame of a File Explorer there is an option to search for files on your computer or folder.  How this is implemented varies across platforms.  <em>(For more information please see the platform section below)</em></p>
-
-
-                  <p>Included in the frame exists a back and foward button. When clicked The content of the window changes to the previously viewed content if the back button is clicked. And the foward button opens the content currently viewed.</p>
-
-
-                  <p>In the content there exists a menu that allows quick access to directories. By clicking one of the options, the content of with window will change to the content of the directory shortcut you clicked. The directory shortcut menu is customizable.</p>
-
-
+                  <p>Along with the events described in the above. In the frame of a File Explorer there is an option to search for files on your computer or folder.  How this is implemented varies across platforms.  <em>(For more information please see the platform section)</em>
+                  Included in the frame exists a back and foward button. When clicked The content of the window changes to the previously viewed content if the back button is clicked. And the foward button opens the content currently viewed.
+                  In the content there exists a menu that allows quick access to directories. By clicking one of the options, the content of with window will change to the content of the directory shortcut you clicked. The directory shortcut menu is customizable.</p>
                   <h5>Dialog</h5>
                   <p>Unlike the File Explorer, Properties and Application windows, the Dialog window lacks a <code>maximize</code> button and a <code>minimize</code> button. Depending on the platform it may not even include an <code>exit</code> button.</p>
-
                   <h5>Alert</h5>
                   <p>Much like the dialog button, the Alert button lacks a <code>maximize</code>, <code>minimize</code> and possibly an <code>exit</code> button. However in contrast with the other types of windows when the Alert window is in its passive state it does not behave like a background. This window will always be on top of all windows.</p>
-
                   <h5>Application</h5>
                   <p>The most Application windows will behave as described above in the typical behavior sections as well as adopting to the nuinces of the platform.</p>
-
                 </div>
               </div>
             </div>
@@ -194,14 +185,14 @@ is a rectangular shape that displays content on a computer monitor. It is a very
                   <h3>Priority Metrics</h3>
                   <p>As a common and fundamental component in modern graphic user interfaces, the window compoent mainly focuses on four out of the five usability metrics:</p>
                   <ul>
-                    <li>Learnability</li>
-                    <small>A user seeing a window on any platform must not have any problems learning how it operates as it is the most common way to navigate through the computer's directory and to access files and to view content. </small>
-                    <li>Efficiency</li>
-                    <small>If a window delays, the user might make the mistake in trying to reopen the window. The result could be the opening of multiple windows. If this happens to be an Application window it could greatly slow down the computer.</small>
-                    <li>Errors</li>
-                    <small>A user must not trigger an error with a window. This is especially so with an application window. The error could cause the user's work to be deleted.</small>
-                    <li>Memorability</li>
-                    <small>Because a window is an important graphic user interface component, it would be tedious and counter-productive if the user is unable to remember how to use the component</small>
+                    <li><strong>Learnability</strong></li>
+                      <p>A user seeing a window on any platform must not have any problems learning how it operates as it is the most common way to navigate through the computer's directory and to access files and to view content.</p>
+                    <li><strong>Efficiency</strong></li>
+                      <p>If a window delays, the user might make the mistake in trying to reopen the window. The result could be the opening of multiple windows. If this happens to be an Application window it could greatly slow down the computer.</p>
+                    <li><strong>Errors</strong></li>
+                      <p>A user must not trigger an error with a window. This is especially so with an application window. The error could cause the user's work to be deleted.</p>
+                    <li><strong>Memorability</strong></li>
+                      <p>Because a window is an important graphic user interface component, it would be tedious and counter-productive if the user is unable to remember how to use the component.</p>
                   </ul>
                   <p>The last metric, <strong>satisfaction</strong>, is the least important because of window's commonality and simplicity. Not much pleasure can be derived from the functionality of a window.</p>
                 </div>
@@ -237,19 +228,19 @@ is a rectangular shape that displays content on a computer monitor. It is a very
 
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation" class="active nav-item"><a href="#Yosemite" aria-controls="Yosemite" role="tab" data-toggle="tab"
+                  <li role="presentation" class="active nav-item"><a href="#Yosemite" aria-controls="Yosemite" data-toggle="tab"
                     class="nav-link">Yosemite</a>
                   </li>
-                  <li role="presentation" class="nav-item"><a href="#Windows81" aria-controls="Windows81" role="tab" data-toggle="tab"
+                  <li role="presentation" class="nav-item"><a href="#Windows81" aria-controls="Windows81" data-toggle="tab"
                     class="nav-link">Windows 8.1</a>
                   </li>
-                  <li role="presentation" class="nav-item"><a href="#Ubuntu" aria-controls="Ubuntu 15" role="tab" data-toggle="tab"
+                  <li role="presentation" class="nav-item"><a href="#Ubuntu" aria-controls="Ubuntu 15" data-toggle="tab"
                     class="nav-link">Ubuntu 15</a>
                   </li>
-                  <li role="presentation" class="nav-item"><a href="#Android6" aria-controls="Android 6.0.1" role="tab" data-toggle="tab"
+                  <li role="presentation" class="nav-item"><a href="#Android6" aria-controls="Android 6.0.1" data-toggle="tab"
                     class="nav-link">Android 6.0.1</a>
                   </li>
-                  <li role="presentation" class="nav-item"><a href="#Android7" aria-controls="Android 7.0" role="tab" data-toggle="tab"
+                  <li role="presentation" class="nav-item"><a href="#Android7" aria-controls="Android 7.0" data-toggle="tab"
                     class="nav-link">Android 7.0</a>
                   </li>
                 </ul>
@@ -507,14 +498,16 @@ is a rectangular shape that displays content on a computer monitor. It is a very
                         along with other changes to the window layout aimed at freeing up user-interaction space.</p>
 
                       <h4>Distinguishing Characteristics</h4>
-                      <strong>Multi-Window</strong>
+
+                      <p>As one might expect, the Android 7.0 window improves upon the previous iterations of Android 6.0's window elements.</p>
+                      <h6>Multi-Window</h6>
                       <ul>
                         <li>Unlike previous releases of Android, Android 7.0 can run two apps side-by-side or one-above-the-other in splitscreen mode.
                           Apps opened in this way can be resized with a slider that separates the two. (Figure A.1.0)</li>
                         <li>Larger devices running Android 7.0 can enable freeform mode in which users can freely resize the size of side-by-side applications. (Figure A.1.1)</li>
-                        <li>Android 7.0 is the first Android platform to officially support this feature, previous versions had access to unstable developer versions of multi-window.</li>
-                        <li>App developers can decide wether or not they would like to enable multi-window, or their application's minimum allowable dimensions.
-                          This window size freedom gives developers the power to create new and enjoyable interactive features for their users.</li>
+                        <li>Android 7.0 is the first Android platform to officially support this feature, Android 6.0.1 had access to unstable developer versions of multi-window.</li>
+                        <li>App developers can decide wether or not they would like to enable multi-window and what their application's minimum allowable dimensions will be.
+                          This window size freedom gives developers the power to create new and enjoyable interactive features for their users such as on-screen interaction between two applications through direct manipulation.</li>
                       </ul>
 
                       <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
@@ -525,21 +518,21 @@ is a rectangular shape that displays content on a computer monitor. It is a very
                       <h5>Other Differences</h5>
 
                       <p>One kind of window which has seen a change in interaction in Android 7.0 is the Notifications window.
-                        Users have been given added utility with the ability to respond to notifications and interact with the respective application within the notification itself. (Figure A.1.4) </p>
+                        Users have been given increased utility with the ability to respond to notifications and interact with the respective application within the notification itself. (Figure A.1.4) </p>
 
                         <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
                           <div class="col-sm-6"><img src="android7-pictures/inline-reply.png" alt="notification inline-reply" width="100%"><p><em>Figure A.1.0</em></p></div>
                         </div>
 
-                      <p>Previous iterations of the Android notificaiton windows were notorious for clutter and filling up large portions of the screen.
+                      <p>Previous iterations of the Android notificaiton windows were notorious for clutter and filling up large portions of the screen when expanded.
                         Android 7.0 introduces bundled notifications so that multiple notifications from the same app are visibly stacked on top of each other for the user to click on and exapnd to view.</p>
 
                       <div class="image-row text-center row" style="margin: 2em auto 2em auto;">
                         <div class="col-sm-4"><img src="android7-pictures/bundles.png" alt="notification bundles" width="100%"><p><em>Figure A.1.0</em></p></div>
                       </div>
 
-                      <p>Android's window element development has begun to steer toward increasing user satisfaction through increased user control of the windows on their screen.
-                      Although smartphone screens are small relative to computers, Android developers have begun to find common ground with which they can free up the user's window while increasing utility and preserving functionality.</p>
+                      <p>Development of Android's window element has begun to steer toward increasing user satisfaction through increased user control of the windows on their screen.
+                      Although smartphone screens are small in comparison to computers, Android developers have begun to find common ground with desktop interactoin to free up the user's window while increasing utility and preserving functionality.</p>
 
                     </div>
                     <div class = "row">
