@@ -23,13 +23,13 @@ contributors:
 <div>
 	The typical behavior of any system's login/unlock screen is to provide security from unwanted access. A desktop or laptop computer’s login screen is likely to be recognizable whether it is run on Windows, Linux, or OSX. While the aesthetics may change from platform to platform, the same idea and function is prevalent in all platforms. Each screen has a number of possible users that can be accessed. Each interface has the option of restarting or shutting down the system. If the account has no security, the user can automatically login. Mobile platforms typically have extra functionality like the ability to view notifications and access other device specific actions like apps and messages. Similarly to their desktop and laptop counterparts, mobile devices require password or passcode entry to access the device. Please see <a href="#platform-specific-instances">platform-specific instances</a> for more.
 </div><br>
-<h4>Events</h4>
+<h3>Events</h3>
 <div>
 	The main purpose of login/unlock screens is to provide a security barrier against unwanted users. The primary way to accomplish this is to have a text entered password or passcode that is required for entry into the system. Hence, the most relevant events for the majority of login and unlock systems are for entering in text, clearing text, errors (for denying the password), and accepts (for accepting the passcode).
 </div><br>
-<h4>State Diagram</h4><img alt="State Diagram" src="https://enricohomann.files.wordpress.com/2011/11/paper_2011_nov_09_statemachine_status_002.png"><br>
+<h3>State Diagram</h3><img alt="State Diagram" src="https://enricohomann.files.wordpress.com/2011/11/paper_2011_nov_09_statemachine_status_002.png"><br>
 <br>
-<h4>Component in Action</h4>
+<h3>Component in Action</h3>
 <div class="row">
 	<div class="col-sm-6">
 	<h6>Windows 7 Login/Unlock Page</h6><img alt="Windows 7 Login" height="315" src="http://img15.deviantart.net/9d6f/i/2009/210/b/6/area_se7en_login_screen_for_xp_by_save3c.jpg" width="560"><br>
@@ -72,16 +72,16 @@ contributors:
 		<h2>Typical Appearance</h2>
 		<div>
 			<div>The appearance of login screens on desktop systems typically contain a two main features: a selection of users and a text box in which to enter passwords. OSX and Windows systems also allow the user to create an avatar for themselves. Mobile devices typically implement some version of a lock screen that displays notifications and other information that the user can view without unlocking their device as well as a separate login screen that displays an interactive interface for which users can set up a password, PIN, or other type of passcode to secure their device. A common feature on newer platforms on both mobile and desktop systems allow users to choose background images for their lock screens.</div><br>
-			<div>For more information regarding each specific platform's typical appearance, please navigate through the following links for more:</div><a href="#typical-appearance-Mavericks">
-
-      <!-- FIX THIS SECTION -->
-      <a href="#OSX Mavericks">OSX Mavericks</a><br>
-      <a href="#OSX Yosemite">OSX Yosemite</a><br>
-      <a href="#macOS Sierra">macOS Sierra</a><br>
-      <a href="#Windows 10">Windows 10</a><br>
-      <a href="#Android Marshmallow">Android Marshmallow</a><br>
-      <a href="#iOS 10">iOS 10</a><br>
-      <a href="#iOS 11">iOS 11</a><br><br><br>
+			<div>For more information regarding each specific platform's typical appearance, please navigate through the following links for more:</div><br>
+      <!-- Navigation -->
+      <ul style="list-style-type:square">
+      <li><a href="#OSX Mavericks">OSX Mavericks</a></li><br>
+      <li><a href="#OSX Yosemite">OSX Yosemite</a></li><br>
+      <li><a href="#macOS Sierra">macOS Sierra</a></li><br>
+      <li><a href="#Windows 10">Windows 10</a></li><br>
+      <li><a href="#Android Marshmallow">Android Marshmallow</a></li><br>
+      <li><a href="#iOS 10">iOS 10</a></li><br>
+      <li><a href="#iOS 11">iOS 11</a></li><br><br><br>
 
 		<div id="anrdoid-login-examples" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
@@ -115,25 +115,25 @@ contributors:
       <a class="carousel-control-next" data-slide="next" href="#anrdoid-login-examples" role="button">
         <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
         <span class="sr-only">Next</span></a>
-		</div>
+		</div><br>
 
 		<h2>Priority Metrics</h2>
 		<div>
 			The most important priority metric for a login/unlock user interface is efficiency. As login screens are so prevalent across a variety of platforms, most users will gain no satisfaction from correctly logging in; rather, they likely only care that this happens as quickly as possible.
 		</div>
 		<div>
-			Learnability and errors are equal parts important in improving efficiency. The few users who are unaware of what a login screen does are likely also unfamiliar with the concept of a password. They might thus be confused when prompted for a password to log in. Errors are unlikely for experienced computer users -other than typing in a wrong password, which doesn’t apply here-. However, all platforms need clear navigation for sleep, restart, shut down, and clicking on the desired user so as to reduce errors and improve efficiency.
-		</div>
+			Learnability and errors are equal parts important in improving efficiency. The few users who are unaware of what a login screen does are likely also unfamiliar with the concept of a password. They might thus be confused when prompted for a password to log in. Errors are unlikely for experienced computer users other than typing in a wrong password, which doesn’t apply here. However, all platforms need clear navigation for sleep, restart, shut down, and clicking on the desired user so as to reduce errors and improve efficiency.
+		</div><br>
     <h2 id="variants">Variants</h2>
 		<div>
 			The most common way to login to the computer is through a password. Both Windows and all OSX platforms have this option. If the user types in the wrong password a password hint will be shown if previously supplied by the user. Once the user types in the correct password, they are successfully logged in to their account.
-		</div>
+		</div><br>
 		<div>On Windows 7, some computers have the option for a fingerprint scanner. A fingerprint scanner allows the user to use their fingerprint as a password by swiping their selected finger onto the scanner. As such, either the fingerprint or password for each user can be used to unlock the computer.<br>
 		<img alt="Fingerprint" height="50%" src="http://img.wonderhowto.com/img/49/93/63482455627656/0/flawed-laptop-fingerprint-readers-make-your-windows-password-vulnerable-hackers.w654.jpg" width="50%"></div>
-		<div>
+		<br><div>
 			In macOS Sierra, users can also log in to their computer through their Apple Watch, if they have one.<br>
 			<iframe allowfullscreen frameborder="0" height="315" src="https://www.youtube.com/embed/aHCSgdKHrPs" width="560"></iframe>
-		</div><p
+		</div><br>
 		<h2>Key Characteristics</h2>
 		<div>
 			The purpose of a login screen is generally to implement security. Henceforth an important characteristic that a good login screen should have would be to make sure that everything is secure. The login screen is the first line of defense when it comes to physical hackers and all the information inside your phone. <!-- The Unlock/Login screen allows selection and provides an easy, spaced out layout for the different domains. It becomes easy to navigate and zooms in when a domain is selected. At the Unlock window, it provides examples and intuitive instructions.
@@ -143,19 +143,19 @@ contributors:
   OS X's design follows uses clear and precise languge as well as clear UI content so the screen isn't cluttered or hard to follow. The guidelines are specifically followed by making the interface the main point instead of aesthetic.</div>
   <h4> Feedback </h4>
   <div>When the button is pressed, it provides feedback by comprehensively showing that the computer is being unlocked by taking away the unlock screen. It replaces the screen with a different screen and unlocks the computer if its works; otherwise it will return to the unlock screen. -->
-		</div>
-		<h2 id="platform-specific-instances">Platform-Specific Instances</h2><br />
+  </div><br>
+		<h2 id="platform-specific-instances">Platform-Specific Instances</h2>
 
     <p id="OSX Mavericks">
-    <h4 id="typical-appearance-Mavericks">OSX Mavericks</h4>
+    <h3 id="typical-appearance-Mavericks">OSX Mavericks</h3>
 		<div>
 			For OSX Mavericks, if the user types in the wrong password, the domain image will vibrate and ask for the password again. If the user gets the password wrong three times, OS X will go into sleep mode. The user may change these options such as adding more tries for the password or adding hints for the correct password. In addition if the caps lock is on for either platform, their will be a notifcation. Windows 7 will specifically tell you on the screen while OS X will show a greyed out image. Both platforms provide buttons to enter the password after it has been typed. (See Button page for more information about buttons).
 		</div>
 		<div>
 			OSX Maverick's design follows uses clear and precise languge as well as clear UI content so the screen isn't cluttered or hard to follow. The guidelines are specifically followed by making the interface the main point instead of aesthetic.
-		</div></p>
+		</div></p><br>
     <p id="OSX Yosemite">
-		<h4 id="typical-appearance-Yosemite">OSX Yosemite</h4>
+		<h3 id="typical-appearance-Yosemite">OSX Yosemite</h3>
 		<div>
 			Mac OSX Mavericks and Yosemite have exactly the same behavior. In addition to the standard behavior of a computer’s log in screen, if the user types in the wrong password in both OSX Mavericks and OSX Yosemite the screen vibrates to alert the user of their error. This is in contrast to Windows, which does not have any animation for an incorrect password.
 		</div>
@@ -164,22 +164,15 @@ contributors:
 		</div>
 		<div>
 			The key characteristic of a OSX Yosemite login screen is consistency. As per Apple’s main design principles, consistency means keeping the fundamental concept of a system relatively unchanged throughout releases. This is apparent in the similarities between OSX Mavericks and Yosemite; Apple’s developers kept Yosemite’s design and functionality nearly exactly the same to avoid confusion for Mac users. Consistency also relates to the login screen’s adherence to Apple’s UI guidelines. The design of the login screen closely follows the guidelines, as seen by the labels underneath the icons, which are also a key element of the iOS home screen.
-		</div></p>
+		</div></p><br>
     <p id="macOS Sierra">
-		<h4 id="typical-appearance-Sierra">macOS</h4>
+		<h3 id="typical-appearance-Sierra">macOS</h3>
 		<div>
 			Outside of the ability to unlock one's macbook with an Apple watch (as seen in <a href="#variants">Variants</a>) the behavior of macOS and OSX Yosemite are exactly the same. There is only one minor difference in regards to appearance between Yosemite and macOS. As demonstrated below, after successful login, the user icon slowly fades out into the desktop background. This in contrast to Yosemite, which has a more abrupt transition. This was likely another attempt by Apple to make their software more satisfying to use.
 		</div><iframe allowfullscreen frameborder="0" height="315" src="https://www.youtube.com/embed/DnaTIaw8WuE" width="560"></iframe><br>
 		<br>
-		<br>
     <p id="Android Marshmallow">
-		<div class="row">
-			<div class="col-sm-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title text-center">Android Marshmallow 6.01</h3>
-					</div>
-					<div class="panel-body">
+				<h3 id="typical-appearance-Android">Android Marshmallow 6.01</h3>
 						<h4>General Idea</h4>
 						<blockquote class="text-justify">
 							The login and unlock screen in general grants the user with an extra layer of security to their platforms. It is no different for Android phones running on the Marshmallow. One huge differrence that the iOS and Android have compared to the desktop login/unlock screens is the fact that most or even all phones running those operating systems operate with a touch screen. The Android Marshmallow distinctly utilizes the touchscreen to increase phone security (see: <a href="#variants-android">variants</a> ) that would not be as efficient as if your only options of manipulating the screen was to use a mouse and a keyboard.
@@ -276,10 +269,9 @@ contributors:
 					<p></p>
 					<p class="text-center"><em><sup>"Hello World" Lock Screen Message</sup></em></p>The personalized message typically appears in a smaller font beneath the time and date displayed on the lock screen. For the typical appearance of a login/unlock screen, see <a href="#typical-appearance-android">typical appearance</a> for Android Marshmallow.
 				</blockquote>
-			</div>
 			<p></p>
-		</div>
-		<h4 id="typical-appearance-android">Typical Appearance</h4>
+
+		<div><h4 id="typical-appearance-android">Typical Appearance</h4>
 		<blockquote class="text-justify">
 			The lock screen in general, is a screen in which the user does not generally more than a few seconds on. Therefore, information displayed on it first and foremost should display the most relevant information in most given situations such as the time, the date, and the day, most of which could be located on the mid to upper center area of the screen. The android lock screen will also show the user which pull-down menu feature the user has running and their current status(such as wifi, mobile data, location) on the upper right corner of the screen, along with the status of the phone's battery. The lock screen will also show the user's phone provider service on the upper left hand screen.
 			<p></p>
@@ -290,34 +282,27 @@ contributors:
 		As most, if not all, Android phones that run on the Marshallow utilize a touchscreen, the lock screen on an Android behaves such that it will react to the user's touch. When the user touches the three icons on the bottom, the icons will react showing feedback. For example, the voice assist button and the camera button has a circle that engulfs the icons once pressed and as the user moves their finger, the circle will grow larger until the application is opened. Pressing those three buttons will show a prompt which tells the user to continue swiping in order to open the app or the phone.
 		<p>Basically an Android lock screen starts with the initial lock screen which displays the information (date, time, etc). If the user has set up an extra measure of security, swiping on the screen will bring up said measure of security, be it the grid pattern lock, or the pin lock, etc. Once the user has input the correct code, the user will then be lead to the phone's home screen, and thus the user will no longer be in the login screen.</p>
 	</blockquote>
-</div></p>
+</p>
 
 <!-- iOS 10 -->
 <p id="iOS 10">
-<div class="row">
-	<div class="col-sm-6">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title text-center">iOS 10</h3>
-			</div>
-			<div class="panel-body">
+				<h3 id="iOS 10">iOS 10</h3>
 				<h4>General Idea</h4>
 				<blockquote class="text-justify">
 					The unlock, or rather, the lock screen for iOS 10 acts as a typical login/unlock screen would in that it provides security from any unwanted access to the device. However, iOS 10 has added features that allow the user to customize their lock screen to make it more convenient and usable for every day needs.
 					<p></p>
 					<p></p>
 				</blockquote>
-			</div>
 			<h4 id="typical-appearance-iOS-10">Typical Appearance</h4>
 			<blockquote class="text-justify">
 				iOS 10 allows for a good amount of customization options for the appearance of the lock screen. There are a number of default wallpapers that can be set for the background as well as any photos from the user’s own photo library. Along with photos, iOS 10 allows users to make moving images or live photos the background of their lock screen. Users can also choose how they would like to format their date and time.
 				<p></p>
-				<p><img alt="iOS10 Lock Screen" class="img-fluid mx-auto" src="iOS10Lock.PNG"></p>
+        <blockquote class="text-center">
+          <p><img alt="iOS10 Lock Screen" class="img-fluid mx-auto" src="iOS10Lock.PNG"></p></blockquote>
 				<p></p>
 				<p></p>
 				<p class="text-center"><em><sup>Default appearance for iOS 10 lock screen on the left and picture from user library on the right.</sup></em></p>
 			</blockquote>
-		</div>
 		<h4>Variants</h4>
 		<blockquote class="text-justify">
 			iOS 10 has various options for unlocking the device.
@@ -336,7 +321,8 @@ contributors:
 				</li>
 				<li style="list-style: none; display: inline">
 					<p></p>
-					<p><img alt="iOS10 4 and 6 digit passcode" class="img-fluid mx-auto" src="4and6DigitCode.png"></p>
+          <blockquote class="text-center">
+            <p><img alt="iOS10 4 and 6 digit passcode" class="img-fluid mx-auto" src="4and6DigitCode.png"></p></blockquote>
 					<p></p>
 					<p></p>
 					<p class="text-center"><em><sup>Option to enter a 4 or 6 digit passcode.</sup></em></p>
@@ -353,7 +339,8 @@ contributors:
 				</li>
 				<li style="list-style: none; display: inline">
 					<p></p>
-					<p><img alt="iOS10 Alphanumeric Passcode" class="img-fluid mx-auto" src="alphanumcode.png"></p>
+          <blockquote class="text-center">
+            <p><img alt="iOS10 Alphanumeric Passcode" class="img-fluid mx-auto" src="alphanumcode.png"></p></blockquote>
 					<p></p>
 					<p></p>
 					<p class="text-center"><em><sup>Option to enter a customizable alphanumeric passcode of any length.</sup></em></p>
@@ -363,16 +350,16 @@ contributors:
 				</li>
 				<li style="list-style: none; display: inline">
 					<p></p>
-					<p><img alt="iOS10 Touch ID" class="img-fluid mx-auto" src="touchid.jpg"></p>
+          <blockquote class="text-center">
+            <p><img alt="iOS10 Touch ID" class="img-fluid mx-auto" src="touchid.jpg"></p></blockquote>
 					<p></p>
 					<p></p>
 					<p class="text-center"><em><sup>A user setting up Touch ID for thier iPhone.</sup></em></p>
 				</li>
 			</ul>
 		</blockquote>
-	</div>
 <div class="col-s-6">
-	<h4>Behavior</h4>
+	<h4>Typical Behavior</h4>
 	<blockquote class="text-justify">
 		The behavior of iOS 10’s lock screen is like that of any other kind of login/unlock screen; it serves to keep the device secure from any unwanted entry. However, iOS 10 allows for additional functionality within the lock screen.
 		<p></p>
@@ -390,7 +377,8 @@ contributors:
 			</li>
 			<li style="list-style: none; display: inline">
 				<p></p>
-				<p><img alt="iOS10 Lock screen to Camera" class="img-fluid mx-auto" src="locktocamera.gif"></p>
+        <blockquote class="text-center">
+          <p><img alt="iOS10 Lock screen to Camera" class="img-fluid mx-auto" src="locktocamera.gif"></p>
 				<p></p>
 				<p></p>
 				<p class="text-center"><em><sup>Accessing camera from iOS 10 lock screen.</sup></em></p>
@@ -400,7 +388,8 @@ contributors:
 			</li>
 			<li style="list-style: none; display: inline">
 				<p></p>
-				<p><img alt="iOS10 Lock screen notifications" class="img-fluid mx-auto" src="iOS10notifications.jpg"></p>
+        <blockquote class="text-center">
+          <p><img alt="iOS10 Lock screen notifications" class="img-fluid mx-auto" src="iOS10notifications.jpg"></p></blockquote>
 				<p></p>
 				<p></p>
 				<p class="text-center"><em><sup>User's are able to see recent notifications from the lock screen.</sup></em></p>
@@ -410,7 +399,8 @@ contributors:
 			</li>
 			<li style="list-style: none; display: inline">
 				<p></p>
-				<p><img alt="iOS10 Lock screen control center" class="img-fluid mx-auto" src="iOS10control.png"></p>
+        <blockquote class="text-center">
+          <p><img alt="iOS10 Lock screen control center" class="img-fluid mx-auto" src="iOS10control.png"></p></blockquote>
 				<p></p>
 				<p></p>
 				<p class="text-center"><em><sup>User's are able to use the control center from iOS 10's lock screen.</sup></em></p>
@@ -420,7 +410,8 @@ contributors:
 			</li>
 			<li style="list-style: none; display: inline">
 				<p></p>
-				<p><img alt="iOS10 Lock Screen Widgets" class="img-fluid mx-auto" src="widgets.png"></p>
+        <blockquote class="text-center">
+          <p><img alt="iOS10 Lock Screen Widgets" class="img-fluid mx-auto" src="widgets.png"></p></blockquote>
 				<p></p>
 				<p></p>
 				<p class="text-center"><em><sup>User's can customize their widgets for convenient app data.</sup></em></p>
@@ -430,7 +421,8 @@ contributors:
 			</li>
 			<li style="list-style: none; display: inline">
 				<p></p>
-				<p><img alt="iOS10 Lock Screen Music" class="img-fluid mx-auto" src="foofighters.png"></p>
+        <blockquote class="text-center">
+	         <p><img alt="iOS10 Lock Screen Music" class="img-fluid mx-auto" src="foofighters.png"></p></blockquote>
 				<p></p>
 				<p></p>
 				<p class="text-center"><em><sup>User's can see information of a song they are listening to and skip through songs.</sup></em></p>
@@ -440,7 +432,7 @@ contributors:
 			</li>
 			<li style="list-style: none; display: inline">
 				<p></p>
-				<p><img alt="iOS10 Lock Screen Messages" class="img-fluid mx-auto" src="ufo.png"></p>
+				<blockquote class="text-center"><p><img alt="iOS10 Lock Screen Messages" class="img-fluid mx-auto" src="ufo.png"></p></blockquote>
 				<p></p>
 				<p></p>
 				<p class="text-center"><em><sup>User's can see received messages and respond to them from iOS 10's lock screen.</sup></em></p>
@@ -450,14 +442,13 @@ contributors:
 			</li>
 			<li style="list-style: none; display: inline">
 				<p></p>
-				<p><img alt="iOS10 Lock Screen Voice Commands" class="img-fluid mx-auto" src="iOS10voice.png"></p>
+					<blockquote class="text-center"><p><img alt="iOS10 Lock Screen Voice Commands" class="img-fluid mx-auto" src="iOS10voice.png"></p></blockquote>
 				<p></p>
 				<p></p>
 				<p class="text-center"><em><sup>User's can access voice commands from iOS 10's lock screen.</sup></em></p>
 			</li>
 		</ul>
 	</blockquote>
-</div>
 </div></p>
 
 <!-- iOS 11 -->
@@ -506,17 +497,12 @@ contributors:
 
 <!-- Windows 10 -->
 <p id="Windows 10">
-<div class="col-sm-6">
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h3 class="panel-title text-center" id="typical-appearance-windows-10">Windows 10</h3>
-		</div>
-		<div class="panel-body">
+	  <h3 id="typical-appearance-windows-10">Windows 10</h3><div>
 			<h4>General Idea</h4>
-			<blockquote class="text-justify">
+			<p>
 				The Windows 10 login screen utilizes the traditional features of previous Windows operating systems with a few new and subtle additions. With the rising popularity of mobile computing, the Windows 10 login screen has implemented features inspired by popular mobile platforms such as Android and iOS. These features make Windows 10's login screen more intuitive when used with a touchscreen and even provide functionality over the basic features of a regular login screen. This includes multiple methods of security (see: <a href="#variants-windows10">variants</a>), a display for the status of certain apps, and even access to Cortana, Windows' "intelligent personal assistant", through vocal input.
 				<p></p>
-				<p><img alt="General Windows 10 Lock Screen" class="img-fluid mx-auto" src="win10lock.jpg"></p>
+					<blockquote class="text-center"><p><img alt="General Windows 10 Lock Screen" class="img-fluid mx-auto" src="win10lock.jpg"></p></blockquote>
 				<p class="text-center"><em><sup>Example of a lock screen on Windows 10</sup></em></p>
 				<p>When first using a Windows 10 device, one might notice that the operating system uses both a lock screen and a login screen. From the initial lock screen, the user can click (or swipe upwards if their device has a touchscreen) to access the login screen. The lock screen displays information that you would typically check on at a glance without logging in to the computer. The information can be customized to suit the needs of the user. This includes:</p>
 				<ul>
@@ -545,31 +531,31 @@ contributors:
 					</li>
 				</ul>
 			</blockquote>
-		</div>
 		<h4>Cortana</h4>
 		<blockquote class="text-justify">
 			Windows 10's lock screen allows the user to access Cortana through vocal commands. Users can ask her questions, create reminders, and add events to their calendars without unlocking their devices. It also allows users to open apps, conduct internet searches, send emails and texts, and more. This addition gives the user easy access to their computer when they need to be productive on the go. Cortana can be accessed using the vocal command "Hey, Cortana!"
-			<p><video autoplay="" class="img-fluid mx-auto" controls="" loop=""><source src="cortanalock.webm" type="video/webm">
+      <blockquote class="text-center">
+        <p><video autoplay="" width="480" height="480" controls="" loop="true"><source src="cortanalock.webm" type="video/webm">
+        </blockquote>
 			<p class="text-center"><em><sup>Cortana can be accessed from the lock screen</sup></em></p></video></p>
 		</blockquote>
-	</div>
 	<h4 id="variants-windows10">Login Screen Variants</h4>
 	<blockquote class="text-justify">
 		The login screen can be accessed by clicking or swiping the lock screen. Windows 10 has various options for unlocking the device.
 		<p></p>
 		<ul>
 			<li style="list-style: none">
-				<img class="img-fluid mx-auto" src="win10log.jpg">
+				<blockquote class="text-center"><img width="860" height="480" src="win10log.jpg">
 				<p></p>
 				<p></p>
-				<p class="text-center"><em><sup>The standard password login screen.</sup></em></p>
+				<p class="text-center"><em><sup>The standard password login screen.</sup></em></p></blockquote>
 			</li>
 			<li>
 				<p><b><em>Password:</em></b> Windows 10 allows the user to protect their device using a password containing letters, symbols, and digits.</p>
 			</li>
 			<li style="list-style: none; display: inline">
 				<p></p>
-				<p><img class="img-fluid mx-auto" src="animelock.jpg"></p>
+			  <blockquote class="text-center"><p><img width="860" height="480" src="animelock.jpg"></p></blockquote>
 				<p></p>
 				<p></p>
 				<p class="text-center"><em><sup>The PIN login screen.</sup></em></p>
@@ -579,7 +565,7 @@ contributors:
 			</li>
 			<li style="list-style: none; display: inline">
 				<p></p>
-				<p><img class="img-fluid mx-auto" src="picturepass.gif"></p>
+				<blockquote class="text-center"><p><img class="img-fluid mx-auto" src="picturepass.gif"></p></blockquote>
 				<p></p>
 				<p></p>
 				<p class="text-center"><em><sup>A picture password with 3 gestures.</sup></em></p>
@@ -593,7 +579,7 @@ contributors:
 			</li>
 		</ul>
 	</blockquote>
-</div></p>
+</div></p></div>
 <h3>References</h3><a href="https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/">Apple Guidelines</a>
 <p></p><a href="https://www.youtube.com/watch?v=TjxAgiNqkDM">Apple Login Screen Instructions</a>
 <p></p><a href="http://img.wonderhowto.com/img/49/93/63482455627656/0/flawed-laptop-fingerprint-readers-make-your-windows-password-vulnerable-hackers.w654.jpg">Finger Print Scanner Image</a>
