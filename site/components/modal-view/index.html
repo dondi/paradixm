@@ -21,10 +21,11 @@ contributors:
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-12">
-      <nav class="nav nav-pills nav-justified">
+      <nav class="nav nav-tabs nav-justified">
         <a class="nav-link active" data-toggle="tab" href="#typical-appearance">Typical Appearance</a>
         <a class="nav-link" data-toggle="tab" href="#typical-behavior">Typical Behavior</a>
         <a class="nav-link" data-toggle="tab" href="#priority-metrics">Priority Metrics</a>
+        <a class="nav-link" data-toggle="tab" href="#key-characteristics">Key Characteristics</a>
         <a class="nav-link" data-toggle="tab" href="#events">Events</a>
         <a class="nav-link" data-toggle="tab" href="#variants">Variants</a>
         <a class="nav-link" data-toggle="tab" href="#platform-specifics">Platform Specifics</a>
@@ -36,15 +37,16 @@ contributors:
 <div class="tab-content">
 
   <div class="tab-pane active" id="typical-appearance" role="tabpanel">
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-body">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
 
               <h3>Typical Appearance</h3>
 
-              <blockquote>Generally speaking, a modal view will appear as a dialogue box in the center of a window or application and prompt the user with a choice, requiring the selection of a decision through a button or an exit action.</blockquote>
+              <p></p>
+              <p>Generally speaking, a modal view will appear as a dialogue box in the center of a window or application and prompt the user with a choice, requiring the selection of a decision through a button or an exit action.</p>
 
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                 Modal View Example
@@ -79,21 +81,72 @@ contributors:
     </div>
   </div>
 
+  <div class="tab-pane" id="key-characteristics" role="tabpanel">
+    <div class="card">
+      <div class="card-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <h3>Key Characteristics</h3>
+
+              <p></p>
+
+              <p>Modal views are largely designed with its purpose in mind, along with the type of user response (required, optional, or acknowledgement).</p>
+              <p>Modal views should use the following elements effectively:
+                <ul>
+                  <li>Dialog text</li>
+                  <li>Main instruction</li>
+                  <li>Don't show this [modal view] again </li>
+                </ul>
+                <img src="dontShowAgain.png" alt="Image Missing" class="img-thumbnail img-responsive giphy-embed">
+                <br>
+                <small>Example of a "Don't show this again" dialog.</small>
+                <p></p>
+                The usage of these elements should take the context of the modal view into consideration, as some may not require certain user responses.
+              </p>
+              <p>Some common usage patterns of modal views include:
+                <ul>
+                  <li><b>Question Modals</b> – Users are asked a simple question or to confirm a command, where command buttons are simply horizontally arranged. Alternatively, the single question could ask for detailed responses from the user arranged in a more vertical manner.</li>
+                  <li><b>Choice Modals</b> – Users can be asked multiple questions, typically to specify a command more completely. Users are presented with a set of choices.</li>
+                  <li><b>Progress Modals</b> – Users are presented feedback on lengthy operations, along with a command to cancel it if they would like.</li>
+                  <li><b>Login Modals</b> – Users are prompted to provide login credentials, usually with a "Log In" and "Cancel" option. Mostly found on mobile devices, with the exception of certain web addresses (such as connecting to a home router via IP).</li>
+                  <li><b>Information Modals</b> – Users are displayed information they requested.</li>
+                </ul>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+                    <img src="choiceDialog.png" alt="ImageMissing" class="img-thumbnail img-responsive giphy-embed">
+                <br>
+                <small>A simple choice modal which explains to a user what has occurred and provides two options listed vertically to choose from.</small>
+            </div>
+            <div class="col-lg-6">
+                <img src="loginModal.png" alt="ImageMissing" class="img-thumbnail img-responsive giphy-embed">
+                <br>
+                <small>A browser-based login modal seen when trying to access a home router.</small>
+              </p>
+            </div>
+            <br>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <div class="tab-pane" id="typical-behavior" role="tabpanel">
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-body">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
 
               <h3>Typical Behavior</h3>
 
-              <blockquote>
+              <p></p>
                 <p>Modal views typically prompt the user to perform an action before allowing the user to continue interacting with said window or application.</p>
 
-                  <p>Modal views will usually be prompted when a window or application requires the user’s attention before continuing, such as when a user is able to update their system or if the window chooses to warn the user about committing an action. Modal views are also used by websites to inform the user about logins, advertisements, updates to the site, etc.</p>
-
-              </blockquote>
+                <p>Modal views will usually be prompted when a window or application requires the user’s attention before continuing, such as when a user is able to update their system or if the window chooses to warn the user about committing an action. Modal views are also used by websites to inform the user about logins, advertisements, updates to the site, etc.</p>
 
               <h4>Component in Action</h4>
 
@@ -106,19 +159,21 @@ contributors:
     </div>
 
   <div class="tab-pane" id="priority-metrics" role="tabpanel">
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-body">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
 
               <h3>Priority Metrics</h3>
 
+              <p></p>
+
               <div class="panel-group" id="priority-group">
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority1">Learnability</a>
+                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority1"><code>Learnability</code></a>
                     </h3>
                   </div>
                   <div id="priority1" class="panel-collapse collapse">
@@ -129,7 +184,7 @@ contributors:
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority2">Efficiency</a>
+                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority2"><code>Efficiency</code></a>
                     </h3>
                   </div>
                   <div id="priority2" class="panel-collapse collapse">
@@ -140,7 +195,7 @@ contributors:
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority3">Errors</a>
+                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority3"><code>Errors</code></a>
                     </h3>
                   </div>
                   <div id="priority3" class="panel-collapse collapse">
@@ -151,7 +206,7 @@ contributors:
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority4">Memorability</a>
+                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority4"><code>Memorability</code></a>
                     </h3>
                   </div>
                   <div id="priority4" class="panel-collapse collapse">
@@ -162,7 +217,7 @@ contributors:
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority5">Satisfaction</a>
+                      <a data-toggle="collapse" data-parent="#priority-group" href="#priority5"><code>Satisfaction</code></a>
                     </h3>
                   </div>
                   <div id="priority5" class="panel-collapse collapse">
@@ -178,19 +233,21 @@ contributors:
   </div>
 
   <div class="tab-pane" id="events" role="tabpanel">
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-body">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
 
-              <h3>Events</h3>
+              <h2>Events</h2>
+
+              <p></p>
 
               <div class="panel-group" id="event-group">
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#event-group" href="#event1">appear</a>
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event1"><code>appear</code></a>
                     </h3>
                   </div>
                   <div id="event1" class="panel-collapse collapse">
@@ -201,7 +258,7 @@ contributors:
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#event-group" href="#event2">disappear</a>
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event2"><code>disappear</code></a>
                     </h3>
                   </div>
                   <div id="event2" class="panel-collapse collapse">
@@ -212,7 +269,7 @@ contributors:
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#event-group" href="#event3">key-esc</a>
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event3"><code>key-esc</code></a>
                     </h3>
                   </div>
                   <div id="event3" class="panel-collapse collapse">
@@ -223,7 +280,7 @@ contributors:
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#event-group" href="#event4">key-enter</a>
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event4"><code>key-enter</code></a>
                     </h3>
                   </div>
                   <div id="event4" class="panel-collapse collapse">
@@ -234,7 +291,7 @@ contributors:
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#event-group" href="#event5">string input</a>
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event5"><code>string input</code></a>
                     </h3>
                   </div>
                   <div id="event5" class="panel-collapse collapse">
@@ -245,7 +302,7 @@ contributors:
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#event-group" href="#event6">click</a>
+                      <a data-toggle="collapse" data-parent="#event-group" href="#event6"><code>click</code></a>
                     </h3>
                   </div>
                   <div id="event6" class="panel-collapse collapse">
@@ -255,11 +312,13 @@ contributors:
 
               </div>
 
-              <h4>State Diagram</h4>
+              <br>
+
+              <h3>State Diagram</h3>
 
               <blockquote>
                 The typical flow of a modal window appearing on a user’s screen is as follows:
-                <p></p>
+                <br>
                 <ul class="list-group">
                   <li class="list-group-item">A user will perform an action that prompts the modal window’s popup.</li>
                   <li class="list-group-item">The modal window will ask for user input.</li>
@@ -279,8 +338,8 @@ contributors:
   </div>
 
   <div class="tab-pane" id="variants" role="tabpanel">
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-body">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
@@ -361,8 +420,8 @@ contributors:
   </div>
 
   <div class="tab-pane" id="platform-specifics" role="tabpanel">
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-body">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
@@ -375,20 +434,38 @@ contributors:
                     <div class="row">
                       <div class="col-lg-6">
 
-                        <h2>iOS</h2>
+                        <h4>iOS</h4>
 
-                        <p>The modal view on the Iphone is a small white box that appears in the center of the screen.  Any clickable items are in blue text to highlight that they are interactable.  There is very little text to keep the modal view compact and there are very few clickable items to make the modal view easy to interpret and interact with.  The background behind the modal view is grayed out to signify that the modal view must be interacted with.  Modal views on the Iphone can also be interacted with using the thumbprint technology.</p>
+                        <p>The modal view on the iPhone is a small white box that appears in the center of the screen.  Any clickable items are in blue text to highlight that they are interactable.  There is very little text to keep the modal view compact and there are very few clickable items to make the modal view easy to interpret and interact with.  The background behind the modal view is grayed out to signify that the modal view must be interacted with.  Modal views on the Iphone can also be interacted with using the thumbprint technology.</p>
 
                         <img src="iphone thumb.png" alt="Image Missing" class="img-thumbnail img-responsive giphy-embed">
                       </div>
                       <div class="col-lg-6">
 
-                        <h2>macOS Sierra</h2>
+                        <h4>macOS Sierra</h4>
 
-                        <p>The typical modal view that appears on Mac OS X is a light gray text box providing the user with an option, such as to update or to sign in. A modal view appears on the screen to receive information from the user. The view will provide a blue button, labeled with the action the modal will perform if pressed by the user. The modal view will also typically provide a light gray cancel button for the user to press if the user doesn’t wish the modal view to perform the action the modal can execute.</p>
+                        <p>The typical modal view that appears on Mac OSX is a light gray text box providing the user with an option, such as to update or to sign in. A modal view appears on the screen to receive information from the user. The view will provide a blue button, labeled with the action the modal will perform if pressed by the user. The modal view will also typically provide a light gray cancel button for the user to press if the user doesn’t wish the modal view to perform the action the modal can execute.</p>
 
                         <img src="Screen Shot 2016-10-25 at 1.09.17 AM.png" alt="Image Missing" class="img-thumbnail img-responsive giphy-embed">
                     </div>
+                  </div>
+                  <br>
+                    <div class="row">
+                      <div class="col-lg-12">
+
+                        <h4>Windows 10</h4>
+
+                        <p>Typically referred to as a "dialog box" in Windows, its main intention is to allow users to perform a command, asks users a question, or provides users with information or progress feedback. Windows modal views consist of a title bar (to identify the command, feature, or program where a modal view came from), an optional main instruction (to explain the user's objective with the modal view), various controls in the content area (to present options), and commit buttons (to indicate how the user wants to commit to the task).</p>
+
+                        <p><img src="typicalDialog.png" alt="Image Missing" align="middle" class="img-thumbnail img-responsive giphy-embed"></p>
+
+                        <p>Dialog boxes have two fundamental types:
+                          <ul>
+                            <li>Modal dialog boxes require users to complete and close before continuing with the owner window. These dialog boxes are best used for critical or infrequent, one-off tasks that require completion before continuing.</li>
+                            <li>Modeless dialog boxes allow users to switch between the dialog box and the owner window as desired. These dialog boxes are best used for frequent, repetitive, on-going tasks.</li>
+                          </ul>
+                        <p>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -401,7 +478,8 @@ contributors:
 </div>
 <div class="row">
   <div class="col-lg-12">
-
+    <br>
+    <br>
     <h3>References Used</h3>
 
     <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/WinPanel/Concepts/UsingModalWindows.html">Apple Developer Guidelines</a>
