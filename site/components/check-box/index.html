@@ -94,36 +94,34 @@ Most checkbox designs have the following states: the <code>checked (enabled)</co
       <div><img src="../check-box/toggle.gif" style="width:120px;height:95px;"></div>
       <div>This gif of a switch represents ON and OFF states by changing color.</div>
   </li>
+  <br>
+  <h3>Component in Action</h3>
+  <p>
+  See the checkboxes below to interact with some basic checkboxes!
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" value="">
+      The checkbox in all its <code>enabled</code> glory.
+    </label>
+  </div>
+  <div class="checkbox disabled">
+    <label>
+      <input type="checkbox" value="" disabled>
+      The mysterious <code>disabled</code> checkbox.
+    </label>
+  </div>
+  </p>
 
-</ul>
+  <p> Please fast forward to time 3:08 in the following video done by DetroitBORG to experience the checkbox phenomenon. <br>
+  <center>
+    <iframe width="280" height="157.5" src="https://www.youtube.com/embed/_OzWxKSm1rU" frameborder="0" allowfullscreen></iframe> </p>
+  </center>
+
+  </p>
+
 
 </div>
 <div class="col-sm-6">
-
-<h3>Component in Action</h3>
-<p>
-See the checkboxes below to interact with some basic checkboxes!
-  <div class="checkbox">
-  <label>
-    <input type="checkbox" value="">
-    The checkbox in all its <code>enabled</code> glory.
-  </label>
-</div>
-<div class="checkbox disabled">
-  <label>
-    <input type="checkbox" value="" disabled>
-    The mysterious <code>disabled</code> checkbox.
-  </label>
-</div>
-</p>
-
-<p> Please fast forward to time 3:08 in the following video done by DetroitBORG to experience the checkbox phenomenon. <br>
-<center>
-  <iframe width="280" height="157.5" src="https://www.youtube.com/embed/_OzWxKSm1rU" frameborder="0" allowfullscreen></iframe> </p>
-</center>
-
-</p>
-
 
 <h3>When to Use What Widgets</h3>
 <p>
@@ -156,18 +154,18 @@ As a part of that overall system, making checkboxes “pleasurable” may then b
 <blockquote>
   So what makes for a good <em>checkbox</em>?
 </blockquote>
-
-  <p>
-  According to Microsoft, one should limit the number of checkboxes in the user interface. If one needs to include several options, consider using a list view or list box control instead.
-  In addition, one should:
-  <ul>
-    <li>Label all checkboxes</li>
-    <li>Use <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/bb226821(v=vs.85).aspx" target="_blank">sentence caps</a> for checkbox labels</li>
-    <li>Write checkbox labels as sentence fragments (imperative sentences) with no ending punctuation</li>
-    <li>Avoid long check-box labels</li>
-    <li>Use <em>select</em> and <em>clear</em> in instructions for checkboxes
-    <li>Use grammatically positive phrasing for all checkbox labels
-  </ul>
+<p>
+According to Apple, a checkbox is a type of button that lets the user choose between two opposite states, actions, or values. They also provide some guidelines for how they want checkboxes implemented:
+<ul>
+  <li>Provide a title that implies two opposite states</li>
+  <li>Use a checkbox in a view, not a window frame</li>
+  <li>Use a radio button when the user needs to choose between more than two states</li>
+  <li>Consider using a label to introduce a group of checkboxes if their relationship isn't evident</li>
+  <li>In general, arrange multiple checkboxes vertically</li>
+  <li>Use alignment and indentation to group related checkboxes</li>
+  <li>Enable and disable checkboxes and related controls accordingly</li>
+  <li>Use a mixed state when it makes sense</li>
+</ul>
   <br>
   According to Google, a checkbox can either be a primary action or secondary action, and desktop checkboxes should appear only on <code>hover</code> and <code>focus</code>.
   </p>
@@ -177,6 +175,18 @@ As a part of that overall system, making checkboxes “pleasurable” may then b
   <p>
   In the image above, the checkbox is the primary action and the state indicator for the list item.
   </p>
+  <br>
+    <p>
+    According to Microsoft, one should limit the number of checkboxes in the user interface. If one needs to include several options, consider using a list view or list box control instead.
+    In addition, one should:
+    <ul>
+      <li>Label all checkboxes</li>
+      <li>Use <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/bb226821(v=vs.85).aspx" target="_blank">sentence caps</a> for checkbox labels</li>
+      <li>Write checkbox labels as sentence fragments (imperative sentences) with no ending punctuation</li>
+      <li>Avoid long check-box labels</li>
+      <li>Use <em>select</em> and <em>clear</em> in instructions for checkboxes
+      <li>Use grammatically positive phrasing for all checkbox labels
+    </ul>
 
 
 <h4>Feedback</h4>
@@ -481,62 +491,54 @@ As a part of that overall system, making checkboxes “pleasurable” may then b
     </div>
 
     <div role="tabpanel" class="tab-pane fade" id="watchOS">
-
+      <br>
       <h3> Checkbox Selection and Use </h3>
       <p>
-        Below are two examples of checkboxes in Mail. Notice in the first example, when no emails are selected the Move and Trash buttons help indicate the status of the checkboxes. Notice in the second example, the Mail application uses the color alteration and the original symbol to show selection. Here the component is used to indicate selection of individual emails so that an action can be applied to multiple at a time.
+        The Apple Watch incorporates checkboxes for very specific actions. As shown in the image below, a user can go through a list of reminders he or she has, select certain tasks from the list, and use additional buttons to perform actions on the “checked” tasks (such as “Show Completed”). Something interesting to note about the image is that the checkboxes are actually empty circles when unchecked and circles with a dot inside when checked, as opposed to the traditional box style. This style choice is especially interesting for checkboxes since Apple generally reserves this look for their <em>radio buttons</em>. In fact this might have caused confusion among users which would explain why this style is sometimes <strong>different within the same application</strong> based on what software version the Apple Watch is on.
       </p>
       <center>
         <img src="../check-box/watchOSSelectionActions.png" style="width:950px;height:300px;">
       </center>
-
+      <br>
       <h3> Additional Checkbox Styles </h3>
       <div class="row">
-        <div class="col-6">
+        <div class="col-5">
           <p>
-            Although the choice is said to be binary, Windows 10 actually allows for a checkbox to be in three (not two) states: selected, unselected, and indeterminate. Indeterminate is used when the choice is composed of both selected and unselected sub-choices. The indeterminate checkbox is very rarely used, likely because it is confusing for the user. For example, A checkbox in the indeterminate state is shown in the screen shot to the right. The checkbox is filled with a square. If the user clicks on the square, the square disapears. If the user clicks on the box again, a checkmark appears, and if the user clicks a third time, the box reappears.
-          </p>
-          <p>
-            Checkboxes are commonly used to mark a statement as either true or false, and in cases where the indeterminate is allowed, a naive user is unsure of what they are marking the statement as when indeterminate is an option. This example of the indeterminate seems to violate the Microsoft guidelines above because the sub-choices are not visible.
+            As previously mentioned, the check box style of watchOS, Apple’s operating system for their Apple Watch, varies based on the software version. The Apple Watch screenshot to the right provides an example of this as it shows a list of reminders where rounded-squares represent checkboxes, whereas the image above represents checkboxes as circles. Interesting enough Apple’s Human Interface Guidelines for watchOS doesn’t specify which checkbox style it prefers. In fact, it <strong>doesn’t even have a section</strong> dedicated to checkboxes. However, the watchOS Guidelines does have a brief section on <em>switches</em>, a common variant of checkboxes in Apple operating systems.
           </p>
         </div>
-        <div class="col-6">
+        <div class="col-7">
           <center>
-            <img src="../check-box/watchOSSquareBoxes.jpeg" style="width:320px;height:390px;">
+            <img src="../check-box/watchOSSquareBoxes.jpeg" style="width:270px;height:340px;">
           </center>
         </div>
       </div>
-
-      <h3> Examples of checkbox Use </h3>
+      <br>
+      <h3> Apple Watch CheckBox Variants </h3>
+      <br>
+      <h4> Switches </h4>
       <div class="row">
-        <div class="col-6">
+        <div class="col-5">
           <p>
-            Although the choice is said to be binary, Windows 10 actually allows for a checkbox to be in three (not two) states: selected, unselected, and indeterminate. Indeterminate is used when the choice is composed of both selected and unselected sub-choices. The indeterminate checkbox is very rarely used, likely because it is confusing for the user. For example, A checkbox in the indeterminate state is shown in the screen shot to the right. The checkbox is filled with a square. If the user clicks on the square, the square disapears. If the user clicks on the box again, a checkmark appears, and if the user clicks a third time, the box reappears.
-          </p>
-          <p>
-            Checkboxes are commonly used to mark a statement as either true or false, and in cases where the indeterminate is allowed, a naive user is unsure of what they are marking the statement as when indeterminate is an option. This example of the indeterminate seems to violate the Microsoft guidelines above because the sub-choices are not visible.
+            According to Apple’s Guidelines for switches on watchOS, “A switch is a visual toggle between two mutually exclusive states—on and off. A label indicating which property the switch affects must always be displayed next to a switch.” Apple does a good job of sticking to their guidelines as the two images to the right show switches being used in the Settings and Clock applications of the Apple Watch. In both images, a switch is placed next to the labels “Reduce Motion” and “Alarm” in oder to provide the user with an idea of what the switch’s effects will be from being on or off. Additionally, below the “Reduce Motion” label there is a small description to help explain what the switch does even more. Also, the image directly to the right magnifies over a switch in the off state.
           </p>
         </div>
-        <div class="col-6">
+        <div class="col-7">
           <center>
-            <img src="../check-box/watchOSSwitchOffState.jpg" style="width:360px;height:360px;">
+            <img src="../check-box/watchOSSwitchOffState.jpg" style="width:340px;height:330px;">
           </center>
         </div>
       </div>
-
-      <h3> Examples of checkbox Use </h3>
+      <br>
       <div class="row">
-        <div class="col-6">
+        <div class="col-5">
           <p>
-            Although the choice is said to be binary, Windows 10 actually allows for a checkbox to be in three (not two) states: selected, unselected, and indeterminate. Indeterminate is used when the choice is composed of both selected and unselected sub-choices. The indeterminate checkbox is very rarely used, likely because it is confusing for the user. For example, A checkbox in the indeterminate state is shown in the screen shot to the right. The checkbox is filled with a square. If the user clicks on the square, the square disapears. If the user clicks on the box again, a checkmark appears, and if the user clicks a third time, the box reappears.
-          </p>
-          <p>
-            Checkboxes are commonly used to mark a statement as either true or false, and in cases where the indeterminate is allowed, a naive user is unsure of what they are marking the statement as when indeterminate is an option. This example of the indeterminate seems to violate the Microsoft guidelines above because the sub-choices are not visible.
+            The image directly to the right illustrates two very important habits switches have when being turned off and on. First, the screenshot shows what switches look like when off and on. When the switch is off it and surrounding labels that are affected turn gray. When the switch is on it turns to a bright green color and surrounding labels that are affected turn white. Secondly, the image shows the area that the user must press to turn the switch on or off as represented by the two yellow rectangles. This was a nice design of Apple to make the surrounding area and label of the switch also ”tappable” since the actual switch would be pretty small even on the larger model of the Apple Watch. <strong>Note: this behavior is consistent with other interface elements including checkboxes!</strong>
           </p>
         </div>
-        <div class="col-6">
+        <div class="col-7">
           <center>
-            <img src="../check-box/watchOSSwitchElements.png" style="width:320px;height:400px;">
+            <img src="../check-box/watchOSSwitchElements.png" style="width:280px;height:380px;">
           </center>
         </div>
       </div>
@@ -545,17 +547,30 @@ As a part of that overall system, making checkboxes “pleasurable” may then b
 </div>
 
 <h3>Credits &amp; References</h3>
+<br>
+<h4>Apple</h4>
 <p>
-https://msdn.microsoft.com/en-us/windows/uwp/controls-and-patterns/checkbox <br>
-http://www.google.com/design/spec/components <br>
-https://msdn.microsoft.com/en-us/library/windows/desktop/bb246416 <br>
-http://getbootstrap.com/css/ <br>
-https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.checkbox <br>
-http://www.nngroup.com/articles/checkboxes-vs-radio-buttons/ <br>
-https://www.youtube.com/watch?v=_OzWxKSm1rU&feature=youtu.be <br>
 https://developer.apple.com/macos/human-interface-guidelines/overview/themes/ <br>
-http://www.mac-history.net/computer-history/2008-05-24/mac-os-70-2 <br>
-http://interface.free.fr/Archives/Apple_HIGuidelines.pdf <br>
 https://developer.apple.com/watchos/human-interface-guidelines/interface-elements/switches/ <br>
 https://developer.apple.com/macos/human-interface-guidelines/buttons/checkboxes/ <br>
+http://interface.free.fr/Archives/Apple_HIGuidelines.pdf <br>
+http://www.mac-history.net/computer-history/2008-05-24/mac-os-70-2 <br>
+</p>
+<h4>Bootstrap</h4>
+<p>
+http://getbootstrap.com/css/ <br>
+</p>
+<h4>Google</h4>
+<p>
+http://www.google.com/design/spec/components <br>
+</p>
+<h4>Microsoft</h4>
+<p>
+https://msdn.microsoft.com/en-us/windows/uwp/controls-and-patterns/checkbox <br>
+https://msdn.microsoft.com/en-us/library/windows/desktop/bb246416 <br>
+https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.checkbox <br>
+</p>
+<h4>YouTube</h4>
+<p>
+https://www.youtube.com/watch?v=_OzWxKSm1rU&feature=youtu.be <br>
 </p>
