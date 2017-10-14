@@ -13,6 +13,9 @@ contributors:
 
     - name: Edward Bachoura
       github: ebachoura
+
+    - name: Simon Wroblewski
+      github: simonwro120
 ---
 <head>
   <link rel="stylesheet" href="mystyle.css">
@@ -349,6 +352,7 @@ contributors:
           </div>
         </div>
       </div>
+
       <div class="card">
         <div class="card-header" role="tab" id="headingTwo">
           <h5 class="mb-0">
@@ -357,77 +361,46 @@ contributors:
             </a>
           </h5>
         </div>
+
         <div id="windowsrt" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
           <div class="card-block">
-              <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h3 class="panel-title text-center">Windows RT 8.1</h3>
-                  </div>
+            <h1 class="text-center">Windows RT 8.1</h1>
+            <div class="panel-body row">
+              <div class="col-12">
+              <p class="text-justify lead">
+                Search is a graphical control element, which users utilize within many apps. Despite their similar appearances, they provide a wide range of results such as web, device searches, a user's contact list, etc...
+                Generally, all the search bars typically look like this.
+              </p>
+              <center><img src="search-bar-windows.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img></center>
+              <p class="text-center"><em><sup>Example of the Search box</sup></em></p>
 
-                  <div class="panel-body">
-                    <h4>General Idea</h4>
-                    <p class="text-justify">Search is a graphical control element, which users utilize within many apps. Despite their similar appearances, they provide a wide range of results such as web, device searches, a user's contact list, etc.<p><p>
-                    </p>
+              <p class="text-justify">
+                Search behaviors differ depending on the purpose of the search, such as these:
+              </p>
+              <p>
+                <b><em>Zero Input Canvas:</em></b> Windows RT 8.1 displays a "zero input canvas" before the user enters text in a search. It usually appears in the app canvas and shows recent search history, trending searches, and hints.
+              </p>
+              <center><img src="zero-input-canvas.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img></center>
+              <p class="text-center"><em><sup>Example of the zero input canvas</sup></em></p>
 
-                    <h4>Typical Appearance</h4>
+              <p>
+                <b><em>Auto-suggest:</em></b> Once the user starts typing, auto-suggest replaces "zero input canvas." It continuously updates suggestions or hints to improve efficiency of the input process as the user types.
+              </p>
+              <center><img src="auto-suggest.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img></center>
+              <p class="text-center"><em><sup>Example of Auto-suggest</sup></em></p>
 
-                <p class="text-justify">
-                In general, all the searches look identical to each other.
-                </p>
+              <p>
+                Here is an example of some of the search components in action:
+              </p>
+              <center><img src="conponent-in-action.gif" class="img-responsive center-block" alt="search-bar-gif-1"></center>
+              <p class="text-center"><em><sup>Example gif extracted from <a href="http://thiagonasc.com/page/2">http://helixbing.blob.core.windows.net</a></em>
+              </p>
 
-                <img src="search-bar-windows.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
-                    <p class="text-center"><em><sup>Example of the Search box</sup></em></p>
-
-                    <h4>Purpose</h4>
-
-                <p class="text-justify">
-                The purpose of the search remains the same as a general seach for Windows RT 8.1.
-                </p>
-
-                    <h4>Typical Behavior</h4>
-
-                <p class="text-justify">
-                Search behaviors differ depending on the purpose of the search.
-                </p>
-
-                  <ul>
-                        <li><p><b><em>"zero input canvas":</em></b> Windows RT 8.1 displays a "zero input canvas" before the user enters text in a search. It usually appears in the app canvas and shows recent search history, trending searches, and hints.</p></li><p><p>
-                      </ul>
-
-                      <img src="zero-input-canvas.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
-                    <p class="text-center"><em><sup>"zero input canvas"</sup></em></p>
-
-                    <ul>
-                        <li><p><b><em>Auto-suggest:</em></b> Once the user starts typing, auto-suggest replaces "zero input canvas." It continuously updates suggestions or hints to improve efficiency of the input process as the user types.</p></li><p><p>
-                      </ul>
-
-                      <img src="auto-suggest.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
-                    <p class="text-center"><em><sup>Auto-suggest</sup></em></p>
-
-                    <h4>Events</h4>
-
-                    <p class="text-justify">As search boxes are composed by a text field and a button, the most relevant search events are <code>enterText</code>, <code>clear</code> and <code>click</code>. Secondary events include <code>dragAndDropText</code>.</p>
-
-                      <h4>State Diagram</h4>
-
-                    <p>
-                  <img src="state-diagram.png" class="img-responsive center-block" alt="state-diagram">
-                <p class="text-center">State Diagram extracted from <em><a href="https://users.cs.jmu.edu/bernstdh/Web/CS345/h3/index.php">https://users.cs.jmu.edu/bernstdh/Web/CS345/h3/index.php</a></em></p>
-                </p>
-
-
-                    <h4>Component in Action</h4>
-
-                <p>
-                  <img src="conponent-in-action.gif" class="img-responsive center-block" alt="search-bar-gif-1">
-                <p class="text-center">Example extracted from <em><a href="http://thiagonasc.com/page/2">http://helixbing.blob.core.windows.net</a></em></p>
-                </p>
-
-              <h4>Variants</h4>
-
-                <p class="text-justify">
-                Various examples of types of searches of Windows RT 8.1
-                </p>
+              <h3>Variants</h3>
+              <p class="text-justify">
+                Various examples of types of searches of Windows RT 8.1:
+              </p>
+              
 
                 <img src="windows-tool-bar-search.png"  class="img-responsive center-block" alt="search-bar-apple-website"></img>
                     <p class="text-center"><em><sup>A tool bar search</sup></em></p>
@@ -464,6 +437,7 @@ contributors:
           </div>
         </div>
       </div>
+
       <div class="card">
         <div class="card-header" role="tab" id="headingTwo">
           <h5 class="mb-0">
@@ -618,6 +592,7 @@ contributors:
           </div>
         </div>
       </div>
+
       <div class="card">
         <div class="card-header" role="tab" id="headingThree">
           <h5 class="mb-0">
@@ -626,6 +601,7 @@ contributors:
             </a>
           </h5>
         </div>
+
         <div id="ubuntu" class="collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="card-block">
             <div class="container">
