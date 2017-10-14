@@ -24,8 +24,8 @@ contributors:
       <nav class="nav nav-tabs nav-justified">
         <a class="nav-link active" data-toggle="tab" href="#typical-appearance">Typical Appearance</a>
         <a class="nav-link" data-toggle="tab" href="#typical-behavior">Typical Behavior</a>
-        <a class="nav-link" data-toggle="tab" href="#priority-metrics">Priority Metrics</a>
         <a class="nav-link" data-toggle="tab" href="#key-characteristics">Key Characteristics</a>
+        <a class="nav-link" data-toggle="tab" href="#priority-metrics">Priority Metrics</a>
         <a class="nav-link" data-toggle="tab" href="#events">Events</a>
         <a class="nav-link" data-toggle="tab" href="#variants">Variants</a>
         <a class="nav-link" data-toggle="tab" href="#platform-specifics">Platform Specifics</a>
@@ -81,6 +81,30 @@ contributors:
     </div>
   </div>
 
+  <div class="tab-pane" id="typical-behavior" role="tabpanel">
+    <div class="card">
+      <div class="card-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <h3>Typical Behavior</h3>
+
+              <p></p>
+                <p>Modal views typically prompt the user to perform an action before allowing the user to continue interacting with said window or application.</p>
+
+                <p>Modal views will usually be prompted when a window or application requires the user’s attention before continuing, such as when a user is able to update their system or if the window chooses to warn the user about committing an action. Modal views are also used by websites to inform the user about logins, advertisements, updates to the site, etc.</p>
+
+              <h4>Component in Action</h4>
+
+              <img src="ModalITunes.gif" alt="Image Missing" class="img-thumbnail img-responsive giphy-embed">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <div class="tab-pane" id="key-characteristics" role="tabpanel">
     <div class="card">
       <div class="card-body">
@@ -129,30 +153,6 @@ contributors:
             </div>
             <br>
           </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <div class="tab-pane" id="typical-behavior" role="tabpanel">
-    <div class="card">
-      <div class="card-body">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12">
-
-              <h3>Typical Behavior</h3>
-
-              <p></p>
-                <p>Modal views typically prompt the user to perform an action before allowing the user to continue interacting with said window or application.</p>
-
-                <p>Modal views will usually be prompted when a window or application requires the user’s attention before continuing, such as when a user is able to update their system or if the window chooses to warn the user about committing an action. Modal views are also used by websites to inform the user about logins, advertisements, updates to the site, etc.</p>
-
-              <h4>Component in Action</h4>
-
-              <img src="ModalITunes.gif" alt="Image Missing" class="img-thumbnail img-responsive giphy-embed">
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -239,7 +239,7 @@ contributors:
           <div class="row">
             <div class="col-lg-12">
 
-              <h2>Events</h2>
+              <h3>Events</h3>
 
               <p></p>
 
@@ -346,11 +346,13 @@ contributors:
 
               <h3>Variants</h3>
 
+              <p></p>
+
               <div class="panel-group" id="variants-group">
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant1">Document Editors</a>
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant1"><code>Document Editors</code></a>
                     </h3>
                   </div>
                   <div id="variant1" class="panel-collapse collapse">
@@ -363,7 +365,7 @@ contributors:
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant2">Advertisements</a>
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant2"><code>Advertisements</code></a>
                     </h3>
                   </div>
                   <div id="variant2" class="panel-collapse collapse">
@@ -376,7 +378,7 @@ contributors:
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant3">Download Confirmation</a>
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant3"><code>Download Confirmation</code></a>
                     </h3>
                   </div>
                   <div id="variant3" class="panel-collapse collapse">
@@ -389,26 +391,13 @@ contributors:
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant4">Errors and Warnings</a>
+                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant4"><code>Errors and Warnings</code></a>
                     </h3>
                   </div>
                   <div id="variant4" class="panel-collapse collapse">
                     <div class="panel-body">If a process is unable to be completed or ran into issues during execution, it is important to convey that information to the user, and thus a modal view is a good way to ensure the user receives that information.  For example, if a user attempts to print a document and the printer is unavailable, a modal view can notify the user that there was an issue printing the document.  A modal view conveying an error or a warning will not typically have a form for the user to fill out, but will simply use text to notify the user of the warning, perhaps using a few buttons to give the option to send an error report if the application they were using was being run through the network.</div>
 
                     <img src="windows error.png" alt="Image Missing" class="img-thumbnail img-responsive">
-                  </div>
-                </div>
-
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#variants-group" href="#variant5">User Verification</a>
-                    </h3>
-                  </div>
-                  <div id="variant5" class="panel-collapse collapse">
-                    <div class="panel-body">If a process requires verification of the user, a modal view can be used to ask for that information.  Since the process cannot be completed until the user has been verified, using a modal view is appropriate.  Typically in this case, only the user’s name and password is required in a very simple form.  If the user is frequently verifying processes, some user information can be saved and filled out on the form to increase the efficiency of frequent users.</div>
-
-                    <img src="password modal.png" alt="Image Missing" class="img-thumbnail img-responsive">
                   </div>
                 </div>
               </div>
@@ -427,6 +416,8 @@ contributors:
             <div class="col-lg-12">
 
               <h3>Platform Specifics</h3>
+
+              <p></p>
 
               <div class="panel panel-default">
                 <div class="panel-body">
@@ -483,5 +474,7 @@ contributors:
     <h3>References Used</h3>
 
     <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/WinPanel/Concepts/UsingModalWindows.html">Apple Developer Guidelines</a>
+    <br>
+    <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499(v=vs.85).aspx">Microsoft Developer Network Guidelines</a>
   </div>
 </div>
