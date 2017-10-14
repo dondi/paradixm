@@ -22,19 +22,36 @@ contributors:
     
     - name: Nicolas Le Gorrec
       github: niclego
+
+    - name: Mathew Sanders
+      github: mathewcsanders
 ---
 <link rel="stylesheet" type="text/css" href="hotess.css"> 
 <p class="lead">Virtual buttons are a very widely used graphical interface element that emulates real world pressable buttons.</p>
 
 <div class="container">
   <ul class="nav nav-tabs">
-    <li class="active"><a href="#Home" data-toggle="tab">Home</a></li>
-    <li><a href="#Android" data-toggle="tab">Android</a></li>
-    <li><a href="#Windows" data-toggle="tab">Windows 10</a></li>
-    <li><a href="#watchOS" data-toggle="tab">watchOS</a></li>
-    <li><a href="#iOS10" data-toggle="tab">iOS 10</a></li>
-    <li><a href="#Ubuntu" data-toggle="tab">Ubuntu</a></li>
-    <li><a href="#MacOSX" data-toggle="tab">Mac OS X</a></li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#Home" data-toggle="tab">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Android" data-toggle="tab">Android</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Windows" data-toggle="tab">Windows 10</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#watchOS" data-toggle="tab">watchOS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#iOS10" data-toggle="tab">iOS 10</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Ubuntu" data-toggle="tab">Ubuntu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#MacOSX" data-toggle="tab">Mac OS X</a>
+    </li>
   </ul>
     <div class="tab-content active in">
       <div class="tab-pane active" id="Home">
@@ -43,14 +60,11 @@ contributors:
 
         <h3>Typical Appearance</h3>
 
-        <blockquote>Generally, across any platform, a button will take the form of a shape whose form will elicit some understanding of the button's function, or will display a design that would hold the same purpose. Buttons tend to look similar throughout many platforms. </blockquote>
+        <p>Generally, across any platform, a button will take the form of a shape whose form will elicit some understanding of the button's function, or will display a design that would hold the same purpose. Buttons tend to look similar throughout many platforms. </p>
 
         <h3>Typical Behavior</h3>
 
-        <blockquote>
-          <p> Generally speaking, a button will perform no action while idle. Upon being pressed, a button will perform its action, then will return to its idle state. Buttons are sometimes highlighted according to the typical action that a user will take. For example, the buttons OK and CANCEL might be right next to each other on a page, but it is likely that OK will be highlighted, while CANCEL will not be. 
-        </p>
-        </blockquote>
+        <p> Generally speaking, a button will perform no action while idle. Upon being pressed, a button will perform its action, then will return to its idle state. Buttons are sometimes highlighted according to the typical action that a user will take. For example, the buttons OK and CANCEL might be right next to each other on a page, but it is likely that OK will be highlighted, while CANCEL will not be. </p>
 
         <h4>Events</h4>
 
@@ -58,13 +72,12 @@ contributors:
 
         <h4>State Diagram</h4>
 
-        <blockquote>
-          <p>The following diagram shows the 5 states of a standard button, and the different triggers that cause them to be entered/left.</p>
-        </blockquote>
+        <p>The following diagram shows the 5 states of a standard button, and the different triggers that cause them to be entered/left.</p>
 
         <div class="diagram">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="431px" height="303px" version="1.1" style="background-color: rgb(255, 255, 255);"><defs/><g transform="translate(0.5,0.5)"><rect x="1" y="1" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(31,25)"><switch><foreignObject pointer-events="all" width="59" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 59px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Disabled</div></div></foreignObject><text x="30" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 388 31 L 398 31 L 398 111 L 394.37 111" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 389.12 111 L 396.12 107.5 L 394.37 111 L 396.12 114.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(367,66)"><switch><foreignObject pointer-events="all" width="62" height="15" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Mouse Over</div></div></foreignObject><text x="31" y="13" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="1" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(299,25)"><switch><foreignObject pointer-events="all" width="57" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Enabled</div></div></foreignObject><text x="29" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="241" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(299,265)"><switch><foreignObject pointer-events="all" width="57" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Pressed</div></div></foreignObject><text x="29" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 388 191 L 398 191 L 398 271 L 394.37 271" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 389.12 271 L 396.12 267.5 L 394.37 271 L 396.12 274.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(379,225)"><switch><foreignObject pointer-events="all" width="46" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Release</div></div></foreignObject><text x="23" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="161" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(304,185)"><switch><foreignObject pointer-events="all" width="47" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 47px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Armed</div></div></foreignObject><text x="24" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 268 126 L 258 126 L 258 191 L 261.63 191" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 191 L 259.88 194.5 L 261.63 191 L 259.88 187.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(245,145)"><switch><foreignObject pointer-events="all" width="28" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Click</div></div></foreignObject><text x="14" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 268 96 L 258 96 L 258 46 L 261.63 46" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 46 L 259.88 49.5 L 261.63 46 L 259.88 42.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(232,66)"><switch><foreignObject pointer-events="all" width="53" height="15" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Mouse Off</div></div></foreignObject><text x="27" y="13" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="268" y="81" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(305,105)"><switch><foreignObject pointer-events="all" width="45" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 45px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Hover</div></div></foreignObject><text x="23" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 31 61 L 31 81 Q 31 91 41 91 L 81 91 Q 91 91 91 81 L 91 67.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 91 62.12 L 94.5 69.12 L 91 67.37 L 87.5 69.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(49,86)"><switch><foreignObject pointer-events="all" width="28" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">Click</div></div></foreignObject><text x="14" y="14" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 127.37 21 L 171 21 Q 181 21 191 21 L 261.63 21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 122.12 21 L 129.12 17.5 L 127.37 21 L 129.12 24.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 266.88 21 L 259.88 24.5 L 261.63 21 L 259.88 17.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 268 271 L 191 271 Q 181 271 181 261 L 181 21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/></g></svg>
+          <img src="diagram.png" class="img-fluid">
         </div>
+        
 
         <p>The <code>enabled</code> and <code>disabled</code> states can be considered idle button states, as they are the only possible states the button can hold without user interaction. The <code>enabled</code> state indicates that a user <em>can</em> interact with it, while the <code>disabled</code> indicates that a user <em>cannot</em>.</p>
 
@@ -78,13 +91,9 @@ contributors:
 
         <h4>Component in Action</h4>
 
-        <blockquote>
-          <p>Below is a embedded video of our component in action as well as some example buttons.</p>
+        <p>Below is a embedded video of our component in action as well as some example buttons.</p>
 
-          
-
-        </blockquote>
-        <div class ="media-embed"><img src="Button1.gif" alt="Button gif 1" class="img-responsive"></div>
+        <div class ="media-embed"><img src="Button1.gif" alt="Button gif 1" class="img-fluid"></div>
 
 
         <p class="text-center">
@@ -125,7 +134,7 @@ contributors:
           <img src="FlatButton.png" width="200" height="300"></img>
           <img src="RaisedButton.png" width="200" height= "300"></img>
         </center>
-        <h4>Feedback</h4>
+        <h4><br>Feedback</h4>
 
         <p>By far the most important interaction design principle that a button must follow is <em>feedback</em>. Users must
           never doubt whether:</p>
@@ -212,35 +221,59 @@ contributors:
         <blockquote> 
         <h3>Windows 10 </h3>
 
-          <p>As mentioned above, even for Windows 10 buttons, buttons are typically rectangular but sometimes may either have mildly 
-        rounded corners or really sharp edges. The default button has a blue dotted line around it. Windows also tends to draw attention 
-        to more important buttons by either highlighting or making the button bigger. 
-        </p>
+        <p>Buttons are a prominent and quick way for navigating any OS so it is no surprise that Windows 10 relies heavily on buttons.</p>
 
-          <p>Typically the EXIT, MINIMIZE, and MAXIMIZE controls are all at the upper right hand corner of the window. </p>
+        <h5>Appearance and Layout</h5>
 
-          <p>Windows also color-codes a lot of their buttons. For example, RED will be used for <code>SHUT DOWN</code> because RED is a 
-        danger color and lets the user know that once they click that button there is no going back. YELLOW will be used for <code>LOG OFF</code>
-        warning the user that this is a semi-critical button. Then there are other buttons such as HELP that are a soft blue color 
-        because pressing them will not do anything to your program. 
+        <img src= "https://cdn3.vox-cdn.com/uploads/chorus_asset/file/3913062/Screenshot__40_.0.png" height="299" width="523">
+        
+        <p><br>In Windows 10, buttons are typically rectangular with sharp corners and edges. Most buttons will change color when hovered over,
+        most commonly gray or blue in the default Windows color scheme. Windows keeps buttons that are related the same size as to avoid
+        confusion over groupings of buttons.</p>
 
-        <p> Windows has recently created a completely different way to display buttons, applications and commands on their screen. Clicking one
-        one of these buttons will navigate the user to a different page.</p>
-         
-        <img src= "http://www.windows10beta.net/wp-content/uploads/2015/03/Windows-8-User-Interface-600x375.png">
+        <img src="https://images.techhive.com/images/article/2015/08/windows-10-action-center-quick-access-buttons-100605128-large.png">
+        
+        <p><br>Typically the MINIMIZE, MAXIMIZE, and EXIT buttons are all at the upper right hand corner of the window in that order, putting EXIT at the corner. 
+        To keep with a more modern style of design while also giving user feedback, these buttons are neutral colored and transparent until hovered over. The hover action
+        changes the color for the buttons. In order to signify the importance of the EXIT button, it becomes red while the other two turn gray or white depending on the 
+        application. This change from the previous color coded style of MINIMIZE being/turning yellow and MAXIMIZE being/turning green further emphasizes the EXIT
+        button as it is the most drastic of the three actions.</p>
 
+
+        <img src="https://i.stack.imgur.com/zxmjR.png">
+
+        <h5>Microsoft Guidelines</h5>
+
+        <p>Microsoft in its guidelines has a number of recommendations, some of which are universal while others are more platform specific. Several of them
+        are for the purpose of maintaining clarity such as using concise self-explanatory text that describes the action that the button performs and
+        limiting it to a single word, a verb. Others are more specific for Windows.</p>
+
+        <p>For a single button, Microsoft provides an in-depth explanation on how it should be placed. For dialogs and containers, singular buttons
+        should be right-aligned, while pages with a single button should left-align in order to keep the button aligned with the rest of the page
+        content.</p>
+
+        <div class="row">
+          <div class="col-md-4">
+            <img src="https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/images/pushbutton_doc_dialog.png" class="img-fluid">
+            <p class="text-center">Dialog Button</p>
+          </div>
+          <div class="col-md-4">
+            <img src="https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/images/pushbutton_doc_container.png" class="img-fluid">
+            <p class="text-center">Container Button</p>
+          </div>
+          <div class="col-md-4">
+            <img src="https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/images/pushbutton_doc_page.png" class="img-fluid">
+            <p class="text-center">Page Button</p>
+          </div>
+        </div>
 
 
         <h3>Credits &amp; References</h3>
 
-        <blockquote>
-        <p>http://usabilitypost.com/2009/04/15/8-characteristics-of-successful-user-interfaces/#efficient</p>
-
-        <p>http://foundation.zurb.com/docs/components/dropdown_buttons.html</p>
-
-        <p>http://www.howdesign.com/web-design-resources-technology/helping-users-navigate-websites/</p>
-
-        </blockquote>
+          <a href="http://usabilitypost.com/2009/04/15/8-characteristics-of-successful-user-interfaces/#efficient">http://usabilitypost.com/2009/04/15/8-characteristics-of-successful-user-interfaces/#efficient</a>
+          <a href="http://foundation.zurb.com/docs/components/dropdown_buttons.html">http://foundation.zurb.com/docs/components/dropdown_buttons.html</a>
+          <a href="http://www.howdesign.com/web-design-resources-technology/helping-users-navigate-websites/">http://www.howdesign.com/web-design-resources-technology/helping-users-navigate-websites/</a>
+          <a href="https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/buttons">https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/buttons</a>
       </div>
      <div class="tab-pane fade" id="watchOS">
         <center>
