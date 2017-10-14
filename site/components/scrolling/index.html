@@ -8,170 +8,222 @@ contributors:
       github: sashadmitrieva96
     - name: George Sarantinos
       github: gsaranti
+    - name: Joseph Martinez
+      github: joeymichaelmartinez 
 ---
 
-<p class="lead">The scrolling feature is one of the most commonly used behavioral component on modern interfaces. By scrolling, users can manipulate their location on a page (both vertically and horizontally) to see content that lies beyond the dimensions of their current display.</p>
+<p class="lead">
+  The scrolling feature is one of the most commonly used behavioral component on modern interfaces. By scrolling, users can manipulate their location on a page (both vertically and horizontally) to see content that lies beyond the dimensions of their current display.
+</p>
 
 <div class="row">
   <div class="col-sm-6">
+    <h3>Typical Appearance</h3>
+    <p>
+      The scrollbar has one generally-accepted appearance: a tray on the right side of the computer screen in which a slightly off-colored block, known as the scroll thumb, rests. The shape and color of the tray and thumb vary across different platforms.
+    </p>
 
-<h3>Typical Appearance</h3>
+    <p> 
+      Different scrollbar appearances across older Windows and Mac platforms are shown below; the evolution of the scrollbar to a more streamlined and minimalist appearance is evident. 
+    </p>
 
-<blockquote>The scrollbar has one generally-accepted appearance: a tray on the right side of the computer screen in which a slightly off-colored block, known as the scroll thumb, rests. The shape and color of the tray and thumb vary across different platforms.</blockquote>
+    <img src="scrollbars.jpg" class="img-scrolling" alt="Different Scrollbar Appearances" width="500">
 
-<p> Different scrollbar appearances across older Windows and Mac platforms are shown below; the evolution of the scrollbar to a more streamlined and minimalist appearance is evident. </p>
+    <p> 
+      If there is content on the page that is not immediately visible from left to right, scrollbars will also appear on the bottom of a page in a horizontal position identical in appearance to its vertical counterpart. In the image below, the scrollbar native to the Google Documents app provides a horizontal scroll option upon resizing the window: 
+    </p>
 
-<img src="scrollbars.jpg" class="img-scrolling" alt="Different Scrollbar Appearances" width="500">
+    <img src="horizontal_scroll.png" class="img-scrolling" alt="Horizontal Scrollbar" width="500">
 
-<p> If there is content on the page that is not immediately visible from left to right, scrollbars will also appear on the bottom of a page in a horizontal position identical in appearance to its vertical counterpart. In the image below, the scrollbar native to the Google Documents app provides a horizontal scroll option upon resizing the window: </p>
+    <h3>Typical Behavior</h3>
 
-<img src="horizontal_scroll.png" class="img-scrolling" alt="Horizontal Scrollbar" width="500">
+    <p>
+      The action of scrolling up or down is universal. The user can move, or scroll, an entire page of content up or down by manipulating the scroll thumb (or one of the variants provided lower). Users can change the direction of their scroll in their settings - this will be discussed further in variants and platform-specific instances. 
+    </p>
 
-<h3>Typical Behavior</h3>
+    <p> 
+      Across most devices, the scroll thumb will adjust in size to give the user an indication on the size of the document. This is a helpful form of feedback for the amount of content on any given page. 
+    </p>
 
-<blockquote>
-  <p>The action of scrolling up or down is universal. The user can move, or scroll, an entire page of content  
-     up or down by manipulating the scroll thumb (or one of the variants provided lower). Users can change the 
-     direction of their scroll in their settings - this will be discussed further in variants and platform-specific
-     instances. </p>
+    <img src="scroll_length_v3.png" class="img-scrolling" alt="Longer Scroll Thumb">
 
-</blockquote>
+    <p> 
+      A possible complaint, however, resides in the event that a page has an inordinate amount of content; in this scenario, the scroll thumb becomes very small and difficult to manipulate for some users. Below, the sticky notes app native to Windows demonstrates the change in scrollbar size depending on text amount. 
+    </p>
 
-<p> Across most devices, the scroll thumb will adjust in size to give the user an indication on the size of the document. This is a helpful form of feedback for the amount of content on any given page. </p>
+    <img src="scroll_length_v1.png" class="img-scrolling" alt="Longer Scroll Thumb" width="220" height="220">
+    <img src="scroll_length_v2.png" class="img-scrolling" alt="Shorter Scroll Thumb" width="220" height="220">
 
-<img src="scroll_length_v3.png" class="img-scrolling" alt="Longer Scroll Thumb">
+    <h4>Events</h4>
 
-<p> A possible complaint, however, resides in the event that a page has an inordinate amount of content; in this scenario, the scroll thumb becomes very small and difficult to manipulate for some users. Below, the sticky notes app native to Windows demonstrates the change in scrollbar size depending on text amount. </p>
+    <p> 
+      An <em>event</em> is something that can happen to a user interface component. They are both conceptual and highly concrete in that events very frequently translate directly into a user interface component’s API.
+    </p>
 
-   <img src="scroll_length_v1.png" class="img-scrolling" alt="Longer Scroll Thumb" width="220" height="220">
-   <img src="scroll_length_v2.png" class="img-scrolling" alt="Shorter Scroll Thumb" width="220" height="220">
+    <p> 
+      Using the scrollbar component, the most relevant scrolling event is the <code>click</code>. A <code>click</code> event indicates that the user has selected the scrollbar thumb. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly within the bounds of the scrollbar thumb. In the event that the user clicks and holds a scrollbar, the <code>release</code> event is applicable. 
+    </p>
 
-<h4>Events</h4>
-
-<blockquote>An <em>event</em> is something that can happen to a user interface component. They are both conceptual and
-  highly concrete in that events very frequently translate directly into a user interface component’s API.</blockquote>
-
-<p> Using the scrollbar component, the most relevant scrolling event is the <code>click</code>. A <code>click</code> event
-    indicates that the user has selected the scrollbar thumb. Secondary events include <code>hover</code>, indicating that a pointing device is explicitly within the bounds of the scrollbar thumb. In the event that the user clicks and holds a scrollbar, the <code>release</code> event is applicable. </p>
-
-<p> The scrollbar will highlight during a <code>hover</code> event and then highlight brighter upon being clicked. This
-    provides a form of feedback that indicates scrollbar response upon additional activity performed. </p>
+    <p> 
+      The scrollbar will highlight during a <code>hover</code> event and then highlight brighter upon being clicked. This provides a form of feedback that indicates scrollbar response upon additional activity performed. 
+    </p>
 
     <img src="generic_scroll.png" class="img-scrolling" alt="Generic Scroll" width="140" height="300">
     <img src="generic_scroll_highlight.png" class="img-scrolling" alt="Highlighted Scroll" width="140" height="300">
     <img src="generic_scroll_selected.png" class="img-scrolling" alt="Selected Scroll" width="140" height="300">
 
-<h4>State Diagram</h4>
+    <h4>State Diagram</h4>
 
-<img src="state_diagram.png" class="img-scrolling" alt="State Diagram">
+    <img src="state_diagram.png" class="img-scrolling" alt="State Diagram">
 
-<p>Scrollbars share the following states because of their similar functionality. The <code>drag</code> and <code>
-   instantaneous</code> "scrolling" states can be viewed as <code>enabled</code> scrolling states, since they must be activated through user interaction. The <code>initial</code> state can also be referred to as <code>dormant</code>, meaning that the user has yet to interact with the scrollbar.
+    <p>
+      Scrollbars share the following states because of their similar functionality. The <code>drag</code> and <code> instantaneous</code> "scrolling" states can be viewed as <code>enabled</code> scrolling states, since they must be activated through user interaction. The <code>initial</code> state can also be referred to as <code>dormant</code>, meaning that the user has yet to interact with the scrollbar.
+    </p>
 
-<p>When a scrollbar is <code>enabled</code>, the two possible active states are:</p>
+    <p>When a scrollbar is <code>enabled</code>, the two possible active states are:</p>
 
-<ul>
-  <li><code>dragging scroll</code>: The user is "dragging" the page up or down, whether by directly manipulating the scroll thumb or by taking advantage of the two-finger scroll function of the trackpad. </li>
+    <ul>
+      <li>
+        <code>dragging scroll</code>: The user is "dragging" the page up or down, whether by directly manipulating the scroll thumb or by taking advantage of the two-finger scroll function of the trackpad. 
+      </li>
 
-  <li><code>instantaneous scroll</code>: The user "skips" across the page with keyboard functions (the up and down arrow keys, the space bar, page up and page down keys, etc.). The effect is an instantaneous jump, rather than a gradual pulling drag of a page. </li>
-</ul>
+      <li>
+        <code>instantaneous scroll</code>: The user "skips" across the page with keyboard functions (the up and down arrow keys, the space bar, page up and page down keys, etc.). The effect is an instantaneous jump, rather than a gradual pulling drag of a page. 
+      </li>
+    </ul>
 
 
   </div>
 
   <div class="col-sm-6">
+    <h3>Variants</h3>
+    <ul>
+      <li>
+        <b>Two Finger Scrolling</b> <br>
+        Two finger scrolling, originally introduced by Apple, is a new and more efficient way to scroll through pages on laptops. Although it is an easier tool to use, two-fingered scrolling can be difficult to learn because it is not immediately intuitive. When users scroll down with two fingers on the trackpad, they expect the page to go down. Similarly, when they scroll up, they anticipate the page will move upwards - this movement of the fingers on the trackpad is designed to mimic the action of moving up or down a page of content, akin to when reading a book or document. This intuition is further informed by the way the scroll bar is designed. However, both OS X and Windows 10 introduce two finger scrolling in the opposite manner. This can make it harder and more frustrating for users to adjust to the change. On the other hand, once users are acclimated with this adjustment, it is easier to remember how it works, and they are less likely to forget the motion; essentially, two-fingered scrolling becomes second nature.
+      </li>
 
-<h3>Variants</h3>
-  <ul>
-    <li><b>Two Finger Scrolling</b> <br>
-      Two finger scrolling, originally introduced by Apple, is a new and more efficient way to scroll through pages on laptops. Although it is an easier tool to use, two-fingered scrolling can be difficult to learn because it is not immediately intuitive. When users scroll down with two fingers on the trackpad, they expect the page to go down. Similarly, when they scroll up, they anticipate the page will move upwards - this movement of the fingers on the trackpad is designed to mimic the action of moving up or down a page of content, akin to when reading a book or document. This intuition is further informed by the way the scroll bar is designed. However, both OS X and Windows 10 introduce two finger scrolling in the opposite manner. This can make it harder and more frustrating for users to adjust to the change. On the other hand, once users are acclimated with this adjustment, it is easier to remember how it works, and they are less likely to forget the motion; essentially, two-fingered scrolling becomes second nature.</li>
+        <br>
 
-      <br>
+        <img src="natural-scrolling-direction.gif" class = "img-scrolling" alt="Natural Scroll Gif" height="350" width="425">
 
-      <img src="natural-scrolling-direction.gif" class = "img-scrolling" alt="Natural Scroll Gif" height="350" width="425">
+        <br>
 
-      <br>
+      <li>
+        <b>Keyboard Controls</b> <br>
+        There are alternative ways to scrolling, two of which can be accessed on the keyboard. The arrow keys on the bottom,right-hand side of the keyboard can be used as shortcuts to scroll up and down a page; the down arrow key shifts the page downwards while up moves it upwards. In addition, users can utilize the spacebar to quickly jump down the page and the keyboard shortcut <code>Shift+Space</code> to scroll upwards.
+      </li>
 
-    <li><b>Keyboard Controls</b> <br>
-      There are alternative ways to scrolling, two of which can be accessed on the keyboard. The arrow keys on the bottom,right-hand side of the keyboard can be used as shortcuts to scroll up and down a page; the down arrow key shifts the page downwards while up moves it upwards. In addition, users can utilize the spacebar to quickly jump down the page and the keyboard shortcut <code>Shift+Space</code> to scroll upwards.</li>
+      <li>
+        <b>Mouse Scroll Wheel</b> <br>
+        The computer mouse is an accessory that can either be used wirelessly or attached to desktops and laptops. The scroll wheel, located in the middle of the mouse, can act as another scrolling agent. The scroll wheel can be used in two ways; it can either be scrolled or clicked on. Users can manipulate the scroll wheel to scroll up and down a page depending on the settings of their devices. They can also click on the wheel and drag the pointer in the direction they want to travel on a page.
+      </li>
+    </ul>
 
-    <li><b>Mouse Scroll Wheel</b> <br>
-      The computer mouse is an accessory that can either be used wirelessly or attached to desktops and laptops. The scroll wheel, located in the middle of the mouse, can act as another scrolling agent. The scroll wheel can be used in two ways; it can either be scrolled or clicked on. Users can manipulate the scroll wheel to scroll up and down a page depending on the settings of their devices. They can also click on the wheel and drag the pointer in the direction they want to travel on a page.</li>
+    <h3>Priority Metrics</h3>
 
-  </ul>
+    <ul>
+        <li>
+          <b>Efficiency:</b>
+          Scrolling is an essential aspect of using modern devices. It allows the user to easily navigate through different windows and quickly get from point A to point B. Therefore, the faster a user can scroll, the faster they can use their devices. In turn, a user could then get more done with less time. 
+          </li>
+        <li>
+          <b>Memorability and Errors:</b>
+          If the retention over time for scrolling is not effective, it will cause the rate of errors to go up. This is especially important for users who just started using a specific platform. If they are unable to remember the scrolling techniques, causing a large amount of errors, there is a chance that they may switch to a different platform. 
+        </li>
+        <li>
+          <b>Learnability:</b>
+          It is important that the time it takes to learn scrolling is very short in order for users to focus more on other aspects of their devices. Generally users are able to pick up scrolling relatively quickly because of how it imitates real world physics. For example, if a user wants to scroll down on a page, they drag the window’s scroll bar down.
+        </li>
+        <li>
+          <b>Satisfaction:</b>
+          Although some people may find a certain amount of satisfaction in the scrolling capabilities of certain platforms, the act of scrolling eventually becomes second nature to a user. In other words, over time scrolling becomes an action that is hardly thought about by someone using a device. This is due to the fact that scrolling capabilities are designed to be useful and practical rather than overly attractive. 
+        </li>
+    </ul>
 
-<h3>Priority Metrics</h3>
+    <h3>Key Characteristics</h3>
 
-  <ul>
-  <li><b>Efficiency:</b>
-    Scrolling is an essential aspect of using modern devices. It allows the user to easily navigate through different windows and quickly get from point A to point B. Therefore, the faster a user can scroll, the faster they can use their devices. In turn, a user could then get more done with less time. 
-    </li>
-  <li><b>Memorability and Errors:</b>
-    If the retention over time for scrolling is not effective, it will cause the rate of errors to go up. This is especially important for users who just started using a specific platform. If they are unable to remember the scrolling techniques, causing a large amount of errors, there is a chance that they may switch to a different platform. 
-    </li>
-  <li><b>Learnability:</b>
-    It is important that the time it takes to learn scrolling is very short in order for users to focus more on other aspects of their devices. Generally users are able to pick up scrolling relatively quickly because of how it imitates real world physics. For example, if a user wants to scroll down on a page, they drag the window’s scroll bar down.
-    </li>
-  <li><b>Satisfaction:</b>
-    Although some people may find a certain amount of satisfaction in the scrolling capabilities of certain platforms, the act of scrolling eventually becomes second nature to a user. In other words, over time scrolling becomes an action that is hardly thought about by someone using a device. This is due to the fact that scrolling capabilities are designed to be useful and practical rather than overly attractive. 
-    </li>
-</ul>
+    <p> We've been given a variety of options to scroll from: which is the best?</p>
 
-<h3>Key Characteristics</h3>
+    <p>
+      According to the iOS Human Interface Guidelines the scrolling gesture should work in a way that feels natural to the user.  Therefore, scrolling should emulate real world physics and common thought process. When a user does any action with the downward movement, such as pressing the down arrow key or dragging the scroll bar down, the window should scroll downwards, and vice versa.  The only exception to this is the two finger scroll. In this situation, it is the decision of the users whether they would like dragging fingers down to scroll upwards or downwards. Furthermore, it is important to have different variants to provide a user with a majority of ways to scroll in situations that the user finds best.
+    </P>
 
-<blockquote> We've been given a variety of options to scroll from: which is the best?</blockquote>
+    <h4>Consistency:</h4>
 
-<p>According to the iOS Human Interface Guidelines the scrolling gesture should work in a way that feels natural to the user.  Therefore, scrolling should emulate real world physics and common thought process. When a user does any action with the downward movement, such as pressing the down arrow key or dragging the scroll bar down, the window should scroll downwards, and vice versa.  The only exception to this is the two finger scroll. In this situation, it is the decision of the users whether they would like dragging fingers down to scroll upwards or downwards. Furthermore, it is important to have different variants to provide a user with a majority of ways to scroll in situations that the user finds best.</P>
+    <p>
+      In all situations where scrolling is an option, the actions to scroll should always be the same. For example if the user can two finger scroll in one window, the user should be able to two finger scroll in every other situation. By doing this, the user does not have to remember different scrolling situations, which would negatively affect learnability and memorability. Additionally, lack of consistency would create a larger amount of errors.
+    </p>
 
-<h4>Consistency:</h4>
+    <h4>Verdict</h4>
 
-<p>In all situations where scrolling is an option, the actions to scroll should always be the same. For example if the user can two finger scroll in one window, the user should be able to two finger scroll in every other situation. By doing this, the user does not have to remember different scrolling situations, which would negatively affect learnability and memorability. Additionally, lack of consistency would create a larger amount of errors. </p>
+    <p>
+      Ultimately, it is up to the user as to which method of scrolling is the most efficient and satisfying for them. We have agreed, however, that the addition of two-fingered scrolling to recent platforms is practially essential. Once learning this method, many users rely on it and attest to its simple power. Many a time have I been frustrated when unable to two-finger scroll in the Ubuntu Virtual Machine because of my current system's trackpad predictability. The presence of scrollbar is also extremely desirable in desktop platforms.
+    </p>
 
-<h4>Verdict</h4>
+    <h4>Component in Action</h4>
 
-<p>Ultimately, it is up to the user as to which method of scrolling is the most efficient and satisfying for them. We have agreed, however, that the addition of two-fingered scrolling to recent platforms is practially essential. Once learning this method, many users rely on it and attest to its simple power. Many a time have I been frustrated when unable to two-finger scroll in the Ubuntu Virtual Machine because of my current system's trackpad predictability. The presence of scrollbar is also extremely desirable in desktop platforms. </p>
+    <p>Here we have an image of scrolling down a screen:</p>
 
-<h4>Component in Action</h4>
-
-<blockquote>
-  <p>Here we have an image of scrolling down a screen:</p>
-</blockquote>
-
-<img src="scrolling_action.gif" class="img-scrolling" alt="Scrolling Gif" width="500">
+    <img src="scrolling_action.gif" class="img-scrolling" alt="Scrolling Gif" width="500">
 
   </div>
 </div>
 
 <h3>Platform-Specific Instances</h3>
 
-<blockquote>
-  <p>Below, we have a cross-platform comparison of scrolling amongst a variety of systems, including Mac OS X, Windows 10, and iOS. </p>
-</blockquote>
+<p>Below, we have a cross-platform comparison of scrolling amongst a variety of systems, including Mac OS X, Windows 10, and iOS. </p>
 
 <div class="row">
   <div class="col-sm-12">
-
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title text-center">Mac OS X</h4>
       </div>
       <div class="panel-body">
-        <p>The Mac OS X Human Interface Guidelines emphasize the importance of convenient, intuitive scrolling techniques. For this reason, Apple changed 25 years of convention when they released Mac OS X Lion in 2011. In the past, two finger scrolling followed the convention of scrolling on a mouse, because that is what was introduced first. However, Apple wanted to change the behavior of their scrolling to correspond with how it would work in physical space. For example, if you were reading a piece of paper in a fixed viewing frame, you would need to push the paper upwards to view information at the bottom of the page or downwards to read the top. This "natural scrolling" on the trackpad would no longer follow the direction of the scroll bar, but the user's finger movement.</p>
+        <div class="row">
+          <div class="col-sm-6">
+            <p>
+              The Mac OS X Human Interface Guidelines emphasize the importance of convenient, intuitive scrolling techniques. For this reason, Apple changed 25 years of convention when they released Mac OS X Lion in 2011. In the past, two finger scrolling followed the convention of scrolling on a mouse, because that is what was introduced first. However, Apple wanted to change the behavior of their scrolling to correspond with how it would work in physical space. For example, if you were reading a piece of paper in a fixed viewing frame, you would need to push the paper upwards to view information at the bottom of the page or downwards to read the top. This "natural scrolling" on the trackpad would no longer follow the direction of the scroll bar, but the user's finger movement.
+            </p>
 
-        <p>Initially, this change made users angry and frustrated. Essentially, users had to reprogram their muscle memory to accomodate this alteration. Over time, users began appreciating the new technique, realizing it's a more realistic way to scroll. However, incase users dislike the change and prefer not to use it, Apple gives them the option to change their scroll settings back to the original way.</p>
+          </div>
+          <div class="col-sm-6">
+            <img src="natural-scrolling.png" class="img-scrolling" alt="Natural Scrolling Settings" width="400" height="300">
+          </div>
+        </div>
+        
+        <br>
+        <div class="row">
+          <div class="col-sm-6">
+            <p>
+              Initially, this change made users angry and frustrated. Essentially, users had to reprogram their muscle memory to accomodate this alteration. Over time, users began appreciating the new technique, realizing it's a more realistic way to scroll. However, incase users dislike the change and prefer not to use it, Apple gives them the option to change their scroll settings back to the original way.
+            </p>
+            <p>
+              In the earlier designs of OS X, the scroll bar contained arrows, similar to the ones on Windows 10. However, the arrows were not placed at the top and bottom of the scroll bar. Following Fitts' law, which predicts the time needed to rapidly move to a target area, Apple strategically placed both of those buttons at the bottom of the scroll bar for easier reach. However, after the update in OS X Lion, they removed the arrows altogether. Instead of using arrows, users can click at the top inside the scroll bar to move up the page or at the bottom to shift downwards.
+            </p>
+            
+          </div>
+          <div class="col-sm-6">
+            <img src="scroll-bar-comparison.png" class="img-scrolling" alt="Scroll Bar Comparison" width="400" height="425">
+          </div>
+        </div>
+        
 
-        <img src="natural-scrolling.png" class="img-scrolling" alt="Natural Scrolling Settings" width="400" height="300">
-
-        <p><br>In the earlier designs of OS X, the scroll bar contained arrows, similar to the ones on Windows 10. However, the arrows were not placed at the top and bottom of the scroll bar. Following Fitts' law, which predicts the time needed to rapidly move to a target area, Apple strategically placed both of those buttons at the bottom of the scroll bar for easier reach. However, after the update in OS X Lion, they removed the arrows altogether. Instead of using arrows, users can click at the top inside the scroll bar to move up the page or at the bottom to shift downwards.</p>
-
-        <img src="scroll-bar-comparison.png" class="img-scrolling" alt="Scroll Bar Comparison" width="400" height="425">
-
-        <p><br>Unlike Windows 10, Apple changed the default settings of the scroll bar to appear only when finger movement is tracked. The Inferface Guidelines explain that this adjustment was made so that the scroll bar will not "occupy valuable space in the content area". When the scroll bar does appear, users can have an understanding of how small or large the document is based on the size of the scroll thumb or where they are in the current window. However, if users want to keep the scroll bar present at all times, they could change their scroll bar settings to "Always" in System Preferences. In addition, users can manipulate the settings to change the result of a click in the scroll bar; this click can either jump to the next page or move to the place where the scroll bar was clicked.</p>
-
-        <img src="settings.png" class="img-scrolling" alt="Scroll Settings" width="400" height="400">
-
-        <p><br>Mac OS X provides various alternatives for users who prefer different scrolling methods. Aside from the variants listed above, there are a few other shortcuts that can be used for scrolling. For example, the keyboard shortcut <code>Command+Up Arrow</code> (&#x2318 Cmd &#x21E7) will scroll all the way to the top of the page, while <code>Command+Down Arrow</code> (&#x2318 Cmd &#x21E9) will move all the way to the bottom of the page. Similarly, <code>Option+Up Arrow</code> (&#x2325 Opt &#x21E7) scrolls up by "one full screen" whereas <code>Option+Down Arrow</code> (&#x2325 Opt &#x21E9) will shift down by "one full screen."</p>
-
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="settings.png" class="img-scrolling" alt="Scroll Settings" width="400" height="400">
+          </div>
+          <div class="col-sm-6" style="margin-top:50px; margin-left:0px">
+            <p>
+              Unlike Windows 10, Apple changed the default settings of the scroll bar to appear only when finger movement is tracked. The Inferface Guidelines  explain that this adjustment was made so that the scroll bar will not "occupy valuable space in the content area". When the scroll bar does appear, users can have an understanding of how small or large the document is based on the size of the scroll thumb or where they are in the current window. However, if users want to keep the scroll bar present at all times, they could change their scroll bar settings to "Always" in System Preferences. In addition, users can manipulate the settings to change the result of a click in the scroll bar; this click can either jump to the next page or move to the place where the scroll bar was clicked.
+            </p>
+            
+          </div>
+        </div>
+        <p>
+              <br>Mac OS X provides various alternatives for users who prefer different scrolling methods. Aside from the variants listed above, there are a few other shortcuts that can be used for scrolling. For example, the keyboard shortcut <code>Command+Up Arrow</code> (&#x2318 Cmd &#x21E7) will scroll all the way to the top of the page, while <code>Command+Down Arrow</code> (&#x2318 Cmd &#x21E9) will move all the way to the bottom of the page. Similarly, <code>Option+Up Arrow</code> (&#x2325 Opt &#x21E7) scrolls up by "one full screen" whereas <code>Option+Down Arrow</code> (&#x2325 Opt &#x21E9) will shift down by "one full screen."
+        </p>
       </div>
     </div>
 
@@ -180,39 +232,46 @@ contributors:
         <h4 class="panel-title text-center">Windows 10</h4>
       </div>
       <div class="panel-body">
+        <p>
+          Microsoft's UX Guidelines prioritize two aspects of desktop design: simplicity and power. Here we will examine how those qualities apply to scrolling in Windows 10. 
+        </p>
 
-      <blockquote>
+        <p> 
+          In their description of good user design, the Microsoft Guidelines detail what exactly makes a program simple and powerful. To ensure simplicity, they argue for elimination of any controls that may be considered unessential; for Microsoft, simplicity is not equivalent to ease-of-use, but a method to attain it. To make an application powerful, it should be versatile and flexible while enabling users to perform all kinds of tasks. 
+        </p>
+
+        <p>
+          The Windows 'Design and UI' category clearly states: "Windows has two scroller visualizations, which are based on the user's input mode: scroll indicators when using touch or gamepad; and interactive scroll bars for other input devices including mouse, keyboard, and pen." For Windows 10 devices that can toggle between laptop and tablet, the user now has more power in their method of scrolling (shown in the image below) between modes.
+        </p>
+
+        <br>
+
+        <p align="middle"> <img src="windows_scrollbar.png" class="img-scrolling" alt="Default Windows 10 Scrollbars" width="650" height="60"> </p>
+
+        <p> 
+          In the images below, we can see how the Windows 10 interface applies the different modes of scrolling (default vs. tablet mode) with a simple change in design. The first example features a file explorer menu with the expected scrollbar view on the right side of the menu. The tablet scroll, however, is a slimmed-down, simpler feature that mimics the appearance of tabs (demonstrated by the purple tab on the left side of the screen). 
+        </p>
+
+        <br>
         
-        Microsoft's UX Guidelines prioritize two aspects of desktop design: simplicity and power. Here we will examine how those qualities apply to scrolling in Windows 10. 
+        <p> 
+          <img src="windows_menuscroll.png" class="img-scrolling" alt="Windows Menu Example" width="500" style="margin-right: 30px">  
+          <img src="windows_tabletscroll.png" class="img-scrolling" alt="Windows Tablet Scrollbar" width="535">
+        </p>
 
-      </blockquote>
+        <p>
+          Unlike the Mac OS X in which the scroll bar will "hide," or slide out of view of the screen, if not in use, the Windows platform always has the scrollbar in view of the page, regardless of action indicated by the user. Furthermore, Mac ensures that the action of manipulating the scroll wheel on a mouse moves the page in the same direction as it would on a two-fingered scroll. Windows, however, does not match its scroll wheel motion to the two-fingered scroll, but defaults it to rotating up and down moving the page in those respective directions. This sudden change can be disorienting for some users who are used to the trackpad motion.
+        </p>
 
-      <p> In their description of good user design, the Microsoft Guidelines detail what exactly makes a program simple and powerful. To ensure simplicity, they argue for elimination of any controls that may be considered unessential; for Microsoft, simplicity is not equivalent to ease-of-use, but a method to attain it. To make an application powerful, it should be versatile and flexible while enabling users to perform all kinds of tasks.  </p>
+        <br>
 
-      <p>The Windows 'Design and UI' category clearly states: "Windows has two scroller visualizations, which are based on the user's input mode: scroll indicators when using touch or gamepad; and interactive scroll bars for other input devices including mouse, keyboard, and pen." For Windows 10 devices that can toggle between laptop and tablet, the user now has more power in their method of scrolling (shown in the image below) between modes. </p>
+        <p> 
+          <img src="arrow_scroll.gif" class="img-scrolling" alt="Windows Arrow Buttons" align = "left"> One majorly noticeable difference between Windows scrolling and other platforms is the advent of the up and down arrow buttons on either end of the scroll thumb. The user can either click these arrows instantaneously and move a small amount up and down the page, or they can click and hold the buttons to drag scroll the content. <br><br> This is directly compliant with Windows' advocation for providing their clients with 'power' - with the addition of a button control, the user now has more choice for their preferred method of scrolling. Windows' extra keyboard controls further reflect this: not only can a Windows user scroll using the space bar, the 'Page Up' and 'Page Down' keys also perform a scrolling operation by jumping a full pages length up or down, respectively. 
+        </p>
 
-      <br>
-
-      <p> <img src="windows_scrollbar.png" class="img-scrolling" alt="Default Windows 10 Scrollbars" width="500"> </p>
-
-      <p> In the images below, we can see how the Windows 10 interface applies the different modes of scrolling (default vs. tablet mode) with a simple change in design. The first example features a file explorer menu with the expected scrollbar view on the right side of the menu. The tablet scroll, however, is a slimmed-down, simpler feature that mimics the appearance of tabs (demonstrated by the purple tab on the left side of the screen). </p>
-
-      <br>
-      
-      <p> <img src="windows_menuscroll.png" class="img-scrolling" alt="Windows Menu Example" width="500">  
-
-      <img src="windows_tabletscroll.png" class="img-scrolling" alt="Windows Tablet Scrollbar" width="550"></p>
-
-      <p><br>Unlike the Mac OS X in which the scroll bar will "hide," or slide out of view of the screen, if not in use, the Windows platform always has the scrollbar in view of the page, regardless of action indicated by the user. Furthermore, Mac ensures that the action of manipulating the scroll wheel on a mouse moves the page in the same direction as it would on a two-fingered scroll. Windows, however, does not match its scroll wheel motion to the two-fingered scroll, but defaults it to rotating up and down moving the page in those respective directions. This sudden change can be disorienting for some users who are used to the trackpad motion. </p>
-
-      <br>
-
-      <p> <img src="arrow_scroll.gif" class="img-scrolling" alt="Windows Arrow Buttons" align = "left"> One majorly noticeable difference between Windows scrolling and other platforms is the advent of the up and down arrow buttons on either end of the scroll thumb. The user can either click these arrows instantaneously and move a small amount up and down the page, or they can click and hold the buttons to drag scroll the content. 
-      <br><br> This is directly compliant with Windows' advocation for providing their clients with 'power' - with the addition of a button control, the user now has more choice for their preferred method of scrolling. Windows' extra keyboard controls further reflect this: not only can a Windows user scroll using the space bar, the 'Page Up' and 'Page Down' keys also perform a scrolling operation by jumping a full pages length up or down, respectively. </p>
-
-      <p> This variety of control is unique to Windows platforms. Therein lies the criticism that the wealth of scrolling options provided by Windows is excessive and unnecessary; no user will, in their daily use, need over six different ways to navigate through content. The question naturally follows: are all these methods truly essential to the platform and in line with Windows' simplicity guidelines? The provision of choice can arguably compensate for this excess, however. Since Windows expects its users to range in computing proficiency, from expert to newbie, they will undoubtedly desire different methods of navigation - hence, the multitude of options. </p>
-      
-
+        <p> 
+          This variety of control is unique to Windows platforms. Therein lies the criticism that the wealth of scrolling options provided by Windows is excessive and unnecessary; no user will, in their daily use, need over six different ways to navigate through content. The question naturally follows: are all these methods truly essential to the platform and in line with Windows' simplicity guidelines? The provision of choice can arguably compensate for this excess, however. Since Windows expects its users to range in computing proficiency, from expert to newbie, they will undoubtedly desire different methods of navigation - hence, the multitude of options.
+        </p>
       </div>
     </div>
 
@@ -222,51 +281,132 @@ contributors:
       </div>
       <div class="panel-body">
 
-      <blockquote>There are three primary themes that differentiate iOS from other platforms: Clarity, Deference, and Depth</blockquote>
+        <p>There are three primary themes that differentiate iOS from other platforms: Clarity, Deference, and Depth</p>
 
-      <iframe src="//giphy.com/embed/8y90Lrhe2tIl2" width="300" height="400" frameBorder="0" class="giphy-embed" align="left" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/8y90Lrhe2tIl2"></a></p>
+        <iframe src="//giphy.com/embed/8y90Lrhe2tIl2" width="300" height="400" frameBorder="0" class="giphy-embed" align="left" allowFullScreen style="margin:20px"></iframe><p><a href="https://giphy.com/gifs/8y90Lrhe2tIl2"></a></p>
 
-      <iframe src="//giphy.com/embed/cnXtBfduu1dRu" width="300" height="400" frameBorder="0" class="giphy-embed" align="right" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cnXtBfduu1dRu"></a></p>
+        <iframe src="//giphy.com/embed/cnXtBfduu1dRu" width="300" height="400" frameBorder="0" class="giphy-embed" align="right" allowFullScreen style="margin:20px></iframe><p><a href="https://giphy.com/gifs/cnXtBfduu1dRu"></a></p>
 
-      <br>
+        <br>
 
-      <p>The overview for the iOS Human Interface Guidelines explains how each one of these themes is essential for good user design.  Furthermore, there is a set of sub principles, Aesthetic Integrity, Consistency, Direct Manipulation, Feedback, Metaphors, and User Control, that maximize the effect of each of the themes.  When closely analysing the scrolling component of iOS, it is clear how some of these themes and principles affect it.</p>
+        <p>
+          The overview for the iOS Human Interface Guidelines explains how each one of these themes is essential for good user design.  Furthermore, there is a set of sub principles, Aesthetic Integrity, Consistency, Direct Manipulation, Feedback, Metaphors, and User Control, that maximize the effect of each of the themes.  When closely analysing the scrolling component of iOS, it is clear how some of these themes and principles affect it.
+        </p>
 
-      <br>
+        <br>
 
-      <p>The iOS scrolling guideline states, “A scroll view allows users to browse content, such as text in a document or a collection of images, that’s larger than the visible area.” To scroll on an iOS device, users simply swipe their finger on the screen to scroll up, down, and/or side to side. </p>
+        <p>
+          The iOS scrolling guideline states, “A scroll view allows users to browse content, such as text in a document or a collection of images, that’s larger than the visible area.” To scroll on an iOS device, users simply swipe their finger on the screen to scroll up, down, and/or side to side. 
+        </p>
 
-      <br>
-      <br>
-      <br>
+        <br>
+        <br>
+        <br>
 
-      <iframe src="//giphy.com/embed/Fc3FCYopBAhb2" width="300" height="400" frameBorder="0" class="giphy-embed" align="left" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Fc3FCYopBAhb2"></a></p>
+        <iframe src="//giphy.com/embed/Fc3FCYopBAhb2" width="300" height="400" frameBorder="0" class="giphy-embed" align="left" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Fc3FCYopBAhb2"></a></p>
 
-      <p>Unlike Windows 10, the iOS scrolling bar will disappear when the user is not scrolling (notice the gif to the left).  This aspect is derived from the iOS principle of Aesthetic Integrity, which focusses on unobtrusive graphics to keep users focussed on their tasks.   By having a transient scrolling indicator, the scrolling bar does not become a distraction from the overall picture on the screen.  This is especially important on smaller iOS devices like the iPhone.  However, by appearing when the user is scrolling, the scrolling indicator helps the user have an understanding of how far up or down they are in their current window. </p>
+        <p>
+          Unlike Windows 10, the iOS scrolling bar will disappear when the user is not scrolling (notice the gif to the left).  This aspect is derived from the iOS principle of Aesthetic Integrity, which focusses on unobtrusive graphics to keep users focussed on their tasks.   By having a transient scrolling indicator, the scrolling bar does not become a distraction from the overall picture on the screen.  This is especially important on smaller iOS devices like the iPhone.  However, by appearing when the user is scrolling, the scrolling indicator helps the user have an understanding of how far up or down they are in their current window. 
+        </p>
 
-      <p>The iOS themes Depth and Deference, as well as the principle of Metaphors, also affect the design of the scrolling indicator.  Depth, Deference, and Metaphors highlight that iOS strives to model “familiar experiences,” “fluid motion,” and “realistic motion.”  When a user wants to scroll on an iOS device, they move their finger in the opposite direction that they want the window to move. For example, if they want to scroll up, they drag their finger down.  This is done to emulate how it would work in real world physics.  If a person were to drag a long piece of paper downwards, they would see the higher portion of the paper. </p>
+        <p>
+          The iOS themes Depth and Deference, as well as the principle of Metaphors, also affect the design of the scrolling indicator.  Depth, Deference, and Metaphors highlight that iOS strives to model “familiar experiences,” “fluid motion,” and “realistic motion.”  When a user wants to scroll on an iOS device, they move their finger in the opposite direction that they want the window to move. For example, if they want to scroll up, they drag their finger down.  This is done to emulate how it would work in real world physics.  If a person were to drag a long piece of paper downwards, they would see the higher portion of the paper. 
+        </p>
 
-      <iframe src="//giphy.com/embed/iGX9NFZ9I8vuw" width="300" height="400" frameBorder="0" class="giphy-embed" align="right" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/iGX9NFZ9I8vuw"></a></p>
+        <iframe src="//giphy.com/embed/iGX9NFZ9I8vuw" width="300" height="400" frameBorder="0" class="giphy-embed" align="right" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/iGX9NFZ9I8vuw"></a></p>
 
-      <p>When looking at the movement of the scrolling indicator, it can be seen that it has realistic and fluid motion. If a user flicks upwards on the screen, the scrolling indicator will begin by moving downwards quickly, but overtime slow down until it comes to a complete stop (notice the gif to the right). Contrary to this, if a user drags their finger down the screen, stops moving their finger, then lifts their finger off the screen, the scrolling indicator will move and stop at the pace of the user’s finger. This is done to imitate the effect that friction has on the motion of physical objects, which is something people experience on a daily basis.  By modeling scrolling like this, the time to learn scrolling is shortened and the memorability of scrolling is strengthened because the actions are familiar to the user. </p>
+        <p>
+          When looking at the movement of the scrolling indicator, it can be seen that it has realistic and fluid motion. If a user flicks upwards on the screen, the scrolling indicator will begin by moving downwards quickly, but overtime slow down until it comes to a complete stop (notice the gif to the right). Contrary to this, if a user drags their finger down the screen, stops moving their finger, then lifts their finger off the screen, the scrolling indicator will move and stop at the pace of the user’s finger. This is done to imitate the effect that friction has on the motion of physical objects, which is something people experience on a daily basis.  By modeling scrolling like this, the time to learn scrolling is shortened and the memorability of scrolling is strengthened because the actions are familiar to the user. 
+        </p>
 
-      <p>Overall, although the iOS platform provides the user with a scrolling indicator, it is really only the user’s finger movements that control the movement of the window.  The purpose of the scrolling indicator is to fulfill the iOS principle of feedback by acknowledging “actions and showing results to keep people informed.”  It does this by acting as a navigational tool that shows where the user is located in the window and how large the window the user is looking at is. </p>
-
+        <p>
+          Overall, although the iOS platform provides the user with a scrolling indicator, it is really only the user’s finger movements that control the movement of the window.  The purpose of the scrolling indicator is to fulfill the iOS principle of feedback by acknowledging “actions and showing results to keep people informed.”  It does this by acting as a navigational tool that shows where the user is located in the window and how large the window the user is looking at is. 
+        </p>
       </div>
     </div>
+    <br>
+    <br>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Linux Ubuntu</h4>
+      </div>
+      <div class="panel-body">
+        <br>
+        <div class="row">
+         <div class="col-sm-6">
+          <p> 
+            To the right is the standard design for the Ubuntu scrollbar. Note that the scrollbar has an expanded and minimized version. Also worth noting is that different from most modern scrollbars, the Ubuntu scrollbar still maintains a distinctive color, as opposed to the now adopted grey used in all other previously mentioned platforms.
+          </p>
+        
+        
+      <p>  
+        Similar to Mac OS X, there are no arrows to move the scrollbar thumb up or down. Instead users can click above or below the scrollbar thumb to scroll to that area of the page. 
+      </p>
 
+      </div>
+
+      <div class="col-sm-6 ">
+          <img src="Ubuntu_Minimized_Scrollbar_Thumb.png" class="img-scrolling" alt="Ubuntu Scroll Bar" width="250" height="250">
+          <img src="Ubuntu_Expanded_Scrollbar_Thumb.png" class="img-scrolling" alt="Ubuntu Scroll Bar" width="250" height="250">
+      </div>
+    </div>
+      <p> 
+        The design philosophy of Ubuntu emphasizes intuitive design, clarity, and precision. The Ubuntu documentation for design values states that Ubuntu apps should be created so that users can effortlessly move through the app with little effort, in a way that is both natural and logical. By focusing on apps that are natural and logical, the Ubuntu team strives to make each new feature easily learnable, and efficient to use.
+      </p>
+
+      <p>   
+        This is no more apparent than in Ubuntu’s design for their scroll bar. Unlike Mac OS X and Windows 10, when clicking on an area of the scrollbar tray that is not occupied by the scrollbar thumb, the scrollbar thumb immediately jumps to the clicked position, instead of gradually moving in the direction of the click event.
+     </p>
+
+      <p>
+        The design values of Ubuntu also state that design should focus on content first. The way the Ubuntu documentation describes this idea is that design that has too many features can make navigating the core content difficult, whereas a design with too little features can be hard to use. Ubuntu’s design values goes on to say that to realize this concept, one should focus on making it easy to find content and navigate apps. 
+      </p>
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="Ubuntu_Mouse_And_Touchpad_Settings.png" class="img-scrolling" alt="Ubuntu System Settings" width="500" height="250">
+        </div>
+        <div class="col-sm-6" style="margin-top:50px">
+          <p> 
+            It is for these reasons that two finger scrolling is disabled by default. The design for Ubuntu removes this feature so as to not overwhelm the user with the different methods of scrolling. However, if the user would want to still use the two finger scrolling, they can easily find the mouse and touchpad section in system settings and then check the box for two finger scrolling. 
+          </p>
+        </div>
+
+      </div>
+      <br>
+      <div class="row">
+         <div class="col-sm-6">
+          <p>
+            Likewise, this concept also plays a role in the size of the scrollbar thumb. Similar to Windows 10, the scrollbar thumb is always in view, however it behaves differently. When not in use, the scrollbar thumb will minimize vertically, but remain on screen (as seen in the gif to the right). However, if the mouse stops moving anywhere on the page, it dissapears. Again, this demonstrates how Ubuntu’s design emphasizes clarity, making a clear focus on the content of the app.
+          </p>
+
+          <p> 
+            Another key design concept listed on Ubuntu’s design values is the focus of meaning in colors. In this case, Ubuntu’s design reflects this idea by choosing to display the scrollbar in a bright orange color. This not only fits with the overall color scheme of Ubuntu, and their idea of branding, but also with Ubuntu’s goal of making features clear and precise. Even though the scrollbar minimizes,  its color makes it stand out, making easy to navigate to with the mouse whenever necessary. This allows the scrollbar to be easily visible at all times, without obstructing the view of the user. 
+          </p>
+        </div>
+        <div class="col-sm-6" style="padding-left:50px">
+          <img src="Ubuntu_Scrolling.gif" class="img-scrolling" alt="Ubuntu Scrolling Example" width="600" height="400">
+        </div>
+      </div>
+          <br>
+      </div>
+    </div>
   </div>
 </div>
 
 
-
-
-
 <h3>Credits &amp; References</h3>
 
+<!-- ChHANGE THIS LATER -->
   <li><a href="http://basalgangster.macgui.com/RetroMacComputing/The_Long_View/Entries/2011/7/30_Scroll_Bar.html">History of Scrolling</a></li>
   <li><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn742462(v=vs.85).aspx">Windows 10 Guidelines</a></li>
   <li><a href="https://msdn.microsoft.com/en-us/windows/uwp/controls-and-patterns/scroll-controls">Windows Scrolling Guidelines</a> </li>
   <li><a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/WindowScrolling.html">Mac OS X Human Interface Guidelines</a> </li>
   <li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/scroll-views/">iOS Human Interface Guidelines Scroll Views</a></li>
   <li><a href="https://developer.apple.com/ios/human-interface-guidelines/">iOS Human Interface Guidelines Overview</a></li>
+  <li><a href="https://design.ubuntu.com/apps/get-started/design-philosophy"> Ubuntu Design Philosophy </a></li>
+  <li><a href="https://design.ubuntu.com/apps/get-started/design-values"> Ubuntu App Design Values</a></li>
+  <li><a href="https://design.ubuntu.com/web/"> Ubuntu Web Design Guidelines</a></li>
+  <li><a href="https://wiki.ubuntu.com/UbuntuArchitecture"> Ubuntu Architecture Design Principles</a></li>
+  <li><a href="https://design.ubuntu.com/apps/building-blocks/scrolling"> Ubuntu Srcolling Guidelines</a></li>
+  <li><a href="https://design.ubuntu.com/brand/"> Ubuntu Brand Design</a></li>
+  <li><a href="https://github.com/canonical-webteam/practices/blob/master/design/vanilla-design-specs.md"> Ubuntu Vanilla Design Best Practices</a></li>
