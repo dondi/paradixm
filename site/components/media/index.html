@@ -16,6 +16,9 @@ contributors:
 
     - name: Jay Patel
       github: Jbreaker1
+
+    - name: Basil Latif
+      github: basillatif
 ---
 <p class="lead"> "An audio or video media player" </p>
 
@@ -23,9 +26,9 @@ contributors:
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-12">
-      <ul class="nav nav-pills nav-justified" role="tablist">
+      <ul class="nav nav-justified" role="tablist">
       <li role="nav item" class="active">
-        <a class="nav-link active" data-toggle="tab" href="#typical-appearance" role="tab">Typical Appearance</a>
+        <a class="nav-link" data-toggle="tab" href="#typical-appearance" role="tab">Typical Appearance</a>
       </li>
       <li role="nav item">
         <a class="nav-link" data-toggle="tab" href="#typical-behavior" role="tab">Typical Behavior</a>
@@ -56,9 +59,9 @@ contributors:
           <div class="row">
             <div class="col-lg-12">
 
-              <h3><b><u>Typical Appearance</b></u></h3>
-              <p> Simple three button interface towards the bottom of the screen, previous file, Play/Pause, and next file. Top of the screen includes the file name, and any other details about the file if available. The middle of the screen will show the video itself or the album art in case of audio files. Other buttons include volume control through buttons or a slider, options to shuffle your list of songs or repeat a single song or playlist, and a drop down menu for media settings. In the case of a video, choices for the quality of the video are usually present when streaming it online. Lastly slider that corresponds to the video or song length and how far into the file you are is present at the bottom of the screen. </p>
-
+              <h3><b>Typical Appearance</b></h3>
+              <p> Any video or audio media player will have a simple three button interface towards the bottom of the screen: previous file, Play/Pause, and next file. The top of the screen includes the file name, and any other details about the file if available. The middle of the screen will show the video itself or the album art in case of audio files. Other buttons include volume control through buttons or a slider, options to shuffle your list of songs or repeat a single song or playlist, and a drop down menu for media settings. In the case of a video, choices for the quality of the video are usually present when streaming it online. Lastly, the slider that corresponds to the video or song length and how far into the file you are is present at the bottom of the screen. </p>
+              <img src="images_media/WMP.jpg" height = 350 width = 550>
             </div>
           </div>
         </div>
@@ -73,10 +76,10 @@ contributors:
           <div class="row">
             <div class="col-lg-12">
 
-              <h3><b><u>Typical Behavior</b></u></h3>
+              <h3><b>Typical Behavior</b></h3>
 
                 <p> Songs are listed by alphabetical order, and depending on what tab you are in you can search for specific artists or albums as well. When play button is clicked/pressed, the file will begin playing. Default speakers in the device will be used unless there are user designated speakers available (e.x. headphones plugged in, blue tooth stereo system set up, etc.). If the previous file button is pressed once, the player will return to the beginning of the current file. If it is pressed twice in rapid succession it will start playing the file that came before the current one. The next file button only needs to be pressed once to skip the rest of the current file and start playing the next file in the list. </p>
-
+                <p> The Nielsen Norman Group provides details about good usability practices for a site with video on it. According to the article "Video Usability" by Amy Schade, there are 2 main types of online videos: entertainment and informational. Entertainment videos are something a user chooses to watch for his own enjoyment. In contrast, an informational video teaches the user about something. The first rule is that a site that has audio or video on it should not start playing automatically. Users do not like being forced to listen to or watch something. This places a cognitive load on the user to locate the the pause or stop button. Additionally, a user should know what the clip they are playing is about. There should be some accompanying text that describes the media on the screen. Once you have given the user control over what they are playing and told them what is about, you should minimize distracitons on the page, so that they can sit back and enjoy the content they are about to consume.   </p>
               <h3> Component in Action </h3>
 
               <div class= "row">
@@ -98,7 +101,7 @@ contributors:
           <div class="row">
             <div class="col-lg-12">
 
-              <h3><b><u>Priority Metrics</u></b></h3>
+              <h3><b>Priority Metrics</b></h3>
                 <p> For most users, media players are used to do one thing, to play the media that the user wants them to play. That being said, because it is more of a utilitarian component, there are some usability metrics that are not as importnat as others. Some of the important ones are learnability, efficiency, errors, and memorability. </p>
                 <ol>
                   <li><p> <b>Learnability:</b> Media players have to be quickly learnable. For most users, the  media player is only a gateway for them to see the actual content. The quicker it is to learn the software the better. Many media players should come intuitively. The different buttons and icons are very similar to other physical media players such as DVDs, Blu-Ray players and CD players. This similarity helps for users to quickly learn how to watch media on their devices. </p></li>
@@ -137,7 +140,7 @@ contributors:
           <div class="row">
             <div class="col-lg-12">
 
-              <h3><b><u>Events</b></u></h3>
+              <h3><b>Events</b></h3>
               <p> Hovering your mouse over the video or tapping the screen while the video is on will bring up the user interface. Clicking/pressing the Play/Pause button will trigger the file to start playing or pause at that time. If the previous file button is pressed once, the player will return to the beginning of the current file. If it is pressed twice in rapid succession it will start playing the file that came before the current one. The next file button only needs to be pressed once to skip the rest of the current file and start playing the next file in the list. Moving the slider for volume will increase or decrease the volume that the file is playing at. </p>
 
               <h3>State Diagram</h3>
@@ -152,16 +155,11 @@ contributors:
               </ol>
 
               <p> For video media players there are also options to change states between having the video play full screen and the video playing at the specifed size.</p>
-
+          
               <div class="row">
                 <div class = "col-sm-6">
                   <img src="images_media/Overall_v2.svg" class="img-responsive" alt= "Responsive image"style= "height: auto; width: auto">
                 </div>
-
-                <div class= "col-sm-6">
-                  <img src="images_media/3ButtonInterface.svg" class="img-responsive" alt="Responsive image" style= "height: auto; width: auto">
-                </div>
-
               </div>
             </div>
           </div>
@@ -177,7 +175,7 @@ contributors:
           <div class="row">
             <div class="col-lg-12">
 
-              <h3><b><u>Variants</b></u></h3>
+              <h3><b>Variants</b></h3>
 
               <h4> Audio Media Settings </h4>
               <ol>
@@ -204,7 +202,7 @@ contributors:
           <div class="row">
             <div class="col-lg-12">
 
-              <h3><b><u>Platform Specifics</b></u></h3>
+              <h3><b>Platform Specifics</b></h3>
               <div class="panel-group" id="event-group">
                 <div class="panel panel-default">
                   <div class="panel-heading">
@@ -817,6 +815,42 @@ contributors:
                 </div>
               </div>
             </div>
+           <div class="panel panel-default">
+            <div class="panel heading">
+            <h3 class="panel title">
+            <a data-toggle="collapse" href="#event10">Amazon Prime Video</a>
+            </h3>
+            </div>
+            <div id="event10" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p> Amazon Prime video is a video streaming service for Amazon Prime members. You can stream digital movies and TV shows on a computer, Amazon Fire TV, Blu Ray consoles, Smart TVs, and many other platforms. </p>
+                <h5> Usability of Selecting a Title to Watch  </h5>
+                <p> <img src="images_media/EntourageWatch.png" height = 350 width = 550> </p>
+                <p> As you browse through titles in the Amazon Video library, you can put your mouse on a title and a dialog box pops out giving you more information and an option to view the title. From a usability perspective, the most interesting feature in Amazon Prime Video is the fact that it uses AutoPlay. When you click "Watch Now" (see the "Entourage" Season 1 example above) or "Resume" (see the "Entourage" Season 2 example below) on a video, the video immediately starts playing. As outlined on this site, usability experts recommend not Auto Playing videos. However, Amazon uses it initially when you click on a video, and it automatically plays the next episode in a series. There is a section on their website dedicated to explaining how to turn Auto Play off.   </p>
+                <p> <img src="images_media/EntourageResume.png" height = 350 width = 550> </p>
+                <h5> Usability of Changing Settings While Watching a Video  </h5>
+                <p> <img src="images_media/RNblank.png" height = 350 width = 550> </p>
+                <p> When watching a video, the screen takes up the full page and there are no distractions. However, as mentioned on the "Events" tab on this webpage, Amazon follows a control hidden pattern. The picture below shows that when you move your mouse on a video that is playing you are shown a series of controls. The most prominent 3 buttons are a play/pause button and two buttons that let you fast forward or rewind by 10 seconds (see the middle of the screenshot below). These buttons are large and easy for a user to use.  </p>
+                <p> Other Buttons in the Top Right Corner: </p>
+                <ol>
+                  <li><b> Close Player: </b> Exits the current title and returns you to main page.</li>
+                  <li><b> Full Screen:</b> Makes the video play on the entire screen. </li>
+                  <li><b> Volume Button:</b> Vertical slider to adjust the volume. </li>
+                  <li><b> Options:</b> Option to change the video quality from Good (.38 gb/hr) to Better (1.4 gb/hr) to Best (6.84 gb/hr). </li>
+                  <li><b> Subtitles and Audio: </b> Allows you to turn subtitles on or off.</li>
+                  <li><b> View All: </b> Amazon tells you which actors play which characters. The View All buttons lets you see the whole cast of a show or movie.</li>
+                </ol>
+                <p> <img src="images_media/RNcontrols.png" height = 350 width = 550> </p>
+                <h5> Usability of Navigating Within a Season  </h5>
+                <p> <img src="images_media/EntourageTitleScreen.png" height = 350 width = 550> </p>
+                <p> Once you have selected a show to watch, Amazon makes it easy to watch any episode of that show. The layout of the top section of the page has all of the relevant information a user would want to know from ratings, simple text descriptions of the show, and options to watch the show later. The big green play button is very visible and easy for a user to interpret. At the bottom, there is a dropdown to select a season. As you scroll down on the page, there are thumbnails of each episode and only a play button on the right side. </p>
+                <p> <img src="images_media/EntourageSeason1.png" height = 350 width = 550> </p>
+                <h5> Analysis </h5>
+                <p> Amazon Prime Video is an intuitive, easy-to-learn way to stream digital content. It is straightforward to play a title. Once playing a video, it is simple to change settings. The button placement is good for a user to quickly navigate to what he or she wants. The only controversial aspect of the whole platform is the use of Auto Play. Over time, the user learns that by clicking "Watch Now" or "Resume," he will be navigated straight to the start of the video. so if he does not want that he should click somewhere else.   </p>
+
+              </div>
+            </div>
+           </div>
           </div>
         </div>
       </div>
@@ -824,9 +858,13 @@ contributors:
   </div>
 </div>
 </div>
+
 <!-- THE FUTURE IS THE PRESENT!-->
 
-<h4> References and Sources </h4>
+<h5> References and Sources </h5>
 <p> Apple OSX Human Interaction Guidelines document https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW1 </p>
+<p>Video Usability https://www.nngroup.com/articles/video-usability/</p>
+
 Contact GitHub API Training Shop Blog About
 © 2017 GitHub, Inc. Terms Privacy Security Status Help
+
