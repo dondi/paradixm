@@ -78,32 +78,30 @@ contributors:
     margin-bottom: 0px;
   }
 /**************************************************************************/
-/*Variant Carousel Formatting*/
-  .carousel-inner > .item > img {
-    margin: 0 auto;
-  }
+/*Carousel Formatting*/
+.carousel-caption{
+  background-color: #4C4C4C;
+  position: static;
+  height:170px;
+  padding-right:10px;
+  padding-left:10px;
+  margin-top: 10px;
+  padding-top:10px;
+  padding-bottom:40px;
+}
 
- .carousel-caption {
-    background-color: #4C4C4C;
-    position: static;
-    height:170px;
-    padding-right:10px;
-    padding-left:10px;
-    margin-top: 10px;
-    padding-top:10px;
-    padding-bottom:40px;
-  }
-  .carousel-caption h1 {
-    margin-top:0px ;
-    font-size: 30px;
-    font-color: green;
-  }
+.carousel {
+  position: relative;
+  padding: 10px;
+}
 
-  .carousel {
-    background-color:#f5f5f5;
-    position: relative;
-    padding: 10px;
-  }
+.carousel-control-next-icon {
+    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#4C4C4C' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#4C4C4C' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+}
 
 /**************************************************************************/
 /*Additional Formatting*/
@@ -150,11 +148,11 @@ The drag-and-drop feature allows the user to interactively move a file or image.
 <div class="row">
   <div class="col-md-5">
     <h3>Typical Appearance</h3>
-    <p>The drag-and-drop feature is rarely, if ever, visible to the user in its idle state.  Once the drag-and-drop is initiated, the file's movements are visually represented to assist the user's understanding of their actions. 
+    <p>The drag-and-drop feature is rarely, if ever, visible to the user in its idle state.  Once the drag-and-drop is initiated, the file's movements are visually represented to assist the user's understanding of their actions.
   </p><p>
     A <mark>"ghost-image,"</mark> as I will refer to it here, is a visual representation of the file that the user is dragging. It is anchored to the mouse to simulate physical dragging while the mouse button is depressed. If the user lets go of their mouse (referred to as "dropping" their object) in a valid place, the object will disappear from its original location and appear at its new location. If it is dropped in an invalid place, the ghost-image will animate back to its original location on a linear path. Typically, the ghost-image is semi-transparent and/or highlighted.
       <div class = "col-xs-3 col-xs-offset-1 small-orLarger">
-          <img src = "ghostImageExample.jpg" alt = "ghostImageExample" width="75px">
+          <img src = "ghostImageExample.jpg" alt = "ghostImageExample">
       </div>
       <div class = "col-xs-6 col-xs-offset-1 small-orLarger">
         <br>Click and drag this image to see the ghost-image in action.
@@ -172,7 +170,7 @@ The drag-and-drop feature allows the user to interactively move a file or image.
       <h4>The Ghost-Image</h4>
       <p>The most recognizable drag and drop feature is the "ghost" that appears when a user clicks and drags a file, image, or other object. <mark>It is the universal sign that indicates the object is being dragged.</mark></p>
     </div>
- 
+
     <p></p>
     <div>
       <h4>Common Rules of Drag-and-Drop</h4>
@@ -232,7 +230,7 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
 
   <div class="clearfix visible-md clearfix visible-sm"></div>
   <p></p>
-  
+
   <div class="col-sm-4 col-sm-offset-1  col-lg-3 col-lg-offset-0">
     <div align="center"><img src="imagedrag_toDesktop.gif" alt="imagedrag_toDesktop gif" style="width:290px;"></div>
   </div>
@@ -254,7 +252,7 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
 
   <div class="clearfix visible-md clearfix visible-sm"></div>
   <p></p>
-  
+
   <div class="col-sm-4 col-sm-offset-1  col-lg-3 col-lg-offset-0">
     <div align="center"><img src="filedrag_duplicate.gif" alt="filedrag_duplicate gif" style="width:290px;"></div>
   </div>
@@ -365,76 +363,88 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
   </div>
 </div>
 <br>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
   </ol>
 
   <!-- Wrapper for slides style="width:290px; -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="textDrag.gif" alt="textDrag gif" align="center">
-      <div class="carousel-caption">
-        <h1>Dragging Text</h1>
-        <p>A user can drag any text - from their own system or from the internet - and copy it, paste it, or save it as a new text file.</p>
-      </div>
-    </div>
+    <div class="carousel-inner" role="listbox">
 
-    <div class="item">
-      <img src="linkDrag.gif" alt="linkDrag gif" align="center">
-      <div class="carousel-caption">
-        <h1>Dragging Links</h1>
-        <p>All modern Internet browsers have implemented the drag and drop into many parts of their interface. The next few slides illustrate some common examples. This slide shows how dragging and dropping links into the address bar will open them in a new tab.</p>
+      <div class="carousel-item active">
+        <div class='text-center'>
+          <img src="textDrag.gif" alt="textDrag gif" align="center">
+        </div>
+        <div class="carousel-caption d-md-block">
+          <h3>Dragging Text</h3>
+          <p>A user can drag any text - from their own system or from the internet - and copy it, paste it, or save it as a new text file.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="item">
-      <img src="tabDrag.gif" alt="tabDrag gif" align="center">
-      <div class="carousel-caption">
-        <h1>Dragging Browser Tabs</h1>
-        <p>Tab navigation has been made simpler and more effective with the addition of drag and drop as an organizer.</p>
+      <div class="carousel-item">
+        <div class='text-center'>
+          <img src="linkDrag.gif" alt="linkDrag gif" align="center">
+        </div>
+        <div class="carousel-caption d-md-block">
+          <h3>Dragging Links</h3>
+          <p>All modern Internet browsers have implemented the drag and drop into many parts of their interface. The next few slides illustrate some common examples. This slide shows how dragging and dropping links into the address bar will open them in a new tab.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="item">
-      <img src="googleDrag.gif" alt="googleDrag gif" align="center">
-      <div class="carousel-caption">
-        <h1>Dragging into Websites (Cloud Storage)</h1>
-        <p>File uploading websites, such as Google Drive, Dropbox, Photobucket, Facebook, and countless others have used drag and drop as an alternative to defining a path. The most effective websites give the user the option to drag and drop <em>or</em> chose the path.</p>
+      <div class="carousel-item">
+        <div class='text-center'>
+          <img src="tabDrag.gif" alt="tabDrag gif" align="center">
+        </div>
+        <div class="carousel-caption d-md-block">
+          <h3>Dragging Browser Tabs</h3>
+          <p>Tab navigation has been made simpler and more effective with the addition of drag and drop as an organizer.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="item">
-      <img src="photoshopDrag.gif" alt="photoshopDrag gif" align="center">
-      <div class="carousel-caption">
-        <h1>Dragging into Programs</h1>
-        <p>Programs that use multiple files, including film editing software, iTunes playlists, and image editing programs (like Photoshop, pictured above) also use drag and drop as an alternative to importing the files through a folder structure.</p>
+      <div class="carousel-item">
+        <div class='text-center'>
+          <img src="googleDrag.gif" alt="googleDrag gif" align="center">
+        </div>
+        <div class="carousel-caption d-md-block">
+          <h3>Dragging into Websites (Cloud Storage)</h3>
+          <p>File uploading websites, such as Google Drive, Dropbox, Photobucket, Facebook, and countless others have used drag and drop as an alternative to defining a path. The most effective websites give the user the option to drag and drop <em>or</em> chose the path.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="item">
-      <img src="puzzleDrag.gif" alt="puzzleDrag gif" align="center">
-      <div class="carousel-caption">
-        <h1>Dragging in Games</h1>
-        <p>Games (especially mobile games, where a touch screen is used) utilize drag and drop components to immerse the player in the screen. Drag and drop, when done correctly, can cause the user to feel as though they are actually touching the objects. It is an excellent way to give the game more depth and realism.</p>
+      <div class="carousel-item">
+        <div class='text-center'>
+          <img src="photoshopDrag.gif" alt="photoshopDrag gif" align="center">
+        </div>
+        <div class="carousel-caption d-md-block">
+          <h3>Dragging into Programs</h3>
+          <p>Programs that use multiple files, including film editing software, iTunes playlists, and image editing programs (like Photoshop, pictured above) also use drag and drop as an alternative to importing the files through a folder structure.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class='text-center'>
+          <img src="puzzleDrag.gif" alt="puzzleDrag gif" align="center">
+        </div>
+        <div class="carousel-caption d-md-block">
+          <h3>Dragging in Games</h3>
+          <p>Games (especially mobile games, where a touch screen is used) utilize drag and drop components to immerse the player in the screen. Drag and drop, when done correctly, can cause the user to feel as though they are actually touching the objects. It is an excellent way to give the game more depth and realism.</p>
+        </div>
       </div>
     </div>
-  </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
@@ -446,16 +456,16 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
   <div class = "col-xs-12 col-xs-offset-0 metrics"><!--whole thing-->
       <h3> Usability Metrics</h3>
       <div class="col-xs-3 metricsNav" align="center"><!--nav column-->
-          <br><br><a href="#learn" class="btn btn-info btn-block" role="button">Learnability</a><br>        
+          <br><br><a href="#learn" class="btn btn-info btn-block" role="button">Learnability</a><br>
           <a href="#effic" class="btn btn-info btn-block" role="button">Efficiency</a><br>
-          <a href="#error" class="btn btn-info btn-block" role="button">Errors</a><br> 
+          <a href="#error" class="btn btn-info btn-block" role="button">Errors</a><br>
           <a href="#memor" class="btn btn-info btn-block" role="button">Memorability</a><br>
           <a href="#satis" class="btn btn-info btn-block" role="button">Satisfaction</a><br>
       </div>
       <div class="col-xs-9 metricsMain"><!--main column-->
         <a id="learn"></a>
         <div class = "layout">
-        <div class="metricsScroller inlineHeader">          
+        <div class="metricsScroller inlineHeader">
           <h3>Learnability</h3><p>
           The physical action of the drag and drop may seem intuitive to experienced users, but those who have not used the functionality before may struggle with learning it on their own. </p>
           <h4>There are no visual cues indicating a draggable object until the drag begins.</h4><p>
@@ -557,7 +567,7 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
         </div>
       </div>
       <br>
-      <div class="col-xs-12">
+      <div class="col-12">
         <h4>Satisfaction</h4>
         <div class ="inlineHeader well">
           <h4>The physical nature of the drag and drop gives it some merit in the satisfaction metric.</h4> <p>While the drag and drop method was implemented strictly out of necessity, there is something to be said about the satisfaction felt from physically dragging a file and dropping it in a new place. The animations that accompany it give it a very concrete feel; psychologically, this method of moving files may feel more reassuring to the user, because they can see the process and the result, rather than allowing the computer to process behind the scenes. </p>
@@ -566,16 +576,54 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
       </div>
 </div>
 <br><hr>
-<p>
-<h3>Platform-Specific Instances</h3>
 
+<div class='row'>
+<div class='col-'>
+  <h3>Platform-Specific Instances</h3>
+</div>
     <blockquote>The drag and drop function has been implemented in most, if not all, major computer platforms. Windows, Linux, and Mac all have extremely similar drag and drop functionalities, including a ghost-image and brief animations of opening files and invalid location drops. The examples listed on this page were all captured on an OS Yosemite Macbook Air, but they accurately illustrate the typical drag and drop functionality that all modern platforms use. The only major difference between these platforms in regard to drag and drop is what they consider a valid or invalid location. For example, on a Mac a file that is dragged to the top bar will cancel the drag, but if a file is dragged to the main bar on a Windows platform it will be placed there. Aside from this difference, the drag and drop is visually and functionally analogous accross all major platforms and programs.</blockquote>
-  </p>
+</div>
 <br><hr>
-<!--****************************iOS Drag and Drop**********************************-->
+
+<!--****************************OS X Yosemite Drag and Drop**********************************-->
+
 <div class = "row">
   <div class = "col-xs-12">
-    <h3>Drag and Drop iOS Devices</h3>
+  <h3>Drag and Drop OS X Yosemite</h3>
+  <p class = "lead">The drag and drop function is available in most circumstances using macOS. The feature allows the user to select source content to drag then drop in another location. Performing like other major computer platforms for the most part, notable differences in macOS's functionality are: creating aliases in sidebars, drag and drop using Mission Control, and rearranging the menu bar.  </p>
+    <div>
+    <h4>Creating Aliases</h4>
+    <p>For files, folders, and apps, an alias is equivalent to a shortcut in that it is a smaller file, which links to the aforementioned file, folder, or app. MacOS's drag and drop functionality allows the user to drag their source item to the Dock to create a shortcut to that item for easier accessibility. The Dock allows aliases to be made for any filetype; aliases for apps are grouped with other app aliases and those for other files are grouped on the opposite side of the Dock. Aliases for folders/directories can be dragged into the Favorites sidebar in the Finder window as well. When the source content is dragged to the Finder Favorites or to the Dock, there is a visual indication that the user is adding an alias to the intended area by a blue dividing line between the previous and following items or the separation of them respectively. One can even remove an alias by dragging the icon away from the Dock or sidebar, which will display an indication that you will be removing this alias from its location.</p>
+    </div>
+    <div class = "row text-center">
+      <div class = "col-4"><img src = "dockApps.gif" alt = "dockApps" align = "center" style = "width:300px;"></div>
+      <div class = "col-4"><img src = "dockItems.gif" alt = "dockItems" align = "center" style = "width:300px;"></div>
+      <div class = "col-4"><img src = "finderFavoritesAdd.gif" alt = "finderFavoritesAdd" align = "center" style = "width:300px;"></div>
+    </div>
+    <div>
+    <br>
+    <h4>Using Mission Control</h4>
+    <p>For use between all running apps, users are able to move, copy, and create aliases for source content between windows within applications, as well as from different applications. The user must select their item, begin dragging it, then access Mission Control to have control of the item while in Mission Control view. One can move the item by dropping it, copy it by holding Option before dropping, and make an alias by holding Command-Option before dropping</p>
+    </div>
+    
+    <div>
+    <br>
+    <h4>Rearrange Menu Bar Icons</h4>
+    <p>For Apple to pride itself on making their interfaces customizable to the user's needs, then most interactive menus or displays should be able to be modified. The menu bar, a staple of Mac computers, is no exception to this. When holding down the Command key, one can rearrange the menu bar's icons by dragging them across the menu bar and dropping them in place. Dragging and dropping an icon off of the menu bar will result in that icon being removed.</p>
+    </div>
+    <div class = "row text-center">
+        <div class = "col-12"><img src = "rearrangeMenuBar.gif" alt = "rearrangeMenuBar" align = "center" style = "width:300px;"></div>
+      </div>
+  </div>
+</div>
+<br><hr>
+
+
+<!--****************************iOS 10 Drag and Drop**********************************-->
+
+<div class = "row">
+  <div class = "col-">
+    <h3>Drag and Drop iOS 10</h3>
     <p class = "lead">For iOS devices, like the iPhone and iPad, drag and drop functions differently because of the use of touch controls and lack of mouse and cursor. Touch controls on iOS prioritize scrolling over other controls. Because of this, to use drag and drop on iOS devices, it has to be enabled first. <mark>Note that drag and drop on the home screen will only move the app's icon and where it can be accessed. This will not change where it is stored on the device.</mark></p>
   </div>
   <br>
@@ -593,14 +641,13 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
 
     <li><h4>Disable -</h4> Initiated by <code>pressing the home button</code></li><p>
     Once the user is done moving apps, they can deactivate this mode by pressing the home button on their device.  Apps will not be able to be moved and can now be opened.</p>
-    </ul> 
+    </ul>
   </div>
-  <div class = "col-xs-4">
-    <img src = "iOS enable.gif" alt = "iOS enable gif" align = "center" style = "width:290px;">
-    <br>
-    <img src = "iOS Drag and Drop.gif" alt = "iOS Drag and Drop gif" align = "center" style = "width:290px;">
-    <br>
-    <img src = "iOS disable.gif" alt = "iOS disable gif" align = "center" style = "width:290px;">
+  <div class = "row text-center">
+    <div class='col-4'><img src = "iOS enable.gif" alt = "iOS enable gif" align = "center" style = "width:300px;"></div>
+    <div class='col-4'><img src = "iOS Drag and Drop.gif" alt = "iOS Drag and Drop gif" align = "center" style = "width:300px;"></div>
+    <div class='col-4'><img src = "iOS disable.gif" alt = "iOS disable gif" align = "center" style = "width:300px;"></div>
+
   </div>
 </div>
 <br>
@@ -620,6 +667,8 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
 </div>
 <br><hr>
 
+<!--**************************** Drag and Drop Within iOS Applications **********************************-->
+
 <div class = "row">
   <div class = "col-xs-12">
   <h3>Drag and Drop Within iOS Applications</h3>
@@ -628,24 +677,82 @@ The following gifs represent common functionality of drag-and-drop within OS Yos
     <h4>Artistic Use of Drag and Drop</h4>
     <p>For documentation or presentation apps, inserted pictures or text blocks have to be manipulated using drag and drop to determine their oriantation. Because it is less precise than a mouse and keyboard, mainly using the directional keys to move the object pixel by pixel, applications will usually give you coordinates relaying where the top left corner is located. More art specific apps will have object manipulations such as resizing, rotation, draging and droping as a toggleable mode to create more precise controls. Certain art apps, such as SketchBook support, multi-touch manipulation allowing the user to use all manipulation tools with two control points on the screen. </p>
     </div>
-    <div class = "row">
-      <div class = "col-xs-6"><img src = "Keynote.gif" alt = "Keynote gif" align = "center" style = "width:290px;"></div>
-      <div class = "col-xs-6"><img src = "SketchBook.gif" alt = "SketchBook gif" align = "center" style = "width:290px;"></div>
+    <div class = "row text-center">
+      <div class = "col-6"><img src = "Keynote.gif" alt = "Keynote gif" align = "center" style = "width:290px;"></div>
+      <div class = "col-6"><img src = "SketchBook.gif" alt = "SketchBook gif" align = "center" style = "width:290px;"></div>
     </div>
     <div>
+    <br>
     <h4>Drag and Drop in iOS Games</h4>
     <p>For video games, your screen will usually stay static during gameplay, only scrolling around because of a menu screen, or when characters move to new locations resizing or scrolling the screen. Because of lesser need for scrolling in phone games, there is more usage of drag and drop mechanics. Usually this mechanic is used for item management, whether it be organizing items or equiping new item to the users character. Certain games allow you to drag and drop objects into your game to be used. One iconic example is throwing a Pokeball in Pokemon GO.</p>
     </div>
-    <div class = "row">
-        <div class = "col-xs-6"><img src = "FTL.gif" alt = "FTL gif" align = "center" style = "width:290px;"></div>
-        <div class = "col-xs-6"><img src = "Pokemon GO.gif" alt = "Pokemon GO gif" align = "center" style = "width:290px;"></div>
+    <div class = "row text-center">
+        <div class = "col-6"><img src = "FTL.gif" alt = "FTL gif" align = "center" style = "width:290px;"></div>
+        <div class = "col-6"><img src = "Pokemon GO.gif" alt = "Pokemon GO gif" align = "center" style = "width:290px;"></div>
       </div>
+  </div>
+</div>
+<br><hr>
+
+<!--**************************** Drag and Drop iOS 11 **********************************-->
+
+<div class='row'>
+  <div class='col-'>
+  <h3>Drag and Drop iOS 11 Tablets</h3>
+  <p class='lead'> iOS 11 on the iPad introduced intuitive, haptic drag and drop features that aim to increase efficiency.
+  Drag and drop becomes a lot more pervasive and responsive in  iOS 11. The gesture and the design paradigm behind it
+  pushes the boundary with regard to how we manipulate and interact with the apps on our screen.</p>
+  <div>
+    <h4>Updated Home Screen Events</h4>
+    <p>The home screen in iOS 11 is more interactive with regards to how the user manipulates the app icon. A user can
+      intuitively tap, hold, and drag an app to change the location of the app on the home screen. Of course, a user can
+      still enter drag and drop mode where the apps assume a shaking activity through long tapping apps. </p>
+    <div class='row text-center'>
+      <div class='col-12'><img src = "ios11homescreen.gif" alt = "switch app locations gif" align = "center" style = "width:300px;">
+      </div>
+    </div>
+    <h4>Split View</h4>
+    <p>The iOS split view allows for a multitasking environment on the iPad. The user can view up three apps and a video
+      on one screen! The user can enter a split view through dragging and dropping an app from the task bar at the bottom
+      while within another app.</p>
+    <div class='row text-center'>
+      <div class='col-4'><img src = "ios11splitview.gif" alt = "splitview gif" style = "width:300px;"></div>
+      <div class='col-4'><img src = "ios11splitview2.gif" alt = "splitview 2 gif" style = "width:300px;"></div>
+      <div class='col-4'><img src = "ios11splitview3.jpg" alt = "splitview 3 png" style = "width:300px;"></div>
+    </div>
+    <h4>Migrating media</h4>
+    <p>iOS 11 allows users to drag and drop media such as pictures, video, and text from one app to the other. There are
+      limitations with regard to the types of apps that allow this feature but Apple's Human Interface Guidelines
+      encourage apps to incorporate this feature. A user can find this feature prevalent in all Apple made apps.</p>
+    <div class='row text-center'>
+      <div class='col-12'><img src = "ios11migratingmedia.gif" alt = "migrating media gif" align = "center" style = "width:300px;"></div>
+    </div>
+    <h4>Multi-touch Drag and Drop</h4>
+    <p>iOS 11 pushes the boundaries when it comes to drag and drop. iOS allows for users to involve their two hands in
+      multi-touch drag and drop. Multi-touch  drag and drop allows users to select multiple forms of media within an app
+      and drag them over to another app through a specific series of finger taps and gestures.</p>
+    <div class='row text-center'>
+      <div class='col-12'><img src = "ios11multitouchdnd.gif" alt = "multitouch gif" align = "center" style = "width:300px;">
+      </div>
+    </div>
   </div>
 </div>
 
 
-<br><hr><br>
-<h4>References used:</h4>
-  <li>SVG State Diagram partially built with <a href="http://svg-edit.googlecode.com/">SVG-edit</a></li>
-  <li><a href="https://support.apple.com/kb/PH18767?locale=en_US">OSX Yosemite drag and drop page</a></li>
-  <li><a href="http://windows.microsoft.com/en-us/windows-vista/moving-and-copying-files-by-using-the-drag-and-drop-method">Windows Vista drag and drop page</a></li><br>
+<br>
+<hr size=2>
+<br>
+
+<div class='row'>
+  <h4>References used:</h4>
+  <div>
+    <ul>
+      <li>SVG State Diagram partially built with <a href="http://svg-edit.googlecode.com/">SVG-edit</a></li>
+      <li><a href="https://support.apple.com/kb/PH18767?locale=en_US">OSX Yosemite drag and drop page</a></li>
+      <li><a href="https://developer.apple.com/macos/human-interface-guidelines/user-interaction/drag-and-drop/">Apple Human Interface Guidelines macOS Drag and Drop</a></li>
+      <li><a href="http://windows.microsoft.c om/en-us/windows-vista/moving-and-copying-files-by-using-the-drag-and-drop-method">Windows Vista drag and drop page</a></li>
+      <li><a href="http://appleinsider.com/articles/17/06/07/inside-ios-11-run-four-ipad-apps-on-screen-at-once-with-apples-newly-expanded-multitasking">Apple Insider - Inside iOS 11</a></li>
+      <li><a href="https://developer.apple.com/ios/human-interface-guidelines/user-interaction/drag-and-drop/">Apple Human Interface Guidelines iOS11 Drag and Drop</a></li>
+    </ul>
+  </div>
+</div>
