@@ -10,26 +10,58 @@ contributors:
 
     - name: Eddie Azinge
       github: cazinge
+
+    - name: Sam Savini
+      github: samsavv
 ---
 
 
-<p class="lead">Every computer nowadays allows/requires some form of text input from the user. This input is often accepted using a string input field (also known as a text box or a text field).</p>
+<p class="lead">Every modern computing device requires some sort of string input from the user. Traditional computers accept strings using a string input field, which the user fills in using a keyboard. This method of string input is commonplace and standard. However, modern day devices can also use a multitude of methods to accept string input from the user.
+ </p>
 
-
-<p class="lead">The string input field is used when the program/web page requires the user to enter text information.</p>
 
 <h3>General Information</h3>
+<br></br>
 
 <div class="container-fluid">
 	<div class="row">
-	  	<div class="col-lg-12">
-	  		<ul class="nav nav-pills nav-justified">
-	  			<li role="presentation" class="active"><a href="#typical-appearance" data-toggle="tab">Typical Appearance</a></li>
-	  			<li role="presentation"><a href="#typical-behavior" data-toggle="tab">Typical Behavior</a></li>
-	  			<li role="presentation"><a href="#variants" data-toggle="tab">Variants</a></li>
-	  			<li role="presentation"><a href="#priority-metrics" data-toggle="tab">Priority Metrics</a></li>
-	  			<li role="presentation"><a href="#key-characteristics" data-toggle="tab">Key Characteristics</a></li>
-			</ul>
+	  	<div class="col-xl-12">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#typical-appearance" role="tab" aria-controls="home" aria-expanded="true">Typical Appearance</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#typical-behavior" role="tab" aria-controls="profile">Typical Behavior</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#variants" role="tab" aria-controls="profile">Variants</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#priority-metrics" role="tab" aria-controls="profile">Priority Metrics</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#key-characteristics" role="tab" aria-controls="profile">Key Characteristics</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade" id="dropdown1" role="tabpanel" aria-labelledby="dropdown1-tab">...</div>
+  <div class="tab-pane fade" id="dropdown2" role="tabpanel" aria-labelledby="dropdown2-tab">...</div>
+</div>
+	  		<!-- <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#typical-appearance">Typical Appearance</a>
+          </li><li class="nav-item">
+            <a class="nav-link active" href="#typical-behavior">Typical Behavior</a>
+          </li><li class="nav-item">
+            <a class="nav-link active" href="#variants">Variants</a>
+          </li><li class="nav-item">
+            <a class="nav-link active" href="#priority-metrics">Priority Metrics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#key-characteristics">Key Characteristics</a>
+          </li>
+			</ul> -->
 
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -48,8 +80,9 @@ contributors:
 
 										<br>
 											For aesthetic purposes, some text fields can have rounded edges. Additionally, the string input field can contain a token field control, which displays the user input in the form of a draggable token (see Platform-Specific Instances).
-										<br>
-										<br>
+										<br></br>
+                    A blinking text cursor in the text field indicates where the user is located in the string. The user can use the mouse or keyboard to navigate the curser throughout the string, to modify the text.
+										<br></br>
 											Note: Some of the string input fields in this page have been extended width-wise to fit into the columns of the page, but they can vary in size across different webpages and platforms.
 										</p>
 									</div>
@@ -60,7 +93,7 @@ contributors:
 									<div class="col-lg-12">
 										<h3>Typical Behavior</h3>
 										<p class="lead">
-											A string input components's main function is to accept user text information, therefore, it has to support keyboard focus; for more private text information, it also supports password entries. The string input field signals the user that they can enter a value by changing the cursor icon when the user hovers over the field: the cursor will change into a shape that looks like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside the box, a blinking vertical bar (called a caret) appears to show the user that the text field is waiting for an input.
+											A string input components's main function is to accept user text information. Therefore, it has to support keyboard focus. For more private text information, it also supports password entries. The string input field signals the user that they can enter a value by changing the cursor icon when the user hovers over the field: the cursor will change into a shape that looks like an uppercase "i" called an "I-beam pointer". This would show the user that they can click on the box and enter some string inputs. When the user clicks inside the box, a blinking vertical bar (called a caret) appears to show the user that the text field is waiting for an input.
 										</p>
 									</div>
 									<div class="col-md-6" "col-sm-12">
@@ -117,7 +150,7 @@ contributors:
 									<div class="col-md-6" "col-sm-12">
 										<ul>
 											<li>
-												<em>String input fields with form submit buttons.</em> <br>
+												<em>String input fields with form submit buttons</em> <br>
 												For submitting text entries, the text field can be inlined with a button (see Button component for more info on buttons).
 												<div class="input-append text-center">
 								  					<input class="span2" id="appendedInputButton" type="text">
@@ -126,14 +159,14 @@ contributors:
 											</li>
 											<br>
 											<li>
-												<em>String inputs with more than one line.</em> <br>
+												<em>String inputs with more than one line</em> <br>
 												For inputs that require more than one-line, a larger string input field can be used. In the text box below, pressing the "enter"/"return" would also allow the user to insert more lines of text.
 												<textarea rows="3" class="form-control" placeholder="Try typing long texts or pressing the enter key multiple times..."></textarea>
 											</li>
 											<br>
 
 											<li>
-												<em>Password Entries.</em> <br>
+												<em>Password Entries</em> <br>
 												Certain string input fields require the user to type specific text values. These text fields may use a red outline to show that the inputs entered are invalid. The text fields shown below require the user to enter the same text values in both text fields. Another aspect to note in the case below: the text values are hidden from the user. Instead of actual alpha-numeric text values, they can be visually replaced by a symbol (in this case, black dots) in order to hide the password the user enters. Only when the user enters an acceptable argument can the textbox change color into something more inviting (usually a green color for "success" or "acceptable input").
 												<p class="text-center">
 													<img src="gifs/password_success.gif" width=100%>
@@ -142,7 +175,7 @@ contributors:
 											<br>
 
 											<li>
-												<em>Command Lines.</em> <br>
+												<em>Command Lines</em> <br>
 												While they're the oldest known examples of string input, they remain to be the most flexible and interactive. Command lines can account for a plethora of actions: executing lines of code, performing mathematical computations, and answering existential questions; no other form of string input can match a command line's versatility. However, command lines, due to their flexibility, are also the least intuitive of the types of string input due to the large requirement that they place on the user to learn to how to interface with them. If one is not familiar with the commands that their given command line has at its disposal, the command line is rendered useless.
 											</li>
 											<br>
@@ -158,7 +191,7 @@ contributors:
 											</li>
 
 											<li>
-												<em>Disabled.</em> <br>
+												<em>Disabled</em> <br>
 												There are also some string input fields that will be disabled unless the user performs a specific action first. For example, a string input field will be disabled if the user has to first select from a variety of choices.
 												<br><br>
 												In the string input field below, the cursor will not change into an "I-beam pointer" since the user is not allowed to enter any texts. The field has also been greyed out (instead of white in color) to further show the user that they cannot use the text field. In supported browsers, such as Firefox or Google Chrome, when a cursor hovers above the text field, a "no entry sign" &#x1f6ab; &nbsp;will appear below the cursor to make it even clearer that the field is disabled.
@@ -178,6 +211,14 @@ contributors:
 												 An up and coming design feature in newer models of systems. Developers, such as Google, have even made it possible to enter texts into textboxes by allowing the user to speak into their devices. Usually, a microphone icon, such as the one shown in the text box below, can be seen inside the text field. Pressing/clicking this button would allow the user the talk directly, instead of type with a keyboard, whatever information they wish (assuming the voice recognition capability is enabled and functions properly).</li>
 											<p class="text-center">
 												<img src="img/google_speech_recog.jpg" width=100%>
+											</p>
+                      <br></br>
+                      <li><em>Handwritten Messages</em> <br>
+												 Certain touch screen devices provide an option for the user to input text by hand writing the message. Letter by letter, the computing device tries to detect what words are being written, and transforms the handwritten input into a line of text. This option usually provides a box for the user to hand write their input, as well as a line of text above the box to show how the computer is interpreting the handwritten text.
+                       </li>
+                       <br></br>
+											<p class="text-center">
+												<img src="img/17263-14598-IMG_6325-m.jpg" width=50%>
 											</p>
 										</ul>
 									</div>
@@ -254,11 +295,29 @@ contributors:
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-12">
-			<ul class="nav nav-pills nav-justified">
-	  			<li role="presentation" class="active"><a href="#mac-os-x" data-toggle="tab">Mac OS X</a></li>
-	  			<li role="presentation"><a href="#ios" data-toggle="tab">iOS</a></li>
-	  			<li role="presentation"><a href="#shared-characteristics" data-toggle="tab">Apple Shared Characteristics</a></li>
-				<li role="presentation"><a href="#windows-10" data-toggle="tab">Windows 10</a></li>
+			<ul class="nav nav-tabs">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#mac-os-x" role="tab" aria-controls="home" aria-expanded="true">Mac OS X</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#ios" role="tab" aria-controls="profile">iOS</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#shared-characteristics" role="tab" aria-controls="profile">Apple Shared Characteristics</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#windows-10" role="tab" aria-controls="profile">Windows 10</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#watchOS" role="tab" aria-controls="profile">watchOS</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade" id="dropdown1" role="tabpanel" aria-labelledby="dropdown1-tab">...</div>
+  <div class="tab-pane fade" id="dropdown2" role="tabpanel" aria-labelledby="dropdown2-tab">...</div>
+</div>
 			</ul>
 
 			<div class="panel panel-default">
@@ -332,7 +391,7 @@ contributors:
 												<br>
 												<p class="text-center">
 													<img src="gifs/automatic_popup.gif" height="50%" width="50%">
-												</p> 
+												</p>
 											</li>
 											<br>
 											<li>
@@ -348,7 +407,7 @@ contributors:
 									<div class="col-md-6" "col-sm-12">
 										<ul>
 											<li>
-												<em>The login screen</em> on iOS has a very distinctive look. The "keyboard" looks different than all other keyboards within iOS, even though its buttons show only numbers with their respective letter associations. All of the numbers are wrapped in circles and as the user types in their password, smaller circles at the top begin to fill in. The example below shows a half-typed password. 
+												<em>The login screen</em> on iOS has a very distinctive look. The "keyboard" looks different than all other keyboards within iOS, even though its buttons show only numbers with their respective letter associations. All of the numbers are wrapped in circles and as the user types in their password, smaller circles at the top begin to fill in. The example below shows a half-typed password.
 												<br>
 												<br>
 												<p class="text-center">
@@ -376,7 +435,7 @@ contributors:
 									</div>
 									<div class="col-md-6" "col-sm-12">
 										<ul>
-											<li><em>An "x" icon button</em> shows up inside the input field on both Mac OS X and iOS after the user starts typing their string. Pressing this button clears the entire string from the input field. 
+											<li><em>An "x" icon button</em> shows up inside the input field on both Mac OS X and iOS after the user starts typing their string. Pressing this button clears the entire string from the input field.
 											<br>
 											<br>
 											<p class="text-center">
@@ -413,12 +472,12 @@ contributors:
 												  <!-- Wrapper for slides -->
 												  <div class="carousel-inner" role="listbox">
 												    <div class="item active">
-												      <img src="img/osx_notes.png">
+												      <img src="img/osx_notes.png" class="img-fluid">
 												      <div class="carousel-caption">
 												      </div>
 												    </div>
 												    <div class="item">
-												      <img src="img/ios9_notes.png">
+												      <img src="img/ios9_notes.png" class="img-fluid">
 												      <div class="carousel-caption">
 												      </div>
 												    </div>
@@ -509,6 +568,86 @@ contributors:
 									</div>
 								</div>
 							</div>
+              <div role="tabpanel" class="tab-pane" id="watchOS">
+                <h3>watchOS</h3>
+                <p class="lead">
+                  watchOS takes a unique approach to text input to accomodate the size of the watch device. The interface maintains simplicity and consistancy to make text input options as satisfying and as easy to use as possible.
+                </p>
+                <div class="row">
+                  <div class="col-md-6" "col-sm-12">
+                    <ul margin-right="1rem">
+                        <h3>Password Input: </h3>
+                        The initial input of a passcode to enter the watch provides the only instance of the device using a digital-touch keyboard. A traditional number pad appears on the screen, and the user types in the passcode directly on the screen to enter the watch.
+                          <br></br>
+                          <p class="text-center">
+                            <p class="text-center">
+                                      <img src="img/apple-watch-passcode-input-screen-300x300.jpg" width=30%>
+                                    </p>
+                          </p>
+                          <br></br>
+                          <h3>String input</h3>
+                          The Messaging app and Mail app are the only apps on watchOS that actually offer string input. When the user opens a message or an email, a menu is provided with four unique text input options available:
+                          <br></br>
+                      <li>
+                        <em class="font-weight-bold">Siri: </em>The user can press the “siri” button, and speak their message into the watch. The message will appear on the face as the user speaks. There is a cancel button at the top left, and a send button on the top right.
+                      </li>
+                      <br></br>
+                      <p class="text-center">
+                      <img src="img/Apple-Watch-Voice.jpg" width=30%>
+                    </p>
+                    </ul>
+                  </div>
+                  <div class ="col-md-6" "col-sm-12">
+                  <li>
+                    <em class="font-weight-bold">Emoji: </em> Upon pressing the emoji button, the screen presents a menu of all emoji characters that the user can use, which can be browsed through by rotating the crown on the watch, or by scrolling directly on the touch screen. Swiping right on the emoji menu brings the user to three unique animated emoji menus only available to watch owners. Scrolling using the crown dynamically changes the action of the three emojis (a face, a heart, and a pair of hands), and can be sent when the user stops upon a suitable emoji action.
+                  </li>
+                <br></br>
+                <p class=text-center>
+                <img src="gifs/animated1442831623595.gif" width=60%>
+                </p>
+                  <br></br>
+                  <li>
+                    <em class="font-weight-bold">Scribble: </em>Selecting the scribble button leads the user to a watch face consisting of a large ‘dotted’ bar on the main screen.  One letter at a time, the user can hand write messages on the grid to form a message. When the user stops writing, the letters they have written show on the top of the screen. The user can input spaces using the space button at the bottom center, as well as use the backspace at the bottom right. The grid will detect upper and lowercase lettering, as well as numbers and punctuation. By scrolling with the crown, the user can also use predictive text when halfway through a word.
+                    <br></br>
+                    <p class="text-center">
+                    <img src="gifs/scribble-reply-watchOS.gif" width=30%>
+                  </p>
+                  </li>
+                  <br></br>
+                  <li>
+                    <em class="font-weight-bold">Default Replies: </em>besides the buttons for message inputs like Scribble, Emoji, and Siri, watchOS also provides a list of default replies at the bottom of the screen. These replies in their default form consist of regular responses like “Hello!”, “Sure!”, and “Sorry, can’t talk right now…”. The user does have the option to customize these messages. To send these messages, the user simply taps on the reply that they want, and it automatically sends the message. The user can also turn on Smart Replies, which predict possible message replies based on the context of past conversation.
+                  </li>
+                  <br></br>
+                  <p class="text-center">
+                    <img src="img/watchos3-messages-tap-default-reply.jpg" width=30%>
+                  </p>
+                  </div>
+                </div>
+
+              <h3>Appearance</h3>
+              <p class="lead">
+                The watchOS interface redefines how one inputs a string into their device. Due to the limited screen size, text input boxes are virtually eliminated from the interface. The only remnant of these boxes is the blinking carot that awaits text on the scribble page. The screen is dedicated to button display for the user to select in modes like emoji and default replies. For scribble mode, the screen is mostly occupied with the writing box for input. The siri mode leaves most of the screen blank, and only shows text as the user speaks it into the device. WatchOS takes a large step away from typical iOS interfaces in its lack of text boxes for string input.
+              </p>
+              <br></br>
+              <h3>Behavior</h3>
+              <p>While other iOS devices mostly depend on text boxes and how those boxes behave to communicate with the user, watchOS’ string input behavior is completely dependent on the form of text input the user is using. There are only small remnants of text boxes on watchOS, which are so popular in other apple software. As an example, siri uses the screen to display the words you are speaking to show how the message is being interpreted. Default reply, however, uses lists of buttons which represent replies for the user to select. The behaviors of these methods are completely unique, and completely dependent on the style of text input being used.
+              </p>
+              <br></br>
+              <h3>Priority Metrics</h3>
+              <ul><li><em>Learnability: </em>Text input on watchOS aims to be as learnable as possible. The design of the text input styles are made to be as simple as possible, so the user can easily and quickly understand how to input text on their device.
+              <li><em>Efficiency: </em>WatchOS’ second priority has to be efficiency, again because of the simple design of the text input options. Styles like the large, easy to access default message buttons, and the quick scribble setting are purposely deigned so the user can input text as quickly as possible.
+              <li><em>Satisfaction: </em>WatchOS wants the user to be satisfied with their experience inputting text. This metric is just barely behind Efficiency in importance, because string input on a watchOS device is naturally casual, and meant for all users. Inputting text on a watch interface is meant to be casual and quick, and therefore must be satisfying enough for quick, regular use.
+              <li><em>Errors: </em>String input on watchOS does value the lack of errors in settings like siri and scribble. However, because many string input options are button based on watchOS, errors are low on the list of priorities.
+              <li><em>Memorability: </em>Due to its simplicity, watchOS does not really need to worry about memorability of its string input settings. When there is a small amount of information for the user to remember, this metric is a relatively unimportant factor to consider.
+              </li></ul>
+              <br></br>
+              <h3>Key Characteristics</h3>
+              <ol>
+                <li>watchOS devices should inform the user what they are inputting in settings that are dependent on subjective user input, such as siri and scribble.</li>
+                <li>watchOS should provide clear, easy to navigate buttons for text input methods like default replies and emojis.</li>
+                <li>All watchOS text input options must have a clear 'cancel' button at the top of the screen available at all times.</li>
+              </ol>
+            </div>
 						</div>
 					</div>
 				</div>
@@ -523,9 +662,13 @@ contributors:
 		<h3>Credits &amp; References</h3>
 		<div class="panel panel-default">
 			<div class="panel-body">
+        <br></br>
 				<p>
 					The following websites have been used as resources in order to create this page.
 					<ul>
+            <li>
+              <a href="https://support.apple.com/en-us/HT205783"> Apple Developer Site (watchOS message input)</a>
+            </li>
 						<li>
 							<a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/ControlsText.html">Apple Developer Site (Text Controls)</a>
 						</li>
