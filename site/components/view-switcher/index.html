@@ -1,0 +1,365 @@
+---
+title: View-Switcher
+layout: component
+contributors:
+    - name: John Hardy
+      github: track394
+---
+
+<p class="lead">The View-Switcher is a graphical user interface element that contains two or more views, each one
+  having its own appearance and purpose. Typically a user will trigger an event in one of these views in order to
+  change the view on another.</p>
+
+<div class="container">
+
+  <h3 class="border-bottom-solid">Typical Appearance</h3>
+  <hr width="100%">
+
+  <div class="row">
+    <div class="col">
+
+      <blockquote> Due to the fact that many platforms have varying screen sizes, there will be a great deal of variance in
+        appearances across each platform. However, all View-Switchers will have the same basic layout containing a main view
+        and a detail view. The main view is used to select a new view within the detail view, thus creating the illusion of a
+        change from one view to another within the same screen.</blockquote>
+
+      <h3>Typical Behavior</h3>
+
+      <blockquote>
+        <p>In most cases a View-Switcher is triggered by some sort of external event or trigger such as a button push,
+          tab select, or collection of short-cut keys. Once again, each platform may have its own set of triggers or
+          events to utilize the View-Switcher.</p>
+
+        <p>Helpful subsections include:<br>
+          <a href="#Windows_10"> Windows 10 </a>
+        </p>
+
+      </blockquote>
+
+      <h4>Events</h4>
+
+      <blockquote>An <em>event</em> is something that can happen to a user interface component.</blockquote>
+
+      <p style="margin-left: 40px">In the majority of cases, a <code>click</code> is the primary event that triggers a View
+        Switcher. A user could potentially click on a button or tab to take them to a different view.</p>
+
+    </div>
+    <div class="col">
+
+      <p class="text-center">
+        <a href="http://abhiandroid.com/ui/viewswitcher"><img src="Android Intro View Switcher.gif" class="img-thumbnail"></a>
+      </p>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+
+      <p>However, there are many other ways to trigger a View-Switcher such as selecting a tab on a list of elements. In windows,
+        a Master Detail Pattern can be used to select multiple items that each trigger their own view on a different portion of
+        the screen:</p>
+
+      <p class="text-center">
+        <a href="https://blogs.windows.com/buildingapps/2017/05/01/master-master-detail-pattern/"><img src="Windows Master Detail List.jpg" class="img-thumbnail"></a>
+      </p>
+
+      <h4>State Diagram</h4>
+      <hr width="100%">
+
+      <blockquote>
+        <p>Below is a state diagram indicating the actions and states of a View-Switcher:</p>
+
+        <p class="text-center">
+          <img src="View Switcher State Diagram.png" class="img-thumbnail">
+        </p>
+
+        <p>Because a View-Switcher can be triggered in so many different ways, it is best to generalize these states as: the
+          current view, pre-selection of the new view, selection of the new view, and finally the transition to the new view.</p>
+        <ul>
+          <li>In our  initial or starting state, we are inside of the current view and no actions have been taken to change the view.</li>
+
+          <li>When we hover our mouse over a button, link, or tab, we move into the pre-selection state. This can also occur if we press a
+            specific key binding set within the application. If we were to let go of this key we would return to the current view state.</li>
+
+          <li>Next, if we press the mouse button over the element that triggers the View-Switcher, we will have selected
+            the new view that we want to switch to. The equivalent to this in key bindings could be using the arrow keys to select one
+            of the available tabs to change to the corresponding view.</li>
+          <li>Finally, if we release the mouse button or release the corresponding key binding, we will have committed ourselves to the new
+            selection and the View-Switcher will change the detail view to the new view selected, and the process repeats.
+            Note, however that some tabs or buttons will not wait for a mouse button release when switching the view.</li>
+        </ul>
+      </blockquote>
+
+    </div>
+  </div>
+
+  <h4>Component in Action</h4>
+  <hr width="100%">
+
+  <div class="row">
+    <div class="col">
+
+      <p>To the right is an example of a user clicking on arrow buttons in order to switch between views. This is a simpler version of a
+        View-Switcher, which is useful for navigating large directories or organizing large groups of items while still appearing to stay
+        within the same screen. Notice the the main view is simply the title at the top and the two arrow buttons, while the main view is the
+        view being changed as the user clicks on the arrow buttons.</p>
+
+      <p>Below is a generic example of what a View-Switcher looks like. Notice the general layout with the main view on the left showing
+        the possible views to switch to and the detail view on the right showing the current view that has been selected.</p>
+
+      <p class="text-center">
+        <a href="https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/master-details">
+          <img src="Master Detail Pattern General Layout.png" class="img-thumbnail">
+        </a>
+      </p>
+
+    </div>
+    <div class="col">
+
+      <p class="text-center">
+        <a href="http://javait.hatenablog.com/?page=1447859179"><img src="Android View Switcher.gif" class="img-thumbnail"></a>
+      </p>
+
+    </div>
+  </div>
+
+  <h3>Variants</h3>
+  <hr width="100%">
+
+  <div class="row">
+    <div class="col">
+
+      <blockquote>Because of how much variance there is between multiple platforms, the View-Switcher has a large number of variant
+        graphical elements that mimic its behavior.</blockquote>
+
+      <ul>
+        <li><em>Menu items</em> are similar to View-Switchers in how they can transfer users from one directory to another.
+          They are typically used to act as an event trigger to move users from one part of a site to another, acting like a View-Switcher.
+          However, Menu items are still distinct from other view switching elements because they change the layout of the entire page, not
+          just a small portion of the page.</li>
+
+        <li><em>Hyperlinks</em> share similar functionality to Menu items. The main differences between the two are the lack of a hierarchical list
+          structure and the ability to move from one website to another. Despite this, hyperlinks are still not considered view switching elements.</li>
+
+        <li><em>Buttons</em> fall into a gray area due to their many different usages. Buttons, when supplied a hyperlink within or outside of a
+          site tend to be considered seperate from View-Switchers since they are not related to switching views within the current screen layout. However,
+          when buttons are used within the context of moving the user from one sub-view to another within the same master view, they are
+          considered View-Switcher elements.</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <h3>Priority Metrics</h3>
+  <hr width="100%">
+
+  <div class="row">
+    <div class="col">
+
+      <blockquote>The main purpose of a View-Switcher is to simplify the navigation between sub-elements within an application. Therefore, the
+        following metrics are ranked in the following order from most important to least important:</blockquote>
+
+      <ol>
+        <li>The most important part about using a View-Switcher is learning how to use the interface quickly (<em>learnability</em>). In order for the
+          user to effectively use the application, they must be able to understand it quickly so that they can navigate from one task to another. If
+          the user cannot understand the interface they are looking at, they will not be able to move to the menu that they are looking
+          for. For a developer, this means that the tabs/list elements need to have simple icons and have concise descriptions.</li>
+
+        <li>The second most important metric when designing a View-Switcher is <em>efficiency</em>. The whole point behind creating a View-Switcher is to
+          simplify the process of locating menus or information for the user so that they can work efficiently. If it takes the user a long time to
+          reach the directory or information, then the whole idea behind designing the View-Switcher has failed. This means that the designer should
+          ensure that their View-Switcher operates quickly and is responsive to the users input.</li>
+
+        <li>Next on the list of priorities is <em>errors</em>. The user needs to understand what they are doing so that that they make as few errors as
+          possible. If a user continually chooses the wrong directory or presses the wrong tab, it reduces their effectiveness towards completing the
+          task at hand. Therefore, when designing a View-Switcher, ensure that the interface is simple and that the tabs are large so that the
+          user makes as few mistakes as possible.</li>
+
+        <li><em>Memorability</em> is not as important overall. In fact, the View-Switcher should be so simple that the user does not need to remember how to
+          use it. However, the developer should list out the elements in the View-Switcher such that the user can easily remember their positions, allowing
+          them to efficiently move from one view to the next.</li>
+
+        <li>The least important metric is <em>satisfaction</em>. This is largely due to satisfaction having little to do with how quickly the user can complete
+          the task. However, the interface should not look so horrendous that the user cannot understand how to use it, otherwise it will limit the users
+          efficiency.</li>
+      </ol>
+
+    </div>
+  </div>
+
+  <h3>Key Characteristics</h3>
+  <hr width="100%">
+
+  <div class="row">
+    <div class="col">
+
+      <blockquote>What are some key features about the View-Switcher that are shared across all platforms? According to the developer guidelines
+        documentation from Windows, a View-Switcher should have the following characteristics:</blockquote>
+
+      <p style="margin-left: 40px">A <em>stacked</em> or <em>side-by-side</em> style where the elements are layed out one next to the other. In other words,
+        the master view should either be at the top with the detail view below it or the master view should be on the side (preferably left justified)
+        with the detail view next to it. As we select elements from the master view, the detail view will switch to view the new element.</p>
+
+      <blockquote>However, the documentation for Universal Windows Platforms is much more loose about its interpretation of a View-Switcher since there is
+        much less screen space available to work with on mobile devices. Therefore, the developer recommendation regarding navigation on UWP says:</blockquote>
+
+      <p style="margin-left: 40px"><em>Consistency, simplicity, and cleanliness</em> are the most important parts when navigating user interfaces. Therefore,
+        in order to effectively design a View-Switcher, a developer for this platform should focus on these three things. A View-Switcher must be consistent,
+        with all of the elements or tabs having a similar format and should look the same. To meet the simplicity requirement, the developer should limit the
+        number of tabs or views to switch between on the page to the greatest degree possible. Lastly, in order to meet the cleanliness requirement, the
+        View-Switcher should not contain a poorly organized set of elements or an excessively loud color scheme.</p>
+
+      <blockquote>Looking at the View-Switcher from a broader interactive design perspecitve we should note the main principles that a developer should keep
+        in mind when designing a View-Switcher:</blockquote>
+
+      <ol>
+        <li><em>Know Thy User:</em> In other words, keep in mind all of the different types of people who will be using your View-Switcher and ensure
+          that it is accessible to as many of them as possible. For example, does the View-Switcher come with text-to-speech elements to make it accessible
+          to those who are visually impaired?</li>
+
+        <li>What is your <em>Interaction Style?:</em> What is the interaction style of the application the View-Switcher is be used for? How can you best
+          design the View-Switcher so that it stays in the spirit of the interaction style being used? For example, if the View-Switcher is being implemented
+          on a form-fillin application for a voter registration, ensure that the detail views utilize the same entry fields used in other sections of the
+          application.</li>
+
+        <li>Are you following the <em>Golden Rules?:</em> Some of these rules have already been covered in the above section from the UWP guidelines, but ensure that
+          your View-Switcher is: consistent, universally usable, has informative feedback, has dialog information the yields closure, prevents user errors, has
+          actions that can be easily reveresed, presents a central point from which things are controlled, and reduces short term memory loads on the user. An
+          example of easy reversability could be creating a back arrow on every single detail view so that the user can quickly return to the previous master
+          view.</li>
+
+        <li>Some other things to consider as well are: is data protected from a possible breach?, is the user notified when they are about to remove something?,
+          does the user have a 'map' that they can use if the get lost?, and anticipate the users next move so that all the possible tools they might need are
+          ready when they change to the next view.</li>
+        </ol>
+      </div>
+    </div>
+
+    <h3>Feedback</h3>
+    <hr width="100%">
+
+    <div class="row">
+      <div class="col">
+
+      <p>As stated above, <em>feedback</em> is a very important part when designing a View-Switcher. When a user is using a View-Switcher, they must know:</p>
+
+      <ol>
+        <li>that they are about to select a new view</li>
+        <li>that they successfully selected a tab or button within the detail view</li>
+        <li>that they successfully <em>cancelled</em> the triggering of a tab or button in the detail view, should they change their mind</li>
+        <li>that the master view has successfully changed from the old view to the new view</li>
+        <li>which view is currently selected on the detail view</li>
+        <li>which view is currently selected on the master view (the master view should reiterate what the detail view told them)</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Platform-Specific Instances</h3>
+  <hr width="100%">
+
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header text-center">
+          <a id="Windows_10"><strong>Windows 10</strong></a>
+        </div>
+        <div class="card-body">
+
+          <h4>Demonstration</h4>
+
+          <p>Below is a demonstration of the Master Detail Pattern in Windows 10. Notice how it utilizes a detail list on
+            the left to select items, and then the corresponding view appears on the right. When the item is selected, it
+            is highlighted to signify that it has been selected. If the screen becomes too small it collapses to make room
+            for the detail view or the main view while still maintaining the same screen view overall.</p>
+
+          <p class="text-center">
+            <a href="https://docs.microsoft.com/en-us/windows/uwpcommunitytoolkit/controls/masterdetailsview">
+              <img src="Windows 10 Master Detail Pattern.gif" class="img-thumbnail">
+            </a>
+          </p>
+
+          <p>Notice however that the overall appearance of the application is rather simple with a basic color scheme. This
+            has to do with the consistency and simplicity metric discussed earlier. If you are familiar with the Windows 10
+            user interface in general, you will notice that the applications color scheme around the borders is also quite
+            similar to the general color scheme of the Windows 10 operating environment. This is done on purpose so that the
+            user gets the feeling that they are using the Windows 10 operating environment, even though they are using an
+            application that is seperate from the operating environment. This is designed to give the user a sense of
+            consistency. The entire look of the application is designed to be simple so that the user does not get distracted
+            by loud color schemes or confusing layouts. This is designed to help the user use the application as effectively
+            as possible.</p>
+
+            <h4>Distinguishing Factors</h4>
+
+            <p>What distinguishes a Windows 10 View-Switcher from other View-Switchers is the characteristic look and feel seen
+              above along with the general layout of the View-Switcher. According to the microsoft developer site for UWP and
+              Windows 10 development, a master/detail pattern is mainly used to organize a master view or pane through a list view.
+              The master pane is to display a list of selectable items that the user can choose from. When a selection has been
+              made, additional informatin is shown in the details pane. The details pane usually list things in a grid view. The
+              below example shows a Master/Detail pattern used in the context of a stock trading software:</p>
+
+            <p class="text-center">
+              <a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh465465.aspx"><img src="Windows 10 Master Detail Pattern.png" class="img-thumbnail"></a>
+            </p>
+
+            <p>According to the guidelines for the Master Detail Pattern, it is best used for applications that utilize list layouts
+              or need to locate and prioritize a large collection of information. The Master Detail Pattern makes for quick and easy
+              inclusion or exclusion of elements within many different contexts, making it a useful tool for platforms such as e-mail,
+              address books, stock trading, and social media sites.</p>
+
+            <p>Therefore, if a developer wants to use a View-Switcher on the Windows platform, they should ensure that they are using
+              it within the correct context and that it follows the general guidelines above. Typically a Windows 10 View-Switcher has
+              the main view on the left with the detail view to the right side of the screen. This is because Windows 10 is mostly used
+              on desktop platforms which tend to have much more screen space available to them.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <dive class="row">
+    <div class="col-xs-6 col-sm-3">
+      <div class="card">
+        <div class="card-header text-center">
+          <strong>Amiga</strong>
+        </div>
+        <div class="card-body">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-3">
+      <div class="card">
+        <div class="card-header text-center">
+          <strong>Material Design</strong>
+        </div>
+        <div class="card-body">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-3">
+      <div class="card">
+        <div class="card-header text-center">
+          <strong>watchOS</strong>
+        </div>
+        <div class="card-body">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<h3>Credits &amp; References</h3>
+<hr width="100%">
+
+<blockquote>
+  <ul>
+    <li><a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh465465.aspx">Microsoft developer guidelines for list views and grid views.</a></li>
+
+    <li><a href="https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/master-details">Microsoft developer guidelines for the Master Detail Pattern.</a></li>
+
+    <li><a href="https://developer.android.com/reference/android/widget/ViewSwitcher.html">Android API description for the Android version of the View-Switcher.</a></li>
+
+    <li><a href="https://docs.microsoft.com/en-us/windows/uwp/layout/navigation-basics">UWP developer guidelines for navigation in general.</a></li>
+  </ul>
+</blockquote>
