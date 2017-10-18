@@ -7,53 +7,103 @@ contributors:
 
   - name: Nick Sunga
     github: nsunga
+  - name: Abdulaziz
+    gitgub: abdulazizasiri
 ---
-<p class="lead">
+<p class="  lead">
     Rotating allows for manipulation of single elements, applications, and media between portrait and landscape modes, often unlocking a new user interface and access to landscape-specific features.</p>
-<div class="row">
-    <div class="col-sm-6">
-        <h3>Typical Appearance</h3>
-        <blockquote>Appearance generally differs. For operating systems like macOS and Windows, rotating the display screen is done through a drop down menu. For software like Preview and word processors, it also varies. Some objects are rotated through a button or an icon. Nevertheless, both styles are indicative enough to exemplify rotation.</blockquote>
-        <h3>Typical Behavior</h3>
-        <blockquote>Rotating is widely known and applied to objects in order to change their orientation or move in a circle-like motion around their center of mass. The flexibility of rotation surely enough differs from object to object. Depending on the software, some objects can rotate by fixed amounts, such as intervals of 90 degrees, and some can precisely rotate from 0 to 360 degrees. </blockquote>
-        <div>
-            <h4>Events</h4>
-            <blockquote>Depending on the OS and software being used, rotating can be performed through multiple ways, such as buttons and swiping. Therefore, the events overlap with other events that pertain to different user interface components.</blockquote>
-            <p> When rotating is done through buttons, a <code>click</code> event occurs. Other events include <code>click and drag</code> , which usually allows the user to rotate an object however they would like as done with word processing applications and Mac's 'Grapher' application. Though there are multiple ways to perform rotating, ultimately, a <code>rotate</code> event occurs and indicates that an object was rotated.</p>
-            <p class="text-left">On iOS, rotation and accelerometer movement is measured by: <code>x</code>, <code>y</code>, <code>z</code>, <code>pitch</code>, <code>roll</code>, and <code>yaw</code>. These can be defined as follows: </p>
-            <ul>
-                <div class="col-sm-6">
-                    <img src="axis.png" class="img-responsive" alt="Axis" style="height: auto; width: 60%">
-                </div>
-                <li><code>x, y, z</code>: Rotations about the x, y, and z axis.</li>
-                <li><code>pitch</code>: Face up or face down rotating about an axis running from each side of the device.</li>
-                <li><code>roll</code>: Rotation about an axis from the top of the phone to the bottom side.</li>
-                <li><code>yaw</code>: Rotation from either side of the device to the top or bottom.</li>
-            </ul>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="nav nav-pills nav-justifie" role="tablist">
+          <li role="nav item" class="active">
+            <a class="nav-link active" data-toggle="tab" href="#typical-appearance" role="tab">Typical Appearance</a>
+          </li>
+          <li role="nav item">
+            <a class="nav-link" data-toggle="tab" href="#typical-behavior" role="tab">Typical Behavior</a>
+          </li>
+          <li role="nav item">
+            <a class="nav-link" data-toggle="tab" href="#priority-metrics" role="tab">Priority Metrics</a>
+          </li>
+          <li role="nav item">
+            <a class="nav-link" data-toggle="tab" href="#events" role="tab">Events</a>
+          </li>
+          <li role="nav item">
+            <a class="nav-link" data-toggle="tab" href="#variants" role="tab">Variants</a>
+          </li>
+          <li role="nav item">
+            <a class="nav-link" data-toggle="tab" href="#platform-specifics" role="tab">Platform Specifics</a>
+        </li>
+         </ul>
         </div>
-        <div>
-            <h4>State Diagram</h4>
-            <blockquote>
-                <p>The following diagram shows the three states an object undergoes during rotation. This is only applicable to OSes and software that supports rotation for 2D and/or 3D objects.</p>
-                <img src="state-diagram.png" class="img-responsive center-block" alt="Rotating Chart" style="height: auto; width: 70%">
-        </div>
-        </blockquote>   
-        <h3>Variants</h3>
-        <blockquote>Rotation is used on multiple applications across many different operating systems. Sometimes, it is not very obvious that an element can be manipulated by rotation. Depending on the category of device, the intended rotation method varies. For example, laptop computers often use the trackpad to rotate elements, while mobile phones use an accelerometer, allowing for the entire device to be rotated to manipulate an element.</blockquote>
-        <ul>
-            <li><em>Photos</em> can often be rotated and manipulated by using the correct rotation method depending on the device. On iOS, photos can be rotated by rotating the entire device, or simple pinching the screen with two fingers to move the photo using Multitouch. On macOS, photos can be rotated either through buttons or through the menu bar as done through 'Preview'.</li>
-            <li><em>Single Applications</em> often change their entire UI when the device is rotated. For example, the Calculator application on iOS changes from a simple calculator to a full scientific calculator when rotated into landscape mode. In contrast to iOS, macOS's UI and its applications does not change when the display is rotated. Only the orientation is changed. Because macOS devices have a much larger screen than iOS devices, there's no need to change the UI.</li>
-        </ul>
+      </div>
     </div>
-    <div class="col-sm-6">
-        <h3>Priority Metrics</h3>
-        <blockquote>
-            <p>Rotation is an element that is being used more frequently in operating systems every year. Though rotation is somewhat intuitive and easy to learn, <em>learnability</em> is the top priority metric because it is important to know when rotating can be applied. The gesture of rotating itself is easy to learn, but it is somewhat difficult to learn which elements or user interfaces can be rotated. In addition, since this is a somewhat new user interface element, many new users are unaware of this feature in various applications. This makes <em>learnability</em> very important because new users are encouraged to quickly learn how to use the feature and memorize elements/applications that support rotation.</p>
-            <p>The second most important metric would have to be <em>memorability</em>. Most UIs have identical structures when accessing the functionality of rotating, like through buttons and drop down menus. The reason being for structured continuity across operating systems is that it helps the user become familiarized with the OS being used, and hopefully, be a satisfying experience for them. Introducing a new way of rotation just adds more difficulty for the user getting accustomed to the OS.</p>
-            <p>It is generally hard to make an error when rotating. The only error that can happen is if a user attempts to interact with an element/interface that cannot be interacted with. Therefore, elements that are known to be rotatable, must support rotation, which makes <em>errors</em> another important metric. Since rotation is a somewhat obscure and newer feature in many user interfaces, speed of performance (<em>efficiency</em>) is generally quite important as to whether or not the user continues to use the feature.</p>
-        </blockquote>
-        <h3>Key Characteristics</h3>
-        <blockquote>
+  <div class="tab-content">
+    <div class="tab-pane active" role="tabpanel">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3><b><u>Typical Appearance</b></u></h3>
+                <blockquote>Appearance generally differs. For operating systems like macOS and Windows, rotating the display screen is done through a drop down menu. For software like Preview and word processors, it also varies. Some objects are rotated through a button or an icon. Nevertheless, both styles are indicative enough to exemplify rotation.<blockquote>
+                <blockquote>Rotating the display screen on Android Operating System is done through a dropdown vertical menue as well. A button is then, pops up to represent a rotation.</blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane" id="typical-behavior" role="tabpanel">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3><b><u>Typical Behavior</b></u></h3>
+                  <blockquote>Rotating is widely known and applied to objects in order to change their orientation or move in a circle-like motion around their center of mass. The flexibility of rotation surely enough differs from object to object. Depending on the software, some objects can rotate by fixed amounts, such as intervals of 90 degrees, and some can precisely rotate from 0 to 360 degrees. </blockquote>
+                  <h3><b><u>Component in Action </u></b></h3>
+                  <p> Theses some platform that show rotation in action.</p>
+                  <div class="row ">
+                  <div class="col text-center">
+                            <h4>macOS</h4>
+
+                              <p>Here is a video on rotating the display:</p>
+                              <iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/gOIk7zWCmus?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="col text-center">
+                          <h4>iOS</h4>
+                            <img src="periscope.gif" class="img-responsive" alt="Compnent in action - iOS" style="height: auto; width: auto">
+                          </div>
+                          <div class="col text-center">
+                        <h4>Android</h4>
+                          <img src="Android_rotation.gif" class="img-responsive" alt="Compnent in action - Android" style="height: auto; width: auto">
+                        </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <div class="tab-pane" id="priority-metrics" role="tabpanel">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <h3><b><u>Priority Metrics</u></b></h3>
+                <blockquote>
+                    <p>Rotation is an element that is being used more frequently in operating systems every year. Though rotation is somewhat intuitive and easy to learn, <em>learnability</em> is the top priority metric because it is important to know when rotating can be applied. The gesture of rotating itself is easy to learn, but it is somewhat difficult to learn which elements or user interfaces can be rotated. In addition, since this is a somewhat new user interface element, many new users are unaware of this feature in various applications. This makes <em>learnability</em> very important because new users are encouraged to quickly learn how to use the feature and memorize elements/applications that support rotation.</p>
+                    <p>The second most important metric would have to be <em>memorability</em>. Most UIs have identical structures when accessing the functionality of rotating, like through buttons and drop down menus. The reason being for structured continuity across operating systems is that it helps the user become familiarized with the OS being used, and hopefully, be a satisfying experience for them. Introducing a new way of rotation just adds more difficulty for the user getting accustomed to the OS.</p>
+                    <p>It is generally hard to make an error when rotating. The only error that can happen is if a user attempts to interact with an element/interface that cannot be interacted with. Therefore, elements that are known to be rotatable, must support rotation, which makes <em>errors</em> another important metric. Since rotation is a somewhat obscure and newer feature in many user interfaces, speed of performance (<em>efficiency</em>) is generally quite important as to whether or not the user continues to use the feature.</p>
+                </blockquote>
+                <h3><b><u>Key Characteristics</u></b></h3>
+                <blockquote>
             <p>Because the functionality of <em>rotating</em> is dependent on other components like <em>buttons</em> on desktop platforms, its key characteristics intersect with those other components.</p>
             <p>This is often different on mobile platforms however, as phones and tablets tend to have accelerometers. Because of this, many rotation features depend on the accelerometer rather than a different user interface component like a button.</p>
         </blockquote>
@@ -66,98 +116,198 @@ contributors:
         </ol>
         <h4>Consistency</h4>
         <p>The buttons used and techniques used for rotating objects, need to be familiar to the user. This way, the user can easily work their way around the functionality of rotating because of being familiar with it beforehand. The rotation of components on different operating systems and applications do not have to look the same. Rather, they mustn't force their users to learn new ways of rotations; memorability is an important aspect of rotations.</p>
-        <h4>User Interface Changes</h4>
-        <blockquote>
-            <p>Many times applications will not explicitly specify if the application supports landscape mode. Occasionally, as is the case with many iOS games, applications will only support a landscape mode and not portrait. The biggest indication as to whether an application supports both orientations is a change in User Interface.</p>
-            <p> An example of this change in UI is the Messages application in iOS 10. <em>Messages</em> changes from the standard conversation view in portrait mode to a handwritten message view in landscape mode.</p>
-            <p>In landscape mode, the landscape keyboard can also be accessed by pressing the <em>Keyboard</em> button on the bottom-right toolbar.</p>
-        </blockquote>
-        <div class="col-md-5">
-            <img src="messages_port.PNG" class="img-responsive" alt="Messages in Portrait Mode" style="height: auto; width: auto">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-7">
-            <img src="messages_land.jpg" class="img-responsive" alt="Messages in Landscape Mode" style="height: auto; width: auto">
-        </div>
+      </div>
     </div>
-</div>
-<h3>Component in Action</h3>
-<div class="col-md-6">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title text-center">macOS</h4>
-        </div>
+
+    <div class="tab-pane" id="events" role="tabpanel">
+      <div class="panel panel-default">
         <div class="panel-body">
-            <p>Here is a video on rotating the display:</p>
-            <iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/gOIk7zWCmus?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3><b><u>Events</b></u></h3>
+                <blockquote>Depending on the OS and software being used, rotating can be performed through multiple ways, such as buttons and swiping. Therefore, the events overlap with other events that pertain to different user interface components.</blockquote>
+                <p> When rotating is done through buttons, a <code>click</code> event occurs. Other events include <code>click and drag</code> , which usually allows the user to rotate an object however they would like as done with word processing applications and Mac's 'Grapher' application. Though there are multiple ways to perform rotating, ultimately, a <code>rotate</code> event occurs and indicates that an object was rotated.</p>
+                <p class="text-left">On iOS and Android, rotation and accelerometer movement is measured by a number of variables; however, on Android instead of using variables, Android uses the Java's best practices.They use getters and setters function, but for simplicity, I will use the conventional variable names x,y,z to represent the different dimensions. Keep in mind they are the same on Android. : <code>x</code>, <code>y</code>, <code>z</code>, <code>pitch</code>, <code>roll</code>, and <code>yaw</code>. These can be defined as follows: </p>
+                <ul>
+                    <div class="col-sm-6">
+                        <img src="axis.png" class="img-responsive" alt="Axis" style="height: auto; width: 60%">
+                    </div>
+                    <li><code>x, y, z</code>: Rotations about the x, y, and z axis.</li>
+                    <li><code>pitch</code>: Face up or face down rotating about an axis running from each side of the device.</li>
+                    <li><code>roll</code>: Rotation about an axis from the top of the phone to the bottom side.</li>
+                    <li><code>yaw</code>: Rotation from either side of the device to the top or bottom.</li>
+                </ul>
+                  <h3><b><u>State Diagram</b></u></h3>
+                    <p>The following diagram shows the three states an object undergoes during rotation. This is only applicable to OSes and software that supports rotation for 2D and/or 3D objects.</p>
+                    <img src="state_diagram.png" class="img-responsive center-block" alt="Rotating Chart" style="height: auto; width: 70%">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-<div class="col-md-6">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title text-center">iOS</h4>
-        </div>
+      </div>
+
+    <div class="tab-pane" id="variants" role="tabpanel">
+      <div class="panel panel-default">
         <div class="panel-body">
-            <img src="periscope.gif" class="img-responsive" alt="Compnent in action - iOS" style="height: auto; width: auto">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <h3><b><u>Variants</b></u></h3>
+                <blockquote>Rotation is used on multiple applications across many different operating systems. Sometimes, it is not very obvious that an element can be manipulated by rotation. Depending on the category of device, the intended rotation method varies. For example, laptop computers often use the trackpad to rotate elements, while mobile phones use an accelerometer, allowing for the entire device to be rotated to manipulate an element.</blockquote>
+                <ul>
+                    <li><em>Photos</em> can often be rotated and manipulated by using the correct rotation method depending on the device. On iOS, photos can be rotated by rotating the entire device, or simple pinching the screen with two fingers to move the photo using Multitouch. On macOS, photos can be rotated either through buttons or through the menu bar as done through 'Preview'.</li>
+                    <li><em>Single Applications</em> often change their entire UI when the device is rotated. For example, the Calculator application on iOS changes from a simple calculator to a full scientific calculator when rotated into landscape mode. In contrast to iOS, macOS's UI and its applications does not change when the display is rotated. Only the orientation is changed. Because macOS devices have a much larger screen than iOS devices, there's no need to change the UI.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    <div class="tab-pane" id="platform-specifics" role="tabpanel">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+
+                <h3><b><u>Platform Specifics</b></u></h3>
+                <p>Rotation is an aspect that varies quite a bit depending on the class of the device. Mobile devices, such as an iOS and Android devices, have a lot more functionality when it comes to rotation because of the accelerometer. This component allows many different applications to interact with the current orientation of the device. Because of this added component, there are a lot more things to consider when looking at rotation in mobile devices such as Android and iOS.</p>
+                <p>For non-mobile based operating systems, specifically macOS, rotation is done differently. Users with mobile devices can rotate the orientation of their UI by physically twisting and turning their hand. macOS does not support this feature. So, direct manipulation is a lot more dominant in Andois and iOS. Still, rotation is a primary component used in macOS.</p>
+                <div class="panel-group" id="event-group">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">
+                        <a data-toggle="collapse" href="#event1">IOS:</a>
+                      </h3>
+                    </div>
+                    <div id="event1" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class='row container'>
+                          <div class='col text-center'>
+                            <h4>IOS</h4>
+                                <p>The <em>accelerometer</em> is used to determine whether to display the user interface as portrait or landscape mode. Applications often have a user interface specifically for landscape mode, or at least have relevant elements change to recognize the user is in landscape mode. This can be disabled by navigating to <em>Control Center</em> and pressing the <em>Orientation Lock</em> icon. This will disable all use of the accelerometer, thus disabling all rotation function in iOS.</p>
+                                  <img src="ios_lock_orientation_rotation.gif" class="img-responsive center-block" alt="Orientation Lock" style="height: auto; width: auto"/>
+                          </div>
+                          <div class="col text-center">
+                            <p class="text-left">In iOS, rather than using a trackpad to manipulate elements, iOS devices can be physically rotated to switch between orientations. Single elements in some applications, such as photos, can be rotated either by rotating the device or using a pinch with two fingers.
+                          Moreover, In iOS 9, Apple added a Parallax Effect feature to the iOS homescreen and lockscreen. This allows the user's wallpaper to be manipulated by the orientation of their device to give a 3-dimensional effect to the wallpaper. This feature can be disabled by navigating to Settings > General > Accessibility > Reduce Motion.</p>
+                          <img src="parralax.gif" class="img-responsive" alt="Responsive image" style="height: auto; width: auto"/>
+                          </div>
+
+
+
+
+                           <p>iOS applications can have separate user interfaces for portrait and landscape modes. An example of this is iOS' native <em>Calculator</em> application. <em>Calculator</em> changes from a simple calculator in portrait mode to a full-featured scientific calculator when the device is rotated.</p>
+                            <div class='row'>
+                            <div class="col">
+                            <img src="apple-calculator-portrait.jpg" class="img-responsive center-block" alt="Calculator Portrait" style="height: auto; width: 50%">
+                          </div>
+                          <div class="col">
+                            <img src="apple-calculator-landscape.jpg" class="img-responsive center-block" alt="Calculator Landscape" style="height: auto; width: 80%">
+                          </div>
+                        </div>
+                            <p>However, not all iOS applications feature UI changes in landscape mode. For example, many camera applications recognize orientation changes and automatically prepare the camera for taking a landscape photo. Though this has minimal user interface changes, rotation is still being used in this instance.</p>
+                            <img src="horiz-vid.gif" class="img-responsive" alt="Landscape Video" style="height: auto; width: auto">
+                            <p> Many applications are intended for use only in portrait mode, and have no support for landscape viewing.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <a data-toggle="collapse" href="#event2">Mac OS:</a>
+        </h3>
+      </div>
+
+      <div id="event2" class="panel-collapse collapse">
+        <div class="panel-body">
+          <div class="row">
+          <div class="col">
+          <h3>macOS</h3>
+          <p>Rotating the display is done through a drop down menu, which is accessed through 'System Preferences' and under 'Displays'. As previously mentioned, there are predominantly two different kinds of rotations: free motion and the other being done in intervals. In this case, rotations are done in 90 degree intervals. Also, rotating the display changes sense of direction from the cursor. For instance, flipping the display upside down flips the cursor's directions.</p>
+           <img src="mac-osx-rotate-display.gif" class="img-responsive center-block" alt="macOS Display" style="height: auto; width: auto"/>
+           <p>A lot of rotations can be done through the use of the trackpad. One instance of this, is through the use of Mac's 'Grapher' application. The user can look at either 2D or 3D mathematical models, and when it comes to 3D ones, the user can freely rotate the graph. This is done by clicking and dragging across the trackpad.</p>
+            <img src="mac-osx-grapher-rotate.gif" class="img-responsive" alt="Grapher Application" style="height: auto; width: auto"/>
+            <p>Another form of rotating can be done by clicking buttons that are indicative of doing so. Image applications like 'Preview' support this feature. This can also be done by accessing the 'Tools' tab which brings up a drop down menu. However, free motion rotation is not supported; only 90 degree rotation intervals are.</p>
+            <img src="dog-rotate-button.gif" class="img-responsive" alt="Button Rotation" style="height: auto; width: auto">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<h3>Platform-Specific Instances</h3>
+             <div class="panel panel-default">
+                    <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" href="#event3">Android:</a>
+                    </h3>
+                    </div>
+                    <div id="event3" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                      <div class="row">
+                        <div col="col text-center">
+                          <h3> Android</h3>
+                        <p>The position sensor built in Android determines whether to display the user interface as portrait or landscape mode.
+                        Applications often have a user interface specifically for landscape mode, or at least have relevant elements change to recognize the user is in landscape mode. This can be disabled by navigating to Setting and pressing the Portarit Lock icon. This will disable all use of the accelerometer, thus disabling all rotation function in Android.</p>
+                          <img src="Auto-rotate.gif" class="img-responsive" alt="Andoid auto rotate" style="height: auto; width: auto"/>
+
+                      </div>
+
+                      <div class="col text-center">
+                      <p> Rotating an Image from the Gallery app is done by clicking on a buttong to rotate the image.</p>
+                      <video width="520px" height="440px" controls>
+                        <source src="trimmed.mp4" type="video/mp4">
+                          <source src="movie.ogg" type="video/ogg">
+                          </video>
+                    </div>
+                    <div class="col">
+                    <p>Some Android applications can have separate user interfaces for portrait and landscape modes. An example of this is Android native Calculator application. Calculator changes from a simple calculator in portrait mode to a full-featured scientific calculator when the device is rotated.</p>
+                    <div class="row">
+                      <div class="col">
+                        <img src="trimmed_calc.png" class="img-responsive" alt="Andoid calc" style="height: auto; width: auto"/>
+
+                    </div>
+                    <div class="col">
+                      <img src="trimmed_calc2.png" class="img-responsive" alt="Andoid calc" style="height: auto; width: auto"/>
+
+                    </div>
+                    </div>
+                    <div class="row">
+                      <class="col">
+                      <p>In Android, The phone S8 added a Parallax Effect feature to the Android Wallpapers/themes. This allows the user's wallpaper to be manipulated by the orientation of their device to give a 3-dimensional effect to the wallpaper.</p>
+                      <iframe width="420" height="345"src="https://www.youtube.com/watch?v=DXdKYTW006o">
+                      </iframe>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+<h3><b><u> Credits & References </u></b></h3>
 <blockquote>
-    <p>Rotation is an aspect that varies quite a bit depending on the class of the device. Mobile devices, such as an iOS device, have a lot more functionality when it comes to rotation because of the <em>accelerometer.</em> This component allows many different applications to interact with the current orientation of the device. Because of this added component, there are a lot more things to consider when looking at rotation in iOS devices.</p>
-    <p>For non-mobile based operating systems, specifically macOS, rotation is done differently. Users with mobile devices can rotate the orientation of their UI by physically twisting and turning their hand. macOS does not support this feature. So, direct manipulation is a lot more dominant in iOS. Still, rotation is a primary component used in macOS.</p>
-</blockquote>
-<div class="row">
-    <div class="col-md-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title text-center">macOS</h4>
-            </div>
-            <div class="panel-body">
-                <p>Rotating the display is done through a <em>drop down menu</em>, which is accessed through 'System Preferences' and under 'Displays'. As previously mentioned, there are predominantly two different kinds of rotations: free motion and the other being done in intervals. In this case, rotations are done in 90 degree intervals. Also, rotating the display changes sense of direction from the cursor. For instance, flipping the display upside down flips the cursor's directions.</p>
-                <div class="col-md-6">
-                    <img src="mac-osx-rotate-display.gif" class="img-responsive center-block" alt="macOS Display" style="height: auto; width: auto">
-                </div>
-                <p>A lot of rotations can be done through the use of the trackpad. One instance of this, is through the use of Mac's 'Grapher' application. The user can look at either 2D or 3D mathematical models, and when it comes to 3D ones, the user can freely rotate the graph. This is done by <em>clicking and dragging</em> across the trackpad.
-                </p>
-                <div class="col-sm-6">
-                    <img src="mac-osx-grapher-rotate.gif" class="img-responsive" alt="Grapher Application" style="height: auto; width: auto">
-                </div>
-                <p>Another form of rotating can be done by clicking buttons that are indicative of doing so. Image applications like 'Preview' support this feature. This can also be done by accessing the 'Tools' tab which brings up a <em>drop down menu</em>. However, free motion rotation is not supported; only 90 degree rotation intervals are.</p>
-                <div class="col-lg-12">
-                    <img src="dog-rotate-button.gif" class="img-responsive" alt="Button Rotation" style="height: auto; width: auto">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title text-center">iOS</h4>
-            </div>
-            <div class="panel-body">
-                <p>The <em>accelerometer</em> is used to determine whether to display the user interface as portrait or landscape mode. Applications often have a user interface specifically for landscape mode, or at least have relevant elements change to recognize the user is in landscape mode. This can be disabled by navigating to <em>Control Center</em> and pressing the <em>Orientation Lock</em> icon. This will disable all use of the accelerometer, thus disabling all rotation function in iOS.</p>
-                <div class="col-md-6">
-                    <img src="ios_lock_orientation_rotation.gif" class="img-responsive center-block" alt="Orientation Lock" style="height: auto; width: auto">
-                </div>
-                <p>In iOS, rather than using a trackpad to manipulate elements, iOS devices can be physically rotated to switch between orientations. Single elements in some applications, such as photos, can be rotated either by rotating the device or using a pinch with two fingers.</p>
-                <div class="col-sm-6">
-                    <img src="parralax.gif" class="img-responsive" alt="Responsive image" style="height: auto; width: auto">
-                </div>
-                <p class="text-right">In iOS 9, Apple added a Parallax Effect feature to the iOS homescreen and lockscreen. This allows the user's wallpaper to be manipulated by the orientation of their device to give a 3-dimensional effect to the wallpaper. This feature can be disabled by navigating to Settings > General > Accessibility > Reduce Motion.</p>
-                <p>iOS applications can have separate user interfaces for portrait and landscape modes. An example of this is iOS' native <em>Calculator</em> application. <em>Calculator</em> changes from a simple calculator in portrait mode to a full-featured scientific calculator when the device is rotated.</p>
-                <img src="apple-calculator-portrait.jpg" class="img-responsive center-block" alt="Calculator Portrait" style="height: auto; width: 50%">
-                <img src="apple-calculator-landscape.jpg" class="img-responsive center-block" alt="Calculator Landscape" style="height: auto; width: 80%">
-                <p>However, not all iOS applications feature UI changes in landscape mode. For example, many camera applications recognize orientation changes and automatically prepare the camera for taking a landscape photo. Though this has minimal user interface changes, rotation is still being used in this instance.</p>
-                <img src="horiz-vid.gif" class="img-responsive" alt="Landscape Video" style="height: auto; width: auto">
-                <p> Many applications are intended for use only in portrait mode, and have no support for landscape viewing.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<h3>Credits &amp; References</h3>
-<blockquote>
-    <p>Mac OSX Lion | Easter Egg | Screen Rotation. Dir. David Bell. Youtube. N.p., 7 Apr. 2012. Web. 15 Oct. 2016.</p>
+    <p> Bootstrap 4|Android API | Youtube videos | Google Images |Mac OSX Lion | Easter Egg | Screen Rotation. Dir. David Bell. Youtube. N.p., 7 Apr. 2012. Web. 15 Oct. 2016.</p>
     <p><a href="https://developer.apple.com/library/content/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/motion_event_basics/motion_event_basics.html">Apple Event Handling Guide for iOS</a></p>
     <p><a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/DesignPrinciples.html#//apple_ref/doc/uid/20000957-CH18-SW1">macOS Human Interface Guidelines</a></p>
+    <p><a href="https://developer.android.com/guide/topics/sensors/sensors_position.html">The API for Andoid position sensor</a></p>
+    <p><a href="https://www.youtube.com/watch?v=DXdKYTW006o">The API for Andoid position sensor</a></p>
+      <p><a href="https://v4-alpha.getbootstrap.com/components/buttons/">Bootstrap 4 API </a></p>
 </blockquote>
